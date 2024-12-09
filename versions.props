@@ -1,6 +1,9 @@
 <Project>
   <PropertyGroup Condition="'$(TF_BUILD)' != 'true'">
     <VersionPrefix>3.2.8</VersionPrefix>
+    <NoWarn>$(NoWarn);NU1902;NU1903</NoWarn>
+    <CheckEolTargetFramework>false</CheckEolTargetFramework>
+    <NuGetAuditMode>direct</NuGetAuditMode>
   </PropertyGroup>
   <PropertyGroup>
     <CoreFxVersion>4.4.0</CoreFxVersion>
