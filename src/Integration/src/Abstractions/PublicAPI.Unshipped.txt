@@ -1,0 +1,144 @@
+﻿Steeltoe.Integration.Acks.IAcknowledgmentCallback
+Steeltoe.Integration.Acks.IAcknowledgmentCallback.Acknowledge(Steeltoe.Integration.Acks.Status status) -> void
+Steeltoe.Integration.Acks.IAcknowledgmentCallback.IsAcknowledged.get -> bool
+Steeltoe.Integration.Acks.IAcknowledgmentCallback.IsAcknowledged.set -> void
+Steeltoe.Integration.Acks.IAcknowledgmentCallback.IsAutoAck.get -> bool
+Steeltoe.Integration.Acks.IAcknowledgmentCallback.IsAutoAck.set -> void
+Steeltoe.Integration.Acks.IAcknowledgmentCallbackFactory<T>
+Steeltoe.Integration.Acks.IAcknowledgmentCallbackFactory<T>.CreateCallback(T info) -> Steeltoe.Integration.Acks.IAcknowledgmentCallback
+Steeltoe.Integration.Acks.Status
+Steeltoe.Integration.Acks.Status.ACCEPT = 0 -> Steeltoe.Integration.Acks.Status
+Steeltoe.Integration.Acks.Status.REJECT = 1 -> Steeltoe.Integration.Acks.Status
+Steeltoe.Integration.Acks.Status.REQUEUE = 2 -> Steeltoe.Integration.Acks.Status
+Steeltoe.Integration.Channel.IChannelInterceptorAware
+Steeltoe.Integration.Channel.IChannelInterceptorAware.AddInterceptor(int index, Steeltoe.Messaging.Support.IChannelInterceptor interceptor) -> void
+Steeltoe.Integration.Channel.IChannelInterceptorAware.AddInterceptor(Steeltoe.Messaging.Support.IChannelInterceptor interceptor) -> void
+Steeltoe.Integration.Channel.IChannelInterceptorAware.ChannelInterceptors.get -> System.Collections.Generic.List<Steeltoe.Messaging.Support.IChannelInterceptor>
+Steeltoe.Integration.Channel.IChannelInterceptorAware.ChannelInterceptors.set -> void
+Steeltoe.Integration.Channel.IChannelInterceptorAware.RemoveInterceptor(int index) -> Steeltoe.Messaging.Support.IChannelInterceptor
+Steeltoe.Integration.Channel.IChannelInterceptorAware.RemoveInterceptor(Steeltoe.Messaging.Support.IChannelInterceptor interceptor) -> bool
+Steeltoe.Integration.Channel.IQueueChannelOperations
+Steeltoe.Integration.Channel.IQueueChannelOperations.Clear() -> System.Collections.Generic.IList<Steeltoe.Messaging.IMessage>
+Steeltoe.Integration.Channel.IQueueChannelOperations.Purge(Steeltoe.Integration.IMessageSelector messageSelector) -> System.Collections.Generic.IList<Steeltoe.Messaging.IMessage>
+Steeltoe.Integration.Channel.IQueueChannelOperations.QueueSize.get -> int
+Steeltoe.Integration.Channel.IQueueChannelOperations.RemainingCapacity.get -> int
+Steeltoe.Integration.Channel.ITaskSchedulerChannelInterceptorAware
+Steeltoe.Integration.Channel.ITaskSchedulerChannelInterceptorAware.HasTaskSchedulerInterceptors.get -> bool
+Steeltoe.Integration.Config.IMethodAttributeProcessor<A>
+Steeltoe.Integration.Config.IMethodAttributeProcessor<A>.PostProcess(object service, string serviceName, System.Reflection.MethodInfo method, System.Collections.Generic.List<System.Attribute> attributes) -> object
+Steeltoe.Integration.Config.IMethodAttributeProcessor<A>.ShouldCreateEndpoint(System.Reflection.MethodInfo method, System.Collections.Generic.List<System.Attribute> attributes) -> bool
+Steeltoe.Integration.Dispatcher.ILoadBalancingStrategy
+Steeltoe.Integration.Dispatcher.ILoadBalancingStrategy.GetNextHandlerStartIndex(Steeltoe.Messaging.IMessage message, System.Collections.Generic.List<Steeltoe.Messaging.IMessageHandler> handlers) -> int
+Steeltoe.Integration.Dispatcher.IMessageDispatcher
+Steeltoe.Integration.Dispatcher.IMessageDispatcher.AddHandler(Steeltoe.Messaging.IMessageHandler handler) -> bool
+Steeltoe.Integration.Dispatcher.IMessageDispatcher.Dispatch(Steeltoe.Messaging.IMessage message, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> bool
+Steeltoe.Integration.Dispatcher.IMessageDispatcher.Failover.get -> bool
+Steeltoe.Integration.Dispatcher.IMessageDispatcher.Failover.set -> void
+Steeltoe.Integration.Dispatcher.IMessageDispatcher.HandlerCount.get -> int
+Steeltoe.Integration.Dispatcher.IMessageDispatcher.LoadBalancingStrategy.get -> Steeltoe.Integration.Dispatcher.ILoadBalancingStrategy
+Steeltoe.Integration.Dispatcher.IMessageDispatcher.LoadBalancingStrategy.set -> void
+Steeltoe.Integration.Dispatcher.IMessageDispatcher.MaxSubscribers.get -> int
+Steeltoe.Integration.Dispatcher.IMessageDispatcher.MaxSubscribers.set -> void
+Steeltoe.Integration.Dispatcher.IMessageDispatcher.MessageHandlingDecorator.get -> Steeltoe.Integration.Dispatcher.IMessageHandlingDecorator
+Steeltoe.Integration.Dispatcher.IMessageDispatcher.MessageHandlingDecorator.set -> void
+Steeltoe.Integration.Dispatcher.IMessageDispatcher.RemoveHandler(Steeltoe.Messaging.IMessageHandler handler) -> bool
+Steeltoe.Integration.Dispatcher.IMessageHandlingDecorator
+Steeltoe.Integration.Dispatcher.IMessageHandlingDecorator.Decorate(Steeltoe.Messaging.Support.IMessageHandlingRunnable messageHandlingRunnable) -> Steeltoe.Messaging.Support.IMessageHandlingRunnable
+Steeltoe.Integration.Handler.IHeaderPropagation
+Steeltoe.Integration.Handler.IHeaderPropagation.AddNotPropagatedHeaders(params string[] headers) -> void
+Steeltoe.Integration.Handler.IHeaderPropagation.NotPropagatedHeaders.get -> System.Collections.Generic.IList<string>
+Steeltoe.Integration.Handler.IHeaderPropagation.NotPropagatedHeaders.set -> void
+Steeltoe.Integration.Handler.IMessageProcessor
+Steeltoe.Integration.Handler.IMessageProcessor.ProcessMessage(Steeltoe.Messaging.IMessage message) -> object
+Steeltoe.Integration.Handler.IMessageProcessor<T>
+Steeltoe.Integration.Handler.IMessageProcessor<T>.ProcessMessage(Steeltoe.Messaging.IMessage message) -> T
+Steeltoe.Integration.IIntegrationServices
+Steeltoe.Integration.IIntegrationServices.ChannelResolver.get -> Steeltoe.Messaging.Core.IDestinationResolver<Steeltoe.Messaging.IMessageChannel>
+Steeltoe.Integration.IIntegrationServices.ChannelResolver.set -> void
+Steeltoe.Integration.IIntegrationServices.ConversionService.get -> Steeltoe.Common.Converter.IConversionService
+Steeltoe.Integration.IIntegrationServices.ConversionService.set -> void
+Steeltoe.Integration.IIntegrationServices.ExpressionParser.get -> Steeltoe.Common.Expression.Internal.IExpressionParser
+Steeltoe.Integration.IIntegrationServices.ExpressionParser.set -> void
+Steeltoe.Integration.IIntegrationServices.IdGenerator.get -> Steeltoe.Common.Util.IIDGenerator
+Steeltoe.Integration.IIntegrationServices.IdGenerator.set -> void
+Steeltoe.Integration.IIntegrationServices.MessageBuilderFactory.get -> Steeltoe.Integration.Support.IMessageBuilderFactory
+Steeltoe.Integration.IIntegrationServices.MessageBuilderFactory.set -> void
+Steeltoe.Integration.IMessageProducer
+Steeltoe.Integration.IMessageProducer.OutputChannel.get -> Steeltoe.Messaging.IMessageChannel
+Steeltoe.Integration.IMessageProducer.OutputChannel.set -> void
+Steeltoe.Integration.IMessageProducer.OutputChannelName.get -> string
+Steeltoe.Integration.IMessageProducer.OutputChannelName.set -> void
+Steeltoe.Integration.IMessageRouter
+Steeltoe.Integration.IMessageRouter.DefaultOutputChannel.get -> Steeltoe.Messaging.IMessageChannel
+Steeltoe.Integration.IMessageSelector
+Steeltoe.Integration.IMessageSource
+Steeltoe.Integration.IMessageSource.Receive() -> Steeltoe.Messaging.IMessage
+Steeltoe.Integration.IMessageSource<T>
+Steeltoe.Integration.IMessageSource<T>.Receive() -> Steeltoe.Messaging.IMessage<T>
+Steeltoe.Integration.ISelector<T>
+Steeltoe.Integration.ISelector<T>.Accept(T source) -> bool
+Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper<T>
+Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper<T>.FromHeadersToReply(Steeltoe.Messaging.IMessageHeaders headers, T target) -> void
+Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper<T>.FromHeadersToRequest(Steeltoe.Messaging.IMessageHeaders headers, T target) -> void
+Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper<T>.ToHeadersFromReply(T source) -> System.Collections.Generic.IDictionary<string, object>
+Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper<T>.ToHeadersFromRequest(T source) -> System.Collections.Generic.IDictionary<string, object>
+Steeltoe.Integration.Support.Channel.IHeaderChannelRegistry
+Steeltoe.Integration.Support.Channel.IHeaderChannelRegistry.ChannelNameToChannel(string name) -> Steeltoe.Messaging.IMessageChannel
+Steeltoe.Integration.Support.Channel.IHeaderChannelRegistry.ChannelToChannelName(object channel) -> object
+Steeltoe.Integration.Support.Channel.IHeaderChannelRegistry.ChannelToChannelName(object channel, long timeToLive) -> object
+Steeltoe.Integration.Support.IErrorMessageStrategy
+Steeltoe.Integration.Support.IErrorMessageStrategy.BuildErrorMessage(System.Exception payload, Steeltoe.Common.Util.IAttributeAccessor attributes) -> Steeltoe.Messaging.Support.ErrorMessage
+Steeltoe.Integration.Support.IMessageBuilder
+Steeltoe.Integration.Support.IMessageBuilder.Build() -> Steeltoe.Messaging.IMessage
+Steeltoe.Integration.Support.IMessageBuilder.CopyHeaders(System.Collections.Generic.IDictionary<string, object> headersToCopy) -> Steeltoe.Integration.Support.IMessageBuilder
+Steeltoe.Integration.Support.IMessageBuilder.CopyHeadersIfAbsent(System.Collections.Generic.IDictionary<string, object> headersToCopy) -> Steeltoe.Integration.Support.IMessageBuilder
+Steeltoe.Integration.Support.IMessageBuilder.FilterAndCopyHeadersIfAbsent(System.Collections.Generic.IDictionary<string, object> headersToCopy, params string[] headerPatternsToFilter) -> Steeltoe.Integration.Support.IMessageBuilder
+Steeltoe.Integration.Support.IMessageBuilder.Headers.get -> System.Collections.Generic.IDictionary<string, object>
+Steeltoe.Integration.Support.IMessageBuilder.Payload.get -> object
+Steeltoe.Integration.Support.IMessageBuilder.PopSequenceDetails() -> Steeltoe.Integration.Support.IMessageBuilder
+Steeltoe.Integration.Support.IMessageBuilder.PushSequenceDetails(object correlationId, int sequenceNumber, int sequenceSize) -> Steeltoe.Integration.Support.IMessageBuilder
+Steeltoe.Integration.Support.IMessageBuilder.RemoveHeader(string headerName) -> Steeltoe.Integration.Support.IMessageBuilder
+Steeltoe.Integration.Support.IMessageBuilder.RemoveHeaders(params string[] headerPatterns) -> Steeltoe.Integration.Support.IMessageBuilder
+Steeltoe.Integration.Support.IMessageBuilder.SetCorrelationId(object correlationId) -> Steeltoe.Integration.Support.IMessageBuilder
+Steeltoe.Integration.Support.IMessageBuilder.SetErrorChannel(Steeltoe.Messaging.IMessageChannel errorChannel) -> Steeltoe.Integration.Support.IMessageBuilder
+Steeltoe.Integration.Support.IMessageBuilder.SetErrorChannelName(string errorChannelName) -> Steeltoe.Integration.Support.IMessageBuilder
+Steeltoe.Integration.Support.IMessageBuilder.SetExpirationDate(long expirationDate) -> Steeltoe.Integration.Support.IMessageBuilder
+Steeltoe.Integration.Support.IMessageBuilder.SetExpirationDate(System.DateTime? expirationDate) -> Steeltoe.Integration.Support.IMessageBuilder
+Steeltoe.Integration.Support.IMessageBuilder.SetHeader(string headerName, object headerValue) -> Steeltoe.Integration.Support.IMessageBuilder
+Steeltoe.Integration.Support.IMessageBuilder.SetHeaderIfAbsent(string headerName, object headerValue) -> Steeltoe.Integration.Support.IMessageBuilder
+Steeltoe.Integration.Support.IMessageBuilder.SetPriority(int priority) -> Steeltoe.Integration.Support.IMessageBuilder
+Steeltoe.Integration.Support.IMessageBuilder.SetReplyChannel(Steeltoe.Messaging.IMessageChannel replyChannel) -> Steeltoe.Integration.Support.IMessageBuilder
+Steeltoe.Integration.Support.IMessageBuilder.SetReplyChannelName(string replyChannelName) -> Steeltoe.Integration.Support.IMessageBuilder
+Steeltoe.Integration.Support.IMessageBuilder.SetSequenceNumber(int sequenceNumber) -> Steeltoe.Integration.Support.IMessageBuilder
+Steeltoe.Integration.Support.IMessageBuilder.SetSequenceSize(int sequenceSize) -> Steeltoe.Integration.Support.IMessageBuilder
+Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IMessageBuilder<T>.Build() -> Steeltoe.Messaging.IMessage<T>
+Steeltoe.Integration.Support.IMessageBuilder<T>.CopyHeaders(System.Collections.Generic.IDictionary<string, object> headersToCopy) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IMessageBuilder<T>.CopyHeadersIfAbsent(System.Collections.Generic.IDictionary<string, object> headersToCopy) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IMessageBuilder<T>.FilterAndCopyHeadersIfAbsent(System.Collections.Generic.IDictionary<string, object> headersToCopy, params string[] headerPatternsToFilter) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IMessageBuilder<T>.Payload.get -> T
+Steeltoe.Integration.Support.IMessageBuilder<T>.PopSequenceDetails() -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IMessageBuilder<T>.PushSequenceDetails(object correlationId, int sequenceNumber, int sequenceSize) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IMessageBuilder<T>.RemoveHeader(string headerName) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IMessageBuilder<T>.RemoveHeaders(params string[] headerPatterns) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IMessageBuilder<T>.SetCorrelationId(object correlationId) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IMessageBuilder<T>.SetErrorChannel(Steeltoe.Messaging.IMessageChannel errorChannel) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IMessageBuilder<T>.SetErrorChannelName(string errorChannelName) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IMessageBuilder<T>.SetExpirationDate(long expirationDate) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IMessageBuilder<T>.SetExpirationDate(System.DateTime? expirationDate) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IMessageBuilder<T>.SetHeader(string headerName, object headerValue) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IMessageBuilder<T>.SetHeaderIfAbsent(string headerName, object headerValue) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IMessageBuilder<T>.SetPriority(int priority) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IMessageBuilder<T>.SetReplyChannel(Steeltoe.Messaging.IMessageChannel replyChannel) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IMessageBuilder<T>.SetReplyChannelName(string replyChannelName) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IMessageBuilder<T>.SetSequenceNumber(int sequenceNumber) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IMessageBuilder<T>.SetSequenceSize(int sequenceSize) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IMessageBuilderFactory
+Steeltoe.Integration.Support.IMessageBuilderFactory.FromMessage(Steeltoe.Messaging.IMessage message) -> Steeltoe.Integration.Support.IMessageBuilder
+Steeltoe.Integration.Support.IMessageBuilderFactory.FromMessage<T>(Steeltoe.Messaging.IMessage<T> message) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IMessageBuilderFactory.WithPayload(object payload) -> Steeltoe.Integration.Support.IMessageBuilder
+Steeltoe.Integration.Support.IMessageBuilderFactory.WithPayload<T>(T payload) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IMessageDecorator
+Steeltoe.Integration.Support.IMessageDecorator.DecorateMessage(Steeltoe.Messaging.IMessage message) -> Steeltoe.Messaging.IMessage
+Steeltoe.Integration.Transformer.ITransformer
+Steeltoe.Integration.Transformer.ITransformer.Transform(Steeltoe.Messaging.IMessage message) -> Steeltoe.Messaging.IMessage

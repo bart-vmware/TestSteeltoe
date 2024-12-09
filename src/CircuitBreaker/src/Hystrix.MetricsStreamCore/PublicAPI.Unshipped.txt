@@ -1,0 +1,26 @@
+﻿override Steeltoe.CircuitBreaker.Hystrix.MetricsStream.RabbitMetricsStreamPublisher.Dispose(bool disposing) -> void
+override Steeltoe.CircuitBreaker.Hystrix.MetricsStream.RabbitMetricsStreamPublisher.EnsureConnection() -> bool
+override Steeltoe.CircuitBreaker.Hystrix.MetricsStream.RabbitMetricsStreamPublisher.OnNext(System.Collections.Generic.List<string> jsonList) -> void
+static Steeltoe.CircuitBreaker.Hystrix.HystrixApplicationBuilderExtensions.UseHystrixMetricsStream(this Microsoft.AspNetCore.Builder.IApplicationBuilder builder) -> Microsoft.AspNetCore.Builder.IApplicationBuilder
+static Steeltoe.CircuitBreaker.Hystrix.HystrixServiceCollectionExtensions.AddHystrixConfigStream(this Microsoft.Extensions.DependencyInjection.IServiceCollection services) -> void
+static Steeltoe.CircuitBreaker.Hystrix.HystrixServiceCollectionExtensions.AddHystrixConfigStream(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config) -> void
+static Steeltoe.CircuitBreaker.Hystrix.HystrixServiceCollectionExtensions.AddHystrixMetricsStream(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config) -> void
+static Steeltoe.CircuitBreaker.Hystrix.HystrixServiceCollectionExtensions.AddHystrixMonitoringStreams(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config) -> void
+static Steeltoe.CircuitBreaker.Hystrix.HystrixServiceCollectionExtensions.AddHystrixRequestEventStream(this Microsoft.Extensions.DependencyInjection.IServiceCollection services) -> void
+static Steeltoe.CircuitBreaker.Hystrix.HystrixServiceCollectionExtensions.AddHystrixRequestEventStream(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config) -> void
+static Steeltoe.CircuitBreaker.Hystrix.HystrixServiceCollectionExtensions.AddHystrixUtilizationStream(this Microsoft.Extensions.DependencyInjection.IServiceCollection services) -> void
+static Steeltoe.CircuitBreaker.Hystrix.HystrixServiceCollectionExtensions.AddHystrixUtilizationStream(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config) -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixApplicationBuilderExtensions
+Steeltoe.CircuitBreaker.Hystrix.HystrixServiceCollectionExtensions
+Steeltoe.CircuitBreaker.Hystrix.MetricsStream.HystrixMetricStreamService
+Steeltoe.CircuitBreaker.Hystrix.MetricsStream.HystrixMetricStreamService.HystrixMetricStreamService(Steeltoe.CircuitBreaker.Hystrix.MetricsStream.RabbitMetricsStreamPublisher streamPublisher) -> void
+Steeltoe.CircuitBreaker.Hystrix.MetricsStream.HystrixMetricStreamService.StartAsync(System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task
+Steeltoe.CircuitBreaker.Hystrix.MetricsStream.HystrixMetricStreamService.StopAsync(System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task
+Steeltoe.CircuitBreaker.Hystrix.MetricsStream.RabbitMetricsStreamPublisher
+Steeltoe.CircuitBreaker.Hystrix.MetricsStream.RabbitMetricsStreamPublisher.Channel.get -> RabbitMQ.Client.IModel
+Steeltoe.CircuitBreaker.Hystrix.MetricsStream.RabbitMetricsStreamPublisher.Channel.set -> void
+Steeltoe.CircuitBreaker.Hystrix.MetricsStream.RabbitMetricsStreamPublisher.Connection.get -> RabbitMQ.Client.IConnection
+Steeltoe.CircuitBreaker.Hystrix.MetricsStream.RabbitMetricsStreamPublisher.Connection.set -> void
+Steeltoe.CircuitBreaker.Hystrix.MetricsStream.RabbitMetricsStreamPublisher.Factory.get -> RabbitMQ.Client.ConnectionFactory
+Steeltoe.CircuitBreaker.Hystrix.MetricsStream.RabbitMetricsStreamPublisher.Factory.set -> void
+Steeltoe.CircuitBreaker.Hystrix.MetricsStream.RabbitMetricsStreamPublisher.RabbitMetricsStreamPublisher(Microsoft.Extensions.Options.IOptions<Steeltoe.CircuitBreaker.Hystrix.MetricsStream.HystrixMetricsStreamOptions> options, Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.HystrixDashboardStream stream, Steeltoe.Connector.Hystrix.HystrixConnectionFactory factory, Microsoft.Extensions.Logging.ILogger<Steeltoe.CircuitBreaker.Hystrix.MetricsStream.RabbitMetricsStreamPublisher> logger = null, Steeltoe.Discovery.IDiscoveryClient discoveryClient = null) -> void

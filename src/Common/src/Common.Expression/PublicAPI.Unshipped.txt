@@ -1,0 +1,1088 @@
+﻿abstract Steeltoe.Common.Expression.Internal.Spring.Ast.Literal.GetLiteralValue() -> Steeltoe.Common.Expression.Internal.ITypedValue
+abstract Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode.GetValueInternal(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+abstract Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode.ToStringAST() -> string
+abstract Steeltoe.Common.Expression.Internal.Spring.Common.TemplateAwareExpressionParser.DoParseExpression(string expressionString, Steeltoe.Common.Expression.Internal.IParserContext context) -> Steeltoe.Common.Expression.Internal.IExpression
+const Steeltoe.Common.Expression.Internal.Spring.Ast.Selection.ALL = 0 -> int
+const Steeltoe.Common.Expression.Internal.Spring.Ast.Selection.FIRST = 1 -> int
+const Steeltoe.Common.Expression.Internal.Spring.Ast.Selection.LAST = 2 -> int
+override Steeltoe.Common.Expression.Internal.Contexts.ServiceExpressionContext.Equals(object other) -> bool
+override Steeltoe.Common.Expression.Internal.Contexts.ServiceExpressionContext.GetHashCode() -> int
+override Steeltoe.Common.Expression.Internal.ExpressionException.Message.get -> string
+override Steeltoe.Common.Expression.Internal.Spring.Ast.Assign.GetValueInternal(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.Assign.ToStringAST() -> string
+override Steeltoe.Common.Expression.Internal.Spring.Ast.BooleanLiteral.GenerateCode(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf) -> void
+override Steeltoe.Common.Expression.Internal.Spring.Ast.BooleanLiteral.GetLiteralValue() -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.BooleanLiteral.IsCompilable() -> bool
+override Steeltoe.Common.Expression.Internal.Spring.Ast.CompoundExpression.GenerateCode(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf) -> void
+override Steeltoe.Common.Expression.Internal.Spring.Ast.CompoundExpression.GetValueInternal(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.CompoundExpression.GetValueRef(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.Spring.Ast.IValueRef
+override Steeltoe.Common.Expression.Internal.Spring.Ast.CompoundExpression.IsCompilable() -> bool
+override Steeltoe.Common.Expression.Internal.Spring.Ast.CompoundExpression.IsWritable(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> bool
+override Steeltoe.Common.Expression.Internal.Spring.Ast.CompoundExpression.SetValue(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state, object newValue) -> void
+override Steeltoe.Common.Expression.Internal.Spring.Ast.CompoundExpression.ToStringAST() -> string
+override Steeltoe.Common.Expression.Internal.Spring.Ast.ConstructorReference.GenerateCode(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf) -> void
+override Steeltoe.Common.Expression.Internal.Spring.Ast.ConstructorReference.GetValueInternal(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.ConstructorReference.IsCompilable() -> bool
+override Steeltoe.Common.Expression.Internal.Spring.Ast.ConstructorReference.ToStringAST() -> string
+override Steeltoe.Common.Expression.Internal.Spring.Ast.Elvis.GenerateCode(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf) -> void
+override Steeltoe.Common.Expression.Internal.Spring.Ast.Elvis.GetValueInternal(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.Elvis.IsCompilable() -> bool
+override Steeltoe.Common.Expression.Internal.Spring.Ast.Elvis.ToStringAST() -> string
+override Steeltoe.Common.Expression.Internal.Spring.Ast.FloatLiteral.GenerateCode(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf) -> void
+override Steeltoe.Common.Expression.Internal.Spring.Ast.FloatLiteral.GetLiteralValue() -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.FloatLiteral.IsCompilable() -> bool
+override Steeltoe.Common.Expression.Internal.Spring.Ast.FunctionReference.GenerateCode(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf) -> void
+override Steeltoe.Common.Expression.Internal.Spring.Ast.FunctionReference.GetValueInternal(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.FunctionReference.IsCompilable() -> bool
+override Steeltoe.Common.Expression.Internal.Spring.Ast.FunctionReference.ToStringAST() -> string
+override Steeltoe.Common.Expression.Internal.Spring.Ast.Identifier.GetValueInternal(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.Identifier.ToStringAST() -> string
+override Steeltoe.Common.Expression.Internal.Spring.Ast.Indexer.GenerateCode(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf) -> void
+override Steeltoe.Common.Expression.Internal.Spring.Ast.Indexer.GetValueInternal(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.Indexer.GetValueRef(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.Spring.Ast.IValueRef
+override Steeltoe.Common.Expression.Internal.Spring.Ast.Indexer.IsCompilable() -> bool
+override Steeltoe.Common.Expression.Internal.Spring.Ast.Indexer.IsWritable(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> bool
+override Steeltoe.Common.Expression.Internal.Spring.Ast.Indexer.SetValue(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state, object newValue) -> void
+override Steeltoe.Common.Expression.Internal.Spring.Ast.Indexer.ToStringAST() -> string
+override Steeltoe.Common.Expression.Internal.Spring.Ast.InlineList.GenerateCode(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf) -> void
+override Steeltoe.Common.Expression.Internal.Spring.Ast.InlineList.GetValueInternal(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.InlineList.IsCompilable() -> bool
+override Steeltoe.Common.Expression.Internal.Spring.Ast.InlineList.ToStringAST() -> string
+override Steeltoe.Common.Expression.Internal.Spring.Ast.InlineMap.GetValueInternal(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.InlineMap.ToStringAST() -> string
+override Steeltoe.Common.Expression.Internal.Spring.Ast.IntLiteral.GenerateCode(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf) -> void
+override Steeltoe.Common.Expression.Internal.Spring.Ast.IntLiteral.GetLiteralValue() -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.IntLiteral.IsCompilable() -> bool
+override Steeltoe.Common.Expression.Internal.Spring.Ast.Literal.GetValueInternal(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.Literal.ToString() -> string
+override Steeltoe.Common.Expression.Internal.Spring.Ast.Literal.ToStringAST() -> string
+override Steeltoe.Common.Expression.Internal.Spring.Ast.LongLiteral.GenerateCode(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf) -> void
+override Steeltoe.Common.Expression.Internal.Spring.Ast.LongLiteral.GetLiteralValue() -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.LongLiteral.IsCompilable() -> bool
+override Steeltoe.Common.Expression.Internal.Spring.Ast.MethodReference.GenerateCode(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf) -> void
+override Steeltoe.Common.Expression.Internal.Spring.Ast.MethodReference.GetValueInternal(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.MethodReference.GetValueRef(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.Spring.Ast.IValueRef
+override Steeltoe.Common.Expression.Internal.Spring.Ast.MethodReference.IsCompilable() -> bool
+override Steeltoe.Common.Expression.Internal.Spring.Ast.MethodReference.ToStringAST() -> string
+override Steeltoe.Common.Expression.Internal.Spring.Ast.NullLiteral.GenerateCode(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf) -> void
+override Steeltoe.Common.Expression.Internal.Spring.Ast.NullLiteral.GetLiteralValue() -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.NullLiteral.IsCompilable() -> bool
+override Steeltoe.Common.Expression.Internal.Spring.Ast.NullLiteral.ToString() -> string
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpAnd.GenerateCode(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf) -> void
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpAnd.GetValueInternal(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpAnd.IsCompilable() -> bool
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpDec.GetValueInternal(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpDec.RightOperand.get -> Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpDec.ToStringAST() -> string
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpDivide.GenerateCode(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf) -> void
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpDivide.GetValueInternal(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpDivide.IsCompilable() -> bool
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpEQ.GenerateCode(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf) -> void
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpEQ.GetValueInternal(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpEQ.IsCompilable() -> bool
+override Steeltoe.Common.Expression.Internal.Spring.Ast.Operator.ToStringAST() -> string
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OperatorBetween.GetValueInternal(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OperatorInstanceof.GenerateCode(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf) -> void
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OperatorInstanceof.GetValueInternal(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OperatorInstanceof.IsCompilable() -> bool
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OperatorMatches.GetValueInternal(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OperatorNot.GenerateCode(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf) -> void
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OperatorNot.GetValueInternal(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OperatorNot.IsCompilable() -> bool
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OperatorNot.ToStringAST() -> string
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OperatorPower.GetValueInternal(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpGE.GenerateCode(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf) -> void
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpGE.GetValueInternal(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpGE.IsCompilable() -> bool
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpGT.GenerateCode(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf) -> void
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpGT.GetValueInternal(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpGT.IsCompilable() -> bool
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpInc.GetValueInternal(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpInc.RightOperand.get -> Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpInc.ToStringAST() -> string
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpLE.GenerateCode(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf) -> void
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpLE.GetValueInternal(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpLE.IsCompilable() -> bool
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpLT.GenerateCode(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf) -> void
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpLT.GetValueInternal(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpLT.IsCompilable() -> bool
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpMinus.GenerateCode(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf) -> void
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpMinus.GetValueInternal(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpMinus.IsCompilable() -> bool
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpMinus.RightOperand.get -> Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpMinus.ToStringAST() -> string
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpModulus.GenerateCode(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf) -> void
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpModulus.GetValueInternal(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpModulus.IsCompilable() -> bool
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpMultiply.GenerateCode(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf) -> void
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpMultiply.GetValueInternal(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpMultiply.IsCompilable() -> bool
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpNE.GenerateCode(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf) -> void
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpNE.GetValueInternal(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpNE.IsCompilable() -> bool
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpOr.GenerateCode(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf) -> void
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpOr.GetValueInternal(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpOr.IsCompilable() -> bool
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpPlus.GenerateCode(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf) -> void
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpPlus.GetValueInternal(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpPlus.IsCompilable() -> bool
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpPlus.RightOperand.get -> Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode
+override Steeltoe.Common.Expression.Internal.Spring.Ast.OpPlus.ToStringAST() -> string
+override Steeltoe.Common.Expression.Internal.Spring.Ast.Projection.GetValueInternal(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.Projection.GetValueRef(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.Spring.Ast.IValueRef
+override Steeltoe.Common.Expression.Internal.Spring.Ast.Projection.ToStringAST() -> string
+override Steeltoe.Common.Expression.Internal.Spring.Ast.PropertyOrFieldReference.GenerateCode(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf) -> void
+override Steeltoe.Common.Expression.Internal.Spring.Ast.PropertyOrFieldReference.GetValueInternal(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.PropertyOrFieldReference.GetValueRef(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.Spring.Ast.IValueRef
+override Steeltoe.Common.Expression.Internal.Spring.Ast.PropertyOrFieldReference.IsCompilable() -> bool
+override Steeltoe.Common.Expression.Internal.Spring.Ast.PropertyOrFieldReference.IsWritable(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> bool
+override Steeltoe.Common.Expression.Internal.Spring.Ast.PropertyOrFieldReference.SetValue(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state, object newValue) -> void
+override Steeltoe.Common.Expression.Internal.Spring.Ast.PropertyOrFieldReference.ToStringAST() -> string
+override Steeltoe.Common.Expression.Internal.Spring.Ast.QualifiedIdentifier.GetValueInternal(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.QualifiedIdentifier.ToStringAST() -> string
+override Steeltoe.Common.Expression.Internal.Spring.Ast.RealLiteral.GenerateCode(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf) -> void
+override Steeltoe.Common.Expression.Internal.Spring.Ast.RealLiteral.GetLiteralValue() -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.RealLiteral.IsCompilable() -> bool
+override Steeltoe.Common.Expression.Internal.Spring.Ast.Selection.GetValueInternal(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.Selection.GetValueRef(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.Spring.Ast.IValueRef
+override Steeltoe.Common.Expression.Internal.Spring.Ast.Selection.ToStringAST() -> string
+override Steeltoe.Common.Expression.Internal.Spring.Ast.ServiceReference.GetValueInternal(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.ServiceReference.ToStringAST() -> string
+override Steeltoe.Common.Expression.Internal.Spring.Ast.StringLiteral.GenerateCode(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf) -> void
+override Steeltoe.Common.Expression.Internal.Spring.Ast.StringLiteral.GetLiteralValue() -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.StringLiteral.IsCompilable() -> bool
+override Steeltoe.Common.Expression.Internal.Spring.Ast.StringLiteral.ToString() -> string
+override Steeltoe.Common.Expression.Internal.Spring.Ast.Ternary.GenerateCode(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf) -> void
+override Steeltoe.Common.Expression.Internal.Spring.Ast.Ternary.GetValueInternal(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.Ternary.IsCompilable() -> bool
+override Steeltoe.Common.Expression.Internal.Spring.Ast.Ternary.ToStringAST() -> string
+override Steeltoe.Common.Expression.Internal.Spring.Ast.TypeReference.GenerateCode(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf) -> void
+override Steeltoe.Common.Expression.Internal.Spring.Ast.TypeReference.GetValueInternal(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.TypeReference.IsCompilable() -> bool
+override Steeltoe.Common.Expression.Internal.Spring.Ast.TypeReference.ToStringAST() -> string
+override Steeltoe.Common.Expression.Internal.Spring.Ast.VariableReference.GenerateCode(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf) -> void
+override Steeltoe.Common.Expression.Internal.Spring.Ast.VariableReference.GetValueInternal(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+override Steeltoe.Common.Expression.Internal.Spring.Ast.VariableReference.GetValueRef(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.Spring.Ast.IValueRef
+override Steeltoe.Common.Expression.Internal.Spring.Ast.VariableReference.IsCompilable() -> bool
+override Steeltoe.Common.Expression.Internal.Spring.Ast.VariableReference.IsWritable(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> bool
+override Steeltoe.Common.Expression.Internal.Spring.Ast.VariableReference.SetValue(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state, object newValue) -> void
+override Steeltoe.Common.Expression.Internal.Spring.Ast.VariableReference.ToStringAST() -> string
+override Steeltoe.Common.Expression.Internal.Spring.SpelMessage.Equals(object obj) -> bool
+override Steeltoe.Common.Expression.Internal.Spring.SpelMessage.GetHashCode() -> int
+override Steeltoe.Common.Expression.Internal.Spring.Standard.InternalSpelExpressionParser.DoParseExpression(string expressionString, Steeltoe.Common.Expression.Internal.IParserContext context) -> Steeltoe.Common.Expression.Internal.IExpression
+override Steeltoe.Common.Expression.Internal.Spring.Standard.SpelCompiledExpression.GetValue(object target, Steeltoe.Common.Expression.Internal.IEvaluationContext context) -> object
+override Steeltoe.Common.Expression.Internal.Spring.Standard.SpelExpressionParser.DoParseExpression(string expressionString, Steeltoe.Common.Expression.Internal.IParserContext context) -> Steeltoe.Common.Expression.Internal.IExpression
+override Steeltoe.Common.Expression.Internal.Spring.Standard.Token.ToString() -> string
+override Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.Equals(object obj) -> bool
+override Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.GetHashCode() -> int
+override Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.ToString() -> string
+override Steeltoe.Common.Expression.Internal.Spring.Support.ArgumentsMatchInfo.ToString() -> string
+override Steeltoe.Common.Expression.Internal.Spring.Support.DataBindingMethodResolver.Resolve(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object targetObject, string name, System.Collections.Generic.List<System.Type> argumentTypes) -> Steeltoe.Common.Expression.Internal.IMethodExecutor
+override Steeltoe.Common.Expression.Internal.Spring.Support.ReflectivePropertyAccessor.PropertyCacheKey.Equals(object obj) -> bool
+override Steeltoe.Common.Expression.Internal.Spring.Support.ReflectivePropertyAccessor.PropertyCacheKey.GetHashCode() -> int
+override Steeltoe.Common.Expression.Internal.Spring.Support.ReflectivePropertyAccessor.PropertyCacheKey.ToString() -> string
+override Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor.Equals(object obj) -> bool
+override Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor.GetHashCode() -> int
+override Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor.ToString() -> string
+override Steeltoe.Common.Expression.Internal.TypedValue.Equals(object obj) -> bool
+override Steeltoe.Common.Expression.Internal.TypedValue.GetHashCode() -> int
+override Steeltoe.Common.Expression.Internal.TypedValue.ToString() -> string
+readonly Steeltoe.Common.Expression.Internal.Spring.Ast.Operator.DescriptorComparison._areCompatible -> bool
+readonly Steeltoe.Common.Expression.Internal.Spring.Ast.Operator.DescriptorComparison._areNumbers -> bool
+readonly Steeltoe.Common.Expression.Internal.Spring.Ast.Operator.DescriptorComparison._compatibleType -> Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor
+readonly Steeltoe.Common.Expression.Internal.Spring.Ast.Operator._operatorName -> string
+static readonly Steeltoe.Common.Expression.Internal.Contexts.StandardServiceExpressionResolver.DEFAULT_EXPRESSION_PREFIX -> string
+static readonly Steeltoe.Common.Expression.Internal.Contexts.StandardServiceExpressionResolver.DEFAULT_EXPRESSION_SUFFIX -> string
+static readonly Steeltoe.Common.Expression.Internal.Spring.Ast.NullValueRef.INSTANCE -> Steeltoe.Common.Expression.Internal.Spring.Ast.NullValueRef
+static readonly Steeltoe.Common.Expression.Internal.Spring.Ast.Operator.DescriptorComparison.INCOMPATIBLE_NUMBERS -> Steeltoe.Common.Expression.Internal.Spring.Ast.Operator.DescriptorComparison
+static readonly Steeltoe.Common.Expression.Internal.Spring.Ast.Operator.DescriptorComparison.NOT_NUMBERS -> Steeltoe.Common.Expression.Internal.Spring.Ast.Operator.DescriptorComparison
+static readonly Steeltoe.Common.Expression.Internal.Spring.Ast.Operator._equalityCheck -> System.Reflection.MethodInfo
+static readonly Steeltoe.Common.Expression.Internal.Spring.Ast.SpelTypeCode.BOOLEAN -> Steeltoe.Common.Expression.Internal.Spring.Ast.SpelTypeCode
+static readonly Steeltoe.Common.Expression.Internal.Spring.Ast.SpelTypeCode.BYTE -> Steeltoe.Common.Expression.Internal.Spring.Ast.SpelTypeCode
+static readonly Steeltoe.Common.Expression.Internal.Spring.Ast.SpelTypeCode.CHAR -> Steeltoe.Common.Expression.Internal.Spring.Ast.SpelTypeCode
+static readonly Steeltoe.Common.Expression.Internal.Spring.Ast.SpelTypeCode.DOUBLE -> Steeltoe.Common.Expression.Internal.Spring.Ast.SpelTypeCode
+static readonly Steeltoe.Common.Expression.Internal.Spring.Ast.SpelTypeCode.FLOAT -> Steeltoe.Common.Expression.Internal.Spring.Ast.SpelTypeCode
+static readonly Steeltoe.Common.Expression.Internal.Spring.Ast.SpelTypeCode.INT -> Steeltoe.Common.Expression.Internal.Spring.Ast.SpelTypeCode
+static readonly Steeltoe.Common.Expression.Internal.Spring.Ast.SpelTypeCode.LONG -> Steeltoe.Common.Expression.Internal.Spring.Ast.SpelTypeCode
+static readonly Steeltoe.Common.Expression.Internal.Spring.Ast.SpelTypeCode.OBJECT -> Steeltoe.Common.Expression.Internal.Spring.Ast.SpelTypeCode
+static readonly Steeltoe.Common.Expression.Internal.Spring.Ast.SpelTypeCode.SBYTE -> Steeltoe.Common.Expression.Internal.Spring.Ast.SpelTypeCode
+static readonly Steeltoe.Common.Expression.Internal.Spring.Ast.SpelTypeCode.SHORT -> Steeltoe.Common.Expression.Internal.Spring.Ast.SpelTypeCode
+static readonly Steeltoe.Common.Expression.Internal.Spring.Ast.SpelTypeCode.UINT -> Steeltoe.Common.Expression.Internal.Spring.Ast.SpelTypeCode
+static readonly Steeltoe.Common.Expression.Internal.Spring.Ast.SpelTypeCode.ULONG -> Steeltoe.Common.Expression.Internal.Spring.Ast.SpelTypeCode
+static readonly Steeltoe.Common.Expression.Internal.Spring.Ast.SpelTypeCode.USHORT -> Steeltoe.Common.Expression.Internal.Spring.Ast.SpelTypeCode
+static readonly Steeltoe.Common.Expression.Internal.Spring.DefaultParseContext.TEMPLATE_EXPRESSION -> Steeltoe.Common.Expression.Internal.IParserContext
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.ARGLIST_SHOULD_NOT_BE_EVALUATED -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.ARRAY_INDEX_OUT_OF_BOUNDS -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.BETWEEN_RIGHT_OPERAND_MUST_BE_TWO_ELEMENT_LIST -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.CANNOT_INDEX_INTO_NULL_VALUE -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.COLLECTION_INDEX_OUT_OF_BOUNDS -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.CONSTRUCTOR_INVOCATION_PROBLEM -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.CONSTRUCTOR_NOT_FOUND -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.EXCEPTION_DURING_FUNCTION_CALL -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.EXCEPTION_DURING_METHOD_INVOCATION -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.EXCEPTION_DURING_PROPERTY_READ -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.EXCEPTION_DURING_PROPERTY_WRITE -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.EXCEPTION_DURING_SERVICE_RESOLUTION -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.EXCEPTION_RUNNING_COMPILED_EXPRESSION -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.FLAWED_PATTERN -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.FUNCTION_MUST_BE_STATIC -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.FUNCTION_NOT_DEFINED -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.FUNCTION_REFERENCE_CANNOT_BE_INVOKED -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.INCORRECT_ELEMENT_TYPE_FOR_ARRAY -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.INCORRECT_NUMBER_OF_ARGUMENTS_TO_FUNCTION -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.INDEXING_NOT_SUPPORTED_FOR_TYPE -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.INITIALIZER_LENGTH_INCORRECT -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.INSTANCEOF_OPERATOR_NEEDS_CLASS_OPERAND -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.INVALID_FIRST_OPERAND_FOR_MATCHES_OPERATOR -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.INVALID_PATTERN -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.INVALID_SECOND_OPERAND_FOR_MATCHES_OPERATOR -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.INVALID_SERVICE_REFERENCE -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.INVALID_TYPE_FOR_SELECTION -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.LEFT_OPERAND_PROBLEM -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.METHOD_CALL_ON_NULL_OBJECT_NOT_ALLOWED -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.METHOD_NOT_FOUND -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.MISSING_ARRAY_DIMENSION -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.MISSING_CHARACTER -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.MISSING_CONSTRUCTOR_ARGS -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.MISSING_LEADING_ZERO_FOR_NUMBER -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.MISSING_SELECTION_EXPRESSION -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.MORE_INPUT -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.MULTIDIM_ARRAY_INITIALIZER_NOT_SUPPORTED -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.MULTIPLE_POSSIBLE_METHODS -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.NON_TERMINATING_DOUBLE_QUOTED_STRING -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.NON_TERMINATING_QUOTED_STRING -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.NOT_AN_INTEGER -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.NOT_ASSIGNABLE -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.NOT_A_LONG -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.NOT_A_REAL -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.NOT_COMPARABLE -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.NOT_EXPECTED_TOKEN -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.NO_SERVICE_RESOLVER_REGISTERED -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.OOD -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.OPERAND_NOT_DECREMENTABLE -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.OPERAND_NOT_INCREMENTABLE -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.OPERATOR_NOT_SUPPORTED_BETWEEN_TYPES -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.PROBLEM_LOCATING_METHOD -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.PROJECTION_NOT_SUPPORTED_ON_TYPE -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.PROPERTY_OR_FIELD_NOT_READABLE -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.PROPERTY_OR_FIELD_NOT_READABLE_ON_NULL -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.PROPERTY_OR_FIELD_NOT_WRITABLE -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.PROPERTY_OR_FIELD_NOT_WRITABLE_ON_NULL -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.REAL_CANNOT_BE_LONG -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.RESULT_OF_SELECTION_CRITERIA_IS_NOT_BOOLEAN -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.RIGHT_OPERAND_PROBLEM -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.RUN_OUT_OF_ARGUMENTS -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.SETVALUE_NOT_SUPPORTED -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.STRING_INDEX_OUT_OF_BOUNDS -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.TYPE_CONVERSION_ERROR -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.TYPE_NAME_EXPECTED_FOR_ARRAY_CONSTRUCTION -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.TYPE_NOT_FOUND -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.UNABLE_TO_CREATE_LIST_FOR_INDEXING -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.UNABLE_TO_CREATE_MAP_FOR_INDEXING -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.UNABLE_TO_DYNAMICALLY_CREATE_OBJECT -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.UNABLE_TO_GROW_COLLECTION -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.UNABLE_TO_GROW_COLLECTION_UNKNOWN_ELEMENT_TYPE -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.UNEXPECTED_DATA_AFTER_DOT -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.SpelMessage.UNEXPECTED_ESCAPE_CHAR -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.ASSIGN -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.BETWEEN -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.COLON -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.COMMA -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.DEC -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.DIV -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.DOT -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.ELVIS -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.EQ -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.FACTORY_SERVICE_REF -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.GE -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.GT -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.HASH -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.IDENTIFIER -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.INC -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.INSTANCEOF -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.LCURLY -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.LE -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.LITERAL_HEXINT -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.LITERAL_HEXLONG -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.LITERAL_INT -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.LITERAL_LONG -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.LITERAL_REAL -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.LITERAL_REAL_FLOAT -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.LITERAL_STRING -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.LPAREN -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.LSQUARE -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.LT -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.MATCHES -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.MINUS -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.MOD -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.NE -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.NOT -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.PLUS -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.POWER -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.PROJECT -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.QMARK -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.RCURLY -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.RPAREN -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.RSQUARE -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.SAFE_NAVI -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.SELECT -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.SELECT_FIRST -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.SELECT_LAST -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.SERVICE_REF -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.STAR -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.SYMBOLIC_AND -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.SYMBOLIC_OR -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+static readonly Steeltoe.Common.Expression.Internal.Spring.Support.BooleanTypedValue.FALSE -> Steeltoe.Common.Expression.Internal.Spring.Support.BooleanTypedValue
+static readonly Steeltoe.Common.Expression.Internal.Spring.Support.BooleanTypedValue.TRUE -> Steeltoe.Common.Expression.Internal.Spring.Support.BooleanTypedValue
+static readonly Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor.A -> Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor
+static readonly Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor.B -> Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor
+static readonly Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor.C -> Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor
+static readonly Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor.D -> Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor
+static readonly Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor.F -> Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor
+static readonly Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor.I -> Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor
+static readonly Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor.J -> Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor
+static readonly Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor.M -> Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor
+static readonly Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor.N -> Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor
+static readonly Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor.O -> Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor
+static readonly Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor.OBJECT -> Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor
+static readonly Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor.P -> Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor
+static readonly Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor.Q -> Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor
+static readonly Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor.S -> Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor
+static readonly Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor.STRING -> Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor
+static readonly Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor.TYPE -> Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor
+static readonly Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor.V -> Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor
+static readonly Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor.Z -> Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor
+static readonly Steeltoe.Common.Expression.Internal.TypedValue.NULL -> Steeltoe.Common.Expression.Internal.TypedValue
+static Steeltoe.Common.Expression.Internal.Contexts.ServiceFactoryResolver.GetServiceNameAndType(Steeltoe.Common.Expression.Internal.IEvaluationContext context, string serviceName, out string name) -> System.Type
+static Steeltoe.Common.Expression.Internal.Spring.Ast.AstUtils.GetPropertyAccessorsToTry(System.Type targetType, System.Collections.Generic.List<Steeltoe.Common.Expression.Internal.IPropertyAccessor> propertyAccessors) -> System.Collections.Generic.List<Steeltoe.Common.Expression.Internal.IPropertyAccessor>
+static Steeltoe.Common.Expression.Internal.Spring.Ast.FormatHelper.FormatClassNameForMessage(System.Type clazz) -> string
+static Steeltoe.Common.Expression.Internal.Spring.Ast.FormatHelper.FormatMethodForMessage(string name, System.Collections.Generic.IList<System.Type> argumentTypes) -> string
+static Steeltoe.Common.Expression.Internal.Spring.Ast.Literal.GetIntLiteral(string numberToken, int startPos, int endPos, System.Globalization.NumberStyles radix) -> Steeltoe.Common.Expression.Internal.Spring.Ast.Literal
+static Steeltoe.Common.Expression.Internal.Spring.Ast.Literal.GetLongLiteral(string numberToken, int startPos, int endPos, System.Globalization.NumberStyles radix) -> Steeltoe.Common.Expression.Internal.Spring.Ast.Literal
+static Steeltoe.Common.Expression.Internal.Spring.Ast.Literal.GetNumberLiteral(string numberToken) -> string
+static Steeltoe.Common.Expression.Internal.Spring.Ast.Literal.GetRealLiteral(string numberToken, int startPos, int endPos, bool isFloat) -> Steeltoe.Common.Expression.Internal.Spring.Ast.Literal
+static Steeltoe.Common.Expression.Internal.Spring.Ast.Operator.DescriptorComparison.CheckNumericCompatibility(Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor leftDeclaredDescriptor, Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor rightDeclaredDescriptor, Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor leftActualDescriptor, Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor rightActualDescriptor) -> Steeltoe.Common.Expression.Internal.Spring.Ast.Operator.DescriptorComparison
+static Steeltoe.Common.Expression.Internal.Spring.Ast.Operator.EqualityCheck(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object left, object right) -> bool
+static Steeltoe.Common.Expression.Internal.Spring.Ast.Operator.IsNumber(object target) -> bool
+static Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode.GenerateCodeForArgument(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf, Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode argument, Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor paramDesc) -> void
+static Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode.GenerateCodeForArguments(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf, System.Reflection.MethodBase member, Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode[] arguments) -> void
+static Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode.GetLdElemInsn(System.Type arrElemType) -> System.Reflection.Emit.OpCode
+static Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode.GetStelemInsn(System.Type arrElemType) -> System.Reflection.Emit.OpCode
+static Steeltoe.Common.Expression.Internal.Spring.Ast.SpelTypeCode.ForName(string name) -> Steeltoe.Common.Expression.Internal.Spring.Ast.SpelTypeCode
+static Steeltoe.Common.Expression.Internal.Spring.Ast.SpelTypeCode.ForType(System.Type clazz) -> Steeltoe.Common.Expression.Internal.Spring.Ast.SpelTypeCode
+static Steeltoe.Common.Expression.Internal.Spring.CodeFlow.AreBoxingCompatible(Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor desc1, Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor desc2) -> bool
+static Steeltoe.Common.Expression.Internal.Spring.CodeFlow.InsertAnyNecessaryTypeConversionBytecodes(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor targetDescriptor, Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor stackDescriptor) -> void
+static Steeltoe.Common.Expression.Internal.Spring.CodeFlow.InsertBoxIfNecessary(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor descriptor) -> void
+static Steeltoe.Common.Expression.Internal.Spring.CodeFlow.InsertCastClass(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor descriptor) -> void
+static Steeltoe.Common.Expression.Internal.Spring.CodeFlow.InsertNumericUnboxOrPrimitiveTypeCoercion(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor stackDescriptor, Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor targetDescriptor) -> void
+static Steeltoe.Common.Expression.Internal.Spring.CodeFlow.IsBooleanCompatible(Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor descriptor) -> bool
+static Steeltoe.Common.Expression.Internal.Spring.CodeFlow.IsIntegerForNumericOp(object value) -> bool
+static Steeltoe.Common.Expression.Internal.Spring.CodeFlow.IsPrimitive(System.Type type) -> bool
+static Steeltoe.Common.Expression.Internal.Spring.CodeFlow.IsPrimitiveOrUnboxableSupportedNumber(Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor descriptor) -> bool
+static Steeltoe.Common.Expression.Internal.Spring.CodeFlow.IsPrimitiveOrUnboxableSupportedNumberOrBoolean(Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor descriptor) -> bool
+static Steeltoe.Common.Expression.Internal.Spring.CodeFlow.IsValueType(Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor descriptor) -> bool
+static Steeltoe.Common.Expression.Internal.Spring.CodeFlow.LoadEvaluationContext(System.Reflection.Emit.ILGenerator gen) -> void
+static Steeltoe.Common.Expression.Internal.Spring.CodeFlow.LoadTarget(System.Reflection.Emit.ILGenerator gen) -> void
+static Steeltoe.Common.Expression.Internal.Spring.CodeFlow.ToBoxedDescriptor(Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor descriptor) -> Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor
+static Steeltoe.Common.Expression.Internal.Spring.CodeFlow.ToDescriptor(System.Type type) -> Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor
+static Steeltoe.Common.Expression.Internal.Spring.CodeFlow.ToDescriptorFromObject(object value) -> Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor
+static Steeltoe.Common.Expression.Internal.Spring.CodeFlow.ToDescriptors(System.Type[] types) -> Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor[]
+static Steeltoe.Common.Expression.Internal.Spring.CodeFlow.ToPrimitiveTargetDescriptor(Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor descriptor) -> Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor
+static Steeltoe.Common.Expression.Internal.Spring.Common.ExpressionUtils.ConvertTypedValue(Steeltoe.Common.Expression.Internal.IEvaluationContext context, Steeltoe.Common.Expression.Internal.ITypedValue typedValue, System.Type targetType) -> object
+static Steeltoe.Common.Expression.Internal.Spring.Common.ExpressionUtils.ConvertTypedValue<T>(Steeltoe.Common.Expression.Internal.IEvaluationContext context, Steeltoe.Common.Expression.Internal.ITypedValue typedValue) -> T
+static Steeltoe.Common.Expression.Internal.Spring.Common.ExpressionUtils.ToBoolean(Steeltoe.Common.Expression.Internal.ITypeConverter typeConverter, Steeltoe.Common.Expression.Internal.ITypedValue typedValue) -> bool
+static Steeltoe.Common.Expression.Internal.Spring.Common.ExpressionUtils.ToByte(Steeltoe.Common.Expression.Internal.ITypeConverter typeConverter, Steeltoe.Common.Expression.Internal.ITypedValue typedValue) -> byte
+static Steeltoe.Common.Expression.Internal.Spring.Common.ExpressionUtils.ToChar(Steeltoe.Common.Expression.Internal.ITypeConverter typeConverter, Steeltoe.Common.Expression.Internal.ITypedValue typedValue) -> char
+static Steeltoe.Common.Expression.Internal.Spring.Common.ExpressionUtils.ToDouble(Steeltoe.Common.Expression.Internal.ITypeConverter typeConverter, Steeltoe.Common.Expression.Internal.ITypedValue typedValue) -> double
+static Steeltoe.Common.Expression.Internal.Spring.Common.ExpressionUtils.ToFloat(Steeltoe.Common.Expression.Internal.ITypeConverter typeConverter, Steeltoe.Common.Expression.Internal.ITypedValue typedValue) -> float
+static Steeltoe.Common.Expression.Internal.Spring.Common.ExpressionUtils.ToInt(Steeltoe.Common.Expression.Internal.ITypeConverter typeConverter, Steeltoe.Common.Expression.Internal.ITypedValue typedValue) -> int
+static Steeltoe.Common.Expression.Internal.Spring.Common.ExpressionUtils.ToLong(Steeltoe.Common.Expression.Internal.ITypeConverter typeConverter, Steeltoe.Common.Expression.Internal.ITypedValue typedValue) -> long
+static Steeltoe.Common.Expression.Internal.Spring.Common.ExpressionUtils.ToSByte(Steeltoe.Common.Expression.Internal.ITypeConverter typeConverter, Steeltoe.Common.Expression.Internal.ITypedValue typedValue) -> sbyte
+static Steeltoe.Common.Expression.Internal.Spring.Common.ExpressionUtils.ToShort(Steeltoe.Common.Expression.Internal.ITypeConverter typeConverter, Steeltoe.Common.Expression.Internal.ITypedValue typedValue) -> short
+static Steeltoe.Common.Expression.Internal.Spring.Common.ExpressionUtils.ToUInt(Steeltoe.Common.Expression.Internal.ITypeConverter typeConverter, Steeltoe.Common.Expression.Internal.ITypedValue typedValue) -> uint
+static Steeltoe.Common.Expression.Internal.Spring.Common.ExpressionUtils.ToULong(Steeltoe.Common.Expression.Internal.ITypeConverter typeConverter, Steeltoe.Common.Expression.Internal.ITypedValue typedValue) -> ulong
+static Steeltoe.Common.Expression.Internal.Spring.Common.ExpressionUtils.ToUShort(Steeltoe.Common.Expression.Internal.ITypeConverter typeConverter, Steeltoe.Common.Expression.Internal.ITypedValue typedValue) -> ushort
+static Steeltoe.Common.Expression.Internal.Spring.Standard.SpelCompiler.Compile(Steeltoe.Common.Expression.Internal.IExpression expression) -> bool
+static Steeltoe.Common.Expression.Internal.Spring.Standard.SpelCompiler.GetCompiler(Microsoft.Extensions.Logging.ILoggerFactory loggerFactory = null) -> Steeltoe.Common.Expression.Internal.Spring.Standard.SpelCompiler
+static Steeltoe.Common.Expression.Internal.Spring.Standard.SpelCompiler.RevertToInterpreted(Steeltoe.Common.Expression.Internal.IExpression expression) -> void
+static Steeltoe.Common.Expression.Internal.Spring.Support.BooleanTypedValue.ForValue(bool b) -> Steeltoe.Common.Expression.Internal.Spring.Support.BooleanTypedValue
+static Steeltoe.Common.Expression.Internal.Spring.Support.DataBindingMethodResolver.ForInstanceMethodInvocation() -> Steeltoe.Common.Expression.Internal.Spring.Support.DataBindingMethodResolver
+static Steeltoe.Common.Expression.Internal.Spring.Support.DataBindingPropertyAccessor.ForReadOnlyAccess() -> Steeltoe.Common.Expression.Internal.Spring.Support.DataBindingPropertyAccessor
+static Steeltoe.Common.Expression.Internal.Spring.Support.DataBindingPropertyAccessor.ForReadWriteAccess() -> Steeltoe.Common.Expression.Internal.Spring.Support.DataBindingPropertyAccessor
+static Steeltoe.Common.Expression.Internal.Spring.Support.MethodBaseExtensions.GetParameterTypes(this System.Reflection.MethodBase method) -> System.Type[]
+static Steeltoe.Common.Expression.Internal.Spring.Support.MethodBaseExtensions.IsVarArgs(this System.Reflection.MethodBase method) -> bool
+static Steeltoe.Common.Expression.Internal.Spring.Support.ReflectionHelper.CompareArguments(System.Collections.Generic.List<System.Type> expectedArgTypes, System.Collections.Generic.List<System.Type> suppliedArgTypes, Steeltoe.Common.Expression.Internal.ITypeConverter typeConverter) -> Steeltoe.Common.Expression.Internal.Spring.Support.ArgumentsMatchInfo
+static Steeltoe.Common.Expression.Internal.Spring.Support.ReflectionHelper.CompareArgumentsVarargs(System.Collections.Generic.List<System.Type> expectedArgTypes, System.Collections.Generic.List<System.Type> suppliedArgTypes, Steeltoe.Common.Expression.Internal.ITypeConverter typeConverter) -> Steeltoe.Common.Expression.Internal.Spring.Support.ArgumentsMatchInfo
+static Steeltoe.Common.Expression.Internal.Spring.Support.ReflectionHelper.ConvertAllArguments(Steeltoe.Common.Expression.Internal.ITypeConverter converter, object[] arguments, System.Reflection.MethodInfo method) -> bool
+static Steeltoe.Common.Expression.Internal.Spring.Support.ReflectionHelper.ConvertArguments(Steeltoe.Common.Expression.Internal.ITypeConverter converter, object[] arguments, System.Reflection.MethodBase executable, int? varargsPosition) -> bool
+static Steeltoe.Common.Expression.Internal.Spring.Support.ReflectionHelper.GetAccessibleConstructor(System.Type clazz, params System.Type[] paramTypes) -> System.Reflection.ConstructorInfo
+static Steeltoe.Common.Expression.Internal.Spring.Support.ReflectionHelper.GetElementTypeDescriptor(System.Type type) -> System.Type
+static Steeltoe.Common.Expression.Internal.Spring.Support.ReflectionHelper.GetElementTypeDescriptor(System.Type type, object obj) -> System.Type
+static Steeltoe.Common.Expression.Internal.Spring.Support.ReflectionHelper.GetMapKeyTypeDescriptor(System.Type targetDescriptor) -> System.Type
+static Steeltoe.Common.Expression.Internal.Spring.Support.ReflectionHelper.GetMapKeyTypeDescriptor(System.Type targetDescriptor, object mapKey) -> System.Type
+static Steeltoe.Common.Expression.Internal.Spring.Support.ReflectionHelper.GetMapValueTypeDescriptor(System.Type targetDescriptor) -> System.Type
+static Steeltoe.Common.Expression.Internal.Spring.Support.ReflectionHelper.GetMapValueTypeDescriptor(System.Type targetDescriptor, object mapValue) -> System.Type
+static Steeltoe.Common.Expression.Internal.Spring.Support.ReflectionHelper.GetTypeDifferenceWeight(System.Collections.Generic.List<System.Type> paramTypes, System.Collections.Generic.List<System.Type> argTypes) -> int
+static Steeltoe.Common.Expression.Internal.Spring.Support.ReflectionHelper.IsPublic(System.Type type) -> bool
+static Steeltoe.Common.Expression.Internal.Spring.Support.ReflectionHelper.SetupArgumentsForVarargsInvocation(System.Type[] requiredParameterTypes, params object[] args) -> object[]
+static Steeltoe.Common.Expression.Internal.Spring.Support.SimpleEvaluationContext.ForPropertyAccessors(params Steeltoe.Common.Expression.Internal.IPropertyAccessor[] accessors) -> Steeltoe.Common.Expression.Internal.Spring.Support.SimpleEvaluationContext.Builder
+static Steeltoe.Common.Expression.Internal.Spring.Support.SimpleEvaluationContext.ForReadOnlyDataBinding() -> Steeltoe.Common.Expression.Internal.Spring.Support.SimpleEvaluationContext.Builder
+static Steeltoe.Common.Expression.Internal.Spring.Support.SimpleEvaluationContext.ForReadWriteDataBinding() -> Steeltoe.Common.Expression.Internal.Spring.Support.SimpleEvaluationContext.Builder
+static Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor.operator !=(Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor lhs, Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor rhs) -> bool
+static Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor.operator ==(Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor lhs, Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor rhs) -> bool
+Steeltoe.Common.Expression.Internal.AccessException
+Steeltoe.Common.Expression.Internal.AccessException.AccessException(string message) -> void
+Steeltoe.Common.Expression.Internal.AccessException.AccessException(string message, System.Exception cause) -> void
+Steeltoe.Common.Expression.Internal.Contexts.ConfigurationAccessor
+Steeltoe.Common.Expression.Internal.Contexts.ConfigurationAccessor.CanRead(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object target, string name) -> bool
+Steeltoe.Common.Expression.Internal.Contexts.ConfigurationAccessor.CanWrite(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object target, string name) -> bool
+Steeltoe.Common.Expression.Internal.Contexts.ConfigurationAccessor.ConfigurationAccessor() -> void
+Steeltoe.Common.Expression.Internal.Contexts.ConfigurationAccessor.GetSpecificTargetClasses() -> System.Collections.Generic.IList<System.Type>
+Steeltoe.Common.Expression.Internal.Contexts.ConfigurationAccessor.Read(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object target, string name) -> Steeltoe.Common.Expression.Internal.ITypedValue
+Steeltoe.Common.Expression.Internal.Contexts.ConfigurationAccessor.Write(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object target, string name, object newValue) -> void
+Steeltoe.Common.Expression.Internal.Contexts.DictionaryAccessor
+Steeltoe.Common.Expression.Internal.Contexts.DictionaryAccessor.CanRead(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object target, string name) -> bool
+Steeltoe.Common.Expression.Internal.Contexts.DictionaryAccessor.CanWrite(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object target, string name) -> bool
+Steeltoe.Common.Expression.Internal.Contexts.DictionaryAccessor.DictionaryAccessor() -> void
+Steeltoe.Common.Expression.Internal.Contexts.DictionaryAccessor.GenerateCode(string propertyName, System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf) -> void
+Steeltoe.Common.Expression.Internal.Contexts.DictionaryAccessor.GetPropertyType() -> System.Type
+Steeltoe.Common.Expression.Internal.Contexts.DictionaryAccessor.GetSpecificTargetClasses() -> System.Collections.Generic.IList<System.Type>
+Steeltoe.Common.Expression.Internal.Contexts.DictionaryAccessor.IsCompilable() -> bool
+Steeltoe.Common.Expression.Internal.Contexts.DictionaryAccessor.Read(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object target, string name) -> Steeltoe.Common.Expression.Internal.ITypedValue
+Steeltoe.Common.Expression.Internal.Contexts.DictionaryAccessor.Write(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object target, string name, object newValue) -> void
+Steeltoe.Common.Expression.Internal.Contexts.ServiceExpressionContext
+Steeltoe.Common.Expression.Internal.Contexts.ServiceExpressionContext.ApplicationContext.get -> Steeltoe.Common.Contexts.IApplicationContext
+Steeltoe.Common.Expression.Internal.Contexts.ServiceExpressionContext.ContainsService(string serviceName) -> bool
+Steeltoe.Common.Expression.Internal.Contexts.ServiceExpressionContext.ContainsService(string serviceName, System.Type serviceType) -> bool
+Steeltoe.Common.Expression.Internal.Contexts.ServiceExpressionContext.GetService(string serviceName) -> object
+Steeltoe.Common.Expression.Internal.Contexts.ServiceExpressionContext.GetService(string serviceName, System.Type serviceType) -> object
+Steeltoe.Common.Expression.Internal.Contexts.ServiceExpressionContext.ServiceExpressionContext(Steeltoe.Common.Contexts.IApplicationContext applicationContext) -> void
+Steeltoe.Common.Expression.Internal.Contexts.ServiceExpressionContextAccessor
+Steeltoe.Common.Expression.Internal.Contexts.ServiceExpressionContextAccessor.CanRead(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object target, string name) -> bool
+Steeltoe.Common.Expression.Internal.Contexts.ServiceExpressionContextAccessor.CanWrite(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object target, string name) -> bool
+Steeltoe.Common.Expression.Internal.Contexts.ServiceExpressionContextAccessor.GetSpecificTargetClasses() -> System.Collections.Generic.IList<System.Type>
+Steeltoe.Common.Expression.Internal.Contexts.ServiceExpressionContextAccessor.Read(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object target, string name) -> Steeltoe.Common.Expression.Internal.ITypedValue
+Steeltoe.Common.Expression.Internal.Contexts.ServiceExpressionContextAccessor.ServiceExpressionContextAccessor() -> void
+Steeltoe.Common.Expression.Internal.Contexts.ServiceExpressionContextAccessor.Write(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object target, string name, object newValue) -> void
+Steeltoe.Common.Expression.Internal.Contexts.ServiceFactoryAccessor
+Steeltoe.Common.Expression.Internal.Contexts.ServiceFactoryAccessor.CanRead(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object target, string name) -> bool
+Steeltoe.Common.Expression.Internal.Contexts.ServiceFactoryAccessor.CanWrite(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object target, string name) -> bool
+Steeltoe.Common.Expression.Internal.Contexts.ServiceFactoryAccessor.GetSpecificTargetClasses() -> System.Collections.Generic.IList<System.Type>
+Steeltoe.Common.Expression.Internal.Contexts.ServiceFactoryAccessor.Read(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object target, string name) -> Steeltoe.Common.Expression.Internal.ITypedValue
+Steeltoe.Common.Expression.Internal.Contexts.ServiceFactoryAccessor.ServiceFactoryAccessor() -> void
+Steeltoe.Common.Expression.Internal.Contexts.ServiceFactoryAccessor.Write(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object target, string name, object newValue) -> void
+Steeltoe.Common.Expression.Internal.Contexts.ServiceFactoryResolver
+Steeltoe.Common.Expression.Internal.Contexts.ServiceFactoryResolver.Resolve(Steeltoe.Common.Expression.Internal.IEvaluationContext context, string serviceName) -> object
+Steeltoe.Common.Expression.Internal.Contexts.ServiceFactoryResolver.ServiceFactoryResolver(Steeltoe.Common.Contexts.IApplicationContext applicationContext) -> void
+Steeltoe.Common.Expression.Internal.Contexts.StandardServiceExpressionResolver
+Steeltoe.Common.Expression.Internal.Contexts.StandardServiceExpressionResolver.Evaluate(string value, Steeltoe.Common.Expression.Internal.Contexts.IServiceExpressionContext evalContext) -> object
+Steeltoe.Common.Expression.Internal.Contexts.StandardServiceExpressionResolver.ExpressionParser.get -> Steeltoe.Common.Expression.Internal.IExpressionParser
+Steeltoe.Common.Expression.Internal.Contexts.StandardServiceExpressionResolver.ExpressionParser.set -> void
+Steeltoe.Common.Expression.Internal.Contexts.StandardServiceExpressionResolver.ExpressionPrefix.get -> string
+Steeltoe.Common.Expression.Internal.Contexts.StandardServiceExpressionResolver.ExpressionPrefix.set -> void
+Steeltoe.Common.Expression.Internal.Contexts.StandardServiceExpressionResolver.ExpressionSuffix.get -> string
+Steeltoe.Common.Expression.Internal.Contexts.StandardServiceExpressionResolver.ExpressionSuffix.set -> void
+Steeltoe.Common.Expression.Internal.Contexts.StandardServiceExpressionResolver.StandardServiceExpressionResolver() -> void
+Steeltoe.Common.Expression.Internal.EvaluationException
+Steeltoe.Common.Expression.Internal.EvaluationException.EvaluationException(int position, string message) -> void
+Steeltoe.Common.Expression.Internal.EvaluationException.EvaluationException(int position, string message, System.Exception cause) -> void
+Steeltoe.Common.Expression.Internal.EvaluationException.EvaluationException(string expressionstring, string message) -> void
+Steeltoe.Common.Expression.Internal.EvaluationException.EvaluationException(string message) -> void
+Steeltoe.Common.Expression.Internal.EvaluationException.EvaluationException(string message, System.Exception cause) -> void
+Steeltoe.Common.Expression.Internal.ExpressionException
+Steeltoe.Common.Expression.Internal.ExpressionException.ExpressionException(int position, string message) -> void
+Steeltoe.Common.Expression.Internal.ExpressionException.ExpressionException(int position, string message, System.Exception cause) -> void
+Steeltoe.Common.Expression.Internal.ExpressionException.ExpressionException(string expressionString, int position, string message) -> void
+Steeltoe.Common.Expression.Internal.ExpressionException.ExpressionException(string expressionString, string message) -> void
+Steeltoe.Common.Expression.Internal.ExpressionException.ExpressionException(string message) -> void
+Steeltoe.Common.Expression.Internal.ExpressionException.ExpressionException(string message, System.Exception cause) -> void
+Steeltoe.Common.Expression.Internal.ExpressionException.ExpressionString.get -> string
+Steeltoe.Common.Expression.Internal.ExpressionException.Position.get -> int
+Steeltoe.Common.Expression.Internal.ExpressionException.Position.set -> void
+Steeltoe.Common.Expression.Internal.ExpressionException.SimpleMessage.get -> string
+Steeltoe.Common.Expression.Internal.ExpressionException.ToDetailedString() -> string
+Steeltoe.Common.Expression.Internal.ExpressionInvocationTargetException
+Steeltoe.Common.Expression.Internal.ExpressionInvocationTargetException.ExpressionInvocationTargetException(int position, string message) -> void
+Steeltoe.Common.Expression.Internal.ExpressionInvocationTargetException.ExpressionInvocationTargetException(int position, string message, System.Exception cause) -> void
+Steeltoe.Common.Expression.Internal.ExpressionInvocationTargetException.ExpressionInvocationTargetException(string expressionString, string message) -> void
+Steeltoe.Common.Expression.Internal.ExpressionInvocationTargetException.ExpressionInvocationTargetException(string message) -> void
+Steeltoe.Common.Expression.Internal.ExpressionInvocationTargetException.ExpressionInvocationTargetException(string message, System.Exception cause) -> void
+Steeltoe.Common.Expression.Internal.ParseException
+Steeltoe.Common.Expression.Internal.ParseException.ParseException(int position, string message) -> void
+Steeltoe.Common.Expression.Internal.ParseException.ParseException(int position, string message, System.Exception cause) -> void
+Steeltoe.Common.Expression.Internal.ParseException.ParseException(string expressionString, int position, string message) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.Assign
+Steeltoe.Common.Expression.Internal.Spring.Ast.Assign.Assign(int startPos, int endPos, params Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode[] operands) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.AstUtils
+Steeltoe.Common.Expression.Internal.Spring.Ast.BooleanLiteral
+Steeltoe.Common.Expression.Internal.Spring.Ast.BooleanLiteral.BooleanLiteral(string payload, int startPos, int endPos, bool value) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.CompoundExpression
+Steeltoe.Common.Expression.Internal.Spring.Ast.CompoundExpression.CompoundExpression(int startPos, int endPos, params Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode[] expressionComponents) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.ConstructorReference
+Steeltoe.Common.Expression.Internal.Spring.Ast.ConstructorReference.ConstructorReference(int startPos, int endPos, params Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode[] arguments) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.ConstructorReference.ConstructorReference(int startPos, int endPos, Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode[] dimensions, params Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode[] arguments) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.Elvis
+Steeltoe.Common.Expression.Internal.Spring.Ast.Elvis.Elvis(int startPos, int endPos, params Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode[] args) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.FloatLiteral
+Steeltoe.Common.Expression.Internal.Spring.Ast.FloatLiteral.FloatLiteral(string payload, int startPos, int endPos, float value) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.FormatHelper
+Steeltoe.Common.Expression.Internal.Spring.Ast.FunctionReference
+Steeltoe.Common.Expression.Internal.Spring.Ast.FunctionReference.FunctionReference(string functionName, int startPos, int endPos, params Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode[] arguments) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.Identifier
+Steeltoe.Common.Expression.Internal.Spring.Ast.Identifier.Identifier(string payload, int startPos, int endPos) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.Indexer
+Steeltoe.Common.Expression.Internal.Spring.Ast.Indexer.Indexer(int startPos, int endPos, Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode expr) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.InlineList
+Steeltoe.Common.Expression.Internal.Spring.Ast.InlineList.GenerateInitCode(string constantFieldName, System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow codeflow, bool nested = false) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.InlineList.GetConstantValue() -> System.Collections.Generic.IList<object>
+Steeltoe.Common.Expression.Internal.Spring.Ast.InlineList.InlineList(int startPos, int endPos, params Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode[] args) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.InlineList.IsConstant.get -> bool
+Steeltoe.Common.Expression.Internal.Spring.Ast.InlineMap
+Steeltoe.Common.Expression.Internal.Spring.Ast.InlineMap.GetConstantValue() -> System.Collections.Generic.IDictionary<object, object>
+Steeltoe.Common.Expression.Internal.Spring.Ast.InlineMap.InlineMap(int startPos, int endPos, params Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode[] args) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.InlineMap.IsConstant.get -> bool
+Steeltoe.Common.Expression.Internal.Spring.Ast.IntLiteral
+Steeltoe.Common.Expression.Internal.Spring.Ast.IntLiteral.IntLiteral(string payload, int startPos, int endPos, int value) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.IValueRef
+Steeltoe.Common.Expression.Internal.Spring.Ast.IValueRef.GetValue() -> Steeltoe.Common.Expression.Internal.ITypedValue
+Steeltoe.Common.Expression.Internal.Spring.Ast.IValueRef.IsWritable.get -> bool
+Steeltoe.Common.Expression.Internal.Spring.Ast.IValueRef.SetValue(object newValue) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.Literal
+Steeltoe.Common.Expression.Internal.Spring.Ast.Literal.Literal(string originalValue, int startPos, int endPos) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.Literal.OriginalValue.get -> string
+Steeltoe.Common.Expression.Internal.Spring.Ast.LongLiteral
+Steeltoe.Common.Expression.Internal.Spring.Ast.LongLiteral.LongLiteral(string payload, int startPos, int endPos, long value) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.MethodReference
+Steeltoe.Common.Expression.Internal.Spring.Ast.MethodReference.ComputeExitDescriptor(object result, System.Type propertyReturnType) -> Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor
+Steeltoe.Common.Expression.Internal.Spring.Ast.MethodReference.MethodReference(bool nullSafe, string methodName, int startPos, int endPos, params Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode[] arguments) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.MethodReference.Name.get -> string
+Steeltoe.Common.Expression.Internal.Spring.Ast.NullLiteral
+Steeltoe.Common.Expression.Internal.Spring.Ast.NullLiteral.NullLiteral(int startPos, int endPos) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.NullValueRef
+Steeltoe.Common.Expression.Internal.Spring.Ast.NullValueRef.GetValue() -> Steeltoe.Common.Expression.Internal.ITypedValue
+Steeltoe.Common.Expression.Internal.Spring.Ast.NullValueRef.IsWritable.get -> bool
+Steeltoe.Common.Expression.Internal.Spring.Ast.NullValueRef.NullValueRef() -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.NullValueRef.SetValue(object newValue) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.OpAnd
+Steeltoe.Common.Expression.Internal.Spring.Ast.OpAnd.OpAnd(int startPos, int endPos, params Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode[] operands) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.OpDec
+Steeltoe.Common.Expression.Internal.Spring.Ast.OpDec.OpDec(int startPos, int endPos, bool postfix, params Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode[] operands) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.OpDivide
+Steeltoe.Common.Expression.Internal.Spring.Ast.OpDivide.OpDivide(int startPos, int endPos, params Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode[] operands) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.OpEQ
+Steeltoe.Common.Expression.Internal.Spring.Ast.OpEQ.OpEQ(int startPos, int endPos, params Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode[] operands) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.Operator
+Steeltoe.Common.Expression.Internal.Spring.Ast.Operator.DescriptorComparison
+Steeltoe.Common.Expression.Internal.Spring.Ast.Operator.DescriptorComparison.AreCompatible.get -> bool
+Steeltoe.Common.Expression.Internal.Spring.Ast.Operator.DescriptorComparison.AreNumbers.get -> bool
+Steeltoe.Common.Expression.Internal.Spring.Ast.Operator.DescriptorComparison.CompatibleType.get -> Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor
+Steeltoe.Common.Expression.Internal.Spring.Ast.Operator.DescriptorComparison.DescriptorComparison(bool areNumbers, bool areCompatible, Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor compatibleType) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.Operator.GenerateComparisonCode(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf, System.Reflection.Emit.OpCode brToElseInstruction) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.Operator.Operator(string payload, int startPos, int endPos, params Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode[] operands) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.Operator._leftActualDescriptor -> Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor
+Steeltoe.Common.Expression.Internal.Spring.Ast.Operator._rightActualDescriptor -> Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor
+Steeltoe.Common.Expression.Internal.Spring.Ast.OperatorBetween
+Steeltoe.Common.Expression.Internal.Spring.Ast.OperatorBetween.OperatorBetween(int startPos, int endPos, params Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode[] operands) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.OperatorInstanceof
+Steeltoe.Common.Expression.Internal.Spring.Ast.OperatorInstanceof.OperatorInstanceof(int startPos, int endPos, params Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode[] operands) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.OperatorMatches
+Steeltoe.Common.Expression.Internal.Spring.Ast.OperatorMatches.OperatorMatches(int startPos, int endPos, params Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode[] operands) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.OperatorNot
+Steeltoe.Common.Expression.Internal.Spring.Ast.OperatorNot.OperatorNot(int startPos, int endPos, Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode operand) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.OperatorPower
+Steeltoe.Common.Expression.Internal.Spring.Ast.OperatorPower.OperatorPower(int startPos, int endPos, params Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode[] operands) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.OpGE
+Steeltoe.Common.Expression.Internal.Spring.Ast.OpGE.OpGE(int startPos, int endPos, params Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode[] operands) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.OpGT
+Steeltoe.Common.Expression.Internal.Spring.Ast.OpGT.OpGT(int startPos, int endPos, params Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode[] operands) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.OpInc
+Steeltoe.Common.Expression.Internal.Spring.Ast.OpInc.OpInc(int startPos, int endPos, bool postfix, params Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode[] operands) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.OpLE
+Steeltoe.Common.Expression.Internal.Spring.Ast.OpLE.OpLE(int startPos, int endPos, params Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode[] operands) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.OpLT
+Steeltoe.Common.Expression.Internal.Spring.Ast.OpLT.OpLT(int startPos, int endPos, params Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode[] operands) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.OpMinus
+Steeltoe.Common.Expression.Internal.Spring.Ast.OpMinus.OpMinus(int startPos, int endPos, params Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode[] operands) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.OpModulus
+Steeltoe.Common.Expression.Internal.Spring.Ast.OpModulus.OpModulus(int startPos, int endPos, params Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode[] operands) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.OpMultiply
+Steeltoe.Common.Expression.Internal.Spring.Ast.OpMultiply.OpMultiply(int startPos, int endPos, params Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode[] operands) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.OpNE
+Steeltoe.Common.Expression.Internal.Spring.Ast.OpNE.OpNE(int startPos, int endPos, params Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode[] operands) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.OpOr
+Steeltoe.Common.Expression.Internal.Spring.Ast.OpOr.OpOr(int startPos, int endPos, params Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode[] operands) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.OpPlus
+Steeltoe.Common.Expression.Internal.Spring.Ast.OpPlus.OpPlus(int startPos, int endPos, params Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode[] operands) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.Projection
+Steeltoe.Common.Expression.Internal.Spring.Ast.Projection.Projection(bool nullSafe, int startPos, int endPos, Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode expression) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.PropertyOrFieldReference
+Steeltoe.Common.Expression.Internal.Spring.Ast.PropertyOrFieldReference.ComputeExitDescriptor(object result, System.Type propertyReturnType) -> Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor
+Steeltoe.Common.Expression.Internal.Spring.Ast.PropertyOrFieldReference.IsNullSafe.get -> bool
+Steeltoe.Common.Expression.Internal.Spring.Ast.PropertyOrFieldReference.IsWritableProperty(string name, Steeltoe.Common.Expression.Internal.ITypedValue contextObject, Steeltoe.Common.Expression.Internal.IEvaluationContext evalContext) -> bool
+Steeltoe.Common.Expression.Internal.Spring.Ast.PropertyOrFieldReference.Name.get -> string
+Steeltoe.Common.Expression.Internal.Spring.Ast.PropertyOrFieldReference.PropertyOrFieldReference(bool nullSafe, string propertyOrFieldName, int startPos, int endPos) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.PropertyOrFieldReference.SetExitTypeDescriptor(Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor descriptor) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.QualifiedIdentifier
+Steeltoe.Common.Expression.Internal.Spring.Ast.QualifiedIdentifier.QualifiedIdentifier(int startPos, int endPos, params Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode[] operands) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.RealLiteral
+Steeltoe.Common.Expression.Internal.Spring.Ast.RealLiteral.RealLiteral(string payload, int startPos, int endPos, double value) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.Selection
+Steeltoe.Common.Expression.Internal.Spring.Ast.Selection.Selection(bool nullSafe, int variant, int startPos, int endPos, Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode expression) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.ServiceReference
+Steeltoe.Common.Expression.Internal.Spring.Ast.ServiceReference.ServiceReference(int startPos, int endPos, string serviceName) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode
+Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode.SpelNode(int startPos, int endPos, params Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode[] operands) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode._children -> Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode[]
+Steeltoe.Common.Expression.Internal.Spring.Ast.SpelTypeCode
+Steeltoe.Common.Expression.Internal.Spring.Ast.SpelTypeCode.Name.get -> string
+Steeltoe.Common.Expression.Internal.Spring.Ast.SpelTypeCode.Type.get -> System.Type
+Steeltoe.Common.Expression.Internal.Spring.Ast.StringLiteral
+Steeltoe.Common.Expression.Internal.Spring.Ast.StringLiteral.StringLiteral(string payload, int startPos, int endPos, string value) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.Ternary
+Steeltoe.Common.Expression.Internal.Spring.Ast.Ternary.Ternary(int startPos, int endPos, params Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode[] args) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.TypedValueHolderValueRef
+Steeltoe.Common.Expression.Internal.Spring.Ast.TypedValueHolderValueRef.GetValue() -> Steeltoe.Common.Expression.Internal.ITypedValue
+Steeltoe.Common.Expression.Internal.Spring.Ast.TypedValueHolderValueRef.IsWritable.get -> bool
+Steeltoe.Common.Expression.Internal.Spring.Ast.TypedValueHolderValueRef.SetValue(object newValue) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.TypedValueHolderValueRef.TypedValueHolderValueRef(Steeltoe.Common.Expression.Internal.ITypedValue typedValue, Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode node) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.TypeReference
+Steeltoe.Common.Expression.Internal.Spring.Ast.TypeReference.TypeReference(int startPos, int endPos, Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode qualifiedId) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.TypeReference.TypeReference(int startPos, int endPos, Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode qualifiedId, int dims) -> void
+Steeltoe.Common.Expression.Internal.Spring.Ast.VariableReference
+Steeltoe.Common.Expression.Internal.Spring.Ast.VariableReference.VariableReference(string variableName, int startPos, int endPos) -> void
+Steeltoe.Common.Expression.Internal.Spring.CodeFlow
+Steeltoe.Common.Expression.Internal.Spring.CodeFlow.CodeFlow(Steeltoe.Common.Expression.Internal.Spring.CompiledExpression compiledExpression) -> void
+Steeltoe.Common.Expression.Internal.Spring.CodeFlow.EnterCompilationScope() -> void
+Steeltoe.Common.Expression.Internal.Spring.CodeFlow.ExitCompilationScope() -> void
+Steeltoe.Common.Expression.Internal.Spring.CodeFlow.Finish(int compilationId) -> System.Reflection.Emit.DynamicMethod
+Steeltoe.Common.Expression.Internal.Spring.CodeFlow.LastDescriptor() -> Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor
+Steeltoe.Common.Expression.Internal.Spring.CodeFlow.NextFieldId() -> int
+Steeltoe.Common.Expression.Internal.Spring.CodeFlow.PushDescriptor(Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor descriptor) -> void
+Steeltoe.Common.Expression.Internal.Spring.CodeFlow.RegisterNewField(string constantFieldName, object fieldValue) -> void
+Steeltoe.Common.Expression.Internal.Spring.CodeFlow.RegisterNewInitGenerator(System.Action<System.Reflection.Emit.ILGenerator, Steeltoe.Common.Expression.Internal.Spring.CodeFlow> generator) -> void
+Steeltoe.Common.Expression.Internal.Spring.CodeFlow.UnboxBooleanIfNecessary(System.Reflection.Emit.ILGenerator gen) -> void
+Steeltoe.Common.Expression.Internal.Spring.Common.CompositeStringExpression
+Steeltoe.Common.Expression.Internal.Spring.Common.CompositeStringExpression.CompositeStringExpression(string expressionString, System.Collections.Generic.List<Steeltoe.Common.Expression.Internal.IExpression> expressions) -> void
+Steeltoe.Common.Expression.Internal.Spring.Common.CompositeStringExpression.Expressions.get -> System.Collections.Generic.List<Steeltoe.Common.Expression.Internal.IExpression>
+Steeltoe.Common.Expression.Internal.Spring.Common.CompositeStringExpression.ExpressionString.get -> string
+Steeltoe.Common.Expression.Internal.Spring.Common.CompositeStringExpression.GetValue() -> string
+Steeltoe.Common.Expression.Internal.Spring.Common.CompositeStringExpression.GetValue(object rootObject) -> string
+Steeltoe.Common.Expression.Internal.Spring.Common.CompositeStringExpression.GetValue(object rootObject, System.Type desiredResultType) -> object
+Steeltoe.Common.Expression.Internal.Spring.Common.CompositeStringExpression.GetValue(Steeltoe.Common.Expression.Internal.IEvaluationContext context) -> string
+Steeltoe.Common.Expression.Internal.Spring.Common.CompositeStringExpression.GetValue(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object rootObject) -> string
+Steeltoe.Common.Expression.Internal.Spring.Common.CompositeStringExpression.GetValue(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object rootObject, System.Type desiredResultType) -> object
+Steeltoe.Common.Expression.Internal.Spring.Common.CompositeStringExpression.GetValue(Steeltoe.Common.Expression.Internal.IEvaluationContext context, System.Type desiredResultType) -> object
+Steeltoe.Common.Expression.Internal.Spring.Common.CompositeStringExpression.GetValue(System.Type desiredResultType) -> object
+Steeltoe.Common.Expression.Internal.Spring.Common.CompositeStringExpression.GetValue<T>() -> T
+Steeltoe.Common.Expression.Internal.Spring.Common.CompositeStringExpression.GetValue<T>(object rootObject) -> T
+Steeltoe.Common.Expression.Internal.Spring.Common.CompositeStringExpression.GetValue<T>(Steeltoe.Common.Expression.Internal.IEvaluationContext context) -> T
+Steeltoe.Common.Expression.Internal.Spring.Common.CompositeStringExpression.GetValue<T>(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object rootObject) -> T
+Steeltoe.Common.Expression.Internal.Spring.Common.CompositeStringExpression.GetValueType() -> System.Type
+Steeltoe.Common.Expression.Internal.Spring.Common.CompositeStringExpression.GetValueType(object rootObject) -> System.Type
+Steeltoe.Common.Expression.Internal.Spring.Common.CompositeStringExpression.GetValueType(Steeltoe.Common.Expression.Internal.IEvaluationContext context) -> System.Type
+Steeltoe.Common.Expression.Internal.Spring.Common.CompositeStringExpression.GetValueType(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object rootObject) -> System.Type
+Steeltoe.Common.Expression.Internal.Spring.Common.CompositeStringExpression.IsWritable(object rootObject) -> bool
+Steeltoe.Common.Expression.Internal.Spring.Common.CompositeStringExpression.IsWritable(Steeltoe.Common.Expression.Internal.IEvaluationContext context) -> bool
+Steeltoe.Common.Expression.Internal.Spring.Common.CompositeStringExpression.IsWritable(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object rootObject) -> bool
+Steeltoe.Common.Expression.Internal.Spring.Common.CompositeStringExpression.SetValue(object rootObject, object value) -> void
+Steeltoe.Common.Expression.Internal.Spring.Common.CompositeStringExpression.SetValue(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object rootObject, object value) -> void
+Steeltoe.Common.Expression.Internal.Spring.Common.CompositeStringExpression.SetValue(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object value) -> void
+Steeltoe.Common.Expression.Internal.Spring.Common.ExpressionUtils
+Steeltoe.Common.Expression.Internal.Spring.Common.LiteralExpression
+Steeltoe.Common.Expression.Internal.Spring.Common.LiteralExpression.ExpressionString.get -> string
+Steeltoe.Common.Expression.Internal.Spring.Common.LiteralExpression.GetValue() -> string
+Steeltoe.Common.Expression.Internal.Spring.Common.LiteralExpression.GetValue(object rootObject) -> string
+Steeltoe.Common.Expression.Internal.Spring.Common.LiteralExpression.GetValue(object rootObject, System.Type desiredResultType) -> object
+Steeltoe.Common.Expression.Internal.Spring.Common.LiteralExpression.GetValue(Steeltoe.Common.Expression.Internal.IEvaluationContext context) -> string
+Steeltoe.Common.Expression.Internal.Spring.Common.LiteralExpression.GetValue(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object rootObject) -> string
+Steeltoe.Common.Expression.Internal.Spring.Common.LiteralExpression.GetValue(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object rootObject, System.Type desiredResultType) -> object
+Steeltoe.Common.Expression.Internal.Spring.Common.LiteralExpression.GetValue(Steeltoe.Common.Expression.Internal.IEvaluationContext context, System.Type desiredResultType) -> object
+Steeltoe.Common.Expression.Internal.Spring.Common.LiteralExpression.GetValue(System.Type desiredResultType) -> object
+Steeltoe.Common.Expression.Internal.Spring.Common.LiteralExpression.GetValue<T>() -> T
+Steeltoe.Common.Expression.Internal.Spring.Common.LiteralExpression.GetValue<T>(object rootObject) -> T
+Steeltoe.Common.Expression.Internal.Spring.Common.LiteralExpression.GetValue<T>(Steeltoe.Common.Expression.Internal.IEvaluationContext context) -> T
+Steeltoe.Common.Expression.Internal.Spring.Common.LiteralExpression.GetValue<T>(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object rootObject) -> T
+Steeltoe.Common.Expression.Internal.Spring.Common.LiteralExpression.GetValueType() -> System.Type
+Steeltoe.Common.Expression.Internal.Spring.Common.LiteralExpression.GetValueType(object rootobject) -> System.Type
+Steeltoe.Common.Expression.Internal.Spring.Common.LiteralExpression.GetValueType(Steeltoe.Common.Expression.Internal.IEvaluationContext context) -> System.Type
+Steeltoe.Common.Expression.Internal.Spring.Common.LiteralExpression.GetValueType(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object rootobject) -> System.Type
+Steeltoe.Common.Expression.Internal.Spring.Common.LiteralExpression.IsWritable(object rootobject) -> bool
+Steeltoe.Common.Expression.Internal.Spring.Common.LiteralExpression.IsWritable(Steeltoe.Common.Expression.Internal.IEvaluationContext context) -> bool
+Steeltoe.Common.Expression.Internal.Spring.Common.LiteralExpression.IsWritable(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object rootobject) -> bool
+Steeltoe.Common.Expression.Internal.Spring.Common.LiteralExpression.LiteralExpression(string literalValue) -> void
+Steeltoe.Common.Expression.Internal.Spring.Common.LiteralExpression.SetValue(object rootobject, object value) -> void
+Steeltoe.Common.Expression.Internal.Spring.Common.LiteralExpression.SetValue(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object rootobject, object value) -> void
+Steeltoe.Common.Expression.Internal.Spring.Common.LiteralExpression.SetValue(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object value) -> void
+Steeltoe.Common.Expression.Internal.Spring.Common.TemplateAwareExpressionParser
+Steeltoe.Common.Expression.Internal.Spring.Common.TemplateAwareExpressionParser.ParseExpression(string expressionString) -> Steeltoe.Common.Expression.Internal.IExpression
+Steeltoe.Common.Expression.Internal.Spring.Common.TemplateAwareExpressionParser.ParseExpression(string expressionString, Steeltoe.Common.Expression.Internal.IParserContext context) -> Steeltoe.Common.Expression.Internal.IExpression
+Steeltoe.Common.Expression.Internal.Spring.Common.TemplateAwareExpressionParser.TemplateAwareExpressionParser() -> void
+Steeltoe.Common.Expression.Internal.Spring.Common.TemplateParserContext
+Steeltoe.Common.Expression.Internal.Spring.Common.TemplateParserContext.ExpressionPrefix.get -> string
+Steeltoe.Common.Expression.Internal.Spring.Common.TemplateParserContext.ExpressionSuffix.get -> string
+Steeltoe.Common.Expression.Internal.Spring.Common.TemplateParserContext.IsTemplate.get -> bool
+Steeltoe.Common.Expression.Internal.Spring.Common.TemplateParserContext.TemplateParserContext() -> void
+Steeltoe.Common.Expression.Internal.Spring.Common.TemplateParserContext.TemplateParserContext(string expressionPrefix, string expressionSuffix) -> void
+Steeltoe.Common.Expression.Internal.Spring.CompiledExpression
+Steeltoe.Common.Expression.Internal.Spring.CompiledExpression.CompiledExpression() -> void
+Steeltoe.Common.Expression.Internal.Spring.DefaultParseContext
+Steeltoe.Common.Expression.Internal.Spring.DefaultParseContext.DefaultParseContext() -> void
+Steeltoe.Common.Expression.Internal.Spring.DefaultParseContext.ExpressionPrefix.get -> string
+Steeltoe.Common.Expression.Internal.Spring.DefaultParseContext.ExpressionSuffix.get -> string
+Steeltoe.Common.Expression.Internal.Spring.DefaultParseContext.IsTemplate.get -> bool
+Steeltoe.Common.Expression.Internal.Spring.ExpressionState
+Steeltoe.Common.Expression.Internal.Spring.ExpressionState.Configuration.get -> Steeltoe.Common.Expression.Internal.Spring.SpelParserOptions
+Steeltoe.Common.Expression.Internal.Spring.ExpressionState.ConvertValue(object value, System.Type targetTypeDescriptor) -> object
+Steeltoe.Common.Expression.Internal.Spring.ExpressionState.ConvertValue(Steeltoe.Common.Expression.Internal.ITypedValue value, System.Type targetTypeDescriptor) -> object
+Steeltoe.Common.Expression.Internal.Spring.ExpressionState.EnterScope() -> void
+Steeltoe.Common.Expression.Internal.Spring.ExpressionState.EnterScope(string name, object value) -> void
+Steeltoe.Common.Expression.Internal.Spring.ExpressionState.EnterScope(System.Collections.Generic.Dictionary<string, object> argMap) -> void
+Steeltoe.Common.Expression.Internal.Spring.ExpressionState.EvaluationContext.get -> Steeltoe.Common.Expression.Internal.IEvaluationContext
+Steeltoe.Common.Expression.Internal.Spring.ExpressionState.ExitScope() -> void
+Steeltoe.Common.Expression.Internal.Spring.ExpressionState.ExpressionState(Steeltoe.Common.Expression.Internal.IEvaluationContext context) -> void
+Steeltoe.Common.Expression.Internal.Spring.ExpressionState.ExpressionState(Steeltoe.Common.Expression.Internal.IEvaluationContext context, Steeltoe.Common.Expression.Internal.ITypedValue rootObject) -> void
+Steeltoe.Common.Expression.Internal.Spring.ExpressionState.ExpressionState(Steeltoe.Common.Expression.Internal.IEvaluationContext context, Steeltoe.Common.Expression.Internal.ITypedValue rootObject, Steeltoe.Common.Expression.Internal.Spring.SpelParserOptions configuration) -> void
+Steeltoe.Common.Expression.Internal.Spring.ExpressionState.ExpressionState(Steeltoe.Common.Expression.Internal.IEvaluationContext context, Steeltoe.Common.Expression.Internal.Spring.SpelParserOptions configuration) -> void
+Steeltoe.Common.Expression.Internal.Spring.ExpressionState.FindType(string type) -> System.Type
+Steeltoe.Common.Expression.Internal.Spring.ExpressionState.GetActiveContextObject() -> Steeltoe.Common.Expression.Internal.ITypedValue
+Steeltoe.Common.Expression.Internal.Spring.ExpressionState.GetScopeRootContextObject() -> Steeltoe.Common.Expression.Internal.ITypedValue
+Steeltoe.Common.Expression.Internal.Spring.ExpressionState.LookupLocalVariable(string name) -> object
+Steeltoe.Common.Expression.Internal.Spring.ExpressionState.LookupVariable(string name) -> Steeltoe.Common.Expression.Internal.ITypedValue
+Steeltoe.Common.Expression.Internal.Spring.ExpressionState.Operate(Steeltoe.Common.Expression.Internal.Operation op, object left, object right) -> Steeltoe.Common.Expression.Internal.ITypedValue
+Steeltoe.Common.Expression.Internal.Spring.ExpressionState.PopActiveContextObject() -> void
+Steeltoe.Common.Expression.Internal.Spring.ExpressionState.PropertyAccessors.get -> System.Collections.Generic.List<Steeltoe.Common.Expression.Internal.IPropertyAccessor>
+Steeltoe.Common.Expression.Internal.Spring.ExpressionState.PushActiveContextObject(Steeltoe.Common.Expression.Internal.ITypedValue obj) -> void
+Steeltoe.Common.Expression.Internal.Spring.ExpressionState.RootContextObject.get -> Steeltoe.Common.Expression.Internal.ITypedValue
+Steeltoe.Common.Expression.Internal.Spring.ExpressionState.SetLocalVariable(string name, object value) -> void
+Steeltoe.Common.Expression.Internal.Spring.ExpressionState.SetVariable(string name, object value) -> void
+Steeltoe.Common.Expression.Internal.Spring.ExpressionState.TypeComparator.get -> Steeltoe.Common.Expression.Internal.ITypeComparator
+Steeltoe.Common.Expression.Internal.Spring.ExpressionState.TypeConverter.get -> Steeltoe.Common.Expression.Internal.ITypeConverter
+Steeltoe.Common.Expression.Internal.Spring.ICompilablePropertyAccessor
+Steeltoe.Common.Expression.Internal.Spring.ICompilablePropertyAccessor.GenerateCode(string propertyName, System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf) -> void
+Steeltoe.Common.Expression.Internal.Spring.ICompilablePropertyAccessor.GetPropertyType() -> System.Type
+Steeltoe.Common.Expression.Internal.Spring.ICompilablePropertyAccessor.IsCompilable() -> bool
+Steeltoe.Common.Expression.Internal.Spring.InternalParseException
+Steeltoe.Common.Expression.Internal.Spring.InternalParseException.Cause.get -> Steeltoe.Common.Expression.Internal.Spring.SpelParseException
+Steeltoe.Common.Expression.Internal.Spring.InternalParseException.InternalParseException(Steeltoe.Common.Expression.Internal.Spring.SpelParseException cause) -> void
+Steeltoe.Common.Expression.Internal.Spring.ISpelNode
+Steeltoe.Common.Expression.Internal.Spring.ISpelNode.ChildCount.get -> int
+Steeltoe.Common.Expression.Internal.Spring.ISpelNode.EndPosition.get -> int
+Steeltoe.Common.Expression.Internal.Spring.ISpelNode.GenerateCode(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf) -> void
+Steeltoe.Common.Expression.Internal.Spring.ISpelNode.GetChild(int index) -> Steeltoe.Common.Expression.Internal.Spring.ISpelNode
+Steeltoe.Common.Expression.Internal.Spring.ISpelNode.GetObjectType(object obj) -> System.Type
+Steeltoe.Common.Expression.Internal.Spring.ISpelNode.GetTypedValue(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+Steeltoe.Common.Expression.Internal.Spring.ISpelNode.GetValue(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> object
+Steeltoe.Common.Expression.Internal.Spring.ISpelNode.IsCompilable() -> bool
+Steeltoe.Common.Expression.Internal.Spring.ISpelNode.IsWritable(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> bool
+Steeltoe.Common.Expression.Internal.Spring.ISpelNode.SetValue(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state, object newValue) -> void
+Steeltoe.Common.Expression.Internal.Spring.ISpelNode.StartPosition.get -> int
+Steeltoe.Common.Expression.Internal.Spring.ISpelNode.ToStringAST() -> string
+Steeltoe.Common.Expression.Internal.Spring.SpelCompilerMode
+Steeltoe.Common.Expression.Internal.Spring.SpelCompilerMode.IMMEDIATE = 1 -> Steeltoe.Common.Expression.Internal.Spring.SpelCompilerMode
+Steeltoe.Common.Expression.Internal.Spring.SpelCompilerMode.MIXED = 2 -> Steeltoe.Common.Expression.Internal.Spring.SpelCompilerMode
+Steeltoe.Common.Expression.Internal.Spring.SpelCompilerMode.OFF = 0 -> Steeltoe.Common.Expression.Internal.Spring.SpelCompilerMode
+Steeltoe.Common.Expression.Internal.Spring.SpelEvaluationException
+Steeltoe.Common.Expression.Internal.Spring.SpelEvaluationException.Inserts.get -> object[]
+Steeltoe.Common.Expression.Internal.Spring.SpelEvaluationException.MessageCode.get -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+Steeltoe.Common.Expression.Internal.Spring.SpelEvaluationException.SpelEvaluationException(int position, Steeltoe.Common.Expression.Internal.Spring.SpelMessage message, params object[] inserts) -> void
+Steeltoe.Common.Expression.Internal.Spring.SpelEvaluationException.SpelEvaluationException(int position, System.Exception cause, Steeltoe.Common.Expression.Internal.Spring.SpelMessage message, params object[] inserts) -> void
+Steeltoe.Common.Expression.Internal.Spring.SpelEvaluationException.SpelEvaluationException(Steeltoe.Common.Expression.Internal.Spring.SpelMessage message, params object[] inserts) -> void
+Steeltoe.Common.Expression.Internal.Spring.SpelEvaluationException.SpelEvaluationException(System.Exception cause, Steeltoe.Common.Expression.Internal.Spring.SpelMessage message, params object[] inserts) -> void
+Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+Steeltoe.Common.Expression.Internal.Spring.SpelMessage.FormatMessage(params object[] inserts) -> string
+Steeltoe.Common.Expression.Internal.Spring.SpelMessage.Kind
+Steeltoe.Common.Expression.Internal.Spring.SpelMessage.Kind.ERROR = 2 -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage.Kind
+Steeltoe.Common.Expression.Internal.Spring.SpelMessage.Kind.INFO = 0 -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage.Kind
+Steeltoe.Common.Expression.Internal.Spring.SpelMessage.Kind.WARNING = 1 -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage.Kind
+Steeltoe.Common.Expression.Internal.Spring.SpelParseException
+Steeltoe.Common.Expression.Internal.Spring.SpelParseException.Inserts.get -> object[]
+Steeltoe.Common.Expression.Internal.Spring.SpelParseException.MessageCode.get -> Steeltoe.Common.Expression.Internal.Spring.SpelMessage
+Steeltoe.Common.Expression.Internal.Spring.SpelParseException.SpelParseException(int position, Steeltoe.Common.Expression.Internal.Spring.SpelMessage message, params object[] inserts) -> void
+Steeltoe.Common.Expression.Internal.Spring.SpelParseException.SpelParseException(int position, System.Exception cause, Steeltoe.Common.Expression.Internal.Spring.SpelMessage message, params object[] inserts) -> void
+Steeltoe.Common.Expression.Internal.Spring.SpelParseException.SpelParseException(string expressionString, int position, Steeltoe.Common.Expression.Internal.Spring.SpelMessage message, params object[] inserts) -> void
+Steeltoe.Common.Expression.Internal.Spring.SpelParserOptions
+Steeltoe.Common.Expression.Internal.Spring.SpelParserOptions.AutoGrowCollections.get -> bool
+Steeltoe.Common.Expression.Internal.Spring.SpelParserOptions.AutoGrowCollections.set -> void
+Steeltoe.Common.Expression.Internal.Spring.SpelParserOptions.AutoGrowNullReferences.get -> bool
+Steeltoe.Common.Expression.Internal.Spring.SpelParserOptions.AutoGrowNullReferences.set -> void
+Steeltoe.Common.Expression.Internal.Spring.SpelParserOptions.CompilerMode.get -> Steeltoe.Common.Expression.Internal.Spring.SpelCompilerMode
+Steeltoe.Common.Expression.Internal.Spring.SpelParserOptions.CompilerMode.set -> void
+Steeltoe.Common.Expression.Internal.Spring.SpelParserOptions.MaximumAutoGrowSize.get -> int
+Steeltoe.Common.Expression.Internal.Spring.SpelParserOptions.MaximumAutoGrowSize.set -> void
+Steeltoe.Common.Expression.Internal.Spring.SpelParserOptions.SpelParserOptions() -> void
+Steeltoe.Common.Expression.Internal.Spring.SpelParserOptions.SpelParserOptions(bool autoGrowNullReferences, bool autoGrowCollections) -> void
+Steeltoe.Common.Expression.Internal.Spring.SpelParserOptions.SpelParserOptions(bool autoGrowNullReferences, bool autoGrowCollections, int maximumAutoGrowSize) -> void
+Steeltoe.Common.Expression.Internal.Spring.SpelParserOptions.SpelParserOptions(Steeltoe.Common.Expression.Internal.Spring.SpelCompilerMode compilerMode) -> void
+Steeltoe.Common.Expression.Internal.Spring.SpelParserOptions.SpelParserOptions(Steeltoe.Common.Expression.Internal.Spring.SpelCompilerMode? compilerMode, bool autoGrowNullReferences, bool autoGrowCollections, int maximumAutoGrowSize) -> void
+Steeltoe.Common.Expression.Internal.Spring.Standard.InternalSpelExpressionParser
+Steeltoe.Common.Expression.Internal.Spring.Standard.InternalSpelExpressionParser.InternalSpelExpressionParser(Steeltoe.Common.Expression.Internal.Spring.SpelParserOptions configuration) -> void
+Steeltoe.Common.Expression.Internal.Spring.Standard.SpelCompiledExpression
+Steeltoe.Common.Expression.Internal.Spring.Standard.SpelCompiler
+Steeltoe.Common.Expression.Internal.Spring.Standard.SpelCompiler.Compile(Steeltoe.Common.Expression.Internal.Spring.ISpelNode expression) -> Steeltoe.Common.Expression.Internal.Spring.CompiledExpression
+Steeltoe.Common.Expression.Internal.Spring.Standard.SpelExpression
+Steeltoe.Common.Expression.Internal.Spring.Standard.SpelExpression.AST.get -> Steeltoe.Common.Expression.Internal.Spring.ISpelNode
+Steeltoe.Common.Expression.Internal.Spring.Standard.SpelExpression.CompileExpression() -> bool
+Steeltoe.Common.Expression.Internal.Spring.Standard.SpelExpression.EvaluationContext.get -> Steeltoe.Common.Expression.Internal.IEvaluationContext
+Steeltoe.Common.Expression.Internal.Spring.Standard.SpelExpression.EvaluationContext.set -> void
+Steeltoe.Common.Expression.Internal.Spring.Standard.SpelExpression.ExpressionString.get -> string
+Steeltoe.Common.Expression.Internal.Spring.Standard.SpelExpression.GetValue() -> object
+Steeltoe.Common.Expression.Internal.Spring.Standard.SpelExpression.GetValue(object rootObject) -> object
+Steeltoe.Common.Expression.Internal.Spring.Standard.SpelExpression.GetValue(object rootObject, System.Type desiredResultType) -> object
+Steeltoe.Common.Expression.Internal.Spring.Standard.SpelExpression.GetValue(Steeltoe.Common.Expression.Internal.IEvaluationContext context) -> object
+Steeltoe.Common.Expression.Internal.Spring.Standard.SpelExpression.GetValue(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object rootObject) -> object
+Steeltoe.Common.Expression.Internal.Spring.Standard.SpelExpression.GetValue(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object rootObject, System.Type desiredResultType) -> object
+Steeltoe.Common.Expression.Internal.Spring.Standard.SpelExpression.GetValue(Steeltoe.Common.Expression.Internal.IEvaluationContext context, System.Type desiredResultType) -> object
+Steeltoe.Common.Expression.Internal.Spring.Standard.SpelExpression.GetValue(System.Type desiredResultType) -> object
+Steeltoe.Common.Expression.Internal.Spring.Standard.SpelExpression.GetValue<T>() -> T
+Steeltoe.Common.Expression.Internal.Spring.Standard.SpelExpression.GetValue<T>(object rootObject) -> T
+Steeltoe.Common.Expression.Internal.Spring.Standard.SpelExpression.GetValue<T>(Steeltoe.Common.Expression.Internal.IEvaluationContext context) -> T
+Steeltoe.Common.Expression.Internal.Spring.Standard.SpelExpression.GetValue<T>(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object rootObject) -> T
+Steeltoe.Common.Expression.Internal.Spring.Standard.SpelExpression.GetValueType() -> System.Type
+Steeltoe.Common.Expression.Internal.Spring.Standard.SpelExpression.GetValueType(object rootObject) -> System.Type
+Steeltoe.Common.Expression.Internal.Spring.Standard.SpelExpression.GetValueType(Steeltoe.Common.Expression.Internal.IEvaluationContext context) -> System.Type
+Steeltoe.Common.Expression.Internal.Spring.Standard.SpelExpression.GetValueType(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object rootObject) -> System.Type
+Steeltoe.Common.Expression.Internal.Spring.Standard.SpelExpression.IsWritable(object rootObject) -> bool
+Steeltoe.Common.Expression.Internal.Spring.Standard.SpelExpression.IsWritable(Steeltoe.Common.Expression.Internal.IEvaluationContext context) -> bool
+Steeltoe.Common.Expression.Internal.Spring.Standard.SpelExpression.IsWritable(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object rootObject) -> bool
+Steeltoe.Common.Expression.Internal.Spring.Standard.SpelExpression.RevertToInterpreted() -> void
+Steeltoe.Common.Expression.Internal.Spring.Standard.SpelExpression.SetValue(object rootObject, object value) -> void
+Steeltoe.Common.Expression.Internal.Spring.Standard.SpelExpression.SetValue(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object rootObject, object value) -> void
+Steeltoe.Common.Expression.Internal.Spring.Standard.SpelExpression.SetValue(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object value) -> void
+Steeltoe.Common.Expression.Internal.Spring.Standard.SpelExpression.SpelExpression(string expression, Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode ast, Steeltoe.Common.Expression.Internal.Spring.SpelParserOptions configuration) -> void
+Steeltoe.Common.Expression.Internal.Spring.Standard.SpelExpression.ToStringAST() -> string
+Steeltoe.Common.Expression.Internal.Spring.Standard.SpelExpressionParser
+Steeltoe.Common.Expression.Internal.Spring.Standard.SpelExpressionParser.ParseRaw(string expressionString) -> Steeltoe.Common.Expression.Internal.IExpression
+Steeltoe.Common.Expression.Internal.Spring.Standard.SpelExpressionParser.SpelExpressionParser() -> void
+Steeltoe.Common.Expression.Internal.Spring.Standard.SpelExpressionParser.SpelExpressionParser(Steeltoe.Common.Expression.Internal.Spring.SpelParserOptions configuration) -> void
+Steeltoe.Common.Expression.Internal.Spring.Standard.Token
+Steeltoe.Common.Expression.Internal.Spring.Standard.Token.AsBetweenToken() -> Steeltoe.Common.Expression.Internal.Spring.Standard.Token
+Steeltoe.Common.Expression.Internal.Spring.Standard.Token.AsInstanceOfToken() -> Steeltoe.Common.Expression.Internal.Spring.Standard.Token
+Steeltoe.Common.Expression.Internal.Spring.Standard.Token.AsMatchesToken() -> Steeltoe.Common.Expression.Internal.Spring.Standard.Token
+Steeltoe.Common.Expression.Internal.Spring.Standard.Token.Data.get -> string
+Steeltoe.Common.Expression.Internal.Spring.Standard.Token.EndPos.get -> int
+Steeltoe.Common.Expression.Internal.Spring.Standard.Token.IsIdentifier.get -> bool
+Steeltoe.Common.Expression.Internal.Spring.Standard.Token.IsNumericRelationalOperator.get -> bool
+Steeltoe.Common.Expression.Internal.Spring.Standard.Token.Kind.get -> Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+Steeltoe.Common.Expression.Internal.Spring.Standard.Token.StartPos.get -> int
+Steeltoe.Common.Expression.Internal.Spring.Standard.Token.StringValue.get -> string
+Steeltoe.Common.Expression.Internal.Spring.Standard.Token.Token(Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind tokenKind, char[] tokenData, int startPos, int endPos) -> void
+Steeltoe.Common.Expression.Internal.Spring.Standard.Token.Token(Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind tokenKind, int startPos, int endPos) -> void
+Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind
+Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.HasPayload.get -> bool
+Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.Length.get -> int
+Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.Name.get -> string
+Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.Ordinal.get -> int
+Steeltoe.Common.Expression.Internal.Spring.Standard.TokenKind.TokenChars.get -> char[]
+Steeltoe.Common.Expression.Internal.Spring.Support.ArgumentsMatchInfo
+Steeltoe.Common.Expression.Internal.Spring.Support.ArgumentsMatchInfo.ArgumentsMatchInfo(Steeltoe.Common.Expression.Internal.Spring.Support.ArgumentsMatchKind kind) -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.ArgumentsMatchInfo.IsCloseMatch.get -> bool
+Steeltoe.Common.Expression.Internal.Spring.Support.ArgumentsMatchInfo.IsExactMatch.get -> bool
+Steeltoe.Common.Expression.Internal.Spring.Support.ArgumentsMatchInfo.IsMatchRequiringConversion.get -> bool
+Steeltoe.Common.Expression.Internal.Spring.Support.ArgumentsMatchKind
+Steeltoe.Common.Expression.Internal.Spring.Support.ArgumentsMatchKind.CLOSE = 1 -> Steeltoe.Common.Expression.Internal.Spring.Support.ArgumentsMatchKind
+Steeltoe.Common.Expression.Internal.Spring.Support.ArgumentsMatchKind.EXACT = 0 -> Steeltoe.Common.Expression.Internal.Spring.Support.ArgumentsMatchKind
+Steeltoe.Common.Expression.Internal.Spring.Support.ArgumentsMatchKind.REQUIRES_CONVERSION = 2 -> Steeltoe.Common.Expression.Internal.Spring.Support.ArgumentsMatchKind
+Steeltoe.Common.Expression.Internal.Spring.Support.BooleanTypedValue
+Steeltoe.Common.Expression.Internal.Spring.Support.DataBindingMethodResolver
+Steeltoe.Common.Expression.Internal.Spring.Support.DataBindingPropertyAccessor
+Steeltoe.Common.Expression.Internal.Spring.Support.MethodBaseExtensions
+Steeltoe.Common.Expression.Internal.Spring.Support.PrimitiveConstructorExecutor
+Steeltoe.Common.Expression.Internal.Spring.Support.PrimitiveConstructorExecutor.Execute(Steeltoe.Common.Expression.Internal.IEvaluationContext context, params object[] arguments) -> Steeltoe.Common.Expression.Internal.ITypedValue
+Steeltoe.Common.Expression.Internal.Spring.Support.PrimitiveConstructorExecutor.PrimitiveConstructorExecutor(System.Type primitiveType) -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectionHelper
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectiveConstructorExecutor
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectiveConstructorExecutor.Constructor.get -> System.Reflection.ConstructorInfo
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectiveConstructorExecutor.Execute(Steeltoe.Common.Expression.Internal.IEvaluationContext context, params object[] arguments) -> Steeltoe.Common.Expression.Internal.ITypedValue
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectiveConstructorExecutor.ReflectiveConstructorExecutor(System.Reflection.ConstructorInfo ctor) -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectiveConstructorResolver
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectiveConstructorResolver.ReflectiveConstructorResolver() -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectiveConstructorResolver.Resolve(Steeltoe.Common.Expression.Internal.IEvaluationContext context, string typeName, System.Collections.Generic.List<System.Type> argumentTypes) -> Steeltoe.Common.Expression.Internal.IConstructorExecutor
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectiveMethodExecutor
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectiveMethodExecutor.DidArgumentConversionOccur.get -> bool
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectiveMethodExecutor.Execute(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object target, params object[] arguments) -> Steeltoe.Common.Expression.Internal.ITypedValue
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectiveMethodExecutor.GetPublicDeclaringClass() -> System.Type
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectiveMethodExecutor.Method.get -> System.Reflection.MethodInfo
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectiveMethodExecutor.ReflectiveMethodExecutor(System.Reflection.MethodInfo method) -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectiveMethodResolver
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectiveMethodResolver.ReflectiveMethodResolver() -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectiveMethodResolver.ReflectiveMethodResolver(bool useDistance) -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectivePropertyAccessor
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectivePropertyAccessor.CanRead(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object target, string name) -> bool
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectivePropertyAccessor.CanWrite(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object target, string name) -> bool
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectivePropertyAccessor.CreateOptimalAccessor(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object target, string name) -> Steeltoe.Common.Expression.Internal.IPropertyAccessor
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectivePropertyAccessor.InvokerPair
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectivePropertyAccessor.InvokerPair.InvokerPair(System.Reflection.MemberInfo member, System.Type typeDescriptor) -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectivePropertyAccessor.InvokerPair.Member.get -> System.Reflection.MemberInfo
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectivePropertyAccessor.InvokerPair.TypeDescriptor.get -> System.Type
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectivePropertyAccessor.OptimalPropertyAccessor
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectivePropertyAccessor.OptimalPropertyAccessor.CanRead(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object target, string name) -> bool
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectivePropertyAccessor.OptimalPropertyAccessor.CanWrite(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object target, string name) -> bool
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectivePropertyAccessor.OptimalPropertyAccessor.GenerateCode(string propertyName, System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf) -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectivePropertyAccessor.OptimalPropertyAccessor.GetPropertyType() -> System.Type
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectivePropertyAccessor.OptimalPropertyAccessor.GetSpecificTargetClasses() -> System.Collections.Generic.IList<System.Type>
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectivePropertyAccessor.OptimalPropertyAccessor.IsCompilable() -> bool
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectivePropertyAccessor.OptimalPropertyAccessor.Member.get -> System.Reflection.MemberInfo
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectivePropertyAccessor.OptimalPropertyAccessor.OptimalPropertyAccessor(Steeltoe.Common.Expression.Internal.Spring.Support.ReflectivePropertyAccessor.InvokerPair target) -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectivePropertyAccessor.OptimalPropertyAccessor.Read(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object target, string name) -> Steeltoe.Common.Expression.Internal.ITypedValue
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectivePropertyAccessor.OptimalPropertyAccessor.TypeDescriptor.get -> System.Type
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectivePropertyAccessor.OptimalPropertyAccessor.Write(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object target, string name, object newValue) -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectivePropertyAccessor.PropertyCacheKey
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectivePropertyAccessor.PropertyCacheKey.CompareTo(Steeltoe.Common.Expression.Internal.Spring.Support.ReflectivePropertyAccessor.PropertyCacheKey other) -> int
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectivePropertyAccessor.PropertyCacheKey.PropertyCacheKey(System.Type clazz, string name, bool targetIsClass) -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectivePropertyAccessor.Read(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object target, string name) -> Steeltoe.Common.Expression.Internal.ITypedValue
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectivePropertyAccessor.ReflectivePropertyAccessor() -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectivePropertyAccessor.ReflectivePropertyAccessor(bool allowWrite) -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.ReflectivePropertyAccessor.Write(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object target, string name, object newValue) -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.SimpleEvaluationContext
+Steeltoe.Common.Expression.Internal.Spring.Support.SimpleEvaluationContext.Builder
+Steeltoe.Common.Expression.Internal.Spring.Support.SimpleEvaluationContext.Builder.Build() -> Steeltoe.Common.Expression.Internal.Spring.Support.SimpleEvaluationContext
+Steeltoe.Common.Expression.Internal.Spring.Support.SimpleEvaluationContext.Builder.Builder(params Steeltoe.Common.Expression.Internal.IPropertyAccessor[] accessors) -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.SimpleEvaluationContext.Builder.WithConversionService(Steeltoe.Common.Converter.IConversionService conversionService) -> Steeltoe.Common.Expression.Internal.Spring.Support.SimpleEvaluationContext.Builder
+Steeltoe.Common.Expression.Internal.Spring.Support.SimpleEvaluationContext.Builder.WithInstanceMethods() -> Steeltoe.Common.Expression.Internal.Spring.Support.SimpleEvaluationContext.Builder
+Steeltoe.Common.Expression.Internal.Spring.Support.SimpleEvaluationContext.Builder.WithMethodResolvers(params Steeltoe.Common.Expression.Internal.IMethodResolver[] resolvers) -> Steeltoe.Common.Expression.Internal.Spring.Support.SimpleEvaluationContext.Builder
+Steeltoe.Common.Expression.Internal.Spring.Support.SimpleEvaluationContext.Builder.WithRootObject(object rootObject) -> Steeltoe.Common.Expression.Internal.Spring.Support.SimpleEvaluationContext.Builder
+Steeltoe.Common.Expression.Internal.Spring.Support.SimpleEvaluationContext.Builder.WithTypeConverter(Steeltoe.Common.Expression.Internal.ITypeConverter converter) -> Steeltoe.Common.Expression.Internal.Spring.Support.SimpleEvaluationContext.Builder
+Steeltoe.Common.Expression.Internal.Spring.Support.SimpleEvaluationContext.Builder.WithTypedRootObject(object rootObject, System.Type typeDescriptor) -> Steeltoe.Common.Expression.Internal.Spring.Support.SimpleEvaluationContext.Builder
+Steeltoe.Common.Expression.Internal.Spring.Support.SimpleEvaluationContext.ConstructorResolvers.get -> System.Collections.Generic.List<Steeltoe.Common.Expression.Internal.IConstructorResolver>
+Steeltoe.Common.Expression.Internal.Spring.Support.SimpleEvaluationContext.LookupVariable(string name) -> object
+Steeltoe.Common.Expression.Internal.Spring.Support.SimpleEvaluationContext.LookupVariable<T>(string name) -> T
+Steeltoe.Common.Expression.Internal.Spring.Support.SimpleEvaluationContext.MethodResolvers.get -> System.Collections.Generic.List<Steeltoe.Common.Expression.Internal.IMethodResolver>
+Steeltoe.Common.Expression.Internal.Spring.Support.SimpleEvaluationContext.OperatorOverloader.get -> Steeltoe.Common.Expression.Internal.IOperatorOverloader
+Steeltoe.Common.Expression.Internal.Spring.Support.SimpleEvaluationContext.PropertyAccessors.get -> System.Collections.Generic.List<Steeltoe.Common.Expression.Internal.IPropertyAccessor>
+Steeltoe.Common.Expression.Internal.Spring.Support.SimpleEvaluationContext.RootObject.get -> Steeltoe.Common.Expression.Internal.ITypedValue
+Steeltoe.Common.Expression.Internal.Spring.Support.SimpleEvaluationContext.ServiceResolver.get -> Steeltoe.Common.Expression.Internal.IServiceResolver
+Steeltoe.Common.Expression.Internal.Spring.Support.SimpleEvaluationContext.SetVariable(string name, object value) -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.SimpleEvaluationContext.TypeComparator.get -> Steeltoe.Common.Expression.Internal.ITypeComparator
+Steeltoe.Common.Expression.Internal.Spring.Support.SimpleEvaluationContext.TypeConverter.get -> Steeltoe.Common.Expression.Internal.ITypeConverter
+Steeltoe.Common.Expression.Internal.Spring.Support.SimpleEvaluationContext.TypeLocator.get -> Steeltoe.Common.Expression.Internal.ITypeLocator
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardEvaluationContext
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardEvaluationContext.AddConstructorResolver(Steeltoe.Common.Expression.Internal.IConstructorResolver accessor) -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardEvaluationContext.AddMethodResolver(Steeltoe.Common.Expression.Internal.IMethodResolver accessor) -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardEvaluationContext.AddPropertyAccessor(Steeltoe.Common.Expression.Internal.IPropertyAccessor accessor) -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardEvaluationContext.ConstructorResolvers.get -> System.Collections.Generic.List<Steeltoe.Common.Expression.Internal.IConstructorResolver>
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardEvaluationContext.ConstructorResolvers.set -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardEvaluationContext.LookupVariable(string name) -> object
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardEvaluationContext.LookupVariable<T>(string name) -> T
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardEvaluationContext.MethodResolvers.get -> System.Collections.Generic.List<Steeltoe.Common.Expression.Internal.IMethodResolver>
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardEvaluationContext.MethodResolvers.set -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardEvaluationContext.OperatorOverloader.get -> Steeltoe.Common.Expression.Internal.IOperatorOverloader
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardEvaluationContext.OperatorOverloader.set -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardEvaluationContext.PropertyAccessors.get -> System.Collections.Generic.List<Steeltoe.Common.Expression.Internal.IPropertyAccessor>
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardEvaluationContext.PropertyAccessors.set -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardEvaluationContext.RegisterFunction(string name, System.Reflection.MethodInfo method) -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardEvaluationContext.RegisterMethodFilter(System.Type type, Steeltoe.Common.Expression.Internal.IMethodFilter filter) -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardEvaluationContext.RemoveConstructorResolver(Steeltoe.Common.Expression.Internal.IConstructorResolver accessor) -> bool
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardEvaluationContext.RemoveMethodResolver(Steeltoe.Common.Expression.Internal.IMethodResolver accessor) -> bool
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardEvaluationContext.RemovePropertyAccessor(Steeltoe.Common.Expression.Internal.IPropertyAccessor accessor) -> bool
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardEvaluationContext.RootObject.get -> Steeltoe.Common.Expression.Internal.ITypedValue
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardEvaluationContext.ServiceResolver.get -> Steeltoe.Common.Expression.Internal.IServiceResolver
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardEvaluationContext.ServiceResolver.set -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardEvaluationContext.SetRootObject(object rootObject) -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardEvaluationContext.SetRootObject(object rootObject, System.Type typeDescriptor) -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardEvaluationContext.SetVariable(string name, object value) -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardEvaluationContext.SetVariables(System.Collections.Generic.Dictionary<string, object> variables) -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardEvaluationContext.StandardEvaluationContext() -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardEvaluationContext.StandardEvaluationContext(object rootObject) -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardEvaluationContext.TypeComparator.get -> Steeltoe.Common.Expression.Internal.ITypeComparator
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardEvaluationContext.TypeComparator.set -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardEvaluationContext.TypeConverter.get -> Steeltoe.Common.Expression.Internal.ITypeConverter
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardEvaluationContext.TypeConverter.set -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardEvaluationContext.TypeLocator.get -> Steeltoe.Common.Expression.Internal.ITypeLocator
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardEvaluationContext.TypeLocator.set -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardOperatorOverloader
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardOperatorOverloader.Operate(Steeltoe.Common.Expression.Internal.Operation operation, object leftOperand, object rightOperand) -> object
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardOperatorOverloader.OverridesOperation(Steeltoe.Common.Expression.Internal.Operation operation, object leftOperand, object rightOperand) -> bool
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardOperatorOverloader.StandardOperatorOverloader() -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardTypeComparator
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardTypeComparator.CanCompare(object left, object right) -> bool
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardTypeComparator.Compare(object left, object right) -> int
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardTypeComparator.StandardTypeComparator() -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardTypeConverter
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardTypeConverter.CanConvert(System.Type source, System.Type target) -> bool
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardTypeConverter.ConversionService.get -> Steeltoe.Common.Converter.IConversionService
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardTypeConverter.ConversionService.set -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardTypeConverter.ConvertValue(object value, System.Type source, System.Type target) -> object
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardTypeConverter.StandardTypeConverter() -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardTypeConverter.StandardTypeConverter(Steeltoe.Common.Converter.IConversionService conversionService) -> void
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardTypeLocator
+Steeltoe.Common.Expression.Internal.Spring.Support.StandardTypeLocator.StandardTypeLocator() -> void
+Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor
+Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor.Boxed() -> Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor
+Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor.IsBoxable.get -> bool
+Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor.IsBoxed.get -> bool
+Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor.IsBoxedNumber.get -> bool
+Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor.IsBoxedPrimitive.get -> bool
+Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor.IsBoxedValueType.get -> bool
+Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor.IsPrimitive.get -> bool
+Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor.IsReferenceType.get -> bool
+Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor.IsValueType.get -> bool
+Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor.IsVoid.get -> bool
+Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor.TypeDescriptor(System.Type type, bool boxed = false) -> void
+Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor.UnBox() -> Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor
+Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor.Value.get -> System.Type
+Steeltoe.Common.Expression.Internal.TypedValue
+Steeltoe.Common.Expression.Internal.TypedValue.TypeDescriptor.get -> System.Type
+Steeltoe.Common.Expression.Internal.TypedValue.TypedValue(object value) -> void
+Steeltoe.Common.Expression.Internal.TypedValue.TypedValue(object value, System.Type typeDescriptor) -> void
+Steeltoe.Common.Expression.Internal.TypedValue.Value.get -> object
+Steeltoe.Common.Expression.Internal.ValueExpression<V>
+Steeltoe.Common.Expression.Internal.ValueExpression<V>.ExpressionString.get -> string
+Steeltoe.Common.Expression.Internal.ValueExpression<V>.ValueExpression(V value) -> void
+virtual Steeltoe.Common.Expression.Internal.Contexts.StandardServiceExpressionResolver.CustomizeEvaluationContext(Steeltoe.Common.Expression.Internal.IEvaluationContext evalContext) -> void
+virtual Steeltoe.Common.Expression.Internal.Spring.Ast.Operator.IsCompilableOperatorUsingNumerics() -> bool
+virtual Steeltoe.Common.Expression.Internal.Spring.Ast.Operator.LeftOperand.get -> Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode
+virtual Steeltoe.Common.Expression.Internal.Spring.Ast.Operator.OperatorName.get -> string
+virtual Steeltoe.Common.Expression.Internal.Spring.Ast.Operator.RightOperand.get -> Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode
+virtual Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode.ChildCount.get -> int
+virtual Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode.EndPosition.get -> int
+virtual Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode.ExitDescriptor.get -> Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor
+virtual Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode.GenerateCode(System.Reflection.Emit.ILGenerator gen, Steeltoe.Common.Expression.Internal.Spring.CodeFlow cf) -> void
+virtual Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode.GetChild(int index) -> Steeltoe.Common.Expression.Internal.Spring.ISpelNode
+virtual Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode.GetObjectType(object obj) -> System.Type
+virtual Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode.GetTypedValue(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.ITypedValue
+virtual Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode.GetValue(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> object
+virtual Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode.GetValue(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state, System.Type desiredReturnType) -> object
+virtual Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode.GetValue<T>(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> T
+virtual Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode.GetValueRef(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> Steeltoe.Common.Expression.Internal.Spring.Ast.IValueRef
+virtual Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode.IsCompilable() -> bool
+virtual Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode.IsWritable(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state) -> bool
+virtual Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode.NextChildIs(params System.Type[] classes) -> bool
+virtual Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode.SetValue(Steeltoe.Common.Expression.Internal.Spring.ExpressionState state, object newValue) -> void
+virtual Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode.StartPosition.get -> int
+virtual Steeltoe.Common.Expression.Internal.Spring.CompiledExpression.GetValue(object target, Steeltoe.Common.Expression.Internal.IEvaluationContext context) -> object
+virtual Steeltoe.Common.Expression.Internal.Spring.Support.ReflectiveMethodResolver.GetMethods(System.Type type) -> System.Reflection.MethodInfo[]
+virtual Steeltoe.Common.Expression.Internal.Spring.Support.ReflectiveMethodResolver.IsCandidateForInvocation(System.Reflection.MethodInfo method, System.Type targetClass) -> bool
+virtual Steeltoe.Common.Expression.Internal.Spring.Support.ReflectiveMethodResolver.RegisterMethodFilter(System.Type type, Steeltoe.Common.Expression.Internal.IMethodFilter filter) -> void
+virtual Steeltoe.Common.Expression.Internal.Spring.Support.ReflectiveMethodResolver.Resolve(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object targetObject, string name, System.Collections.Generic.List<System.Type> argumentTypes) -> Steeltoe.Common.Expression.Internal.IMethodExecutor
+virtual Steeltoe.Common.Expression.Internal.Spring.Support.ReflectivePropertyAccessor.FindField(string name, System.Type clazz, bool mustBeStatic) -> System.Reflection.FieldInfo
+virtual Steeltoe.Common.Expression.Internal.Spring.Support.ReflectivePropertyAccessor.FindGetterForProperty(string propertyName, System.Type clazz, bool mustBeStatic) -> System.Reflection.MethodInfo
+virtual Steeltoe.Common.Expression.Internal.Spring.Support.ReflectivePropertyAccessor.FindSetterForProperty(string propertyName, System.Type clazz, bool mustBeStatic) -> System.Reflection.MethodInfo
+virtual Steeltoe.Common.Expression.Internal.Spring.Support.ReflectivePropertyAccessor.GetSpecificTargetClasses() -> System.Collections.Generic.IList<System.Type>
+virtual Steeltoe.Common.Expression.Internal.Spring.Support.ReflectivePropertyAccessor.IsCandidateForProperty(System.Reflection.MethodInfo method, System.Type targetClass) -> bool
+virtual Steeltoe.Common.Expression.Internal.Spring.Support.StandardTypeLocator.FindType(string typeName) -> System.Type
+virtual Steeltoe.Common.Expression.Internal.Spring.Support.StandardTypeLocator.ImportPrefixes.get -> System.Collections.Generic.List<string>
+virtual Steeltoe.Common.Expression.Internal.Spring.Support.StandardTypeLocator.RegisterImport(string prefix) -> void
+virtual Steeltoe.Common.Expression.Internal.Spring.Support.StandardTypeLocator.RemoveImport(string prefix) -> void
+virtual Steeltoe.Common.Expression.Internal.ValueExpression<V>.GetValue() -> object
+virtual Steeltoe.Common.Expression.Internal.ValueExpression<V>.GetValue(object rootObject) -> object
+virtual Steeltoe.Common.Expression.Internal.ValueExpression<V>.GetValue(object rootObject, System.Type desiredResultType) -> object
+virtual Steeltoe.Common.Expression.Internal.ValueExpression<V>.GetValue(Steeltoe.Common.Expression.Internal.IEvaluationContext context) -> object
+virtual Steeltoe.Common.Expression.Internal.ValueExpression<V>.GetValue(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object rootObject) -> object
+virtual Steeltoe.Common.Expression.Internal.ValueExpression<V>.GetValue(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object rootObject, System.Type desiredResultType) -> object
+virtual Steeltoe.Common.Expression.Internal.ValueExpression<V>.GetValue(Steeltoe.Common.Expression.Internal.IEvaluationContext context, System.Type desiredResultType) -> object
+virtual Steeltoe.Common.Expression.Internal.ValueExpression<V>.GetValue(System.Type desiredResultType) -> object
+virtual Steeltoe.Common.Expression.Internal.ValueExpression<V>.GetValue<T>() -> T
+virtual Steeltoe.Common.Expression.Internal.ValueExpression<V>.GetValue<T>(object rootObject) -> T
+virtual Steeltoe.Common.Expression.Internal.ValueExpression<V>.GetValue<T>(Steeltoe.Common.Expression.Internal.IEvaluationContext context) -> T
+virtual Steeltoe.Common.Expression.Internal.ValueExpression<V>.GetValue<T>(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object rootObject) -> T
+virtual Steeltoe.Common.Expression.Internal.ValueExpression<V>.GetValueType() -> System.Type
+virtual Steeltoe.Common.Expression.Internal.ValueExpression<V>.GetValueType(object rootObject) -> System.Type
+virtual Steeltoe.Common.Expression.Internal.ValueExpression<V>.GetValueType(Steeltoe.Common.Expression.Internal.IEvaluationContext context) -> System.Type
+virtual Steeltoe.Common.Expression.Internal.ValueExpression<V>.GetValueType(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object rootObject) -> System.Type
+virtual Steeltoe.Common.Expression.Internal.ValueExpression<V>.IsWritable(object rootObject) -> bool
+virtual Steeltoe.Common.Expression.Internal.ValueExpression<V>.IsWritable(Steeltoe.Common.Expression.Internal.IEvaluationContext context) -> bool
+virtual Steeltoe.Common.Expression.Internal.ValueExpression<V>.IsWritable(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object rootObject) -> bool
+virtual Steeltoe.Common.Expression.Internal.ValueExpression<V>.SetValue(object rootObject, object value) -> void
+virtual Steeltoe.Common.Expression.Internal.ValueExpression<V>.SetValue(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object rootObject, object value) -> void
+virtual Steeltoe.Common.Expression.Internal.ValueExpression<V>.SetValue(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object value) -> void
+volatile Steeltoe.Common.Expression.Internal.Spring.Ast.SpelNode._exitTypeDescriptor -> Steeltoe.Common.Expression.Internal.Spring.TypeDescriptor

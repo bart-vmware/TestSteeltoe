@@ -1,0 +1,7 @@
+﻿Steeltoe.Discovery.IDiscoveryClient
+Steeltoe.Discovery.IDiscoveryClient.GetLocalServiceInstance() -> Steeltoe.Common.Discovery.IServiceInstance
+Steeltoe.Discovery.IDiscoveryClient.ShutdownAsync() -> System.Threading.Tasks.Task
+Steeltoe.Discovery.IDiscoveryClientOptions
+Steeltoe.Discovery.IDiscoveryLifecycle
+Steeltoe.Discovery.IDiscoveryLifecycle.ApplicationStopping.get -> System.Threading.CancellationToken
+Steeltoe.Discovery.IDiscoveryRegistrationOptions

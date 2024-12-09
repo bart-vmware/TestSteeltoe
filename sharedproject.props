@@ -19,7 +19,7 @@
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-    <NoWarn>$(NoWarn);SA1101;SA1124;S1128;SA1201;SA1309;SA1310;SA1314;SA1401;SA1402;SA1413;SA1600;SA1629;SA1652;1591;S101;S1075;S1854;S4792;S3011;IDE1006;IDE0017;IDE0130;IDE0150;IDE0090;CA2252</NoWarn>
+    <NoWarn>RS0022;RS0026;RS0027;$(NoWarn);SA1101;SA1124;S1128;SA1201;SA1309;SA1310;SA1314;SA1401;SA1402;SA1413;SA1600;SA1629;SA1652;1591;S101;S1075;S1854;S4792;S3011;IDE1006;IDE0017;IDE0130;IDE0150;IDE0090;CA2252</NoWarn>
     <CodeAnalysisRuleSet>..\..\..\..\Steeltoe.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup>
@@ -41,6 +41,9 @@
     <PackageReference Include="StyleCop.Analyzers" Version="$(StyleCopVersion)">
       <PrivateAssets>All</PrivateAssets>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup Condition="('$(TargetFramework)' == 'net6.0' OR '$(TargetFramework)' == 'netstandard2.1' OR '$(TargetFramework)' == 'netstandard2.0') AND '$(MSBuildProjectName)' != 'Steeltoe.Common.TestResources' AND '$(MSBuildProjectName)' != 'Steeltoe.Stream.StubBinder1' AND '$(MSBuildProjectName)' != 'Steeltoe.Stream.StubBinder2' AND '$(MSBuildProjectName)' != 'Steeltoe.Stream.MockBinder' AND '$(MSBuildProjectName)' != 'Steeltoe.Stream.TestBinder'">
+    <PackageReference Include="Microsoft.CodeAnalysis.PublicApiAnalyzers" Version="3.3.*" PrivateAssets="All" />
   </ItemGroup>
   <ItemGroup>
     <AdditionalFiles Include="..\..\..\..\stylecop.json">

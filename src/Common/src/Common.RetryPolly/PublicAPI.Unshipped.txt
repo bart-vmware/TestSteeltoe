@@ -1,0 +1,9 @@
+﻿override Steeltoe.Common.Retry.PollyRetryTemplate.Execute(System.Action<Steeltoe.Common.Retry.IRetryContext> retryCallback) -> void
+override Steeltoe.Common.Retry.PollyRetryTemplate.Execute(System.Action<Steeltoe.Common.Retry.IRetryContext> retryCallback, Steeltoe.Common.Retry.IRecoveryCallback recoveryCallback) -> void
+override Steeltoe.Common.Retry.PollyRetryTemplate.Execute(System.Action<Steeltoe.Common.Retry.IRetryContext> retryCallback, System.Action<Steeltoe.Common.Retry.IRetryContext> recoveryCallback) -> void
+override Steeltoe.Common.Retry.PollyRetryTemplate.Execute<T>(System.Func<Steeltoe.Common.Retry.IRetryContext, T> retryCallback) -> T
+override Steeltoe.Common.Retry.PollyRetryTemplate.Execute<T>(System.Func<Steeltoe.Common.Retry.IRetryContext, T> retryCallback, Steeltoe.Common.Retry.IRecoveryCallback<T> recoveryCallback) -> T
+override Steeltoe.Common.Retry.PollyRetryTemplate.Execute<T>(System.Func<Steeltoe.Common.Retry.IRetryContext, T> retryCallback, System.Func<Steeltoe.Common.Retry.IRetryContext, T> recoveryCallback) -> T
+Steeltoe.Common.Retry.PollyRetryTemplate
+Steeltoe.Common.Retry.PollyRetryTemplate.PollyRetryTemplate(int maxAttempts, int backOffInitialInterval, int backOffMaxInterval, double backOffMultiplier, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Common.Retry.PollyRetryTemplate.PollyRetryTemplate(System.Collections.Generic.Dictionary<System.Type, bool> retryableExceptions, int maxAttempts, bool defaultRetryable, int backOffInitialInterval, int backOffMaxInterval, double backOffMultiplier, Microsoft.Extensions.Logging.ILogger logger = null) -> void

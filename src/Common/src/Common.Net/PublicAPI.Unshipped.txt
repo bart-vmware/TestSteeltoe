@@ -1,0 +1,45 @@
+﻿Steeltoe.Common.Net.IMPR
+Steeltoe.Common.Net.IMPR.AddConnection(Steeltoe.Common.Net.WindowsNetworkFileShare.NetResource netResource, string password, string username, int flags) -> int
+Steeltoe.Common.Net.IMPR.CancelConnection(string name, int flags, bool force) -> int
+Steeltoe.Common.Net.IMPR.GetLastError(out int error, out System.Text.StringBuilder errorBuf, int errorBufSize, out System.Text.StringBuilder nameBuf, int nameBufSize) -> int
+Steeltoe.Common.Net.IMPR.UseConnection(System.IntPtr hwndOwner, Steeltoe.Common.Net.WindowsNetworkFileShare.NetResource netResource, string password, string username, int flags, string lpAccessName, string lpBufferSize, string lpResult) -> int
+Steeltoe.Common.Net.WindowsNetworkFileShare
+Steeltoe.Common.Net.WindowsNetworkFileShare.Dispose() -> void
+Steeltoe.Common.Net.WindowsNetworkFileShare.GetLastError(out int error, out System.Text.StringBuilder errorBuf, int errorBufSize, out System.Text.StringBuilder nameBuf, int nameBufSize) -> int
+Steeltoe.Common.Net.WindowsNetworkFileShare.NetResource
+Steeltoe.Common.Net.WindowsNetworkFileShare.NetResource.Comment -> string
+Steeltoe.Common.Net.WindowsNetworkFileShare.NetResource.DisplayType -> Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceDisplaytype
+Steeltoe.Common.Net.WindowsNetworkFileShare.NetResource.LocalName -> string
+Steeltoe.Common.Net.WindowsNetworkFileShare.NetResource.NetResource() -> void
+Steeltoe.Common.Net.WindowsNetworkFileShare.NetResource.Provider -> string
+Steeltoe.Common.Net.WindowsNetworkFileShare.NetResource.RemoteName -> string
+Steeltoe.Common.Net.WindowsNetworkFileShare.NetResource.ResourceType -> Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceType
+Steeltoe.Common.Net.WindowsNetworkFileShare.NetResource.Scope -> Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceScope
+Steeltoe.Common.Net.WindowsNetworkFileShare.NetResource.Usage -> int
+Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceDisplaytype
+Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceDisplaytype.Directory = 9 -> Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceDisplaytype
+Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceDisplaytype.Domain = 1 -> Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceDisplaytype
+Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceDisplaytype.File = 4 -> Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceDisplaytype
+Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceDisplaytype.Generic = 0 -> Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceDisplaytype
+Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceDisplaytype.Group = 5 -> Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceDisplaytype
+Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceDisplaytype.Ndscontainer = 11 -> Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceDisplaytype
+Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceDisplaytype.Network = 6 -> Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceDisplaytype
+Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceDisplaytype.Root = 7 -> Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceDisplaytype
+Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceDisplaytype.Server = 2 -> Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceDisplaytype
+Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceDisplaytype.Share = 3 -> Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceDisplaytype
+Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceDisplaytype.Shareadmin = 8 -> Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceDisplaytype
+Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceDisplaytype.Tree = 10 -> Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceDisplaytype
+Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceScope
+Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceScope.Connected = 1 -> Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceScope
+Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceScope.Context = 5 -> Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceScope
+Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceScope.GlobalNetwork = 2 -> Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceScope
+Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceScope.Recent = 4 -> Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceScope
+Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceScope.Remembered = 3 -> Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceScope
+Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceType
+Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceType.Any = 0 -> Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceType
+Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceType.Disk = 1 -> Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceType
+Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceType.Print = 2 -> Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceType
+Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceType.Reserved = 8 -> Steeltoe.Common.Net.WindowsNetworkFileShare.ResourceType
+Steeltoe.Common.Net.WindowsNetworkFileShare.WindowsNetworkFileShare(string networkName, System.Net.NetworkCredential credentials, Steeltoe.Common.Net.IMPR mpr = null) -> void
+Steeltoe.Common.Net.WindowsNetworkFileShare.~WindowsNetworkFileShare() -> void
+virtual Steeltoe.Common.Net.WindowsNetworkFileShare.Dispose(bool disposing) -> void

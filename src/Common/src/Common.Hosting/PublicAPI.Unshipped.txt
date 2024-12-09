@@ -1,0 +1,9 @@
+﻿const Steeltoe.Common.Hosting.HostBuilderExtensions.DEFAULT_URL = "http://*:8080" -> string
+static Steeltoe.Common.Hosting.HostBuilderExtensions.UseCloudHosting(this Microsoft.AspNetCore.Builder.WebApplicationBuilder webApplicationBuilder, int? runLocalHttpPort = null, int? runLocalHttpsPort = null) -> Microsoft.AspNetCore.Builder.WebApplicationBuilder
+static Steeltoe.Common.Hosting.HostBuilderExtensions.UseCloudHosting(this Microsoft.AspNetCore.Hosting.IWebHostBuilder webHostBuilder, int? runLocalHttpPort = null, int? runLocalHttpsPort = null) -> Microsoft.AspNetCore.Hosting.IWebHostBuilder
+static Steeltoe.Common.Hosting.HostBuilderExtensions.UseCloudHosting(this Microsoft.Extensions.Hosting.IHostBuilder hostBuilder, int? runLocalHttpPort = null, int? runLocalHttpsPort = null) -> Microsoft.Extensions.Hosting.IHostBuilder
+Steeltoe.Common.Hosting.BootstrapLoggerHostedService
+Steeltoe.Common.Hosting.BootstrapLoggerHostedService.BootstrapLoggerHostedService(Microsoft.Extensions.Logging.ILoggerFactory loggerFactory) -> void
+Steeltoe.Common.Hosting.BootstrapLoggerHostedService.StartAsync(System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task
+Steeltoe.Common.Hosting.BootstrapLoggerHostedService.StopAsync(System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task
+Steeltoe.Common.Hosting.HostBuilderExtensions

@@ -1,0 +1,121 @@
+﻿abstract Steeltoe.Common.Diagnostics.DiagnosticObserver.ProcessEvent(string event, object arg) -> void
+static Steeltoe.Common.Diagnostics.DiagnosticHelpers.GetProperty<T>(object o, string name) -> T
+static Steeltoe.Common.Diagnostics.DiagnosticsManager.Instance.get -> Steeltoe.Common.Diagnostics.DiagnosticsManager
+Steeltoe.Common.Diagnostics.DiagnosticHelpers
+Steeltoe.Common.Diagnostics.DiagnosticObserver
+Steeltoe.Common.Diagnostics.DiagnosticObserver.DiagnosticObserver(string name, string listenerName, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Common.Diagnostics.DiagnosticObserver.Dispose() -> void
+Steeltoe.Common.Diagnostics.DiagnosticObserver.ListenerName.get -> string
+Steeltoe.Common.Diagnostics.DiagnosticObserver.Logger.get -> Microsoft.Extensions.Logging.ILogger
+Steeltoe.Common.Diagnostics.DiagnosticObserver.ObserverName.get -> string
+Steeltoe.Common.Diagnostics.DiagnosticObserver.Subscribe(System.Diagnostics.DiagnosticListener listener) -> void
+Steeltoe.Common.Diagnostics.DiagnosticObserver.Subscription.get -> System.IDisposable
+Steeltoe.Common.Diagnostics.DiagnosticObserver.Subscription.set -> void
+Steeltoe.Common.Diagnostics.DiagnosticsManager
+Steeltoe.Common.Diagnostics.DiagnosticsManager.DiagnosticsManager(System.Collections.Generic.IEnumerable<Steeltoe.Common.Diagnostics.IRuntimeDiagnosticSource> runtimeSources, System.Collections.Generic.IEnumerable<Steeltoe.Common.Diagnostics.IDiagnosticObserver> observers, System.Collections.Generic.IEnumerable<System.Diagnostics.Tracing.EventListener> eventListeners, Microsoft.Extensions.Logging.ILogger<Steeltoe.Common.Diagnostics.DiagnosticsManager> logger = null) -> void
+Steeltoe.Common.Diagnostics.DiagnosticsManager.Dispose() -> void
+Steeltoe.Common.Diagnostics.DiagnosticsManager.Observers.get -> System.Collections.Generic.IList<Steeltoe.Common.Diagnostics.IDiagnosticObserver>
+Steeltoe.Common.Diagnostics.DiagnosticsManager.OnCompleted() -> void
+Steeltoe.Common.Diagnostics.DiagnosticsManager.OnError(System.Exception error) -> void
+Steeltoe.Common.Diagnostics.DiagnosticsManager.OnNext(System.Diagnostics.DiagnosticListener value) -> void
+Steeltoe.Common.Diagnostics.DiagnosticsManager.Sources.get -> System.Collections.Generic.IList<Steeltoe.Common.Diagnostics.IRuntimeDiagnosticSource>
+Steeltoe.Common.Diagnostics.DiagnosticsManager.Start() -> void
+Steeltoe.Common.Diagnostics.DiagnosticsManager.Stop() -> void
+Steeltoe.Common.Diagnostics.DiagnosticsManager.~DiagnosticsManager() -> void
+Steeltoe.Common.Diagnostics.IDiagnosticObserver
+Steeltoe.Common.Diagnostics.IDiagnosticObserver.Dispose() -> void
+Steeltoe.Common.Diagnostics.IDiagnosticObserver.ListenerName.get -> string
+Steeltoe.Common.Diagnostics.IDiagnosticObserver.ObserverName.get -> string
+Steeltoe.Common.Diagnostics.IDiagnosticObserver.ProcessEvent(string event, object value) -> void
+Steeltoe.Common.Diagnostics.IDiagnosticObserver.Subscribe(System.Diagnostics.DiagnosticListener listener) -> void
+Steeltoe.Common.Diagnostics.IDiagnosticsManager
+Steeltoe.Common.Diagnostics.IDiagnosticsManager.Start() -> void
+Steeltoe.Common.Diagnostics.IDiagnosticsManager.Stop() -> void
+Steeltoe.Common.Diagnostics.IRuntimeDiagnosticSource
+Steeltoe.Management.AbstractEndpoint
+Steeltoe.Management.AbstractEndpoint.AbstractEndpoint(Steeltoe.Management.IEndpointOptions options) -> void
+Steeltoe.Management.AbstractEndpoint.options -> Steeltoe.Management.IEndpointOptions
+Steeltoe.Management.AbstractEndpoint.Path.get -> string
+Steeltoe.Management.AbstractEndpoint<TResult, TRequest>
+Steeltoe.Management.AbstractEndpoint<TResult, TRequest>.AbstractEndpoint(Steeltoe.Management.IEndpointOptions options) -> void
+Steeltoe.Management.AbstractEndpoint<TResult>
+Steeltoe.Management.AbstractEndpoint<TResult>.AbstractEndpoint(Steeltoe.Management.IEndpointOptions options) -> void
+Steeltoe.Management.AbstractEndpointOptions
+Steeltoe.Management.AbstractEndpointOptions.AbstractEndpointOptions() -> void
+Steeltoe.Management.AbstractEndpointOptions.AbstractEndpointOptions(string sectionName, Microsoft.Extensions.Configuration.IConfiguration config) -> void
+Steeltoe.Management.AbstractEndpointOptions.AllowedVerbs.get -> System.Collections.Generic.IEnumerable<string>
+Steeltoe.Management.AbstractEndpointOptions.AllowedVerbs.set -> void
+Steeltoe.Management.AbstractEndpointOptions.ExactMatch.get -> bool
+Steeltoe.Management.AbstractEndpointOptions.ExactMatch.set -> void
+Steeltoe.Management.AbstractEndpointOptions.Global.get -> Steeltoe.Management.IManagementOptions
+Steeltoe.Management.AbstractEndpointOptions.Global.set -> void
+Steeltoe.Management.AbstractEndpointOptions.RequiredPermissions.get -> Steeltoe.Management.Permissions
+Steeltoe.Management.AbstractEndpointOptions.RequiredPermissions.set -> void
+Steeltoe.Management.AbstractEndpointOptions._enabled -> bool?
+Steeltoe.Management.AbstractEndpointOptions._path -> string
+Steeltoe.Management.AbstractEndpointOptions._sensitive -> bool?
+Steeltoe.Management.IEndpoint
+Steeltoe.Management.IEndpoint.Enabled.get -> bool
+Steeltoe.Management.IEndpoint.Id.get -> string
+Steeltoe.Management.IEndpoint.Options.get -> Steeltoe.Management.IEndpointOptions
+Steeltoe.Management.IEndpoint.Path.get -> string
+Steeltoe.Management.IEndpoint<TResult, TRequest>
+Steeltoe.Management.IEndpoint<TResult, TRequest>.Invoke(TRequest arg) -> TResult
+Steeltoe.Management.IEndpoint<TResult>
+Steeltoe.Management.IEndpoint<TResult>.Invoke() -> TResult
+Steeltoe.Management.IEndpointOptions
+Steeltoe.Management.IEndpointOptions.AllowedVerbs.get -> System.Collections.Generic.IEnumerable<string>
+Steeltoe.Management.IEndpointOptions.Enabled.get -> bool?
+Steeltoe.Management.IEndpointOptions.ExactMatch.get -> bool
+Steeltoe.Management.IEndpointOptions.Id.get -> string
+Steeltoe.Management.IEndpointOptions.IsAccessAllowed(Steeltoe.Management.Permissions permissions) -> bool
+Steeltoe.Management.IEndpointOptions.Path.get -> string
+Steeltoe.Management.IEndpointOptions.RequiredPermissions.get -> Steeltoe.Management.Permissions
+Steeltoe.Management.IManagementOptions
+Steeltoe.Management.IManagementOptions.Enabled.get -> bool?
+Steeltoe.Management.IManagementOptions.EndpointOptions.get -> System.Collections.Generic.List<Steeltoe.Management.IEndpointOptions>
+Steeltoe.Management.IManagementOptions.Path.get -> string
+Steeltoe.Management.IManagementOptions.Port.get -> string
+Steeltoe.Management.IManagementOptions.UseStatusCodeFromResponse.get -> bool
+Steeltoe.Management.IManagementOptions.UseStatusCodeFromResponse.set -> void
+Steeltoe.Management.Info.AbstractConfigurationContributor
+Steeltoe.Management.Info.AbstractConfigurationContributor.AbstractConfigurationContributor() -> void
+Steeltoe.Management.Info.AbstractConfigurationContributor.AbstractConfigurationContributor(Microsoft.Extensions.Configuration.IConfiguration config) -> void
+Steeltoe.Management.Info.AbstractConfigurationContributor._config -> Microsoft.Extensions.Configuration.IConfiguration
+Steeltoe.Management.Info.IInfoBuilder
+Steeltoe.Management.Info.IInfoBuilder.Build() -> System.Collections.Generic.Dictionary<string, object>
+Steeltoe.Management.Info.IInfoBuilder.WithInfo(string key, object value) -> Steeltoe.Management.Info.IInfoBuilder
+Steeltoe.Management.Info.IInfoBuilder.WithInfo(System.Collections.Generic.Dictionary<string, object> details) -> Steeltoe.Management.Info.IInfoBuilder
+Steeltoe.Management.Info.IInfoContributor
+Steeltoe.Management.Info.IInfoContributor.Contribute(Steeltoe.Management.Info.IInfoBuilder builder) -> void
+Steeltoe.Management.Info.InfoBuilder
+Steeltoe.Management.Info.InfoBuilder.Build() -> System.Collections.Generic.Dictionary<string, object>
+Steeltoe.Management.Info.InfoBuilder.InfoBuilder() -> void
+Steeltoe.Management.Info.InfoBuilder.WithInfo(string key, object value) -> Steeltoe.Management.Info.IInfoBuilder
+Steeltoe.Management.Info.InfoBuilder.WithInfo(System.Collections.Generic.Dictionary<string, object> items) -> Steeltoe.Management.Info.IInfoBuilder
+Steeltoe.Management.Permissions
+Steeltoe.Management.Permissions.FULL = 3 -> Steeltoe.Management.Permissions
+Steeltoe.Management.Permissions.NONE = 1 -> Steeltoe.Management.Permissions
+Steeltoe.Management.Permissions.RESTRICTED = 2 -> Steeltoe.Management.Permissions
+Steeltoe.Management.Permissions.UNDEFINED = 0 -> Steeltoe.Management.Permissions
+virtual Steeltoe.Common.Diagnostics.DiagnosticObserver.OnCompleted() -> void
+virtual Steeltoe.Common.Diagnostics.DiagnosticObserver.OnError(System.Exception error) -> void
+virtual Steeltoe.Common.Diagnostics.DiagnosticObserver.OnNext(System.Collections.Generic.KeyValuePair<string, object> event) -> void
+virtual Steeltoe.Common.Diagnostics.DiagnosticsManager.Dispose(bool disposing) -> void
+virtual Steeltoe.Management.AbstractEndpoint.Enabled.get -> bool
+virtual Steeltoe.Management.AbstractEndpoint.Id.get -> string
+virtual Steeltoe.Management.AbstractEndpoint.Options.get -> Steeltoe.Management.IEndpointOptions
+virtual Steeltoe.Management.AbstractEndpoint<TResult, TRequest>.Invoke(TRequest arg) -> TResult
+virtual Steeltoe.Management.AbstractEndpoint<TResult>.Invoke() -> TResult
+virtual Steeltoe.Management.AbstractEndpointOptions.DefaultEnabled.get -> bool
+virtual Steeltoe.Management.AbstractEndpointOptions.Enabled.get -> bool?
+virtual Steeltoe.Management.AbstractEndpointOptions.Enabled.set -> void
+virtual Steeltoe.Management.AbstractEndpointOptions.Id.get -> string
+virtual Steeltoe.Management.AbstractEndpointOptions.Id.set -> void
+virtual Steeltoe.Management.AbstractEndpointOptions.IsAccessAllowed(Steeltoe.Management.Permissions permissions) -> bool
+virtual Steeltoe.Management.AbstractEndpointOptions.Path.get -> string
+virtual Steeltoe.Management.AbstractEndpointOptions.Path.set -> void
+virtual Steeltoe.Management.Info.AbstractConfigurationContributor.AddChildren(System.Collections.Generic.Dictionary<string, object> dict, System.Collections.Generic.IEnumerable<Microsoft.Extensions.Configuration.IConfigurationSection> sections) -> void
+virtual Steeltoe.Management.Info.AbstractConfigurationContributor.AddKeyValue(System.Collections.Generic.Dictionary<string, object> dict, string key, string value) -> void
+virtual Steeltoe.Management.Info.AbstractConfigurationContributor.Contribute(Steeltoe.Management.Info.IInfoBuilder builder, string prefix, bool keepPrefix) -> void
+virtual Steeltoe.Management.Info.AbstractConfigurationContributor.CreateDictionary(string prefix, bool keepPrefix) -> System.Collections.Generic.Dictionary<string, object>

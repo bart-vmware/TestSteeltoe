@@ -1,0 +1,274 @@
+﻿override Steeltoe.Security.DataProtection.CredHub.Credentials.Utilities.SetRequestJsonConverter.Read(ref System.Text.Json.Utf8JsonReader reader, System.Type typeToConvert, System.Text.Json.JsonSerializerOptions options) -> Steeltoe.Security.DataProtection.CredHub.CredentialSetRequest
+override Steeltoe.Security.DataProtection.CredHub.Credentials.Utilities.SetRequestJsonConverter.Write(System.Text.Json.Utf8JsonWriter writer, Steeltoe.Security.DataProtection.CredHub.CredentialSetRequest value, System.Text.Json.JsonSerializerOptions options) -> void
+override Steeltoe.Security.DataProtection.CredHub.JsonCredential.Equals(object obj) -> bool
+override Steeltoe.Security.DataProtection.CredHub.JsonCredential.GetHashCode() -> int
+override Steeltoe.Security.DataProtection.CredHub.JsonCredential.ToString() -> string
+override Steeltoe.Security.DataProtection.CredHub.JsonCredentialJsonConverter.CanConvert(System.Type typeToConvert) -> bool
+override Steeltoe.Security.DataProtection.CredHub.JsonCredentialJsonConverter.Read(ref System.Text.Json.Utf8JsonReader reader, System.Type typeToConvert, System.Text.Json.JsonSerializerOptions options) -> Steeltoe.Security.DataProtection.CredHub.JsonCredential
+override Steeltoe.Security.DataProtection.CredHub.JsonCredentialJsonConverter.Write(System.Text.Json.Utf8JsonWriter writer, Steeltoe.Security.DataProtection.CredHub.JsonCredential value, System.Text.Json.JsonSerializerOptions options) -> void
+override Steeltoe.Security.DataProtection.CredHub.StringCredential.ToString() -> string
+override Steeltoe.Security.DataProtection.CredHub.StringCredentialJsonConverter<T>.CanConvert(System.Type typeToConvert) -> bool
+override Steeltoe.Security.DataProtection.CredHub.StringCredentialJsonConverter<T>.Read(ref System.Text.Json.Utf8JsonReader reader, System.Type typeToConvert, System.Text.Json.JsonSerializerOptions options) -> T
+override Steeltoe.Security.DataProtection.CredHub.StringCredentialJsonConverter<T>.Write(System.Text.Json.Utf8JsonWriter writer, T value, System.Text.Json.JsonSerializerOptions options) -> void
+static Steeltoe.Security.DataProtection.CredHub.CredHubClient.CreateUAAClientAsync(Steeltoe.Security.DataProtection.CredHub.CredHubOptions credHubOptions, Microsoft.Extensions.Logging.ILogger logger = null, System.Net.Http.HttpClient httpClient = null) -> System.Threading.Tasks.Task<Steeltoe.Security.DataProtection.CredHub.CredHubClient>
+Steeltoe.Security.DataProtection.CredHub.CertificateCredential
+Steeltoe.Security.DataProtection.CredHub.CertificateCredential.Certificate.get -> string
+Steeltoe.Security.DataProtection.CredHub.CertificateCredential.Certificate.set -> void
+Steeltoe.Security.DataProtection.CredHub.CertificateCredential.CertificateAuthority.get -> string
+Steeltoe.Security.DataProtection.CredHub.CertificateCredential.CertificateAuthority.set -> void
+Steeltoe.Security.DataProtection.CredHub.CertificateCredential.CertificateAuthorityName.get -> string
+Steeltoe.Security.DataProtection.CredHub.CertificateCredential.CertificateAuthorityName.set -> void
+Steeltoe.Security.DataProtection.CredHub.CertificateCredential.CertificateCredential() -> void
+Steeltoe.Security.DataProtection.CredHub.CertificateCredential.PrivateKey.get -> string
+Steeltoe.Security.DataProtection.CredHub.CertificateCredential.PrivateKey.set -> void
+Steeltoe.Security.DataProtection.CredHub.CertificateGenerationParameters
+Steeltoe.Security.DataProtection.CredHub.CertificateGenerationParameters.AlternativeNames.get -> System.Collections.Generic.List<string>
+Steeltoe.Security.DataProtection.CredHub.CertificateGenerationParameters.AlternativeNames.set -> void
+Steeltoe.Security.DataProtection.CredHub.CertificateGenerationParameters.CertificateAuthority.get -> string
+Steeltoe.Security.DataProtection.CredHub.CertificateGenerationParameters.CertificateAuthority.set -> void
+Steeltoe.Security.DataProtection.CredHub.CertificateGenerationParameters.CertificateGenerationParameters() -> void
+Steeltoe.Security.DataProtection.CredHub.CertificateGenerationParameters.CommonName.get -> string
+Steeltoe.Security.DataProtection.CredHub.CertificateGenerationParameters.CommonName.set -> void
+Steeltoe.Security.DataProtection.CredHub.CertificateGenerationParameters.Country.get -> string
+Steeltoe.Security.DataProtection.CredHub.CertificateGenerationParameters.Country.set -> void
+Steeltoe.Security.DataProtection.CredHub.CertificateGenerationParameters.Duration.get -> int
+Steeltoe.Security.DataProtection.CredHub.CertificateGenerationParameters.Duration.set -> void
+Steeltoe.Security.DataProtection.CredHub.CertificateGenerationParameters.ExtendedKeyUsage.get -> System.Collections.Generic.List<Steeltoe.Security.DataProtection.CredHub.ExtendedKeyUsage>
+Steeltoe.Security.DataProtection.CredHub.CertificateGenerationParameters.ExtendedKeyUsage.set -> void
+Steeltoe.Security.DataProtection.CredHub.CertificateGenerationParameters.IsCertificateAuthority.get -> bool
+Steeltoe.Security.DataProtection.CredHub.CertificateGenerationParameters.IsCertificateAuthority.set -> void
+Steeltoe.Security.DataProtection.CredHub.CertificateGenerationParameters.KeyUsage.get -> System.Collections.Generic.List<Steeltoe.Security.DataProtection.CredHub.KeyUsage>
+Steeltoe.Security.DataProtection.CredHub.CertificateGenerationParameters.KeyUsage.set -> void
+Steeltoe.Security.DataProtection.CredHub.CertificateGenerationParameters.Locality.get -> string
+Steeltoe.Security.DataProtection.CredHub.CertificateGenerationParameters.Locality.set -> void
+Steeltoe.Security.DataProtection.CredHub.CertificateGenerationParameters.Organization.get -> string
+Steeltoe.Security.DataProtection.CredHub.CertificateGenerationParameters.Organization.set -> void
+Steeltoe.Security.DataProtection.CredHub.CertificateGenerationParameters.OrganizationUnit.get -> string
+Steeltoe.Security.DataProtection.CredHub.CertificateGenerationParameters.OrganizationUnit.set -> void
+Steeltoe.Security.DataProtection.CredHub.CertificateGenerationParameters.SelfSign.get -> bool
+Steeltoe.Security.DataProtection.CredHub.CertificateGenerationParameters.SelfSign.set -> void
+Steeltoe.Security.DataProtection.CredHub.CertificateGenerationParameters.State.get -> string
+Steeltoe.Security.DataProtection.CredHub.CertificateGenerationParameters.State.set -> void
+Steeltoe.Security.DataProtection.CredHub.CertificateGenerationRequest
+Steeltoe.Security.DataProtection.CredHub.CertificateGenerationRequest.CertificateGenerationRequest(string credentialName, Steeltoe.Security.DataProtection.CredHub.CertificateGenerationParameters parameters, Steeltoe.Security.DataProtection.CredHub.OverwiteMode overwriteMode = Steeltoe.Security.DataProtection.CredHub.OverwiteMode.converge) -> void
+Steeltoe.Security.DataProtection.CredHub.CertificateKeyLength
+Steeltoe.Security.DataProtection.CredHub.CertificateKeyLength.Length_2048 = 2048 -> Steeltoe.Security.DataProtection.CredHub.CertificateKeyLength
+Steeltoe.Security.DataProtection.CredHub.CertificateKeyLength.Length_3072 = 3072 -> Steeltoe.Security.DataProtection.CredHub.CertificateKeyLength
+Steeltoe.Security.DataProtection.CredHub.CertificateKeyLength.Length_4096 = 4096 -> Steeltoe.Security.DataProtection.CredHub.CertificateKeyLength
+Steeltoe.Security.DataProtection.CredHub.CertificateSetRequest
+Steeltoe.Security.DataProtection.CredHub.CertificateSetRequest.CertificateSetRequest(string credentialName, string privateKey, string certificate, string certificateAuthority = null, string certificateAuthorityName = null) -> void
+Steeltoe.Security.DataProtection.CredHub.CredentialPath
+Steeltoe.Security.DataProtection.CredHub.CredentialPath.CredentialPath() -> void
+Steeltoe.Security.DataProtection.CredHub.CredentialPath.Path.get -> string
+Steeltoe.Security.DataProtection.CredHub.CredentialPath.Path.set -> void
+Steeltoe.Security.DataProtection.CredHub.CredentialPermission
+Steeltoe.Security.DataProtection.CredHub.CredentialPermission.Actor.get -> string
+Steeltoe.Security.DataProtection.CredHub.CredentialPermission.Actor.set -> void
+Steeltoe.Security.DataProtection.CredHub.CredentialPermission.CredentialPermission() -> void
+Steeltoe.Security.DataProtection.CredHub.CredentialPermission.Operations.get -> System.Collections.Generic.List<Steeltoe.Security.DataProtection.CredHub.OperationPermissions>
+Steeltoe.Security.DataProtection.CredHub.CredentialPermission.Operations.set -> void
+Steeltoe.Security.DataProtection.CredHub.Credentials.Utilities.SetRequestJsonConverter
+Steeltoe.Security.DataProtection.CredHub.Credentials.Utilities.SetRequestJsonConverter.SetRequestJsonConverter() -> void
+Steeltoe.Security.DataProtection.CredHub.CredentialSetRequest
+Steeltoe.Security.DataProtection.CredHub.CredentialSetRequest.CredentialSetRequest() -> void
+Steeltoe.Security.DataProtection.CredHub.CredentialSetRequest.Value.get -> Steeltoe.Security.DataProtection.CredHub.ICredentialValue
+Steeltoe.Security.DataProtection.CredHub.CredentialSetRequest.Value.set -> void
+Steeltoe.Security.DataProtection.CredHub.CredentialType
+Steeltoe.Security.DataProtection.CredHub.CredentialType.Certificate = 4 -> Steeltoe.Security.DataProtection.CredHub.CredentialType
+Steeltoe.Security.DataProtection.CredHub.CredentialType.JSON = 3 -> Steeltoe.Security.DataProtection.CredHub.CredentialType
+Steeltoe.Security.DataProtection.CredHub.CredentialType.Password = 1 -> Steeltoe.Security.DataProtection.CredHub.CredentialType
+Steeltoe.Security.DataProtection.CredHub.CredentialType.RSA = 5 -> Steeltoe.Security.DataProtection.CredHub.CredentialType
+Steeltoe.Security.DataProtection.CredHub.CredentialType.SSH = 6 -> Steeltoe.Security.DataProtection.CredHub.CredentialType
+Steeltoe.Security.DataProtection.CredHub.CredentialType.User = 2 -> Steeltoe.Security.DataProtection.CredHub.CredentialType
+Steeltoe.Security.DataProtection.CredHub.CredentialType.Value = 0 -> Steeltoe.Security.DataProtection.CredHub.CredentialType
+Steeltoe.Security.DataProtection.CredHub.CredHubBaseObject
+Steeltoe.Security.DataProtection.CredHub.CredHubBaseObject.CredHubBaseObject() -> void
+Steeltoe.Security.DataProtection.CredHub.CredHubBaseObject.Name.get -> string
+Steeltoe.Security.DataProtection.CredHub.CredHubBaseObject.Name.set -> void
+Steeltoe.Security.DataProtection.CredHub.CredHubBaseObject.Type.get -> Steeltoe.Security.DataProtection.CredHub.CredentialType
+Steeltoe.Security.DataProtection.CredHub.CredHubBaseObject.Type.set -> void
+Steeltoe.Security.DataProtection.CredHub.CredHubClient
+Steeltoe.Security.DataProtection.CredHub.CredHubClient.AddPermissionsAsync(string name, System.Collections.Generic.List<Steeltoe.Security.DataProtection.CredHub.CredentialPermission> permissions) -> System.Threading.Tasks.Task<System.Collections.Generic.List<Steeltoe.Security.DataProtection.CredHub.CredentialPermission>>
+Steeltoe.Security.DataProtection.CredHub.CredHubClient.BulkRegenerateAsync(string certificateAuthority) -> System.Threading.Tasks.Task<Steeltoe.Security.DataProtection.CredHub.RegeneratedCertificates>
+Steeltoe.Security.DataProtection.CredHub.CredHubClient.CredHubClient(bool validateCertificates = true) -> void
+Steeltoe.Security.DataProtection.CredHub.CredHubClient.DeleteByNameAsync(string name) -> System.Threading.Tasks.Task<bool>
+Steeltoe.Security.DataProtection.CredHub.CredHubClient.DeleteByNameInternalAsync(string name) -> System.Threading.Tasks.Task<bool>
+Steeltoe.Security.DataProtection.CredHub.CredHubClient.DeletePermissionAsync(string name, string actor) -> System.Threading.Tasks.Task<bool>
+Steeltoe.Security.DataProtection.CredHub.CredHubClient.FindByNameAsync(string name) -> System.Threading.Tasks.Task<System.Collections.Generic.List<Steeltoe.Security.DataProtection.CredHub.FoundCredential>>
+Steeltoe.Security.DataProtection.CredHub.CredHubClient.FindByPathAsync(string path) -> System.Threading.Tasks.Task<System.Collections.Generic.List<Steeltoe.Security.DataProtection.CredHub.FoundCredential>>
+Steeltoe.Security.DataProtection.CredHub.CredHubClient.GenerateAsync<T>(Steeltoe.Security.DataProtection.CredHub.CredHubGenerateRequest requestParameters) -> System.Threading.Tasks.Task<Steeltoe.Security.DataProtection.CredHub.CredHubCredential<T>>
+Steeltoe.Security.DataProtection.CredHub.CredHubClient.GetByIdAsync<T>(System.Guid id) -> System.Threading.Tasks.Task<Steeltoe.Security.DataProtection.CredHub.CredHubCredential<T>>
+Steeltoe.Security.DataProtection.CredHub.CredHubClient.GetByNameAsync<T>(string name) -> System.Threading.Tasks.Task<Steeltoe.Security.DataProtection.CredHub.CredHubCredential<T>>
+Steeltoe.Security.DataProtection.CredHub.CredHubClient.GetByNameWithHistoryAsync<T>(string name, int entries = 10) -> System.Threading.Tasks.Task<System.Collections.Generic.List<Steeltoe.Security.DataProtection.CredHub.CredHubCredential<T>>>
+Steeltoe.Security.DataProtection.CredHub.CredHubClient.GetPermissionsAsync(string name) -> System.Threading.Tasks.Task<System.Collections.Generic.List<Steeltoe.Security.DataProtection.CredHub.CredentialPermission>>
+Steeltoe.Security.DataProtection.CredHub.CredHubClient.InterpolateServiceDataAsync(string serviceData) -> System.Threading.Tasks.Task<string>
+Steeltoe.Security.DataProtection.CredHub.CredHubClient.RegenerateAsync<T>(string name) -> System.Threading.Tasks.Task<Steeltoe.Security.DataProtection.CredHub.CredHubCredential<T>>
+Steeltoe.Security.DataProtection.CredHub.CredHubClient.WriteAsync<T>(Steeltoe.Security.DataProtection.CredHub.CredentialSetRequest credentialRequest) -> System.Threading.Tasks.Task<Steeltoe.Security.DataProtection.CredHub.CredHubCredential<T>>
+Steeltoe.Security.DataProtection.CredHub.CredHubCredential<T>
+Steeltoe.Security.DataProtection.CredHub.CredHubCredential<T>.CredHubCredential() -> void
+Steeltoe.Security.DataProtection.CredHub.CredHubCredential<T>.Id.get -> System.Guid
+Steeltoe.Security.DataProtection.CredHub.CredHubCredential<T>.Id.set -> void
+Steeltoe.Security.DataProtection.CredHub.CredHubCredential<T>.Value.get -> T
+Steeltoe.Security.DataProtection.CredHub.CredHubCredential<T>.Value.set -> void
+Steeltoe.Security.DataProtection.CredHub.CredHubCredential<T>.Version_Created_At.get -> System.DateTime
+Steeltoe.Security.DataProtection.CredHub.CredHubCredential<T>.Version_Created_At.set -> void
+Steeltoe.Security.DataProtection.CredHub.CredHubException
+Steeltoe.Security.DataProtection.CredHub.CredHubException.CredHubException() -> void
+Steeltoe.Security.DataProtection.CredHub.CredHubException.CredHubException(string message) -> void
+Steeltoe.Security.DataProtection.CredHub.CredHubException.CredHubException(string message, System.Exception innerException) -> void
+Steeltoe.Security.DataProtection.CredHub.CredHubException.CredHubException(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context) -> void
+Steeltoe.Security.DataProtection.CredHub.CredHubGenerateRequest
+Steeltoe.Security.DataProtection.CredHub.CredHubGenerateRequest.CredHubGenerateRequest() -> void
+Steeltoe.Security.DataProtection.CredHub.CredHubGenerateRequest.Mode.get -> Steeltoe.Security.DataProtection.CredHub.OverwiteMode
+Steeltoe.Security.DataProtection.CredHub.CredHubGenerateRequest.Mode.set -> void
+Steeltoe.Security.DataProtection.CredHub.CredHubGenerateRequest.Parameters.get -> object
+Steeltoe.Security.DataProtection.CredHub.CredHubGenerateRequest.Parameters.set -> void
+Steeltoe.Security.DataProtection.CredHub.CredHubOptions
+Steeltoe.Security.DataProtection.CredHub.CredHubOptions.ClientId.get -> string
+Steeltoe.Security.DataProtection.CredHub.CredHubOptions.ClientId.set -> void
+Steeltoe.Security.DataProtection.CredHub.CredHubOptions.ClientSecret.get -> string
+Steeltoe.Security.DataProtection.CredHub.CredHubOptions.ClientSecret.set -> void
+Steeltoe.Security.DataProtection.CredHub.CredHubOptions.CredHubOptions() -> void
+Steeltoe.Security.DataProtection.CredHub.CredHubOptions.CredHubUrl.get -> string
+Steeltoe.Security.DataProtection.CredHub.CredHubOptions.CredHubUrl.set -> void
+Steeltoe.Security.DataProtection.CredHub.CredHubOptions.Validate() -> void
+Steeltoe.Security.DataProtection.CredHub.CredHubOptions.ValidateCertificates.get -> bool
+Steeltoe.Security.DataProtection.CredHub.CredHubOptions.ValidateCertificates.set -> void
+Steeltoe.Security.DataProtection.CredHub.CredHubServerInfo
+Steeltoe.Security.DataProtection.CredHub.CredHubServerInfo.App.get -> System.Collections.Generic.Dictionary<string, string>
+Steeltoe.Security.DataProtection.CredHub.CredHubServerInfo.App.set -> void
+Steeltoe.Security.DataProtection.CredHub.CredHubServerInfo.AuthServer.get -> System.Collections.Generic.Dictionary<string, string>
+Steeltoe.Security.DataProtection.CredHub.CredHubServerInfo.AuthServer.set -> void
+Steeltoe.Security.DataProtection.CredHub.CredHubServerInfo.CredHubServerInfo() -> void
+Steeltoe.Security.DataProtection.CredHub.ExtendedKeyUsage
+Steeltoe.Security.DataProtection.CredHub.ExtendedKeyUsage.client_auth = 0 -> Steeltoe.Security.DataProtection.CredHub.ExtendedKeyUsage
+Steeltoe.Security.DataProtection.CredHub.ExtendedKeyUsage.code_signing = 2 -> Steeltoe.Security.DataProtection.CredHub.ExtendedKeyUsage
+Steeltoe.Security.DataProtection.CredHub.ExtendedKeyUsage.email_protection = 3 -> Steeltoe.Security.DataProtection.CredHub.ExtendedKeyUsage
+Steeltoe.Security.DataProtection.CredHub.ExtendedKeyUsage.server_auth = 1 -> Steeltoe.Security.DataProtection.CredHub.ExtendedKeyUsage
+Steeltoe.Security.DataProtection.CredHub.ExtendedKeyUsage.timestamping = 4 -> Steeltoe.Security.DataProtection.CredHub.ExtendedKeyUsage
+Steeltoe.Security.DataProtection.CredHub.FoundCredential
+Steeltoe.Security.DataProtection.CredHub.FoundCredential.FoundCredential() -> void
+Steeltoe.Security.DataProtection.CredHub.FoundCredential.Name.get -> string
+Steeltoe.Security.DataProtection.CredHub.FoundCredential.Name.set -> void
+Steeltoe.Security.DataProtection.CredHub.FoundCredential.VersionCreatedAt.get -> string
+Steeltoe.Security.DataProtection.CredHub.FoundCredential.VersionCreatedAt.set -> void
+Steeltoe.Security.DataProtection.CredHub.ICredentialParameter
+Steeltoe.Security.DataProtection.CredHub.ICredentialValue
+Steeltoe.Security.DataProtection.CredHub.ICredHubClient
+Steeltoe.Security.DataProtection.CredHub.ICredHubClient.AddPermissionsAsync(string credentialName, System.Collections.Generic.List<Steeltoe.Security.DataProtection.CredHub.CredentialPermission> permissions) -> System.Threading.Tasks.Task<System.Collections.Generic.List<Steeltoe.Security.DataProtection.CredHub.CredentialPermission>>
+Steeltoe.Security.DataProtection.CredHub.ICredHubClient.BulkRegenerateAsync(string certificateAuthority) -> System.Threading.Tasks.Task<Steeltoe.Security.DataProtection.CredHub.RegeneratedCertificates>
+Steeltoe.Security.DataProtection.CredHub.ICredHubClient.DeleteByNameAsync(string name) -> System.Threading.Tasks.Task<bool>
+Steeltoe.Security.DataProtection.CredHub.ICredHubClient.DeletePermissionAsync(string credentialName, string actor) -> System.Threading.Tasks.Task<bool>
+Steeltoe.Security.DataProtection.CredHub.ICredHubClient.FindByNameAsync(string name) -> System.Threading.Tasks.Task<System.Collections.Generic.List<Steeltoe.Security.DataProtection.CredHub.FoundCredential>>
+Steeltoe.Security.DataProtection.CredHub.ICredHubClient.FindByPathAsync(string path) -> System.Threading.Tasks.Task<System.Collections.Generic.List<Steeltoe.Security.DataProtection.CredHub.FoundCredential>>
+Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GenerateAsync<T>(Steeltoe.Security.DataProtection.CredHub.CredHubGenerateRequest requestParameters) -> System.Threading.Tasks.Task<Steeltoe.Security.DataProtection.CredHub.CredHubCredential<T>>
+Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GetByIdAsync<T>(System.Guid id) -> System.Threading.Tasks.Task<Steeltoe.Security.DataProtection.CredHub.CredHubCredential<T>>
+Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GetByNameAsync<T>(string name) -> System.Threading.Tasks.Task<Steeltoe.Security.DataProtection.CredHub.CredHubCredential<T>>
+Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GetByNameWithHistoryAsync<T>(string name, int entries = 10) -> System.Threading.Tasks.Task<System.Collections.Generic.List<Steeltoe.Security.DataProtection.CredHub.CredHubCredential<T>>>
+Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GetPermissionsAsync(string credentialName) -> System.Threading.Tasks.Task<System.Collections.Generic.List<Steeltoe.Security.DataProtection.CredHub.CredentialPermission>>
+Steeltoe.Security.DataProtection.CredHub.ICredHubClient.InterpolateServiceDataAsync(string serviceData) -> System.Threading.Tasks.Task<string>
+Steeltoe.Security.DataProtection.CredHub.ICredHubClient.RegenerateAsync<T>(string name) -> System.Threading.Tasks.Task<Steeltoe.Security.DataProtection.CredHub.CredHubCredential<T>>
+Steeltoe.Security.DataProtection.CredHub.ICredHubClient.WriteAsync<T>(Steeltoe.Security.DataProtection.CredHub.CredentialSetRequest credentialRequest) -> System.Threading.Tasks.Task<Steeltoe.Security.DataProtection.CredHub.CredHubCredential<T>>
+Steeltoe.Security.DataProtection.CredHub.JsonCredential
+Steeltoe.Security.DataProtection.CredHub.JsonCredential.JsonCredential(string valueAsString) -> void
+Steeltoe.Security.DataProtection.CredHub.JsonCredential.JsonCredential(System.Text.Json.JsonElement value) -> void
+Steeltoe.Security.DataProtection.CredHub.JsonCredential.Value.get -> System.Text.Json.JsonElement
+Steeltoe.Security.DataProtection.CredHub.JsonCredentialJsonConverter
+Steeltoe.Security.DataProtection.CredHub.JsonCredentialJsonConverter.JsonCredentialJsonConverter() -> void
+Steeltoe.Security.DataProtection.CredHub.JsonSetRequest
+Steeltoe.Security.DataProtection.CredHub.JsonSetRequest.JsonSetRequest(string credentialName, string value) -> void
+Steeltoe.Security.DataProtection.CredHub.JsonSetRequest.JsonSetRequest(string credentialName, System.Text.Json.JsonElement value) -> void
+Steeltoe.Security.DataProtection.CredHub.KeyPairCredential
+Steeltoe.Security.DataProtection.CredHub.KeyPairCredential.KeyPairCredential() -> void
+Steeltoe.Security.DataProtection.CredHub.KeyPairCredential.PrivateKey.get -> string
+Steeltoe.Security.DataProtection.CredHub.KeyPairCredential.PrivateKey.set -> void
+Steeltoe.Security.DataProtection.CredHub.KeyPairCredential.PublicKey.get -> string
+Steeltoe.Security.DataProtection.CredHub.KeyPairCredential.PublicKey.set -> void
+Steeltoe.Security.DataProtection.CredHub.KeyParameters
+Steeltoe.Security.DataProtection.CredHub.KeyParameters.KeyLength.get -> Steeltoe.Security.DataProtection.CredHub.CertificateKeyLength
+Steeltoe.Security.DataProtection.CredHub.KeyParameters.KeyLength.set -> void
+Steeltoe.Security.DataProtection.CredHub.KeyParameters.KeyParameters() -> void
+Steeltoe.Security.DataProtection.CredHub.KeyUsage
+Steeltoe.Security.DataProtection.CredHub.KeyUsage.crl_sign = 6 -> Steeltoe.Security.DataProtection.CredHub.KeyUsage
+Steeltoe.Security.DataProtection.CredHub.KeyUsage.data_encipherment = 3 -> Steeltoe.Security.DataProtection.CredHub.KeyUsage
+Steeltoe.Security.DataProtection.CredHub.KeyUsage.decipher_only = 8 -> Steeltoe.Security.DataProtection.CredHub.KeyUsage
+Steeltoe.Security.DataProtection.CredHub.KeyUsage.digital_signature = 0 -> Steeltoe.Security.DataProtection.CredHub.KeyUsage
+Steeltoe.Security.DataProtection.CredHub.KeyUsage.encipher_only = 7 -> Steeltoe.Security.DataProtection.CredHub.KeyUsage
+Steeltoe.Security.DataProtection.CredHub.KeyUsage.key_agreement = 4 -> Steeltoe.Security.DataProtection.CredHub.KeyUsage
+Steeltoe.Security.DataProtection.CredHub.KeyUsage.key_cert_sign = 5 -> Steeltoe.Security.DataProtection.CredHub.KeyUsage
+Steeltoe.Security.DataProtection.CredHub.KeyUsage.key_encipherment = 2 -> Steeltoe.Security.DataProtection.CredHub.KeyUsage
+Steeltoe.Security.DataProtection.CredHub.KeyUsage.non_repudiation = 1 -> Steeltoe.Security.DataProtection.CredHub.KeyUsage
+Steeltoe.Security.DataProtection.CredHub.OperationPermissions
+Steeltoe.Security.DataProtection.CredHub.OperationPermissions.delete = 2 -> Steeltoe.Security.DataProtection.CredHub.OperationPermissions
+Steeltoe.Security.DataProtection.CredHub.OperationPermissions.read = 0 -> Steeltoe.Security.DataProtection.CredHub.OperationPermissions
+Steeltoe.Security.DataProtection.CredHub.OperationPermissions.read_acl = 3 -> Steeltoe.Security.DataProtection.CredHub.OperationPermissions
+Steeltoe.Security.DataProtection.CredHub.OperationPermissions.write = 1 -> Steeltoe.Security.DataProtection.CredHub.OperationPermissions
+Steeltoe.Security.DataProtection.CredHub.OperationPermissions.write_acl = 4 -> Steeltoe.Security.DataProtection.CredHub.OperationPermissions
+Steeltoe.Security.DataProtection.CredHub.OverwiteMode
+Steeltoe.Security.DataProtection.CredHub.OverwiteMode.converge = 2 -> Steeltoe.Security.DataProtection.CredHub.OverwiteMode
+Steeltoe.Security.DataProtection.CredHub.OverwiteMode.noOverwrite = 0 -> Steeltoe.Security.DataProtection.CredHub.OverwiteMode
+Steeltoe.Security.DataProtection.CredHub.OverwiteMode.overwrite = 1 -> Steeltoe.Security.DataProtection.CredHub.OverwiteMode
+Steeltoe.Security.DataProtection.CredHub.PasswordCredential
+Steeltoe.Security.DataProtection.CredHub.PasswordCredential.PasswordCredential(string value) -> void
+Steeltoe.Security.DataProtection.CredHub.PasswordGenerationParameters
+Steeltoe.Security.DataProtection.CredHub.PasswordGenerationParameters.ExcludeLower.get -> bool?
+Steeltoe.Security.DataProtection.CredHub.PasswordGenerationParameters.ExcludeLower.set -> void
+Steeltoe.Security.DataProtection.CredHub.PasswordGenerationParameters.ExcludeNumber.get -> bool?
+Steeltoe.Security.DataProtection.CredHub.PasswordGenerationParameters.ExcludeNumber.set -> void
+Steeltoe.Security.DataProtection.CredHub.PasswordGenerationParameters.ExcludeUpper.get -> bool?
+Steeltoe.Security.DataProtection.CredHub.PasswordGenerationParameters.ExcludeUpper.set -> void
+Steeltoe.Security.DataProtection.CredHub.PasswordGenerationParameters.IncludeSpecial.get -> bool?
+Steeltoe.Security.DataProtection.CredHub.PasswordGenerationParameters.IncludeSpecial.set -> void
+Steeltoe.Security.DataProtection.CredHub.PasswordGenerationParameters.Length.get -> int?
+Steeltoe.Security.DataProtection.CredHub.PasswordGenerationParameters.Length.set -> void
+Steeltoe.Security.DataProtection.CredHub.PasswordGenerationParameters.PasswordGenerationParameters() -> void
+Steeltoe.Security.DataProtection.CredHub.PasswordGenerationRequest
+Steeltoe.Security.DataProtection.CredHub.PasswordGenerationRequest.PasswordGenerationRequest(string credentialName, Steeltoe.Security.DataProtection.CredHub.PasswordGenerationParameters parameters, Steeltoe.Security.DataProtection.CredHub.OverwiteMode overwriteMode = Steeltoe.Security.DataProtection.CredHub.OverwiteMode.converge) -> void
+Steeltoe.Security.DataProtection.CredHub.PasswordSetRequest
+Steeltoe.Security.DataProtection.CredHub.PasswordSetRequest.PasswordSetRequest(string credentialName, string password) -> void
+Steeltoe.Security.DataProtection.CredHub.RegeneratedCertificates
+Steeltoe.Security.DataProtection.CredHub.RegeneratedCertificates.RegeneratedCertificates() -> void
+Steeltoe.Security.DataProtection.CredHub.RegeneratedCertificates.RegeneratedCredentials.get -> System.Collections.Generic.List<string>
+Steeltoe.Security.DataProtection.CredHub.RegeneratedCertificates.RegeneratedCredentials.set -> void
+Steeltoe.Security.DataProtection.CredHub.RsaCredential
+Steeltoe.Security.DataProtection.CredHub.RsaCredential.RsaCredential() -> void
+Steeltoe.Security.DataProtection.CredHub.RsaGenerationRequest
+Steeltoe.Security.DataProtection.CredHub.RsaGenerationRequest.RsaGenerationRequest(string credentialName, Steeltoe.Security.DataProtection.CredHub.CertificateKeyLength keyLength = Steeltoe.Security.DataProtection.CredHub.CertificateKeyLength.Length_2048, Steeltoe.Security.DataProtection.CredHub.OverwiteMode overwriteMode = Steeltoe.Security.DataProtection.CredHub.OverwiteMode.converge) -> void
+Steeltoe.Security.DataProtection.CredHub.RsaSetRequest
+Steeltoe.Security.DataProtection.CredHub.RsaSetRequest.RsaSetRequest(string credentialName, string privateKey, string publicKey) -> void
+Steeltoe.Security.DataProtection.CredHub.SshCredential
+Steeltoe.Security.DataProtection.CredHub.SshCredential.PublicKeyFingerprint.get -> string
+Steeltoe.Security.DataProtection.CredHub.SshCredential.PublicKeyFingerprint.set -> void
+Steeltoe.Security.DataProtection.CredHub.SshCredential.SshCredential() -> void
+Steeltoe.Security.DataProtection.CredHub.SshGenerationParameters
+Steeltoe.Security.DataProtection.CredHub.SshGenerationParameters.SshComment.get -> string
+Steeltoe.Security.DataProtection.CredHub.SshGenerationParameters.SshComment.set -> void
+Steeltoe.Security.DataProtection.CredHub.SshGenerationParameters.SshGenerationParameters() -> void
+Steeltoe.Security.DataProtection.CredHub.SshGenerationRequest
+Steeltoe.Security.DataProtection.CredHub.SshGenerationRequest.SshGenerationRequest(string credentialName, Steeltoe.Security.DataProtection.CredHub.SshGenerationParameters parameters = null, Steeltoe.Security.DataProtection.CredHub.OverwiteMode overwriteMode = Steeltoe.Security.DataProtection.CredHub.OverwiteMode.converge) -> void
+Steeltoe.Security.DataProtection.CredHub.SshSetRequest
+Steeltoe.Security.DataProtection.CredHub.SshSetRequest.SshSetRequest(string credentialName, string privateKey, string publicKey) -> void
+Steeltoe.Security.DataProtection.CredHub.StringCredential
+Steeltoe.Security.DataProtection.CredHub.StringCredential.StringCredential(string value) -> void
+Steeltoe.Security.DataProtection.CredHub.StringCredentialJsonConverter<T>
+Steeltoe.Security.DataProtection.CredHub.StringCredentialJsonConverter<T>.StringCredentialJsonConverter() -> void
+Steeltoe.Security.DataProtection.CredHub.UserCredential
+Steeltoe.Security.DataProtection.CredHub.UserCredential.Password.get -> string
+Steeltoe.Security.DataProtection.CredHub.UserCredential.Password.set -> void
+Steeltoe.Security.DataProtection.CredHub.UserCredential.PasswordHash.get -> string
+Steeltoe.Security.DataProtection.CredHub.UserCredential.PasswordHash.set -> void
+Steeltoe.Security.DataProtection.CredHub.UserCredential.UserCredential() -> void
+Steeltoe.Security.DataProtection.CredHub.UserCredential.Username.get -> string
+Steeltoe.Security.DataProtection.CredHub.UserCredential.Username.set -> void
+Steeltoe.Security.DataProtection.CredHub.UserGenerationParameters
+Steeltoe.Security.DataProtection.CredHub.UserGenerationParameters.UserGenerationParameters() -> void
+Steeltoe.Security.DataProtection.CredHub.UserGenerationParameters.Username.get -> string
+Steeltoe.Security.DataProtection.CredHub.UserGenerationParameters.Username.set -> void
+Steeltoe.Security.DataProtection.CredHub.UserGenerationRequest
+Steeltoe.Security.DataProtection.CredHub.UserGenerationRequest.UserGenerationRequest(string credentialName, Steeltoe.Security.DataProtection.CredHub.UserGenerationParameters parameters, Steeltoe.Security.DataProtection.CredHub.OverwiteMode overwriteMode = Steeltoe.Security.DataProtection.CredHub.OverwiteMode.converge) -> void
+Steeltoe.Security.DataProtection.CredHub.UserSetRequest
+Steeltoe.Security.DataProtection.CredHub.UserSetRequest.UserSetRequest(string credentialName, string userName, string password) -> void
+Steeltoe.Security.DataProtection.CredHub.ValueCredential
+Steeltoe.Security.DataProtection.CredHub.ValueCredential.ValueCredential(string value) -> void
+Steeltoe.Security.DataProtection.CredHub.ValueSetRequest
+Steeltoe.Security.DataProtection.CredHub.ValueSetRequest.ValueSetRequest(string credentialName, string value) -> void

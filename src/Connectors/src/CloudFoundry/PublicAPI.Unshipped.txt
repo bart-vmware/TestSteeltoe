@@ -1,0 +1,5 @@
+﻿static Steeltoe.Connector.CloudFoundry.CloudFoundryConnector.EnsureAssemblyIsLoaded() -> void
+static Steeltoe.Connector.CloudFoundry.CloudFoundryServiceInfoCreator.Instance(Microsoft.Extensions.Configuration.IConfiguration configuration) -> Steeltoe.Connector.CloudFoundry.CloudFoundryServiceInfoCreator
+static Steeltoe.Connector.CloudFoundry.CloudFoundryServiceInfoCreator.IsRelevant.get -> bool
+Steeltoe.Connector.CloudFoundry.CloudFoundryConnector
+Steeltoe.Connector.CloudFoundry.CloudFoundryServiceInfoCreator

@@ -1,0 +1,1367 @@
+﻿abstract Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.DoFallback() -> TResult
+abstract Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.DoRun() -> TResult
+abstract Steeltoe.CircuitBreaker.Hystrix.HystrixCollapser<BatchReturnType, RequestResponseType, RequestArgumentType>.CreateCommand(System.Collections.Generic.ICollection<Steeltoe.CircuitBreaker.ICollapsedRequest<RequestResponseType, RequestArgumentType>> requests) -> Steeltoe.CircuitBreaker.Hystrix.HystrixCommand<BatchReturnType>
+abstract Steeltoe.CircuitBreaker.Hystrix.HystrixCollapser<BatchReturnType, RequestResponseType, RequestArgumentType>.MapResponseToRequests(BatchReturnType batchResponse, System.Collections.Generic.ICollection<Steeltoe.CircuitBreaker.ICollapsedRequest<RequestResponseType, RequestArgumentType>> requests) -> void
+abstract Steeltoe.CircuitBreaker.Hystrix.HystrixCollapser<BatchReturnType, RequestResponseType, RequestArgumentType>.RequestArgument.get -> RequestArgumentType
+abstract Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream<Event, Bucket, Output>.EmptyBucketSummary.get -> Bucket
+abstract Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream<Event, Bucket, Output>.EmptyOutputValue.get -> Output
+abstract Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream<Event, Bucket, Output>.Observe() -> System.IObservable<Output>
+abstract Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandEvent.DidCommandExecute.get -> bool
+abstract Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandEvent.IsCommandCompletion.get -> bool
+abstract Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandEvent.IsExecutedInThread.get -> bool
+abstract Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandEvent.IsExecutionStart.get -> bool
+abstract Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandEvent.IsResponseThreadPoolRejected.get -> bool
+const Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserOptions.HYSTRIX_COLLAPSER_PREFIX = "hystrix:collapser" -> string
+const Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.HYSTRIX_COMMAND_PREFIX = "hystrix:command" -> string
+const Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolOptions.HYSTRIX_THREADPOOL_PREFIX = "hystrix:threadpool" -> string
+const Steeltoe.CircuitBreaker.Hystrix.MetricsStream.HystrixMetricsStreamPublisher.SPRING_CLOUD_HYSTRIX_STREAM_EXCHANGE = "spring.cloud.hystrix.stream" -> string
+override Steeltoe.CircuitBreaker.Hystrix.Exceptions.HystrixRuntimeException.GetObjectData(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context) -> void
+override Steeltoe.CircuitBreaker.Hystrix.ExecutionResult.EventCounts.Equals(object o) -> bool
+override Steeltoe.CircuitBreaker.Hystrix.ExecutionResult.EventCounts.GetHashCode() -> int
+override Steeltoe.CircuitBreaker.Hystrix.ExecutionResult.EventCounts.ToString() -> string
+override Steeltoe.CircuitBreaker.Hystrix.ExecutionResult.ToString() -> string
+override Steeltoe.CircuitBreaker.Hystrix.HealthCounts.ToString() -> string
+override Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserMetrics.GetCumulativeCount(Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent event) -> long
+override Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserMetrics.GetRollingCount(Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent event) -> long
+override Steeltoe.CircuitBreaker.Hystrix.HystrixCommand.DoFallback() -> System.Reactive.Unit
+override Steeltoe.CircuitBreaker.Hystrix.HystrixCommand.DoRun() -> System.Reactive.Unit
+override Steeltoe.CircuitBreaker.Hystrix.HystrixCommand<TResult>.DoFallback() -> TResult
+override Steeltoe.CircuitBreaker.Hystrix.HystrixCommand<TResult>.DoRun() -> TResult
+override Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics.GetCumulativeCount(Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent event) -> long
+override Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics.GetRollingCount(Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent event) -> long
+override Steeltoe.CircuitBreaker.Hystrix.HystrixKeyDefault.ToString() -> string
+override Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolMetrics.GetCumulativeCount(Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent event) -> long
+override Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolMetrics.GetRollingCount(Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent event) -> long
+override Steeltoe.CircuitBreaker.Hystrix.Metric.CachedValuesHistogram.ToString() -> string
+override Steeltoe.CircuitBreaker.Hystrix.Metric.CommandAndCacheKey.Equals(object o) -> bool
+override Steeltoe.CircuitBreaker.Hystrix.Metric.CommandAndCacheKey.GetHashCode() -> int
+override Steeltoe.CircuitBreaker.Hystrix.Metric.CommandAndCacheKey.ToString() -> string
+override Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCumulativeCounterStream<Event, Bucket, Output>.Observe() -> System.IObservable<Output>
+override Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream<Event, Bucket, Output>.Observe() -> System.IObservable<Output>
+override Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.CumulativeCollapserEventCounterStream.EmptyBucketSummary.get -> long[]
+override Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.CumulativeCollapserEventCounterStream.EmptyOutputValue.get -> long[]
+override Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.CumulativeCommandEventCounterStream.EmptyBucketSummary.get -> long[]
+override Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.CumulativeCommandEventCounterStream.EmptyOutputValue.get -> long[]
+override Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.CumulativeThreadPoolEventCounterStream.EmptyBucketSummary.get -> long[]
+override Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.CumulativeThreadPoolEventCounterStream.EmptyOutputValue.get -> long[]
+override Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.HealthCountsStream.EmptyBucketSummary.get -> long[]
+override Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.HealthCountsStream.EmptyOutputValue.get -> Steeltoe.CircuitBreaker.Hystrix.HealthCounts
+override Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCollapserEventCounterStream.EmptyBucketSummary.get -> long[]
+override Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCollapserEventCounterStream.EmptyOutputValue.get -> long[]
+override Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCommandEventCounterStream.EmptyBucketSummary.get -> long[]
+override Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCommandEventCounterStream.EmptyOutputValue.get -> long[]
+override Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingThreadPoolEventCounterStream.EmptyBucketSummary.get -> long[]
+override Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingThreadPoolEventCounterStream.EmptyOutputValue.get -> long[]
+override Steeltoe.CircuitBreaker.Hystrix.Metric.ExecutionSignature.Equals(object o) -> bool
+override Steeltoe.CircuitBreaker.Hystrix.Metric.ExecutionSignature.GetHashCode() -> int
+override Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCollapserEvent.ToString() -> string
+override Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCollapserEventStream.ToString() -> string
+override Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandCompletion.DidCommandExecute.get -> bool
+override Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandCompletion.IsCommandCompletion.get -> bool
+override Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandCompletion.IsExecutedInThread.get -> bool
+override Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandCompletion.IsExecutionStart.get -> bool
+override Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandCompletion.IsResponseThreadPoolRejected.get -> bool
+override Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandCompletion.ToString() -> string
+override Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandCompletionStream.ToString() -> string
+override Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandExecutionStarted.DidCommandExecute.get -> bool
+override Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandExecutionStarted.IsCommandCompletion.get -> bool
+override Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandExecutionStarted.IsExecutedInThread.get -> bool
+override Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandExecutionStarted.IsExecutionStart.get -> bool
+override Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandExecutionStarted.IsResponseThreadPoolRejected.get -> bool
+override Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandStartStream.ToString() -> string
+override Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixThreadEventStream.ToString() -> string
+override Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixThreadPoolCompletionStream.ToString() -> string
+override Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixThreadPoolStartStream.ToString() -> string
+override Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixQueuedTaskScheduler.CurrentQueueSize.get -> int
+override Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixQueuedTaskScheduler.GetScheduledTasks() -> System.Collections.Generic.IEnumerable<System.Threading.Tasks.Task>
+override Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixQueuedTaskScheduler.IsQueueSpaceAvailable.get -> bool
+override Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixQueuedTaskScheduler.QueueTask(System.Threading.Tasks.Task task) -> void
+override Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixQueuedTaskScheduler.TryExecuteTaskInline(System.Threading.Tasks.Task task, bool prevQueued) -> bool
+override Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixSyncTaskScheduler.CurrentQueueSize.get -> int
+override Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixSyncTaskScheduler.GetScheduledTasks() -> System.Collections.Generic.IEnumerable<System.Threading.Tasks.Task>
+override Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixSyncTaskScheduler.IsQueueSpaceAvailable.get -> bool
+override Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixSyncTaskScheduler.QueueTask(System.Threading.Tasks.Task task) -> void
+override Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixSyncTaskScheduler.TryExecuteTaskInline(System.Threading.Tasks.Task task, bool prevQueued) -> bool
+override Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.MaximumConcurrencyLevel.get -> int
+override Steeltoe.CircuitBreaker.Hystrix.Util.LongAdder.ToString() -> string
+override Steeltoe.CircuitBreaker.Hystrix.Util.LongMaxUpdater.ToString() -> string
+readonly Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.commandGroup -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandGroupKey
+readonly Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.commandKey -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey
+readonly Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.commandState -> Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.AtomicCommandState
+readonly Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.isCommandTimedOut -> Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.AtomicTimedOutStatus
+readonly Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.options -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions
+readonly Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.threadPoolKey -> Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey
+readonly Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.threadState -> Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.AtomicThreadState
+readonly Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>._circuitBreaker -> Steeltoe.CircuitBreaker.ICircuitBreaker
+readonly Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>._concurrencyStrategy -> Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixConcurrencyStrategy
+readonly Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>._currentRequestLog -> Steeltoe.CircuitBreaker.Hystrix.HystrixRequestLog
+readonly Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>._eventNotifier -> Steeltoe.CircuitBreaker.Hystrix.Strategy.EventNotifier.HystrixEventNotifier
+readonly Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>._executionHook -> Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook.HystrixCommandExecutionHook
+readonly Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>._executionSemaphoreOverride -> System.Threading.SemaphoreSlim
+readonly Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>._fallbackSemaphoreOverride -> System.Threading.SemaphoreSlim
+readonly Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>._metrics -> Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics
+readonly Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>._requestCache -> Steeltoe.CircuitBreaker.Hystrix.HystrixRequestCache
+readonly Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>._threadPool -> Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPool
+readonly Steeltoe.CircuitBreaker.Hystrix.HystrixCommand._fallback -> System.Action
+readonly Steeltoe.CircuitBreaker.Hystrix.HystrixCommand._run -> System.Action
+readonly Steeltoe.CircuitBreaker.Hystrix.HystrixCommand<TResult>._fallback -> System.Func<TResult>
+readonly Steeltoe.CircuitBreaker.Hystrix.HystrixCommand<TResult>._run -> System.Func<TResult>
+readonly Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream<Event, Bucket, Output>.bucketedStream -> System.IObservable<Bucket>
+readonly Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream<Event, Bucket, Output>.bucketSizeInMs -> int
+readonly Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream<Event, Bucket, Output>.numBuckets -> int
+readonly Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream<Event, Bucket, Output>.subscription -> Steeltoe.Common.Util.AtomicReference<System.IDisposable>
+static readonly Steeltoe.CircuitBreaker.Hystrix.AbstractCommandBase._executionSemaphorePerCircuit -> System.Collections.Concurrent.ConcurrentDictionary<string, System.Threading.SemaphoreSlim>
+static readonly Steeltoe.CircuitBreaker.Hystrix.AbstractCommandBase._fallbackSemaphorePerCircuit -> System.Collections.Concurrent.ConcurrentDictionary<string, System.Threading.SemaphoreSlim>
+static readonly Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserBase._defaultNameCache -> System.Collections.Concurrent.ConcurrentDictionary<System.Type, string>
+static Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.InitCircuitBreaker(bool enabled, Steeltoe.CircuitBreaker.ICircuitBreaker fromConstructor, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandGroupKey groupKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey commandKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions properties, Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics metrics) -> Steeltoe.CircuitBreaker.ICircuitBreaker
+static Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.InitCommandKey(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey fromConstructor, System.Type clazz) -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey
+static Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.InitCommandOptions(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey commandKey, Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.HystrixOptionsStrategy optionsStrategy, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions commandOptionsDefault) -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions
+static Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.InitExecutionHook(Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook.HystrixCommandExecutionHook fromConstructor) -> Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook.HystrixCommandExecutionHook
+static Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.InitGroupKey(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandGroupKey fromConstructor) -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandGroupKey
+static Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.InitMetrics(Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics fromConstructor, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandGroupKey groupKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey threadPoolKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey commandKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions properties) -> Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics
+static Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.InitRequestLog(bool enabled) -> Steeltoe.CircuitBreaker.Hystrix.HystrixRequestLog
+static Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.InitThreadPool(Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPool fromConstructor, Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey threadPoolKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions threadPoolPropertiesDefaults) -> Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPool
+static Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.InitThreadPoolKey(Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey threadPoolKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandGroupKey groupKey, string threadPoolKeyOverride) -> Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey
+static Steeltoe.CircuitBreaker.Hystrix.CircuitBreaker.HystrixCircuitBreakerFactory.GetInstance(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey key) -> Steeltoe.CircuitBreaker.ICircuitBreaker
+static Steeltoe.CircuitBreaker.Hystrix.CircuitBreaker.HystrixCircuitBreakerFactory.GetInstance(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey key, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandGroupKey group, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions options, Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics metrics) -> Steeltoe.CircuitBreaker.ICircuitBreaker
+static Steeltoe.CircuitBreaker.Hystrix.Collapser.RequestCollapserFactory.Reset() -> void
+static Steeltoe.CircuitBreaker.Hystrix.CollapserEventTypeHelper.From(this Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent event) -> Steeltoe.CircuitBreaker.Hystrix.CollapserEventType
+static Steeltoe.CircuitBreaker.Hystrix.CollapserEventTypeHelper.Values.get -> System.Collections.Generic.IList<Steeltoe.CircuitBreaker.Hystrix.CollapserEventType>
+static Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCollapserConfiguration.Sample(Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey collapserKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions collapserProperties) -> Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCollapserConfiguration
+static Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.Sample(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey commandKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey threadPoolKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandGroupKey groupKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions commandProperties) -> Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration
+static Steeltoe.CircuitBreaker.Hystrix.Config.HystrixConfiguration.From(System.Collections.Generic.Dictionary<Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey, Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration> commandConfig, System.Collections.Generic.Dictionary<Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey, Steeltoe.CircuitBreaker.Hystrix.Config.HystrixThreadPoolConfiguration> threadPoolConfig, System.Collections.Generic.Dictionary<Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey, Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCollapserConfiguration> collapserConfig) -> Steeltoe.CircuitBreaker.Hystrix.Config.HystrixConfiguration
+static Steeltoe.CircuitBreaker.Hystrix.Config.HystrixConfigurationStream.GetInstance() -> Steeltoe.CircuitBreaker.Hystrix.Config.HystrixConfigurationStream
+static Steeltoe.CircuitBreaker.Hystrix.Config.HystrixThreadPoolConfiguration.Sample(Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey threadPoolKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions threadPoolProperties) -> Steeltoe.CircuitBreaker.Hystrix.Config.HystrixThreadPoolConfiguration
+static Steeltoe.CircuitBreaker.Hystrix.ExecutionResult.From(params Steeltoe.CircuitBreaker.Hystrix.HystrixEventType[] eventTypes) -> Steeltoe.CircuitBreaker.Hystrix.ExecutionResult
+static Steeltoe.CircuitBreaker.Hystrix.HealthCounts.Empty.get -> Steeltoe.CircuitBreaker.Hystrix.HealthCounts
+static Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserKeyDefault.AsKey(string name) -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey
+static Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserMetrics.AppendEventToBucket.get -> System.Func<long[], Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCollapserEvent, long[]>
+static Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserMetrics.BucketAggregator.get -> System.Func<long[], long[], long[]>
+static Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserMetrics.GetInstance(Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey key, Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions properties) -> Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserMetrics
+static Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserMetrics.GetInstances() -> System.Collections.Generic.ICollection<Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserMetrics>
+static Steeltoe.CircuitBreaker.Hystrix.HystrixCommandGroupKeyDefault.AsKey(string name) -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandGroupKey
+static Steeltoe.CircuitBreaker.Hystrix.HystrixCommandGroupKeyDefault.GroupCount.get -> int
+static Steeltoe.CircuitBreaker.Hystrix.HystrixCommandKeyDefault.AsKey(string name) -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey
+static Steeltoe.CircuitBreaker.Hystrix.HystrixCommandKeyDefault.CommandCount.get -> int
+static Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics.AppendEventToBucket.get -> System.Func<long[], Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandCompletion, long[]>
+static Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics.BucketAggregator.get -> System.Func<long[], long[], long[]>
+static Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics.GetInstance(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey key) -> Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics
+static Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics.GetInstance(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey key, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandGroupKey commandGroup, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions properties) -> Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics
+static Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics.GetInstance(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey key, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandGroupKey commandGroup, Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey threadPoolKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions properties) -> Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics
+static Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics.GetInstances() -> System.Collections.Generic.ICollection<Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics>
+static Steeltoe.CircuitBreaker.Hystrix.HystrixCounters.CommandCount.get -> int
+static Steeltoe.CircuitBreaker.Hystrix.HystrixCounters.GlobalConcurrentThreadsExecuting.get -> int
+static Steeltoe.CircuitBreaker.Hystrix.HystrixCounters.GroupCount.get -> int
+static Steeltoe.CircuitBreaker.Hystrix.HystrixCounters.ThreadPoolCount.get -> int
+static Steeltoe.CircuitBreaker.Hystrix.HystrixEventTypeHelper.ExceptionProducingEventTypes.get -> System.Collections.Generic.IList<Steeltoe.CircuitBreaker.Hystrix.HystrixEventType>
+static Steeltoe.CircuitBreaker.Hystrix.HystrixEventTypeHelper.From(this Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent event) -> Steeltoe.CircuitBreaker.Hystrix.HystrixEventType
+static Steeltoe.CircuitBreaker.Hystrix.HystrixEventTypeHelper.IsTerminal(this Steeltoe.CircuitBreaker.Hystrix.HystrixEventType evType) -> bool
+static Steeltoe.CircuitBreaker.Hystrix.HystrixEventTypeHelper.TerminalEventTypes.get -> System.Collections.Generic.IList<Steeltoe.CircuitBreaker.Hystrix.HystrixEventType>
+static Steeltoe.CircuitBreaker.Hystrix.HystrixEventTypeHelper.Values.get -> System.Collections.Generic.IList<Steeltoe.CircuitBreaker.Hystrix.HystrixEventType>
+static Steeltoe.CircuitBreaker.Hystrix.HystrixRequestCache.GetInstance(Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey key) -> Steeltoe.CircuitBreaker.Hystrix.HystrixRequestCache
+static Steeltoe.CircuitBreaker.Hystrix.HystrixRequestCache.GetInstance(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey key) -> Steeltoe.CircuitBreaker.Hystrix.HystrixRequestCache
+static Steeltoe.CircuitBreaker.Hystrix.HystrixRequestLog.CurrentRequestLog.get -> Steeltoe.CircuitBreaker.Hystrix.HystrixRequestLog
+static Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolKeyDefault.AsKey(string name) -> Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey
+static Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolKeyDefault.ThreadPoolCount.get -> int
+static Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolMetrics.AppendEventToBucket.get -> System.Func<long[], Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandCompletion, long[]>
+static Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolMetrics.CounterAggregator.get -> System.Func<long[], long[], long[]>
+static Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolMetrics.GetCurrentConcurrencyThunk(Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey threadPoolKey) -> System.Func<int>
+static Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolMetrics.GetInstance(Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey key) -> Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolMetrics
+static Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolMetrics.GetInstance(Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey key, Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler taskScheduler, Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions properties) -> Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolMetrics
+static Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolMetrics.GetInstances() -> System.Collections.Generic.ICollection<Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolMetrics>
+static Steeltoe.CircuitBreaker.Hystrix.Metric.CachedValuesHistogram.BackedBy(HdrHistogram.LongHistogram underlying) -> Steeltoe.CircuitBreaker.Hystrix.Metric.CachedValuesHistogram
+static Steeltoe.CircuitBreaker.Hystrix.Metric.CachedValuesHistogram.GetNewHistogram() -> HdrHistogram.LongHistogram
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.CumulativeCollapserEventCounterStream.GetInstance(Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey collapserKey, int numBuckets, int bucketSizeInMs) -> Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.CumulativeCollapserEventCounterStream
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.CumulativeCollapserEventCounterStream.GetInstance(Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey collapserKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions properties) -> Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.CumulativeCollapserEventCounterStream
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.CumulativeCollapserEventCounterStream.Reset() -> void
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.CumulativeCommandEventCounterStream.GetInstance(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey commandKey, int numBuckets, int bucketSizeInMs) -> Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.CumulativeCommandEventCounterStream
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.CumulativeCommandEventCounterStream.GetInstance(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey commandKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions properties) -> Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.CumulativeCommandEventCounterStream
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.CumulativeCommandEventCounterStream.Reset() -> void
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.CumulativeThreadPoolEventCounterStream.GetInstance(Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey threadPoolKey, int numBuckets, int bucketSizeInMs) -> Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.CumulativeThreadPoolEventCounterStream
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.CumulativeThreadPoolEventCounterStream.GetInstance(Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey threadPoolKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions properties) -> Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.CumulativeThreadPoolEventCounterStream
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.CumulativeThreadPoolEventCounterStream.Reset() -> void
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.HealthCountsStream.GetInstance(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey commandKey, int numBuckets, int bucketSizeInMs) -> Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.HealthCountsStream
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.HealthCountsStream.GetInstance(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey commandKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions properties) -> Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.HealthCountsStream
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.HealthCountsStream.RemoveByKey(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey key) -> void
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.HealthCountsStream.Reset() -> void
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.HystrixDashboardStream.GetInstance() -> Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.HystrixDashboardStream
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCollapserBatchSizeDistributionStream.GetInstance(Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey collapserKey, int numBuckets, int bucketSizeInMs) -> Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCollapserBatchSizeDistributionStream
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCollapserBatchSizeDistributionStream.GetInstance(Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey collapserKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions properties) -> Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCollapserBatchSizeDistributionStream
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCollapserBatchSizeDistributionStream.Reset() -> void
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCollapserEventCounterStream.GetInstance(Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey collapserKey, int numBuckets, int bucketSizeInMs) -> Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCollapserEventCounterStream
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCollapserEventCounterStream.GetInstance(Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey collapserKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions properties) -> Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCollapserEventCounterStream
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCollapserEventCounterStream.Reset() -> void
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCommandEventCounterStream.GetInstance(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey commandKey, int numBuckets, int bucketSizeInMs) -> Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCommandEventCounterStream
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCommandEventCounterStream.GetInstance(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey commandKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions properties) -> Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCommandEventCounterStream
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCommandEventCounterStream.Reset() -> void
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCommandLatencyDistributionStream.GetInstance(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey commandKey, int numBuckets, int bucketSizeInMs) -> Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCommandLatencyDistributionStream
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCommandLatencyDistributionStream.GetInstance(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey commandKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions properties) -> Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCommandLatencyDistributionStream
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCommandLatencyDistributionStream.Reset() -> void
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCommandMaxConcurrencyStream.GetInstance(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey commandKey, int numBuckets, int bucketSizeInMs) -> Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCommandMaxConcurrencyStream
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCommandMaxConcurrencyStream.GetInstance(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey commandKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions properties) -> Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCommandMaxConcurrencyStream
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCommandMaxConcurrencyStream.Reset() -> void
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCommandUserLatencyDistributionStream.GetInstance(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey commandKey, int numBuckets, int bucketSizeInMs) -> Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCommandUserLatencyDistributionStream
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCommandUserLatencyDistributionStream.GetInstance(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey commandKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions properties) -> Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCommandUserLatencyDistributionStream
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCommandUserLatencyDistributionStream.Reset() -> void
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.CacheHistogramValues.get -> System.Func<HdrHistogram.LongHistogram, Steeltoe.CircuitBreaker.Hystrix.Metric.CachedValuesHistogram>
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.ConvertToList.get -> System.Func<System.IObservable<Steeltoe.CircuitBreaker.Hystrix.Metric.CachedValuesHistogram>, System.IObservable<System.Collections.Generic.IList<Steeltoe.CircuitBreaker.Hystrix.Metric.CachedValuesHistogram>>>
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.DistributionAggregator.get -> System.Func<HdrHistogram.LongHistogram, HdrHistogram.LongHistogram, HdrHistogram.LongHistogram>
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.ReduceWindowToSingleDistribution.get -> System.Func<System.IObservable<HdrHistogram.LongHistogram>, System.IObservable<HdrHistogram.LongHistogram>>
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingThreadPoolEventCounterStream.GetInstance(Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey threadPoolKey, int numBuckets, int bucketSizeInMs) -> Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingThreadPoolEventCounterStream
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingThreadPoolEventCounterStream.GetInstance(Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey threadPoolKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions properties) -> Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingThreadPoolEventCounterStream
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingThreadPoolEventCounterStream.Reset() -> void
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingThreadPoolMaxConcurrencyStream.GetInstance(Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey threadPoolKey, int numBuckets, int bucketSizeInMs) -> Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingThreadPoolMaxConcurrencyStream
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingThreadPoolMaxConcurrencyStream.GetInstance(Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey threadPoolKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions properties) -> Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingThreadPoolMaxConcurrencyStream
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingThreadPoolMaxConcurrencyStream.Reset() -> void
+static Steeltoe.CircuitBreaker.Hystrix.Metric.ExecutionSignature.From(Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokableInfo execution) -> Steeltoe.CircuitBreaker.Hystrix.Metric.ExecutionSignature
+static Steeltoe.CircuitBreaker.Hystrix.Metric.ExecutionSignature.From(Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokableInfo execution, string cacheKey, int cachedCount) -> Steeltoe.CircuitBreaker.Hystrix.Metric.ExecutionSignature
+static Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCollapserEvent.From(Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey collapserKey, Steeltoe.CircuitBreaker.Hystrix.CollapserEventType eventType, int count) -> Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCollapserEvent
+static Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCollapserEventStream.GetInstance(Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey collapserKey) -> Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCollapserEventStream
+static Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCollapserEventStream.Reset() -> void
+static Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandCompletion.From(Steeltoe.CircuitBreaker.Hystrix.ExecutionResult executionResult, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey commandKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey threadPoolKey) -> Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandCompletion
+static Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandCompletion.From(Steeltoe.CircuitBreaker.Hystrix.ExecutionResult executionResult, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey commandKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey threadPoolKey, Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixRequestContext requestContext) -> Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandCompletion
+static Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandCompletionStream.GetInstance(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey commandKey) -> Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandCompletionStream
+static Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandCompletionStream.Reset() -> void
+static Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandEvent.FilterActualExecutions.get -> System.Func<Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandEvent, bool>
+static Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandEvent.FilterCompletionsOnly.get -> System.Func<Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandEvent, bool>
+static Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandStartStream.GetInstance(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey commandKey) -> Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandStartStream
+static Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandStartStream.Reset() -> void
+static Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixRequestEventsStream.GetInstance() -> Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixRequestEventsStream
+static Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixThreadEventStream.GetInstance() -> Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixThreadEventStream
+static Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixThreadPoolCompletionStream.GetInstance(Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey threadPoolKey) -> Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixThreadPoolCompletionStream
+static Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixThreadPoolCompletionStream.Reset() -> void
+static Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixThreadPoolStartStream.GetInstance(Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey threadPoolKey) -> Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixThreadPoolStartStream
+static Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixThreadPoolStartStream.Reset() -> void
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Sample.HystrixCommandUtilization.Sample(Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics commandMetrics) -> Steeltoe.CircuitBreaker.Hystrix.Metric.Sample.HystrixCommandUtilization
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Sample.HystrixThreadPoolUtilization.Sample(Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolMetrics threadPoolMetrics) -> Steeltoe.CircuitBreaker.Hystrix.Metric.Sample.HystrixThreadPoolUtilization
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Sample.HystrixUtilization.From(System.Collections.Generic.Dictionary<Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey, Steeltoe.CircuitBreaker.Hystrix.Metric.Sample.HystrixCommandUtilization> commandUtilizationMap, System.Collections.Generic.Dictionary<Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey, Steeltoe.CircuitBreaker.Hystrix.Metric.Sample.HystrixThreadPoolUtilization> threadPoolUtilizationMap) -> Steeltoe.CircuitBreaker.Hystrix.Metric.Sample.HystrixUtilization
+static Steeltoe.CircuitBreaker.Hystrix.Metric.Sample.HystrixUtilizationStream.GetInstance() -> Steeltoe.CircuitBreaker.Hystrix.Metric.Sample.HystrixUtilizationStream
+static Steeltoe.CircuitBreaker.Hystrix.MetricsStream.Serialize.ToJsonList(Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.HystrixDashboardStream.DashboardData data, Steeltoe.Discovery.IDiscoveryClient discoveryClient) -> System.Collections.Generic.List<string>
+static Steeltoe.CircuitBreaker.Hystrix.Serial.SerialHystrixConfiguration.ToJsonString(Steeltoe.CircuitBreaker.Hystrix.Config.HystrixConfiguration config) -> string
+static Steeltoe.CircuitBreaker.Hystrix.Serial.SerialHystrixDashboardData.ToJsonString(Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserMetrics collapserMetrics) -> string
+static Steeltoe.CircuitBreaker.Hystrix.Serial.SerialHystrixDashboardData.ToJsonString(Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics commandMetrics) -> string
+static Steeltoe.CircuitBreaker.Hystrix.Serial.SerialHystrixDashboardData.ToJsonString(Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolMetrics threadPoolMetrics) -> string
+static Steeltoe.CircuitBreaker.Hystrix.Serial.SerialHystrixDashboardData.ToJsonString(Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.HystrixDashboardStream.DashboardData data) -> string
+static Steeltoe.CircuitBreaker.Hystrix.Serial.SerialHystrixDashboardData.ToMultipleJsonStrings(Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.HystrixDashboardStream.DashboardData dashboardData) -> System.Collections.Generic.List<string>
+static Steeltoe.CircuitBreaker.Hystrix.Serial.SerialHystrixRequestEvents.ToJsonString(Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixRequestEvents requestEvents) -> string
+static Steeltoe.CircuitBreaker.Hystrix.Serial.SerialHystrixUtilization.ToJsonString(Steeltoe.CircuitBreaker.Hystrix.Metric.Sample.HystrixUtilization utilization) -> string
+static Steeltoe.CircuitBreaker.Hystrix.Serial.SerializationExtensions.WriteArrayFieldStart(this Newtonsoft.Json.JsonTextWriter writer, string fieldName) -> void
+static Steeltoe.CircuitBreaker.Hystrix.Serial.SerializationExtensions.WriteBooleanField(this Newtonsoft.Json.JsonTextWriter writer, string fieldName, bool fieldValue) -> void
+static Steeltoe.CircuitBreaker.Hystrix.Serial.SerializationExtensions.WriteIntegerField(this Newtonsoft.Json.JsonTextWriter writer, string fieldName, int fieldValue) -> void
+static Steeltoe.CircuitBreaker.Hystrix.Serial.SerializationExtensions.WriteLongField(this Newtonsoft.Json.JsonTextWriter writer, string fieldName, long fieldValue) -> void
+static Steeltoe.CircuitBreaker.Hystrix.Serial.SerializationExtensions.WriteObjectFieldStart(this Newtonsoft.Json.JsonTextWriter writer, string fieldName) -> void
+static Steeltoe.CircuitBreaker.Hystrix.Serial.SerializationExtensions.WriteStringField(this Newtonsoft.Json.JsonTextWriter writer, string fieldName, string fieldValue) -> void
+static Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixConcurrencyStrategyDefault.GetInstance() -> Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixConcurrencyStrategy
+static Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixRequestContext.ContextForCurrentThread.get -> Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixRequestContext
+static Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixRequestContext.InitializeContext() -> Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixRequestContext
+static Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixRequestContext.IsCurrentThreadInitialized.get -> bool
+static Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixRequestContext.SetContextOnCurrentThread(Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixRequestContext state) -> void
+static Steeltoe.CircuitBreaker.Hystrix.Strategy.EventNotifier.HystrixEventNotifierDefault.GetInstance() -> Steeltoe.CircuitBreaker.Hystrix.Strategy.EventNotifier.HystrixEventNotifier
+static Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook.HystrixCommandExecutionHookDefault.GetInstance() -> Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook.HystrixCommandExecutionHook
+static Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.CommandExecutionHook.get -> Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook.HystrixCommandExecutionHook
+static Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.ConcurrencyStrategy.get -> Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixConcurrencyStrategy
+static Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.EventNotifier.get -> Steeltoe.CircuitBreaker.Hystrix.Strategy.EventNotifier.HystrixEventNotifier
+static Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.MetricsPublisher.get -> Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.HystrixMetricsPublisher
+static Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.OptionsStrategy.get -> Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.HystrixOptionsStrategy
+static Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterConcurrencyStrategy(Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixConcurrencyStrategy impl) -> void
+static Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterEventNotifier(Steeltoe.CircuitBreaker.Hystrix.Strategy.EventNotifier.HystrixEventNotifier impl) -> void
+static Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterMetricsPublisher(Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook.HystrixCommandExecutionHook impl) -> void
+static Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterMetricsPublisher(Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.HystrixMetricsPublisher impl) -> void
+static Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterOptionsStrategy(Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.HystrixOptionsStrategy impl) -> void
+static Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.Reset() -> void
+static Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.HystrixMetricsPublisherDefault.GetInstance() -> Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.HystrixMetricsPublisher
+static Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.HystrixMetricsPublisherFactory.CreateOrRetrievePublisherForCollapser(Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey collapserKey, Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserMetrics metrics, Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions properties) -> Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.IHystrixMetricsPublisherCollapser
+static Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.HystrixMetricsPublisherFactory.CreateOrRetrievePublisherForCommand(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey commandKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandGroupKey commandOwner, Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics metrics, Steeltoe.CircuitBreaker.ICircuitBreaker circuitBreaker, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions properties) -> Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.IHystrixMetricsPublisherCommand
+static Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.HystrixMetricsPublisherFactory.CreateOrRetrievePublisherForThreadPool(Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey threadPoolKey, Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolMetrics metrics, Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions properties) -> Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.IHystrixMetricsPublisherThreadPool
+static Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.HystrixMetricsPublisherFactory.Reset() -> void
+static Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.HystrixOptionsFactory.GetCollapserOptions(Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey key, Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions builder) -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions
+static Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.HystrixOptionsFactory.GetCommandOptions(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey key, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions builder) -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions
+static Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.HystrixOptionsFactory.GetThreadPoolOptions(Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey key, Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions builder) -> Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions
+static Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.HystrixOptionsFactory.Reset() -> void
+static Steeltoe.CircuitBreaker.Hystrix.ThreadPoolEventTypeHelper.From(this Steeltoe.CircuitBreaker.Hystrix.HystrixEventType eventType) -> Steeltoe.CircuitBreaker.Hystrix.ThreadPoolEventType
+static Steeltoe.CircuitBreaker.Hystrix.ThreadPoolEventTypeHelper.From(this Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent event) -> Steeltoe.CircuitBreaker.Hystrix.ThreadPoolEventType
+static Steeltoe.CircuitBreaker.Hystrix.ThreadPoolEventTypeHelper.Values.get -> System.Collections.Generic.IList<Steeltoe.CircuitBreaker.Hystrix.ThreadPoolEventType>
+static Steeltoe.CircuitBreaker.Hystrix.Util.HystrixTimer.GetInstance() -> Steeltoe.CircuitBreaker.Hystrix.Util.HystrixTimer
+static Steeltoe.CircuitBreaker.Hystrix.Util.HystrixTimer.Reset() -> void
+static Steeltoe.CircuitBreaker.Hystrix.Util.ObservableExtensions.OnDispose<T>(this System.IObservable<T> source, System.Action action) -> System.IObservable<T>
+static Steeltoe.CircuitBreaker.Hystrix.Util.ObservableExtensions.OnSubscribe<TSource>(this System.IObservable<TSource> source, System.Action onSubscribe) -> System.IObservable<TSource>
+static Steeltoe.CircuitBreaker.Hystrix.Util.SemaphoreSlimExtensions.TryAcquire(this System.Threading.SemaphoreSlim sema) -> bool
+static Steeltoe.CircuitBreaker.HystrixBase.Util.HystrixShutdown.ShutdownThreads() -> void
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.AbstractCommand(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandGroupKey group, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey key, Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey threadPoolKey, Steeltoe.CircuitBreaker.ICircuitBreaker circuitBreaker, Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPool threadPool, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions commandOptionsDefaults, Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions threadPoolOptionsDefaults, Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics metrics, System.Threading.SemaphoreSlim fallbackSemaphore, System.Threading.SemaphoreSlim executionSemaphore, Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.HystrixOptionsStrategy optionsStrategy, Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook.HystrixCommandExecutionHook executionHook, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.ApplyHystrixSemantics() -> void
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.AtomicCommandState
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.AtomicCommandState.AtomicCommandState(Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.CommandState state) -> void
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.AtomicCommandState.CompareAndSet(Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.CommandState expected, Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.CommandState update) -> bool
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.AtomicCommandState.Value.get -> Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.CommandState
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.AtomicCommandState.Value.set -> void
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.AtomicThreadState
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.AtomicThreadState.AtomicThreadState(Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.ThreadState state) -> void
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.AtomicThreadState.CompareAndSet(Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.ThreadState expected, Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.ThreadState update) -> bool
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.AtomicThreadState.Value.get -> Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.ThreadState
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.AtomicThreadState.Value.set -> void
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.AtomicTimedOutStatus
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.AtomicTimedOutStatus.AtomicTimedOutStatus(Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.TimedOutStatus state) -> void
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.AtomicTimedOutStatus.CompareAndSet(Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.TimedOutStatus expected, Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.TimedOutStatus update) -> bool
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.AtomicTimedOutStatus.Value.get -> Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.TimedOutStatus
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.AtomicTimedOutStatus.Value.set -> void
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.CommandGroup.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandGroupKey
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.CommandKey.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.CommandOptions.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.CommandRunStartTimeInNanos.get -> long
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.CommandState
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.CommandState.NOT_STARTED = 0 -> Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.CommandState
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.CommandState.OBSERVABLE_CHAIN_CREATED = 1 -> Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.CommandState
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.CommandState.TERMINAL = 4 -> Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.CommandState
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.CommandState.UNSUBSCRIBED = 3 -> Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.CommandState
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.CommandState.USER_CODE_EXECUTED = 2 -> Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.CommandState
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.DecomposeException(System.Exception e) -> System.Exception
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.EventCounts.get -> Steeltoe.CircuitBreaker.Hystrix.ExecutionResult.EventCounts
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.ExecutionEvents.get -> System.Collections.Generic.List<Steeltoe.CircuitBreaker.Hystrix.HystrixEventType>
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.ExecutionException.get -> System.Exception
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.ExecutionTimeInMilliseconds.get -> int
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.FailedExecutionException.get -> System.Exception
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.GetExecutionSemaphore() -> System.Threading.SemaphoreSlim
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.GetFallbackSemaphore() -> System.Threading.SemaphoreSlim
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.HystrixCompletionSource
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.HystrixCompletionSource.Exception.get -> System.Exception
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.HystrixCompletionSource.HystrixCompletionSource(Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult> cmd) -> void
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.HystrixCompletionSource.IsCanceled.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.HystrixCompletionSource.IsCompleted.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.HystrixCompletionSource.IsFaulted.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.HystrixCompletionSource.Result.get -> TResult
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.HystrixCompletionSource.Source.get -> System.Threading.Tasks.TaskCompletionSource<TResult>
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.HystrixCompletionSource.Task.get -> System.Threading.Tasks.Task<TResult>
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.IsCircuitBreakerOpen.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.IsExecutedInThread.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.IsExecutionComplete.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.IsFailedExecution.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.IsResponseFromCache.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.IsResponseFromFallback.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.IsResponseRejected.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.IsResponseSemaphoreRejected.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.IsResponseShortCircuited.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.IsResponseThreadPoolRejected.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.IsResponseTimedOut.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.IsSuccessfulExecution.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.Metrics.get -> Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.NumberCollapsed.get -> int
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.NumberEmissions.get -> int
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.NumberFallbackEmissions.get -> int
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.OriginatingCollapserKey.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.PublicCacheKey.get -> string
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.PutInCacheIfAbsent(System.Threading.Tasks.Task<TResult> hystrixTask, out System.Threading.Tasks.Task<TResult> fromCache) -> bool
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.Setup() -> void
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.StartCommand() -> void
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.tcs -> Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.HystrixCompletionSource
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.ThreadPoolKey.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.ThreadState
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.ThreadState.NOT_USING_THREAD = 0 -> Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.ThreadState
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.ThreadState.STARTED = 1 -> Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.ThreadState
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.ThreadState.TERMINAL = 3 -> Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.ThreadState
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.ThreadState.UNSUBSCRIBED = 2 -> Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.ThreadState
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.TimedOutStatus
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.TimedOutStatus.COMPLETED = 1 -> Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.TimedOutStatus
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.TimedOutStatus.NOT_EXECUTED = 0 -> Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.TimedOutStatus
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.TimedOutStatus.TIMED_OUT = 2 -> Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.TimedOutStatus
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>._commandStartTimestamp -> long
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>._execThreadTask -> System.Threading.Tasks.Task
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>._isFallbackUserDefined -> bool
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>._threadStartTimestamp -> long
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>._timeoutTcs -> System.Threading.CancellationTokenSource
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>._token -> System.Threading.CancellationToken
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>._usersToken -> System.Threading.CancellationToken
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommandBase
+Steeltoe.CircuitBreaker.Hystrix.AbstractCommandBase.AbstractCommandBase() -> void
+Steeltoe.CircuitBreaker.Hystrix.CircuitBreaker.HystrixCircuitBreakerFactory
+Steeltoe.CircuitBreaker.Hystrix.CircuitBreaker.NoOpCircuitBreaker
+Steeltoe.CircuitBreaker.Hystrix.CircuitBreaker.NoOpCircuitBreaker.AllowRequest.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.CircuitBreaker.NoOpCircuitBreaker.IsOpen.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.CircuitBreaker.NoOpCircuitBreaker.MarkSuccess() -> void
+Steeltoe.CircuitBreaker.Hystrix.CircuitBreaker.NoOpCircuitBreaker.NoOpCircuitBreaker() -> void
+Steeltoe.CircuitBreaker.Hystrix.Collapser.CollapsedRequest<RequestResponseType, RequestArgumentType>
+Steeltoe.CircuitBreaker.Hystrix.Collapser.CollapsedRequest<RequestResponseType, RequestArgumentType>.Argument.get -> RequestArgumentType
+Steeltoe.CircuitBreaker.Hystrix.Collapser.CollapsedRequest<RequestResponseType, RequestArgumentType>.Complete.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.Collapser.CollapsedRequest<RequestResponseType, RequestArgumentType>.Complete.set -> void
+Steeltoe.CircuitBreaker.Hystrix.Collapser.CollapsedRequest<RequestResponseType, RequestArgumentType>.Exception.get -> System.Exception
+Steeltoe.CircuitBreaker.Hystrix.Collapser.CollapsedRequest<RequestResponseType, RequestArgumentType>.Exception.set -> void
+Steeltoe.CircuitBreaker.Hystrix.Collapser.CollapsedRequest<RequestResponseType, RequestArgumentType>.Response.get -> RequestResponseType
+Steeltoe.CircuitBreaker.Hystrix.Collapser.CollapsedRequest<RequestResponseType, RequestArgumentType>.Response.set -> void
+Steeltoe.CircuitBreaker.Hystrix.Collapser.RealCollapserTimer
+Steeltoe.CircuitBreaker.Hystrix.Collapser.RealCollapserTimer.AddListener(Steeltoe.Common.Util.ITimerListener collapseTask) -> Steeltoe.Common.Util.TimerReference
+Steeltoe.CircuitBreaker.Hystrix.Collapser.RealCollapserTimer.RealCollapserTimer() -> void
+Steeltoe.CircuitBreaker.Hystrix.Collapser.RequestBatch<BatchReturnType, RequestResponseType, RequestArgumentType>
+Steeltoe.CircuitBreaker.Hystrix.Collapser.RequestBatch<BatchReturnType, RequestResponseType, RequestArgumentType>.ExecuteBatchIfNotAlreadyStarted() -> void
+Steeltoe.CircuitBreaker.Hystrix.Collapser.RequestBatch<BatchReturnType, RequestResponseType, RequestArgumentType>.Offer(RequestArgumentType arg, System.Threading.CancellationToken token) -> Steeltoe.CircuitBreaker.Hystrix.Collapser.CollapsedRequest<RequestResponseType, RequestArgumentType>
+Steeltoe.CircuitBreaker.Hystrix.Collapser.RequestBatch<BatchReturnType, RequestResponseType, RequestArgumentType>.RequestBatch(Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions properties, Steeltoe.CircuitBreaker.Hystrix.HystrixCollapser<BatchReturnType, RequestResponseType, RequestArgumentType> commandCollapser, int maxBatchSize) -> void
+Steeltoe.CircuitBreaker.Hystrix.Collapser.RequestBatch<BatchReturnType, RequestResponseType, RequestArgumentType>.Shutdown() -> void
+Steeltoe.CircuitBreaker.Hystrix.Collapser.RequestBatch<BatchReturnType, RequestResponseType, RequestArgumentType>.Size.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Collapser.RequestCollapser<BatchReturnType, RequestResponseType, RequestArgumentType>
+Steeltoe.CircuitBreaker.Hystrix.Collapser.RequestCollapser<BatchReturnType, RequestResponseType, RequestArgumentType>.Batch.get -> Steeltoe.Common.Util.AtomicReference<Steeltoe.CircuitBreaker.Hystrix.Collapser.RequestBatch<BatchReturnType, RequestResponseType, RequestArgumentType>>
+Steeltoe.CircuitBreaker.Hystrix.Collapser.RequestCollapser<BatchReturnType, RequestResponseType, RequestArgumentType>.Properties.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions
+Steeltoe.CircuitBreaker.Hystrix.Collapser.RequestCollapser<BatchReturnType, RequestResponseType, RequestArgumentType>.Shutdown() -> void
+Steeltoe.CircuitBreaker.Hystrix.Collapser.RequestCollapser<BatchReturnType, RequestResponseType, RequestArgumentType>.SubmitRequest(RequestArgumentType arg, System.Threading.CancellationToken token) -> Steeltoe.CircuitBreaker.Hystrix.Collapser.CollapsedRequest<RequestResponseType, RequestArgumentType>
+Steeltoe.CircuitBreaker.Hystrix.Collapser.RequestCollapserFactory
+Steeltoe.CircuitBreaker.Hystrix.Collapser.RequestCollapserFactory.CollapserKey.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey
+Steeltoe.CircuitBreaker.Hystrix.Collapser.RequestCollapserFactory.GetRequestCollapser<BatchReturnType, ResponseType, RequestArgumentType>(Steeltoe.CircuitBreaker.Hystrix.HystrixCollapser<BatchReturnType, ResponseType, RequestArgumentType> commandCollapser) -> Steeltoe.CircuitBreaker.Hystrix.Collapser.RequestCollapser<BatchReturnType, ResponseType, RequestArgumentType>
+Steeltoe.CircuitBreaker.Hystrix.Collapser.RequestCollapserFactory.Properties.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions
+Steeltoe.CircuitBreaker.Hystrix.Collapser.RequestCollapserFactory.RequestCollapserFactory(Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey collapserKey, Steeltoe.CircuitBreaker.RequestCollapserScope scope, Steeltoe.CircuitBreaker.ICollapserTimer timer, Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions properties) -> void
+Steeltoe.CircuitBreaker.Hystrix.Collapser.RequestCollapserFactory.Scope.get -> Steeltoe.CircuitBreaker.RequestCollapserScope
+Steeltoe.CircuitBreaker.Hystrix.CollapserEventType
+Steeltoe.CircuitBreaker.Hystrix.CollapserEventType.ADDED_TO_BATCH = 1 -> Steeltoe.CircuitBreaker.Hystrix.CollapserEventType
+Steeltoe.CircuitBreaker.Hystrix.CollapserEventType.BATCH_EXECUTED = 0 -> Steeltoe.CircuitBreaker.Hystrix.CollapserEventType
+Steeltoe.CircuitBreaker.Hystrix.CollapserEventType.RESPONSE_FROM_CACHE = 2 -> Steeltoe.CircuitBreaker.Hystrix.CollapserEventType
+Steeltoe.CircuitBreaker.Hystrix.CollapserEventTypeHelper
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCollapserConfiguration
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCollapserConfiguration.CollapserKey.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCollapserConfiguration.CollapserMetricsConfig
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCollapserConfiguration.CollapserMetricsConfig.CollapserMetricsConfig(int rollingPercentileNumberOfBuckets, int rollingPercentileBucketSizeInMilliseconds, bool rollingPercentileEnabled, int rollingCounterNumberOfBuckets, int rollingCounterBucketSizeInMilliseconds) -> void
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCollapserConfiguration.CollapserMetricsConfig.IsRollingPercentileEnabled.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCollapserConfiguration.CollapserMetricsConfig.RollingCounterBucketSizeInMilliseconds.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCollapserConfiguration.CollapserMetricsConfig.RollingCounterNumberOfBuckets.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCollapserConfiguration.CollapserMetricsConfig.RollingPercentileBucketSizeInMilliseconds.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCollapserConfiguration.CollapserMetricsConfig.RollingPercentileNumberOfBuckets.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCollapserConfiguration.CollapserMetricsConfiguration.get -> Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCollapserConfiguration.CollapserMetricsConfig
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCollapserConfiguration.HystrixCollapserConfiguration(Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey collapserKey, int maxRequestsInBatch, int timerDelayInMilliseconds, bool requestCacheEnabled, Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCollapserConfiguration.CollapserMetricsConfig collapserMetricsConfig) -> void
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCollapserConfiguration.IsRequestCacheEnabled.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCollapserConfiguration.MaxRequestsInBatch.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCollapserConfiguration.TimerDelayInMilliseconds.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.CircuitBreakerConfig.get -> Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.HystrixCommandCircuitBreakerConfig
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.ExecutionConfig.get -> Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.HystrixCommandExecutionConfig
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.GroupKey.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandGroupKey
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.HystrixCommandCircuitBreakerConfig
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.HystrixCommandCircuitBreakerConfig.ErrorThresholdPercentage.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.HystrixCommandCircuitBreakerConfig.HystrixCommandCircuitBreakerConfig(bool enabled, int errorThresholdPercentage, bool forceClosed, bool forceOpen, int requestVolumeThreshold, int sleepWindowInMilliseconds) -> void
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.HystrixCommandCircuitBreakerConfig.IsEnabled.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.HystrixCommandCircuitBreakerConfig.IsForceClosed.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.HystrixCommandCircuitBreakerConfig.IsForceOpen.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.HystrixCommandCircuitBreakerConfig.RequestVolumeThreshold.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.HystrixCommandCircuitBreakerConfig.SleepWindowInMilliseconds.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.HystrixCommandConfiguration(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey commandKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey threadPoolKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandGroupKey groupKey, Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.HystrixCommandExecutionConfig executionConfig, Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.HystrixCommandCircuitBreakerConfig circuitBreakerConfig, Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.HystrixCommandMetricsConfig metricsConfig) -> void
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.HystrixCommandExecutionConfig
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.HystrixCommandExecutionConfig.FallbackMaxConcurrentRequest.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.HystrixCommandExecutionConfig.HystrixCommandExecutionConfig(int semaphoreMaxConcurrentRequests, Steeltoe.CircuitBreaker.Hystrix.ExecutionIsolationStrategy isolationStrategy, bool threadInterruptOnTimeout, string threadPoolKeyOverride, bool timeoutEnabled, int timeoutInMilliseconds, bool fallbackEnabled, int fallbackMaxConcurrentRequests, bool requestCacheEnabled, bool requestLogEnabled) -> void
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.HystrixCommandExecutionConfig.IsFallbackEnabled.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.HystrixCommandExecutionConfig.IsolationStrategy.get -> Steeltoe.CircuitBreaker.Hystrix.ExecutionIsolationStrategy
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.HystrixCommandExecutionConfig.IsRequestCacheEnabled.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.HystrixCommandExecutionConfig.IsRequestLogEnabled.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.HystrixCommandExecutionConfig.IsThreadInterruptOnTimeout.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.HystrixCommandExecutionConfig.IsTimeoutEnabled.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.HystrixCommandExecutionConfig.SemaphoreMaxConcurrentRequests.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.HystrixCommandExecutionConfig.ThreadPoolKeyOverride.get -> string
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.HystrixCommandExecutionConfig.TimeoutInMilliseconds.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.HystrixCommandMetricsConfig
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.HystrixCommandMetricsConfig.HealthIntervalInMilliseconds.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.HystrixCommandMetricsConfig.HystrixCommandMetricsConfig(int healthIntervalInMilliseconds, bool rollingPercentileEnabled, int rollingPercentileNumberOfBuckets, int rollingPercentileBucketSizeInMilliseconds, int rollingCounterNumberOfBuckets, int rollingCounterBucketSizeInMilliseconds) -> void
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.HystrixCommandMetricsConfig.IsRollingPercentileEnabled.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.HystrixCommandMetricsConfig.RollingCounterBucketSizeInMilliseconds.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.HystrixCommandMetricsConfig.RollingCounterNumberOfBuckets.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.HystrixCommandMetricsConfig.RollingPercentileBucketSizeInMilliseconds.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.HystrixCommandMetricsConfig.RollingPercentileNumberOfBuckets.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.MetricsConfig.get -> Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.HystrixCommandMetricsConfig
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration.ThreadPoolKey.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixConfiguration
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixConfiguration.CollapserConfig.get -> System.Collections.Generic.Dictionary<Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey, Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCollapserConfiguration>
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixConfiguration.CommandConfig.get -> System.Collections.Generic.Dictionary<Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey, Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration>
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixConfiguration.HystrixConfiguration(System.Collections.Generic.Dictionary<Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey, Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration> commandConfig, System.Collections.Generic.Dictionary<Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey, Steeltoe.CircuitBreaker.Hystrix.Config.HystrixThreadPoolConfiguration> threadPoolConfig, System.Collections.Generic.Dictionary<Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey, Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCollapserConfiguration> collapserConfig) -> void
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixConfiguration.ThreadPoolConfig.get -> System.Collections.Generic.Dictionary<Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey, Steeltoe.CircuitBreaker.Hystrix.Config.HystrixThreadPoolConfiguration>
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixConfigurationStream
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixConfigurationStream.HystrixConfigurationStream(int intervalInMilliseconds) -> void
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixConfigurationStream.IntervalInMilliseconds.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixConfigurationStream.IsSourceCurrentlySubscribed.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixConfigurationStream.Observe() -> System.IObservable<Steeltoe.CircuitBreaker.Hystrix.Config.HystrixConfiguration>
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixConfigurationStream.ObserveCollapserConfiguration() -> System.IObservable<System.Collections.Generic.Dictionary<Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey, Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCollapserConfiguration>>
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixConfigurationStream.ObserveCommandConfiguration() -> System.IObservable<System.Collections.Generic.Dictionary<Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey, Steeltoe.CircuitBreaker.Hystrix.Config.HystrixCommandConfiguration>>
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixConfigurationStream.ObserveThreadPoolConfiguration() -> System.IObservable<System.Collections.Generic.Dictionary<Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey, Steeltoe.CircuitBreaker.Hystrix.Config.HystrixThreadPoolConfiguration>>
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixThreadPoolConfiguration
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixThreadPoolConfiguration.AllowMaximumSizeToDivergeFromCoreSize.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixThreadPoolConfiguration.CoreSize.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixThreadPoolConfiguration.HystrixThreadPoolConfiguration(Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey threadPoolKey, int coreSize, int maximumSize, int maxQueueSize, int queueRejectionThreshold, int keepAliveTimeInMinutes, bool allowMaximumSizeToDivergeFromCoreSize, int rollingCounterNumberOfBuckets, int rollingCounterBucketSizeInMilliseconds) -> void
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixThreadPoolConfiguration.KeepAliveTimeInMinutes.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixThreadPoolConfiguration.MaximumSize.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixThreadPoolConfiguration.MaxQueueSize.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixThreadPoolConfiguration.QueueRejectionThreshold.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixThreadPoolConfiguration.RollingCounterBucketSizeInMilliseconds.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixThreadPoolConfiguration.RollingCounterNumberOfBuckets.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Config.HystrixThreadPoolConfiguration.ThreadPoolKey.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey
+Steeltoe.CircuitBreaker.Hystrix.Exceptions.FailureType
+Steeltoe.CircuitBreaker.Hystrix.Exceptions.FailureType.BAD_REQUEST_EXCEPTION = 0 -> Steeltoe.CircuitBreaker.Hystrix.Exceptions.FailureType
+Steeltoe.CircuitBreaker.Hystrix.Exceptions.FailureType.COMMAND_EXCEPTION = 1 -> Steeltoe.CircuitBreaker.Hystrix.Exceptions.FailureType
+Steeltoe.CircuitBreaker.Hystrix.Exceptions.FailureType.REJECTED_SEMAPHORE_EXECUTION = 5 -> Steeltoe.CircuitBreaker.Hystrix.Exceptions.FailureType
+Steeltoe.CircuitBreaker.Hystrix.Exceptions.FailureType.REJECTED_SEMAPHORE_FALLBACK = 6 -> Steeltoe.CircuitBreaker.Hystrix.Exceptions.FailureType
+Steeltoe.CircuitBreaker.Hystrix.Exceptions.FailureType.REJECTED_THREAD_EXECUTION = 4 -> Steeltoe.CircuitBreaker.Hystrix.Exceptions.FailureType
+Steeltoe.CircuitBreaker.Hystrix.Exceptions.FailureType.SHORTCIRCUIT = 3 -> Steeltoe.CircuitBreaker.Hystrix.Exceptions.FailureType
+Steeltoe.CircuitBreaker.Hystrix.Exceptions.FailureType.TIMEOUT = 2 -> Steeltoe.CircuitBreaker.Hystrix.Exceptions.FailureType
+Steeltoe.CircuitBreaker.Hystrix.Exceptions.HystrixBadRequestException
+Steeltoe.CircuitBreaker.Hystrix.Exceptions.HystrixBadRequestException.HystrixBadRequestException() -> void
+Steeltoe.CircuitBreaker.Hystrix.Exceptions.HystrixBadRequestException.HystrixBadRequestException(string message) -> void
+Steeltoe.CircuitBreaker.Hystrix.Exceptions.HystrixBadRequestException.HystrixBadRequestException(string message, System.Exception cause) -> void
+Steeltoe.CircuitBreaker.Hystrix.Exceptions.HystrixBadRequestException.HystrixBadRequestException(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context) -> void
+Steeltoe.CircuitBreaker.Hystrix.Exceptions.HystrixRuntimeException
+Steeltoe.CircuitBreaker.Hystrix.Exceptions.HystrixRuntimeException.FailureType.get -> Steeltoe.CircuitBreaker.Hystrix.Exceptions.FailureType
+Steeltoe.CircuitBreaker.Hystrix.Exceptions.HystrixRuntimeException.FallbackException.get -> System.Exception
+Steeltoe.CircuitBreaker.Hystrix.Exceptions.HystrixRuntimeException.HystrixRuntimeException() -> void
+Steeltoe.CircuitBreaker.Hystrix.Exceptions.HystrixRuntimeException.HystrixRuntimeException(Steeltoe.CircuitBreaker.Hystrix.Exceptions.FailureType failureCause, System.Type commandClass, string message) -> void
+Steeltoe.CircuitBreaker.Hystrix.Exceptions.HystrixRuntimeException.HystrixRuntimeException(Steeltoe.CircuitBreaker.Hystrix.Exceptions.FailureType failureCause, System.Type commandClass, string message, System.Exception cause, System.Exception fallbackException) -> void
+Steeltoe.CircuitBreaker.Hystrix.Exceptions.HystrixRuntimeException.HystrixRuntimeException(string message) -> void
+Steeltoe.CircuitBreaker.Hystrix.Exceptions.HystrixRuntimeException.HystrixRuntimeException(string message, System.Exception innerException) -> void
+Steeltoe.CircuitBreaker.Hystrix.Exceptions.HystrixRuntimeException.HystrixRuntimeException(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context) -> void
+Steeltoe.CircuitBreaker.Hystrix.Exceptions.HystrixRuntimeException.ImplementingClass.get -> System.Type
+Steeltoe.CircuitBreaker.Hystrix.Exceptions.HystrixTimeoutException
+Steeltoe.CircuitBreaker.Hystrix.Exceptions.HystrixTimeoutException.HystrixTimeoutException() -> void
+Steeltoe.CircuitBreaker.Hystrix.Exceptions.HystrixTimeoutException.HystrixTimeoutException(string message) -> void
+Steeltoe.CircuitBreaker.Hystrix.Exceptions.HystrixTimeoutException.HystrixTimeoutException(string message, System.Exception inner) -> void
+Steeltoe.CircuitBreaker.Hystrix.Exceptions.HystrixTimeoutException.HystrixTimeoutException(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context) -> void
+Steeltoe.CircuitBreaker.Hystrix.Exceptions.RejectedExecutionException
+Steeltoe.CircuitBreaker.Hystrix.Exceptions.RejectedExecutionException.RejectedExecutionException() -> void
+Steeltoe.CircuitBreaker.Hystrix.Exceptions.RejectedExecutionException.RejectedExecutionException(string message) -> void
+Steeltoe.CircuitBreaker.Hystrix.Exceptions.RejectedExecutionException.RejectedExecutionException(string message, System.Exception innerException) -> void
+Steeltoe.CircuitBreaker.Hystrix.Exceptions.RejectedExecutionException.RejectedExecutionException(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context) -> void
+Steeltoe.CircuitBreaker.Hystrix.ExecutionIsolationStrategy
+Steeltoe.CircuitBreaker.Hystrix.ExecutionIsolationStrategy.SEMAPHORE = 1 -> Steeltoe.CircuitBreaker.Hystrix.ExecutionIsolationStrategy
+Steeltoe.CircuitBreaker.Hystrix.ExecutionIsolationStrategy.THREAD = 0 -> Steeltoe.CircuitBreaker.Hystrix.ExecutionIsolationStrategy
+Steeltoe.CircuitBreaker.Hystrix.ExecutionResult
+Steeltoe.CircuitBreaker.Hystrix.ExecutionResult.AddEvent(int executionLatency, Steeltoe.CircuitBreaker.Hystrix.HystrixEventType eventType) -> Steeltoe.CircuitBreaker.Hystrix.ExecutionResult
+Steeltoe.CircuitBreaker.Hystrix.ExecutionResult.AddEvent(Steeltoe.CircuitBreaker.Hystrix.HystrixEventType eventType) -> Steeltoe.CircuitBreaker.Hystrix.ExecutionResult
+Steeltoe.CircuitBreaker.Hystrix.ExecutionResult.CollapserKey.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey
+Steeltoe.CircuitBreaker.Hystrix.ExecutionResult.CommandRunStartTimeInNanos.get -> long
+Steeltoe.CircuitBreaker.Hystrix.ExecutionResult.ContainsTerminalEvent.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.ExecutionResult.EventCounts
+Steeltoe.CircuitBreaker.Hystrix.ExecutionResult.EventCounts.Contains(Steeltoe.CircuitBreaker.Hystrix.HystrixEventType eventType) -> bool
+Steeltoe.CircuitBreaker.Hystrix.ExecutionResult.EventCounts.ContainsAnyOf(System.Collections.BitArray other) -> bool
+Steeltoe.CircuitBreaker.Hystrix.ExecutionResult.Eventcounts.get -> Steeltoe.CircuitBreaker.Hystrix.ExecutionResult.EventCounts
+Steeltoe.CircuitBreaker.Hystrix.ExecutionResult.EventCounts.GetCount(Steeltoe.CircuitBreaker.Hystrix.HystrixEventType eventType) -> int
+Steeltoe.CircuitBreaker.Hystrix.ExecutionResult.Exception.get -> System.Exception
+Steeltoe.CircuitBreaker.Hystrix.ExecutionResult.ExecutionException.get -> System.Exception
+Steeltoe.CircuitBreaker.Hystrix.ExecutionResult.ExecutionLatency.get -> int
+Steeltoe.CircuitBreaker.Hystrix.ExecutionResult.ExecutionOccurred.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.ExecutionResult.IsExecutedInThread.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.ExecutionResult.IsResponseRejected.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.ExecutionResult.IsResponseSemaphoreRejected.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.ExecutionResult.IsResponseThreadPoolRejected.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.ExecutionResult.MarkCollapsed(Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey collapserKey, int sizeOfBatch) -> Steeltoe.CircuitBreaker.Hystrix.ExecutionResult
+Steeltoe.CircuitBreaker.Hystrix.ExecutionResult.MarkUserThreadCompletion(long userThreadLatency) -> Steeltoe.CircuitBreaker.Hystrix.ExecutionResult
+Steeltoe.CircuitBreaker.Hystrix.ExecutionResult.OrderedList.get -> System.Collections.Generic.List<Steeltoe.CircuitBreaker.Hystrix.HystrixEventType>
+Steeltoe.CircuitBreaker.Hystrix.ExecutionResult.SetException(System.Exception e) -> Steeltoe.CircuitBreaker.Hystrix.ExecutionResult
+Steeltoe.CircuitBreaker.Hystrix.ExecutionResult.SetExecutedInThread() -> Steeltoe.CircuitBreaker.Hystrix.ExecutionResult
+Steeltoe.CircuitBreaker.Hystrix.ExecutionResult.SetExecutionException(System.Exception executionException) -> Steeltoe.CircuitBreaker.Hystrix.ExecutionResult
+Steeltoe.CircuitBreaker.Hystrix.ExecutionResult.SetExecutionLatency(int executionLatency) -> Steeltoe.CircuitBreaker.Hystrix.ExecutionResult
+Steeltoe.CircuitBreaker.Hystrix.ExecutionResult.SetExecutionOccurred() -> Steeltoe.CircuitBreaker.Hystrix.ExecutionResult
+Steeltoe.CircuitBreaker.Hystrix.ExecutionResult.SetInvocationStartTime(long inStartTimestamp) -> Steeltoe.CircuitBreaker.Hystrix.ExecutionResult
+Steeltoe.CircuitBreaker.Hystrix.ExecutionResult.SetNotExecutedInThread() -> Steeltoe.CircuitBreaker.Hystrix.ExecutionResult
+Steeltoe.CircuitBreaker.Hystrix.ExecutionResult.StartTimestamp.get -> long
+Steeltoe.CircuitBreaker.Hystrix.ExecutionResult.UserThreadLatency.get -> int
+Steeltoe.CircuitBreaker.Hystrix.HealthCounts
+Steeltoe.CircuitBreaker.Hystrix.HealthCounts.ErrorCount.get -> long
+Steeltoe.CircuitBreaker.Hystrix.HealthCounts.ErrorPercentage.get -> int
+Steeltoe.CircuitBreaker.Hystrix.HealthCounts.Plus(long[] eventTypeCounts) -> Steeltoe.CircuitBreaker.Hystrix.HealthCounts
+Steeltoe.CircuitBreaker.Hystrix.HealthCounts.TotalRequests.get -> long
+Steeltoe.CircuitBreaker.Hystrix.HystrixBaseOptions
+Steeltoe.CircuitBreaker.Hystrix.HystrixBaseOptions.HystrixBaseOptions(Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.IHystrixDynamicOptions dynamicOptions) -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixBaseOptions._dynamic -> Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.IHystrixDynamicOptions
+Steeltoe.CircuitBreaker.Hystrix.HystrixCachedTask<T>
+Steeltoe.CircuitBreaker.Hystrix.HystrixCachedTask<T>.CachedTask.get -> System.Threading.Tasks.Task<T>
+Steeltoe.CircuitBreaker.Hystrix.HystrixCachedTask<T>.CachedTask.set -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCachedTask<T>.HystrixCachedTask() -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapser<BatchReturnType, RequestResponseType, RequestArgumentType>
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapser<BatchReturnType, RequestResponseType, RequestArgumentType>.AddCacheEntryIfAbsent(string cacheKey, out Steeltoe.CircuitBreaker.Hystrix.HystrixCachedTask<RequestResponseType> entry) -> bool
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapser<BatchReturnType, RequestResponseType, RequestArgumentType>.Execute() -> RequestResponseType
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapser<BatchReturnType, RequestResponseType, RequestArgumentType>.ExecuteAsync() -> System.Threading.Tasks.Task<RequestResponseType>
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapser<BatchReturnType, RequestResponseType, RequestArgumentType>.ExecuteAsync(System.Threading.CancellationToken token) -> System.Threading.Tasks.Task<RequestResponseType>
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapser<BatchReturnType, RequestResponseType, RequestArgumentType>.HystrixCollapser() -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapser<BatchReturnType, RequestResponseType, RequestArgumentType>.HystrixCollapser(Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey collapserKey) -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapser<BatchReturnType, RequestResponseType, RequestArgumentType>.HystrixCollapser(Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey collapserKey, Steeltoe.CircuitBreaker.RequestCollapserScope scope) -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapser<BatchReturnType, RequestResponseType, RequestArgumentType>.HystrixCollapser(Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey collapserKey, Steeltoe.CircuitBreaker.RequestCollapserScope scope, Steeltoe.CircuitBreaker.ICollapserTimer timer, Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions options) -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapser<BatchReturnType, RequestResponseType, RequestArgumentType>.HystrixCollapser(Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey collapserKey, Steeltoe.CircuitBreaker.RequestCollapserScope scope, Steeltoe.CircuitBreaker.ICollapserTimer timer, Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions optionsDefault, Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserMetrics metrics) -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapser<BatchReturnType, RequestResponseType, RequestArgumentType>.HystrixCollapser(Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions options) -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapser<BatchReturnType, RequestResponseType, RequestArgumentType>.Observe() -> System.IObservable<RequestResponseType>
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapser<BatchReturnType, RequestResponseType, RequestArgumentType>.Observe(System.Threading.CancellationToken token) -> System.IObservable<RequestResponseType>
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapser<BatchReturnType, RequestResponseType, RequestArgumentType>.ToObservable() -> System.IObservable<RequestResponseType>
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapser<BatchReturnType, RequestResponseType, RequestArgumentType>.ToTask() -> System.Threading.Tasks.Task<RequestResponseType>
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapser<BatchReturnType, RequestResponseType, RequestArgumentType>._token -> System.Threading.CancellationToken
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserBase
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserBase.HystrixCollapserBase() -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserKeyDefault
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserMetrics
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserMetrics.BatchSizeMean.get -> int
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserMetrics.CollapserKey.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserMetrics.GetBatchSizePercentile(double percentile) -> int
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserMetrics.GetCumulativeCount(Steeltoe.CircuitBreaker.Hystrix.CollapserEventType collapserEventType) -> long
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserMetrics.GetRollingCount(Steeltoe.CircuitBreaker.Hystrix.CollapserEventType collapserEventType) -> long
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserMetrics.GetShardSizePercentile(double percentile) -> int
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserMetrics.MarkBatch(int batchSize) -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserMetrics.MarkRequestBatched() -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserMetrics.MarkResponseFromCache() -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserMetrics.MarkShards(int numShards) -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserMetrics.Properties.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserMetrics.ShardSizeMean.get -> int
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserOptions
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserOptions.CollapserKey.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserOptions.CollapserKey.set -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserOptions.HystrixCollapserOptions(Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey collapserKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions defaults = null, Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.IHystrixDynamicOptions dynamic = null) -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserOptions.HystrixCollapserOptions(Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey key, Steeltoe.CircuitBreaker.RequestCollapserScope scope, Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions defaults = null, Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.IHystrixDynamicOptions dynamic = null) -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserOptions.MaxRequestsInBatch.get -> int
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserOptions.MaxRequestsInBatch.set -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserOptions.MetricsRollingPercentileBucketSize.get -> int
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserOptions.MetricsRollingPercentileBucketSize.set -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserOptions.MetricsRollingPercentileEnabled.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserOptions.MetricsRollingPercentileEnabled.set -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserOptions.MetricsRollingPercentileWindowBuckets.get -> int
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserOptions.MetricsRollingPercentileWindowBuckets.set -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserOptions.MetricsRollingPercentileWindowInMilliseconds.get -> int
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserOptions.MetricsRollingPercentileWindowInMilliseconds.set -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserOptions.MetricsRollingStatisticalWindowBuckets.get -> int
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserOptions.MetricsRollingStatisticalWindowBuckets.set -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserOptions.MetricsRollingStatisticalWindowInMilliseconds.get -> int
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserOptions.MetricsRollingStatisticalWindowInMilliseconds.set -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserOptions.RequestCacheEnabled.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserOptions.RequestCacheEnabled.set -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserOptions.Scope.get -> Steeltoe.CircuitBreaker.RequestCollapserScope
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserOptions.Scope.set -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserOptions.TimerDelayInMilliseconds.get -> int
+Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserOptions.TimerDelayInMilliseconds.set -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommand
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommand.Execute() -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommand.ExecuteAsync() -> System.Threading.Tasks.Task
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommand.ExecuteAsync(System.Threading.CancellationToken token) -> System.Threading.Tasks.Task
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommand.HystrixCommand(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandGroupKey group, int executionIsolationThreadTimeoutInMilliseconds, System.Action run = null, System.Action fallback = null, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommand.HystrixCommand(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandGroupKey group, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey key, Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey threadPoolKey, Steeltoe.CircuitBreaker.ICircuitBreaker circuitBreaker, Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPool threadPool, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions commandOptionsDefaults, Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions threadPoolOptionsDefaults, Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics metrics, System.Threading.SemaphoreSlim fallbackSemaphore, System.Threading.SemaphoreSlim executionSemaphore, Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.HystrixOptionsStrategy optionsStrategy, Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook.HystrixCommandExecutionHook executionHook, System.Action run, System.Action fallback, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommand.HystrixCommand(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandGroupKey group, Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey threadPool, int executionIsolationThreadTimeoutInMilliseconds, System.Action run = null, System.Action fallback = null, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommand.HystrixCommand(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandGroupKey group, Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey threadPool, System.Action run = null, System.Action fallback = null, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommand.HystrixCommand(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandGroupKey group, System.Action run = null, System.Action fallback = null, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommand.HystrixCommand(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions commandOptions, System.Action run = null, System.Action fallback = null, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommand<TResult>
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommand<TResult>.Execute() -> TResult
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommand<TResult>.ExecuteAsync() -> System.Threading.Tasks.Task<TResult>
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommand<TResult>.ExecuteAsync(System.Threading.CancellationToken token) -> System.Threading.Tasks.Task<TResult>
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommand<TResult>.HystrixCommand(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandGroupKey group, int executionIsolationThreadTimeoutInMilliseconds, System.Func<TResult> run = null, System.Func<TResult> fallback = null, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommand<TResult>.HystrixCommand(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandGroupKey group, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey key, Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey threadPoolKey, Steeltoe.CircuitBreaker.ICircuitBreaker circuitBreaker, Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPool threadPool, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions commandOptionsDefaults, Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions threadPoolOptionsDefaults, Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics metrics, System.Threading.SemaphoreSlim fallbackSemaphore, System.Threading.SemaphoreSlim executionSemaphore, Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.HystrixOptionsStrategy optionsStrategy, Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook.HystrixCommandExecutionHook executionHook, System.Func<TResult> run, System.Func<TResult> fallback, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommand<TResult>.HystrixCommand(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandGroupKey group, Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey threadPool, int executionIsolationThreadTimeoutInMilliseconds, System.Func<TResult> run = null, System.Func<TResult> fallback = null, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommand<TResult>.HystrixCommand(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandGroupKey group, Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey threadPool, System.Func<TResult> run = null, System.Func<TResult> fallback = null, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommand<TResult>.HystrixCommand(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandGroupKey group, System.Func<TResult> run = null, System.Func<TResult> fallback = null, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommand<TResult>.HystrixCommand(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions commandOptions, System.Func<TResult> run = null, System.Func<TResult> fallback = null, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommand<TResult>.Observe() -> System.IObservable<TResult>
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommand<TResult>.Observe(System.Threading.CancellationToken token) -> System.IObservable<TResult>
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommand<TResult>.ToObservable() -> System.IObservable<TResult>
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommandGroupKeyDefault
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommandKeyDefault
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics.CommandGroup.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandGroupKey
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics.CommandKey.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics.CurrentConcurrentExecutionCount.get -> int
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics.ExecutionTimeMean.get -> int
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics.GetCumulativeCount(Steeltoe.CircuitBreaker.Hystrix.HystrixEventType eventType) -> long
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics.GetExecutionTimePercentile(double percentile) -> int
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics.GetRollingCount(Steeltoe.CircuitBreaker.Hystrix.HystrixEventType eventType) -> long
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics.GetTotalTimePercentile(double percentile) -> int
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics.Healthcounts.get -> Steeltoe.CircuitBreaker.Hystrix.HealthCounts
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics.Properties.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics.RollingMaxConcurrentExecutions.get -> long
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics.ThreadPoolKey.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics.TotalTimeMean.get -> int
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.CommandKey.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.CommandKey.set -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.defaults -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.GroupKey.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandGroupKey
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.GroupKey.set -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.HystrixCommandOptions(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandGroupKey groupKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey key, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions defaults = null, Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.IHystrixDynamicOptions dynamic = null) -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.HystrixCommandOptions(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey key, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions defaults = null, Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.IHystrixDynamicOptions dynamic = null) -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.ThreadPoolKey.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey
+Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.ThreadPoolKey.set -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixCounters
+Steeltoe.CircuitBreaker.Hystrix.HystrixEventType
+Steeltoe.CircuitBreaker.Hystrix.HystrixEventType.BAD_REQUEST = 4 -> Steeltoe.CircuitBreaker.Hystrix.HystrixEventType
+Steeltoe.CircuitBreaker.Hystrix.HystrixEventType.CANCELLED = 15 -> Steeltoe.CircuitBreaker.Hystrix.HystrixEventType
+Steeltoe.CircuitBreaker.Hystrix.HystrixEventType.COLLAPSED = 16 -> Steeltoe.CircuitBreaker.Hystrix.HystrixEventType
+Steeltoe.CircuitBreaker.Hystrix.HystrixEventType.EMIT = 0 -> Steeltoe.CircuitBreaker.Hystrix.HystrixEventType
+Steeltoe.CircuitBreaker.Hystrix.HystrixEventType.EXCEPTION_THROWN = 13 -> Steeltoe.CircuitBreaker.Hystrix.HystrixEventType
+Steeltoe.CircuitBreaker.Hystrix.HystrixEventType.FAILURE = 2 -> Steeltoe.CircuitBreaker.Hystrix.HystrixEventType
+Steeltoe.CircuitBreaker.Hystrix.HystrixEventType.FALLBACK_EMIT = 8 -> Steeltoe.CircuitBreaker.Hystrix.HystrixEventType
+Steeltoe.CircuitBreaker.Hystrix.HystrixEventType.FALLBACK_FAILURE = 10 -> Steeltoe.CircuitBreaker.Hystrix.HystrixEventType
+Steeltoe.CircuitBreaker.Hystrix.HystrixEventType.FALLBACK_MISSING = 12 -> Steeltoe.CircuitBreaker.Hystrix.HystrixEventType
+Steeltoe.CircuitBreaker.Hystrix.HystrixEventType.FALLBACK_REJECTION = 11 -> Steeltoe.CircuitBreaker.Hystrix.HystrixEventType
+Steeltoe.CircuitBreaker.Hystrix.HystrixEventType.FALLBACK_SUCCESS = 9 -> Steeltoe.CircuitBreaker.Hystrix.HystrixEventType
+Steeltoe.CircuitBreaker.Hystrix.HystrixEventType.RESPONSE_FROM_CACHE = 14 -> Steeltoe.CircuitBreaker.Hystrix.HystrixEventType
+Steeltoe.CircuitBreaker.Hystrix.HystrixEventType.SEMAPHORE_REJECTED = 7 -> Steeltoe.CircuitBreaker.Hystrix.HystrixEventType
+Steeltoe.CircuitBreaker.Hystrix.HystrixEventType.SHORT_CIRCUITED = 5 -> Steeltoe.CircuitBreaker.Hystrix.HystrixEventType
+Steeltoe.CircuitBreaker.Hystrix.HystrixEventType.SUCCESS = 1 -> Steeltoe.CircuitBreaker.Hystrix.HystrixEventType
+Steeltoe.CircuitBreaker.Hystrix.HystrixEventType.THREAD_POOL_REJECTED = 6 -> Steeltoe.CircuitBreaker.Hystrix.HystrixEventType
+Steeltoe.CircuitBreaker.Hystrix.HystrixEventType.TIMEOUT = 3 -> Steeltoe.CircuitBreaker.Hystrix.HystrixEventType
+Steeltoe.CircuitBreaker.Hystrix.HystrixEventTypeHelper
+Steeltoe.CircuitBreaker.Hystrix.HystrixKeyDefault
+Steeltoe.CircuitBreaker.Hystrix.HystrixKeyDefault.HystrixKeyDefault(string name) -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixKeyDefault.Name.get -> string
+Steeltoe.CircuitBreaker.Hystrix.HystrixMetrics
+Steeltoe.CircuitBreaker.Hystrix.HystrixMetrics.HystrixMetrics(Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumber counter) -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixRequestCache
+Steeltoe.CircuitBreaker.Hystrix.HystrixRequestCache.Clear(string cacheKey) -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixRequestCache.Get<T>(string cacheKey) -> T
+Steeltoe.CircuitBreaker.Hystrix.HystrixRequestLog
+Steeltoe.CircuitBreaker.Hystrix.HystrixRequestLog.AllExecutedCommands.get -> System.Collections.Generic.ICollection<Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokableInfo>
+Steeltoe.CircuitBreaker.Hystrix.HystrixRequestLog.GetExecutedCommandsAsString() -> string
+Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolKeyDefault
+Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolMetrics
+Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolMetrics.CumulativeCountThreadsExecuted.get -> long
+Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolMetrics.CumulativeCountThreadsRejected.get -> long
+Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolMetrics.CurrentActiveCount.get -> int
+Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolMetrics.CurrentCompletedTaskCount.get -> int
+Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolMetrics.CurrentCorePoolSize.get -> int
+Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolMetrics.CurrentLargestPoolSize.get -> int
+Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolMetrics.CurrentMaximumPoolSize.get -> int
+Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolMetrics.CurrentPoolSize.get -> int
+Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolMetrics.CurrentQueueSize.get -> int
+Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolMetrics.CurrentTaskCount.get -> int
+Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolMetrics.GetCumulativeCount(Steeltoe.CircuitBreaker.Hystrix.ThreadPoolEventType event) -> long
+Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolMetrics.GetRollingCount(Steeltoe.CircuitBreaker.Hystrix.ThreadPoolEventType event) -> long
+Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolMetrics.MarkThreadCompletion() -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolMetrics.MarkThreadExecution() -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolMetrics.MarkThreadRejection() -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolMetrics.Properties.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions
+Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolMetrics.RollingCountThreadsExecuted.get -> long
+Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolMetrics.RollingCountThreadsRejected.get -> long
+Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolMetrics.RollingMaxActiveThreads.get -> long
+Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolMetrics.TaskScheduler.get -> Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler
+Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolMetrics.ThreadPoolKey.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey
+Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolOptions
+Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolOptions.defaults -> Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions
+Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolOptions.HystrixThreadPoolOptions(Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey key, Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions defaults = null, Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.IHystrixDynamicOptions dynamic = null) -> void
+Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolOptions.ThreadPoolKey.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions.CollapserKey.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions.CollapserKey.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions.MaxRequestsInBatch.get -> int
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions.MaxRequestsInBatch.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions.MetricsRollingPercentileBucketSize.get -> int
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions.MetricsRollingPercentileBucketSize.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions.MetricsRollingPercentileEnabled.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions.MetricsRollingPercentileEnabled.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions.MetricsRollingPercentileWindowBuckets.get -> int
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions.MetricsRollingPercentileWindowBuckets.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions.MetricsRollingPercentileWindowInMilliseconds.get -> int
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions.MetricsRollingPercentileWindowInMilliseconds.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions.MetricsRollingStatisticalWindowBuckets.get -> int
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions.MetricsRollingStatisticalWindowBuckets.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions.MetricsRollingStatisticalWindowInMilliseconds.get -> int
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions.MetricsRollingStatisticalWindowInMilliseconds.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions.RequestCacheEnabled.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions.RequestCacheEnabled.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions.Scope.get -> Steeltoe.CircuitBreaker.RequestCollapserScope
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions.Scope.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions.TimerDelayInMilliseconds.get -> int
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions.TimerDelayInMilliseconds.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandGroupKey
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.CircuitBreakerEnabled.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.CircuitBreakerEnabled.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.CircuitBreakerErrorThresholdPercentage.get -> int
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.CircuitBreakerErrorThresholdPercentage.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.CircuitBreakerForceClosed.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.CircuitBreakerForceClosed.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.CircuitBreakerForceOpen.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.CircuitBreakerForceOpen.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.CircuitBreakerRequestVolumeThreshold.get -> int
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.CircuitBreakerRequestVolumeThreshold.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.CircuitBreakerSleepWindowInMilliseconds.get -> int
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.CircuitBreakerSleepWindowInMilliseconds.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.CommandKey.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.CommandKey.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.ExecutionIsolationSemaphoreMaxConcurrentRequests.get -> int
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.ExecutionIsolationSemaphoreMaxConcurrentRequests.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.ExecutionIsolationStrategy.get -> Steeltoe.CircuitBreaker.Hystrix.ExecutionIsolationStrategy
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.ExecutionIsolationStrategy.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.ExecutionIsolationThreadPoolKeyOverride.get -> string
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.ExecutionIsolationThreadPoolKeyOverride.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.ExecutionTimeoutEnabled.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.ExecutionTimeoutEnabled.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.ExecutionTimeoutInMilliseconds.get -> int
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.ExecutionTimeoutInMilliseconds.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.FallbackEnabled.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.FallbackEnabled.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.FallbackIsolationSemaphoreMaxConcurrentRequests.get -> int
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.FallbackIsolationSemaphoreMaxConcurrentRequests.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.GroupKey.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandGroupKey
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.GroupKey.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.MetricsHealthSnapshotIntervalInMilliseconds.get -> int
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.MetricsHealthSnapshotIntervalInMilliseconds.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.MetricsRollingPercentileBucketSize.get -> int
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.MetricsRollingPercentileBucketSize.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.MetricsRollingPercentileEnabled.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.MetricsRollingPercentileEnabled.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.MetricsRollingPercentileWindow.get -> int
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.MetricsRollingPercentileWindow.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.MetricsRollingPercentileWindowBuckets.get -> int
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.MetricsRollingPercentileWindowBuckets.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.MetricsRollingPercentileWindowInMilliseconds.get -> int
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.MetricsRollingPercentileWindowInMilliseconds.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.MetricsRollingStatisticalWindowBuckets.get -> int
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.MetricsRollingStatisticalWindowBuckets.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.MetricsRollingStatisticalWindowInMilliseconds.get -> int
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.MetricsRollingStatisticalWindowInMilliseconds.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.RequestCacheEnabled.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.RequestCacheEnabled.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.RequestLogEnabled.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.RequestLogEnabled.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.ThreadPoolKey.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.ThreadPoolKey.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.ThreadPoolOptions.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions
+Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions.ThreadPoolOptions.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixExecutable
+Steeltoe.CircuitBreaker.Hystrix.IHystrixExecutable.Execute() -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixExecutable.ExecuteAsync() -> System.Threading.Tasks.Task
+Steeltoe.CircuitBreaker.Hystrix.IHystrixExecutable<TResult>
+Steeltoe.CircuitBreaker.Hystrix.IHystrixExecutable<TResult>.Execute() -> TResult
+Steeltoe.CircuitBreaker.Hystrix.IHystrixExecutable<TResult>.ExecuteAsync() -> System.Threading.Tasks.Task<TResult>
+Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokable
+Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokableInfo
+Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokableInfo.CommandGroup.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandGroupKey
+Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokableInfo.CommandKey.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey
+Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokableInfo.CommandOptions.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions
+Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokableInfo.CommandRunStartTimeInNanos.get -> long
+Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokableInfo.EventCounts.get -> Steeltoe.CircuitBreaker.Hystrix.ExecutionResult.EventCounts
+Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokableInfo.ExecutionEvents.get -> System.Collections.Generic.List<Steeltoe.CircuitBreaker.Hystrix.HystrixEventType>
+Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokableInfo.ExecutionTimeInMilliseconds.get -> int
+Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokableInfo.FailedExecutionException.get -> System.Exception
+Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokableInfo.IsCircuitBreakerOpen.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokableInfo.IsExecutedInThread.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokableInfo.IsExecutionComplete.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokableInfo.IsFailedExecution.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokableInfo.IsResponseFromCache.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokableInfo.IsResponseFromFallback.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokableInfo.IsResponseRejected.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokableInfo.IsResponseSemaphoreRejected.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokableInfo.IsResponseShortCircuited.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokableInfo.IsResponseThreadPoolRejected.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokableInfo.IsResponseTimedOut.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokableInfo.IsSuccessfulExecution.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokableInfo.Metrics.get -> Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics
+Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokableInfo.NumberCollapsed.get -> int
+Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokableInfo.NumberEmissions.get -> int
+Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokableInfo.NumberFallbackEmissions.get -> int
+Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokableInfo.OriginatingCollapserKey.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey
+Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokableInfo.PublicCacheKey.get -> string
+Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokableInfo.ThreadPoolKey.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey
+Steeltoe.CircuitBreaker.Hystrix.IHystrixKey
+Steeltoe.CircuitBreaker.Hystrix.IHystrixKey.Name.get -> string
+Steeltoe.CircuitBreaker.Hystrix.IHystrixObservable
+Steeltoe.CircuitBreaker.Hystrix.IHystrixObservable.Observe() -> System.IObservable<System.Reactive.Unit>
+Steeltoe.CircuitBreaker.Hystrix.IHystrixObservable.ToObservable() -> System.IObservable<System.Reactive.Unit>
+Steeltoe.CircuitBreaker.Hystrix.IHystrixObservable<TResult>
+Steeltoe.CircuitBreaker.Hystrix.IHystrixObservable<TResult>.Observe() -> System.IObservable<TResult>
+Steeltoe.CircuitBreaker.Hystrix.IHystrixObservable<TResult>.ToObservable() -> System.IObservable<TResult>
+Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPool
+Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPool.GetScheduler() -> Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler
+Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPool.GetTaskScheduler() -> System.Threading.Tasks.TaskScheduler
+Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPool.IsQueueSpaceAvailable.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPool.IsShutdown.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPool.MarkThreadCompletion() -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPool.MarkThreadExecution() -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPool.MarkThreadRejection() -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey
+Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions
+Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions.AllowMaximumSizeToDivergeFromCoreSize.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions.AllowMaximumSizeToDivergeFromCoreSize.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions.CoreSize.get -> int
+Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions.CoreSize.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions.KeepAliveTimeMinutes.get -> int
+Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions.KeepAliveTimeMinutes.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions.MaximumSize.get -> int
+Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions.MaximumSize.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions.MaxQueueSize.get -> int
+Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions.MaxQueueSize.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions.MetricsRollingStatisticalWindowBuckets.get -> int
+Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions.MetricsRollingStatisticalWindowBuckets.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions.MetricsRollingStatisticalWindowInMilliseconds.get -> int
+Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions.MetricsRollingStatisticalWindowInMilliseconds.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions.QueueSizeRejectionThreshold.get -> int
+Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions.QueueSizeRejectionThreshold.set -> void
+Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions.ThreadPoolKey.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey
+Steeltoe.CircuitBreaker.Hystrix.Metric.CachedValuesHistogram
+Steeltoe.CircuitBreaker.Hystrix.Metric.CachedValuesHistogram.GetMean() -> int
+Steeltoe.CircuitBreaker.Hystrix.Metric.CachedValuesHistogram.GetTotalCount() -> long
+Steeltoe.CircuitBreaker.Hystrix.Metric.CachedValuesHistogram.GetValueAtPercentile(double percentile) -> int
+Steeltoe.CircuitBreaker.Hystrix.Metric.CommandAndCacheKey
+Steeltoe.CircuitBreaker.Hystrix.Metric.CommandAndCacheKey.CommandAndCacheKey(string commandName, string cacheKey) -> void
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream<Event, Bucket, Output>
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream<Event, Bucket, Output>.BucketedCounterStream(Steeltoe.CircuitBreaker.Hystrix.Metric.IHystrixEventStream<Event> inputEventStream, int numBuckets, int bucketSizeInMs, System.Func<Bucket, Event, Bucket> appendRawEventToBucket) -> void
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream<Event, Bucket, Output>.Unsubscribe() -> void
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCumulativeCounterStream<Event, Bucket, Output>
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCumulativeCounterStream<Event, Bucket, Output>.BucketedCumulativeCounterStream(Steeltoe.CircuitBreaker.Hystrix.Metric.IHystrixEventStream<Event> stream, int numBuckets, int bucketSizeInMs, System.Func<Bucket, Event, Bucket> reduceCommandCompletion, System.Func<Output, Bucket, Output> reduceBucket) -> void
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCumulativeCounterStream<Event, Bucket, Output>.Latest.get -> Output
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCumulativeCounterStream<Event, Bucket, Output>.StartCachingStreamValuesIfUnstarted() -> void
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream<Event, Bucket, Output>
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream<Event, Bucket, Output>.BucketedRollingCounterStream(Steeltoe.CircuitBreaker.Hystrix.Metric.IHystrixEventStream<Event> stream, int numBuckets, int bucketSizeInMs, System.Func<Bucket, Event, Bucket> appendRawEventToBucket, System.Func<Output, Bucket, Output> reduceBucket) -> void
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream<Event, Bucket, Output>.counterSubject -> System.Reactive.Subjects.BehaviorSubject<Output>
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream<Event, Bucket, Output>.Latest.get -> Output
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream<Event, Bucket, Output>.StartCachingStreamValuesIfUnstarted() -> void
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.CumulativeCollapserEventCounterStream
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.CumulativeCollapserEventCounterStream.GetLatest(Steeltoe.CircuitBreaker.Hystrix.CollapserEventType eventType) -> long
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.CumulativeCommandEventCounterStream
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.CumulativeCommandEventCounterStream.GetLatest(Steeltoe.CircuitBreaker.Hystrix.HystrixEventType eventType) -> long
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.CumulativeThreadPoolEventCounterStream
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.CumulativeThreadPoolEventCounterStream.GetLatestCount(Steeltoe.CircuitBreaker.Hystrix.ThreadPoolEventType eventType) -> long
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.HealthCountsStream
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.HystrixDashboardStream
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.HystrixDashboardStream.DashboardData
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.HystrixDashboardStream.DashboardData.CollapserMetrics.get -> System.Collections.Generic.ICollection<Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserMetrics>
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.HystrixDashboardStream.DashboardData.CommandMetrics.get -> System.Collections.Generic.ICollection<Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics>
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.HystrixDashboardStream.DashboardData.DashboardData(System.Collections.Generic.ICollection<Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics> commandMetrics, System.Collections.Generic.ICollection<Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolMetrics> threadPoolMetrics, System.Collections.Generic.ICollection<Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserMetrics> collapserMetrics) -> void
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.HystrixDashboardStream.DashboardData.ThreadPoolMetrics.get -> System.Collections.Generic.ICollection<Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolMetrics>
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.HystrixDashboardStream.IsSourceCurrentlySubscribed.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.HystrixDashboardStream.Observe() -> System.IObservable<Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.HystrixDashboardStream.DashboardData>
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCollapserBatchSizeDistributionStream
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCollapserEventCounterStream
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCollapserEventCounterStream.GetLatest(Steeltoe.CircuitBreaker.Hystrix.CollapserEventType eventType) -> long
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCommandEventCounterStream
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCommandEventCounterStream.GetLatest(Steeltoe.CircuitBreaker.Hystrix.HystrixEventType eventType) -> long
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCommandLatencyDistributionStream
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCommandMaxConcurrencyStream
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCommandUserLatencyDistributionStream
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingConcurrencyStream
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingConcurrencyStream.LatestRollingMax.get -> long
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingConcurrencyStream.Observe() -> System.IObservable<int>
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingConcurrencyStream.RollingConcurrencyStream(Steeltoe.CircuitBreaker.Hystrix.Metric.IHystrixEventStream<Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandExecutionStarted> inputEventStream, int numBuckets, int bucketSizeInMs) -> void
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingConcurrencyStream.StartCachingStreamValuesIfUnstarted() -> void
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingConcurrencyStream.Unsubscribe() -> void
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStream<Event>
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStream<Event>.GetLatestPercentile(double percentile) -> int
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStream<Event>.Latest.get -> Steeltoe.CircuitBreaker.Hystrix.Metric.CachedValuesHistogram
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStream<Event>.LatestMean.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStream<Event>.Observe() -> System.IObservable<Steeltoe.CircuitBreaker.Hystrix.Metric.CachedValuesHistogram>
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStream<Event>.RollingDistributionStream(Steeltoe.CircuitBreaker.Hystrix.Metric.IHystrixEventStream<Event> stream, int numBuckets, int bucketSizeInMs, System.Func<HdrHistogram.LongHistogram, Event, HdrHistogram.LongHistogram> addValuesToBucket) -> void
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStream<Event>.StartCachingStreamValuesIfUnstarted() -> void
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStream<Event>.Unsubscribe() -> void
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.RollingDistributionStreamBase() -> void
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingThreadPoolEventCounterStream
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingThreadPoolEventCounterStream.GetLatestCount(Steeltoe.CircuitBreaker.Hystrix.ThreadPoolEventType eventType) -> long
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingThreadPoolMaxConcurrencyStream
+Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingThreadPoolMaxConcurrencyStream.RollingThreadPoolMaxConcurrencyStream(Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey threadPoolKey, int numBuckets, int bucketSizeInMs) -> void
+Steeltoe.CircuitBreaker.Hystrix.Metric.ExecutionSignature
+Steeltoe.CircuitBreaker.Hystrix.Metric.ExecutionSignature.CachedCount.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Metric.ExecutionSignature.CollapserBatchSize.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Metric.ExecutionSignature.CollapserKey.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey
+Steeltoe.CircuitBreaker.Hystrix.Metric.ExecutionSignature.CommandName.get -> string
+Steeltoe.CircuitBreaker.Hystrix.Metric.ExecutionSignature.Eventcounts.get -> Steeltoe.CircuitBreaker.Hystrix.ExecutionResult.EventCounts
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCollapserEvent
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCollapserEvent.CollapserKey.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCollapserEvent.Count.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCollapserEvent.EventType.get -> Steeltoe.CircuitBreaker.Hystrix.CollapserEventType
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCollapserEvent.HystrixCollapserEvent(Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey collapserKey, Steeltoe.CircuitBreaker.Hystrix.CollapserEventType eventType, int count) -> void
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCollapserEventStream
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCollapserEventStream.Observe() -> System.IObservable<Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCollapserEvent>
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCollapserEventStream.Write(Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCollapserEvent event) -> void
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandCompletion
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandCompletion.Eventcounts.get -> Steeltoe.CircuitBreaker.Hystrix.ExecutionResult.EventCounts
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandCompletion.ExecutionLatency.get -> long
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandCompletion.RequestContext.get -> Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixRequestContext
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandCompletion.TotalLatency.get -> long
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandCompletionStream
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandCompletionStream.Observe() -> System.IObservable<Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandCompletion>
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandCompletionStream.Write(Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandCompletion event) -> void
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandEvent
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandEvent.HystrixCommandEvent(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey commandKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey threadPoolKey) -> void
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandExecutionStarted
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandExecutionStarted.CurrentConcurrency.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandExecutionStarted.HystrixCommandExecutionStarted(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey commandKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey threadPoolKey, Steeltoe.CircuitBreaker.Hystrix.ExecutionIsolationStrategy isolationStrategy, int currentConcurrency) -> void
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandStartStream
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandStartStream.Observe() -> System.IObservable<Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandExecutionStarted>
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandStartStream.Write(Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandExecutionStarted event) -> void
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixRequestEvents
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixRequestEvents.Executions.get -> System.Collections.Generic.ICollection<Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokableInfo>
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixRequestEvents.ExecutionsMappedToLatencies.get -> System.Collections.Generic.IDictionary<Steeltoe.CircuitBreaker.Hystrix.Metric.ExecutionSignature, System.Collections.Generic.List<int>>
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixRequestEvents.HystrixRequestEvents(System.Collections.Generic.ICollection<Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokableInfo> executions) -> void
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixRequestEventsStream
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixRequestEventsStream.Observe() -> System.IObservable<Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixRequestEvents>
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixRequestEventsStream.Shutdown() -> void
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixRequestEventsStream.Write(System.Collections.Generic.ICollection<Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokableInfo> executions) -> void
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixThreadEventStream
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixThreadEventStream.CollapserBatchExecuted(Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey collapserKey, int batchSize) -> void
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixThreadEventStream.CollapserResponseFromCache(Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey collapserKey) -> void
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixThreadEventStream.CommandExecutionStarted(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey commandKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey threadPoolKey, Steeltoe.CircuitBreaker.Hystrix.ExecutionIsolationStrategy isolationStrategy, int currentConcurrency) -> void
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixThreadEventStream.ExecutionDone(Steeltoe.CircuitBreaker.Hystrix.ExecutionResult executionResult, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey commandKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey threadPoolKey) -> void
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixThreadEventStream.Shutdown() -> void
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixThreadPoolCompletionStream
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixThreadPoolCompletionStream.Observe() -> System.IObservable<Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandCompletion>
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixThreadPoolCompletionStream.Write(Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandCompletion event) -> void
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixThreadPoolStartStream
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixThreadPoolStartStream.Observe() -> System.IObservable<Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandExecutionStarted>
+Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixThreadPoolStartStream.Write(Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandExecutionStarted event) -> void
+Steeltoe.CircuitBreaker.Hystrix.Metric.IHystrixEvent
+Steeltoe.CircuitBreaker.Hystrix.Metric.IHystrixEventStream<E>
+Steeltoe.CircuitBreaker.Hystrix.Metric.IHystrixEventStream<E>.Observe() -> System.IObservable<E>
+Steeltoe.CircuitBreaker.Hystrix.Metric.Sample.HystrixCommandUtilization
+Steeltoe.CircuitBreaker.Hystrix.Metric.Sample.HystrixCommandUtilization.ConcurrentCommandCount.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Metric.Sample.HystrixCommandUtilization.HystrixCommandUtilization(int concurrentCommandCount) -> void
+Steeltoe.CircuitBreaker.Hystrix.Metric.Sample.HystrixThreadPoolUtilization
+Steeltoe.CircuitBreaker.Hystrix.Metric.Sample.HystrixThreadPoolUtilization.CurrentActiveCount.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Metric.Sample.HystrixThreadPoolUtilization.CurrentCorePoolSize.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Metric.Sample.HystrixThreadPoolUtilization.CurrentPoolSize.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Metric.Sample.HystrixThreadPoolUtilization.CurrentQueueSize.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Metric.Sample.HystrixThreadPoolUtilization.HystrixThreadPoolUtilization(int currentActiveCount, int currentCorePoolSize, int currentPoolSize, int currentQueueSize) -> void
+Steeltoe.CircuitBreaker.Hystrix.Metric.Sample.HystrixUtilization
+Steeltoe.CircuitBreaker.Hystrix.Metric.Sample.HystrixUtilization.CommandUtilizationMap.get -> System.Collections.Generic.Dictionary<Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey, Steeltoe.CircuitBreaker.Hystrix.Metric.Sample.HystrixCommandUtilization>
+Steeltoe.CircuitBreaker.Hystrix.Metric.Sample.HystrixUtilization.HystrixUtilization(System.Collections.Generic.Dictionary<Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey, Steeltoe.CircuitBreaker.Hystrix.Metric.Sample.HystrixCommandUtilization> commandUtilizationMap, System.Collections.Generic.Dictionary<Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey, Steeltoe.CircuitBreaker.Hystrix.Metric.Sample.HystrixThreadPoolUtilization> threadPoolUtilizationMap) -> void
+Steeltoe.CircuitBreaker.Hystrix.Metric.Sample.HystrixUtilization.ThreadPoolUtilizationMap.get -> System.Collections.Generic.Dictionary<Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey, Steeltoe.CircuitBreaker.Hystrix.Metric.Sample.HystrixThreadPoolUtilization>
+Steeltoe.CircuitBreaker.Hystrix.Metric.Sample.HystrixUtilizationStream
+Steeltoe.CircuitBreaker.Hystrix.Metric.Sample.HystrixUtilizationStream.HystrixUtilizationStream(int intervalInMilliseconds) -> void
+Steeltoe.CircuitBreaker.Hystrix.Metric.Sample.HystrixUtilizationStream.IntervalInMilliseconds.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Metric.Sample.HystrixUtilizationStream.IsSourceCurrentlySubscribed.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.Metric.Sample.HystrixUtilizationStream.Observe() -> System.IObservable<Steeltoe.CircuitBreaker.Hystrix.Metric.Sample.HystrixUtilization>
+Steeltoe.CircuitBreaker.Hystrix.Metric.Sample.HystrixUtilizationStream.ObserveCommandUtilization() -> System.IObservable<System.Collections.Generic.Dictionary<Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey, Steeltoe.CircuitBreaker.Hystrix.Metric.Sample.HystrixCommandUtilization>>
+Steeltoe.CircuitBreaker.Hystrix.Metric.Sample.HystrixUtilizationStream.ObserveThreadPoolUtilization() -> System.IObservable<System.Collections.Generic.Dictionary<Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey, Steeltoe.CircuitBreaker.Hystrix.Metric.Sample.HystrixThreadPoolUtilization>>
+Steeltoe.CircuitBreaker.Hystrix.MetricsStream.HystrixMetricsStreamOptions
+Steeltoe.CircuitBreaker.Hystrix.MetricsStream.HystrixMetricsStreamOptions.GatherRate.get -> int
+Steeltoe.CircuitBreaker.Hystrix.MetricsStream.HystrixMetricsStreamOptions.GatherRate.set -> void
+Steeltoe.CircuitBreaker.Hystrix.MetricsStream.HystrixMetricsStreamOptions.HystrixMetricsStreamOptions() -> void
+Steeltoe.CircuitBreaker.Hystrix.MetricsStream.HystrixMetricsStreamOptions.SendRate.get -> int
+Steeltoe.CircuitBreaker.Hystrix.MetricsStream.HystrixMetricsStreamOptions.SendRate.set -> void
+Steeltoe.CircuitBreaker.Hystrix.MetricsStream.HystrixMetricsStreamOptions.Validate_Certificates.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.MetricsStream.HystrixMetricsStreamOptions.Validate_Certificates.set -> void
+Steeltoe.CircuitBreaker.Hystrix.MetricsStream.HystrixMetricsStreamPublisher
+Steeltoe.CircuitBreaker.Hystrix.MetricsStream.HystrixMetricsStreamPublisher.discoveryClient -> Steeltoe.Discovery.IDiscoveryClient
+Steeltoe.CircuitBreaker.Hystrix.MetricsStream.HystrixMetricsStreamPublisher.Dispose() -> void
+Steeltoe.CircuitBreaker.Hystrix.MetricsStream.HystrixMetricsStreamPublisher.HystrixMetricsStreamPublisher(Microsoft.Extensions.Options.IOptions<Steeltoe.CircuitBreaker.Hystrix.MetricsStream.HystrixMetricsStreamOptions> options, Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.HystrixDashboardStream stream, Microsoft.Extensions.Logging.ILogger logger = null, Steeltoe.Discovery.IDiscoveryClient discoveryClient = null) -> void
+Steeltoe.CircuitBreaker.Hystrix.MetricsStream.HystrixMetricsStreamPublisher.logger -> Microsoft.Extensions.Logging.ILogger
+Steeltoe.CircuitBreaker.Hystrix.MetricsStream.HystrixMetricsStreamPublisher.observable -> System.IObservable<System.Collections.Generic.List<string>>
+Steeltoe.CircuitBreaker.Hystrix.MetricsStream.HystrixMetricsStreamPublisher.options -> Steeltoe.CircuitBreaker.Hystrix.MetricsStream.HystrixMetricsStreamOptions
+Steeltoe.CircuitBreaker.Hystrix.MetricsStream.HystrixMetricsStreamPublisher.sampleSubscription -> System.IDisposable
+Steeltoe.CircuitBreaker.Hystrix.MetricsStream.HystrixMetricsStreamPublisher.SampleSubscription.get -> System.IDisposable
+Steeltoe.CircuitBreaker.Hystrix.MetricsStream.HystrixMetricsStreamPublisher.SampleSubscription.set -> void
+Steeltoe.CircuitBreaker.Hystrix.MetricsStream.HystrixMetricsStreamPublisher.StartMetricsPublishing() -> void
+Steeltoe.CircuitBreaker.Hystrix.MetricsStream.Serialize
+Steeltoe.CircuitBreaker.Hystrix.Serial.SerialHystrixConfiguration
+Steeltoe.CircuitBreaker.Hystrix.Serial.SerialHystrixDashboardData
+Steeltoe.CircuitBreaker.Hystrix.Serial.SerialHystrixRequestEvents
+Steeltoe.CircuitBreaker.Hystrix.Serial.SerialHystrixUtilization
+Steeltoe.CircuitBreaker.Hystrix.Serial.SerializationExtensions
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixConcurrencyStrategy
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixConcurrencyStrategy.HystrixConcurrencyStrategy() -> void
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixConcurrencyStrategyDefault
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixQueuedTaskScheduler
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixQueuedTaskScheduler.HystrixQueuedTaskScheduler(Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions options) -> void
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixQueuedTaskScheduler.StartThreadPoolWorker() -> void
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixQueuedTaskScheduler.workQueue -> System.Collections.Concurrent.BlockingCollection<System.Threading.Tasks.Task>
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixRequestContext
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixRequestContext.Dispose() -> void
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixRequestVariableDefault<T>
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixRequestVariableDefault<T>.Dispose() -> void
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixRequestVariableDefault<T>.HystrixRequestVariableDefault(System.Func<T> valueFactory) -> void
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixRequestVariableDefault<T>.HystrixRequestVariableDefault(System.Func<T> valueFactory, System.Action<T> disposeAction) -> void
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixRequestVariableDefault<T>.HystrixRequestVariableDefault(T value) -> void
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixSyncTaskScheduler
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixSyncTaskScheduler.HystrixSyncTaskScheduler(Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions options) -> void
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixSyncTaskScheduler.SetupWorkQueues(int size) -> void
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixSyncTaskScheduler.ThreadTaskQueue
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixSyncTaskScheduler.ThreadTaskQueue.Signal -> System.Threading.ManualResetEventSlim
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixSyncTaskScheduler.ThreadTaskQueue.Task -> System.Threading.Tasks.Task
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixSyncTaskScheduler.ThreadTaskQueue.ThreadAssigned -> bool
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixSyncTaskScheduler.ThreadTaskQueue.ThreadStartTime -> long
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixSyncTaskScheduler.ThreadTaskQueue.ThreadTaskQueue() -> void
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixSyncTaskScheduler.ThreadTaskQueue.WorkerStartTime -> long
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.allowMaxToDivergeFromCore -> bool
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.completedTasks -> int
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.corePoolSize -> int
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.Dispose() -> void
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.HystrixTaskScheduler(Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions options) -> void
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.IsShutdown.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.keepAliveTime -> System.TimeSpan
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.maximumPoolSize -> int
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.queueSize -> int
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.queueSizeRejectionThreshold -> int
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.RunContinuation(System.Threading.Tasks.Task task) -> void
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.runningTasks -> int
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.runningThreads -> int
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.shutdown -> bool
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixRequestVariable<T>
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixRequestVariable<T>.Value.get -> T
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CorePoolSize.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CorePoolSize.set -> void
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CurrentActiveCount.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CurrentCompletedTaskCount.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CurrentCorePoolSize.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CurrentLargestPoolSize.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CurrentMaximumPoolSize.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CurrentPoolSize.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CurrentQueueSize.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CurrentTaskCount.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.IsQueueSpaceAvailable.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.IsShutdown.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.KeepAliveTime.get -> System.TimeSpan
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.KeepAliveTime.set -> void
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.MaximumPoolSize.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.MaximumPoolSize.set -> void
+Steeltoe.CircuitBreaker.Hystrix.Strategy.EventNotifier.HystrixEventNotifier
+Steeltoe.CircuitBreaker.Hystrix.Strategy.EventNotifier.HystrixEventNotifier.HystrixEventNotifier() -> void
+Steeltoe.CircuitBreaker.Hystrix.Strategy.EventNotifier.HystrixEventNotifier.MarkCommandExecution(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey key, Steeltoe.CircuitBreaker.Hystrix.ExecutionIsolationStrategy isolationStrategy, int duration, System.Collections.Generic.IList<Steeltoe.CircuitBreaker.Hystrix.HystrixEventType> eventsDuringExecution) -> void
+Steeltoe.CircuitBreaker.Hystrix.Strategy.EventNotifier.HystrixEventNotifier.MarkEvent(Steeltoe.CircuitBreaker.Hystrix.HystrixEventType eventType, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey key) -> void
+Steeltoe.CircuitBreaker.Hystrix.Strategy.EventNotifier.HystrixEventNotifierDefault
+Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook.HystrixCommandExecutionHook
+Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook.HystrixCommandExecutionHook.HystrixCommandExecutionHook() -> void
+Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook.HystrixCommandExecutionHookDefault
+Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.HystrixMetricsPublisher
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.HystrixMetricsPublisher.HystrixMetricsPublisher() -> void
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.HystrixMetricsPublisherCollapserDefault
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.HystrixMetricsPublisherCollapserDefault.HystrixMetricsPublisherCollapserDefault(Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey collapserKey, Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserMetrics metrics, Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions properties) -> void
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.HystrixMetricsPublisherCollapserDefault.Initialize() -> void
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.HystrixMetricsPublisherCommandDefault
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.HystrixMetricsPublisherCommandDefault.HystrixMetricsPublisherCommandDefault(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey commandKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandGroupKey commandGroupKey, Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics metrics, Steeltoe.CircuitBreaker.ICircuitBreaker circuitBreaker, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions properties) -> void
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.HystrixMetricsPublisherCommandDefault.Initialize() -> void
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.HystrixMetricsPublisherDefault
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.HystrixMetricsPublisherFactory
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.HystrixMetricsPublisherThreadPoolDefault
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.HystrixMetricsPublisherThreadPoolDefault.HystrixMetricsPublisherThreadPoolDefault(Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey threadPoolKey, Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolMetrics metrics, Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions properties) -> void
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.HystrixMetricsPublisherThreadPoolDefault.Initialize() -> void
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.IHystrixMetricsPublisherCollapser
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.IHystrixMetricsPublisherCollapser.Initialize() -> void
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.IHystrixMetricsPublisherCommand
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.IHystrixMetricsPublisherCommand.Initialize() -> void
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.IHystrixMetricsPublisherThreadPool
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.IHystrixMetricsPublisherThreadPool.Initialize() -> void
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.HystrixDynamicOptionsDefault
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.HystrixDynamicOptionsDefault.GetBoolean(string name, bool fallback) -> bool
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.HystrixDynamicOptionsDefault.GetInteger(string name, int fallback) -> int
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.HystrixDynamicOptionsDefault.GetLong(string name, long fallback) -> long
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.HystrixDynamicOptionsDefault.GetString(string name, string fallback) -> string
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.HystrixDynamicOptionsDefault.HystrixDynamicOptionsDefault(Microsoft.Extensions.Configuration.IConfiguration configSource) -> void
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.HystrixOptionsFactory
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.HystrixOptionsStrategy
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.HystrixOptionsStrategy.HystrixOptionsStrategy() -> void
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.IHystrixDynamicOptions
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.IHystrixDynamicOptions.GetBoolean(string name, bool fallback) -> bool
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.IHystrixDynamicOptions.GetInteger(string name, int fallback) -> int
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.IHystrixDynamicOptions.GetLong(string name, long fallback) -> long
+Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.IHystrixDynamicOptions.GetString(string name, string fallback) -> string
+Steeltoe.CircuitBreaker.Hystrix.ThreadPool.HystrixThreadPoolDefault
+Steeltoe.CircuitBreaker.Hystrix.ThreadPool.HystrixThreadPoolDefault.Dispose() -> void
+Steeltoe.CircuitBreaker.Hystrix.ThreadPool.HystrixThreadPoolDefault.GetScheduler() -> Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler
+Steeltoe.CircuitBreaker.Hystrix.ThreadPool.HystrixThreadPoolDefault.GetTaskScheduler() -> System.Threading.Tasks.TaskScheduler
+Steeltoe.CircuitBreaker.Hystrix.ThreadPool.HystrixThreadPoolDefault.HystrixThreadPoolDefault(Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey threadPoolKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions propertiesDefaults) -> void
+Steeltoe.CircuitBreaker.Hystrix.ThreadPool.HystrixThreadPoolDefault.IsQueueSpaceAvailable.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.ThreadPool.HystrixThreadPoolDefault.IsShutdown.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.ThreadPool.HystrixThreadPoolDefault.MarkThreadCompletion() -> void
+Steeltoe.CircuitBreaker.Hystrix.ThreadPool.HystrixThreadPoolDefault.MarkThreadExecution() -> void
+Steeltoe.CircuitBreaker.Hystrix.ThreadPool.HystrixThreadPoolDefault.MarkThreadRejection() -> void
+Steeltoe.CircuitBreaker.Hystrix.ThreadPoolEventType
+Steeltoe.CircuitBreaker.Hystrix.ThreadPoolEventType.EXECUTED = 0 -> Steeltoe.CircuitBreaker.Hystrix.ThreadPoolEventType
+Steeltoe.CircuitBreaker.Hystrix.ThreadPoolEventType.REJECTED = 1 -> Steeltoe.CircuitBreaker.Hystrix.ThreadPoolEventType
+Steeltoe.CircuitBreaker.Hystrix.ThreadPoolEventType.UNKNOWN = 2 -> Steeltoe.CircuitBreaker.Hystrix.ThreadPoolEventType
+Steeltoe.CircuitBreaker.Hystrix.ThreadPoolEventTypeHelper
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumber
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumber.Add(Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent type, long value) -> void
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumber.GetCumulativeSum(Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent type) -> long
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumber.GetRollingMaxValue(Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent type) -> long
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumber.GetRollingSum(Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent type) -> long
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumber.GetValueOfLatestBucket(Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent type) -> long
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumber.GetValues(Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent type) -> long[]
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumber.HystrixRollingNumber(int timeInMilliseconds, int numberOfBuckets) -> void
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumber.Increment(Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent type) -> void
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumber.Reset() -> void
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumber.UpdateRollingMax(Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent type, long value) -> void
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent.BAD_REQUEST = 6 -> Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent.COLLAPSED = 17 -> Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent.COLLAPSER_BATCH = 20 -> Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent.COLLAPSER_REQUEST_BATCHED = 19 -> Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent.COMMAND_MAX_ACTIVE = 12 -> Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent.EMIT = 13 -> Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent.EXCEPTION_THROWN = 11 -> Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent.FAILURE = 1 -> Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent.FALLBACK_EMIT = 14 -> Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent.FALLBACK_FAILURE = 8 -> Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent.FALLBACK_MISSING = 10 -> Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent.FALLBACK_REJECTION = 9 -> Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent.FALLBACK_SUCCESS = 7 -> Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent.RESPONSE_FROM_CACHE = 18 -> Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent.SEMAPHORE_REJECTED = 5 -> Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent.SHORT_CIRCUITED = 3 -> Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent.SUCCESS = 0 -> Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent.THREAD_EXECUTION = 15 -> Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent.THREAD_MAX_ACTIVE = 16 -> Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent.THREAD_POOL_REJECTED = 4 -> Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent.TIMEOUT = 2 -> Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingPercentile
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingPercentile.AddValue(params int[] value) -> void
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingPercentile.GetPercentile(double percentile) -> int
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingPercentile.HystrixRollingPercentile(int timeInMilliseconds, int numberOfBuckets, int bucketDataLength, bool enabled) -> void
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingPercentile.Mean.get -> int
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingPercentile.Reset() -> void
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixTimer
+Steeltoe.CircuitBreaker.Hystrix.Util.HystrixTimer.AddTimerListener(Steeltoe.Common.Util.ITimerListener listener) -> Steeltoe.Common.Util.TimerReference
+Steeltoe.CircuitBreaker.Hystrix.Util.LongAdder
+Steeltoe.CircuitBreaker.Hystrix.Util.LongAdder.Add(long value) -> void
+Steeltoe.CircuitBreaker.Hystrix.Util.LongAdder.Decrement() -> void
+Steeltoe.CircuitBreaker.Hystrix.Util.LongAdder.Increment() -> void
+Steeltoe.CircuitBreaker.Hystrix.Util.LongAdder.LongAdder() -> void
+Steeltoe.CircuitBreaker.Hystrix.Util.LongAdder.Reset() -> void
+Steeltoe.CircuitBreaker.Hystrix.Util.LongAdder.Sum() -> long
+Steeltoe.CircuitBreaker.Hystrix.Util.LongAdder.SumThenReset() -> long
+Steeltoe.CircuitBreaker.Hystrix.Util.LongMaxUpdater
+Steeltoe.CircuitBreaker.Hystrix.Util.LongMaxUpdater.LongMaxUpdater() -> void
+Steeltoe.CircuitBreaker.Hystrix.Util.LongMaxUpdater.Max.get -> long
+Steeltoe.CircuitBreaker.Hystrix.Util.LongMaxUpdater.MaxThenReset() -> long
+Steeltoe.CircuitBreaker.Hystrix.Util.LongMaxUpdater.Reset() -> void
+Steeltoe.CircuitBreaker.Hystrix.Util.LongMaxUpdater.Update(long value) -> void
+Steeltoe.CircuitBreaker.Hystrix.Util.ObservableExtensions
+Steeltoe.CircuitBreaker.Hystrix.Util.SemaphoreSlimExtensions
+Steeltoe.CircuitBreaker.HystrixBase.Util.HystrixShutdown
+virtual Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.CacheKey.get -> string
+virtual Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.CommandIsScalar.get -> bool
+virtual Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.CommandResult.get -> Steeltoe.CircuitBreaker.Hystrix.ExecutionResult
+virtual Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.HandleCleanUpAfterResponseFromCache(bool commandExecutionStarted) -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.HandleCommandEnd(bool commandExecutionStarted) -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.HandleThreadEnd() -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.IsFallbackUserDefined.get -> bool
+virtual Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.IsFallbackUserDefined.set -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.IsRequestCachingEnabled.get -> bool
+virtual Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.LogMessagePrefix.get -> string
+virtual Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>.ShouldOutputOnNextEvents.get -> bool
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixBaseOptions.GetBoolean(string prefix, string key, string property, bool globalDefault, bool? instanceDefaultFromCode) -> bool
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixBaseOptions.GetInteger(string prefix, string key, string property, int globalDefault, int? instanceDefaultFromCode) -> int
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixBaseOptions.GetLong(string prefix, string key, string property, long globalDefault, long? instanceDefaultFromCode) -> long
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixBaseOptions.GetString(string prefix, string key, string property, string globalDefault, string instanceDefaultFromCode) -> string
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCollapser<BatchReturnType, RequestResponseType, RequestArgumentType>.CacheKey.get -> string
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCollapser<BatchReturnType, RequestResponseType, RequestArgumentType>.CollapserKey.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCollapser<BatchReturnType, RequestResponseType, RequestArgumentType>.DecomposeException(System.Exception e) -> System.Exception
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCollapser<BatchReturnType, RequestResponseType, RequestArgumentType>.Metrics.get -> Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserMetrics
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCollapser<BatchReturnType, RequestResponseType, RequestArgumentType>.Scope.get -> Steeltoe.CircuitBreaker.RequestCollapserScope
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCollapser<BatchReturnType, RequestResponseType, RequestArgumentType>.ShardRequests(System.Collections.Generic.ICollection<Steeltoe.CircuitBreaker.ICollapsedRequest<RequestResponseType, RequestArgumentType>> requests) -> System.Collections.Generic.ICollection<System.Collections.Generic.ICollection<Steeltoe.CircuitBreaker.ICollapsedRequest<RequestResponseType, RequestArgumentType>>>
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommand.Run() -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommand.RunFallback() -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommand<TResult>.Run() -> TResult
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommand<TResult>.RunAsync() -> System.Threading.Tasks.Task<TResult>
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommand<TResult>.RunFallback() -> TResult
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommand<TResult>.RunFallbackAsync() -> System.Threading.Tasks.Task<TResult>
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.CircuitBreakerEnabled.get -> bool
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.CircuitBreakerEnabled.set -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.CircuitBreakerErrorThresholdPercentage.get -> int
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.CircuitBreakerErrorThresholdPercentage.set -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.CircuitBreakerForceClosed.get -> bool
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.CircuitBreakerForceClosed.set -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.CircuitBreakerForceOpen.get -> bool
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.CircuitBreakerForceOpen.set -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.CircuitBreakerRequestVolumeThreshold.get -> int
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.CircuitBreakerRequestVolumeThreshold.set -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.CircuitBreakerSleepWindowInMilliseconds.get -> int
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.CircuitBreakerSleepWindowInMilliseconds.set -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.ExecutionIsolationSemaphoreMaxConcurrentRequests.get -> int
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.ExecutionIsolationSemaphoreMaxConcurrentRequests.set -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.ExecutionIsolationStrategy.get -> Steeltoe.CircuitBreaker.Hystrix.ExecutionIsolationStrategy
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.ExecutionIsolationStrategy.set -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.ExecutionIsolationThreadPoolKeyOverride.get -> string
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.ExecutionIsolationThreadPoolKeyOverride.set -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.ExecutionTimeoutEnabled.get -> bool
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.ExecutionTimeoutEnabled.set -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.ExecutionTimeoutInMilliseconds.get -> int
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.ExecutionTimeoutInMilliseconds.set -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.FallbackEnabled.get -> bool
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.FallbackEnabled.set -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.FallbackIsolationSemaphoreMaxConcurrentRequests.get -> int
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.FallbackIsolationSemaphoreMaxConcurrentRequests.set -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.MetricsHealthSnapshotIntervalInMilliseconds.get -> int
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.MetricsHealthSnapshotIntervalInMilliseconds.set -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.MetricsRollingPercentileBucketSize.get -> int
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.MetricsRollingPercentileBucketSize.set -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.MetricsRollingPercentileEnabled.get -> bool
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.MetricsRollingPercentileEnabled.set -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.MetricsRollingPercentileWindow.get -> int
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.MetricsRollingPercentileWindow.set -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.MetricsRollingPercentileWindowBuckets.get -> int
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.MetricsRollingPercentileWindowBuckets.set -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.MetricsRollingPercentileWindowInMilliseconds.get -> int
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.MetricsRollingPercentileWindowInMilliseconds.set -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.MetricsRollingStatisticalWindowBuckets.get -> int
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.MetricsRollingStatisticalWindowBuckets.set -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.MetricsRollingStatisticalWindowInMilliseconds.get -> int
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.MetricsRollingStatisticalWindowInMilliseconds.set -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.RequestCacheEnabled.get -> bool
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.RequestCacheEnabled.set -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.RequestLogEnabled.get -> bool
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.RequestLogEnabled.set -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.ThreadPoolOptions.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixCommandOptions.ThreadPoolOptions.set -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixMetrics.GetCumulativeCount(Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent event) -> long
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixMetrics.GetRollingCount(Steeltoe.CircuitBreaker.Hystrix.Util.HystrixRollingNumberEvent event) -> long
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolOptions.AllowMaximumSizeToDivergeFromCoreSize.get -> bool
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolOptions.AllowMaximumSizeToDivergeFromCoreSize.set -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolOptions.CoreSize.get -> int
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolOptions.CoreSize.set -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolOptions.KeepAliveTimeMinutes.get -> int
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolOptions.KeepAliveTimeMinutes.set -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolOptions.MaximumSize.get -> int
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolOptions.MaximumSize.set -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolOptions.MaxQueueSize.get -> int
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolOptions.MaxQueueSize.set -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolOptions.MetricsRollingStatisticalWindowBuckets.get -> int
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolOptions.MetricsRollingStatisticalWindowBuckets.set -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolOptions.MetricsRollingStatisticalWindowInMilliseconds.get -> int
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolOptions.MetricsRollingStatisticalWindowInMilliseconds.set -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolOptions.QueueSizeRejectionThreshold.get -> int
+virtual Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolOptions.QueueSizeRejectionThreshold.set -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandEvent.CommandKey.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey
+virtual Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixCommandEvent.ThreadPoolKey.get -> Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey
+virtual Steeltoe.CircuitBreaker.Hystrix.MetricsStream.HystrixMetricsStreamPublisher.Dispose(bool disposing) -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.MetricsStream.HystrixMetricsStreamPublisher.EnsureConnection() -> bool
+virtual Steeltoe.CircuitBreaker.Hystrix.MetricsStream.HystrixMetricsStreamPublisher.OnComplete() -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.MetricsStream.HystrixMetricsStreamPublisher.OnError(System.Exception error) -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.MetricsStream.HystrixMetricsStreamPublisher.OnNext(System.Collections.Generic.List<string> jsonList) -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixConcurrencyStrategy.GetRequestVariable<T>(System.Func<T> valueFactory) -> Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixRequestVariable<T>
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixConcurrencyStrategy.GetRequestVariable<T>(System.Func<T> valueFactory, System.Action<T> disposeAction) -> Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixRequestVariable<T>
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixConcurrencyStrategy.GetRequestVariable<T>(T value) -> Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixRequestVariable<T>
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixConcurrencyStrategy.GetTaskScheduler(Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions options) -> Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixRequestVariableDefault<T>.Dispose(bool disposing) -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixRequestVariableDefault<T>.Value.get -> T
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixSyncTaskScheduler.StartThreadPoolWorker() -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixSyncTaskScheduler.StartThreadPoolWorker(Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixSyncTaskScheduler.ThreadTaskQueue input) -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixSyncTaskScheduler.TryAddToAny(System.Threading.Tasks.Task task) -> bool
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CorePoolSize.get -> int
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CorePoolSize.set -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentActiveCount.get -> int
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentCompletedTaskCount.get -> int
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentCorePoolSize.get -> int
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentLargestPoolSize.get -> int
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentMaximumPoolSize.get -> int
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentPoolSize.get -> int
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentQueueSize.get -> int
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentTaskCount.get -> int
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.Dispose(bool disposing) -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.IsQueueSpaceAvailable.get -> bool
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.KeepAliveTime.get -> System.TimeSpan
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.KeepAliveTime.set -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.MaximumPoolSize.get -> int
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.MaximumPoolSize.set -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook.HystrixCommandExecutionHook.OnCacheHit(Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokable commandInstance) -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook.HystrixCommandExecutionHook.OnEmit<T>(Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokable commandInstance, T value) -> T
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook.HystrixCommandExecutionHook.OnError(Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokable commandInstance, Steeltoe.CircuitBreaker.Hystrix.Exceptions.FailureType failureType, System.Exception e) -> System.Exception
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook.HystrixCommandExecutionHook.OnExecutionEmit<T>(Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokable commandInstance, T value) -> T
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook.HystrixCommandExecutionHook.OnExecutionError(Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokable commandInstance, System.Exception e) -> System.Exception
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook.HystrixCommandExecutionHook.OnExecutionStart(Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokable commandInstance) -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook.HystrixCommandExecutionHook.OnExecutionSuccess(Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokable commandInstance) -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook.HystrixCommandExecutionHook.OnFallbackEmit<T>(Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokable commandInstance, T value) -> T
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook.HystrixCommandExecutionHook.OnFallbackError(Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokable commandInstance, System.Exception e) -> System.Exception
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook.HystrixCommandExecutionHook.OnFallbackStart(Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokable commandInstance) -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook.HystrixCommandExecutionHook.OnFallbackSuccess(Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokable commandInstance) -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook.HystrixCommandExecutionHook.OnStart(Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokable commandInstance) -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook.HystrixCommandExecutionHook.OnSuccess(Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokable commandInstance) -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook.HystrixCommandExecutionHook.OnThreadComplete(Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokable commandInstance) -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook.HystrixCommandExecutionHook.OnThreadStart(Steeltoe.CircuitBreaker.Hystrix.IHystrixInvokable commandInstance) -> void
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.HystrixMetricsPublisher.GetMetricsPublisherForCollapser(Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey collapserKey, Steeltoe.CircuitBreaker.Hystrix.HystrixCollapserMetrics metrics, Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions properties) -> Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.IHystrixMetricsPublisherCollapser
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.HystrixMetricsPublisher.GetMetricsPublisherForCommand(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey commandKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandGroupKey commandGroupKey, Steeltoe.CircuitBreaker.Hystrix.HystrixCommandMetrics metrics, Steeltoe.CircuitBreaker.ICircuitBreaker circuitBreaker, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions properties) -> Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.IHystrixMetricsPublisherCommand
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.HystrixMetricsPublisher.GetMetricsPublisherForThreadPool(Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey threadPoolKey, Steeltoe.CircuitBreaker.Hystrix.HystrixThreadPoolMetrics metrics, Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions properties) -> Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.IHystrixMetricsPublisherThreadPool
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.HystrixOptionsStrategy.GetCollapserOptions(Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey collapserKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions builder) -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.HystrixOptionsStrategy.GetCollapserOptionsCacheKey(Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserKey collapserKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixCollapserOptions builder) -> string
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.HystrixOptionsStrategy.GetCommandOptions(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey commandKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions builder) -> Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.HystrixOptionsStrategy.GetCommandOptionsCacheKey(Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandKey commandKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixCommandOptions builder) -> string
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.HystrixOptionsStrategy.GetDynamicOptions(Microsoft.Extensions.Configuration.IConfiguration configSource) -> Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.IHystrixDynamicOptions
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.HystrixOptionsStrategy.GetThreadPoolOptions(Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey threadPoolKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions builder) -> Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions
+virtual Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.HystrixOptionsStrategy.GetThreadPoolOptionsCacheKey(Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolKey threadPoolKey, Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions builder) -> string
+virtual Steeltoe.CircuitBreaker.Hystrix.ThreadPool.HystrixThreadPoolDefault.Dispose(bool disposing) -> void
+volatile Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>._executionResult -> Steeltoe.CircuitBreaker.Hystrix.ExecutionResult
+volatile Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>._executionResultAtTimeOfCancellation -> Steeltoe.CircuitBreaker.Hystrix.ExecutionResult
+volatile Steeltoe.CircuitBreaker.Hystrix.AbstractCommand<TResult>._isResponseFromCache -> bool

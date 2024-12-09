@@ -1,0 +1,961 @@
+﻿abstract Steeltoe.Common.Converter.AbstractConverter<S, T>.Convert(S source) -> T
+abstract Steeltoe.Common.Converter.AbstractGenericConditionalConverter.Matches(System.Type sourceType, System.Type targetType) -> bool
+abstract Steeltoe.Common.Converter.AbstractGenericConverter.Convert(object source, System.Type sourceType, System.Type targetType) -> object
+abstract Steeltoe.Common.Retry.RetryTemplate.Execute(System.Action<Steeltoe.Common.Retry.IRetryContext> retryCallback) -> void
+abstract Steeltoe.Common.Retry.RetryTemplate.Execute(System.Action<Steeltoe.Common.Retry.IRetryContext> retryCallback, Steeltoe.Common.Retry.IRecoveryCallback recoveryCallback) -> void
+abstract Steeltoe.Common.Retry.RetryTemplate.Execute(System.Action<Steeltoe.Common.Retry.IRetryContext> retryCallback, System.Action<Steeltoe.Common.Retry.IRetryContext> recoveryCallback) -> void
+abstract Steeltoe.Common.Retry.RetryTemplate.Execute<T>(System.Func<Steeltoe.Common.Retry.IRetryContext, T> retryCallback) -> T
+abstract Steeltoe.Common.Retry.RetryTemplate.Execute<T>(System.Func<Steeltoe.Common.Retry.IRetryContext, T> retryCallback, Steeltoe.Common.Retry.IRecoveryCallback<T> recoveryCallback) -> T
+abstract Steeltoe.Common.Retry.RetryTemplate.Execute<T>(System.Func<Steeltoe.Common.Retry.IRetryContext, T> retryCallback, System.Func<Steeltoe.Common.Retry.IRetryContext, T> recoveryCallback) -> T
+abstract Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoBegin(object transaction, Steeltoe.Common.Transaction.ITransactionDefinition definition) -> void
+abstract Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus status) -> void
+abstract Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoGetTransaction() -> object
+abstract Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoRollback(Steeltoe.Common.Transaction.DefaultTransactionStatus status) -> void
+abstract Steeltoe.Common.Transaction.AbstractTransactionOperations.Execute<T>(System.Func<Steeltoe.Common.Transaction.ITransactionStatus, T> action) -> T
+abstract Steeltoe.Common.Transaction.AbstractTransactionStatus.IsNewTransaction.get -> bool
+abstract Steeltoe.Common.Transaction.AbstractTransactionSynchronization.AfterCommit() -> void
+abstract Steeltoe.Common.Transaction.AbstractTransactionSynchronization.AfterCompletion(int status) -> void
+abstract Steeltoe.Common.Transaction.AbstractTransactionSynchronization.BeforeCommit(bool readOnly) -> void
+abstract Steeltoe.Common.Transaction.AbstractTransactionSynchronization.BeforeCompletion() -> void
+abstract Steeltoe.Common.Transaction.AbstractTransactionSynchronization.Flush() -> void
+abstract Steeltoe.Common.Transaction.AbstractTransactionSynchronization.Resume() -> void
+abstract Steeltoe.Common.Transaction.AbstractTransactionSynchronization.Suspend() -> void
+const Steeltoe.Common.Net.InetOptions.PREFIX = "spring:cloud:inet" -> string
+const Steeltoe.Common.Order.AbstractOrdered.HIGHEST_PRECEDENCE = -2147483648 -> int
+const Steeltoe.Common.Order.AbstractOrdered.LOWEST_PRECEDENCE = 2147483647 -> int
+const Steeltoe.Common.Platform.KUBERNETES_HOST = "KUBERNETES_SERVICE_HOST" -> string
+const Steeltoe.Common.Platform.NET_CORE = ".NET Core" -> string
+const Steeltoe.Common.Platform.NET_FRAMEWORK = ".NET Framework" -> string
+const Steeltoe.Common.Platform.VCAP_APPLICATION = "VCAP_APPLICATION" -> string
+const Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SYNCHRONIZATION_ALWAYS = 0 -> int
+const Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SYNCHRONIZATION_NEVER = 2 -> int
+const Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SYNCHRONIZATION_ON_ACTUAL_TRANSACTION = 1 -> int
+const Steeltoe.Common.Transaction.AbstractTransactionDefinition.ISOLATION_DEFAULT = -1 -> int
+const Steeltoe.Common.Transaction.AbstractTransactionDefinition.ISOLATION_READ_COMMITTED = 2 -> int
+const Steeltoe.Common.Transaction.AbstractTransactionDefinition.ISOLATION_READ_UNCOMMITTED = 1 -> int
+const Steeltoe.Common.Transaction.AbstractTransactionDefinition.ISOLATION_REPEATABLE_READ = 4 -> int
+const Steeltoe.Common.Transaction.AbstractTransactionDefinition.ISOLATION_SERIALIZABLE = 8 -> int
+const Steeltoe.Common.Transaction.AbstractTransactionDefinition.PROPAGATION_MANDATORY = 2 -> int
+const Steeltoe.Common.Transaction.AbstractTransactionDefinition.PROPAGATION_NESTED = 6 -> int
+const Steeltoe.Common.Transaction.AbstractTransactionDefinition.PROPAGATION_NEVER = 5 -> int
+const Steeltoe.Common.Transaction.AbstractTransactionDefinition.PROPAGATION_NOT_SUPPORTED = 4 -> int
+const Steeltoe.Common.Transaction.AbstractTransactionDefinition.PROPAGATION_REQUIRED = 0 -> int
+const Steeltoe.Common.Transaction.AbstractTransactionDefinition.PROPAGATION_REQUIRES_NEW = 3 -> int
+const Steeltoe.Common.Transaction.AbstractTransactionDefinition.PROPAGATION_SUPPORTS = 1 -> int
+const Steeltoe.Common.Transaction.AbstractTransactionDefinition.TIMEOUT_DEFAULT = -1 -> int
+const Steeltoe.Common.Transaction.AbstractTransactionSynchronization.STATUS_COMMITTED = 0 -> int
+const Steeltoe.Common.Transaction.AbstractTransactionSynchronization.STATUS_ROLLED_BACK = 1 -> int
+const Steeltoe.Common.Transaction.AbstractTransactionSynchronization.STATUS_UNKNOWN = 2 -> int
+const Steeltoe.Common.Transaction.DefaultTransactionDefinition.PREFIX_ISOLATION = "ISOLATION_" -> string
+const Steeltoe.Common.Transaction.DefaultTransactionDefinition.PREFIX_PROPAGATION = "PROPAGATION_" -> string
+const Steeltoe.Common.Transaction.DefaultTransactionDefinition.PREFIX_TIMEOUT = "timeout_" -> string
+const Steeltoe.Common.Transaction.DefaultTransactionDefinition.READ_ONLY_MARKER = "readOnly" -> string
+const Steeltoe.Common.Util.AntPathMatcher.DEFAULT_PATH_SEPARATOR = "/" -> string
+const Steeltoe.Common.Util.FixedBackOff.DEFAULT_INTERVAL = 5000 -> int
+const Steeltoe.Common.Util.FixedBackOff.STOP = -1 -> int
+const Steeltoe.Common.Util.FixedBackOff.UNLIMITED_ATTEMPTS = 2147483647 -> int
+const Steeltoe.Common.Util.MimeType.WILDCARD_TYPE = "*" -> string
+Microsoft.Extensions.DependencyInjection.ConfigurationServiceInstanceProviderServiceCollectionExtensions
+override Steeltoe.Common.Availability.LivenessHealthContributor.GetState() -> Steeltoe.Common.Availability.IAvailabilityState
+override Steeltoe.Common.Availability.LivenessHealthContributor.Id.get -> string
+override Steeltoe.Common.Availability.LivenessState.ToString() -> string
+override Steeltoe.Common.Availability.ReadinessHealthContributor.GetState() -> Steeltoe.Common.Availability.IAvailabilityState
+override Steeltoe.Common.Availability.ReadinessHealthContributor.Id.get -> string
+override Steeltoe.Common.Availability.ReadinessState.ToString() -> string
+override Steeltoe.Common.Converter.AbstractConverter<S, T>.Convert(object source, System.Type sourceType, System.Type targetType) -> object
+override Steeltoe.Common.Converter.AbstractConverter<S, T>.Matches(System.Type sourceType, System.Type targetType) -> bool
+override Steeltoe.Common.Converter.AbstractToNumberConverter.Convert(object source, System.Type sourceType, System.Type targetType) -> object
+override Steeltoe.Common.Converter.AbstractToNumberConverter.Matches(System.Type sourceType, System.Type targetType) -> bool
+override Steeltoe.Common.Converter.ArrayToArrayConverter.Convert(object source, System.Type sourceType, System.Type targetType) -> object
+override Steeltoe.Common.Converter.ArrayToArrayConverter.Matches(System.Type sourceType, System.Type targetType) -> bool
+override Steeltoe.Common.Converter.ArrayToCollectionConverter.Convert(object source, System.Type sourceType, System.Type targetType) -> object
+override Steeltoe.Common.Converter.ArrayToCollectionConverter.Matches(System.Type sourceType, System.Type targetType) -> bool
+override Steeltoe.Common.Converter.ArrayToObjectConverter.Convert(object source, System.Type sourceType, System.Type targetType) -> object
+override Steeltoe.Common.Converter.ArrayToObjectConverter.Matches(System.Type sourceType, System.Type targetType) -> bool
+override Steeltoe.Common.Converter.ArrayToStringConverter.Convert(object source, System.Type sourceType, System.Type targetType) -> object
+override Steeltoe.Common.Converter.ArrayToStringConverter.Matches(System.Type sourceType, System.Type targetType) -> bool
+override Steeltoe.Common.Converter.CollectionToArrayConverter.Convert(object source, System.Type sourceType, System.Type targetType) -> object
+override Steeltoe.Common.Converter.CollectionToArrayConverter.Matches(System.Type sourceType, System.Type targetType) -> bool
+override Steeltoe.Common.Converter.CollectionToCollectionConverter.Convert(object source, System.Type sourceType, System.Type targetType) -> object
+override Steeltoe.Common.Converter.CollectionToCollectionConverter.Matches(System.Type sourceType, System.Type targetType) -> bool
+override Steeltoe.Common.Converter.CollectionToObjectConverter.Convert(object source, System.Type sourceType, System.Type targetType) -> object
+override Steeltoe.Common.Converter.CollectionToObjectConverter.Matches(System.Type sourceType, System.Type targetType) -> bool
+override Steeltoe.Common.Converter.CollectionToStringConverter.Convert(object source, System.Type sourceType, System.Type targetType) -> object
+override Steeltoe.Common.Converter.CollectionToStringConverter.Matches(System.Type sourceType, System.Type targetType) -> bool
+override Steeltoe.Common.Converter.DictionaryToDictionaryConverter.Convert(object source, System.Type sourceType, System.Type targetType) -> object
+override Steeltoe.Common.Converter.DictionaryToDictionaryConverter.Matches(System.Type sourceType, System.Type targetType) -> bool
+override Steeltoe.Common.Converter.EncodingToStringConverter.Convert(System.Text.Encoding source) -> string
+override Steeltoe.Common.Converter.FallbackObjectToStringConverter.Convert(object source) -> string
+override Steeltoe.Common.Converter.FallbackObjectToStringConverter.Matches(System.Type sourceType, System.Type targetType) -> bool
+override Steeltoe.Common.Converter.NumberToCharacterConverter.Convert(object source, System.Type sourceType, System.Type targetType) -> object
+override Steeltoe.Common.Converter.NumberToStringConverter.Convert(object source, System.Type sourceType, System.Type targetType) -> object
+override Steeltoe.Common.Converter.ObjectToArrayConverter.Convert(object source, System.Type sourceType, System.Type targetType) -> object
+override Steeltoe.Common.Converter.ObjectToArrayConverter.Matches(System.Type sourceType, System.Type targetType) -> bool
+override Steeltoe.Common.Converter.ObjectToCollectionConverter.Convert(object source, System.Type sourceType, System.Type targetType) -> object
+override Steeltoe.Common.Converter.ObjectToCollectionConverter.Matches(System.Type sourceType, System.Type targetType) -> bool
+override Steeltoe.Common.Converter.ObjectToObjectConverter.Convert(object source, System.Type sourceType, System.Type targetType) -> object
+override Steeltoe.Common.Converter.ObjectToObjectConverter.Matches(System.Type sourceType, System.Type targetType) -> bool
+override Steeltoe.Common.Converter.ObjectToStringConverter<T>.Convert(T source) -> string
+override Steeltoe.Common.Converter.StringToArrayConverter.Convert(object source, System.Type sourceType, System.Type targetType) -> object
+override Steeltoe.Common.Converter.StringToArrayConverter.Matches(System.Type sourceType, System.Type targetType) -> bool
+override Steeltoe.Common.Converter.StringToBooleanConverter.Convert(object source, System.Type sourceType, System.Type targetType) -> object
+override Steeltoe.Common.Converter.StringToBooleanConverter.Matches(System.Type sourceType, System.Type targetType) -> bool
+override Steeltoe.Common.Converter.StringToCharacterConverter.Convert(object source, System.Type sourceType, System.Type targetType) -> object
+override Steeltoe.Common.Converter.StringToCharacterConverter.Matches(System.Type sourceType, System.Type targetType) -> bool
+override Steeltoe.Common.Converter.StringToCollectionConverter.Convert(object source, System.Type sourceType, System.Type targetType) -> object
+override Steeltoe.Common.Converter.StringToCollectionConverter.Matches(System.Type sourceType, System.Type targetType) -> bool
+override Steeltoe.Common.Converter.StringToEncodingConverter.Convert(string source) -> System.Text.Encoding
+override Steeltoe.Common.Converter.StringToEnumConverter.Convert(object source, System.Type sourceType, System.Type targetType) -> object
+override Steeltoe.Common.Converter.StringToEnumConverter.Matches(System.Type sourceType, System.Type targetType) -> bool
+override Steeltoe.Common.Converter.StringToGuidConverter.Convert(object source, System.Type sourceType, System.Type targetType) -> object
+override Steeltoe.Common.Converter.StringToGuidConverter.Convert(string source) -> System.Guid
+override Steeltoe.Common.Converter.StringToNumberConverter.Convert(object source, System.Type sourceType, System.Type targetType) -> object
+override Steeltoe.Common.Retry.RetryContext.ToString() -> string
+override Steeltoe.Common.Transaction.DefaultTransactionDefinition.Equals(object other) -> bool
+override Steeltoe.Common.Transaction.DefaultTransactionDefinition.GetHashCode() -> int
+override Steeltoe.Common.Transaction.DefaultTransactionDefinition.IsolationLevel.get -> int
+override Steeltoe.Common.Transaction.DefaultTransactionDefinition.IsolationLevel.set -> void
+override Steeltoe.Common.Transaction.DefaultTransactionDefinition.IsReadOnly.get -> bool
+override Steeltoe.Common.Transaction.DefaultTransactionDefinition.IsReadOnly.set -> void
+override Steeltoe.Common.Transaction.DefaultTransactionDefinition.Name.get -> string
+override Steeltoe.Common.Transaction.DefaultTransactionDefinition.Name.set -> void
+override Steeltoe.Common.Transaction.DefaultTransactionDefinition.PropagationBehavior.get -> int
+override Steeltoe.Common.Transaction.DefaultTransactionDefinition.PropagationBehavior.set -> void
+override Steeltoe.Common.Transaction.DefaultTransactionDefinition.Timeout.get -> int
+override Steeltoe.Common.Transaction.DefaultTransactionDefinition.Timeout.set -> void
+override Steeltoe.Common.Transaction.DefaultTransactionDefinition.ToString() -> string
+override Steeltoe.Common.Transaction.DefaultTransactionStatus.Flush() -> void
+override Steeltoe.Common.Transaction.DefaultTransactionStatus.GetSavepointManager() -> Steeltoe.Common.Transaction.ISavepointManager
+override Steeltoe.Common.Transaction.DefaultTransactionStatus.IsGlobalRollbackOnly.get -> bool
+override Steeltoe.Common.Transaction.DefaultTransactionStatus.IsGlobalRollbackOnly.set -> void
+override Steeltoe.Common.Transaction.DefaultTransactionStatus.IsNewTransaction.get -> bool
+override Steeltoe.Common.Transaction.SimpleTransactionStatus.IsNewTransaction.get -> bool
+override Steeltoe.Common.Transaction.TransactionTemplate.Equals(object other) -> bool
+override Steeltoe.Common.Transaction.TransactionTemplate.GetHashCode() -> int
+override Steeltoe.Common.Util.AbstractAttributeAccessor.Equals(object other) -> bool
+override Steeltoe.Common.Util.AbstractAttributeAccessor.GetHashCode() -> int
+override Steeltoe.Common.Util.BinaryExceptionClassifier.Classify(System.Exception classifiable) -> bool
+override Steeltoe.Common.Util.MimeType.Equals(object other) -> bool
+override Steeltoe.Common.Util.MimeType.GetHashCode() -> int
+override Steeltoe.Common.Util.MimeType.ToString() -> string
+readonly Steeltoe.Common.ApplicationInstanceInfo.ConfigServerRoot -> string
+readonly Steeltoe.Common.ApplicationInstanceInfo.ConsulRoot -> string
+readonly Steeltoe.Common.ApplicationInstanceInfo.EurekaRoot -> string
+readonly Steeltoe.Common.ApplicationInstanceInfo.KubernetesRoot -> string
+readonly Steeltoe.Common.ApplicationInstanceInfo.ManagementRoot -> string
+readonly Steeltoe.Common.ApplicationInstanceInfo.ServicesRoot -> string
+readonly Steeltoe.Common.ApplicationInstanceInfo.SpringApplicationRoot -> string
+readonly Steeltoe.Common.Availability.ApplicationAvailability.LivenessKey -> string
+readonly Steeltoe.Common.Availability.ApplicationAvailability.ReadinessKey -> string
+readonly Steeltoe.Common.Converter.AbstractToCollectionConverter._conversionService -> Steeltoe.Common.Converter.IConversionService
+readonly Steeltoe.Common.Transaction.AbstractPlatformTransactionManager._logger -> Microsoft.Extensions.Logging.ILogger
+static Microsoft.Extensions.DependencyInjection.ConfigurationServiceInstanceProviderServiceCollectionExtensions.AddConfigurationDiscoveryClient(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration configuration, Microsoft.Extensions.DependencyInjection.ServiceLifetime serviceLifetime = Microsoft.Extensions.DependencyInjection.ServiceLifetime.Singleton) -> Microsoft.Extensions.DependencyInjection.IServiceCollection
+static readonly Steeltoe.Common.ApplicationInstanceInfo.ApplicationRoot -> string
+static readonly Steeltoe.Common.Availability.LivenessState.Broken -> Steeltoe.Common.Availability.LivenessState
+static readonly Steeltoe.Common.Availability.LivenessState.Correct -> Steeltoe.Common.Availability.LivenessState
+static readonly Steeltoe.Common.Availability.ReadinessState.AcceptingTraffic -> Steeltoe.Common.Availability.ReadinessState
+static readonly Steeltoe.Common.Availability.ReadinessState.RefusingTraffic -> Steeltoe.Common.Availability.ReadinessState
+static readonly Steeltoe.Common.Util.EncodingUtils.Utf16 -> System.Text.Encoding
+static readonly Steeltoe.Common.Util.EncodingUtils.Utf16be -> System.Text.Encoding
+static readonly Steeltoe.Common.Util.EncodingUtils.Utf32 -> System.Text.Encoding
+static readonly Steeltoe.Common.Util.EncodingUtils.Utf32be -> System.Text.Encoding
+static readonly Steeltoe.Common.Util.EncodingUtils.Utf7 -> System.Text.Encoding
+static readonly Steeltoe.Common.Util.EncodingUtils.Utf8 -> System.Text.Encoding
+static readonly Steeltoe.Common.Util.MimeTypeUtils.ALL -> Steeltoe.Common.Util.MimeType
+static readonly Steeltoe.Common.Util.MimeTypeUtils.ALL_VALUE -> string
+static readonly Steeltoe.Common.Util.MimeTypeUtils.APPLICATION_JSON -> Steeltoe.Common.Util.MimeType
+static readonly Steeltoe.Common.Util.MimeTypeUtils.APPLICATION_JSON_VALUE -> string
+static readonly Steeltoe.Common.Util.MimeTypeUtils.APPLICATION_OCTET_STREAM -> Steeltoe.Common.Util.MimeType
+static readonly Steeltoe.Common.Util.MimeTypeUtils.APPLICATION_OCTET_STREAM_VALUE -> string
+static readonly Steeltoe.Common.Util.MimeTypeUtils.APPLICATION_XML -> Steeltoe.Common.Util.MimeType
+static readonly Steeltoe.Common.Util.MimeTypeUtils.APPLICATION_XML_VALUE -> string
+static readonly Steeltoe.Common.Util.MimeTypeUtils.IMAGE_GIF -> Steeltoe.Common.Util.MimeType
+static readonly Steeltoe.Common.Util.MimeTypeUtils.IMAGE_GIF_VALUE -> string
+static readonly Steeltoe.Common.Util.MimeTypeUtils.IMAGE_JPEG -> Steeltoe.Common.Util.MimeType
+static readonly Steeltoe.Common.Util.MimeTypeUtils.IMAGE_JPEG_VALUE -> string
+static readonly Steeltoe.Common.Util.MimeTypeUtils.IMAGE_PNG -> Steeltoe.Common.Util.MimeType
+static readonly Steeltoe.Common.Util.MimeTypeUtils.IMAGE_PNG_VALUE -> string
+static readonly Steeltoe.Common.Util.MimeTypeUtils.SPECIFICITY_COMPARATOR -> System.Collections.Generic.IComparer<Steeltoe.Common.Util.MimeType>
+static readonly Steeltoe.Common.Util.MimeTypeUtils.TEXT_HTML -> Steeltoe.Common.Util.MimeType
+static readonly Steeltoe.Common.Util.MimeTypeUtils.TEXT_HTML_VALUE -> string
+static readonly Steeltoe.Common.Util.MimeTypeUtils.TEXT_PLAIN -> Steeltoe.Common.Util.MimeType
+static readonly Steeltoe.Common.Util.MimeTypeUtils.TEXT_PLAIN_VALUE -> string
+static readonly Steeltoe.Common.Util.MimeTypeUtils.TEXT_XML -> Steeltoe.Common.Util.MimeType
+static readonly Steeltoe.Common.Util.MimeTypeUtils.TEXT_XML_VALUE -> string
+static Steeltoe.Common.ConcurrentDictionaryExtensions.GetOrAddEx<K, V>(this System.Collections.Concurrent.ConcurrentDictionary<K, V> dict, K key, System.Func<K, V> factory) -> V
+static Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetBoolean(string key, Microsoft.Extensions.Configuration.IConfiguration config, Microsoft.Extensions.Configuration.IConfiguration resolve, bool def) -> bool
+static Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetDouble(string key, Microsoft.Extensions.Configuration.IConfiguration config, Microsoft.Extensions.Configuration.IConfiguration resolve, double def) -> double
+static Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetInt(string key, Microsoft.Extensions.Configuration.IConfiguration config, Microsoft.Extensions.Configuration.IConfiguration resolve, int def) -> int
+static Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetPreferredSetting(Microsoft.Extensions.Configuration.IConfiguration config, string defaultValue, params string[] configKeys) -> string
+static Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetSetting(string key, Microsoft.Extensions.Configuration.IConfiguration config, string defaultValue, params string[] configPrefixes) -> string
+static Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetSetting(string key, Microsoft.Extensions.Configuration.IConfiguration primary, Microsoft.Extensions.Configuration.IConfiguration secondary, Microsoft.Extensions.Configuration.IConfiguration resolve, string def) -> string
+static Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetString(string key, Microsoft.Extensions.Configuration.IConfiguration config, Microsoft.Extensions.Configuration.IConfiguration resolve, string def) -> string
+static Steeltoe.Common.Configuration.PropertyPlaceholderHelper.GetResolvedConfigurationPlaceholders(Microsoft.Extensions.Configuration.IConfiguration config, Microsoft.Extensions.Logging.ILogger logger = null, bool useEmptyStringIfNotFound = true) -> System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<string, string>>
+static Steeltoe.Common.Configuration.PropertyPlaceholderHelper.ResolvePlaceholders(string property, Microsoft.Extensions.Configuration.IConfiguration config, Microsoft.Extensions.Logging.ILogger logger = null) -> string
+static Steeltoe.Common.Contexts.ServiceCollectionExtensions.AddGenericApplicationContext(this Microsoft.Extensions.DependencyInjection.IServiceCollection services) -> Microsoft.Extensions.DependencyInjection.IServiceCollection
+static Steeltoe.Common.Contexts.ServiceCollectionExtensions.AddGenericApplicationContext(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, System.Action<System.IServiceProvider, Steeltoe.Common.Contexts.GenericApplicationContext> configure) -> Microsoft.Extensions.DependencyInjection.IServiceCollection
+static Steeltoe.Common.Contexts.ServiceCollectionExtensions.RegisterService(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, string serviceName, System.Type implementationType) -> Microsoft.Extensions.DependencyInjection.IServiceCollection
+static Steeltoe.Common.Converter.ConversionUtils.CanConvertElements(System.Type sourceElementType, System.Type targetElementType, Steeltoe.Common.Converter.IConversionService conversionService) -> bool
+static Steeltoe.Common.Converter.ConversionUtils.CanCreateCompatDictionaryFor(System.Type type) -> bool
+static Steeltoe.Common.Converter.ConversionUtils.CanCreateCompatListFor(System.Type type) -> bool
+static Steeltoe.Common.Converter.ConversionUtils.ContainsPublicNoArgConstructor(System.Type collectionType) -> bool
+static Steeltoe.Common.Converter.ConversionUtils.Count(System.Collections.IEnumerable enumerable) -> int
+static Steeltoe.Common.Converter.ConversionUtils.CreateCompatDictionaryFor(System.Type type) -> System.Collections.IDictionary
+static Steeltoe.Common.Converter.ConversionUtils.CreateCompatListFor(System.Type type) -> System.Collections.IList
+static Steeltoe.Common.Converter.ConversionUtils.GetConstructorIfAvailable(System.Type clazz, params System.Type[] paramTypes) -> System.Reflection.ConstructorInfo
+static Steeltoe.Common.Converter.ConversionUtils.GetDictionaryKeyType(System.Type sourceType) -> System.Type
+static Steeltoe.Common.Converter.ConversionUtils.GetDictionaryValueType(System.Type sourceType) -> System.Type
+static Steeltoe.Common.Converter.ConversionUtils.GetElementType(System.Type sourceType) -> System.Type
+static Steeltoe.Common.Converter.ConversionUtils.GetMethodIfAvailable(System.Type clazz, string methodName, params System.Type[] paramTypes) -> System.Reflection.MethodInfo
+static Steeltoe.Common.Converter.ConversionUtils.GetNullableElementType(System.Type nullable) -> System.Type
+static Steeltoe.Common.Converter.ConversionUtils.GetStaticMethod(System.Type clazz, string methodName, params System.Type[] args) -> System.Reflection.MethodInfo
+static Steeltoe.Common.Converter.ConversionUtils.ToString(System.Collections.IEnumerable collection, System.Type targetType, Steeltoe.Common.Converter.IConversionService conversionService) -> string
+static Steeltoe.Common.Converter.DefaultConversionService.AddCollectionConverters(Steeltoe.Common.Converter.IConverterRegistry converterRegistry) -> void
+static Steeltoe.Common.Converter.DefaultConversionService.AddDefaultConverters(Steeltoe.Common.Converter.IConverterRegistry converterRegistry) -> void
+static Steeltoe.Common.Converter.DefaultConversionService.Singleton.get -> Steeltoe.Common.Converter.IConversionService
+static Steeltoe.Common.Discovery.IServiceInstanceProviderExtensions.GetInstancesWithCacheAsync(this Steeltoe.Common.Discovery.IServiceInstanceProvider serviceInstanceProvider, string serviceId, Microsoft.Extensions.Caching.Distributed.IDistributedCache distributedCache = null, Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions cacheOptions = null, string serviceInstancesKeyPrefix = "ServiceInstances:") -> System.Threading.Tasks.Task<System.Collections.Generic.IList<Steeltoe.Common.Discovery.IServiceInstance>>
+static Steeltoe.Common.Extensions.UriExtensions.ParseQuerystring(string querystring) -> System.Collections.Generic.Dictionary<string, string>
+static Steeltoe.Common.Extensions.UriExtensions.ToMaskedString(this System.Uri source) -> string
+static Steeltoe.Common.IServiceCollectionExtensions.GetApplicationInstanceInfo(this Microsoft.Extensions.DependencyInjection.IServiceCollection serviceCollection) -> Steeltoe.Common.IApplicationInstanceInfo
+static Steeltoe.Common.IServiceCollectionExtensions.RegisterDefaultApplicationInstanceInfo(this Microsoft.Extensions.DependencyInjection.IServiceCollection serviceCollection) -> void
+static Steeltoe.Common.IServiceProviderExtensions.GetApplicationInstanceInfo(this System.IServiceProvider sp) -> Steeltoe.Common.IApplicationInstanceInfo
+static Steeltoe.Common.Net.DnsTools.ResolveHostAddress(string hostName) -> string
+static Steeltoe.Common.Net.DnsTools.ResolveHostName() -> string
+static Steeltoe.Common.Order.OrderComparer.Instance.get -> Steeltoe.Common.Order.OrderComparer
+static Steeltoe.Common.Platform.IsCloudFoundry.get -> bool
+static Steeltoe.Common.Platform.IsCloudHosted.get -> bool
+static Steeltoe.Common.Platform.IsContainerized.get -> bool
+static Steeltoe.Common.Platform.IsFullFramework.get -> bool
+static Steeltoe.Common.Platform.IsKubernetes.get -> bool
+static Steeltoe.Common.Platform.IsLinux.get -> bool
+static Steeltoe.Common.Platform.IsNetCore.get -> bool
+static Steeltoe.Common.Platform.IsOSX.get -> bool
+static Steeltoe.Common.Platform.IsWindows.get -> bool
+static Steeltoe.Common.Reflection.ReflectionHelpers.CreateInstance(System.Type t, object[] args = null) -> object
+static Steeltoe.Common.Reflection.ReflectionHelpers.FindAssemblies(System.Func<System.Reflection.Assembly, bool> assemblyQuery) -> System.Collections.Generic.IEnumerable<System.Reflection.Assembly>
+static Steeltoe.Common.Reflection.ReflectionHelpers.FindAssembliesWithAttribute<T>() -> System.Collections.Generic.IEnumerable<System.Reflection.Assembly>
+static Steeltoe.Common.Reflection.ReflectionHelpers.FindAssembly(string name) -> System.Reflection.Assembly
+static Steeltoe.Common.Reflection.ReflectionHelpers.FindAttributedTypesFromAssemblyAttribute<T>() -> System.Collections.Generic.IEnumerable<System.Type>
+static Steeltoe.Common.Reflection.ReflectionHelpers.FindDescendantTypes(System.Func<System.Reflection.Assembly, bool> assemblyQuery, System.Type baseType) -> System.Collections.Generic.IEnumerable<System.Type>
+static Steeltoe.Common.Reflection.ReflectionHelpers.FindInterfacedTypesFromAssemblyAttribute<TAttribute>() -> System.Collections.Generic.IEnumerable<System.Type>
+static Steeltoe.Common.Reflection.ReflectionHelpers.FindMethod(System.Type type, string methodName, System.Type[] parameters = null) -> System.Reflection.MethodInfo
+static Steeltoe.Common.Reflection.ReflectionHelpers.FindType(string[] assemblyNames, string[] typeNames) -> System.Type
+static Steeltoe.Common.Reflection.ReflectionHelpers.FindType(System.Reflection.Assembly assembly, string typeName) -> System.Type
+static Steeltoe.Common.Reflection.ReflectionHelpers.FindTypeFromAssemblyAttribute<T>() -> System.Collections.Generic.IEnumerable<System.Type>
+static Steeltoe.Common.Reflection.ReflectionHelpers.FindTypeOrThrow(string[] assemblyNames, string[] typeNames, string typeName, string assemblyShortDescription) -> System.Type
+static Steeltoe.Common.Reflection.ReflectionHelpers.FindTypesWithAttribute<T>(System.Reflection.Assembly assembly) -> System.Collections.Generic.IEnumerable<System.Type>
+static Steeltoe.Common.Reflection.ReflectionHelpers.FindTypesWithAttributeFromAssemblyAttribute<TTypeAttribute, TAssemblyAttribute>() -> System.Collections.Generic.IEnumerable<System.Type>
+static Steeltoe.Common.Reflection.ReflectionHelpers.Invoke(System.Reflection.MethodBase member, object instance, object[] args) -> object
+static Steeltoe.Common.Reflection.ReflectionHelpers.IsAssemblyLoaded(string assembly) -> bool
+static Steeltoe.Common.Reflection.ReflectionHelpers.TrySetProperty(object obj, string property, object value) -> void
+static Steeltoe.Common.Retry.RetrySynchronizationManager.Clear() -> Steeltoe.Common.Retry.IRetryContext
+static Steeltoe.Common.Retry.RetrySynchronizationManager.GetContext() -> Steeltoe.Common.Retry.IRetryContext
+static Steeltoe.Common.Retry.RetrySynchronizationManager.Register(Steeltoe.Common.Retry.IRetryContext context) -> Steeltoe.Common.Retry.IRetryContext
+static Steeltoe.Common.SecurityUtilities.SanitizeInput(string inputString) -> string
+static Steeltoe.Common.Transaction.AbstractTransactionDefinition.WithDefaults.get -> Steeltoe.Common.Transaction.ITransactionDefinition
+static Steeltoe.Common.Transaction.AbstractTransactionOperations.WithoutTransaction() -> Steeltoe.Common.Transaction.ITransactionOperations
+static Steeltoe.Common.Transaction.TransactionSynchronizationManager.BindResource(object key, object value, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+static Steeltoe.Common.Transaction.TransactionSynchronizationManager.Clear() -> void
+static Steeltoe.Common.Transaction.TransactionSynchronizationManager.ClearSynchronization(Microsoft.Extensions.Logging.ILogger logger = null) -> void
+static Steeltoe.Common.Transaction.TransactionSynchronizationManager.GetCurrentTransactionIsolationLevel() -> int?
+static Steeltoe.Common.Transaction.TransactionSynchronizationManager.GetCurrentTransactionName() -> string
+static Steeltoe.Common.Transaction.TransactionSynchronizationManager.GetResource(object key, Microsoft.Extensions.Logging.ILogger logger = null) -> object
+static Steeltoe.Common.Transaction.TransactionSynchronizationManager.GetResourceMap() -> System.Collections.Generic.IDictionary<object, object>
+static Steeltoe.Common.Transaction.TransactionSynchronizationManager.GetSynchronizations() -> System.Collections.Generic.List<Steeltoe.Common.Transaction.ITransactionSynchronization>
+static Steeltoe.Common.Transaction.TransactionSynchronizationManager.HasResource(object key) -> bool
+static Steeltoe.Common.Transaction.TransactionSynchronizationManager.InitSynchronization(Microsoft.Extensions.Logging.ILogger logger = null) -> void
+static Steeltoe.Common.Transaction.TransactionSynchronizationManager.IsActualTransactionActive() -> bool
+static Steeltoe.Common.Transaction.TransactionSynchronizationManager.IsCurrentTransactionReadOnly() -> bool
+static Steeltoe.Common.Transaction.TransactionSynchronizationManager.IsSynchronizationActive() -> bool
+static Steeltoe.Common.Transaction.TransactionSynchronizationManager.RegisterSynchronization(Steeltoe.Common.Transaction.ITransactionSynchronization synchronization) -> void
+static Steeltoe.Common.Transaction.TransactionSynchronizationManager.SetActualTransactionActive(bool active) -> void
+static Steeltoe.Common.Transaction.TransactionSynchronizationManager.SetCurrentTransactionIsolationLevel(int? isolationLevel) -> void
+static Steeltoe.Common.Transaction.TransactionSynchronizationManager.SetCurrentTransactionName(string name) -> void
+static Steeltoe.Common.Transaction.TransactionSynchronizationManager.SetCurrentTransactionReadOnly(bool readOnly) -> void
+static Steeltoe.Common.Transaction.TransactionSynchronizationManager.UnbindResource(object key, Microsoft.Extensions.Logging.ILogger logger = null) -> object
+static Steeltoe.Common.Transaction.TransactionSynchronizationManager.UnbindResourceIfPossible(object key, Microsoft.Extensions.Logging.ILogger logger = null) -> object
+static Steeltoe.Common.Transaction.TransactionSynchronizationUtils.InvokeAfterCommit(System.Collections.Generic.List<Steeltoe.Common.Transaction.ITransactionSynchronization> synchronizations) -> void
+static Steeltoe.Common.Transaction.TransactionSynchronizationUtils.InvokeAfterCompletion(System.Collections.Generic.List<Steeltoe.Common.Transaction.ITransactionSynchronization> synchronizations, int completionStatus, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+static Steeltoe.Common.Transaction.TransactionSynchronizationUtils.TriggerAfterCommit() -> void
+static Steeltoe.Common.Transaction.TransactionSynchronizationUtils.TriggerAfterCompletion(int completionStatus) -> void
+static Steeltoe.Common.Transaction.TransactionSynchronizationUtils.TriggerBeforeCommit(bool readOnly) -> void
+static Steeltoe.Common.Transaction.TransactionSynchronizationUtils.TriggerBeforeCompletion(Microsoft.Extensions.Logging.ILogger logger = null) -> void
+static Steeltoe.Common.Util.AttributeUtils.FindMethodsWithAttribute(System.Type targetClass, System.Type attribute, System.Reflection.BindingFlags flags) -> System.Collections.Generic.List<System.Reflection.MethodInfo>
+static Steeltoe.Common.Util.AttributeUtils.GetValue(System.Attribute attribute, string propertyName) -> object
+static Steeltoe.Common.Util.ClassUtils.DetermineCommonAncestor(System.Type clazz1, System.Type clazz2) -> System.Type
+static Steeltoe.Common.Util.ClassUtils.GetGenericTypeDefinition(System.Type type) -> System.Type
+static Steeltoe.Common.Util.ClassUtils.GetInterfaceMethodIfPossible(System.Reflection.MethodInfo method) -> System.Reflection.MethodInfo
+static Steeltoe.Common.Util.ClassUtils.GetParameterAttributes(System.Reflection.MethodInfo method) -> object[][]
+static Steeltoe.Common.Util.ClassUtils.GetParameterTypes(System.Reflection.MethodBase method) -> System.Type[]
+static Steeltoe.Common.Util.ClassUtils.GetQualifiedMethodName(System.Reflection.MethodInfo method) -> string
+static Steeltoe.Common.Util.ClassUtils.IsAssignable(System.Type lhsType, System.Type rhsType) -> bool
+static Steeltoe.Common.Util.ClassUtils.IsAssignableValue(System.Type type, object value) -> bool
+static Steeltoe.Common.Util.EncodingUtils.GetDefaultEncoding() -> System.Text.Encoding
+static Steeltoe.Common.Util.EncodingUtils.GetEncoding(string name) -> System.Text.Encoding
+static Steeltoe.Common.Util.EncodingUtils.GetEncoding(System.Text.Encoding name) -> string
+static Steeltoe.Common.Util.MethodInvoker.GetTypeDifferenceWeight(System.Type[] paramTypes, object[] args) -> int
+static Steeltoe.Common.Util.MimeType.ToMimeType(string value) -> Steeltoe.Common.Util.MimeType
+static Steeltoe.Common.Util.MimeTypeUtils.GenerateMultipartBoundary() -> char[]
+static Steeltoe.Common.Util.MimeTypeUtils.GenerateMultipartBoundaryString() -> string
+static Steeltoe.Common.Util.MimeTypeUtils.ParseMimeType(string mimeType) -> Steeltoe.Common.Util.MimeType
+static Steeltoe.Common.Util.MimeTypeUtils.ParseMimeTypes(string mimeTypes) -> System.Collections.Generic.List<Steeltoe.Common.Util.MimeType>
+static Steeltoe.Common.Util.MimeTypeUtils.SortBySpecificity(System.Collections.Generic.List<Steeltoe.Common.Util.MimeType> mimeTypes) -> void
+static Steeltoe.Common.Util.MimeTypeUtils.Tokenize(string mimeTypes) -> System.Collections.Generic.List<string>
+static Steeltoe.Common.Util.MimeTypeUtils.Tostring(System.Collections.Generic.ICollection<Steeltoe.Common.Util.MimeType> mimeTypes) -> string
+static Steeltoe.Common.Util.ObjectUtils.IsEmpty(object[] array) -> bool
+static Steeltoe.Common.Util.ObjectUtils.NullSafeEquals(object o1, object o2) -> bool
+static Steeltoe.Common.Util.ObjectUtils.NullSafeHashCode(object obj) -> int
+static Steeltoe.Common.Util.PatternMatchUtils.SimpleMatch(string pattern, string str) -> bool
+static Steeltoe.Common.Util.PatternMatchUtils.SimpleMatch(string[] patterns, string str) -> bool
+Steeltoe.Common.ApplicationInstanceInfo
+Steeltoe.Common.ApplicationInstanceInfo.AppInstanceIdKey.get -> string
+Steeltoe.Common.ApplicationInstanceInfo.ApplicationInstanceInfo() -> void
+Steeltoe.Common.ApplicationInstanceInfo.ApplicationInstanceInfo(Microsoft.Extensions.Configuration.IConfiguration configuration) -> void
+Steeltoe.Common.ApplicationInstanceInfo.ApplicationInstanceInfo(Microsoft.Extensions.Configuration.IConfiguration configuration, bool noPrefix) -> void
+Steeltoe.Common.ApplicationInstanceInfo.ApplicationInstanceInfo(Microsoft.Extensions.Configuration.IConfiguration configuration, string configPrefix) -> void
+Steeltoe.Common.ApplicationInstanceInfo.ApplicationNameInContext(Steeltoe.Common.SteeltoeComponent steeltoeComponent, string additionalSearchPath = null) -> string
+Steeltoe.Common.ApplicationInstanceInfo.Application_Id.get -> string
+Steeltoe.Common.ApplicationInstanceInfo.Application_Id.set -> void
+Steeltoe.Common.ApplicationInstanceInfo.AppNameKey.get -> string
+Steeltoe.Common.ApplicationInstanceInfo.ConfigServerNameKey.get -> string
+Steeltoe.Common.ApplicationInstanceInfo.configuration -> Microsoft.Extensions.Configuration.IConfiguration
+Steeltoe.Common.ApplicationInstanceInfo.ConsulInstanceNameKey.get -> string
+Steeltoe.Common.ApplicationInstanceInfo.DefaultAppName.get -> string
+Steeltoe.Common.ApplicationInstanceInfo.EurekaInstanceNameKey.get -> string
+Steeltoe.Common.ApplicationInstanceInfo.Instance_Id.get -> string
+Steeltoe.Common.ApplicationInstanceInfo.Instance_Id.set -> void
+Steeltoe.Common.ApplicationInstanceInfo.KubernetesNameKey.get -> string
+Steeltoe.Common.ApplicationInstanceInfo.ManagementNameKey.get -> string
+Steeltoe.Common.ApplicationInstanceInfo.PlatformNameKey.get -> string
+Steeltoe.Common.ApplicationInstanceInfo.Port.get -> int
+Steeltoe.Common.ApplicationInstanceInfo.Port.set -> void
+Steeltoe.Common.ApplicationInstanceInfo.SecondChanceSetIdProperties(Microsoft.Extensions.Configuration.IConfiguration config = null) -> void
+Steeltoe.Common.ApplicationInstanceInfo.Version.get -> string
+Steeltoe.Common.ApplicationInstanceInfo.Version.set -> void
+Steeltoe.Common.Availability.ApplicationAvailability
+Steeltoe.Common.Availability.ApplicationAvailability.ApplicationAvailability(Microsoft.Extensions.Logging.ILogger<Steeltoe.Common.Availability.ApplicationAvailability> logger = null) -> void
+Steeltoe.Common.Availability.ApplicationAvailability.GetAvailabilityState(string availabilityType) -> Steeltoe.Common.Availability.IAvailabilityState
+Steeltoe.Common.Availability.ApplicationAvailability.GetLivenessState() -> Steeltoe.Common.Availability.IAvailabilityState
+Steeltoe.Common.Availability.ApplicationAvailability.GetReadinessState() -> Steeltoe.Common.Availability.IAvailabilityState
+Steeltoe.Common.Availability.ApplicationAvailability.LivenessChanged -> System.EventHandler
+Steeltoe.Common.Availability.ApplicationAvailability.ReadinessChanged -> System.EventHandler
+Steeltoe.Common.Availability.ApplicationAvailability.SetAvailabilityState(string stateKey, Steeltoe.Common.Availability.IAvailabilityState newState, string caller) -> void
+Steeltoe.Common.Availability.AvailabilityEventArgs
+Steeltoe.Common.Availability.AvailabilityEventArgs.AvailabilityEventArgs(Steeltoe.Common.Availability.IAvailabilityState availabilityState) -> void
+Steeltoe.Common.Availability.AvailabilityEventArgs.NewState.get -> Steeltoe.Common.Availability.IAvailabilityState
+Steeltoe.Common.Availability.AvailabilityHealthContributor
+Steeltoe.Common.Availability.AvailabilityHealthContributor.AvailabilityHealthContributor(System.Collections.Generic.Dictionary<Steeltoe.Common.Availability.IAvailabilityState, Steeltoe.Common.HealthChecks.HealthStatus> stateMappings, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Common.Availability.AvailabilityHealthContributor.Health() -> Steeltoe.Common.HealthChecks.HealthCheckResult
+Steeltoe.Common.Availability.LivenessHealthContributor
+Steeltoe.Common.Availability.LivenessHealthContributor.LivenessHealthContributor(Steeltoe.Common.Availability.ApplicationAvailability availability) -> void
+Steeltoe.Common.Availability.LivenessState
+Steeltoe.Common.Availability.ReadinessHealthContributor
+Steeltoe.Common.Availability.ReadinessHealthContributor.ReadinessHealthContributor(Steeltoe.Common.Availability.ApplicationAvailability availability) -> void
+Steeltoe.Common.Availability.ReadinessState
+Steeltoe.Common.ConcurrentDictionaryExtensions
+Steeltoe.Common.Configuration.ConfigurationValuesHelper
+Steeltoe.Common.Configuration.PropertyPlaceholderHelper
+Steeltoe.Common.Contexts.AbstractApplicationContext
+Steeltoe.Common.Contexts.AbstractApplicationContext.AbstractApplicationContext(System.IServiceProvider serviceProvider, Microsoft.Extensions.Configuration.IConfiguration configuration, System.Collections.Generic.IEnumerable<Steeltoe.Common.Contexts.AbstractApplicationContext.NameToTypeMapping> nameToTypeMappings) -> void
+Steeltoe.Common.Contexts.AbstractApplicationContext.Configuration.get -> Microsoft.Extensions.Configuration.IConfiguration
+Steeltoe.Common.Contexts.AbstractApplicationContext.ContainsService(string name) -> bool
+Steeltoe.Common.Contexts.AbstractApplicationContext.ContainsService(string name, System.Type serviceType) -> bool
+Steeltoe.Common.Contexts.AbstractApplicationContext.ContainsService<T>(string name) -> bool
+Steeltoe.Common.Contexts.AbstractApplicationContext.Deregister(string name) -> object
+Steeltoe.Common.Contexts.AbstractApplicationContext.Dispose() -> void
+Steeltoe.Common.Contexts.AbstractApplicationContext.GetService(string name) -> object
+Steeltoe.Common.Contexts.AbstractApplicationContext.GetService(string name, System.Type serviceType) -> object
+Steeltoe.Common.Contexts.AbstractApplicationContext.GetService(System.Type serviceType) -> object
+Steeltoe.Common.Contexts.AbstractApplicationContext.GetService<T>() -> T
+Steeltoe.Common.Contexts.AbstractApplicationContext.GetService<T>(string name) -> T
+Steeltoe.Common.Contexts.AbstractApplicationContext.GetServices(System.Type serviceType) -> System.Collections.Generic.IEnumerable<object>
+Steeltoe.Common.Contexts.AbstractApplicationContext.GetServices<T>() -> System.Collections.Generic.IEnumerable<T>
+Steeltoe.Common.Contexts.AbstractApplicationContext.NameToTypeMapping
+Steeltoe.Common.Contexts.AbstractApplicationContext.NameToTypeMapping.Name.get -> string
+Steeltoe.Common.Contexts.AbstractApplicationContext.NameToTypeMapping.NameToTypeMapping(string name, System.Type type) -> void
+Steeltoe.Common.Contexts.AbstractApplicationContext.NameToTypeMapping.Type.get -> System.Type
+Steeltoe.Common.Contexts.AbstractApplicationContext.Register(string name, object instance) -> void
+Steeltoe.Common.Contexts.AbstractApplicationContext.ResolveEmbeddedValue(string value) -> string
+Steeltoe.Common.Contexts.AbstractApplicationContext.ServiceExpressionResolver.get -> Steeltoe.Common.Expression.Internal.Contexts.IServiceExpressionResolver
+Steeltoe.Common.Contexts.AbstractApplicationContext.ServiceExpressionResolver.set -> void
+Steeltoe.Common.Contexts.AbstractApplicationContext.ServiceProvider.get -> System.IServiceProvider
+Steeltoe.Common.Contexts.GenericApplicationContext
+Steeltoe.Common.Contexts.GenericApplicationContext.GenericApplicationContext(System.IServiceProvider serviceProvider, Microsoft.Extensions.Configuration.IConfiguration configuration, System.Collections.Generic.IEnumerable<Steeltoe.Common.Contexts.AbstractApplicationContext.NameToTypeMapping> nameToTypeMappings = null) -> void
+Steeltoe.Common.Contexts.ServiceCollectionExtensions
+Steeltoe.Common.Converter.AbstractConverter<S, T>
+Steeltoe.Common.Converter.AbstractConverter<S, T>.AbstractConverter() -> void
+Steeltoe.Common.Converter.AbstractGenericConditionalConverter
+Steeltoe.Common.Converter.AbstractGenericConditionalConverter.AbstractGenericConditionalConverter(System.Collections.Generic.ISet<(System.Type Source, System.Type Target)> convertableTypes) -> void
+Steeltoe.Common.Converter.AbstractGenericConverter
+Steeltoe.Common.Converter.AbstractGenericConverter.AbstractGenericConverter(System.Collections.Generic.ISet<(System.Type Source, System.Type Target)> convertableTypes) -> void
+Steeltoe.Common.Converter.AbstractGenericConverter.ConvertibleTypes.get -> System.Collections.Generic.ISet<(System.Type Source, System.Type Target)>
+Steeltoe.Common.Converter.AbstractToCollectionConverter
+Steeltoe.Common.Converter.AbstractToCollectionConverter.AbstractToCollectionConverter(Steeltoe.Common.Converter.IConversionService conversionService) -> void
+Steeltoe.Common.Converter.AbstractToCollectionConverter.AbstractToCollectionConverter(System.Collections.Generic.ISet<(System.Type Source, System.Type Target)> convertableTypes, Steeltoe.Common.Converter.IConversionService conversionService) -> void
+Steeltoe.Common.Converter.AbstractToNumberConverter
+Steeltoe.Common.Converter.AbstractToNumberConverter.AbstractToNumberConverter(System.Collections.Generic.ISet<(System.Type Source, System.Type Target)> convertableTypes) -> void
+Steeltoe.Common.Converter.AbstractToNumberConverter._convertableTypes -> System.Collections.Generic.ISet<(System.Type Source, System.Type Target)>
+Steeltoe.Common.Converter.ArrayToArrayConverter
+Steeltoe.Common.Converter.ArrayToArrayConverter.ArrayToArrayConverter(Steeltoe.Common.Converter.IConversionService conversionService) -> void
+Steeltoe.Common.Converter.ArrayToCollectionConverter
+Steeltoe.Common.Converter.ArrayToCollectionConverter.ArrayToCollectionConverter(Steeltoe.Common.Converter.IConversionService conversionService) -> void
+Steeltoe.Common.Converter.ArrayToObjectConverter
+Steeltoe.Common.Converter.ArrayToObjectConverter.ArrayToObjectConverter(Steeltoe.Common.Converter.IConversionService conversionService) -> void
+Steeltoe.Common.Converter.ArrayToStringConverter
+Steeltoe.Common.Converter.ArrayToStringConverter.ArrayToStringConverter(Steeltoe.Common.Converter.IConversionService conversionService) -> void
+Steeltoe.Common.Converter.BooleanToStringConverter
+Steeltoe.Common.Converter.BooleanToStringConverter.BooleanToStringConverter() -> void
+Steeltoe.Common.Converter.CharacterToNumberConverter
+Steeltoe.Common.Converter.CharacterToNumberConverter.CharacterToNumberConverter() -> void
+Steeltoe.Common.Converter.CharacterToStringConverter
+Steeltoe.Common.Converter.CharacterToStringConverter.CharacterToStringConverter() -> void
+Steeltoe.Common.Converter.CollectionToArrayConverter
+Steeltoe.Common.Converter.CollectionToArrayConverter.CollectionToArrayConverter(Steeltoe.Common.Converter.IConversionService conversionService) -> void
+Steeltoe.Common.Converter.CollectionToCollectionConverter
+Steeltoe.Common.Converter.CollectionToCollectionConverter.CollectionToCollectionConverter(Steeltoe.Common.Converter.IConversionService conversionService) -> void
+Steeltoe.Common.Converter.CollectionToObjectConverter
+Steeltoe.Common.Converter.CollectionToObjectConverter.CollectionToObjectConverter(Steeltoe.Common.Converter.IConversionService conversionService, System.Collections.Generic.ISet<(System.Type source, System.Type target)> convertableTypes = null) -> void
+Steeltoe.Common.Converter.CollectionToStringConverter
+Steeltoe.Common.Converter.CollectionToStringConverter.CollectionToStringConverter(Steeltoe.Common.Converter.IConversionService conversionService) -> void
+Steeltoe.Common.Converter.ConversionException
+Steeltoe.Common.Converter.ConversionException.ConversionException(string message) -> void
+Steeltoe.Common.Converter.ConversionException.ConversionException(string message, System.Exception cause) -> void
+Steeltoe.Common.Converter.ConversionFailedException
+Steeltoe.Common.Converter.ConversionFailedException.ConversionFailedException(System.Type sourceType, System.Type targetType, object value, System.Exception cause) -> void
+Steeltoe.Common.Converter.ConversionFailedException.SourceType.get -> System.Type
+Steeltoe.Common.Converter.ConversionFailedException.TargetType.get -> System.Type
+Steeltoe.Common.Converter.ConversionFailedException.Value.get -> object
+Steeltoe.Common.Converter.ConversionUtils
+Steeltoe.Common.Converter.ConverterNotFoundException
+Steeltoe.Common.Converter.ConverterNotFoundException.ConverterNotFoundException(System.Type sourceType, System.Type targetType) -> void
+Steeltoe.Common.Converter.ConverterNotFoundException.SourceType.get -> System.Type
+Steeltoe.Common.Converter.ConverterNotFoundException.TargetType.get -> System.Type
+Steeltoe.Common.Converter.DefaultConversionService
+Steeltoe.Common.Converter.DefaultConversionService.DefaultConversionService() -> void
+Steeltoe.Common.Converter.DictionaryToDictionaryConverter
+Steeltoe.Common.Converter.DictionaryToDictionaryConverter.DictionaryToDictionaryConverter(Steeltoe.Common.Converter.IConversionService conversionService) -> void
+Steeltoe.Common.Converter.EncodingToStringConverter
+Steeltoe.Common.Converter.EncodingToStringConverter.EncodingToStringConverter() -> void
+Steeltoe.Common.Converter.EnumToStringConverter
+Steeltoe.Common.Converter.EnumToStringConverter.EnumToStringConverter() -> void
+Steeltoe.Common.Converter.FallbackObjectToStringConverter
+Steeltoe.Common.Converter.FallbackObjectToStringConverter.FallbackObjectToStringConverter() -> void
+Steeltoe.Common.Converter.GenericConversionService
+Steeltoe.Common.Converter.GenericConversionService.AddConverter(Steeltoe.Common.Converter.IGenericConverter converter) -> void
+Steeltoe.Common.Converter.GenericConversionService.CanBypassConvert(System.Type sourceType, System.Type targetType) -> bool
+Steeltoe.Common.Converter.GenericConversionService.CanConvert(System.Type sourceType, System.Type targetType) -> bool
+Steeltoe.Common.Converter.GenericConversionService.Convert(object source, System.Type sourceType, System.Type targetType) -> object
+Steeltoe.Common.Converter.GenericConversionService.Convert<T>(object source) -> T
+Steeltoe.Common.Converter.GenericConversionService.GenericConversionService() -> void
+Steeltoe.Common.Converter.GuidToStringConverter
+Steeltoe.Common.Converter.GuidToStringConverter.GuidToStringConverter() -> void
+Steeltoe.Common.Converter.ListToDictionaryConverter
+Steeltoe.Common.Converter.ListToDictionaryConverter.ListToDictionaryConverter(Steeltoe.Common.Converter.IConversionService conversionService) -> void
+Steeltoe.Common.Converter.NumberToCharacterConverter
+Steeltoe.Common.Converter.NumberToCharacterConverter.NumberToCharacterConverter() -> void
+Steeltoe.Common.Converter.NumberToNumberConverter
+Steeltoe.Common.Converter.NumberToNumberConverter.NumberToNumberConverter() -> void
+Steeltoe.Common.Converter.NumberToStringConverter
+Steeltoe.Common.Converter.NumberToStringConverter.NumberToStringConverter() -> void
+Steeltoe.Common.Converter.ObjectToArrayConverter
+Steeltoe.Common.Converter.ObjectToArrayConverter.ObjectToArrayConverter(Steeltoe.Common.Converter.IConversionService conversionService) -> void
+Steeltoe.Common.Converter.ObjectToCollectionConverter
+Steeltoe.Common.Converter.ObjectToCollectionConverter.ObjectToCollectionConverter(Steeltoe.Common.Converter.IConversionService conversionService) -> void
+Steeltoe.Common.Converter.ObjectToNumberConverter
+Steeltoe.Common.Converter.ObjectToNumberConverter.ObjectToNumberConverter() -> void
+Steeltoe.Common.Converter.ObjectToObjectConverter
+Steeltoe.Common.Converter.ObjectToObjectConverter.ObjectToObjectConverter() -> void
+Steeltoe.Common.Converter.ObjectToStringConverter<T>
+Steeltoe.Common.Converter.ObjectToStringConverter<T>.ObjectToStringConverter() -> void
+Steeltoe.Common.Converter.StringToArrayConverter
+Steeltoe.Common.Converter.StringToArrayConverter.StringToArrayConverter(Steeltoe.Common.Converter.IConversionService conversionService) -> void
+Steeltoe.Common.Converter.StringToBooleanConverter
+Steeltoe.Common.Converter.StringToBooleanConverter.StringToBooleanConverter() -> void
+Steeltoe.Common.Converter.StringToCharacterConverter
+Steeltoe.Common.Converter.StringToCharacterConverter.StringToCharacterConverter() -> void
+Steeltoe.Common.Converter.StringToCollectionConverter
+Steeltoe.Common.Converter.StringToCollectionConverter.StringToCollectionConverter(Steeltoe.Common.Converter.IConversionService conversionService) -> void
+Steeltoe.Common.Converter.StringToEncodingConverter
+Steeltoe.Common.Converter.StringToEncodingConverter.StringToEncodingConverter() -> void
+Steeltoe.Common.Converter.StringToEnumConverter
+Steeltoe.Common.Converter.StringToEnumConverter.StringToEnumConverter() -> void
+Steeltoe.Common.Converter.StringToGuidConverter
+Steeltoe.Common.Converter.StringToGuidConverter.StringToGuidConverter() -> void
+Steeltoe.Common.Converter.StringToNumberConverter
+Steeltoe.Common.Converter.StringToNumberConverter.StringToNumberConverter() -> void
+Steeltoe.Common.Discovery.ConfigurationServiceInstance
+Steeltoe.Common.Discovery.ConfigurationServiceInstance.ConfigurationServiceInstance() -> void
+Steeltoe.Common.Discovery.ConfigurationServiceInstance.Host.get -> string
+Steeltoe.Common.Discovery.ConfigurationServiceInstance.Host.set -> void
+Steeltoe.Common.Discovery.ConfigurationServiceInstance.IsSecure.get -> bool
+Steeltoe.Common.Discovery.ConfigurationServiceInstance.IsSecure.set -> void
+Steeltoe.Common.Discovery.ConfigurationServiceInstance.Metadata.get -> System.Collections.Generic.IDictionary<string, string>
+Steeltoe.Common.Discovery.ConfigurationServiceInstance.Metadata.set -> void
+Steeltoe.Common.Discovery.ConfigurationServiceInstance.Port.get -> int
+Steeltoe.Common.Discovery.ConfigurationServiceInstance.Port.set -> void
+Steeltoe.Common.Discovery.ConfigurationServiceInstance.ServiceId.get -> string
+Steeltoe.Common.Discovery.ConfigurationServiceInstance.ServiceId.set -> void
+Steeltoe.Common.Discovery.ConfigurationServiceInstance.Uri.get -> System.Uri
+Steeltoe.Common.Discovery.ConfigurationServiceInstanceProvider
+Steeltoe.Common.Discovery.ConfigurationServiceInstanceProvider.ConfigurationServiceInstanceProvider(Microsoft.Extensions.Options.IOptionsMonitor<System.Collections.Generic.List<Steeltoe.Common.Discovery.ConfigurationServiceInstance>> serviceInstances) -> void
+Steeltoe.Common.Discovery.ConfigurationServiceInstanceProvider.Description.get -> string
+Steeltoe.Common.Discovery.ConfigurationServiceInstanceProvider.GetInstances(string serviceId) -> System.Collections.Generic.IList<Steeltoe.Common.Discovery.IServiceInstance>
+Steeltoe.Common.Discovery.ConfigurationServiceInstanceProvider.Services.get -> System.Collections.Generic.IList<string>
+Steeltoe.Common.Discovery.IServiceInstanceProviderExtensions
+Steeltoe.Common.Discovery.SerializableIServiceInstance
+Steeltoe.Common.Discovery.SerializableIServiceInstance.Host.get -> string
+Steeltoe.Common.Discovery.SerializableIServiceInstance.Host.set -> void
+Steeltoe.Common.Discovery.SerializableIServiceInstance.IsSecure.get -> bool
+Steeltoe.Common.Discovery.SerializableIServiceInstance.IsSecure.set -> void
+Steeltoe.Common.Discovery.SerializableIServiceInstance.Metadata.get -> System.Collections.Generic.IDictionary<string, string>
+Steeltoe.Common.Discovery.SerializableIServiceInstance.Metadata.set -> void
+Steeltoe.Common.Discovery.SerializableIServiceInstance.Port.get -> int
+Steeltoe.Common.Discovery.SerializableIServiceInstance.Port.set -> void
+Steeltoe.Common.Discovery.SerializableIServiceInstance.SerializableIServiceInstance() -> void
+Steeltoe.Common.Discovery.SerializableIServiceInstance.SerializableIServiceInstance(Steeltoe.Common.Discovery.IServiceInstance instance) -> void
+Steeltoe.Common.Discovery.SerializableIServiceInstance.ServiceId.get -> string
+Steeltoe.Common.Discovery.SerializableIServiceInstance.ServiceId.set -> void
+Steeltoe.Common.Discovery.SerializableIServiceInstance.Uri.get -> System.Uri
+Steeltoe.Common.Discovery.SerializableIServiceInstance.Uri.set -> void
+Steeltoe.Common.Extensions.UriExtensions
+Steeltoe.Common.IServiceCollectionExtensions
+Steeltoe.Common.IServiceProviderExtensions
+Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor
+Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.DefaultLifecycleProcessor(Steeltoe.Common.Contexts.IApplicationContext context, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.Dispose() -> void
+Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.IsRunning.get -> bool
+Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.IsRunning.set -> void
+Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.OnClose() -> System.Threading.Tasks.Task
+Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.OnRefresh() -> System.Threading.Tasks.Task
+Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.Start() -> System.Threading.Tasks.Task
+Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.Stop() -> System.Threading.Tasks.Task
+Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.TimeoutPerShutdownPhase.get -> int
+Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.TimeoutPerShutdownPhase.set -> void
+Steeltoe.Common.Lifecycle.LifecycleException
+Steeltoe.Common.Lifecycle.LifecycleException.LifecycleException(string message) -> void
+Steeltoe.Common.Lifecycle.LifecycleException.LifecycleException(string message, System.Exception innerException) -> void
+Steeltoe.Common.LoadBalancer.RandomLoadBalancer
+Steeltoe.Common.LoadBalancer.RandomLoadBalancer.RandomLoadBalancer(Steeltoe.Common.Discovery.IServiceInstanceProvider serviceInstanceProvider, Microsoft.Extensions.Caching.Distributed.IDistributedCache distributedCache = null, Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions cacheEntryOptions = null, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Common.LoadBalancer.RoundRobinLoadBalancer
+Steeltoe.Common.LoadBalancer.RoundRobinLoadBalancer.IndexKeyPrefix -> string
+Steeltoe.Common.LoadBalancer.RoundRobinLoadBalancer.RoundRobinLoadBalancer(Steeltoe.Common.Discovery.IServiceInstanceProvider serviceInstanceProvider, Microsoft.Extensions.Caching.Distributed.IDistributedCache distributedCache = null, Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions cacheEntryOptions = null, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Common.Logging.IBoostrapLoggerFactory
+Steeltoe.Common.Logging.IBoostrapLoggerFactory.Update(Microsoft.Extensions.Configuration.IConfiguration value) -> void
+Steeltoe.Common.Logging.IBoostrapLoggerFactory.Update(Microsoft.Extensions.Logging.ILoggerFactory value) -> void
+Steeltoe.Common.Net.DnsTools
+Steeltoe.Common.Net.HostInfo
+Steeltoe.Common.Net.HostInfo.HostInfo() -> void
+Steeltoe.Common.Net.HostInfo.HostInfo(string hostname) -> void
+Steeltoe.Common.Net.HostInfo.Hostname.get -> string
+Steeltoe.Common.Net.HostInfo.Hostname.set -> void
+Steeltoe.Common.Net.HostInfo.IpAddress.get -> string
+Steeltoe.Common.Net.HostInfo.IpAddress.set -> void
+Steeltoe.Common.Net.HostInfo.Override.get -> bool
+Steeltoe.Common.Net.HostInfo.Override.set -> void
+Steeltoe.Common.Net.InetOptions
+Steeltoe.Common.Net.InetOptions.DefaultHostname.get -> string
+Steeltoe.Common.Net.InetOptions.DefaultHostname.set -> void
+Steeltoe.Common.Net.InetOptions.DefaultIpAddress.get -> string
+Steeltoe.Common.Net.InetOptions.DefaultIpAddress.set -> void
+Steeltoe.Common.Net.InetOptions.IgnoredInterfaces.get -> string
+Steeltoe.Common.Net.InetOptions.IgnoredInterfaces.set -> void
+Steeltoe.Common.Net.InetOptions.InetOptions() -> void
+Steeltoe.Common.Net.InetOptions.PreferredNetworks.get -> string
+Steeltoe.Common.Net.InetOptions.PreferredNetworks.set -> void
+Steeltoe.Common.Net.InetOptions.SkipReverseDnsLookup.get -> bool
+Steeltoe.Common.Net.InetOptions.SkipReverseDnsLookup.set -> void
+Steeltoe.Common.Net.InetOptions.UseOnlySiteLocalInterfaces.get -> bool
+Steeltoe.Common.Net.InetOptions.UseOnlySiteLocalInterfaces.set -> void
+Steeltoe.Common.Net.InetUtils
+Steeltoe.Common.Net.InetUtils.FindFirstNonLoopbackAddress() -> System.Net.IPAddress
+Steeltoe.Common.Net.InetUtils.InetUtils(Steeltoe.Common.Net.InetOptions options, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Common.Order.AbstractOrdered
+Steeltoe.Common.Order.AbstractOrdered.AbstractOrdered() -> void
+Steeltoe.Common.Order.AbstractOrdered.AbstractOrdered(int order) -> void
+Steeltoe.Common.Order.AbstractOrdered.Order.get -> int
+Steeltoe.Common.Order.OrderComparer
+Steeltoe.Common.Order.OrderComparer.Compare(Steeltoe.Common.Order.IOrdered o1, Steeltoe.Common.Order.IOrdered o2) -> int
+Steeltoe.Common.Order.OrderComparer.GetOrder(int i1, int i2) -> int
+Steeltoe.Common.Order.OrderComparer.GetOrder(Steeltoe.Common.Order.IOrdered o1) -> int
+Steeltoe.Common.Order.OrderComparer.OrderComparer() -> void
+Steeltoe.Common.Platform
+Steeltoe.Common.Reflection.ReflectionHelpers
+Steeltoe.Common.Retry.RetryContext
+Steeltoe.Common.Retry.RetryContext.LastException.get -> System.Exception
+Steeltoe.Common.Retry.RetryContext.LastException.set -> void
+Steeltoe.Common.Retry.RetryContext.Parent.get -> Steeltoe.Common.Retry.IRetryContext
+Steeltoe.Common.Retry.RetryContext.Parent.set -> void
+Steeltoe.Common.Retry.RetryContext.RetryContext() -> void
+Steeltoe.Common.Retry.RetryContext.RetryCount.get -> int
+Steeltoe.Common.Retry.RetryContext.RetryCount.set -> void
+Steeltoe.Common.Retry.RetryException
+Steeltoe.Common.Retry.RetryException.RetryException(string msg) -> void
+Steeltoe.Common.Retry.RetryException.RetryException(string msg, System.Exception cause) -> void
+Steeltoe.Common.Retry.RetrySynchronizationManager
+Steeltoe.Common.Retry.RetryTemplate
+Steeltoe.Common.Retry.RetryTemplate.listeners -> System.Collections.Generic.List<Steeltoe.Common.Retry.IRetryListener>
+Steeltoe.Common.Retry.RetryTemplate.RegisterListener(Steeltoe.Common.Retry.IRetryListener listener) -> void
+Steeltoe.Common.Retry.RetryTemplate.RetryTemplate() -> void
+Steeltoe.Common.Retry.TerminatedRetryException
+Steeltoe.Common.Retry.TerminatedRetryException.TerminatedRetryException(string msg) -> void
+Steeltoe.Common.Retry.TerminatedRetryException.TerminatedRetryException(string msg, System.Exception cause) -> void
+Steeltoe.Common.SecurityUtilities
+Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.AbstractPlatformTransactionManager(Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SuspendedResourcesHolder
+Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SuspendedResourcesHolder.IsolationLevel.get -> int?
+Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SuspendedResourcesHolder.Name.get -> string
+Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SuspendedResourcesHolder.ReadOnly.get -> bool
+Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SuspendedResourcesHolder.SuspendedResources.get -> object
+Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SuspendedResourcesHolder.SuspendedResourcesHolder(object suspendedResources) -> void
+Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SuspendedResourcesHolder.SuspendedResourcesHolder(object suspendedResources, System.Collections.Generic.List<Steeltoe.Common.Transaction.ITransactionSynchronization> suspendedSynchronizations, string name, bool readOnly, int? isolationLevel, bool wasActive) -> void
+Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SuspendedResourcesHolder.SuspendedSynchronizations.get -> System.Collections.Generic.List<Steeltoe.Common.Transaction.ITransactionSynchronization>
+Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SuspendedResourcesHolder.WasActive.get -> bool
+Steeltoe.Common.Transaction.AbstractTransactionDefinition
+Steeltoe.Common.Transaction.AbstractTransactionDefinition.AbstractTransactionDefinition() -> void
+Steeltoe.Common.Transaction.AbstractTransactionOperations
+Steeltoe.Common.Transaction.AbstractTransactionOperations.AbstractTransactionOperations() -> void
+Steeltoe.Common.Transaction.AbstractTransactionStatus
+Steeltoe.Common.Transaction.AbstractTransactionStatus.AbstractTransactionStatus() -> void
+Steeltoe.Common.Transaction.AbstractTransactionSynchronization
+Steeltoe.Common.Transaction.AbstractTransactionSynchronization.AbstractTransactionSynchronization() -> void
+Steeltoe.Common.Transaction.CannotCreateTransactionException
+Steeltoe.Common.Transaction.CannotCreateTransactionException.CannotCreateTransactionException(string msg) -> void
+Steeltoe.Common.Transaction.CannotCreateTransactionException.CannotCreateTransactionException(string msg, System.Exception cause) -> void
+Steeltoe.Common.Transaction.DefaultTransactionAttribute
+Steeltoe.Common.Transaction.DefaultTransactionAttribute.DefaultTransactionAttribute() -> void
+Steeltoe.Common.Transaction.DefaultTransactionAttribute.DefaultTransactionAttribute(int propagationBehavior) -> void
+Steeltoe.Common.Transaction.DefaultTransactionAttribute.DefaultTransactionAttribute(Steeltoe.Common.Transaction.ITransactionAttribute other) -> void
+Steeltoe.Common.Transaction.DefaultTransactionAttribute.Descriptor.get -> string
+Steeltoe.Common.Transaction.DefaultTransactionAttribute.GetAttributeDescription() -> System.Text.StringBuilder
+Steeltoe.Common.Transaction.DefaultTransactionAttribute.Qualifier.get -> string
+Steeltoe.Common.Transaction.DefaultTransactionAttribute.RollbackOn(System.Exception exception) -> bool
+Steeltoe.Common.Transaction.DefaultTransactionDefinition
+Steeltoe.Common.Transaction.DefaultTransactionDefinition.DefaultTransactionDefinition() -> void
+Steeltoe.Common.Transaction.DefaultTransactionDefinition.DefaultTransactionDefinition(int propagationBehavior) -> void
+Steeltoe.Common.Transaction.DefaultTransactionDefinition.DefaultTransactionDefinition(Steeltoe.Common.Transaction.ITransactionDefinition other) -> void
+Steeltoe.Common.Transaction.DefaultTransactionDefinition.GetDefinitionDescription() -> System.Text.StringBuilder
+Steeltoe.Common.Transaction.DefaultTransactionStatus
+Steeltoe.Common.Transaction.DefaultTransactionStatus.DefaultTransactionStatus(object transaction, bool newTransaction, bool newSynchronization, bool readOnly, object suspendedResources, Microsoft.Extensions.Logging.ILogger logger) -> void
+Steeltoe.Common.Transaction.DefaultTransactionStatus.HasTransaction.get -> bool
+Steeltoe.Common.Transaction.DefaultTransactionStatus.IsNewSynchronization.get -> bool
+Steeltoe.Common.Transaction.DefaultTransactionStatus.IsReadOnly.get -> bool
+Steeltoe.Common.Transaction.DefaultTransactionStatus.IsTransactionSavepointManager.get -> bool
+Steeltoe.Common.Transaction.DefaultTransactionStatus.NewTransaction.get -> bool
+Steeltoe.Common.Transaction.DefaultTransactionStatus.SuspendedResources.get -> object
+Steeltoe.Common.Transaction.DefaultTransactionStatus.Transaction.get -> object
+Steeltoe.Common.Transaction.IllegalTransactionStateException
+Steeltoe.Common.Transaction.IllegalTransactionStateException.IllegalTransactionStateException(string msg) -> void
+Steeltoe.Common.Transaction.IllegalTransactionStateException.IllegalTransactionStateException(string msg, System.Exception cause) -> void
+Steeltoe.Common.Transaction.InvalidIsolationLevelException
+Steeltoe.Common.Transaction.InvalidIsolationLevelException.InvalidIsolationLevelException(string msg) -> void
+Steeltoe.Common.Transaction.InvalidTimeoutException
+Steeltoe.Common.Transaction.InvalidTimeoutException.InvalidTimeoutException(string msg, int timeout) -> void
+Steeltoe.Common.Transaction.InvalidTimeoutException.Timeout.get -> int
+Steeltoe.Common.Transaction.NestedTransactionNotSupportedException
+Steeltoe.Common.Transaction.NestedTransactionNotSupportedException.NestedTransactionNotSupportedException(string msg) -> void
+Steeltoe.Common.Transaction.NestedTransactionNotSupportedException.NestedTransactionNotSupportedException(string msg, System.Exception cause) -> void
+Steeltoe.Common.Transaction.ResourceHolderSupport
+Steeltoe.Common.Transaction.ResourceHolderSupport.Clear() -> void
+Steeltoe.Common.Transaction.ResourceHolderSupport.Deadline.get -> System.DateTime?
+Steeltoe.Common.Transaction.ResourceHolderSupport.GetTimeToLiveInMillis() -> long
+Steeltoe.Common.Transaction.ResourceHolderSupport.GetTimetoLiveInSeconds() -> int
+Steeltoe.Common.Transaction.ResourceHolderSupport.HasTimeout.get -> bool
+Steeltoe.Common.Transaction.ResourceHolderSupport.IsOpen.get -> bool
+Steeltoe.Common.Transaction.ResourceHolderSupport.IsVoid.get -> bool
+Steeltoe.Common.Transaction.ResourceHolderSupport.Released() -> void
+Steeltoe.Common.Transaction.ResourceHolderSupport.Requested() -> void
+Steeltoe.Common.Transaction.ResourceHolderSupport.Reset() -> void
+Steeltoe.Common.Transaction.ResourceHolderSupport.ResourceHolderSupport() -> void
+Steeltoe.Common.Transaction.ResourceHolderSupport.RollbackOnly.get -> bool
+Steeltoe.Common.Transaction.ResourceHolderSupport.RollbackOnly.set -> void
+Steeltoe.Common.Transaction.ResourceHolderSupport.SetTimeoutInMillis(long milliSeconds) -> void
+Steeltoe.Common.Transaction.ResourceHolderSupport.SetTimeoutInSeconds(int seconds) -> void
+Steeltoe.Common.Transaction.ResourceHolderSupport.SynchronizedWithTransaction.get -> bool
+Steeltoe.Common.Transaction.ResourceHolderSupport.SynchronizedWithTransaction.set -> void
+Steeltoe.Common.Transaction.ResourceHolderSupport.Unbound() -> void
+Steeltoe.Common.Transaction.ResourceHolderSynchronization<H, K>
+Steeltoe.Common.Transaction.ResourceHolderSynchronization<H, K>.ResourceHolderSynchronization(H resourceHolder, K resourceKey) -> void
+Steeltoe.Common.Transaction.SimpleTransactionStatus
+Steeltoe.Common.Transaction.SimpleTransactionStatus.SimpleTransactionStatus() -> void
+Steeltoe.Common.Transaction.SimpleTransactionStatus.SimpleTransactionStatus(bool newTransaction) -> void
+Steeltoe.Common.Transaction.TransactionException
+Steeltoe.Common.Transaction.TransactionException.TransactionException(string msg) -> void
+Steeltoe.Common.Transaction.TransactionException.TransactionException(string msg, System.Exception cause) -> void
+Steeltoe.Common.Transaction.TransactionSuspensionNotSupportedException
+Steeltoe.Common.Transaction.TransactionSuspensionNotSupportedException.TransactionSuspensionNotSupportedException(string msg) -> void
+Steeltoe.Common.Transaction.TransactionSuspensionNotSupportedException.TransactionSuspensionNotSupportedException(string msg, System.Exception cause) -> void
+Steeltoe.Common.Transaction.TransactionSynchronizationManager
+Steeltoe.Common.Transaction.TransactionSynchronizationUtils
+Steeltoe.Common.Transaction.TransactionSystemException
+Steeltoe.Common.Transaction.TransactionSystemException.ApplicationException.get -> System.Exception
+Steeltoe.Common.Transaction.TransactionSystemException.Contains(System.Type exceptionType) -> bool
+Steeltoe.Common.Transaction.TransactionSystemException.InitApplicationException(System.Exception exception) -> void
+Steeltoe.Common.Transaction.TransactionSystemException.OriginalException.get -> System.Exception
+Steeltoe.Common.Transaction.TransactionSystemException.TransactionSystemException(string msg) -> void
+Steeltoe.Common.Transaction.TransactionSystemException.TransactionSystemException(string msg, System.Exception cause) -> void
+Steeltoe.Common.Transaction.TransactionTemplate
+Steeltoe.Common.Transaction.TransactionTemplate.Execute(System.Action<Steeltoe.Common.Transaction.ITransactionStatus> action) -> void
+Steeltoe.Common.Transaction.TransactionTemplate.Execute<T>(System.Func<Steeltoe.Common.Transaction.ITransactionStatus, T> action) -> T
+Steeltoe.Common.Transaction.TransactionTemplate.TransactionManager.get -> Steeltoe.Common.Transaction.IPlatformTransactionManager
+Steeltoe.Common.Transaction.TransactionTemplate.TransactionManager.set -> void
+Steeltoe.Common.Transaction.TransactionTemplate.TransactionTemplate(Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Common.Transaction.TransactionTemplate.TransactionTemplate(Steeltoe.Common.Transaction.IPlatformTransactionManager transactionManager, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Common.Transaction.TransactionTemplate.TransactionTemplate(Steeltoe.Common.Transaction.IPlatformTransactionManager transactionManager, Steeltoe.Common.Transaction.ITransactionDefinition transactionDefinition, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Common.Transaction.TransactionTimedOutException
+Steeltoe.Common.Transaction.TransactionTimedOutException.TransactionTimedOutException(string msg) -> void
+Steeltoe.Common.Transaction.TransactionTimedOutException.TransactionTimedOutException(string msg, System.Exception cause) -> void
+Steeltoe.Common.Transaction.TransactionUsageException
+Steeltoe.Common.Transaction.TransactionUsageException.TransactionUsageException(string msg) -> void
+Steeltoe.Common.Transaction.TransactionUsageException.TransactionUsageException(string msg, System.Exception cause) -> void
+Steeltoe.Common.Transaction.UnexpectedRollbackException
+Steeltoe.Common.Transaction.UnexpectedRollbackException.UnexpectedRollbackException(string msg) -> void
+Steeltoe.Common.Transaction.UnexpectedRollbackException.UnexpectedRollbackException(string msg, System.Exception cause) -> void
+Steeltoe.Common.Util.AbstractAttributeAccessor
+Steeltoe.Common.Util.AbstractAttributeAccessor.AbstractAttributeAccessor() -> void
+Steeltoe.Common.Util.AntPathMatcher
+Steeltoe.Common.Util.AntPathMatcher.AntPathMatcher() -> void
+Steeltoe.Common.Util.AntPathMatcher.AntPathMatcher(string pathSeparator) -> void
+Steeltoe.Common.Util.AntPathMatcher.AntPathStringMatcher
+Steeltoe.Common.Util.AntPathMatcher.AntPathStringMatcher.AntPathStringMatcher(string pattern) -> void
+Steeltoe.Common.Util.AntPathMatcher.AntPathStringMatcher.AntPathStringMatcher(string pattern, bool caseSensitive) -> void
+Steeltoe.Common.Util.AntPathMatcher.AntPathStringMatcher.MatchStrings(string str, System.Collections.Generic.IDictionary<string, string> uriTemplateVariables) -> bool
+Steeltoe.Common.Util.AntPathMatcher.AntPatternComparator
+Steeltoe.Common.Util.AntPathMatcher.AntPatternComparator.AntPatternComparator(string path) -> void
+Steeltoe.Common.Util.AntPathMatcher.AntPatternComparator.Compare(string pattern1, string pattern2) -> int
+Steeltoe.Common.Util.AntPathMatcher.PathSeparatorPatternCache
+Steeltoe.Common.Util.AntPathMatcher.PathSeparatorPatternCache.EndsOnDoubleWildCard.get -> string
+Steeltoe.Common.Util.AntPathMatcher.PathSeparatorPatternCache.EndsOnWildCard.get -> string
+Steeltoe.Common.Util.AntPathMatcher.PathSeparatorPatternCache.PathSeparatorPatternCache(string pathSeparator) -> void
+Steeltoe.Common.Util.AttributeUtils
+Steeltoe.Common.Util.BinaryExceptionClassifier
+Steeltoe.Common.Util.BinaryExceptionClassifier.BinaryExceptionClassifier(bool defaultValue) -> void
+Steeltoe.Common.Util.BinaryExceptionClassifier.BinaryExceptionClassifier(System.Collections.Generic.Dictionary<System.Type, bool> typeMap) -> void
+Steeltoe.Common.Util.BinaryExceptionClassifier.BinaryExceptionClassifier(System.Collections.Generic.Dictionary<System.Type, bool> typeMap, bool defaultValue) -> void
+Steeltoe.Common.Util.BinaryExceptionClassifier.BinaryExceptionClassifier(System.Collections.Generic.IList<System.Type> exceptionClasses) -> void
+Steeltoe.Common.Util.BinaryExceptionClassifier.BinaryExceptionClassifier(System.Collections.Generic.IList<System.Type> exceptionClasses, bool defaultValue) -> void
+Steeltoe.Common.Util.BinaryExceptionClassifier.TraverseInnerExceptions.get -> bool
+Steeltoe.Common.Util.BinaryExceptionClassifier.TraverseInnerExceptions.set -> void
+Steeltoe.Common.Util.ClassUtils
+Steeltoe.Common.Util.DefaultIdGenerator
+Steeltoe.Common.Util.DefaultIdGenerator.DefaultIdGenerator() -> void
+Steeltoe.Common.Util.DefaultIdGenerator.GenerateId() -> string
+Steeltoe.Common.Util.EncodingUtils
+Steeltoe.Common.Util.ExceptionDepthComparator
+Steeltoe.Common.Util.ExceptionDepthComparator.Compare(System.Type o1, System.Type o2) -> int
+Steeltoe.Common.Util.ExceptionDepthComparator.ExceptionDepthComparator(System.Exception exception) -> void
+Steeltoe.Common.Util.ExceptionDepthComparator.ExceptionDepthComparator(System.Type exceptionType) -> void
+Steeltoe.Common.Util.FixedBackOff
+Steeltoe.Common.Util.FixedBackOff.FixedBackOff() -> void
+Steeltoe.Common.Util.FixedBackOff.FixedBackOff(int interval, int maxAttempts) -> void
+Steeltoe.Common.Util.FixedBackOff.Interval.get -> int
+Steeltoe.Common.Util.FixedBackOff.Interval.set -> void
+Steeltoe.Common.Util.FixedBackOff.MaxAttempts.get -> int
+Steeltoe.Common.Util.FixedBackOff.MaxAttempts.set -> void
+Steeltoe.Common.Util.FixedBackOff.Start() -> Steeltoe.Common.Util.IBackOffExecution
+Steeltoe.Common.Util.MethodInvoker
+Steeltoe.Common.Util.MethodInvoker.Arguments.get -> object[]
+Steeltoe.Common.Util.MethodInvoker.GetPreparedMethod() -> System.Reflection.MethodInfo
+Steeltoe.Common.Util.MethodInvoker.Invoke() -> object
+Steeltoe.Common.Util.MethodInvoker.IsPrepared.get -> bool
+Steeltoe.Common.Util.MethodInvoker.MethodInvoker() -> void
+Steeltoe.Common.Util.MethodInvoker.MethodObject.get -> System.Reflection.MethodInfo
+Steeltoe.Common.Util.MethodInvoker.MethodObject.set -> void
+Steeltoe.Common.Util.MethodInvoker.StaticMethod.get -> string
+Steeltoe.Common.Util.MethodInvoker.StaticMethod.set -> void
+Steeltoe.Common.Util.MethodInvoker.TargetClass.get -> System.Type
+Steeltoe.Common.Util.MethodInvoker.TargetClass.set -> void
+Steeltoe.Common.Util.MethodInvoker.TargetMethod.get -> string
+Steeltoe.Common.Util.MethodInvoker.TargetMethod.set -> void
+Steeltoe.Common.Util.MethodInvoker.TargetObject.get -> object
+Steeltoe.Common.Util.MimeType
+Steeltoe.Common.Util.MimeType.CheckParameters(string attribute, string value) -> void
+Steeltoe.Common.Util.MimeType.CompareTo(Steeltoe.Common.Util.MimeType other) -> int
+Steeltoe.Common.Util.MimeType.Encoding.get -> System.Text.Encoding
+Steeltoe.Common.Util.MimeType.EqualsTypeAndSubtype(Steeltoe.Common.Util.MimeType other) -> bool
+Steeltoe.Common.Util.MimeType.GetParameter(string name) -> string
+Steeltoe.Common.Util.MimeType.Includes(Steeltoe.Common.Util.MimeType other) -> bool
+Steeltoe.Common.Util.MimeType.IsCompatibleWith(Steeltoe.Common.Util.MimeType other) -> bool
+Steeltoe.Common.Util.MimeType.IsConcrete.get -> bool
+Steeltoe.Common.Util.MimeType.IsPresentIn<T>(System.Collections.Generic.ICollection<T> mimeTypes) -> bool
+Steeltoe.Common.Util.MimeType.IsWildcardSubtype.get -> bool
+Steeltoe.Common.Util.MimeType.IsWildcardType.get -> bool
+Steeltoe.Common.Util.MimeType.MimeType(Steeltoe.Common.Util.MimeType other, System.Collections.Generic.IDictionary<string, string> parameters = null) -> void
+Steeltoe.Common.Util.MimeType.MimeType(Steeltoe.Common.Util.MimeType other, System.Text.Encoding charset) -> void
+Steeltoe.Common.Util.MimeType.MimeType(string type) -> void
+Steeltoe.Common.Util.MimeType.MimeType(string type, string subtype) -> void
+Steeltoe.Common.Util.MimeType.MimeType(string type, string subtype, System.Collections.Generic.IDictionary<string, string> parameters) -> void
+Steeltoe.Common.Util.MimeType.MimeType(string type, string subtype, System.Text.Encoding charset) -> void
+Steeltoe.Common.Util.MimeType.Parameters.get -> System.Collections.Generic.IDictionary<string, string>
+Steeltoe.Common.Util.MimeType.SpecificityComparator<T>
+Steeltoe.Common.Util.MimeType.SpecificityComparator<T>.Compare(T mimeType1, T mimeType2) -> int
+Steeltoe.Common.Util.MimeType.SpecificityComparator<T>.CompareParameters(T mimeType1, T mimeType2) -> int
+Steeltoe.Common.Util.MimeType.SpecificityComparator<T>.SpecificityComparator() -> void
+Steeltoe.Common.Util.MimeType.Subtype.get -> string
+Steeltoe.Common.Util.MimeType.Type.get -> string
+Steeltoe.Common.Util.MimeType.Unquote(string s) -> string
+Steeltoe.Common.Util.MimeTypeUtils
+Steeltoe.Common.Util.ObjectUtils
+Steeltoe.Common.Util.PatternMatchUtils
+Steeltoe.Common.Util.SimpleRouteMatcher
+Steeltoe.Common.Util.SimpleRouteMatcher.Combine(string pattern1, string pattern2) -> string
+Steeltoe.Common.Util.SimpleRouteMatcher.GetPatternComparer(Steeltoe.Common.Util.IRoute route) -> System.Collections.Generic.IComparer<string>
+Steeltoe.Common.Util.SimpleRouteMatcher.IsPattern(string route) -> bool
+Steeltoe.Common.Util.SimpleRouteMatcher.Match(string pattern, Steeltoe.Common.Util.IRoute route) -> bool
+Steeltoe.Common.Util.SimpleRouteMatcher.MatchAndExtract(string pattern, Steeltoe.Common.Util.IRoute route) -> System.Collections.Generic.IDictionary<string, string>
+Steeltoe.Common.Util.SimpleRouteMatcher.ParseRoute(string route) -> Steeltoe.Common.Util.IRoute
+Steeltoe.Common.Util.SimpleRouteMatcher.PathMatcher.get -> Steeltoe.Common.Util.IPathMatcher
+Steeltoe.Common.Util.SimpleRouteMatcher.SimpleRouteMatcher(Steeltoe.Common.Util.IPathMatcher pathMatcher) -> void
+Steeltoe.Common.Util.SubclassClassifier<T, C>
+Steeltoe.Common.Util.SubclassClassifier<T, C>.DefaultValue.get -> C
+Steeltoe.Common.Util.SubclassClassifier<T, C>.DefaultValue.set -> void
+Steeltoe.Common.Util.SubclassClassifier<T, C>.SubclassClassifier() -> void
+Steeltoe.Common.Util.SubclassClassifier<T, C>.SubclassClassifier(C defaultValue) -> void
+Steeltoe.Common.Util.SubclassClassifier<T, C>.SubclassClassifier(System.Collections.Concurrent.ConcurrentDictionary<System.Type, C> typeMap, C defaultValue) -> void
+Steeltoe.Common.Util.SubclassClassifier<T, C>.TypeMap.get -> System.Collections.Concurrent.ConcurrentDictionary<System.Type, C>
+Steeltoe.Common.Util.SubclassClassifier<T, C>.TypeMap.set -> void
+virtual Steeltoe.Common.ApplicationInstanceInfo.ApplicationId.get -> string
+virtual Steeltoe.Common.ApplicationInstanceInfo.ApplicationId.set -> void
+virtual Steeltoe.Common.ApplicationInstanceInfo.ApplicationName.get -> string
+virtual Steeltoe.Common.ApplicationInstanceInfo.ApplicationVersion.get -> string
+virtual Steeltoe.Common.ApplicationInstanceInfo.ApplicationVersion.set -> void
+virtual Steeltoe.Common.ApplicationInstanceInfo.DiskLimit.get -> int
+virtual Steeltoe.Common.ApplicationInstanceInfo.DiskLimit.set -> void
+virtual Steeltoe.Common.ApplicationInstanceInfo.EnvironmentName.get -> string
+virtual Steeltoe.Common.ApplicationInstanceInfo.EnvironmentName.set -> void
+virtual Steeltoe.Common.ApplicationInstanceInfo.FileDescriptorLimit.get -> int
+virtual Steeltoe.Common.ApplicationInstanceInfo.FileDescriptorLimit.set -> void
+virtual Steeltoe.Common.ApplicationInstanceInfo.InstanceId.get -> string
+virtual Steeltoe.Common.ApplicationInstanceInfo.InstanceId.set -> void
+virtual Steeltoe.Common.ApplicationInstanceInfo.InstanceIndex.get -> int
+virtual Steeltoe.Common.ApplicationInstanceInfo.InstanceIndex.set -> void
+virtual Steeltoe.Common.ApplicationInstanceInfo.InstanceIP.get -> string
+virtual Steeltoe.Common.ApplicationInstanceInfo.InstanceIP.set -> void
+virtual Steeltoe.Common.ApplicationInstanceInfo.InternalIP.get -> string
+virtual Steeltoe.Common.ApplicationInstanceInfo.InternalIP.set -> void
+virtual Steeltoe.Common.ApplicationInstanceInfo.MemoryLimit.get -> int
+virtual Steeltoe.Common.ApplicationInstanceInfo.MemoryLimit.set -> void
+virtual Steeltoe.Common.ApplicationInstanceInfo.Name.get -> string
+virtual Steeltoe.Common.ApplicationInstanceInfo.Name.set -> void
+virtual Steeltoe.Common.ApplicationInstanceInfo.PlatformRoot.get -> string
+virtual Steeltoe.Common.ApplicationInstanceInfo.Uris.get -> System.Collections.Generic.IEnumerable<string>
+virtual Steeltoe.Common.ApplicationInstanceInfo.Uris.set -> void
+virtual Steeltoe.Common.Availability.AvailabilityHealthContributor.GetState() -> Steeltoe.Common.Availability.IAvailabilityState
+virtual Steeltoe.Common.Availability.AvailabilityHealthContributor.Id.get -> string
+virtual Steeltoe.Common.Converter.GenericConversionService.GetConverter(System.Type sourceType, System.Type targetType) -> Steeltoe.Common.Converter.IGenericConverter
+virtual Steeltoe.Common.Converter.GenericConversionService.GetDefaultConverter(System.Type sourceType, System.Type targetType) -> Steeltoe.Common.Converter.IGenericConverter
+virtual Steeltoe.Common.LoadBalancer.RandomLoadBalancer.ResolveServiceInstanceAsync(System.Uri request) -> System.Threading.Tasks.Task<System.Uri>
+virtual Steeltoe.Common.LoadBalancer.RandomLoadBalancer.UpdateStatsAsync(System.Uri originalUri, System.Uri resolvedUri, System.TimeSpan responseTime, System.Exception exception) -> System.Threading.Tasks.Task
+virtual Steeltoe.Common.LoadBalancer.RoundRobinLoadBalancer.ResolveServiceInstanceAsync(System.Uri request) -> System.Threading.Tasks.Task<System.Uri>
+virtual Steeltoe.Common.LoadBalancer.RoundRobinLoadBalancer.UpdateStatsAsync(System.Uri originalUri, System.Uri resolvedUri, System.TimeSpan responseTime, System.Exception exception) -> System.Threading.Tasks.Task
+virtual Steeltoe.Common.Net.InetUtils.FindFirstNonLoopbackHostInfo() -> Steeltoe.Common.Net.HostInfo
+virtual Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Commit(Steeltoe.Common.Transaction.ITransactionStatus status) -> void
+virtual Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DefaultTimeout.get -> int
+virtual Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DefaultTimeout.set -> void
+virtual Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DetermineTimeout(Steeltoe.Common.Transaction.ITransactionDefinition definition) -> int
+virtual Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoCleanupAfterCompletion(object transaction) -> void
+virtual Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoResume(object transaction, object suspendedResources) -> void
+virtual Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoSetRollbackOnly(Steeltoe.Common.Transaction.DefaultTransactionStatus status) -> void
+virtual Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoSuspend(object transaction) -> object
+virtual Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.FailEarlyOnGlobalRollbackOnly.get -> bool
+virtual Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.FailEarlyOnGlobalRollbackOnly.set -> void
+virtual Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.GetTransaction(Steeltoe.Common.Transaction.ITransactionDefinition definition) -> Steeltoe.Common.Transaction.ITransactionStatus
+virtual Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.GlobalRollbackOnParticipationFailure.get -> bool
+virtual Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.GlobalRollbackOnParticipationFailure.set -> void
+virtual Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.InvokeAfterCompletion(System.Collections.Generic.List<Steeltoe.Common.Transaction.ITransactionSynchronization> synchronizations, int completionStatus) -> void
+virtual Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.IsExistingTransaction(object transaction) -> bool
+virtual Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.NestedTransactionAllowed.get -> bool
+virtual Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.NestedTransactionAllowed.set -> void
+virtual Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.NewTransactionStatus(Steeltoe.Common.Transaction.ITransactionDefinition definition, object transaction, bool newTransaction, bool newSynchronization, object suspendedResources) -> Steeltoe.Common.Transaction.DefaultTransactionStatus
+virtual Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareForCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus status) -> void
+virtual Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareSynchronization(Steeltoe.Common.Transaction.DefaultTransactionStatus status, Steeltoe.Common.Transaction.ITransactionDefinition definition) -> void
+virtual Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareTransactionStatus(Steeltoe.Common.Transaction.ITransactionDefinition definition, object transaction, bool newTransaction, bool newSynchronization, object suspendedResources) -> Steeltoe.Common.Transaction.DefaultTransactionStatus
+virtual Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.RegisterAfterCompletionWithExistingTransaction(object transaction, System.Collections.Generic.List<Steeltoe.Common.Transaction.ITransactionSynchronization> synchronizations) -> void
+virtual Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Resume(object transaction, Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SuspendedResourcesHolder resourcesHolder) -> void
+virtual Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Rollback(Steeltoe.Common.Transaction.ITransactionStatus status) -> void
+virtual Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.RollbackOnCommitFailure.get -> bool
+virtual Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.RollbackOnCommitFailure.set -> void
+virtual Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.ShouldCommitOnGlobalRollbackOnly.get -> bool
+virtual Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Suspend(object transaction) -> Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SuspendedResourcesHolder
+virtual Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TransactionSynchronization.get -> int
+virtual Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TransactionSynchronization.set -> void
+virtual Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TriggerBeforeCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus status) -> void
+virtual Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TriggerBeforeCompletion(Steeltoe.Common.Transaction.DefaultTransactionStatus status) -> void
+virtual Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.UseSavepointForNestedTransaction.get -> bool
+virtual Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.ValidateExistingTransaction.get -> bool
+virtual Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.ValidateExistingTransaction.set -> void
+virtual Steeltoe.Common.Transaction.AbstractTransactionDefinition.IsolationLevel.get -> int
+virtual Steeltoe.Common.Transaction.AbstractTransactionDefinition.IsolationLevel.set -> void
+virtual Steeltoe.Common.Transaction.AbstractTransactionDefinition.IsReadOnly.get -> bool
+virtual Steeltoe.Common.Transaction.AbstractTransactionDefinition.IsReadOnly.set -> void
+virtual Steeltoe.Common.Transaction.AbstractTransactionDefinition.Name.get -> string
+virtual Steeltoe.Common.Transaction.AbstractTransactionDefinition.Name.set -> void
+virtual Steeltoe.Common.Transaction.AbstractTransactionDefinition.PropagationBehavior.get -> int
+virtual Steeltoe.Common.Transaction.AbstractTransactionDefinition.PropagationBehavior.set -> void
+virtual Steeltoe.Common.Transaction.AbstractTransactionDefinition.Timeout.get -> int
+virtual Steeltoe.Common.Transaction.AbstractTransactionDefinition.Timeout.set -> void
+virtual Steeltoe.Common.Transaction.AbstractTransactionOperations.ExecuteWithoutResult(System.Action<Steeltoe.Common.Transaction.ITransactionStatus> action) -> void
+virtual Steeltoe.Common.Transaction.AbstractTransactionStatus.CreateAndHoldSavepoint() -> void
+virtual Steeltoe.Common.Transaction.AbstractTransactionStatus.CreateSavepoint() -> object
+virtual Steeltoe.Common.Transaction.AbstractTransactionStatus.Flush() -> void
+virtual Steeltoe.Common.Transaction.AbstractTransactionStatus.GetSavepointManager() -> Steeltoe.Common.Transaction.ISavepointManager
+virtual Steeltoe.Common.Transaction.AbstractTransactionStatus.HasSavepoint.get -> bool
+virtual Steeltoe.Common.Transaction.AbstractTransactionStatus.IsCompleted.get -> bool
+virtual Steeltoe.Common.Transaction.AbstractTransactionStatus.IsCompleted.set -> void
+virtual Steeltoe.Common.Transaction.AbstractTransactionStatus.IsGlobalRollbackOnly.get -> bool
+virtual Steeltoe.Common.Transaction.AbstractTransactionStatus.IsGlobalRollbackOnly.set -> void
+virtual Steeltoe.Common.Transaction.AbstractTransactionStatus.IsLocalRollbackOnly.get -> bool
+virtual Steeltoe.Common.Transaction.AbstractTransactionStatus.IsLocalRollbackOnly.set -> void
+virtual Steeltoe.Common.Transaction.AbstractTransactionStatus.IsRollbackOnly.get -> bool
+virtual Steeltoe.Common.Transaction.AbstractTransactionStatus.ReleaseHeldSavepoint() -> void
+virtual Steeltoe.Common.Transaction.AbstractTransactionStatus.ReleaseSavepoint(object savepoint) -> void
+virtual Steeltoe.Common.Transaction.AbstractTransactionStatus.RollbackToHeldSavepoint() -> void
+virtual Steeltoe.Common.Transaction.AbstractTransactionStatus.RollbackToSavepoint(object savepoint) -> void
+virtual Steeltoe.Common.Transaction.AbstractTransactionStatus.Savepoint.get -> object
+virtual Steeltoe.Common.Transaction.AbstractTransactionStatus.Savepoint.set -> void
+virtual Steeltoe.Common.Transaction.AbstractTransactionStatus.SetRollbackOnly() -> void
+virtual Steeltoe.Common.Transaction.ResourceHolderSynchronization<H, K>.AfterCommit() -> void
+virtual Steeltoe.Common.Transaction.ResourceHolderSynchronization<H, K>.AfterCompletion(int status) -> void
+virtual Steeltoe.Common.Transaction.ResourceHolderSynchronization<H, K>.BeforeCommit(bool readOnly) -> void
+virtual Steeltoe.Common.Transaction.ResourceHolderSynchronization<H, K>.BeforeCompletion() -> void
+virtual Steeltoe.Common.Transaction.ResourceHolderSynchronization<H, K>.CleanupResource(H resourceHolder, K resourceKey, bool committed) -> void
+virtual Steeltoe.Common.Transaction.ResourceHolderSynchronization<H, K>.Flush() -> void
+virtual Steeltoe.Common.Transaction.ResourceHolderSynchronization<H, K>.FlushResource(H resourceHolder) -> void
+virtual Steeltoe.Common.Transaction.ResourceHolderSynchronization<H, K>.ProcessResourceAfterCommit(H resourceHolder) -> void
+virtual Steeltoe.Common.Transaction.ResourceHolderSynchronization<H, K>.ReleaseResource(H resourceHolder, K resourceKey) -> void
+virtual Steeltoe.Common.Transaction.ResourceHolderSynchronization<H, K>.Resume() -> void
+virtual Steeltoe.Common.Transaction.ResourceHolderSynchronization<H, K>.ShouldReleaseAfterCompletion(H resourceHolder) -> bool
+virtual Steeltoe.Common.Transaction.ResourceHolderSynchronization<H, K>.ShouldReleaseBeforeCompletion() -> bool
+virtual Steeltoe.Common.Transaction.ResourceHolderSynchronization<H, K>.ShouldUnbindAtCompletion() -> bool
+virtual Steeltoe.Common.Transaction.ResourceHolderSynchronization<H, K>.Suspend() -> void
+virtual Steeltoe.Common.Util.AbstractAttributeAccessor.AttributeNames.get -> string[]
+virtual Steeltoe.Common.Util.AbstractAttributeAccessor.CopyAttributesFrom(Steeltoe.Common.Util.IAttributeAccessor source) -> void
+virtual Steeltoe.Common.Util.AbstractAttributeAccessor.GetAttribute(string name) -> object
+virtual Steeltoe.Common.Util.AbstractAttributeAccessor.HasAttribute(string name) -> bool
+virtual Steeltoe.Common.Util.AbstractAttributeAccessor.RemoveAttribute(string name) -> object
+virtual Steeltoe.Common.Util.AbstractAttributeAccessor.SetAttribute(string name, object value) -> void
+virtual Steeltoe.Common.Util.AntPathMatcher.CachePatterns.get -> bool?
+virtual Steeltoe.Common.Util.AntPathMatcher.CachePatterns.set -> void
+virtual Steeltoe.Common.Util.AntPathMatcher.CaseSensitive.get -> bool
+virtual Steeltoe.Common.Util.AntPathMatcher.CaseSensitive.set -> void
+virtual Steeltoe.Common.Util.AntPathMatcher.Combine(string pattern1, string pattern2) -> string
+virtual Steeltoe.Common.Util.AntPathMatcher.DoMatch(string pattern, string path, bool fullMatch, System.Collections.Generic.IDictionary<string, string> uriTemplateVariables) -> bool
+virtual Steeltoe.Common.Util.AntPathMatcher.ExtractPathWithinPattern(string pattern, string path) -> string
+virtual Steeltoe.Common.Util.AntPathMatcher.ExtractUriTemplateVariables(string pattern, string path) -> System.Collections.Generic.IDictionary<string, string>
+virtual Steeltoe.Common.Util.AntPathMatcher.GetPatternComparer(string path) -> System.Collections.Generic.IComparer<string>
+virtual Steeltoe.Common.Util.AntPathMatcher.GetStringMatcher(string pattern) -> Steeltoe.Common.Util.AntPathMatcher.AntPathStringMatcher
+virtual Steeltoe.Common.Util.AntPathMatcher.IsPattern(string path) -> bool
+virtual Steeltoe.Common.Util.AntPathMatcher.Match(string pattern, string path) -> bool
+virtual Steeltoe.Common.Util.AntPathMatcher.MatchStart(string pattern, string path) -> bool
+virtual Steeltoe.Common.Util.AntPathMatcher.PathSeparator.get -> string
+virtual Steeltoe.Common.Util.AntPathMatcher.PathSeparator.set -> void
+virtual Steeltoe.Common.Util.AntPathMatcher.TokenizePath(string path) -> string[]
+virtual Steeltoe.Common.Util.AntPathMatcher.TokenizePattern(string pattern) -> string[]
+virtual Steeltoe.Common.Util.AntPathMatcher.TrimTokens.get -> bool
+virtual Steeltoe.Common.Util.AntPathMatcher.TrimTokens.set -> void
+virtual Steeltoe.Common.Util.MethodInvoker.FindMatchingMethod() -> System.Reflection.MethodInfo
+virtual Steeltoe.Common.Util.MethodInvoker.Prepare() -> void
+virtual Steeltoe.Common.Util.MethodInvoker.ResolveClassName(string className) -> System.Type
+virtual Steeltoe.Common.Util.MethodInvoker.SetArguments(params object[] arguments) -> void
+virtual Steeltoe.Common.Util.MethodInvoker.SetTargetObject(object target) -> void
+virtual Steeltoe.Common.Util.SubclassClassifier<T, C>.Classify(T classifiable) -> C

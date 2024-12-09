@@ -1,0 +1,17 @@
+﻿Steeltoe.CircuitBreaker.ICircuitBreaker
+Steeltoe.CircuitBreaker.ICircuitBreaker.AllowRequest.get -> bool
+Steeltoe.CircuitBreaker.ICircuitBreaker.IsOpen.get -> bool
+Steeltoe.CircuitBreaker.ICircuitBreaker.MarkSuccess() -> void
+Steeltoe.CircuitBreaker.ICollapsedRequest<RequestResponseType, RequestArgumentType>
+Steeltoe.CircuitBreaker.ICollapsedRequest<RequestResponseType, RequestArgumentType>.Argument.get -> RequestArgumentType
+Steeltoe.CircuitBreaker.ICollapsedRequest<RequestResponseType, RequestArgumentType>.Complete.get -> bool
+Steeltoe.CircuitBreaker.ICollapsedRequest<RequestResponseType, RequestArgumentType>.Complete.set -> void
+Steeltoe.CircuitBreaker.ICollapsedRequest<RequestResponseType, RequestArgumentType>.Exception.get -> System.Exception
+Steeltoe.CircuitBreaker.ICollapsedRequest<RequestResponseType, RequestArgumentType>.Exception.set -> void
+Steeltoe.CircuitBreaker.ICollapsedRequest<RequestResponseType, RequestArgumentType>.Response.get -> RequestResponseType
+Steeltoe.CircuitBreaker.ICollapsedRequest<RequestResponseType, RequestArgumentType>.Response.set -> void
+Steeltoe.CircuitBreaker.ICollapserTimer
+Steeltoe.CircuitBreaker.ICollapserTimer.AddListener(Steeltoe.Common.Util.ITimerListener collapseTask) -> Steeltoe.Common.Util.TimerReference
+Steeltoe.CircuitBreaker.RequestCollapserScope
+Steeltoe.CircuitBreaker.RequestCollapserScope.GLOBAL = 1 -> Steeltoe.CircuitBreaker.RequestCollapserScope
+Steeltoe.CircuitBreaker.RequestCollapserScope.REQUEST = 0 -> Steeltoe.CircuitBreaker.RequestCollapserScope

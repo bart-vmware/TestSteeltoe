@@ -1,0 +1,80 @@
+﻿const Steeltoe.Discovery.Kubernetes.Discovery.KubernetesDiscoveryOptions.KUBERNETES_DISCOVERY_CONFIGURATION_PREFIX = "spring:cloud:kubernetes:discovery" -> string
+override Steeltoe.Discovery.Kubernetes.Discovery.KubernetesDiscoveryOptions.ToString() -> string
+static Steeltoe.Discovery.Kubernetes.Discovery.KubernetesDiscoveryClient.EnsureAssemblyIsLoaded() -> void
+static Steeltoe.Discovery.Kubernetes.KubernetesDiscoveryClientBuilderExtension.UseKubernetes(this Steeltoe.Discovery.Client.DiscoveryClientBuilder clientBuilder) -> Steeltoe.Discovery.Client.DiscoveryClientBuilder
+static Steeltoe.Discovery.Kubernetes.KubernetesDiscoveryClientFactory.CreateClient(Microsoft.Extensions.Options.IOptionsMonitor<Steeltoe.Discovery.Kubernetes.Discovery.KubernetesDiscoveryOptions> options, k8s.IKubernetes kubernetes) -> Steeltoe.Discovery.IDiscoveryClient
+Steeltoe.Discovery.Kubernetes.Discovery.DefaultIsServicePortSecureResolver
+Steeltoe.Discovery.Kubernetes.Discovery.DefaultIsServicePortSecureResolver.DefaultIsServicePortSecureResolver(Steeltoe.Discovery.Kubernetes.Discovery.KubernetesDiscoveryOptions kubernetesDiscoveryOptions) -> void
+Steeltoe.Discovery.Kubernetes.Discovery.DefaultIsServicePortSecureResolver.Resolve(Steeltoe.Discovery.Kubernetes.Discovery.Input input) -> bool
+Steeltoe.Discovery.Kubernetes.Discovery.EndpointSubsetNs
+Steeltoe.Discovery.Kubernetes.Discovery.EndpointSubsetNs.EndpointSubsetNs() -> void
+Steeltoe.Discovery.Kubernetes.Discovery.EndpointSubsetNs.EndpointSubsets.get -> System.Collections.Generic.IList<k8s.Models.V1EndpointSubset>
+Steeltoe.Discovery.Kubernetes.Discovery.EndpointSubsetNs.EndpointSubsets.set -> void
+Steeltoe.Discovery.Kubernetes.Discovery.EndpointSubsetNs.Namespace.get -> string
+Steeltoe.Discovery.Kubernetes.Discovery.EndpointSubsetNs.Namespace.set -> void
+Steeltoe.Discovery.Kubernetes.Discovery.Input
+Steeltoe.Discovery.Kubernetes.Discovery.Input.GetPort() -> int?
+Steeltoe.Discovery.Kubernetes.Discovery.Input.GetServiceAnnotations() -> System.Collections.Generic.IDictionary<string, string>
+Steeltoe.Discovery.Kubernetes.Discovery.Input.GetServiceLabels() -> System.Collections.Generic.IDictionary<string, string>
+Steeltoe.Discovery.Kubernetes.Discovery.Input.GetServiceName() -> string
+Steeltoe.Discovery.Kubernetes.Discovery.Input.Input(string serviceName, int? port = null, System.Collections.Generic.IDictionary<string, string> serviceLabels = null, System.Collections.Generic.IDictionary<string, string> serviceAnnotations = null) -> void
+Steeltoe.Discovery.Kubernetes.Discovery.KubernetesDiscoveryClient
+Steeltoe.Discovery.Kubernetes.Discovery.KubernetesDiscoveryClient.Description.get -> string
+Steeltoe.Discovery.Kubernetes.Discovery.KubernetesDiscoveryClient.GetInstances(string serviceId) -> System.Collections.Generic.IList<Steeltoe.Common.Discovery.IServiceInstance>
+Steeltoe.Discovery.Kubernetes.Discovery.KubernetesDiscoveryClient.GetLocalServiceInstance() -> Steeltoe.Common.Discovery.IServiceInstance
+Steeltoe.Discovery.Kubernetes.Discovery.KubernetesDiscoveryClient.GetServices(System.Collections.Generic.IDictionary<string, string> labels) -> System.Collections.Generic.IList<string>
+Steeltoe.Discovery.Kubernetes.Discovery.KubernetesDiscoveryClient.KubernetesClient.get -> k8s.IKubernetes
+Steeltoe.Discovery.Kubernetes.Discovery.KubernetesDiscoveryClient.KubernetesClient.set -> void
+Steeltoe.Discovery.Kubernetes.Discovery.KubernetesDiscoveryClient.KubernetesDiscoveryClient(Steeltoe.Discovery.Kubernetes.Discovery.DefaultIsServicePortSecureResolver isServicePortSecureResolver, k8s.IKubernetes kubernetesClient, Microsoft.Extensions.Options.IOptionsMonitor<Steeltoe.Discovery.Kubernetes.Discovery.KubernetesDiscoveryOptions> discoveryOptions, Microsoft.Extensions.Logging.ILogger<Steeltoe.Discovery.Kubernetes.Discovery.KubernetesDiscoveryClient> logger = null) -> void
+Steeltoe.Discovery.Kubernetes.Discovery.KubernetesDiscoveryClient.Services.get -> System.Collections.Generic.IList<string>
+Steeltoe.Discovery.Kubernetes.Discovery.KubernetesDiscoveryClient.ShutdownAsync() -> System.Threading.Tasks.Task
+Steeltoe.Discovery.Kubernetes.Discovery.KubernetesDiscoveryOptions
+Steeltoe.Discovery.Kubernetes.Discovery.KubernetesDiscoveryOptions.AllNamespaces.get -> bool
+Steeltoe.Discovery.Kubernetes.Discovery.KubernetesDiscoveryOptions.AllNamespaces.set -> void
+Steeltoe.Discovery.Kubernetes.Discovery.KubernetesDiscoveryOptions.CacheTTL.get -> int
+Steeltoe.Discovery.Kubernetes.Discovery.KubernetesDiscoveryOptions.CacheTTL.set -> void
+Steeltoe.Discovery.Kubernetes.Discovery.KubernetesDiscoveryOptions.Enabled.get -> bool
+Steeltoe.Discovery.Kubernetes.Discovery.KubernetesDiscoveryOptions.Enabled.set -> void
+Steeltoe.Discovery.Kubernetes.Discovery.KubernetesDiscoveryOptions.KnownSecurePorts.get -> System.Collections.Generic.List<int>
+Steeltoe.Discovery.Kubernetes.Discovery.KubernetesDiscoveryOptions.KnownSecurePorts.set -> void
+Steeltoe.Discovery.Kubernetes.Discovery.KubernetesDiscoveryOptions.KubernetesDiscoveryOptions() -> void
+Steeltoe.Discovery.Kubernetes.Discovery.KubernetesDiscoveryOptions.Metadata.get -> Steeltoe.Discovery.Kubernetes.Discovery.Metadata
+Steeltoe.Discovery.Kubernetes.Discovery.KubernetesDiscoveryOptions.Metadata.set -> void
+Steeltoe.Discovery.Kubernetes.Discovery.KubernetesDiscoveryOptions.Namespace.get -> string
+Steeltoe.Discovery.Kubernetes.Discovery.KubernetesDiscoveryOptions.Namespace.set -> void
+Steeltoe.Discovery.Kubernetes.Discovery.KubernetesDiscoveryOptions.PrimaryPortName.get -> string
+Steeltoe.Discovery.Kubernetes.Discovery.KubernetesDiscoveryOptions.PrimaryPortName.set -> void
+Steeltoe.Discovery.Kubernetes.Discovery.KubernetesDiscoveryOptions.ServiceLabels.get -> System.Collections.Generic.Dictionary<string, string>
+Steeltoe.Discovery.Kubernetes.Discovery.KubernetesDiscoveryOptions.ServiceLabels.set -> void
+Steeltoe.Discovery.Kubernetes.Discovery.KubernetesDiscoveryOptions.ServiceName.get -> string
+Steeltoe.Discovery.Kubernetes.Discovery.KubernetesDiscoveryOptions.ServiceName.set -> void
+Steeltoe.Discovery.Kubernetes.Discovery.KubernetesServiceInstance
+Steeltoe.Discovery.Kubernetes.Discovery.KubernetesServiceInstance.GetScheme() -> string
+Steeltoe.Discovery.Kubernetes.Discovery.KubernetesServiceInstance.Host.get -> string
+Steeltoe.Discovery.Kubernetes.Discovery.KubernetesServiceInstance.InstanceId.get -> string
+Steeltoe.Discovery.Kubernetes.Discovery.KubernetesServiceInstance.IsSecure.get -> bool
+Steeltoe.Discovery.Kubernetes.Discovery.KubernetesServiceInstance.KubernetesServiceInstance(string instanceId, string serviceId, k8s.Models.V1EndpointAddress endpointAddress, k8s.Models.Corev1EndpointPort endpointPort, System.Collections.Generic.IDictionary<string, string> metadata, bool isSecure) -> void
+Steeltoe.Discovery.Kubernetes.Discovery.KubernetesServiceInstance.Metadata.get -> System.Collections.Generic.IDictionary<string, string>
+Steeltoe.Discovery.Kubernetes.Discovery.KubernetesServiceInstance.Port.get -> int
+Steeltoe.Discovery.Kubernetes.Discovery.KubernetesServiceInstance.ServiceId.get -> string
+Steeltoe.Discovery.Kubernetes.Discovery.KubernetesServiceInstance.Uri.get -> System.Uri
+Steeltoe.Discovery.Kubernetes.Discovery.Metadata
+Steeltoe.Discovery.Kubernetes.Discovery.Metadata.AddAnnotations.get -> bool
+Steeltoe.Discovery.Kubernetes.Discovery.Metadata.AddAnnotations.set -> void
+Steeltoe.Discovery.Kubernetes.Discovery.Metadata.AddLabels.get -> bool
+Steeltoe.Discovery.Kubernetes.Discovery.Metadata.AddLabels.set -> void
+Steeltoe.Discovery.Kubernetes.Discovery.Metadata.AddPorts.get -> bool
+Steeltoe.Discovery.Kubernetes.Discovery.Metadata.AddPorts.set -> void
+Steeltoe.Discovery.Kubernetes.Discovery.Metadata.AnnotationsPrefix.get -> string
+Steeltoe.Discovery.Kubernetes.Discovery.Metadata.AnnotationsPrefix.set -> void
+Steeltoe.Discovery.Kubernetes.Discovery.Metadata.LabelsPrefix.get -> string
+Steeltoe.Discovery.Kubernetes.Discovery.Metadata.LabelsPrefix.set -> void
+Steeltoe.Discovery.Kubernetes.Discovery.Metadata.Metadata() -> void
+Steeltoe.Discovery.Kubernetes.Discovery.Metadata.PortsPrefix.get -> string
+Steeltoe.Discovery.Kubernetes.Discovery.Metadata.PortsPrefix.set -> void
+Steeltoe.Discovery.Kubernetes.KubernetesDiscoveryClientBuilderExtension
+Steeltoe.Discovery.Kubernetes.KubernetesDiscoveryClientExtension
+Steeltoe.Discovery.Kubernetes.KubernetesDiscoveryClientExtension.ApplyServices(Microsoft.Extensions.DependencyInjection.IServiceCollection services) -> void
+Steeltoe.Discovery.Kubernetes.KubernetesDiscoveryClientExtension.IsConfigured(Microsoft.Extensions.Configuration.IConfiguration configuration, Steeltoe.Connector.Services.IServiceInfo serviceInfo = null) -> bool
+Steeltoe.Discovery.Kubernetes.KubernetesDiscoveryClientExtension.KubernetesDiscoveryClientExtension() -> void
+Steeltoe.Discovery.Kubernetes.KubernetesDiscoveryClientFactory

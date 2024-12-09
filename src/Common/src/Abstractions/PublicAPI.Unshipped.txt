@@ -1,0 +1,397 @@
+﻿static Steeltoe.Common.Util.Time.CurrentTimeMillis.get -> long
+static Steeltoe.Common.Util.Time.CurrentTimeMillisJava.get -> long
+static Steeltoe.Common.Util.Time.Wait(int maxWaitMilli) -> void
+static Steeltoe.Common.Util.Time.WaitUntil(System.Func<bool> check, int maxWaitMilli) -> bool
+Steeltoe.Common.Attributes.AssemblyContainsTypeAttribute
+Steeltoe.Common.Attributes.AssemblyContainsTypeAttribute.AssemblyContainsTypeAttribute(System.Type type) -> void
+Steeltoe.Common.Attributes.AssemblyContainsTypeAttribute.ContainedType.get -> System.Type
+Steeltoe.Common.Attributes.ServiceAttribute
+Steeltoe.Common.Attributes.ServiceAttribute.Name.get -> string
+Steeltoe.Common.Attributes.ServiceAttribute.ServiceAttribute() -> void
+Steeltoe.Common.Attributes.ServiceAttribute.ServiceAttribute(string name) -> void
+Steeltoe.Common.Availability.IAvailabilityState
+Steeltoe.Common.Contexts.IApplicationContext
+Steeltoe.Common.Contexts.IApplicationContext.Configuration.get -> Microsoft.Extensions.Configuration.IConfiguration
+Steeltoe.Common.Contexts.IApplicationContext.ContainsService(string name) -> bool
+Steeltoe.Common.Contexts.IApplicationContext.ContainsService(string name, System.Type serviceType) -> bool
+Steeltoe.Common.Contexts.IApplicationContext.ContainsService<T>(string name) -> bool
+Steeltoe.Common.Contexts.IApplicationContext.Deregister(string name) -> object
+Steeltoe.Common.Contexts.IApplicationContext.GetService(string name) -> object
+Steeltoe.Common.Contexts.IApplicationContext.GetService(string name, System.Type serviceType) -> object
+Steeltoe.Common.Contexts.IApplicationContext.GetService(System.Type serviceType) -> object
+Steeltoe.Common.Contexts.IApplicationContext.GetService<T>() -> T
+Steeltoe.Common.Contexts.IApplicationContext.GetService<T>(string name) -> T
+Steeltoe.Common.Contexts.IApplicationContext.GetServices<T>() -> System.Collections.Generic.IEnumerable<T>
+Steeltoe.Common.Contexts.IApplicationContext.Register(string name, object instance) -> void
+Steeltoe.Common.Contexts.IApplicationContext.ResolveEmbeddedValue(string value) -> string
+Steeltoe.Common.Contexts.IApplicationContext.ServiceExpressionResolver.get -> Steeltoe.Common.Expression.Internal.Contexts.IServiceExpressionResolver
+Steeltoe.Common.Contexts.IApplicationContext.ServiceExpressionResolver.set -> void
+Steeltoe.Common.Contexts.IApplicationContext.ServiceProvider.get -> System.IServiceProvider
+Steeltoe.Common.Converter.IConditionalConverter
+Steeltoe.Common.Converter.IConditionalConverter.Matches(System.Type sourceType, System.Type targetType) -> bool
+Steeltoe.Common.Converter.IConditionalGenericConverter
+Steeltoe.Common.Converter.IConversionService
+Steeltoe.Common.Converter.IConversionService.CanBypassConvert(System.Type sourceType, System.Type targetType) -> bool
+Steeltoe.Common.Converter.IConversionService.CanConvert(System.Type sourceType, System.Type targetType) -> bool
+Steeltoe.Common.Converter.IConversionService.Convert(object source, System.Type sourceType, System.Type targetType) -> object
+Steeltoe.Common.Converter.IConversionService.Convert<T>(object source) -> T
+Steeltoe.Common.Converter.IConverter<S, T>
+Steeltoe.Common.Converter.IConverter<S, T>.Convert(S source) -> T
+Steeltoe.Common.Converter.IConverterRegistry
+Steeltoe.Common.Converter.IConverterRegistry.AddConverter(Steeltoe.Common.Converter.IGenericConverter converter) -> void
+Steeltoe.Common.Converter.IGenericConverter
+Steeltoe.Common.Converter.IGenericConverter.Convert(object source, System.Type sourceType, System.Type targetType) -> object
+Steeltoe.Common.Converter.IGenericConverter.ConvertibleTypes.get -> System.Collections.Generic.ISet<(System.Type Source, System.Type Target)>
+Steeltoe.Common.Discovery.IServiceInstance
+Steeltoe.Common.Discovery.IServiceInstance.Host.get -> string
+Steeltoe.Common.Discovery.IServiceInstance.IsSecure.get -> bool
+Steeltoe.Common.Discovery.IServiceInstance.Metadata.get -> System.Collections.Generic.IDictionary<string, string>
+Steeltoe.Common.Discovery.IServiceInstance.Port.get -> int
+Steeltoe.Common.Discovery.IServiceInstance.ServiceId.get -> string
+Steeltoe.Common.Discovery.IServiceInstance.Uri.get -> System.Uri
+Steeltoe.Common.Discovery.IServiceInstanceProvider
+Steeltoe.Common.Discovery.IServiceInstanceProvider.Description.get -> string
+Steeltoe.Common.Discovery.IServiceInstanceProvider.GetInstances(string serviceId) -> System.Collections.Generic.IList<Steeltoe.Common.Discovery.IServiceInstance>
+Steeltoe.Common.Discovery.IServiceInstanceProvider.Services.get -> System.Collections.Generic.IList<string>
+Steeltoe.Common.Discovery.IServiceRegistry<T>
+Steeltoe.Common.Discovery.IServiceRegistry<T>.Deregister(T registration) -> void
+Steeltoe.Common.Discovery.IServiceRegistry<T>.GetStatus<S>(T registration) -> S
+Steeltoe.Common.Discovery.IServiceRegistry<T>.Register(T registration) -> void
+Steeltoe.Common.Discovery.IServiceRegistry<T>.SetStatus(T registration, string status) -> void
+Steeltoe.Common.Expression.Internal.Contexts.IServiceExpressionContext
+Steeltoe.Common.Expression.Internal.Contexts.IServiceExpressionContext.ApplicationContext.get -> Steeltoe.Common.Contexts.IApplicationContext
+Steeltoe.Common.Expression.Internal.Contexts.IServiceExpressionContext.ContainsService(string serviceName) -> bool
+Steeltoe.Common.Expression.Internal.Contexts.IServiceExpressionContext.ContainsService(string serviceName, System.Type serviceType) -> bool
+Steeltoe.Common.Expression.Internal.Contexts.IServiceExpressionContext.GetService(string serviceName) -> object
+Steeltoe.Common.Expression.Internal.Contexts.IServiceExpressionContext.GetService(string serviceName, System.Type serviceType) -> object
+Steeltoe.Common.Expression.Internal.Contexts.IServiceExpressionResolver
+Steeltoe.Common.Expression.Internal.Contexts.IServiceExpressionResolver.Evaluate(string value, Steeltoe.Common.Expression.Internal.Contexts.IServiceExpressionContext evalContext) -> object
+Steeltoe.Common.Expression.Internal.IConstructorExecutor
+Steeltoe.Common.Expression.Internal.IConstructorExecutor.Execute(Steeltoe.Common.Expression.Internal.IEvaluationContext context, params object[] arguments) -> Steeltoe.Common.Expression.Internal.ITypedValue
+Steeltoe.Common.Expression.Internal.IConstructorResolver
+Steeltoe.Common.Expression.Internal.IConstructorResolver.Resolve(Steeltoe.Common.Expression.Internal.IEvaluationContext context, string typeName, System.Collections.Generic.List<System.Type> argumentTypes) -> Steeltoe.Common.Expression.Internal.IConstructorExecutor
+Steeltoe.Common.Expression.Internal.IEvaluationContext
+Steeltoe.Common.Expression.Internal.IEvaluationContext.ConstructorResolvers.get -> System.Collections.Generic.List<Steeltoe.Common.Expression.Internal.IConstructorResolver>
+Steeltoe.Common.Expression.Internal.IEvaluationContext.LookupVariable(string name) -> object
+Steeltoe.Common.Expression.Internal.IEvaluationContext.LookupVariable<T>(string name) -> T
+Steeltoe.Common.Expression.Internal.IEvaluationContext.MethodResolvers.get -> System.Collections.Generic.List<Steeltoe.Common.Expression.Internal.IMethodResolver>
+Steeltoe.Common.Expression.Internal.IEvaluationContext.OperatorOverloader.get -> Steeltoe.Common.Expression.Internal.IOperatorOverloader
+Steeltoe.Common.Expression.Internal.IEvaluationContext.PropertyAccessors.get -> System.Collections.Generic.List<Steeltoe.Common.Expression.Internal.IPropertyAccessor>
+Steeltoe.Common.Expression.Internal.IEvaluationContext.RootObject.get -> Steeltoe.Common.Expression.Internal.ITypedValue
+Steeltoe.Common.Expression.Internal.IEvaluationContext.ServiceResolver.get -> Steeltoe.Common.Expression.Internal.IServiceResolver
+Steeltoe.Common.Expression.Internal.IEvaluationContext.SetVariable(string name, object value) -> void
+Steeltoe.Common.Expression.Internal.IEvaluationContext.TypeComparator.get -> Steeltoe.Common.Expression.Internal.ITypeComparator
+Steeltoe.Common.Expression.Internal.IEvaluationContext.TypeConverter.get -> Steeltoe.Common.Expression.Internal.ITypeConverter
+Steeltoe.Common.Expression.Internal.IEvaluationContext.TypeLocator.get -> Steeltoe.Common.Expression.Internal.ITypeLocator
+Steeltoe.Common.Expression.Internal.IExpression
+Steeltoe.Common.Expression.Internal.IExpression.ExpressionString.get -> string
+Steeltoe.Common.Expression.Internal.IExpression.GetValue() -> object
+Steeltoe.Common.Expression.Internal.IExpression.GetValue(object rootObject) -> object
+Steeltoe.Common.Expression.Internal.IExpression.GetValue(object rootObject, System.Type desiredResultType) -> object
+Steeltoe.Common.Expression.Internal.IExpression.GetValue(Steeltoe.Common.Expression.Internal.IEvaluationContext context) -> object
+Steeltoe.Common.Expression.Internal.IExpression.GetValue(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object rootObject) -> object
+Steeltoe.Common.Expression.Internal.IExpression.GetValue(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object rootObject, System.Type desiredResultType) -> object
+Steeltoe.Common.Expression.Internal.IExpression.GetValue(Steeltoe.Common.Expression.Internal.IEvaluationContext context, System.Type desiredResultType) -> object
+Steeltoe.Common.Expression.Internal.IExpression.GetValue(System.Type desiredResultType) -> object
+Steeltoe.Common.Expression.Internal.IExpression.GetValue<T>() -> T
+Steeltoe.Common.Expression.Internal.IExpression.GetValue<T>(object rootObject) -> T
+Steeltoe.Common.Expression.Internal.IExpression.GetValue<T>(Steeltoe.Common.Expression.Internal.IEvaluationContext context) -> T
+Steeltoe.Common.Expression.Internal.IExpression.GetValue<T>(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object rootObject) -> T
+Steeltoe.Common.Expression.Internal.IExpression.GetValueType() -> System.Type
+Steeltoe.Common.Expression.Internal.IExpression.GetValueType(object rootObject) -> System.Type
+Steeltoe.Common.Expression.Internal.IExpression.GetValueType(Steeltoe.Common.Expression.Internal.IEvaluationContext context) -> System.Type
+Steeltoe.Common.Expression.Internal.IExpression.GetValueType(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object rootObject) -> System.Type
+Steeltoe.Common.Expression.Internal.IExpression.IsWritable(object rootObject) -> bool
+Steeltoe.Common.Expression.Internal.IExpression.IsWritable(Steeltoe.Common.Expression.Internal.IEvaluationContext context) -> bool
+Steeltoe.Common.Expression.Internal.IExpression.IsWritable(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object rootObject) -> bool
+Steeltoe.Common.Expression.Internal.IExpression.SetValue(object rootObject, object value) -> void
+Steeltoe.Common.Expression.Internal.IExpression.SetValue(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object rootObject, object value) -> void
+Steeltoe.Common.Expression.Internal.IExpression.SetValue(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object value) -> void
+Steeltoe.Common.Expression.Internal.IExpressionParser
+Steeltoe.Common.Expression.Internal.IExpressionParser.ParseExpression(string expressionString) -> Steeltoe.Common.Expression.Internal.IExpression
+Steeltoe.Common.Expression.Internal.IExpressionParser.ParseExpression(string expressionString, Steeltoe.Common.Expression.Internal.IParserContext context) -> Steeltoe.Common.Expression.Internal.IExpression
+Steeltoe.Common.Expression.Internal.IMethodExecutor
+Steeltoe.Common.Expression.Internal.IMethodExecutor.Execute(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object target, params object[] arguments) -> Steeltoe.Common.Expression.Internal.ITypedValue
+Steeltoe.Common.Expression.Internal.IMethodFilter
+Steeltoe.Common.Expression.Internal.IMethodFilter.Filter(System.Collections.Generic.List<System.Reflection.MethodInfo> methods) -> System.Collections.Generic.List<System.Reflection.MethodInfo>
+Steeltoe.Common.Expression.Internal.IMethodResolver
+Steeltoe.Common.Expression.Internal.IMethodResolver.Resolve(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object targetObject, string name, System.Collections.Generic.List<System.Type> argumentTypes) -> Steeltoe.Common.Expression.Internal.IMethodExecutor
+Steeltoe.Common.Expression.Internal.IOperatorOverloader
+Steeltoe.Common.Expression.Internal.IOperatorOverloader.Operate(Steeltoe.Common.Expression.Internal.Operation operation, object leftOperand, object rightOperand) -> object
+Steeltoe.Common.Expression.Internal.IOperatorOverloader.OverridesOperation(Steeltoe.Common.Expression.Internal.Operation operation, object leftOperand, object rightOperand) -> bool
+Steeltoe.Common.Expression.Internal.IParserContext
+Steeltoe.Common.Expression.Internal.IParserContext.ExpressionPrefix.get -> string
+Steeltoe.Common.Expression.Internal.IParserContext.ExpressionSuffix.get -> string
+Steeltoe.Common.Expression.Internal.IParserContext.IsTemplate.get -> bool
+Steeltoe.Common.Expression.Internal.IPropertyAccessor
+Steeltoe.Common.Expression.Internal.IPropertyAccessor.CanRead(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object target, string name) -> bool
+Steeltoe.Common.Expression.Internal.IPropertyAccessor.CanWrite(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object target, string name) -> bool
+Steeltoe.Common.Expression.Internal.IPropertyAccessor.GetSpecificTargetClasses() -> System.Collections.Generic.IList<System.Type>
+Steeltoe.Common.Expression.Internal.IPropertyAccessor.Read(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object target, string name) -> Steeltoe.Common.Expression.Internal.ITypedValue
+Steeltoe.Common.Expression.Internal.IPropertyAccessor.Write(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object target, string name, object newValue) -> void
+Steeltoe.Common.Expression.Internal.IServiceResolver
+Steeltoe.Common.Expression.Internal.IServiceResolver.Resolve(Steeltoe.Common.Expression.Internal.IEvaluationContext context, string serviceName) -> object
+Steeltoe.Common.Expression.Internal.ITypeComparator
+Steeltoe.Common.Expression.Internal.ITypeComparator.CanCompare(object firstObject, object secondObject) -> bool
+Steeltoe.Common.Expression.Internal.ITypeComparator.Compare(object firstObject, object secondObject) -> int
+Steeltoe.Common.Expression.Internal.ITypeConverter
+Steeltoe.Common.Expression.Internal.ITypeConverter.CanConvert(System.Type source, System.Type target) -> bool
+Steeltoe.Common.Expression.Internal.ITypeConverter.ConversionService.get -> Steeltoe.Common.Converter.IConversionService
+Steeltoe.Common.Expression.Internal.ITypeConverter.ConversionService.set -> void
+Steeltoe.Common.Expression.Internal.ITypeConverter.ConvertValue(object value, System.Type source, System.Type target) -> object
+Steeltoe.Common.Expression.Internal.ITypedValue
+Steeltoe.Common.Expression.Internal.ITypedValue.TypeDescriptor.get -> System.Type
+Steeltoe.Common.Expression.Internal.ITypedValue.Value.get -> object
+Steeltoe.Common.Expression.Internal.ITypeLocator
+Steeltoe.Common.Expression.Internal.ITypeLocator.FindType(string typeName) -> System.Type
+Steeltoe.Common.Expression.Internal.Operation
+Steeltoe.Common.Expression.Internal.Operation.ADD = 0 -> Steeltoe.Common.Expression.Internal.Operation
+Steeltoe.Common.Expression.Internal.Operation.DIVIDE = 2 -> Steeltoe.Common.Expression.Internal.Operation
+Steeltoe.Common.Expression.Internal.Operation.MODULUS = 4 -> Steeltoe.Common.Expression.Internal.Operation
+Steeltoe.Common.Expression.Internal.Operation.MULTIPLY = 3 -> Steeltoe.Common.Expression.Internal.Operation
+Steeltoe.Common.Expression.Internal.Operation.POWER = 5 -> Steeltoe.Common.Expression.Internal.Operation
+Steeltoe.Common.Expression.Internal.Operation.SUBTRACT = 1 -> Steeltoe.Common.Expression.Internal.Operation
+Steeltoe.Common.HealthChecks.HealthCheckResult
+Steeltoe.Common.HealthChecks.HealthCheckResult.Description.get -> string
+Steeltoe.Common.HealthChecks.HealthCheckResult.Description.set -> void
+Steeltoe.Common.HealthChecks.HealthCheckResult.Details.get -> System.Collections.Generic.Dictionary<string, object>
+Steeltoe.Common.HealthChecks.HealthCheckResult.Details.set -> void
+Steeltoe.Common.HealthChecks.HealthCheckResult.HealthCheckResult() -> void
+Steeltoe.Common.HealthChecks.HealthCheckResult.Status.get -> Steeltoe.Common.HealthChecks.HealthStatus
+Steeltoe.Common.HealthChecks.HealthCheckResult.Status.set -> void
+Steeltoe.Common.HealthChecks.HealthStatus
+Steeltoe.Common.HealthChecks.HealthStatus.DOWN = 4 -> Steeltoe.Common.HealthChecks.HealthStatus
+Steeltoe.Common.HealthChecks.HealthStatus.OUT_OF_SERVICE = 3 -> Steeltoe.Common.HealthChecks.HealthStatus
+Steeltoe.Common.HealthChecks.HealthStatus.UNKNOWN = 0 -> Steeltoe.Common.HealthChecks.HealthStatus
+Steeltoe.Common.HealthChecks.HealthStatus.UP = 1 -> Steeltoe.Common.HealthChecks.HealthStatus
+Steeltoe.Common.HealthChecks.HealthStatus.WARNING = 2 -> Steeltoe.Common.HealthChecks.HealthStatus
+Steeltoe.Common.HealthChecks.IHealthAggregator
+Steeltoe.Common.HealthChecks.IHealthAggregator.Aggregate(System.Collections.Generic.IList<Steeltoe.Common.HealthChecks.IHealthContributor> contributors) -> Steeltoe.Common.HealthChecks.HealthCheckResult
+Steeltoe.Common.HealthChecks.IHealthContributor
+Steeltoe.Common.HealthChecks.IHealthContributor.Health() -> Steeltoe.Common.HealthChecks.HealthCheckResult
+Steeltoe.Common.HealthChecks.IHealthContributor.Id.get -> string
+Steeltoe.Common.IApplicationInstanceInfo
+Steeltoe.Common.IApplicationInstanceInfo.ApplicationId.get -> string
+Steeltoe.Common.IApplicationInstanceInfo.ApplicationName.get -> string
+Steeltoe.Common.IApplicationInstanceInfo.ApplicationNameInContext(Steeltoe.Common.SteeltoeComponent steeltoeComponent, string additionalSearchPath = null) -> string
+Steeltoe.Common.IApplicationInstanceInfo.DiskLimit.get -> int
+Steeltoe.Common.IApplicationInstanceInfo.FileDescriptorLimit.get -> int
+Steeltoe.Common.IApplicationInstanceInfo.InstanceId.get -> string
+Steeltoe.Common.IApplicationInstanceInfo.InstanceIndex.get -> int
+Steeltoe.Common.IApplicationInstanceInfo.InstanceIP.get -> string
+Steeltoe.Common.IApplicationInstanceInfo.InternalIP.get -> string
+Steeltoe.Common.IApplicationInstanceInfo.MemoryLimit.get -> int
+Steeltoe.Common.IApplicationInstanceInfo.Port.get -> int
+Steeltoe.Common.IApplicationInstanceInfo.Uris.get -> System.Collections.Generic.IEnumerable<string>
+Steeltoe.Common.IApplicationInstanceInfo.Version.get -> string
+Steeltoe.Common.IApplicationTask
+Steeltoe.Common.IApplicationTask.Name.get -> string
+Steeltoe.Common.IApplicationTask.Run() -> void
+Steeltoe.Common.ICertificateSource
+Steeltoe.Common.ICertificateSource.OptionsConfigurer.get -> System.Type
+Steeltoe.Common.IHttpClientHandlerProvider
+Steeltoe.Common.IHttpClientHandlerProvider.GetHttpClientHandler() -> System.Net.Http.HttpClientHandler
+Steeltoe.Common.Lifecycle.ILifecycle
+Steeltoe.Common.Lifecycle.ILifecycle.IsRunning.get -> bool
+Steeltoe.Common.Lifecycle.ILifecycle.Start() -> System.Threading.Tasks.Task
+Steeltoe.Common.Lifecycle.ILifecycle.Stop() -> System.Threading.Tasks.Task
+Steeltoe.Common.Lifecycle.ILifecycleProcessor
+Steeltoe.Common.Lifecycle.ILifecycleProcessor.IsRunning.get -> bool
+Steeltoe.Common.Lifecycle.ILifecycleProcessor.OnClose() -> System.Threading.Tasks.Task
+Steeltoe.Common.Lifecycle.ILifecycleProcessor.OnRefresh() -> System.Threading.Tasks.Task
+Steeltoe.Common.Lifecycle.ILifecycleProcessor.Start() -> System.Threading.Tasks.Task
+Steeltoe.Common.Lifecycle.ILifecycleProcessor.Stop() -> System.Threading.Tasks.Task
+Steeltoe.Common.Lifecycle.IPhased
+Steeltoe.Common.Lifecycle.IPhased.Phase.get -> int
+Steeltoe.Common.Lifecycle.ISmartLifecycle
+Steeltoe.Common.Lifecycle.ISmartLifecycle.IsAutoStartup.get -> bool
+Steeltoe.Common.Lifecycle.ISmartLifecycle.Stop(System.Action callback) -> System.Threading.Tasks.Task
+Steeltoe.Common.LoadBalancer.ILoadBalancer
+Steeltoe.Common.LoadBalancer.ILoadBalancer.ResolveServiceInstanceAsync(System.Uri request) -> System.Threading.Tasks.Task<System.Uri>
+Steeltoe.Common.LoadBalancer.ILoadBalancer.UpdateStatsAsync(System.Uri originalUri, System.Uri resolvedUri, System.TimeSpan responseTime, System.Exception exception) -> System.Threading.Tasks.Task
+Steeltoe.Common.Options.AbstractOptions
+Steeltoe.Common.Options.AbstractOptions.AbstractOptions() -> void
+Steeltoe.Common.Options.AbstractOptions.AbstractOptions(Microsoft.Extensions.Configuration.IConfiguration root, string sectionPrefix = null) -> void
+Steeltoe.Common.Options.CertificateOptions
+Steeltoe.Common.Options.CertificateOptions.Certificate.get -> System.Security.Cryptography.X509Certificates.X509Certificate2
+Steeltoe.Common.Options.CertificateOptions.Certificate.set -> void
+Steeltoe.Common.Options.CertificateOptions.CertificateOptions() -> void
+Steeltoe.Common.Options.CertificateOptions.IssuerChain.get -> System.Collections.Generic.List<System.Security.Cryptography.X509Certificates.X509Certificate2>
+Steeltoe.Common.Options.CertificateOptions.IssuerChain.set -> void
+Steeltoe.Common.Options.CertificateOptions.Name.get -> string
+Steeltoe.Common.Options.CertificateOptions.Name.set -> void
+Steeltoe.Common.Order.IOrdered
+Steeltoe.Common.Order.IOrdered.Order.get -> int
+Steeltoe.Common.Order.IPriorityOrdered
+Steeltoe.Common.Retry.IRecoveryCallback
+Steeltoe.Common.Retry.IRecoveryCallback.Recover(Steeltoe.Common.Retry.IRetryContext context) -> object
+Steeltoe.Common.Retry.IRecoveryCallback<T>
+Steeltoe.Common.Retry.IRecoveryCallback<T>.Recover(Steeltoe.Common.Retry.IRetryContext context) -> T
+Steeltoe.Common.Retry.IRetryContext
+Steeltoe.Common.Retry.IRetryContext.LastException.get -> System.Exception
+Steeltoe.Common.Retry.IRetryContext.Parent.get -> Steeltoe.Common.Retry.IRetryContext
+Steeltoe.Common.Retry.IRetryContext.RetryCount.get -> int
+Steeltoe.Common.Retry.IRetryListener
+Steeltoe.Common.Retry.IRetryListener.Close(Steeltoe.Common.Retry.IRetryContext context, System.Exception exception) -> void
+Steeltoe.Common.Retry.IRetryListener.OnError(Steeltoe.Common.Retry.IRetryContext context, System.Exception exception) -> void
+Steeltoe.Common.Retry.IRetryListener.Open(Steeltoe.Common.Retry.IRetryContext context) -> bool
+Steeltoe.Common.Retry.IRetryOperation
+Steeltoe.Common.Retry.IRetryOperation.Execute(System.Action<Steeltoe.Common.Retry.IRetryContext> retryCallback) -> void
+Steeltoe.Common.Retry.IRetryOperation.Execute(System.Action<Steeltoe.Common.Retry.IRetryContext> retryCallback, Steeltoe.Common.Retry.IRecoveryCallback recoveryCallback) -> void
+Steeltoe.Common.Retry.IRetryOperation.Execute(System.Action<Steeltoe.Common.Retry.IRetryContext> retryCallback, System.Action<Steeltoe.Common.Retry.IRetryContext> recoveryCallback) -> void
+Steeltoe.Common.Retry.IRetryOperation.Execute<T>(System.Func<Steeltoe.Common.Retry.IRetryContext, T> retryCallback) -> T
+Steeltoe.Common.Retry.IRetryOperation.Execute<T>(System.Func<Steeltoe.Common.Retry.IRetryContext, T> retryCallback, Steeltoe.Common.Retry.IRecoveryCallback<T> recoveryCallback) -> T
+Steeltoe.Common.Retry.IRetryOperation.Execute<T>(System.Func<Steeltoe.Common.Retry.IRetryContext, T> retryCallback, System.Func<Steeltoe.Common.Retry.IRetryContext, T> recoveryCallback) -> T
+Steeltoe.Common.Services.IServiceNameAware
+Steeltoe.Common.Services.IServiceNameAware.ServiceName.get -> string
+Steeltoe.Common.Services.IServiceNameAware.ServiceName.set -> void
+Steeltoe.Common.SteeltoeComponent
+Steeltoe.Common.SteeltoeComponent.CircuitBreaker = 1 -> Steeltoe.Common.SteeltoeComponent
+Steeltoe.Common.SteeltoeComponent.Configuration = 2 -> Steeltoe.Common.SteeltoeComponent
+Steeltoe.Common.SteeltoeComponent.Connectors = 3 -> Steeltoe.Common.SteeltoeComponent
+Steeltoe.Common.SteeltoeComponent.Discovery = 0 -> Steeltoe.Common.SteeltoeComponent
+Steeltoe.Common.SteeltoeComponent.Kubernetes = 4 -> Steeltoe.Common.SteeltoeComponent
+Steeltoe.Common.SteeltoeComponent.Management = 5 -> Steeltoe.Common.SteeltoeComponent
+Steeltoe.Common.SteeltoeComponent.Security = 6 -> Steeltoe.Common.SteeltoeComponent
+Steeltoe.Common.Transaction.IPlatformTransactionManager
+Steeltoe.Common.Transaction.IPlatformTransactionManager.Commit(Steeltoe.Common.Transaction.ITransactionStatus status) -> void
+Steeltoe.Common.Transaction.IPlatformTransactionManager.GetTransaction(Steeltoe.Common.Transaction.ITransactionDefinition definition) -> Steeltoe.Common.Transaction.ITransactionStatus
+Steeltoe.Common.Transaction.IPlatformTransactionManager.Rollback(Steeltoe.Common.Transaction.ITransactionStatus status) -> void
+Steeltoe.Common.Transaction.IResourceHolder
+Steeltoe.Common.Transaction.IResourceHolder.IsVoid.get -> bool
+Steeltoe.Common.Transaction.IResourceHolder.Reset() -> void
+Steeltoe.Common.Transaction.IResourceHolder.Unbound() -> void
+Steeltoe.Common.Transaction.IResourceTransactionManager
+Steeltoe.Common.Transaction.IResourceTransactionManager.ResourceFactory.get -> object
+Steeltoe.Common.Transaction.ISavepointManager
+Steeltoe.Common.Transaction.ISavepointManager.CreateSavepoint() -> object
+Steeltoe.Common.Transaction.ISavepointManager.ReleaseSavepoint(object savepoint) -> void
+Steeltoe.Common.Transaction.ISavepointManager.RollbackToSavepoint(object savepoint) -> void
+Steeltoe.Common.Transaction.ISmartTransactionObject
+Steeltoe.Common.Transaction.ISmartTransactionObject.Flush() -> void
+Steeltoe.Common.Transaction.ISmartTransactionObject.IsRollbackOnly.get -> bool
+Steeltoe.Common.Transaction.ITransactionAttribute
+Steeltoe.Common.Transaction.ITransactionAttribute.Qualifier.get -> string
+Steeltoe.Common.Transaction.ITransactionAttribute.RollbackOn(System.Exception exception) -> bool
+Steeltoe.Common.Transaction.ITransactionCallback<T>
+Steeltoe.Common.Transaction.ITransactionCallback<T>.DoInTransaction(Steeltoe.Common.Transaction.ITransactionStatus status) -> T
+Steeltoe.Common.Transaction.ITransactionDefinition
+Steeltoe.Common.Transaction.ITransactionDefinition.IsolationLevel.get -> int
+Steeltoe.Common.Transaction.ITransactionDefinition.IsReadOnly.get -> bool
+Steeltoe.Common.Transaction.ITransactionDefinition.Name.get -> string
+Steeltoe.Common.Transaction.ITransactionDefinition.PropagationBehavior.get -> int
+Steeltoe.Common.Transaction.ITransactionDefinition.Timeout.get -> int
+Steeltoe.Common.Transaction.ITransactionExecution
+Steeltoe.Common.Transaction.ITransactionExecution.IsCompleted.get -> bool
+Steeltoe.Common.Transaction.ITransactionExecution.IsNewTransaction.get -> bool
+Steeltoe.Common.Transaction.ITransactionExecution.IsRollbackOnly.get -> bool
+Steeltoe.Common.Transaction.ITransactionExecution.SetRollbackOnly() -> void
+Steeltoe.Common.Transaction.ITransactionOperations
+Steeltoe.Common.Transaction.ITransactionOperations.Execute<T>(System.Func<Steeltoe.Common.Transaction.ITransactionStatus, T> action) -> T
+Steeltoe.Common.Transaction.ITransactionOperations.ExecuteWithoutResult(System.Action<Steeltoe.Common.Transaction.ITransactionStatus> action) -> void
+Steeltoe.Common.Transaction.ITransactionStatus
+Steeltoe.Common.Transaction.ITransactionStatus.Flush() -> void
+Steeltoe.Common.Transaction.ITransactionStatus.HasSavepoint.get -> bool
+Steeltoe.Common.Transaction.ITransactionSynchronization
+Steeltoe.Common.Transaction.ITransactionSynchronization.AfterCommit() -> void
+Steeltoe.Common.Transaction.ITransactionSynchronization.AfterCompletion(int status) -> void
+Steeltoe.Common.Transaction.ITransactionSynchronization.BeforeCommit(bool readOnly) -> void
+Steeltoe.Common.Transaction.ITransactionSynchronization.BeforeCompletion() -> void
+Steeltoe.Common.Transaction.ITransactionSynchronization.Flush() -> void
+Steeltoe.Common.Transaction.ITransactionSynchronization.Resume() -> void
+Steeltoe.Common.Transaction.ITransactionSynchronization.Suspend() -> void
+Steeltoe.Common.Util.ActualTime
+Steeltoe.Common.Util.ActualTime.ActualTime() -> void
+Steeltoe.Common.Util.ActualTime.CurrentTimeInMillis.get -> long
+Steeltoe.Common.Util.AtomicBoolean
+Steeltoe.Common.Util.AtomicBoolean.AtomicBoolean() -> void
+Steeltoe.Common.Util.AtomicBoolean.AtomicBoolean(bool value) -> void
+Steeltoe.Common.Util.AtomicBoolean.CompareAndSet(bool expected, bool update) -> bool
+Steeltoe.Common.Util.AtomicBoolean.GetAndSet(bool newValue) -> bool
+Steeltoe.Common.Util.AtomicBoolean.Value.get -> bool
+Steeltoe.Common.Util.AtomicBoolean.Value.set -> void
+Steeltoe.Common.Util.AtomicInteger
+Steeltoe.Common.Util.AtomicInteger.AddAndGet(int value) -> int
+Steeltoe.Common.Util.AtomicInteger.AtomicInteger() -> void
+Steeltoe.Common.Util.AtomicInteger.AtomicInteger(int value) -> void
+Steeltoe.Common.Util.AtomicInteger.CompareAndSet(int expected, int update) -> bool
+Steeltoe.Common.Util.AtomicInteger.DecrementAndGet() -> int
+Steeltoe.Common.Util.AtomicInteger.GetAndIncrement() -> int
+Steeltoe.Common.Util.AtomicInteger.IncrementAndGet() -> int
+Steeltoe.Common.Util.AtomicInteger.Value.get -> int
+Steeltoe.Common.Util.AtomicInteger.Value.set -> void
+Steeltoe.Common.Util.AtomicIntegerArray
+Steeltoe.Common.Util.AtomicIntegerArray.AtomicIntegerArray(int length) -> void
+Steeltoe.Common.Util.AtomicLong
+Steeltoe.Common.Util.AtomicLong.AddAndGet(long value) -> long
+Steeltoe.Common.Util.AtomicLong.AtomicLong() -> void
+Steeltoe.Common.Util.AtomicLong.AtomicLong(long value) -> void
+Steeltoe.Common.Util.AtomicLong.CompareAndSet(long expected, long update) -> bool
+Steeltoe.Common.Util.AtomicLong.GetAndSet(long value) -> long
+Steeltoe.Common.Util.AtomicLong.Value.get -> long
+Steeltoe.Common.Util.AtomicLong.Value.set -> void
+Steeltoe.Common.Util.AtomicReference<T>
+Steeltoe.Common.Util.AtomicReference<T>.AtomicReference() -> void
+Steeltoe.Common.Util.AtomicReference<T>.AtomicReference(T value) -> void
+Steeltoe.Common.Util.AtomicReference<T>.CompareAndSet(T expected, T update) -> bool
+Steeltoe.Common.Util.AtomicReference<T>.GetAndSet(T value) -> T
+Steeltoe.Common.Util.AtomicReference<T>.Value.get -> T
+Steeltoe.Common.Util.AtomicReference<T>.Value.set -> void
+Steeltoe.Common.Util.AtomicReferenceArray<T>
+Steeltoe.Common.Util.AtomicReferenceArray<T>.AtomicReferenceArray(int length) -> void
+Steeltoe.Common.Util.AtomicReferenceArray<T>.Length.get -> int
+Steeltoe.Common.Util.AtomicReferenceArray<T>.this[int index].get -> T
+Steeltoe.Common.Util.AtomicReferenceArray<T>.this[int index].set -> void
+Steeltoe.Common.Util.AtomicReferenceArray<T>.ToArray() -> T[]
+Steeltoe.Common.Util.IAsyncRunnable
+Steeltoe.Common.Util.IAsyncRunnable.Run() -> System.Threading.Tasks.Task<bool>
+Steeltoe.Common.Util.IAttributeAccessor
+Steeltoe.Common.Util.IAttributeAccessor.AttributeNames.get -> string[]
+Steeltoe.Common.Util.IAttributeAccessor.GetAttribute(string name) -> object
+Steeltoe.Common.Util.IAttributeAccessor.HasAttribute(string name) -> bool
+Steeltoe.Common.Util.IAttributeAccessor.RemoveAttribute(string name) -> object
+Steeltoe.Common.Util.IAttributeAccessor.SetAttribute(string name, object value) -> void
+Steeltoe.Common.Util.IBackOff
+Steeltoe.Common.Util.IBackOff.Start() -> Steeltoe.Common.Util.IBackOffExecution
+Steeltoe.Common.Util.IBackOffExecution
+Steeltoe.Common.Util.IBackOffExecution.NextBackOff() -> int
+Steeltoe.Common.Util.IClassifier<C, T>
+Steeltoe.Common.Util.IClassifier<C, T>.Classify(C classifiable) -> T
+Steeltoe.Common.Util.IErrorHandler
+Steeltoe.Common.Util.IErrorHandler.HandleError(System.Exception exception) -> bool
+Steeltoe.Common.Util.IIDGenerator
+Steeltoe.Common.Util.IIDGenerator.GenerateId() -> string
+Steeltoe.Common.Util.IPathMatcher
+Steeltoe.Common.Util.IPathMatcher.Combine(string pattern1, string pattern2) -> string
+Steeltoe.Common.Util.IPathMatcher.ExtractPathWithinPattern(string pattern, string path) -> string
+Steeltoe.Common.Util.IPathMatcher.ExtractUriTemplateVariables(string pattern, string path) -> System.Collections.Generic.IDictionary<string, string>
+Steeltoe.Common.Util.IPathMatcher.GetPatternComparer(string path) -> System.Collections.Generic.IComparer<string>
+Steeltoe.Common.Util.IPathMatcher.IsPattern(string path) -> bool
+Steeltoe.Common.Util.IPathMatcher.Match(string pattern, string path) -> bool
+Steeltoe.Common.Util.IPathMatcher.MatchStart(string pattern, string path) -> bool
+Steeltoe.Common.Util.IRoute
+Steeltoe.Common.Util.IRoute.Value.get -> string
+Steeltoe.Common.Util.IRouteMatcher
+Steeltoe.Common.Util.IRouteMatcher.Combine(string pattern1, string pattern2) -> string
+Steeltoe.Common.Util.IRouteMatcher.GetPatternComparer(Steeltoe.Common.Util.IRoute route) -> System.Collections.Generic.IComparer<string>
+Steeltoe.Common.Util.IRouteMatcher.IsPattern(string route) -> bool
+Steeltoe.Common.Util.IRouteMatcher.Match(string pattern, Steeltoe.Common.Util.IRoute route) -> bool
+Steeltoe.Common.Util.IRouteMatcher.MatchAndExtract(string pattern, Steeltoe.Common.Util.IRoute route) -> System.Collections.Generic.IDictionary<string, string>
+Steeltoe.Common.Util.IRouteMatcher.ParseRoute(string routeValue) -> Steeltoe.Common.Util.IRoute
+Steeltoe.Common.Util.IRunnable
+Steeltoe.Common.Util.IRunnable.Run() -> bool
+Steeltoe.Common.Util.IStringValueResolver
+Steeltoe.Common.Util.IStringValueResolver.ResolveStringValue(string strVal) -> string
+Steeltoe.Common.Util.ITime
+Steeltoe.Common.Util.ITime.CurrentTimeInMillis.get -> long
+Steeltoe.Common.Util.ITimerListener
+Steeltoe.Common.Util.ITimerListener.IntervalTimeInMilliseconds.get -> int
+Steeltoe.Common.Util.ITimerListener.Tick() -> void
+Steeltoe.Common.Util.Time
+Steeltoe.Common.Util.TimerReference
+Steeltoe.Common.Util.TimerReference.Dispose() -> void
+Steeltoe.Common.Util.TimerReference.Run(System.Threading.CancellationTokenSource tokenSource) -> void
+Steeltoe.Common.Util.TimerReference.Start() -> void
+Steeltoe.Common.Util.TimerReference.TimerReference(Steeltoe.Common.Util.ITimerListener listener, System.TimeSpan period) -> void
+virtual Steeltoe.Common.Util.TimerReference.Dispose(bool disposing) -> void
+volatile Steeltoe.Common.Util.AtomicInteger._value -> int

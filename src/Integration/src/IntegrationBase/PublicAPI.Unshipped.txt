@@ -1,0 +1,993 @@
+﻿abstract Steeltoe.Integration.AbstractMessageProducer.OutputChannel.get -> Steeltoe.Messaging.IMessageChannel
+abstract Steeltoe.Integration.AbstractMessageProducer.OutputChannel.set -> void
+abstract Steeltoe.Integration.Acks.AbstractAcknowledgmentCallback.Acknowledge(Steeltoe.Integration.Acks.Status status) -> void
+abstract Steeltoe.Integration.Channel.AbstractMessageChannel.DoSendInternal(Steeltoe.Messaging.IMessage message, System.Threading.CancellationToken cancellationToken) -> bool
+abstract Steeltoe.Integration.Channel.AbstractPollableChannel.DoReceiveInternal(System.Threading.CancellationToken cancellationToken) -> Steeltoe.Messaging.IMessage
+abstract Steeltoe.Integration.Config.AbstractMethodAttributeProcessor<A>.CreateHandler(object service, System.Reflection.MethodInfo method, System.Collections.Generic.List<System.Attribute> attributes) -> Steeltoe.Messaging.IMessageHandler
+abstract Steeltoe.Integration.Dispatcher.AbstractDispatcher.DoDispatch(Steeltoe.Messaging.IMessage message, System.Threading.CancellationToken cancellationToken) -> bool
+abstract Steeltoe.Integration.Endpoint.AbstractEndpoint.DoStart() -> System.Threading.Tasks.Task
+abstract Steeltoe.Integration.Endpoint.AbstractEndpoint.DoStop() -> System.Threading.Tasks.Task
+abstract Steeltoe.Integration.Endpoint.AbstractMessageSource<T>.DoReceive() -> object
+abstract Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessageInternal(Steeltoe.Messaging.IMessage message) -> void
+abstract Steeltoe.Integration.Handler.AbstractMessageHandler.Initialize() -> void
+abstract Steeltoe.Integration.Handler.AbstractMessageProcessor<T>.ProcessMessage(Steeltoe.Messaging.IMessage message) -> T
+abstract Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler.HandleRequestMessage(Steeltoe.Messaging.IMessage requestMessage) -> object
+abstract Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.ExtractStandardHeaders(T source) -> System.Collections.Generic.IDictionary<string, object>
+abstract Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.ExtractUserDefinedHeaders(T source) -> System.Collections.Generic.IDictionary<string, object>
+abstract Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.PopulateStandardHeaders(System.Collections.Generic.IDictionary<string, object> headers, T target) -> void
+abstract Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.PopulateUserDefinedHeader(string headerName, object headerValue, T target) -> void
+abstract Steeltoe.Integration.Support.AbstractMessageBuilder.Build() -> Steeltoe.Messaging.IMessage
+abstract Steeltoe.Integration.Support.AbstractMessageBuilder.CopyHeaders(System.Collections.Generic.IDictionary<string, object> headersToCopy) -> Steeltoe.Integration.Support.IMessageBuilder
+abstract Steeltoe.Integration.Support.AbstractMessageBuilder.CopyHeadersIfAbsent(System.Collections.Generic.IDictionary<string, object> headersToCopy) -> Steeltoe.Integration.Support.IMessageBuilder
+abstract Steeltoe.Integration.Support.AbstractMessageBuilder.CorrelationId.get -> object
+abstract Steeltoe.Integration.Support.AbstractMessageBuilder.Headers.get -> System.Collections.Generic.IDictionary<string, object>
+abstract Steeltoe.Integration.Support.AbstractMessageBuilder.Payload.get -> object
+abstract Steeltoe.Integration.Support.AbstractMessageBuilder.RemoveHeader(string headerName) -> Steeltoe.Integration.Support.IMessageBuilder
+abstract Steeltoe.Integration.Support.AbstractMessageBuilder.RemoveHeaders(params string[] headerPatterns) -> Steeltoe.Integration.Support.IMessageBuilder
+abstract Steeltoe.Integration.Support.AbstractMessageBuilder.SequenceDetails.get -> System.Collections.Generic.List<System.Collections.Generic.List<object>>
+abstract Steeltoe.Integration.Support.AbstractMessageBuilder.SequenceNumber.get -> object
+abstract Steeltoe.Integration.Support.AbstractMessageBuilder.SequenceSize.get -> object
+abstract Steeltoe.Integration.Support.AbstractMessageBuilder.SetHeader(string headerName, object headerValue) -> Steeltoe.Integration.Support.IMessageBuilder
+abstract Steeltoe.Integration.Support.AbstractMessageBuilder.SetHeaderIfAbsent(string headerName, object headerValue) -> Steeltoe.Integration.Support.IMessageBuilder
+abstract Steeltoe.Integration.Transformer.AbstractTransformer.DoTransform(Steeltoe.Messaging.IMessage message) -> object
+const Steeltoe.Integration.Channel.AbstractMessageChannel.INDEFINITE_TIMEOUT = -1 -> int
+const Steeltoe.Integration.Channel.MessagePublishingErrorHandler.DEFAULT_SERVICE_NAME = "MessagePublishingErrorHandler" -> string
+const Steeltoe.Integration.Config.AbstractMethodAttributeProcessor<A>.INPUT_CHANNEL_PROPERTY = "InputChannel" -> string
+const Steeltoe.Integration.Config.AbstractMethodAttributeProcessor<A>.SEND_TIMEOUT_PROPERTY = "SendTimeout" -> string
+const Steeltoe.Integration.IntegrationMessageHeaderAccessor.ACKNOWLEDGMENT_CALLBACK = "acknowledgmentCallback" -> string
+const Steeltoe.Integration.IntegrationMessageHeaderAccessor.CLOSEABLE_RESOURCE = "closeableResource" -> string
+const Steeltoe.Integration.IntegrationMessageHeaderAccessor.CORRELATION_ID = "correlationId" -> string
+const Steeltoe.Integration.IntegrationMessageHeaderAccessor.DELIVERY_ATTEMPT = "deliveryAttempt" -> string
+const Steeltoe.Integration.IntegrationMessageHeaderAccessor.DUPLICATE_MESSAGE = "duplicateMessage" -> string
+const Steeltoe.Integration.IntegrationMessageHeaderAccessor.EXPIRATION_DATE = "expirationDate" -> string
+const Steeltoe.Integration.IntegrationMessageHeaderAccessor.PRIORITY = "priority" -> string
+const Steeltoe.Integration.IntegrationMessageHeaderAccessor.ROUTING_SLIP = "routingSlip" -> string
+const Steeltoe.Integration.IntegrationMessageHeaderAccessor.SEQUENCE_DETAILS = "sequenceDetails" -> string
+const Steeltoe.Integration.IntegrationMessageHeaderAccessor.SEQUENCE_NUMBER = "sequenceNumber" -> string
+const Steeltoe.Integration.IntegrationMessageHeaderAccessor.SEQUENCE_SIZE = "sequenceSize" -> string
+const Steeltoe.Integration.IntegrationMessageHeaderAccessor.SOURCE_DATA = "sourceData" -> string
+const Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.NON_STANDARD_HEADER_NAME_PATTERN = "NON_STANDARD_HEADERS" -> string
+const Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.STANDARD_REPLY_HEADER_NAME_PATTERN = "STANDARD_REPLY_HEADERS" -> string
+const Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.STANDARD_REQUEST_HEADER_NAME_PATTERN = "STANDARD_REQUEST_HEADERS" -> string
+const Steeltoe.Integration.Support.Converter.DefaultDatatypeChannelMessageConverter.DEFAULT_SERVICE_NAME = "DefaultDatatypeChannelMessageConverter" -> string
+const Steeltoe.Integration.Support.ErrorMessageUtils.FAILED_MESSAGE_CONTEXT_KEY = "internal_message" -> string
+const Steeltoe.Integration.Support.ErrorMessageUtils.INPUT_MESSAGE_CONTEXT_KEY = "internal_inputMessage" -> string
+const Steeltoe.Integration.Support.IntegrationUtils.INTEGRATION_CONVERSION_SERVICE_BEAN_NAME = "integrationConversionService" -> string
+const Steeltoe.Integration.Support.IntegrationUtils.INTEGRATION_MESSAGE_BUILDER_FACTORY_BEAN_NAME = "messageBuilderFactory" -> string
+const Steeltoe.Integration.Util.IntegrationContextUtils.ARGUMENT_RESOLVER_MESSAGE_CONVERTER_BEAN_NAME = "integrationArgumentResolverMessageConverter" -> string
+const Steeltoe.Integration.Util.IntegrationContextUtils.ERROR_CHANNEL_BEAN_NAME = "errorChannel" -> string
+const Steeltoe.Integration.Util.IntegrationContextUtils.INTEGRATION_EVALUATION_CONTEXT_BEAN_NAME = "integrationEvaluationContext" -> string
+const Steeltoe.Integration.Util.IntegrationContextUtils.INTEGRATION_SIMPLE_EVALUATION_CONTEXT_BEAN_NAME = "integrationSimpleEvaluationContext" -> string
+const Steeltoe.Integration.Util.IntegrationContextUtils.MESSAGE_HANDLER_FACTORY_BEAN_NAME = "integrationMessageHandlerMethodFactory" -> string
+const Steeltoe.Integration.Util.IntegrationContextUtils.NULL_CHANNEL_BEAN_NAME = "nullChannel" -> string
+override Steeltoe.Integration.Channel.AbstractMessageChannelWriter.TryComplete(System.Exception error = null) -> bool
+override Steeltoe.Integration.Channel.AbstractMessageChannelWriter.TryWrite(Steeltoe.Messaging.IMessage message) -> bool
+override Steeltoe.Integration.Channel.AbstractMessageChannelWriter.WaitToWriteAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> System.Threading.Tasks.ValueTask<bool>
+override Steeltoe.Integration.Channel.AbstractMessageChannelWriter.WriteAsync(Steeltoe.Messaging.IMessage message, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> System.Threading.Tasks.ValueTask
+override Steeltoe.Integration.Channel.AbstractPollableChannel.AddInterceptor(int index, Steeltoe.Messaging.Support.IChannelInterceptor interceptor) -> void
+override Steeltoe.Integration.Channel.AbstractPollableChannel.AddInterceptor(Steeltoe.Messaging.Support.IChannelInterceptor interceptor) -> void
+override Steeltoe.Integration.Channel.AbstractPollableChannel.ChannelInterceptors.get -> System.Collections.Generic.List<Steeltoe.Messaging.Support.IChannelInterceptor>
+override Steeltoe.Integration.Channel.AbstractPollableChannel.ChannelInterceptors.set -> void
+override Steeltoe.Integration.Channel.AbstractPollableChannel.RemoveInterceptor(int index) -> Steeltoe.Messaging.Support.IChannelInterceptor
+override Steeltoe.Integration.Channel.AbstractPollableChannel.RemoveInterceptor(Steeltoe.Messaging.Support.IChannelInterceptor interceptor) -> bool
+override Steeltoe.Integration.Channel.AbstractSubscribableChannel.DoSendInternal(Steeltoe.Messaging.IMessage message, System.Threading.CancellationToken cancellationToken) -> bool
+override Steeltoe.Integration.Channel.AbstractSubscribableChannelWriter.WaitToWriteAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> System.Threading.Tasks.ValueTask<bool>
+override Steeltoe.Integration.Channel.AbstractTaskSchedulerChannel.AddInterceptor(int index, Steeltoe.Messaging.Support.IChannelInterceptor interceptor) -> void
+override Steeltoe.Integration.Channel.AbstractTaskSchedulerChannel.AddInterceptor(Steeltoe.Messaging.Support.IChannelInterceptor interceptor) -> void
+override Steeltoe.Integration.Channel.AbstractTaskSchedulerChannel.ChannelInterceptors.get -> System.Collections.Generic.List<Steeltoe.Messaging.Support.IChannelInterceptor>
+override Steeltoe.Integration.Channel.AbstractTaskSchedulerChannel.ChannelInterceptors.set -> void
+override Steeltoe.Integration.Channel.AbstractTaskSchedulerChannel.RemoveInterceptor(int index) -> Steeltoe.Messaging.Support.IChannelInterceptor
+override Steeltoe.Integration.Channel.AbstractTaskSchedulerChannel.RemoveInterceptor(Steeltoe.Messaging.Support.IChannelInterceptor interceptor) -> bool
+override Steeltoe.Integration.Channel.PublishSubscribeChannel.ComponentType.get -> string
+override Steeltoe.Integration.Channel.QueueChannel.DoReceiveInternal(System.Threading.CancellationToken cancellationToken) -> Steeltoe.Messaging.IMessage
+override Steeltoe.Integration.Channel.QueueChannel.DoSendInternal(Steeltoe.Messaging.IMessage message, System.Threading.CancellationToken cancellationToken) -> bool
+override Steeltoe.Integration.Channel.QueueChannelReader.ReadAllAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> System.Collections.Generic.IAsyncEnumerable<Steeltoe.Messaging.IMessage>
+override Steeltoe.Integration.Channel.QueueChannelReader.ReadAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> System.Threading.Tasks.ValueTask<Steeltoe.Messaging.IMessage>
+override Steeltoe.Integration.Channel.QueueChannelReader.TryRead(out Steeltoe.Messaging.IMessage item) -> bool
+override Steeltoe.Integration.Channel.QueueChannelReader.WaitToReadAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> System.Threading.Tasks.ValueTask<bool>
+override Steeltoe.Integration.Config.ServiceActivatorAttributeProcessor.CreateHandler(object service, System.Reflection.MethodInfo method, System.Collections.Generic.List<System.Attribute> attributes) -> Steeltoe.Messaging.IMessageHandler
+override Steeltoe.Integration.Dispatcher.AbstractDispatcher.ToString() -> string
+override Steeltoe.Integration.Dispatcher.AggregateMessageDeliveryException.Message.get -> string
+override Steeltoe.Integration.Dispatcher.BroadcastingDispatcher.DoDispatch(Steeltoe.Messaging.IMessage message, System.Threading.CancellationToken cancellationToken) -> bool
+override Steeltoe.Integration.Dispatcher.UnicastingDispatcher.Dispatch(Steeltoe.Messaging.IMessage message, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> bool
+override Steeltoe.Integration.Dispatcher.UnicastingDispatcher.DoDispatch(Steeltoe.Messaging.IMessage message, System.Threading.CancellationToken cancellationToken) -> bool
+override Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.DoStart() -> System.Threading.Tasks.Task
+override Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.DoStop() -> System.Threading.Tasks.Task
+override Steeltoe.Integration.Endpoint.MessageProducerSupportEndpoint.DoStart() -> System.Threading.Tasks.Task
+override Steeltoe.Integration.Endpoint.MessageProducerSupportEndpoint.DoStop() -> System.Threading.Tasks.Task
+override Steeltoe.Integration.ErrorMessageSendingRecoverer.PayloadWhenNull(Steeltoe.Common.Util.IAttributeAccessor context) -> System.Exception
+override Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler.HandleMessageInternal(Steeltoe.Messaging.IMessage message) -> void
+override Steeltoe.Integration.Handler.BridgeHandler.ComponentType.get -> string
+override Steeltoe.Integration.Handler.BridgeHandler.HandleRequestMessage(Steeltoe.Messaging.IMessage requestMessage) -> object
+override Steeltoe.Integration.Handler.BridgeHandler.Initialize() -> void
+override Steeltoe.Integration.Handler.BridgeHandler.ShouldCopyRequestHeaders.get -> bool
+override Steeltoe.Integration.Handler.ExpressionEvaluatingMessageProcessor<T>.ProcessMessage(Steeltoe.Messaging.IMessage message) -> T
+override Steeltoe.Integration.Handler.ExpressionEvaluatingMessageProcessor<T>.ToString() -> string
+override Steeltoe.Integration.Handler.LoggingHandler.ComponentType.get -> string
+override Steeltoe.Integration.Handler.LoggingHandler.HandleMessageInternal(Steeltoe.Messaging.IMessage message) -> void
+override Steeltoe.Integration.Handler.LoggingHandler.Initialize() -> void
+override Steeltoe.Integration.Handler.MethodInvokingMessageProcessor<T>.ProcessMessage(Steeltoe.Messaging.IMessage message) -> T
+override Steeltoe.Integration.Handler.ReplyProducingMessageHandlerWrapper.HandleRequestMessage(Steeltoe.Messaging.IMessage requestMessage) -> object
+override Steeltoe.Integration.Handler.ReplyProducingMessageHandlerWrapper.Initialize() -> void
+override Steeltoe.Integration.Handler.ServiceActivatingHandler.ComponentType.get -> string
+override Steeltoe.Integration.Handler.ServiceActivatingHandler.HandleRequestMessage(Steeltoe.Messaging.IMessage requestMessage) -> object
+override Steeltoe.Integration.Handler.ServiceActivatingHandler.Initialize() -> void
+override Steeltoe.Integration.Handler.ServiceActivatingHandler.ToString() -> string
+override Steeltoe.Integration.IntegrationMessageHeaderAccessor.ToDictionary() -> System.Collections.Generic.IDictionary<string, object>
+override Steeltoe.Integration.IntegrationMessageHeaderAccessor.VerifyType(string headerName, object headerValue) -> void
+override Steeltoe.Integration.MessagingTemplate.DefaultReceiveDestination.get -> Steeltoe.Messaging.IMessageChannel
+override Steeltoe.Integration.MessagingTemplate.DefaultReceiveDestination.set -> void
+override Steeltoe.Integration.MessagingTemplate.DefaultSendDestination.get -> Steeltoe.Messaging.IMessageChannel
+override Steeltoe.Integration.MessagingTemplate.DefaultSendDestination.set -> void
+override Steeltoe.Integration.MessagingTemplate.SendAndReceive(Steeltoe.Messaging.IMessageChannel destination, Steeltoe.Messaging.IMessage requestMessage) -> Steeltoe.Messaging.IMessage
+override Steeltoe.Integration.Support.Converter.ObjectStringMessageConverter.ConvertFromInternal(Steeltoe.Messaging.IMessage message, System.Type targetClass, object conversionHint) -> object
+override Steeltoe.Integration.Support.IntegrationMessageBuilder.Build() -> Steeltoe.Messaging.IMessage
+override Steeltoe.Integration.Support.IntegrationMessageBuilder.CopyHeaders(System.Collections.Generic.IDictionary<string, object> headersToCopy) -> Steeltoe.Integration.Support.IMessageBuilder
+override Steeltoe.Integration.Support.IntegrationMessageBuilder.CopyHeadersIfAbsent(System.Collections.Generic.IDictionary<string, object> headersToCopy) -> Steeltoe.Integration.Support.IMessageBuilder
+override Steeltoe.Integration.Support.IntegrationMessageBuilder.Headers.get -> System.Collections.Generic.IDictionary<string, object>
+override Steeltoe.Integration.Support.IntegrationMessageBuilder.Payload.get -> object
+override Steeltoe.Integration.Support.IntegrationMessageBuilder.RemoveHeader(string headerName) -> Steeltoe.Integration.Support.IMessageBuilder
+override Steeltoe.Integration.Support.IntegrationMessageBuilder.RemoveHeaders(params string[] headerPatterns) -> Steeltoe.Integration.Support.IMessageBuilder
+override Steeltoe.Integration.Support.IntegrationMessageBuilder.SetHeader(string headerName, object headerValue) -> Steeltoe.Integration.Support.IMessageBuilder
+override Steeltoe.Integration.Support.IntegrationMessageBuilder.SetHeaderIfAbsent(string headerName, object headerValue) -> Steeltoe.Integration.Support.IMessageBuilder
+override Steeltoe.Integration.Support.MutableIntegrationMessageBuilder.Build() -> Steeltoe.Messaging.IMessage
+override Steeltoe.Integration.Support.MutableIntegrationMessageBuilder.CopyHeaders(System.Collections.Generic.IDictionary<string, object> headersToCopy) -> Steeltoe.Integration.Support.IMessageBuilder
+override Steeltoe.Integration.Support.MutableIntegrationMessageBuilder.CopyHeadersIfAbsent(System.Collections.Generic.IDictionary<string, object> headersToCopy) -> Steeltoe.Integration.Support.IMessageBuilder
+override Steeltoe.Integration.Support.MutableIntegrationMessageBuilder.CorrelationId.get -> object
+override Steeltoe.Integration.Support.MutableIntegrationMessageBuilder.Headers.get -> System.Collections.Generic.IDictionary<string, object>
+override Steeltoe.Integration.Support.MutableIntegrationMessageBuilder.Payload.get -> object
+override Steeltoe.Integration.Support.MutableIntegrationMessageBuilder.RemoveHeader(string headerName) -> Steeltoe.Integration.Support.IMessageBuilder
+override Steeltoe.Integration.Support.MutableIntegrationMessageBuilder.RemoveHeaders(params string[] headerPatterns) -> Steeltoe.Integration.Support.IMessageBuilder
+override Steeltoe.Integration.Support.MutableIntegrationMessageBuilder.SequenceDetails.get -> System.Collections.Generic.List<System.Collections.Generic.List<object>>
+override Steeltoe.Integration.Support.MutableIntegrationMessageBuilder.SequenceNumber.get -> object
+override Steeltoe.Integration.Support.MutableIntegrationMessageBuilder.SequenceSize.get -> object
+override Steeltoe.Integration.Support.MutableIntegrationMessageBuilder.SetHeader(string headerName, object headerValue) -> Steeltoe.Integration.Support.IMessageBuilder
+override Steeltoe.Integration.Support.MutableIntegrationMessageBuilder.SetHeaderIfAbsent(string headerName, object headerValue) -> Steeltoe.Integration.Support.IMessageBuilder
+override Steeltoe.Integration.Support.MutableMessage.Equals(object obj) -> bool
+override Steeltoe.Integration.Support.MutableMessage.GetHashCode() -> int
+override Steeltoe.Integration.Support.MutableMessage.ToString() -> string
+override Steeltoe.Integration.Support.MutableMessage<T>.Equals(object obj) -> bool
+override Steeltoe.Integration.Support.MutableMessage<T>.GetHashCode() -> int
+override Steeltoe.Integration.Support.MutableMessageHeaders.Add(string key, object value) -> void
+override Steeltoe.Integration.Support.MutableMessageHeaders.Add(System.Collections.Generic.KeyValuePair<string, object> item) -> void
+override Steeltoe.Integration.Support.MutableMessageHeaders.Clear() -> void
+override Steeltoe.Integration.Support.MutableMessageHeaders.Remove(string key) -> bool
+override Steeltoe.Integration.Support.MutableMessageHeaders.Remove(System.Collections.Generic.KeyValuePair<string, object> item) -> bool
+override Steeltoe.Integration.Support.MutableMessageHeaders.this[string key].get -> object
+override Steeltoe.Integration.Support.MutableMessageHeaders.this[string key].set -> void
+override Steeltoe.Integration.Support.NullAwarePayloadArgumentResolver.IsEmptyPayload(object payload) -> bool
+override Steeltoe.Integration.Transformer.JsonToObjectTransformer.DoTransform(Steeltoe.Messaging.IMessage message) -> object
+override Steeltoe.Integration.Transformer.MessageTransformingHandler.AddNotPropagatedHeaders(params string[] headers) -> void
+override Steeltoe.Integration.Transformer.MessageTransformingHandler.HandleRequestMessage(Steeltoe.Messaging.IMessage requestMessage) -> object
+override Steeltoe.Integration.Transformer.MessageTransformingHandler.Initialize() -> void
+override Steeltoe.Integration.Transformer.MessageTransformingHandler.ShouldCopyRequestHeaders.get -> bool
+override Steeltoe.Integration.Transformer.ObjectToJsonTransformer.DoTransform(Steeltoe.Messaging.IMessage message) -> object
+readonly Steeltoe.Integration.Dispatcher.AbstractDispatcher._context -> Steeltoe.Common.Contexts.IApplicationContext
+readonly Steeltoe.Integration.Dispatcher.AbstractDispatcher._executor -> System.Threading.Tasks.TaskScheduler
+readonly Steeltoe.Integration.Dispatcher.AbstractDispatcher._factory -> System.Threading.Tasks.TaskFactory
+readonly Steeltoe.Integration.Dispatcher.AbstractDispatcher._logger -> Microsoft.Extensions.Logging.ILogger
+readonly Steeltoe.Integration.ErrorMessagePublisher._logger -> Microsoft.Extensions.Logging.ILogger
+readonly Steeltoe.Integration.ErrorMessagePublisher._messagingTemplate -> Steeltoe.Integration.MessagingTemplate
+readonly Steeltoe.Integration.Support.AbstractMessageBuilder._headerAccessor -> Steeltoe.Integration.IntegrationMessageHeaderAccessor
+readonly Steeltoe.Integration.Support.AbstractMessageBuilder._originalMessage -> Steeltoe.Messaging.IMessage
+readonly Steeltoe.Integration.Support.AbstractMessageBuilder._payload -> object
+readonly Steeltoe.Integration.Support.MutableMessage._headers -> Steeltoe.Integration.Support.MutableMessageHeaders
+readonly Steeltoe.Integration.Support.MutableMessage._payload -> object
+static Steeltoe.Integration.Acks.AckUtils.Accept(Steeltoe.Integration.Acks.IAcknowledgmentCallback ackCallback) -> void
+static Steeltoe.Integration.Acks.AckUtils.AutoAck(Steeltoe.Integration.Acks.IAcknowledgmentCallback ackCallback) -> void
+static Steeltoe.Integration.Acks.AckUtils.AutoNack(Steeltoe.Integration.Acks.IAcknowledgmentCallback ackCallback) -> void
+static Steeltoe.Integration.Acks.AckUtils.Reject(Steeltoe.Integration.Acks.IAcknowledgmentCallback ackCallback) -> void
+static Steeltoe.Integration.Acks.AckUtils.Requeue(Steeltoe.Integration.Acks.IAcknowledgmentCallback ackCallback) -> void
+static Steeltoe.Integration.Expression.ExpressionEvalDictionary.From(System.Collections.Generic.IDictionary<string, Steeltoe.Common.Expression.Internal.IExpression> expressions) -> Steeltoe.Integration.Expression.ExpressionEvalDictionary.ExpressionEvalDictionaryBuilder
+static Steeltoe.Integration.Extensions.IntegrationServicesExtensions.AddDirectChannel(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, string channelName) -> Microsoft.Extensions.DependencyInjection.IServiceCollection
+static Steeltoe.Integration.Extensions.IntegrationServicesExtensions.AddDirectChannel(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, string channelName, System.Action<System.IServiceProvider, Steeltoe.Integration.Channel.DirectChannel> configure) -> Microsoft.Extensions.DependencyInjection.IServiceCollection
+static Steeltoe.Integration.Extensions.IntegrationServicesExtensions.AddErrorChannel(this Microsoft.Extensions.DependencyInjection.IServiceCollection services) -> Microsoft.Extensions.DependencyInjection.IServiceCollection
+static Steeltoe.Integration.Extensions.IntegrationServicesExtensions.AddIntegrationServices(this Microsoft.Extensions.DependencyInjection.IServiceCollection services) -> Microsoft.Extensions.DependencyInjection.IServiceCollection
+static Steeltoe.Integration.Extensions.IntegrationServicesExtensions.AddLoggingEndpoint(this Microsoft.Extensions.DependencyInjection.IServiceCollection services) -> Microsoft.Extensions.DependencyInjection.IServiceCollection
+static Steeltoe.Integration.Extensions.IntegrationServicesExtensions.AddNullChannel(this Microsoft.Extensions.DependencyInjection.IServiceCollection services) -> Microsoft.Extensions.DependencyInjection.IServiceCollection
+static Steeltoe.Integration.Extensions.IntegrationServicesExtensions.AddQueueChannel(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, string channelName) -> Microsoft.Extensions.DependencyInjection.IServiceCollection
+static Steeltoe.Integration.Extensions.IntegrationServicesExtensions.AddQueueChannel(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, string channelName, System.Action<System.IServiceProvider, Steeltoe.Integration.Channel.QueueChannel> configure) -> Microsoft.Extensions.DependencyInjection.IServiceCollection
+static Steeltoe.Integration.Extensions.IntegrationServicesExtensions.AddServiceActivator(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, System.Reflection.MethodInfo method, System.Type targetClass) -> Microsoft.Extensions.DependencyInjection.IServiceCollection
+static Steeltoe.Integration.Extensions.IntegrationServicesExtensions.AddServiceActivators(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, params System.Type[] targetClasses) -> Microsoft.Extensions.DependencyInjection.IServiceCollection
+static Steeltoe.Integration.Extensions.IntegrationServicesExtensions.AddServiceActivators(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, System.Type targetClass) -> Microsoft.Extensions.DependencyInjection.IServiceCollection
+static Steeltoe.Integration.Extensions.IntegrationServicesExtensions.AddServiceActivators<T>(this Microsoft.Extensions.DependencyInjection.IServiceCollection services) -> Microsoft.Extensions.DependencyInjection.IServiceCollection
+static Steeltoe.Integration.StaticMessageHeaderAccessor.GetAcknowledgmentCallback(Steeltoe.Messaging.IMessage message) -> Steeltoe.Integration.Acks.IAcknowledgmentCallback
+static Steeltoe.Integration.StaticMessageHeaderAccessor.GetContentType(Steeltoe.Messaging.IMessage message) -> Steeltoe.Common.Util.MimeType
+static Steeltoe.Integration.StaticMessageHeaderAccessor.GetExpirationDate(Steeltoe.Messaging.IMessage message) -> long?
+static Steeltoe.Integration.StaticMessageHeaderAccessor.GetId(Steeltoe.Messaging.IMessage message) -> System.Guid?
+static Steeltoe.Integration.StaticMessageHeaderAccessor.GetPriority(Steeltoe.Messaging.IMessage message) -> int?
+static Steeltoe.Integration.StaticMessageHeaderAccessor.GetSequenceNumber(Steeltoe.Messaging.IMessage message) -> int?
+static Steeltoe.Integration.StaticMessageHeaderAccessor.GetSequenceSize(Steeltoe.Messaging.IMessage message) -> int?
+static Steeltoe.Integration.StaticMessageHeaderAccessor.GetTimestamp(Steeltoe.Messaging.IMessage message) -> long?
+static Steeltoe.Integration.Support.ErrorMessageUtils.GetAttributeAccessor(Steeltoe.Messaging.IMessage inputMessage, Steeltoe.Messaging.IMessage failedMessage) -> Steeltoe.Common.Util.IAttributeAccessor
+static Steeltoe.Integration.Support.IntegrationMessageBuilder.FromMessage(Steeltoe.Messaging.IMessage message) -> Steeltoe.Integration.Support.IntegrationMessageBuilder
+static Steeltoe.Integration.Support.IntegrationMessageBuilder.WithPayload(object payload) -> Steeltoe.Integration.Support.IntegrationMessageBuilder
+static Steeltoe.Integration.Support.IntegrationMessageBuilder<T>.FromMessage(Steeltoe.Messaging.IMessage<T> message) -> Steeltoe.Integration.Support.IntegrationMessageBuilder<T>
+static Steeltoe.Integration.Support.IntegrationMessageBuilder<T>.WithPayload(T payload) -> Steeltoe.Integration.Support.IntegrationMessageBuilder<T>
+static Steeltoe.Integration.Support.IntegrationUtils.WrapInDeliveryExceptionIfNecessary(Steeltoe.Messaging.IMessage message, string text, System.Exception e) -> System.Exception
+static Steeltoe.Integration.Support.IntegrationUtils.WrapInHandlingExceptionIfNecessary(Steeltoe.Messaging.IMessage message, string text, System.Exception e) -> System.Exception
+static Steeltoe.Integration.Support.MutableIntegrationMessageBuilder.FromMessage(Steeltoe.Messaging.IMessage message) -> Steeltoe.Integration.Support.MutableIntegrationMessageBuilder
+static Steeltoe.Integration.Support.MutableIntegrationMessageBuilder.WithPayload(object payload) -> Steeltoe.Integration.Support.MutableIntegrationMessageBuilder
+static Steeltoe.Integration.Support.MutableIntegrationMessageBuilder.WithPayload(object payload, bool generateHeaders) -> Steeltoe.Integration.Support.MutableIntegrationMessageBuilder
+static Steeltoe.Integration.Support.MutableIntegrationMessageBuilder<T>.FromMessage(Steeltoe.Messaging.IMessage<T> message) -> Steeltoe.Integration.Support.MutableIntegrationMessageBuilder<T>
+static Steeltoe.Integration.Support.MutableIntegrationMessageBuilder<T>.WithPayload(T payload) -> Steeltoe.Integration.Support.MutableIntegrationMessageBuilder<T>
+static Steeltoe.Integration.Support.MutableIntegrationMessageBuilder<T>.WithPayload(T payload, bool generateHeaders) -> Steeltoe.Integration.Support.MutableIntegrationMessageBuilder<T>
+static Steeltoe.Integration.Util.AbstractExpressionEvaluator.ExpressionParser.get -> Steeltoe.Common.Expression.Internal.IExpressionParser
+static Steeltoe.Integration.Util.IntegrationContextUtils.GetErrorChannel(Steeltoe.Common.Contexts.IApplicationContext context) -> Steeltoe.Messaging.IMessageChannel
+static Steeltoe.Integration.Util.IntegrationContextUtils.GetEvaluationContext(Steeltoe.Common.Contexts.IApplicationContext context) -> Steeltoe.Common.Expression.Internal.IEvaluationContext
+static Steeltoe.Integration.Util.IntegrationContextUtils.GetExpressionParser(Steeltoe.Common.Contexts.IApplicationContext context) -> Steeltoe.Common.Expression.Internal.IExpressionParser
+static Steeltoe.Integration.Util.IntegrationContextUtils.GetNullChannel(Steeltoe.Common.Contexts.IApplicationContext context) -> Steeltoe.Messaging.IMessageChannel
+static Steeltoe.Integration.Util.IntegrationContextUtils.GetSimpleEvaluationContext(Steeltoe.Common.Contexts.IApplicationContext context) -> Steeltoe.Common.Expression.Internal.IEvaluationContext
+static Steeltoe.Integration.Util.IntegrationServicesUtils.ExtractTypeIfPossible<T>(object targetObject) -> T
+static Steeltoe.Integration.Util.IntegrationServicesUtils.GetIntegrationServices(Steeltoe.Common.Contexts.IApplicationContext context) -> Steeltoe.Integration.IIntegrationServices
+static Steeltoe.Integration.Util.IntegrationServicesUtils.WrapInHandlingExceptionIfNecessary(Steeltoe.Messaging.IMessage message, string text, System.Exception ex) -> System.Exception
+static Steeltoe.Integration.Util.MessagingAttributeUtils.EndpointIdValue(System.Reflection.MethodInfo method) -> string
+static Steeltoe.Integration.Util.MessagingAttributeUtils.HasValue(object value) -> bool
+static Steeltoe.Integration.Util.MessagingAttributeUtils.ResolveAttribute<T>(System.Collections.Generic.List<System.Attribute> attributes, string name) -> T
+Steeltoe.Integration.AbstractMessageProducer
+Steeltoe.Integration.AbstractMessageProducer.AbstractMessageProducer() -> void
+Steeltoe.Integration.AbstractMessageProducer.OutputChannelName.get -> string
+Steeltoe.Integration.AbstractMessageProducer.OutputChannelName.set -> void
+Steeltoe.Integration.Acks.AbstractAcknowledgmentCallback
+Steeltoe.Integration.Acks.AbstractAcknowledgmentCallback.AbstractAcknowledgmentCallback() -> void
+Steeltoe.Integration.Acks.AckUtils
+Steeltoe.Integration.Attributes.EndpointIdAttribute
+Steeltoe.Integration.Attributes.EndpointIdAttribute.EndpointIdAttribute() -> void
+Steeltoe.Integration.Attributes.EndpointIdAttribute.EndpointIdAttribute(string id) -> void
+Steeltoe.Integration.Attributes.EndpointIdAttribute.Id.get -> string
+Steeltoe.Integration.Attributes.PayloadsAttribute
+Steeltoe.Integration.Attributes.PayloadsAttribute.PayloadsAttribute() -> void
+Steeltoe.Integration.Attributes.PayloadsAttribute.PayloadsAttribute(string expression) -> void
+Steeltoe.Integration.Attributes.ServiceActivatorAttribute
+Steeltoe.Integration.Attributes.ServiceActivatorAttribute.AutoStartup.get -> string
+Steeltoe.Integration.Attributes.ServiceActivatorAttribute.AutoStartup.set -> void
+Steeltoe.Integration.Attributes.ServiceActivatorAttribute.InputChannel.get -> string
+Steeltoe.Integration.Attributes.ServiceActivatorAttribute.InputChannel.set -> void
+Steeltoe.Integration.Attributes.ServiceActivatorAttribute.OutputChannel.get -> string
+Steeltoe.Integration.Attributes.ServiceActivatorAttribute.OutputChannel.set -> void
+Steeltoe.Integration.Attributes.ServiceActivatorAttribute.Phase.get -> string
+Steeltoe.Integration.Attributes.ServiceActivatorAttribute.Phase.set -> void
+Steeltoe.Integration.Attributes.ServiceActivatorAttribute.RequiresReply.get -> string
+Steeltoe.Integration.Attributes.ServiceActivatorAttribute.RequiresReply.set -> void
+Steeltoe.Integration.Attributes.ServiceActivatorAttribute.SendTimeout.get -> string
+Steeltoe.Integration.Attributes.ServiceActivatorAttribute.SendTimeout.set -> void
+Steeltoe.Integration.Attributes.ServiceActivatorAttribute.ServiceActivatorAttribute() -> void
+Steeltoe.Integration.Attributes.ServiceActivatorAttribute.ServiceActivatorAttribute(string inputChannel) -> void
+Steeltoe.Integration.Attributes.ServiceActivatorAttribute.ServiceActivatorAttribute(string inputChannel, string outputChannel) -> void
+Steeltoe.Integration.Attributes.ServiceActivatorAttribute.ServiceActivatorAttribute(string inputChannel, string outputChannel, bool requiresReply) -> void
+Steeltoe.Integration.Attributes.ServiceActivatorAttribute.ServiceActivatorAttribute(string inputChannel, string outputChannel, bool requiresReply, int sendTimeout) -> void
+Steeltoe.Integration.Attributes.ServiceActivatorAttribute.ServiceActivatorAttribute(string inputChannel, string outputChannel, bool requiresReply, int sendTimeout, bool autoStartup) -> void
+Steeltoe.Integration.Attributes.ServiceActivatorAttribute.ServiceActivatorAttribute(string inputChannel, string outputChannel, bool requiresReply, int sendTimeout, bool autoStartup, int phase) -> void
+Steeltoe.Integration.Channel.AbstractMessageChannel
+Steeltoe.Integration.Channel.AbstractMessageChannel.AbstractMessageChannel(Steeltoe.Common.Contexts.IApplicationContext context, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Channel.AbstractMessageChannel.AbstractMessageChannel(Steeltoe.Common.Contexts.IApplicationContext context, string name, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Channel.AbstractMessageChannel.ApplicationContext.get -> Steeltoe.Common.Contexts.IApplicationContext
+Steeltoe.Integration.Channel.AbstractMessageChannel.DoSend(Steeltoe.Messaging.IMessage message, System.Threading.CancellationToken cancellationToken) -> bool
+Steeltoe.Integration.Channel.AbstractMessageChannel.IntegrationServices.get -> Steeltoe.Integration.IIntegrationServices
+Steeltoe.Integration.Channel.AbstractMessageChannel.logger -> Microsoft.Extensions.Logging.ILogger
+Steeltoe.Integration.Channel.AbstractMessageChannel.SendAsync(Steeltoe.Messaging.IMessage message, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> System.Threading.Tasks.ValueTask<bool>
+Steeltoe.Integration.Channel.AbstractMessageChannelWriter
+Steeltoe.Integration.Channel.AbstractMessageChannelWriter.AbstractMessageChannelWriter(Steeltoe.Integration.Channel.AbstractMessageChannel channel, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Channel.AbstractMessageChannelWriter.channel -> Steeltoe.Integration.Channel.AbstractMessageChannel
+Steeltoe.Integration.Channel.AbstractMessageChannelWriter.logger -> Microsoft.Extensions.Logging.ILogger
+Steeltoe.Integration.Channel.AbstractPollableChannel
+Steeltoe.Integration.Channel.AbstractPollableChannel.AbstractPollableChannel(Steeltoe.Common.Contexts.IApplicationContext context, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Channel.AbstractPollableChannel.AbstractPollableChannel(Steeltoe.Common.Contexts.IApplicationContext context, string name, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Channel.AbstractPollableChannel.TaskSchedulerInterceptorsSize.get -> int
+Steeltoe.Integration.Channel.AbstractSubscribableChannel
+Steeltoe.Integration.Channel.AbstractSubscribableChannel.AbstractSubscribableChannel(Steeltoe.Common.Contexts.IApplicationContext context, Steeltoe.Integration.Dispatcher.IMessageDispatcher dispatcher, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Channel.AbstractSubscribableChannel.AbstractSubscribableChannel(Steeltoe.Common.Contexts.IApplicationContext context, Steeltoe.Integration.Dispatcher.IMessageDispatcher dispatcher, string name, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Channel.AbstractSubscribableChannel.Dispatcher.get -> Steeltoe.Integration.Dispatcher.IMessageDispatcher
+Steeltoe.Integration.Channel.AbstractSubscribableChannelWriter
+Steeltoe.Integration.Channel.AbstractSubscribableChannelWriter.AbstractSubscribableChannelWriter(Steeltoe.Integration.Channel.AbstractSubscribableChannel channel, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Channel.AbstractTaskSchedulerChannel
+Steeltoe.Integration.Channel.AbstractTaskSchedulerChannel.AbstractTaskSchedulerChannel(Steeltoe.Common.Contexts.IApplicationContext context, Steeltoe.Integration.Dispatcher.IMessageDispatcher dispatcher, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Channel.AbstractTaskSchedulerChannel.AbstractTaskSchedulerChannel(Steeltoe.Common.Contexts.IApplicationContext context, Steeltoe.Integration.Dispatcher.IMessageDispatcher dispatcher, System.Threading.Tasks.TaskScheduler executor, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Channel.AbstractTaskSchedulerChannel.AbstractTaskSchedulerChannel(Steeltoe.Common.Contexts.IApplicationContext context, Steeltoe.Integration.Dispatcher.IMessageDispatcher dispatcher, System.Threading.Tasks.TaskScheduler executor, string name, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Channel.AbstractTaskSchedulerChannel.MessageHandlingDecorator
+Steeltoe.Integration.Channel.AbstractTaskSchedulerChannel.MessageHandlingDecorator.Decorate(Steeltoe.Messaging.Support.IMessageHandlingRunnable messageHandlingRunnable) -> Steeltoe.Messaging.Support.IMessageHandlingRunnable
+Steeltoe.Integration.Channel.AbstractTaskSchedulerChannel.MessageHandlingDecorator.MessageHandlingDecorator(Steeltoe.Integration.Channel.AbstractTaskSchedulerChannel channel) -> void
+Steeltoe.Integration.Channel.AbstractTaskSchedulerChannel.MessageHandlingTask
+Steeltoe.Integration.Channel.AbstractTaskSchedulerChannel.MessageHandlingTask.Message.get -> Steeltoe.Messaging.IMessage
+Steeltoe.Integration.Channel.AbstractTaskSchedulerChannel.MessageHandlingTask.MessageHandler.get -> Steeltoe.Messaging.IMessageHandler
+Steeltoe.Integration.Channel.AbstractTaskSchedulerChannel.MessageHandlingTask.MessageHandlingTask(Steeltoe.Integration.Channel.AbstractTaskSchedulerChannel channel, Steeltoe.Messaging.Support.IMessageHandlingRunnable task, Microsoft.Extensions.Logging.ILogger logger) -> void
+Steeltoe.Integration.Channel.AbstractTaskSchedulerChannel.MessageHandlingTask.Run() -> bool
+Steeltoe.Integration.Channel.AbstractTaskSchedulerChannel._executor -> System.Threading.Tasks.TaskScheduler
+Steeltoe.Integration.Channel.AbstractTaskSchedulerChannel._taskSchedulerInterceptorsSize -> int
+Steeltoe.Integration.Channel.DirectChannel
+Steeltoe.Integration.Channel.DirectChannel.DirectChannel(Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Channel.DirectChannel.DirectChannel(Steeltoe.Common.Contexts.IApplicationContext context, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Channel.DirectChannel.DirectChannel(Steeltoe.Common.Contexts.IApplicationContext context, Steeltoe.Integration.Dispatcher.ILoadBalancingStrategy loadBalancingStrategy, string name, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Channel.DirectChannel.DirectChannel(Steeltoe.Common.Contexts.IApplicationContext context, string name, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Channel.DirectChannelWriter
+Steeltoe.Integration.Channel.DirectChannelWriter.Channel.get -> Steeltoe.Integration.Channel.DirectChannel
+Steeltoe.Integration.Channel.DirectChannelWriter.DirectChannelWriter(Steeltoe.Integration.Channel.DirectChannel channel, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Channel.MessagePublishingErrorHandler
+Steeltoe.Integration.Channel.MessagePublishingErrorHandler.DefaultErrorChannel.get -> Steeltoe.Messaging.IMessageChannel
+Steeltoe.Integration.Channel.MessagePublishingErrorHandler.DefaultErrorChannel.set -> void
+Steeltoe.Integration.Channel.MessagePublishingErrorHandler.DefaultErrorChannelName.get -> string
+Steeltoe.Integration.Channel.MessagePublishingErrorHandler.DefaultErrorChannelName.set -> void
+Steeltoe.Integration.Channel.MessagePublishingErrorHandler.HandleError(System.Exception exception) -> bool
+Steeltoe.Integration.Channel.MessagePublishingErrorHandler.MessagePublishingErrorHandler(Steeltoe.Common.Contexts.IApplicationContext context, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Channel.MessagePublishingErrorHandler.ServiceName.get -> string
+Steeltoe.Integration.Channel.MessagePublishingErrorHandler.ServiceName.set -> void
+Steeltoe.Integration.Channel.NullChannel
+Steeltoe.Integration.Channel.NullChannel.NullChannel(Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Channel.NullChannel.Receive() -> Steeltoe.Messaging.IMessage
+Steeltoe.Integration.Channel.NullChannel.Receive(int timeout) -> Steeltoe.Messaging.IMessage
+Steeltoe.Integration.Channel.NullChannel.ReceiveAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> System.Threading.Tasks.ValueTask<Steeltoe.Messaging.IMessage>
+Steeltoe.Integration.Channel.NullChannel.Send(Steeltoe.Messaging.IMessage message) -> bool
+Steeltoe.Integration.Channel.NullChannel.Send(Steeltoe.Messaging.IMessage message, int timeout) -> bool
+Steeltoe.Integration.Channel.NullChannel.SendAsync(Steeltoe.Messaging.IMessage message, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> System.Threading.Tasks.ValueTask<bool>
+Steeltoe.Integration.Channel.NullChannel.ServiceName.get -> string
+Steeltoe.Integration.Channel.NullChannel.ServiceName.set -> void
+Steeltoe.Integration.Channel.PublishSubscribeChannel
+Steeltoe.Integration.Channel.PublishSubscribeChannel.BroadcastingDispatcher.get -> Steeltoe.Integration.Dispatcher.BroadcastingDispatcher
+Steeltoe.Integration.Channel.PublishSubscribeChannel.PublishSubscribeChannel(Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Channel.PublishSubscribeChannel.PublishSubscribeChannel(Steeltoe.Common.Contexts.IApplicationContext context, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Channel.PublishSubscribeChannel.PublishSubscribeChannel(Steeltoe.Common.Contexts.IApplicationContext context, string name, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Channel.PublishSubscribeChannel.PublishSubscribeChannel(Steeltoe.Common.Contexts.IApplicationContext context, System.Threading.Tasks.TaskScheduler executor, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Channel.PublishSubscribeChannel.PublishSubscribeChannel(Steeltoe.Common.Contexts.IApplicationContext context, System.Threading.Tasks.TaskScheduler executor, string name, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Channel.PublishSubscribeChannelWriter
+Steeltoe.Integration.Channel.PublishSubscribeChannelWriter.Channel.get -> Steeltoe.Integration.Channel.PublishSubscribeChannel
+Steeltoe.Integration.Channel.PublishSubscribeChannelWriter.PublishSubscribeChannelWriter(Steeltoe.Integration.Channel.PublishSubscribeChannel channel, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Channel.QueueChannel
+Steeltoe.Integration.Channel.QueueChannel.Clear() -> System.Collections.Generic.IList<Steeltoe.Messaging.IMessage>
+Steeltoe.Integration.Channel.QueueChannel.Purge(Steeltoe.Integration.IMessageSelector messageSelector) -> System.Collections.Generic.IList<Steeltoe.Messaging.IMessage>
+Steeltoe.Integration.Channel.QueueChannel.QueueChannel(Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Channel.QueueChannel.QueueChannel(Steeltoe.Common.Contexts.IApplicationContext context, int capacity, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Channel.QueueChannel.QueueChannel(Steeltoe.Common.Contexts.IApplicationContext context, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Channel.QueueChannel.QueueChannel(Steeltoe.Common.Contexts.IApplicationContext context, string name, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Channel.QueueChannel.QueueChannel(Steeltoe.Common.Contexts.IApplicationContext context, System.Threading.Channels.Channel<Steeltoe.Messaging.IMessage> channel, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Channel.QueueChannel.QueueChannel(Steeltoe.Common.Contexts.IApplicationContext context, System.Threading.Channels.Channel<Steeltoe.Messaging.IMessage> channel, string name, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Channel.QueueChannel.QueueSize.get -> int
+Steeltoe.Integration.Channel.QueueChannel.RemainingCapacity.get -> int
+Steeltoe.Integration.Channel.QueueChannelReader
+Steeltoe.Integration.Channel.QueueChannelReader.Channel.get -> Steeltoe.Integration.Channel.QueueChannel
+Steeltoe.Integration.Channel.QueueChannelReader.QueueChannelReader(Steeltoe.Integration.Channel.QueueChannel channel, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Channel.QueueChannelWriter
+Steeltoe.Integration.Channel.QueueChannelWriter.QueueChannelWriter(Steeltoe.Integration.Channel.AbstractPollableChannel channel, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Channel.TaskSchedulerChannel
+Steeltoe.Integration.Channel.TaskSchedulerChannel.TaskSchedulerChannel(Steeltoe.Common.Contexts.IApplicationContext context, System.Threading.Tasks.TaskScheduler executor, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Channel.TaskSchedulerChannel.TaskSchedulerChannel(Steeltoe.Common.Contexts.IApplicationContext context, System.Threading.Tasks.TaskScheduler executor, Steeltoe.Integration.Dispatcher.ILoadBalancingStrategy loadBalancingStrategy, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Channel.TaskSchedulerChannel.TaskSchedulerChannel(Steeltoe.Common.Contexts.IApplicationContext context, System.Threading.Tasks.TaskScheduler executor, Steeltoe.Integration.Dispatcher.ILoadBalancingStrategy loadBalancingStrategy, string name, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Channel.TaskSchedulerChannel.UnicastingDispatcher.get -> Steeltoe.Integration.Dispatcher.UnicastingDispatcher
+Steeltoe.Integration.Channel.TaskSchedulerChannelWriter
+Steeltoe.Integration.Channel.TaskSchedulerChannelWriter.Channel.get -> Steeltoe.Integration.Channel.TaskSchedulerChannel
+Steeltoe.Integration.Channel.TaskSchedulerChannelWriter.TaskSchedulerChannelWriter(Steeltoe.Integration.Channel.TaskSchedulerChannel channel, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Config.AbstractMethodAttributeProcessor<A>
+Steeltoe.Integration.Config.AbstractMethodAttributeProcessor<A>.AbstractMethodAttributeProcessor(Steeltoe.Common.Contexts.IApplicationContext applicatonContext, Microsoft.Extensions.Logging.ILogger logger) -> void
+Steeltoe.Integration.Config.AbstractMethodAttributeProcessor<A>.ApplicationContext.get -> Steeltoe.Common.Contexts.IApplicationContext
+Steeltoe.Integration.Config.AbstractMethodAttributeProcessor<A>.CheckMessageHandlerAttributes(string handlerServiceName, System.Collections.Generic.List<System.Attribute> annotations) -> void
+Steeltoe.Integration.Config.AbstractMethodAttributeProcessor<A>.PostProcess(object service, string serviceName, System.Reflection.MethodInfo method, System.Collections.Generic.List<System.Attribute> attributes) -> object
+Steeltoe.Integration.Config.IServiceActivatorMethod
+Steeltoe.Integration.Config.IServiceActivatorMethod.Attribute.get -> Steeltoe.Integration.Attributes.ServiceActivatorAttribute
+Steeltoe.Integration.Config.IServiceActivatorMethod.ImplementationType.get -> System.Type
+Steeltoe.Integration.Config.IServiceActivatorMethod.Method.get -> System.Reflection.MethodInfo
+Steeltoe.Integration.Config.ServiceActivatorAttributeProcessor
+Steeltoe.Integration.Config.ServiceActivatorAttributeProcessor.Initialize() -> void
+Steeltoe.Integration.Config.ServiceActivatorAttributeProcessor.ServiceActivatorAttributeProcessor(Steeltoe.Common.Contexts.IApplicationContext applicationContext, System.Collections.Generic.IEnumerable<Steeltoe.Integration.Config.IServiceActivatorMethod> methods, Microsoft.Extensions.Logging.ILogger<Steeltoe.Integration.Config.ServiceActivatorAttributeProcessor> logger) -> void
+Steeltoe.Integration.Config.ServiceActivatorMethod
+Steeltoe.Integration.Config.ServiceActivatorMethod.Attribute.get -> Steeltoe.Integration.Attributes.ServiceActivatorAttribute
+Steeltoe.Integration.Config.ServiceActivatorMethod.ImplementationType.get -> System.Type
+Steeltoe.Integration.Config.ServiceActivatorMethod.Method.get -> System.Reflection.MethodInfo
+Steeltoe.Integration.Config.ServiceActivatorMethod.ServiceActivatorMethod(System.Reflection.MethodInfo method, System.Type targetClass, Steeltoe.Integration.Attributes.ServiceActivatorAttribute attribute) -> void
+Steeltoe.Integration.Dispatcher.AbstractDispatcher
+Steeltoe.Integration.Dispatcher.AbstractDispatcher.AbstractDispatcher(Steeltoe.Common.Contexts.IApplicationContext context, System.Threading.Tasks.TaskScheduler executor, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Dispatcher.AbstractDispatcher._handlers -> System.Collections.Generic.List<Steeltoe.Messaging.IMessageHandler>
+Steeltoe.Integration.Dispatcher.AggregateMessageDeliveryException
+Steeltoe.Integration.Dispatcher.AggregateMessageDeliveryException.AggregatedExceptions.get -> System.Collections.Generic.List<System.Exception>
+Steeltoe.Integration.Dispatcher.AggregateMessageDeliveryException.AggregateMessageDeliveryException(Steeltoe.Messaging.IMessage undeliveredMessage, string description, System.Collections.Generic.List<System.Exception> aggregatedExceptions) -> void
+Steeltoe.Integration.Dispatcher.BroadcastingDispatcher
+Steeltoe.Integration.Dispatcher.BroadcastingDispatcher.BroadcastingDispatcher(Steeltoe.Common.Contexts.IApplicationContext context, bool requireSubscribers, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Dispatcher.BroadcastingDispatcher.BroadcastingDispatcher(Steeltoe.Common.Contexts.IApplicationContext context, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Dispatcher.BroadcastingDispatcher.BroadcastingDispatcher(Steeltoe.Common.Contexts.IApplicationContext context, System.Threading.Tasks.TaskScheduler executor, bool requireSubscribers, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Dispatcher.BroadcastingDispatcher.BroadcastingDispatcher(Steeltoe.Common.Contexts.IApplicationContext context, System.Threading.Tasks.TaskScheduler executor, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Dispatcher.BroadcastingDispatcher.InvokeHandler(Steeltoe.Messaging.IMessageHandler handler, Steeltoe.Messaging.IMessage message) -> void
+Steeltoe.Integration.Dispatcher.RoundRobinLoadBalancingStrategy
+Steeltoe.Integration.Dispatcher.RoundRobinLoadBalancingStrategy.GetNextHandlerStartIndex(Steeltoe.Messaging.IMessage message, System.Collections.Generic.List<Steeltoe.Messaging.IMessageHandler> handlers) -> int
+Steeltoe.Integration.Dispatcher.RoundRobinLoadBalancingStrategy.RoundRobinLoadBalancingStrategy() -> void
+Steeltoe.Integration.Dispatcher.UnicastingDispatcher
+Steeltoe.Integration.Dispatcher.UnicastingDispatcher.UnicastingDispatcher(Steeltoe.Common.Contexts.IApplicationContext context, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Dispatcher.UnicastingDispatcher.UnicastingDispatcher(Steeltoe.Common.Contexts.IApplicationContext context, System.Threading.Tasks.TaskScheduler executor, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Endpoint.AbstractEndpoint
+Steeltoe.Integration.Endpoint.AbstractEndpoint.AbstractEndpoint(Steeltoe.Common.Contexts.IApplicationContext context) -> void
+Steeltoe.Integration.Endpoint.AbstractEndpoint.ApplicationContext.get -> Steeltoe.Common.Contexts.IApplicationContext
+Steeltoe.Integration.Endpoint.AbstractEndpoint.IntegrationServices.get -> Steeltoe.Integration.IIntegrationServices
+Steeltoe.Integration.Endpoint.AbstractEndpoint.IsAutoStartup.get -> bool
+Steeltoe.Integration.Endpoint.AbstractEndpoint.IsAutoStartup.set -> void
+Steeltoe.Integration.Endpoint.AbstractEndpoint.IsRunning.get -> bool
+Steeltoe.Integration.Endpoint.AbstractEndpoint.IsRunning.set -> void
+Steeltoe.Integration.Endpoint.AbstractEndpoint.Phase.get -> int
+Steeltoe.Integration.Endpoint.AbstractEndpoint.Phase.set -> void
+Steeltoe.Integration.Endpoint.AbstractEndpoint.Start() -> System.Threading.Tasks.Task
+Steeltoe.Integration.Endpoint.AbstractEndpoint.Stop() -> System.Threading.Tasks.Task
+Steeltoe.Integration.Endpoint.AbstractEndpoint.Stop(System.Action callback) -> System.Threading.Tasks.Task
+Steeltoe.Integration.Endpoint.AbstractMessageSource<T>
+Steeltoe.Integration.Endpoint.AbstractMessageSource<T>.AbstractMessageSource(Steeltoe.Common.Contexts.IApplicationContext context) -> void
+Steeltoe.Integration.Endpoint.AbstractMessageSource<T>.HeaderExpressions.get -> System.Collections.Generic.Dictionary<string, Steeltoe.Common.Expression.Internal.IExpression>
+Steeltoe.Integration.Endpoint.AbstractMessageSource<T>.HeaderExpressions.set -> void
+Steeltoe.Integration.Endpoint.AbstractMessageSource<T>.Receive() -> Steeltoe.Messaging.IMessage<T>
+Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint
+Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.EventDrivenConsumerEndpoint(Steeltoe.Common.Contexts.IApplicationContext context, Steeltoe.Messaging.ISubscribableChannel inputChannel, Steeltoe.Messaging.IMessageHandler handler) -> void
+Steeltoe.Integration.Endpoint.MessageProducerSupportEndpoint
+Steeltoe.Integration.Endpoint.MessageProducerSupportEndpoint.BuildErrorMessage(Steeltoe.Messaging.IMessage message, System.Exception exception) -> Steeltoe.Messaging.Support.ErrorMessage
+Steeltoe.Integration.Endpoint.MessageProducerSupportEndpoint.MessageProducerSupportEndpoint(Steeltoe.Common.Contexts.IApplicationContext context, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Endpoint.MessageProducerSupportEndpoint.SendErrorMessageIfNecessary(Steeltoe.Messaging.IMessage message, System.Exception exception) -> bool
+Steeltoe.Integration.Endpoint.MessageProducerSupportEndpoint._lock -> object
+Steeltoe.Integration.ErrorMessagePublisher
+Steeltoe.Integration.ErrorMessagePublisher.ErrorMessagePublisher(Steeltoe.Common.Contexts.IApplicationContext context, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.ErrorMessagePublisher.IntegrationServices.get -> Steeltoe.Integration.IIntegrationServices
+Steeltoe.Integration.ErrorMessageSendingRecoverer
+Steeltoe.Integration.ErrorMessageSendingRecoverer.ErrorMessageSendingRecoverer(Steeltoe.Common.Contexts.IApplicationContext context) -> void
+Steeltoe.Integration.ErrorMessageSendingRecoverer.ErrorMessageSendingRecoverer(Steeltoe.Common.Contexts.IApplicationContext context, Steeltoe.Messaging.IMessageChannel channel) -> void
+Steeltoe.Integration.ErrorMessageSendingRecoverer.ErrorMessageSendingRecoverer(Steeltoe.Common.Contexts.IApplicationContext context, Steeltoe.Messaging.IMessageChannel channel, Steeltoe.Integration.Support.IErrorMessageStrategy errorMessageStrategy) -> void
+Steeltoe.Integration.ErrorMessageSendingRecoverer.Recover(Steeltoe.Common.Retry.IRetryContext context) -> object
+Steeltoe.Integration.Expression.ExpressionEvalDictionary
+Steeltoe.Integration.Expression.ExpressionEvalDictionary.Add(string key, object value) -> void
+Steeltoe.Integration.Expression.ExpressionEvalDictionary.Add(System.Collections.Generic.KeyValuePair<string, object> item) -> void
+Steeltoe.Integration.Expression.ExpressionEvalDictionary.Clear() -> void
+Steeltoe.Integration.Expression.ExpressionEvalDictionary.ComponentsEvaluationCallback
+Steeltoe.Integration.Expression.ExpressionEvalDictionary.ComponentsEvaluationCallback.ComponentsEvaluationCallback(Steeltoe.Common.Expression.Internal.IEvaluationContext context, object root, bool rootExplicitlySet, System.Type returnType) -> void
+Steeltoe.Integration.Expression.ExpressionEvalDictionary.ComponentsEvaluationCallback.Evaluate(Steeltoe.Common.Expression.Internal.IExpression expression) -> object
+Steeltoe.Integration.Expression.ExpressionEvalDictionary.Contains(System.Collections.Generic.KeyValuePair<string, object> item) -> bool
+Steeltoe.Integration.Expression.ExpressionEvalDictionary.ContainsKey(string key) -> bool
+Steeltoe.Integration.Expression.ExpressionEvalDictionary.CopyTo(System.Collections.Generic.KeyValuePair<string, object>[] array, int arrayIndex) -> void
+Steeltoe.Integration.Expression.ExpressionEvalDictionary.Count.get -> int
+Steeltoe.Integration.Expression.ExpressionEvalDictionary.ExpressionEvalDictionaryBuilder
+Steeltoe.Integration.Expression.ExpressionEvalDictionary.ExpressionEvalDictionaryBuilder.ExpressionEvalDictionaryBuilder(System.Collections.Generic.IDictionary<string, Steeltoe.Common.Expression.Internal.IExpression> expressions) -> void
+Steeltoe.Integration.Expression.ExpressionEvalDictionary.ExpressionEvalDictionaryBuilder.UsingCallback(Steeltoe.Integration.Expression.IEvaluationCallback callback) -> Steeltoe.Integration.Expression.IExpressionEvalMapFinalBuilder
+Steeltoe.Integration.Expression.ExpressionEvalDictionary.ExpressionEvalDictionaryBuilder.UsingEvaluationContext(Steeltoe.Common.Expression.Internal.IEvaluationContext context) -> Steeltoe.Integration.Expression.IExpressionEvalMapComponentsBuilder
+Steeltoe.Integration.Expression.ExpressionEvalDictionary.ExpressionEvalDictionaryBuilder.UsingSimpleCallback() -> Steeltoe.Integration.Expression.IExpressionEvalMapFinalBuilder
+Steeltoe.Integration.Expression.ExpressionEvalDictionary.ExpressionEvalDictionaryBuilder.WithReturnType(System.Type returnType) -> Steeltoe.Integration.Expression.IExpressionEvalMapComponentsBuilder
+Steeltoe.Integration.Expression.ExpressionEvalDictionary.ExpressionEvalDictionaryBuilder.WithRoot(object root) -> Steeltoe.Integration.Expression.IExpressionEvalMapComponentsBuilder
+Steeltoe.Integration.Expression.ExpressionEvalDictionary.Get(string key) -> object
+Steeltoe.Integration.Expression.ExpressionEvalDictionary.GetEnumerator() -> System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<string, object>>
+Steeltoe.Integration.Expression.ExpressionEvalDictionary.IsReadOnly.get -> bool
+Steeltoe.Integration.Expression.ExpressionEvalDictionary.Keys.get -> System.Collections.Generic.ICollection<string>
+Steeltoe.Integration.Expression.ExpressionEvalDictionary.Remove(string key) -> bool
+Steeltoe.Integration.Expression.ExpressionEvalDictionary.Remove(System.Collections.Generic.KeyValuePair<string, object> item) -> bool
+Steeltoe.Integration.Expression.ExpressionEvalDictionary.SimpleCallback
+Steeltoe.Integration.Expression.ExpressionEvalDictionary.SimpleCallback.Evaluate(Steeltoe.Common.Expression.Internal.IExpression expression) -> object
+Steeltoe.Integration.Expression.ExpressionEvalDictionary.SimpleCallback.SimpleCallback() -> void
+Steeltoe.Integration.Expression.ExpressionEvalDictionary.this[string key].get -> object
+Steeltoe.Integration.Expression.ExpressionEvalDictionary.this[string key].set -> void
+Steeltoe.Integration.Expression.ExpressionEvalDictionary.TryGetValue(string key, out object value) -> bool
+Steeltoe.Integration.Expression.ExpressionEvalDictionary.Values.get -> System.Collections.Generic.ICollection<object>
+Steeltoe.Integration.Expression.IEvaluationCallback
+Steeltoe.Integration.Expression.IEvaluationCallback.Evaluate(Steeltoe.Common.Expression.Internal.IExpression expression) -> object
+Steeltoe.Integration.Expression.IExpressionEvalMapComponentsBuilder
+Steeltoe.Integration.Expression.IExpressionEvalMapComponentsBuilder.UsingEvaluationContext(Steeltoe.Common.Expression.Internal.IEvaluationContext context) -> Steeltoe.Integration.Expression.IExpressionEvalMapComponentsBuilder
+Steeltoe.Integration.Expression.IExpressionEvalMapComponentsBuilder.WithReturnType(System.Type returnType) -> Steeltoe.Integration.Expression.IExpressionEvalMapComponentsBuilder
+Steeltoe.Integration.Expression.IExpressionEvalMapComponentsBuilder.WithRoot(object root) -> Steeltoe.Integration.Expression.IExpressionEvalMapComponentsBuilder
+Steeltoe.Integration.Expression.IExpressionEvalMapFinalBuilder
+Steeltoe.Integration.Expression.IExpressionEvalMapFinalBuilder.Build() -> Steeltoe.Integration.Expression.ExpressionEvalDictionary
+Steeltoe.Integration.Extensions.IntegrationServicesExtensions
+Steeltoe.Integration.Handler.AbstractMessageHandler
+Steeltoe.Integration.Handler.AbstractMessageHandler.AbstractMessageHandler(Steeltoe.Common.Contexts.IApplicationContext context) -> void
+Steeltoe.Integration.Handler.AbstractMessageHandler.ApplicationContext.get -> Steeltoe.Common.Contexts.IApplicationContext
+Steeltoe.Integration.Handler.AbstractMessageHandler.IntegrationServices.get -> Steeltoe.Integration.IIntegrationServices
+Steeltoe.Integration.Handler.AbstractMessageHandler.Order.get -> int
+Steeltoe.Integration.Handler.AbstractMessageProcessor<T>
+Steeltoe.Integration.Handler.AbstractMessageProcessor<T>.AbstractMessageProcessor(Steeltoe.Common.Contexts.IApplicationContext context) -> void
+Steeltoe.Integration.Handler.AbstractMessageProducingHandler
+Steeltoe.Integration.Handler.AbstractMessageProducingHandler.AbstractMessageProducingHandler(Steeltoe.Common.Contexts.IApplicationContext context) -> void
+Steeltoe.Integration.Handler.AbstractMessageProducingHandler.SendOutputs(object reply, Steeltoe.Messaging.IMessage requestMessage) -> void
+Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler
+Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler.AbstractReplyProducingMessageHandler(Steeltoe.Common.Contexts.IApplicationContext context) -> void
+Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler.RequiresReply.get -> bool
+Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler.RequiresReply.set -> void
+Steeltoe.Integration.Handler.BridgeHandler
+Steeltoe.Integration.Handler.BridgeHandler.BridgeHandler(Steeltoe.Common.Contexts.IApplicationContext context) -> void
+Steeltoe.Integration.Handler.ExpressionEvaluatingMessageProcessor<T>
+Steeltoe.Integration.Handler.ExpressionEvaluatingMessageProcessor<T>.ExpressionEvaluatingMessageProcessor(Steeltoe.Common.Contexts.IApplicationContext context, Steeltoe.Common.Expression.Internal.IExpression expression) -> void
+Steeltoe.Integration.Handler.ExpressionEvaluatingMessageProcessor<T>.ExpressionEvaluatingMessageProcessor(Steeltoe.Common.Contexts.IApplicationContext context, Steeltoe.Common.Expression.Internal.IExpression expression, System.Type expectedType) -> void
+Steeltoe.Integration.Handler.ExpressionEvaluatingMessageProcessor<T>.ExpressionEvaluatingMessageProcessor(Steeltoe.Common.Contexts.IApplicationContext context, string expression) -> void
+Steeltoe.Integration.Handler.ExpressionEvaluatingMessageProcessor<T>.ExpressionEvaluatingMessageProcessor(Steeltoe.Common.Contexts.IApplicationContext context, string expression, System.Type expectedType) -> void
+Steeltoe.Integration.Handler.LoggingHandler
+Steeltoe.Integration.Handler.LoggingHandler.Level.get -> Microsoft.Extensions.Logging.LogLevel
+Steeltoe.Integration.Handler.LoggingHandler.LoggingHandler(Steeltoe.Common.Contexts.IApplicationContext context, Microsoft.Extensions.Logging.LogLevel level, Microsoft.Extensions.Logging.ILogger logger) -> void
+Steeltoe.Integration.Handler.LoggingHandler.MessageLogger.get -> Microsoft.Extensions.Logging.ILogger
+Steeltoe.Integration.Handler.MethodInvokingMessageProcessor<T>
+Steeltoe.Integration.Handler.MethodInvokingMessageProcessor<T>.IsRunning.get -> bool
+Steeltoe.Integration.Handler.MethodInvokingMessageProcessor<T>.MethodInvokingMessageProcessor(Steeltoe.Common.Contexts.IApplicationContext context, object targetObject, System.Reflection.MethodInfo method) -> void
+Steeltoe.Integration.Handler.MethodInvokingMessageProcessor<T>.MethodInvokingMessageProcessor(Steeltoe.Common.Contexts.IApplicationContext context, object targetObject, System.Type attribute) -> void
+Steeltoe.Integration.Handler.MethodInvokingMessageProcessor<T>.Start() -> System.Threading.Tasks.Task
+Steeltoe.Integration.Handler.MethodInvokingMessageProcessor<T>.Stop() -> System.Threading.Tasks.Task
+Steeltoe.Integration.Handler.ReplyProducingMessageHandlerWrapper
+Steeltoe.Integration.Handler.ReplyProducingMessageHandlerWrapper.IsRunning.get -> bool
+Steeltoe.Integration.Handler.ReplyProducingMessageHandlerWrapper.ReplyProducingMessageHandlerWrapper(Steeltoe.Common.Contexts.IApplicationContext context, Steeltoe.Messaging.IMessageHandler target) -> void
+Steeltoe.Integration.Handler.ReplyProducingMessageHandlerWrapper.Start() -> System.Threading.Tasks.Task
+Steeltoe.Integration.Handler.ReplyProducingMessageHandlerWrapper.Stop() -> System.Threading.Tasks.Task
+Steeltoe.Integration.Handler.ReplyRequiredException
+Steeltoe.Integration.Handler.ReplyRequiredException.ReplyRequiredException(Steeltoe.Messaging.IMessage failedMessage, string description) -> void
+Steeltoe.Integration.Handler.ReplyRequiredException.ReplyRequiredException(Steeltoe.Messaging.IMessage failedMessage, string description, System.Exception e) -> void
+Steeltoe.Integration.Handler.ServiceActivatingHandler
+Steeltoe.Integration.Handler.ServiceActivatingHandler.ServiceActivatingHandler(Steeltoe.Common.Contexts.IApplicationContext context, object instance, System.Reflection.MethodInfo method) -> void
+Steeltoe.Integration.Handler.ServiceActivatingHandler.ServiceActivatingHandler(Steeltoe.Common.Contexts.IApplicationContext context, Steeltoe.Integration.Handler.IMessageProcessor processor) -> void
+Steeltoe.Integration.Handler.Support.CollectionArgumentResolver
+Steeltoe.Integration.Handler.Support.CollectionArgumentResolver.CollectionArgumentResolver(Steeltoe.Common.Contexts.IApplicationContext context, bool canProcessMessageList) -> void
+Steeltoe.Integration.Handler.Support.CollectionArgumentResolver.ResolveArgument(System.Reflection.ParameterInfo parameter, Steeltoe.Messaging.IMessage message) -> object
+Steeltoe.Integration.Handler.Support.CollectionArgumentResolver.SupportsParameter(System.Reflection.ParameterInfo parameter) -> bool
+Steeltoe.Integration.Handler.Support.DictionaryArgumentResolver
+Steeltoe.Integration.Handler.Support.DictionaryArgumentResolver.DictionaryArgumentResolver(Steeltoe.Common.Contexts.IApplicationContext context) -> void
+Steeltoe.Integration.Handler.Support.DictionaryArgumentResolver.ResolveArgument(System.Reflection.ParameterInfo parameter, Steeltoe.Messaging.IMessage message) -> object
+Steeltoe.Integration.Handler.Support.DictionaryArgumentResolver.SupportsParameter(System.Reflection.ParameterInfo parameter) -> bool
+Steeltoe.Integration.Handler.Support.PayloadExpressionArgumentResolver
+Steeltoe.Integration.Handler.Support.PayloadExpressionArgumentResolver.PayloadExpressionArgumentResolver(Steeltoe.Common.Contexts.IApplicationContext context) -> void
+Steeltoe.Integration.Handler.Support.PayloadExpressionArgumentResolver.ResolveArgument(System.Reflection.ParameterInfo parameter, Steeltoe.Messaging.IMessage message) -> object
+Steeltoe.Integration.Handler.Support.PayloadExpressionArgumentResolver.SupportsParameter(System.Reflection.ParameterInfo parameter) -> bool
+Steeltoe.Integration.Handler.Support.PayloadsArgumentResolver
+Steeltoe.Integration.Handler.Support.PayloadsArgumentResolver.PayloadsArgumentResolver(Steeltoe.Common.Contexts.IApplicationContext context) -> void
+Steeltoe.Integration.Handler.Support.PayloadsArgumentResolver.ResolveArgument(System.Reflection.ParameterInfo parameter, Steeltoe.Messaging.IMessage message) -> object
+Steeltoe.Integration.Handler.Support.PayloadsArgumentResolver.SupportsParameter(System.Reflection.ParameterInfo parameter) -> bool
+Steeltoe.Integration.IntegrationMessageHeaderAccessor
+Steeltoe.Integration.IntegrationMessageHeaderAccessor.GetAcknowledgmentCallback() -> Steeltoe.Integration.Acks.IAcknowledgmentCallback
+Steeltoe.Integration.IntegrationMessageHeaderAccessor.GetCorrelationId() -> object
+Steeltoe.Integration.IntegrationMessageHeaderAccessor.GetDeliveryAttempt() -> int?
+Steeltoe.Integration.IntegrationMessageHeaderAccessor.GetExpirationDate() -> long?
+Steeltoe.Integration.IntegrationMessageHeaderAccessor.GetHeader<T>(string key) -> T
+Steeltoe.Integration.IntegrationMessageHeaderAccessor.GetPriority() -> int?
+Steeltoe.Integration.IntegrationMessageHeaderAccessor.GetSequenceNumber() -> int
+Steeltoe.Integration.IntegrationMessageHeaderAccessor.GetSequenceSize() -> int
+Steeltoe.Integration.IntegrationMessageHeaderAccessor.IntegrationMessageHeaderAccessor(Steeltoe.Messaging.IMessage message) -> void
+Steeltoe.Integration.IntegrationMessageHeaderAccessor.IsReadOnly(string headerName) -> bool
+Steeltoe.Integration.IntegrationMessageHeaderAccessor.SetReadOnlyHeaders(System.Collections.Generic.IList<string> readOnlyHeaders) -> void
+Steeltoe.Integration.IntegrationServices
+Steeltoe.Integration.IntegrationServices.IntegrationServices(Steeltoe.Common.Contexts.IApplicationContext context) -> void
+Steeltoe.Integration.IntegrationServices._channelResolver -> Steeltoe.Messaging.Core.IDestinationResolver<Steeltoe.Messaging.IMessageChannel>
+Steeltoe.Integration.IntegrationServices._context -> Steeltoe.Common.Contexts.IApplicationContext
+Steeltoe.Integration.IntegrationServices._conversionService -> Steeltoe.Common.Converter.IConversionService
+Steeltoe.Integration.IntegrationServices._expressionParser -> Steeltoe.Common.Expression.Internal.IExpressionParser
+Steeltoe.Integration.IntegrationServices._idGenerator -> Steeltoe.Common.Util.IIDGenerator
+Steeltoe.Integration.IntegrationServices._messageBuilderFactory -> Steeltoe.Integration.Support.IMessageBuilderFactory
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.AbstractHeaderMapper(string standardHeaderPrefix, System.Collections.Generic.List<string> requestHeaderNames, System.Collections.Generic.List<string> replyHeaderNames, Microsoft.Extensions.Logging.ILogger logger) -> void
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.CompositeHeaderMatcher
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.CompositeHeaderMatcher.CompositeHeaderMatcher(params Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.IHeaderMatcher[] strategies) -> void
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.CompositeHeaderMatcher.CompositeHeaderMatcher(System.Collections.Generic.List<Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.IHeaderMatcher> strategies) -> void
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.CompositeHeaderMatcher.IsNegated.get -> bool
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.CompositeHeaderMatcher.MatchHeader(string headerName) -> bool
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.ContentBasedHeaderMatcher
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.ContentBasedHeaderMatcher.ContentBasedHeaderMatcher(bool match, System.Collections.Generic.List<string> content) -> void
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.ContentBasedHeaderMatcher.IsNegated.get -> bool
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.ContentBasedHeaderMatcher.MatchHeader(string headerName) -> bool
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.FromHeadersToReply(Steeltoe.Messaging.IMessageHeaders headers, T target) -> void
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.FromHeadersToRequest(Steeltoe.Messaging.IMessageHeaders headers, T target) -> void
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.IHeaderMatcher
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.IHeaderMatcher.IsNegated.get -> bool
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.IHeaderMatcher.MatchHeader(string headerName) -> bool
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.PatternBasedHeaderMatcher
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.PatternBasedHeaderMatcher.IsNegated.get -> bool
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.PatternBasedHeaderMatcher.MatchHeader(string headerName) -> bool
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.PatternBasedHeaderMatcher.PatternBasedHeaderMatcher(System.Collections.Generic.List<string> patterns) -> void
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.PrefixBasedMatcher
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.PrefixBasedMatcher.IsNegated.get -> bool
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.PrefixBasedMatcher.MatchHeader(string headerName) -> bool
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.PrefixBasedMatcher.PrefixBasedMatcher(bool match, string prefix) -> void
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.ReplyHeaderMatcher.get -> Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.IHeaderMatcher
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.ReplyHeaderMatcher.set -> void
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.ReplyHeaderNames.get -> System.Collections.Generic.List<string>
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.ReplyHeaderNames.set -> void
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.RequestHeaderMatcher.get -> Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.IHeaderMatcher
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.RequestHeaderMatcher.set -> void
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.RequestHeaderNames.get -> System.Collections.Generic.List<string>
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.RequestHeaderNames.set -> void
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.SetReplyHeaderNames(params string[] replyHeaderNames) -> void
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.SetRequestHeaderNames(params string[] requestHeaderNames) -> void
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.SinglePatternBasedHeaderMatcher
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.SinglePatternBasedHeaderMatcher.IsNegated.get -> bool
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.SinglePatternBasedHeaderMatcher.MatchHeader(string headerName) -> bool
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.SinglePatternBasedHeaderMatcher.SinglePatternBasedHeaderMatcher(string pattern) -> void
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.SinglePatternBasedHeaderMatcher.SinglePatternBasedHeaderMatcher(string pattern, bool negate) -> void
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.StandardHeaderPrefix.get -> string
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.StandardHeaderPrefix.set -> void
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.ToHeadersFromReply(T source) -> System.Collections.Generic.IDictionary<string, object>
+Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.ToHeadersFromRequest(T source) -> System.Collections.Generic.IDictionary<string, object>
+Steeltoe.Integration.MessageDispatchingException
+Steeltoe.Integration.MessageDispatchingException.MessageDispatchingException(Steeltoe.Messaging.IMessage undeliveredMessage) -> void
+Steeltoe.Integration.MessageDispatchingException.MessageDispatchingException(Steeltoe.Messaging.IMessage undeliveredMessage, string description) -> void
+Steeltoe.Integration.MessageDispatchingException.MessageDispatchingException(Steeltoe.Messaging.IMessage undeliveredMessage, string description, System.Exception cause) -> void
+Steeltoe.Integration.MessageDispatchingException.MessageDispatchingException(string description) -> void
+Steeltoe.Integration.MessageRejectedException
+Steeltoe.Integration.MessageRejectedException.MessageRejectedException(Steeltoe.Messaging.IMessage failedMessage, string description) -> void
+Steeltoe.Integration.MessageRejectedException.MessageRejectedException(Steeltoe.Messaging.IMessage failedMessage, string description, System.Exception cause) -> void
+Steeltoe.Integration.MessageTimeoutException
+Steeltoe.Integration.MessageTimeoutException.MessageTimeoutException(Steeltoe.Messaging.IMessage failedMessage) -> void
+Steeltoe.Integration.MessageTimeoutException.MessageTimeoutException(Steeltoe.Messaging.IMessage failedMessage, string description) -> void
+Steeltoe.Integration.MessageTimeoutException.MessageTimeoutException(Steeltoe.Messaging.IMessage failedMessage, string description, System.Exception cause) -> void
+Steeltoe.Integration.MessageTimeoutException.MessageTimeoutException(string description) -> void
+Steeltoe.Integration.MessagingTemplate
+Steeltoe.Integration.MessagingTemplate.DefaultDestination.get -> Steeltoe.Messaging.IMessageChannel
+Steeltoe.Integration.MessagingTemplate.DefaultDestination.set -> void
+Steeltoe.Integration.MessagingTemplate.MessagingTemplate(Steeltoe.Common.Contexts.IApplicationContext context, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.MessagingTemplate.MessagingTemplate(Steeltoe.Common.Contexts.IApplicationContext context, Steeltoe.Messaging.IMessageChannel defaultChannel, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.MessagingTemplate.Receive(Steeltoe.Messaging.IMessageChannel destination, int timeout) -> Steeltoe.Messaging.IMessage
+Steeltoe.Integration.MessagingTemplate.ReceiveAndConvert(Steeltoe.Messaging.IMessageChannel destination, int timeout) -> object
+Steeltoe.Integration.RetryExceptionNotAvailableException
+Steeltoe.Integration.RetryExceptionNotAvailableException.RetryExceptionNotAvailableException(Steeltoe.Messaging.IMessage message, string description) -> void
+Steeltoe.Integration.StaticMessageHeaderAccessor
+Steeltoe.Integration.Support.AbstractMessageBuilder
+Steeltoe.Integration.Support.AbstractMessageBuilder.AbstractMessageBuilder() -> void
+Steeltoe.Integration.Support.AbstractMessageBuilder.AbstractMessageBuilder(object payload, Steeltoe.Messaging.IMessage originalMessage) -> void
+Steeltoe.Integration.Support.AbstractMessageBuilder.ContainsReadOnly(Steeltoe.Messaging.IMessageHeaders headers) -> bool
+Steeltoe.Integration.Support.AbstractMessageBuilder._readOnlyHeaders -> System.Collections.Generic.IList<string>
+Steeltoe.Integration.Support.Channel.DefaultMessageChannelResolver
+Steeltoe.Integration.Support.Channel.DefaultMessageChannelResolver.DefaultMessageChannelResolver(Steeltoe.Common.Contexts.IApplicationContext context, Steeltoe.Integration.Support.Channel.IHeaderChannelRegistry registry = null) -> void
+Steeltoe.Integration.Support.Converter.ConfigurableCompositeMessageConverter
+Steeltoe.Integration.Support.Converter.ConfigurableCompositeMessageConverter.AfterPropertiesSet() -> void
+Steeltoe.Integration.Support.Converter.ConfigurableCompositeMessageConverter.ConfigurableCompositeMessageConverter(Steeltoe.Common.Converter.IConversionService conversionService = null) -> void
+Steeltoe.Integration.Support.Converter.ConfigurableCompositeMessageConverter.ConfigurableCompositeMessageConverter(Steeltoe.Messaging.Converter.IMessageConverterFactory factory, Steeltoe.Common.Converter.IConversionService conversionService = null) -> void
+Steeltoe.Integration.Support.Converter.ConfigurableCompositeMessageConverter.ConfigurableCompositeMessageConverter(System.Collections.Generic.IEnumerable<Steeltoe.Messaging.Converter.IMessageConverter> converters, bool registerDefaults, Steeltoe.Common.Converter.IConversionService conversionService = null) -> void
+Steeltoe.Integration.Support.Converter.DefaultDatatypeChannelMessageConverter
+Steeltoe.Integration.Support.Converter.DefaultDatatypeChannelMessageConverter.DefaultDatatypeChannelMessageConverter(Steeltoe.Common.Converter.IConversionService conversionService = null) -> void
+Steeltoe.Integration.Support.Converter.DefaultDatatypeChannelMessageConverter.FromMessage(Steeltoe.Messaging.IMessage message, System.Type targetClass) -> object
+Steeltoe.Integration.Support.Converter.DefaultDatatypeChannelMessageConverter.FromMessage<T>(Steeltoe.Messaging.IMessage message) -> T
+Steeltoe.Integration.Support.Converter.DefaultDatatypeChannelMessageConverter.ServiceName.get -> string
+Steeltoe.Integration.Support.Converter.DefaultDatatypeChannelMessageConverter.ServiceName.set -> void
+Steeltoe.Integration.Support.Converter.DefaultDatatypeChannelMessageConverter.ToMessage(object payload, Steeltoe.Messaging.IMessageHeaders headers) -> Steeltoe.Messaging.IMessage
+Steeltoe.Integration.Support.Converter.ObjectStringMessageConverter
+Steeltoe.Integration.Support.Converter.ObjectStringMessageConverter.ObjectStringMessageConverter() -> void
+Steeltoe.Integration.Support.DefaultErrorMessageStrategy
+Steeltoe.Integration.Support.DefaultErrorMessageStrategy.BuildErrorMessage(System.Exception exception, Steeltoe.Common.Util.IAttributeAccessor attributes) -> Steeltoe.Messaging.Support.ErrorMessage
+Steeltoe.Integration.Support.DefaultErrorMessageStrategy.DefaultErrorMessageStrategy() -> void
+Steeltoe.Integration.Support.DefaultMessageBuilderFactory
+Steeltoe.Integration.Support.DefaultMessageBuilderFactory.AddReadOnlyHeaders(params string[] readOnlyHeaders) -> void
+Steeltoe.Integration.Support.DefaultMessageBuilderFactory.DefaultMessageBuilderFactory() -> void
+Steeltoe.Integration.Support.DefaultMessageBuilderFactory.FromMessage(Steeltoe.Messaging.IMessage message) -> Steeltoe.Integration.Support.IMessageBuilder
+Steeltoe.Integration.Support.DefaultMessageBuilderFactory.FromMessage<T>(Steeltoe.Messaging.IMessage<T> message) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.DefaultMessageBuilderFactory.ReadOnlyHeaders.get -> System.Collections.Generic.IList<string>
+Steeltoe.Integration.Support.DefaultMessageBuilderFactory.ReadOnlyHeaders.set -> void
+Steeltoe.Integration.Support.DefaultMessageBuilderFactory.WithPayload(object payload) -> Steeltoe.Integration.Support.IMessageBuilder
+Steeltoe.Integration.Support.DefaultMessageBuilderFactory.WithPayload<T>(T payload) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.ErrorMessageAttributes
+Steeltoe.Integration.Support.ErrorMessageAttributes.ErrorMessageAttributes() -> void
+Steeltoe.Integration.Support.ErrorMessageUtils
+Steeltoe.Integration.Support.IntegrationMessageBuilder
+Steeltoe.Integration.Support.IntegrationMessageBuilder.ReadOnlyHeaders(System.Collections.Generic.IList<string> readOnlyHeaders) -> Steeltoe.Integration.Support.IMessageBuilder
+Steeltoe.Integration.Support.IntegrationMessageBuilder<T>
+Steeltoe.Integration.Support.IntegrationMessageBuilder<T>.Build() -> Steeltoe.Messaging.IMessage<T>
+Steeltoe.Integration.Support.IntegrationMessageBuilder<T>.CopyHeaders(System.Collections.Generic.IDictionary<string, object> headersToCopy) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IntegrationMessageBuilder<T>.CopyHeadersIfAbsent(System.Collections.Generic.IDictionary<string, object> headersToCopy) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IntegrationMessageBuilder<T>.FilterAndCopyHeadersIfAbsent(System.Collections.Generic.IDictionary<string, object> headersToCopy, params string[] headerPatternsToFilter) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IntegrationMessageBuilder<T>.Payload.get -> T
+Steeltoe.Integration.Support.IntegrationMessageBuilder<T>.PopSequenceDetails() -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IntegrationMessageBuilder<T>.PushSequenceDetails(object correlationId, int sequenceNumber, int sequenceSize) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IntegrationMessageBuilder<T>.ReadOnlyHeaders(System.Collections.Generic.IList<string> readOnlyHeaders) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IntegrationMessageBuilder<T>.RemoveHeader(string headerName) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IntegrationMessageBuilder<T>.RemoveHeaders(params string[] headerPatterns) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IntegrationMessageBuilder<T>.SetCorrelationId(object correlationId) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IntegrationMessageBuilder<T>.SetErrorChannel(Steeltoe.Messaging.IMessageChannel errorChannel) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IntegrationMessageBuilder<T>.SetErrorChannelName(string errorChannelName) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IntegrationMessageBuilder<T>.SetExpirationDate(long expirationDate) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IntegrationMessageBuilder<T>.SetExpirationDate(System.DateTime? expirationDate) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IntegrationMessageBuilder<T>.SetHeader(string headerName, object headerValue) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IntegrationMessageBuilder<T>.SetHeaderIfAbsent(string headerName, object headerValue) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IntegrationMessageBuilder<T>.SetPriority(int priority) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IntegrationMessageBuilder<T>.SetReplyChannel(Steeltoe.Messaging.IMessageChannel replyChannel) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IntegrationMessageBuilder<T>.SetReplyChannelName(string replyChannelName) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IntegrationMessageBuilder<T>.SetSequenceNumber(int sequenceNumber) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IntegrationMessageBuilder<T>.SetSequenceSize(int sequenceSize) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.IntegrationUtils
+Steeltoe.Integration.Support.MessagingExceptionWrapperException
+Steeltoe.Integration.Support.MessagingExceptionWrapperException.MessagingExceptionWrapperException(Steeltoe.Messaging.IMessage originalMessage, Steeltoe.Messaging.MessagingException cause) -> void
+Steeltoe.Integration.Support.MutableIntegrationMessageBuilder
+Steeltoe.Integration.Support.MutableIntegrationMessageBuilder.GetMatchingHeaderNames(string pattern, System.Collections.Generic.IDictionary<string, object> headers) -> System.Collections.Generic.List<string>
+Steeltoe.Integration.Support.MutableIntegrationMessageBuilder.MutableIntegrationMessageBuilder() -> void
+Steeltoe.Integration.Support.MutableIntegrationMessageBuilder._headers -> System.Collections.Generic.IDictionary<string, object>
+Steeltoe.Integration.Support.MutableIntegrationMessageBuilder._mutableMessage -> Steeltoe.Integration.Support.MutableMessage
+Steeltoe.Integration.Support.MutableIntegrationMessageBuilder<T>
+Steeltoe.Integration.Support.MutableIntegrationMessageBuilder<T>.Build() -> Steeltoe.Messaging.IMessage<T>
+Steeltoe.Integration.Support.MutableIntegrationMessageBuilder<T>.CopyHeaders(System.Collections.Generic.IDictionary<string, object> headersToCopy) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.MutableIntegrationMessageBuilder<T>.CopyHeadersIfAbsent(System.Collections.Generic.IDictionary<string, object> headersToCopy) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.MutableIntegrationMessageBuilder<T>.FilterAndCopyHeadersIfAbsent(System.Collections.Generic.IDictionary<string, object> headersToCopy, params string[] headerPatternsToFilter) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.MutableIntegrationMessageBuilder<T>.Payload.get -> T
+Steeltoe.Integration.Support.MutableIntegrationMessageBuilder<T>.PopSequenceDetails() -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.MutableIntegrationMessageBuilder<T>.PushSequenceDetails(object correlationId, int sequenceNumber, int sequenceSize) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.MutableIntegrationMessageBuilder<T>.RemoveHeader(string headerName) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.MutableIntegrationMessageBuilder<T>.RemoveHeaders(params string[] headerPatterns) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.MutableIntegrationMessageBuilder<T>.SetCorrelationId(object correlationId) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.MutableIntegrationMessageBuilder<T>.SetErrorChannel(Steeltoe.Messaging.IMessageChannel errorChannel) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.MutableIntegrationMessageBuilder<T>.SetErrorChannelName(string errorChannelName) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.MutableIntegrationMessageBuilder<T>.SetExpirationDate(long expirationDate) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.MutableIntegrationMessageBuilder<T>.SetExpirationDate(System.DateTime? expirationDate) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.MutableIntegrationMessageBuilder<T>.SetHeader(string headerName, object headerValue) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.MutableIntegrationMessageBuilder<T>.SetHeaderIfAbsent(string headerName, object headerValue) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.MutableIntegrationMessageBuilder<T>.SetPriority(int priority) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.MutableIntegrationMessageBuilder<T>.SetReplyChannel(Steeltoe.Messaging.IMessageChannel replyChannel) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.MutableIntegrationMessageBuilder<T>.SetReplyChannelName(string replyChannelName) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.MutableIntegrationMessageBuilder<T>.SetSequenceNumber(int sequenceNumber) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.MutableIntegrationMessageBuilder<T>.SetSequenceSize(int sequenceSize) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.MutableIntegrationMessageBuilderFactory
+Steeltoe.Integration.Support.MutableIntegrationMessageBuilderFactory.FromMessage(Steeltoe.Messaging.IMessage message) -> Steeltoe.Integration.Support.IMessageBuilder
+Steeltoe.Integration.Support.MutableIntegrationMessageBuilderFactory.FromMessage<T>(Steeltoe.Messaging.IMessage<T> message) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.MutableIntegrationMessageBuilderFactory.MutableIntegrationMessageBuilderFactory() -> void
+Steeltoe.Integration.Support.MutableIntegrationMessageBuilderFactory.WithPayload(object payload) -> Steeltoe.Integration.Support.IMessageBuilder
+Steeltoe.Integration.Support.MutableIntegrationMessageBuilderFactory.WithPayload<T>(T payload) -> Steeltoe.Integration.Support.IMessageBuilder<T>
+Steeltoe.Integration.Support.MutableMessage
+Steeltoe.Integration.Support.MutableMessage.Headers.get -> Steeltoe.Messaging.IMessageHeaders
+Steeltoe.Integration.Support.MutableMessage.MutableMessage(object payload) -> void
+Steeltoe.Integration.Support.MutableMessage.MutableMessage(object payload, Steeltoe.Integration.Support.MutableMessageHeaders headers) -> void
+Steeltoe.Integration.Support.MutableMessage.MutableMessage(object payload, System.Collections.Generic.IDictionary<string, object> headers) -> void
+Steeltoe.Integration.Support.MutableMessage.Payload.get -> object
+Steeltoe.Integration.Support.MutableMessage.RawHeaders.get -> System.Collections.Generic.IDictionary<string, object>
+Steeltoe.Integration.Support.MutableMessage<T>
+Steeltoe.Integration.Support.MutableMessage<T>.MutableMessage(T payload) -> void
+Steeltoe.Integration.Support.MutableMessage<T>.MutableMessage(T payload, Steeltoe.Integration.Support.MutableMessageHeaders headers) -> void
+Steeltoe.Integration.Support.MutableMessage<T>.MutableMessage(T payload, System.Collections.Generic.IDictionary<string, object> headers) -> void
+Steeltoe.Integration.Support.MutableMessage<T>.Payload.get -> T
+Steeltoe.Integration.Support.MutableMessageHeaders
+Steeltoe.Integration.Support.MutableMessageHeaders.MutableMessageHeaders(System.Collections.Generic.IDictionary<string, object> headers) -> void
+Steeltoe.Integration.Support.MutableMessageHeaders.MutableMessageHeaders(System.Collections.Generic.IDictionary<string, object> headers, string id, long? timestamp) -> void
+Steeltoe.Integration.Support.NullAwarePayloadArgumentResolver
+Steeltoe.Integration.Support.NullAwarePayloadArgumentResolver.NullAwarePayloadArgumentResolver(Steeltoe.Messaging.Converter.IMessageConverter messageConverter) -> void
+Steeltoe.Integration.Support.NullAwarePayloadArgumentResolver.NullAwarePayloadArgumentResolver(Steeltoe.Messaging.Converter.IMessageConverter messageConverter, bool useDefaultResolution) -> void
+Steeltoe.Integration.Transformer.AbstractTransformer
+Steeltoe.Integration.Transformer.AbstractTransformer.AbstractTransformer(Steeltoe.Common.Contexts.IApplicationContext context) -> void
+Steeltoe.Integration.Transformer.AbstractTransformer.ApplicationContext.get -> Steeltoe.Common.Contexts.IApplicationContext
+Steeltoe.Integration.Transformer.AbstractTransformer.Transform(Steeltoe.Messaging.IMessage message) -> Steeltoe.Messaging.IMessage
+Steeltoe.Integration.Transformer.JsonToObjectTransformer
+Steeltoe.Integration.Transformer.JsonToObjectTransformer.DefaultCharset.get -> System.Text.Encoding
+Steeltoe.Integration.Transformer.JsonToObjectTransformer.DefaultCharset.set -> void
+Steeltoe.Integration.Transformer.JsonToObjectTransformer.JsonToObjectTransformer(Steeltoe.Common.Contexts.IApplicationContext context, System.Type targetType = null) -> void
+Steeltoe.Integration.Transformer.JsonToObjectTransformer.Settings.get -> Newtonsoft.Json.JsonSerializerSettings
+Steeltoe.Integration.Transformer.JsonToObjectTransformer.Settings.set -> void
+Steeltoe.Integration.Transformer.JsonToObjectTransformer.TargetType.get -> System.Type
+Steeltoe.Integration.Transformer.JsonToObjectTransformer.TargetType.set -> void
+Steeltoe.Integration.Transformer.MessageTransformationException
+Steeltoe.Integration.Transformer.MessageTransformationException.MessageTransformationException(Steeltoe.Messaging.IMessage message, string description) -> void
+Steeltoe.Integration.Transformer.MessageTransformationException.MessageTransformationException(Steeltoe.Messaging.IMessage message, string description, System.Exception cause) -> void
+Steeltoe.Integration.Transformer.MessageTransformationException.MessageTransformationException(string description) -> void
+Steeltoe.Integration.Transformer.MessageTransformationException.MessageTransformationException(string description, System.Exception cause) -> void
+Steeltoe.Integration.Transformer.MessageTransformingHandler
+Steeltoe.Integration.Transformer.MessageTransformingHandler.IsRunning.get -> bool
+Steeltoe.Integration.Transformer.MessageTransformingHandler.MessageTransformingHandler(Steeltoe.Common.Contexts.IApplicationContext context, Steeltoe.Integration.Transformer.ITransformer transformer) -> void
+Steeltoe.Integration.Transformer.MessageTransformingHandler.Start() -> System.Threading.Tasks.Task
+Steeltoe.Integration.Transformer.MessageTransformingHandler.Stop() -> System.Threading.Tasks.Task
+Steeltoe.Integration.Transformer.MessageTransformingHandler.Transformer.get -> Steeltoe.Integration.Transformer.ITransformer
+Steeltoe.Integration.Transformer.ObjectToJsonTransformer
+Steeltoe.Integration.Transformer.ObjectToJsonTransformer.ContentType.get -> string
+Steeltoe.Integration.Transformer.ObjectToJsonTransformer.ContentType.set -> void
+Steeltoe.Integration.Transformer.ObjectToJsonTransformer.DefaultCharset.get -> System.Text.Encoding
+Steeltoe.Integration.Transformer.ObjectToJsonTransformer.DefaultCharset.set -> void
+Steeltoe.Integration.Transformer.ObjectToJsonTransformer.ObjectToJsonTransformer(Steeltoe.Common.Contexts.IApplicationContext context, System.Type resultType = null) -> void
+Steeltoe.Integration.Transformer.ObjectToJsonTransformer.ResultType.get -> System.Type
+Steeltoe.Integration.Transformer.ObjectToJsonTransformer.ResultType.set -> void
+Steeltoe.Integration.Transformer.ObjectToJsonTransformer.Settings.get -> Newtonsoft.Json.JsonSerializerSettings
+Steeltoe.Integration.Transformer.ObjectToJsonTransformer.Settings.set -> void
+Steeltoe.Integration.Util.AbstractExpressionEvaluator
+Steeltoe.Integration.Util.AbstractExpressionEvaluator.AbstractExpressionEvaluator(Steeltoe.Common.Contexts.IApplicationContext context) -> void
+Steeltoe.Integration.Util.AbstractExpressionEvaluator.ApplicationContext.get -> Steeltoe.Common.Contexts.IApplicationContext
+Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression(Steeltoe.Common.Expression.Internal.IExpression expression) -> object
+Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression(Steeltoe.Common.Expression.Internal.IExpression expression, object input, System.Type expectedType) -> object
+Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression(Steeltoe.Common.Expression.Internal.IExpression expression, Steeltoe.Messaging.IMessage message, System.Type expectedType) -> object
+Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression(string expression, object input) -> object
+Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression(string expression, object input, System.Type expectedType) -> object
+Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression<T>(Steeltoe.Common.Expression.Internal.IExpression expression, object input) -> T
+Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression<T>(Steeltoe.Common.Expression.Internal.IExpression expression, Steeltoe.Messaging.IMessage message) -> T
+Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluationContext.get -> Steeltoe.Common.Expression.Internal.IEvaluationContext
+Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluationContext.set -> void
+Steeltoe.Integration.Util.AbstractExpressionEvaluator.IntegrationServices.get -> Steeltoe.Integration.IIntegrationServices
+Steeltoe.Integration.Util.AbstractExpressionEvaluator.MessageBuilderFactory.get -> Steeltoe.Integration.Support.IMessageBuilderFactory
+Steeltoe.Integration.Util.AbstractExpressionEvaluator.MessageBuilderFactory.set -> void
+Steeltoe.Integration.Util.AbstractExpressionEvaluator.TypeConverter.get -> Steeltoe.Common.Expression.Internal.ITypeConverter
+Steeltoe.Integration.Util.AbstractExpressionEvaluator.TypeConverter.set -> void
+Steeltoe.Integration.Util.AnnotatedMethodFilter
+Steeltoe.Integration.Util.AnnotatedMethodFilter.AnnotatedMethodFilter(System.Type annotationType, string methodName, bool requiresReply) -> void
+Steeltoe.Integration.Util.AnnotatedMethodFilter.Filter(System.Collections.Generic.List<System.Reflection.MethodInfo> methods) -> System.Collections.Generic.List<System.Reflection.MethodInfo>
+Steeltoe.Integration.Util.BeanFactoryTypeConverter
+Steeltoe.Integration.Util.BeanFactoryTypeConverter.BeanFactoryTypeConverter() -> void
+Steeltoe.Integration.Util.BeanFactoryTypeConverter.BeanFactoryTypeConverter(Steeltoe.Common.Converter.IConversionService conversionService) -> void
+Steeltoe.Integration.Util.BeanFactoryTypeConverter.CanConvert(System.Type source, System.Type target) -> bool
+Steeltoe.Integration.Util.BeanFactoryTypeConverter.ConversionService.get -> Steeltoe.Common.Converter.IConversionService
+Steeltoe.Integration.Util.BeanFactoryTypeConverter.ConversionService.set -> void
+Steeltoe.Integration.Util.BeanFactoryTypeConverter.ConvertValue(object value, System.Type source, System.Type target) -> object
+Steeltoe.Integration.Util.ErrorHandlingMessageHandlingRunnable
+Steeltoe.Integration.Util.ErrorHandlingMessageHandlingRunnable.ErrorHandlingMessageHandlingRunnable(Steeltoe.Messaging.Support.IMessageHandlingRunnable runnable, Steeltoe.Common.Util.IErrorHandler errorHandler) -> void
+Steeltoe.Integration.Util.ErrorHandlingMessageHandlingRunnable.Message.get -> Steeltoe.Messaging.IMessage
+Steeltoe.Integration.Util.ErrorHandlingMessageHandlingRunnable.MessageHandler.get -> Steeltoe.Messaging.IMessageHandler
+Steeltoe.Integration.Util.ErrorHandlingMessageHandlingRunnable.Run() -> bool
+Steeltoe.Integration.Util.FixedMethodFilter
+Steeltoe.Integration.Util.FixedMethodFilter.Filter(System.Collections.Generic.List<System.Reflection.MethodInfo> methods) -> System.Collections.Generic.List<System.Reflection.MethodInfo>
+Steeltoe.Integration.Util.FixedMethodFilter.FixedMethodFilter(System.Reflection.MethodInfo method) -> void
+Steeltoe.Integration.Util.IntegrationContextUtils
+Steeltoe.Integration.Util.IntegrationServicesUtils
+Steeltoe.Integration.Util.MessagingAttributeUtils
+Steeltoe.Integration.Util.ServiceFactoryTypeConverter
+Steeltoe.Integration.Util.ServiceFactoryTypeConverter.CanConvert(System.Type sourceType, System.Type targetType) -> bool
+Steeltoe.Integration.Util.ServiceFactoryTypeConverter.ConversionService.get -> Steeltoe.Common.Converter.IConversionService
+Steeltoe.Integration.Util.ServiceFactoryTypeConverter.ConversionService.set -> void
+Steeltoe.Integration.Util.ServiceFactoryTypeConverter.ConvertValue(object value, System.Type sourceType, System.Type targetType) -> object
+Steeltoe.Integration.Util.ServiceFactoryTypeConverter.ServiceFactoryTypeConverter() -> void
+Steeltoe.Integration.Util.ServiceFactoryTypeConverter.ServiceFactoryTypeConverter(Steeltoe.Common.Converter.IConversionService conversionService) -> void
+virtual Steeltoe.Integration.Acks.AbstractAcknowledgmentCallback.IsAcknowledged.get -> bool
+virtual Steeltoe.Integration.Acks.AbstractAcknowledgmentCallback.IsAcknowledged.set -> void
+virtual Steeltoe.Integration.Acks.AbstractAcknowledgmentCallback.IsAutoAck.get -> bool
+virtual Steeltoe.Integration.Acks.AbstractAcknowledgmentCallback.IsAutoAck.set -> void
+virtual Steeltoe.Integration.Attributes.PayloadsAttribute.Expression.get -> string
+virtual Steeltoe.Integration.Attributes.PayloadsAttribute.Expression.set -> void
+virtual Steeltoe.Integration.Channel.AbstractMessageChannel.AddInterceptor(int index, Steeltoe.Messaging.Support.IChannelInterceptor interceptor) -> void
+virtual Steeltoe.Integration.Channel.AbstractMessageChannel.AddInterceptor(Steeltoe.Messaging.Support.IChannelInterceptor interceptor) -> void
+virtual Steeltoe.Integration.Channel.AbstractMessageChannel.ChannelInterceptors.get -> System.Collections.Generic.List<Steeltoe.Messaging.Support.IChannelInterceptor>
+virtual Steeltoe.Integration.Channel.AbstractMessageChannel.ChannelInterceptors.set -> void
+virtual Steeltoe.Integration.Channel.AbstractMessageChannel.ComponentName.get -> string
+virtual Steeltoe.Integration.Channel.AbstractMessageChannel.ComponentName.set -> void
+virtual Steeltoe.Integration.Channel.AbstractMessageChannel.ComponentType.get -> string
+virtual Steeltoe.Integration.Channel.AbstractMessageChannel.DataTypes.get -> System.Collections.Generic.List<System.Type>
+virtual Steeltoe.Integration.Channel.AbstractMessageChannel.DataTypes.set -> void
+virtual Steeltoe.Integration.Channel.AbstractMessageChannel.DoSend(Steeltoe.Messaging.IMessage message, int timeout) -> bool
+virtual Steeltoe.Integration.Channel.AbstractMessageChannel.MessageConverter.get -> Steeltoe.Messaging.Converter.IMessageConverter
+virtual Steeltoe.Integration.Channel.AbstractMessageChannel.MessageConverter.set -> void
+virtual Steeltoe.Integration.Channel.AbstractMessageChannel.RemoveInterceptor(int index) -> Steeltoe.Messaging.Support.IChannelInterceptor
+virtual Steeltoe.Integration.Channel.AbstractMessageChannel.RemoveInterceptor(Steeltoe.Messaging.Support.IChannelInterceptor interceptor) -> bool
+virtual Steeltoe.Integration.Channel.AbstractMessageChannel.Send(Steeltoe.Messaging.IMessage message) -> bool
+virtual Steeltoe.Integration.Channel.AbstractMessageChannel.Send(Steeltoe.Messaging.IMessage message, int timeout) -> bool
+virtual Steeltoe.Integration.Channel.AbstractMessageChannel.ServiceName.get -> string
+virtual Steeltoe.Integration.Channel.AbstractMessageChannel.ServiceName.set -> void
+virtual Steeltoe.Integration.Channel.AbstractPollableChannel.DoReceive(int timeout) -> Steeltoe.Messaging.IMessage
+virtual Steeltoe.Integration.Channel.AbstractPollableChannel.DoReceive(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> Steeltoe.Messaging.IMessage
+virtual Steeltoe.Integration.Channel.AbstractPollableChannel.HasTaskSchedulerInterceptors.get -> bool
+virtual Steeltoe.Integration.Channel.AbstractPollableChannel.Receive() -> Steeltoe.Messaging.IMessage
+virtual Steeltoe.Integration.Channel.AbstractPollableChannel.Receive(int timeout) -> Steeltoe.Messaging.IMessage
+virtual Steeltoe.Integration.Channel.AbstractPollableChannel.ReceiveAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> System.Threading.Tasks.ValueTask<Steeltoe.Messaging.IMessage>
+virtual Steeltoe.Integration.Channel.AbstractSubscribableChannel.Failover.get -> bool
+virtual Steeltoe.Integration.Channel.AbstractSubscribableChannel.Failover.set -> void
+virtual Steeltoe.Integration.Channel.AbstractSubscribableChannel.MaxSubscribers.get -> int
+virtual Steeltoe.Integration.Channel.AbstractSubscribableChannel.MaxSubscribers.set -> void
+virtual Steeltoe.Integration.Channel.AbstractSubscribableChannel.Subscribe(Steeltoe.Messaging.IMessageHandler handler) -> bool
+virtual Steeltoe.Integration.Channel.AbstractSubscribableChannel.SubscriberCount.get -> int
+virtual Steeltoe.Integration.Channel.AbstractSubscribableChannel.Unsubscribe(Steeltoe.Messaging.IMessageHandler handler) -> bool
+virtual Steeltoe.Integration.Channel.AbstractSubscribableChannelWriter.Channel.get -> Steeltoe.Integration.Channel.AbstractSubscribableChannel
+virtual Steeltoe.Integration.Channel.AbstractTaskSchedulerChannel.HasTaskSchedulerInterceptors.get -> bool
+virtual Steeltoe.Integration.Channel.PublishSubscribeChannel.ApplySequence.get -> bool
+virtual Steeltoe.Integration.Channel.PublishSubscribeChannel.ApplySequence.set -> void
+virtual Steeltoe.Integration.Channel.PublishSubscribeChannel.ErrorHandler.get -> Steeltoe.Common.Util.IErrorHandler
+virtual Steeltoe.Integration.Channel.PublishSubscribeChannel.ErrorHandler.set -> void
+virtual Steeltoe.Integration.Channel.PublishSubscribeChannel.IgnoreFailures.get -> bool
+virtual Steeltoe.Integration.Channel.PublishSubscribeChannel.IgnoreFailures.set -> void
+virtual Steeltoe.Integration.Channel.PublishSubscribeChannel.MinSubscribers.get -> int
+virtual Steeltoe.Integration.Channel.PublishSubscribeChannel.MinSubscribers.set -> void
+virtual Steeltoe.Integration.Config.AbstractMethodAttributeProcessor<A>.AnnotationType.get -> System.Type
+virtual Steeltoe.Integration.Config.AbstractMethodAttributeProcessor<A>.ChannelResolver.get -> Steeltoe.Messaging.Core.IDestinationResolver<Steeltoe.Messaging.IMessageChannel>
+virtual Steeltoe.Integration.Config.AbstractMethodAttributeProcessor<A>.ConversionService.get -> Steeltoe.Common.Converter.IConversionService
+virtual Steeltoe.Integration.Config.AbstractMethodAttributeProcessor<A>.CreateEndpoint(Steeltoe.Messaging.IMessageHandler handler, System.Reflection.MethodInfo method, System.Collections.Generic.List<System.Attribute> annotations) -> Steeltoe.Integration.Endpoint.AbstractEndpoint
+virtual Steeltoe.Integration.Config.AbstractMethodAttributeProcessor<A>.DoCreateEndpoint(Steeltoe.Messaging.IMessageHandler handler, Steeltoe.Messaging.IMessageChannel inputChannel, System.Collections.Generic.List<System.Attribute> annotations) -> Steeltoe.Integration.Endpoint.AbstractEndpoint
+virtual Steeltoe.Integration.Config.AbstractMethodAttributeProcessor<A>.ExtractTypeIfPossible<H>(object targetObject) -> H
+virtual Steeltoe.Integration.Config.AbstractMethodAttributeProcessor<A>.GenerateHandlerServiceName(string originalServiceName, System.Reflection.MethodInfo method) -> string
+virtual Steeltoe.Integration.Config.AbstractMethodAttributeProcessor<A>.InputChannelProperty.get -> string
+virtual Steeltoe.Integration.Config.AbstractMethodAttributeProcessor<A>.MessageHandlerProperties.get -> System.Collections.Generic.List<string>
+virtual Steeltoe.Integration.Config.AbstractMethodAttributeProcessor<A>.ResolveTargetServiceFromMethodWithServiceAnnotation(System.Reflection.MethodInfo method) -> object
+virtual Steeltoe.Integration.Config.AbstractMethodAttributeProcessor<A>.ResolveTargetServiceName(System.Reflection.MethodInfo method) -> string
+virtual Steeltoe.Integration.Config.AbstractMethodAttributeProcessor<A>.ServiceAnnotationAware() -> bool
+virtual Steeltoe.Integration.Config.AbstractMethodAttributeProcessor<A>.SetOutputChannelIfPresent(System.Collections.Generic.List<System.Attribute> annotations, Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler handler) -> void
+virtual Steeltoe.Integration.Config.AbstractMethodAttributeProcessor<A>.ShouldCreateEndpoint(System.Reflection.MethodInfo method, System.Collections.Generic.List<System.Attribute> attributes) -> bool
+virtual Steeltoe.Integration.Config.ServiceActivatorAttributeProcessor.GenerateServiceName(string originalServiceName, System.Reflection.MethodInfo method, System.Type attributeType) -> string
+virtual Steeltoe.Integration.Dispatcher.AbstractDispatcher.AddHandler(Steeltoe.Messaging.IMessageHandler handler) -> bool
+virtual Steeltoe.Integration.Dispatcher.AbstractDispatcher.Dispatch(Steeltoe.Messaging.IMessage message, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> bool
+virtual Steeltoe.Integration.Dispatcher.AbstractDispatcher.ErrorHandler.get -> Steeltoe.Common.Util.IErrorHandler
+virtual Steeltoe.Integration.Dispatcher.AbstractDispatcher.ErrorHandler.set -> void
+virtual Steeltoe.Integration.Dispatcher.AbstractDispatcher.Failover.get -> bool
+virtual Steeltoe.Integration.Dispatcher.AbstractDispatcher.Failover.set -> void
+virtual Steeltoe.Integration.Dispatcher.AbstractDispatcher.HandlerCount.get -> int
+virtual Steeltoe.Integration.Dispatcher.AbstractDispatcher.IntegrationServices.get -> Steeltoe.Integration.IIntegrationServices
+virtual Steeltoe.Integration.Dispatcher.AbstractDispatcher.LoadBalancingStrategy.get -> Steeltoe.Integration.Dispatcher.ILoadBalancingStrategy
+virtual Steeltoe.Integration.Dispatcher.AbstractDispatcher.LoadBalancingStrategy.set -> void
+virtual Steeltoe.Integration.Dispatcher.AbstractDispatcher.MaxSubscribers.get -> int
+virtual Steeltoe.Integration.Dispatcher.AbstractDispatcher.MaxSubscribers.set -> void
+virtual Steeltoe.Integration.Dispatcher.AbstractDispatcher.MessageHandlingDecorator.get -> Steeltoe.Integration.Dispatcher.IMessageHandlingDecorator
+virtual Steeltoe.Integration.Dispatcher.AbstractDispatcher.MessageHandlingDecorator.set -> void
+virtual Steeltoe.Integration.Dispatcher.AbstractDispatcher.RemoveHandler(Steeltoe.Messaging.IMessageHandler handler) -> bool
+virtual Steeltoe.Integration.Dispatcher.AbstractDispatcher.TryOptimizedDispatch(Steeltoe.Messaging.IMessage message) -> bool
+virtual Steeltoe.Integration.Dispatcher.BroadcastingDispatcher.ApplySequence.get -> bool
+virtual Steeltoe.Integration.Dispatcher.BroadcastingDispatcher.ApplySequence.set -> void
+virtual Steeltoe.Integration.Dispatcher.BroadcastingDispatcher.IgnoreFailures.get -> bool
+virtual Steeltoe.Integration.Dispatcher.BroadcastingDispatcher.IgnoreFailures.set -> void
+virtual Steeltoe.Integration.Dispatcher.BroadcastingDispatcher.MinSubscribers.get -> int
+virtual Steeltoe.Integration.Dispatcher.BroadcastingDispatcher.MinSubscribers.set -> void
+virtual Steeltoe.Integration.Endpoint.AbstractEndpoint.ComponentName.get -> string
+virtual Steeltoe.Integration.Endpoint.AbstractEndpoint.ComponentName.set -> void
+virtual Steeltoe.Integration.Endpoint.AbstractEndpoint.ComponentType.get -> string
+virtual Steeltoe.Integration.Endpoint.AbstractEndpoint.ComponentType.set -> void
+virtual Steeltoe.Integration.Endpoint.AbstractEndpoint.DoStop(System.Action callback) -> System.Threading.Tasks.Task
+virtual Steeltoe.Integration.Endpoint.AbstractEndpoint.ServiceName.get -> string
+virtual Steeltoe.Integration.Endpoint.AbstractEndpoint.ServiceName.set -> void
+virtual Steeltoe.Integration.Endpoint.AbstractMessageSource<T>.BuildMessage(object result) -> Steeltoe.Messaging.IMessage<T>
+virtual Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.Handler.get -> Steeltoe.Messaging.IMessageHandler
+virtual Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.InputChannel.get -> Steeltoe.Messaging.IMessageChannel
+virtual Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.OutputChannel.get -> Steeltoe.Messaging.IMessageChannel
+virtual Steeltoe.Integration.Endpoint.MessageProducerSupportEndpoint.ErrorChannel.get -> Steeltoe.Messaging.IMessageChannel
+virtual Steeltoe.Integration.Endpoint.MessageProducerSupportEndpoint.ErrorChannel.set -> void
+virtual Steeltoe.Integration.Endpoint.MessageProducerSupportEndpoint.ErrorChannelName.get -> string
+virtual Steeltoe.Integration.Endpoint.MessageProducerSupportEndpoint.ErrorChannelName.set -> void
+virtual Steeltoe.Integration.Endpoint.MessageProducerSupportEndpoint.ErrorMessageStrategy.get -> Steeltoe.Integration.Support.IErrorMessageStrategy
+virtual Steeltoe.Integration.Endpoint.MessageProducerSupportEndpoint.ErrorMessageStrategy.set -> void
+virtual Steeltoe.Integration.Endpoint.MessageProducerSupportEndpoint.GetErrorMessageAttributes(Steeltoe.Messaging.IMessage message) -> Steeltoe.Common.Util.IAttributeAccessor
+virtual Steeltoe.Integration.Endpoint.MessageProducerSupportEndpoint.MessagingTemplate.get -> Steeltoe.Integration.MessagingTemplate
+virtual Steeltoe.Integration.Endpoint.MessageProducerSupportEndpoint.OutputChannel.get -> Steeltoe.Messaging.IMessageChannel
+virtual Steeltoe.Integration.Endpoint.MessageProducerSupportEndpoint.OutputChannel.set -> void
+virtual Steeltoe.Integration.Endpoint.MessageProducerSupportEndpoint.OutputChannelName.get -> string
+virtual Steeltoe.Integration.Endpoint.MessageProducerSupportEndpoint.OutputChannelName.set -> void
+virtual Steeltoe.Integration.Endpoint.MessageProducerSupportEndpoint.SendMessage(Steeltoe.Messaging.IMessage messageArg) -> void
+virtual Steeltoe.Integration.Endpoint.MessageProducerSupportEndpoint.SendTimeout.get -> int
+virtual Steeltoe.Integration.Endpoint.MessageProducerSupportEndpoint.SendTimeout.set -> void
+virtual Steeltoe.Integration.ErrorMessagePublisher.Channel.get -> Steeltoe.Messaging.IMessageChannel
+virtual Steeltoe.Integration.ErrorMessagePublisher.Channel.set -> void
+virtual Steeltoe.Integration.ErrorMessagePublisher.ChannelName.get -> string
+virtual Steeltoe.Integration.ErrorMessagePublisher.ChannelName.set -> void
+virtual Steeltoe.Integration.ErrorMessagePublisher.ChannelResolver.get -> Steeltoe.Messaging.Core.IDestinationResolver<Steeltoe.Messaging.IMessageChannel>
+virtual Steeltoe.Integration.ErrorMessagePublisher.ChannelResolver.set -> void
+virtual Steeltoe.Integration.ErrorMessagePublisher.DeterminePayload(System.Exception exception, Steeltoe.Common.Util.IAttributeAccessor context) -> System.Exception
+virtual Steeltoe.Integration.ErrorMessagePublisher.ErrorMessageStrategy.get -> Steeltoe.Integration.Support.IErrorMessageStrategy
+virtual Steeltoe.Integration.ErrorMessagePublisher.ErrorMessageStrategy.set -> void
+virtual Steeltoe.Integration.ErrorMessagePublisher.MessagingTemplate.get -> Steeltoe.Integration.MessagingTemplate
+virtual Steeltoe.Integration.ErrorMessagePublisher.PayloadWhenNull(Steeltoe.Common.Util.IAttributeAccessor context) -> System.Exception
+virtual Steeltoe.Integration.ErrorMessagePublisher.Publish(Steeltoe.Messaging.IMessage failedMessage, System.Exception throwable) -> void
+virtual Steeltoe.Integration.ErrorMessagePublisher.Publish(Steeltoe.Messaging.IMessage inputMessage, Steeltoe.Messaging.IMessage failedMessage, System.Exception exception) -> void
+virtual Steeltoe.Integration.ErrorMessagePublisher.Publish(Steeltoe.Messaging.IMessage inputMessage, Steeltoe.Messaging.MessagingException exception) -> void
+virtual Steeltoe.Integration.ErrorMessagePublisher.Publish(Steeltoe.Messaging.MessagingException exception) -> void
+virtual Steeltoe.Integration.ErrorMessagePublisher.Publish(System.Exception exception, Steeltoe.Common.Util.IAttributeAccessor context) -> void
+virtual Steeltoe.Integration.ErrorMessagePublisher.SendTimeout.get -> int
+virtual Steeltoe.Integration.ErrorMessagePublisher.SendTimeout.set -> void
+virtual Steeltoe.Integration.Handler.AbstractMessageHandler.ComponentName.get -> string
+virtual Steeltoe.Integration.Handler.AbstractMessageHandler.ComponentName.set -> void
+virtual Steeltoe.Integration.Handler.AbstractMessageHandler.ComponentType.get -> string
+virtual Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessage(Steeltoe.Messaging.IMessage message) -> void
+virtual Steeltoe.Integration.Handler.AbstractMessageHandler.ServiceName.get -> string
+virtual Steeltoe.Integration.Handler.AbstractMessageHandler.ServiceName.set -> void
+virtual Steeltoe.Integration.Handler.AbstractMessageProducingHandler.AddNotPropagatedHeaders(params string[] headers) -> void
+virtual Steeltoe.Integration.Handler.AbstractMessageProducingHandler.CreateOutputMessage(object output, Steeltoe.Messaging.IMessageHeaders requestHeaders) -> Steeltoe.Messaging.IMessage
+virtual Steeltoe.Integration.Handler.AbstractMessageProducingHandler.NotPropagatedHeaders.get -> System.Collections.Generic.IList<string>
+virtual Steeltoe.Integration.Handler.AbstractMessageProducingHandler.NotPropagatedHeaders.set -> void
+virtual Steeltoe.Integration.Handler.AbstractMessageProducingHandler.OutputChannel.get -> Steeltoe.Messaging.IMessageChannel
+virtual Steeltoe.Integration.Handler.AbstractMessageProducingHandler.OutputChannel.set -> void
+virtual Steeltoe.Integration.Handler.AbstractMessageProducingHandler.OutputChannelName.get -> string
+virtual Steeltoe.Integration.Handler.AbstractMessageProducingHandler.OutputChannelName.set -> void
+virtual Steeltoe.Integration.Handler.AbstractMessageProducingHandler.ProduceOutput(object reply, Steeltoe.Messaging.IMessage requestMessage) -> void
+virtual Steeltoe.Integration.Handler.AbstractMessageProducingHandler.SendOutput(object output, object replyChannelArg, bool useArgChannel) -> void
+virtual Steeltoe.Integration.Handler.AbstractMessageProducingHandler.SendTimeout.get -> int
+virtual Steeltoe.Integration.Handler.AbstractMessageProducingHandler.SendTimeout.set -> void
+virtual Steeltoe.Integration.Handler.AbstractMessageProducingHandler.ShouldCopyRequestHeaders.get -> bool
+virtual Steeltoe.Integration.Handler.AbstractMessageProducingHandler.ShouldSplitOutput(System.Collections.IEnumerable reply) -> bool
+virtual Steeltoe.Integration.Handler.AbstractMessageProducingHandler.UpdateNotPropagatedHeaders(System.Collections.Generic.IList<string> headers, bool merge) -> void
+virtual Steeltoe.Integration.Handler.LoggingHandler.CreateLogMessage(Steeltoe.Messaging.IMessage message) -> string
+virtual Steeltoe.Integration.Handler.MethodInvokingMessageProcessor<T>.ConversionService.get -> Steeltoe.Common.Converter.IConversionService
+virtual Steeltoe.Integration.Handler.MethodInvokingMessageProcessor<T>.ConversionService.set -> void
+virtual Steeltoe.Integration.Handler.ServiceActivatingHandler.IsRunning.get -> bool
+virtual Steeltoe.Integration.Handler.ServiceActivatingHandler.Start() -> System.Threading.Tasks.Task
+virtual Steeltoe.Integration.Handler.ServiceActivatingHandler.Stop() -> System.Threading.Tasks.Task
+virtual Steeltoe.Integration.IntegrationServices.ChannelResolver.get -> Steeltoe.Messaging.Core.IDestinationResolver<Steeltoe.Messaging.IMessageChannel>
+virtual Steeltoe.Integration.IntegrationServices.ChannelResolver.set -> void
+virtual Steeltoe.Integration.IntegrationServices.ConversionService.get -> Steeltoe.Common.Converter.IConversionService
+virtual Steeltoe.Integration.IntegrationServices.ConversionService.set -> void
+virtual Steeltoe.Integration.IntegrationServices.ExpressionParser.get -> Steeltoe.Common.Expression.Internal.IExpressionParser
+virtual Steeltoe.Integration.IntegrationServices.ExpressionParser.set -> void
+virtual Steeltoe.Integration.IntegrationServices.IdGenerator.get -> Steeltoe.Common.Util.IIDGenerator
+virtual Steeltoe.Integration.IntegrationServices.IdGenerator.set -> void
+virtual Steeltoe.Integration.IntegrationServices.MessageBuilderFactory.get -> Steeltoe.Integration.Support.IMessageBuilderFactory
+virtual Steeltoe.Integration.IntegrationServices.MessageBuilderFactory.set -> void
+virtual Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.CreateDefaultHeaderMatcher(string standardHeaderPrefix, System.Collections.Generic.List<string> headerNames) -> Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.IHeaderMatcher
+virtual Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.CreateHeaderMatcher(string[] patterns) -> Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.IHeaderMatcher
+virtual Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.CreateTargetPropertyName(string propertyName, bool fromMessageHeaders) -> string
+virtual Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.GetHeaderIfAvailable<V>(System.Collections.Generic.IDictionary<string, object> headers, string name, System.Type type) -> V
+virtual Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.GetTransientHeaderNames() -> System.Collections.Generic.List<string>
+virtual Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.PopulateStandardHeaders(System.Collections.Generic.IDictionary<string, object> allHeaders, System.Collections.Generic.IDictionary<string, object> subset, T target) -> void
+virtual Steeltoe.Integration.Support.AbstractMessageBuilder.FilterAndCopyHeadersIfAbsent(System.Collections.Generic.IDictionary<string, object> headersToCopy, params string[] headerPatternsToFilter) -> Steeltoe.Integration.Support.IMessageBuilder
+virtual Steeltoe.Integration.Support.AbstractMessageBuilder.PopSequenceDetails() -> Steeltoe.Integration.Support.IMessageBuilder
+virtual Steeltoe.Integration.Support.AbstractMessageBuilder.PushSequenceDetails(object correlationId, int sequenceNumber, int sequenceSize) -> Steeltoe.Integration.Support.IMessageBuilder
+virtual Steeltoe.Integration.Support.AbstractMessageBuilder.SetCorrelationId(object correlationId) -> Steeltoe.Integration.Support.IMessageBuilder
+virtual Steeltoe.Integration.Support.AbstractMessageBuilder.SetErrorChannel(Steeltoe.Messaging.IMessageChannel errorChannel) -> Steeltoe.Integration.Support.IMessageBuilder
+virtual Steeltoe.Integration.Support.AbstractMessageBuilder.SetErrorChannelName(string errorChannelName) -> Steeltoe.Integration.Support.IMessageBuilder
+virtual Steeltoe.Integration.Support.AbstractMessageBuilder.SetExpirationDate(long expirationDate) -> Steeltoe.Integration.Support.IMessageBuilder
+virtual Steeltoe.Integration.Support.AbstractMessageBuilder.SetExpirationDate(System.DateTime? expirationDate) -> Steeltoe.Integration.Support.IMessageBuilder
+virtual Steeltoe.Integration.Support.AbstractMessageBuilder.SetPriority(int priority) -> Steeltoe.Integration.Support.IMessageBuilder
+virtual Steeltoe.Integration.Support.AbstractMessageBuilder.SetReplyChannel(Steeltoe.Messaging.IMessageChannel replyChannel) -> Steeltoe.Integration.Support.IMessageBuilder
+virtual Steeltoe.Integration.Support.AbstractMessageBuilder.SetReplyChannelName(string replyChannelName) -> Steeltoe.Integration.Support.IMessageBuilder
+virtual Steeltoe.Integration.Support.AbstractMessageBuilder.SetSequenceNumber(int sequenceNumber) -> Steeltoe.Integration.Support.IMessageBuilder
+virtual Steeltoe.Integration.Support.AbstractMessageBuilder.SetSequenceSize(int sequenceSize) -> Steeltoe.Integration.Support.IMessageBuilder
+virtual Steeltoe.Integration.Support.Channel.DefaultMessageChannelResolver.ResolveDestination(string name) -> Steeltoe.Messaging.IMessageChannel
+virtual Steeltoe.Integration.Support.MutableMessageHeaders.AddRange(System.Collections.Generic.IDictionary<string, object> map) -> void
+virtual Steeltoe.Integration.Transformer.AbstractTransformer.MessageBuilderFactory.get -> Steeltoe.Integration.Support.IMessageBuilderFactory
+virtual Steeltoe.Integration.Transformer.AbstractTransformer.MessageBuilderFactory.set -> void
+virtual Steeltoe.Integration.Util.AbstractExpressionEvaluator.GetEvaluationContext(bool contextRequired = true) -> Steeltoe.Common.Expression.Internal.IEvaluationContext
+virtual Steeltoe.Integration.Util.AbstractExpressionEvaluator.GetMessageBuilderFactory() -> Steeltoe.Integration.Support.IMessageBuilderFactory
+volatile Steeltoe.Integration.Support.AbstractMessageBuilder._modified -> bool

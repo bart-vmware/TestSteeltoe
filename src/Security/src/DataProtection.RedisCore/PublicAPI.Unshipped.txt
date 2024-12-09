@@ -1,0 +1,4 @@
+﻿static Steeltoe.Security.DataProtection.RedisDataProtectionBuilderExtensions.PersistKeysToRedis(this Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder builder) -> Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder
+Steeltoe.Security.DataProtection.Redis.CloudFoundryRedisXmlRepository
+Steeltoe.Security.DataProtection.Redis.CloudFoundryRedisXmlRepository.CloudFoundryRedisXmlRepository(StackExchange.Redis.IConnectionMultiplexer redis) -> void
+Steeltoe.Security.DataProtection.RedisDataProtectionBuilderExtensions

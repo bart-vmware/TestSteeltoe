@@ -1,0 +1,155 @@
+﻿const Steeltoe.Stream.Messaging.ISink.INPUT = "input" -> string
+const Steeltoe.Stream.Messaging.ISource.OUTPUT = "output" -> string
+Steeltoe.Stream.Attributes.EnableBindingAttribute
+Steeltoe.Stream.Attributes.EnableBindingAttribute.EnableBindingAttribute(params System.Type[] bindings) -> void
+Steeltoe.Stream.Attributes.InputAttribute
+Steeltoe.Stream.Attributes.InputAttribute.InputAttribute(string name = null) -> void
+Steeltoe.Stream.Attributes.OutputAttribute
+Steeltoe.Stream.Attributes.OutputAttribute.OutputAttribute(string name = null) -> void
+Steeltoe.Stream.Attributes.StreamListenerAttribute
+Steeltoe.Stream.Attributes.StreamListenerAttribute.StreamListenerAttribute(string target, bool copyHeaders = true) -> void
+Steeltoe.Stream.Attributes.StreamListenerAttribute.StreamListenerAttribute(string target, string condition, bool copyHeaders = true) -> void
+Steeltoe.Stream.Binder.IBinder
+Steeltoe.Stream.Binder.IBinder.BindConsumer(string name, string group, object inboundTarget, Steeltoe.Stream.Config.IConsumerOptions consumerOptions) -> Steeltoe.Stream.Binder.IBinding
+Steeltoe.Stream.Binder.IBinder.BindProducer(string name, object outboundTarget, Steeltoe.Stream.Config.IProducerOptions producerOptions) -> Steeltoe.Stream.Binder.IBinding
+Steeltoe.Stream.Binder.IBinder.TargetType.get -> System.Type
+Steeltoe.Stream.Binder.IBinder<T>
+Steeltoe.Stream.Binder.IBinder<T>.BindConsumer(string name, string group, T inboundTarget, Steeltoe.Stream.Config.IConsumerOptions consumerOptions) -> Steeltoe.Stream.Binder.IBinding
+Steeltoe.Stream.Binder.IBinder<T>.BindProducer(string name, T outboundTarget, Steeltoe.Stream.Config.IProducerOptions producerOptions) -> Steeltoe.Stream.Binder.IBinding
+Steeltoe.Stream.Binder.IBinderFactory
+Steeltoe.Stream.Binder.IBinderFactory.GetBinder(string name) -> Steeltoe.Stream.Binder.IBinder
+Steeltoe.Stream.Binder.IBinderFactory.GetBinder(string name, System.Type bindableType) -> Steeltoe.Stream.Binder.IBinder
+Steeltoe.Stream.Binder.IBinderFactoryListener
+Steeltoe.Stream.Binder.IBinderFactoryListener.AfterBinderInitialized(string configurationName, Steeltoe.Common.Contexts.IApplicationContext binderContext) -> void
+Steeltoe.Stream.Binder.IBinderType
+Steeltoe.Stream.Binder.IBinderType.AssemblyPath.get -> string
+Steeltoe.Stream.Binder.IBinderType.ConfigureClass.get -> string
+Steeltoe.Stream.Binder.IBinderType.Name.get -> string
+Steeltoe.Stream.Binder.IBinderTypeRegistry
+Steeltoe.Stream.Binder.IBinderTypeRegistry.Get(string name) -> Steeltoe.Stream.Binder.IBinderType
+Steeltoe.Stream.Binder.IBinderTypeRegistry.GetAll() -> System.Collections.Generic.IDictionary<string, Steeltoe.Stream.Binder.IBinderType>
+Steeltoe.Stream.Binder.IBinding
+Steeltoe.Stream.Binder.IBinding.BindingName.get -> string
+Steeltoe.Stream.Binder.IBinding.ExtendedInfo.get -> System.Collections.Generic.IDictionary<string, object>
+Steeltoe.Stream.Binder.IBinding.IsInput.get -> bool
+Steeltoe.Stream.Binder.IBinding.Name.get -> string
+Steeltoe.Stream.Binder.IBinding.Unbind() -> System.Threading.Tasks.Task
+Steeltoe.Stream.Binder.IBindingCleaner
+Steeltoe.Stream.Binder.IBindingCleaner.Clean(string entity, bool isJob) -> System.Collections.Generic.IDictionary<string, System.Collections.Generic.List<string>>
+Steeltoe.Stream.Binder.IPartitionKeyExtractorStrategy
+Steeltoe.Stream.Binder.IPartitionKeyExtractorStrategy.ExtractKey(Steeltoe.Messaging.IMessage message) -> object
+Steeltoe.Stream.Binder.IPartitionSelectorStrategy
+Steeltoe.Stream.Binder.IPartitionSelectorStrategy.SelectPartition(object key, int partitionCount) -> int
+Steeltoe.Stream.Binder.IPausable
+Steeltoe.Stream.Binder.IPausable.Pause() -> System.Threading.Tasks.Task
+Steeltoe.Stream.Binder.IPausable.Resume() -> System.Threading.Tasks.Task
+Steeltoe.Stream.Binder.IPollableConsumerBinder
+Steeltoe.Stream.Binder.IPollableConsumerBinder<H>
+Steeltoe.Stream.Binder.IPollableMessageSource
+Steeltoe.Stream.Binder.IPollableSource
+Steeltoe.Stream.Binder.IPollableSource.Poll(object handler) -> bool
+Steeltoe.Stream.Binder.IPollableSource.Poll(object handler, System.Type type) -> bool
+Steeltoe.Stream.Binder.IPollableSource<H>
+Steeltoe.Stream.Binder.IPollableSource<H>.Poll(H handler) -> bool
+Steeltoe.Stream.Binder.IPollableSource<H>.Poll(H handler, System.Type type) -> bool
+Steeltoe.Stream.Binding.IBindable
+Steeltoe.Stream.Binding.IBindable.BindingType.get -> System.Type
+Steeltoe.Stream.Binding.IBindable.CreateAndBindInputs(Steeltoe.Stream.Binding.IBindingService bindingService) -> System.Collections.Generic.ICollection<Steeltoe.Stream.Binder.IBinding>
+Steeltoe.Stream.Binding.IBindable.CreateAndBindOutputs(Steeltoe.Stream.Binding.IBindingService bindingService) -> System.Collections.Generic.ICollection<Steeltoe.Stream.Binder.IBinding>
+Steeltoe.Stream.Binding.IBindable.GetBoundInputTarget(string name) -> object
+Steeltoe.Stream.Binding.IBindable.GetBoundOutputTarget(string name) -> object
+Steeltoe.Stream.Binding.IBindable.GetBoundTarget(string name) -> object
+Steeltoe.Stream.Binding.IBindable.Inputs.get -> System.Collections.Generic.ICollection<string>
+Steeltoe.Stream.Binding.IBindable.Outputs.get -> System.Collections.Generic.ICollection<string>
+Steeltoe.Stream.Binding.IBindable.UnbindInputs(Steeltoe.Stream.Binding.IBindingService bindingService) -> void
+Steeltoe.Stream.Binding.IBindable.UnbindOutputs(Steeltoe.Stream.Binding.IBindingService bindingService) -> void
+Steeltoe.Stream.Binding.IBindingService
+Steeltoe.Stream.Binding.IBindingService.BindConsumer<T>(T inputChannel, string name) -> System.Collections.Generic.ICollection<Steeltoe.Stream.Binder.IBinding>
+Steeltoe.Stream.Binding.IBindingService.BindProducer<T>(T outputChannel, string name) -> Steeltoe.Stream.Binder.IBinding
+Steeltoe.Stream.Binding.IBindingService.UnbindConsumers(string inputName) -> void
+Steeltoe.Stream.Binding.IBindingService.UnbindProducers(string outputName) -> void
+Steeltoe.Stream.Binding.IBindingTargetFactory
+Steeltoe.Stream.Binding.IBindingTargetFactory.CanCreate(System.Type type) -> bool
+Steeltoe.Stream.Binding.IBindingTargetFactory.CreateInput(string name) -> object
+Steeltoe.Stream.Binding.IBindingTargetFactory.CreateOutput(string name) -> object
+Steeltoe.Stream.Config.HeaderMode
+Steeltoe.Stream.Config.HeaderMode.EmbeddedHeaders = 2 -> Steeltoe.Stream.Config.HeaderMode
+Steeltoe.Stream.Config.HeaderMode.Headers = 1 -> Steeltoe.Stream.Config.HeaderMode
+Steeltoe.Stream.Config.HeaderMode.None = 0 -> Steeltoe.Stream.Config.HeaderMode
+Steeltoe.Stream.Config.IBinderOptions
+Steeltoe.Stream.Config.IBinderOptions.ConfigureClass.get -> string
+Steeltoe.Stream.Config.IBinderOptions.DefaultCandidate.get -> bool
+Steeltoe.Stream.Config.IBinderOptions.Environment.get -> System.Collections.Generic.Dictionary<string, object>
+Steeltoe.Stream.Config.IBinderOptions.InheritEnvironment.get -> bool
+Steeltoe.Stream.Config.IBindingOptions
+Steeltoe.Stream.Config.IBindingOptions.Binder.get -> string
+Steeltoe.Stream.Config.IBindingOptions.Binder.set -> void
+Steeltoe.Stream.Config.IBindingOptions.Consumer.get -> Steeltoe.Stream.Config.IConsumerOptions
+Steeltoe.Stream.Config.IBindingOptions.ContentType.get -> string
+Steeltoe.Stream.Config.IBindingOptions.ContentType.set -> void
+Steeltoe.Stream.Config.IBindingOptions.Destination.get -> string
+Steeltoe.Stream.Config.IBindingOptions.Destination.set -> void
+Steeltoe.Stream.Config.IBindingOptions.Group.get -> string
+Steeltoe.Stream.Config.IBindingOptions.Group.set -> void
+Steeltoe.Stream.Config.IBindingOptions.Producer.get -> Steeltoe.Stream.Config.IProducerOptions
+Steeltoe.Stream.Config.IConsumerOptions
+Steeltoe.Stream.Config.IConsumerOptions.AutoStartup.get -> bool
+Steeltoe.Stream.Config.IConsumerOptions.BackOffInitialInterval.get -> int
+Steeltoe.Stream.Config.IConsumerOptions.BackOffMaxInterval.get -> int
+Steeltoe.Stream.Config.IConsumerOptions.BackOffMultiplier.get -> double
+Steeltoe.Stream.Config.IConsumerOptions.BindingName.get -> string
+Steeltoe.Stream.Config.IConsumerOptions.Clone() -> Steeltoe.Stream.Config.IConsumerOptions
+Steeltoe.Stream.Config.IConsumerOptions.Concurrency.get -> int
+Steeltoe.Stream.Config.IConsumerOptions.DefaultRetryable.get -> bool
+Steeltoe.Stream.Config.IConsumerOptions.HeaderMode.get -> Steeltoe.Stream.Config.HeaderMode
+Steeltoe.Stream.Config.IConsumerOptions.InstanceCount.get -> int
+Steeltoe.Stream.Config.IConsumerOptions.InstanceIndex.get -> int
+Steeltoe.Stream.Config.IConsumerOptions.InstanceIndexList.get -> System.Collections.Generic.List<int>
+Steeltoe.Stream.Config.IConsumerOptions.IsPartitioned.get -> bool
+Steeltoe.Stream.Config.IConsumerOptions.MaxAttempts.get -> int
+Steeltoe.Stream.Config.IConsumerOptions.Multiplex.get -> bool
+Steeltoe.Stream.Config.IConsumerOptions.RetryableExceptions.get -> System.Collections.Generic.List<string>
+Steeltoe.Stream.Config.IConsumerOptions.UseNativeDecoding.get -> bool
+Steeltoe.Stream.Config.IListenerContainerCustomizer
+Steeltoe.Stream.Config.IListenerContainerCustomizer.Configure(object container, string destinationName, string group) -> void
+Steeltoe.Stream.Config.IMessageSourceCustomizer
+Steeltoe.Stream.Config.IMessageSourceCustomizer.Configure(object source, string destinationName, string group) -> void
+Steeltoe.Stream.Config.IProducerOptions
+Steeltoe.Stream.Config.IProducerOptions.AutoStartup.get -> bool
+Steeltoe.Stream.Config.IProducerOptions.BindingName.get -> string
+Steeltoe.Stream.Config.IProducerOptions.Clone() -> Steeltoe.Stream.Config.IProducerOptions
+Steeltoe.Stream.Config.IProducerOptions.ErrorChannelEnabled.get -> bool
+Steeltoe.Stream.Config.IProducerOptions.HeaderMode.get -> Steeltoe.Stream.Config.HeaderMode
+Steeltoe.Stream.Config.IProducerOptions.IsPartitioned.get -> bool
+Steeltoe.Stream.Config.IProducerOptions.PartitionCount.get -> int
+Steeltoe.Stream.Config.IProducerOptions.PartitionKeyExpression.get -> string
+Steeltoe.Stream.Config.IProducerOptions.PartitionKeyExtractorName.get -> string
+Steeltoe.Stream.Config.IProducerOptions.PartitionSelectorExpression.get -> string
+Steeltoe.Stream.Config.IProducerOptions.PartitionSelectorName.get -> string
+Steeltoe.Stream.Config.IProducerOptions.RequiredGroups.get -> System.Collections.Generic.List<string>
+Steeltoe.Stream.Config.IProducerOptions.UseNativeEncoding.get -> bool
+Steeltoe.Stream.Messaging.IProcessor
+Steeltoe.Stream.Messaging.ISink
+Steeltoe.Stream.Messaging.ISink.Input.get -> Steeltoe.Messaging.ISubscribableChannel
+Steeltoe.Stream.Messaging.ISource
+Steeltoe.Stream.Messaging.ISource.Output.get -> Steeltoe.Messaging.IMessageChannel
+Steeltoe.Stream.Provisioning.IConsumerDestination
+Steeltoe.Stream.Provisioning.IConsumerDestination.Name.get -> string
+Steeltoe.Stream.Provisioning.IProducerDestination
+Steeltoe.Stream.Provisioning.IProducerDestination.GetNameForPartition(int partition) -> string
+Steeltoe.Stream.Provisioning.IProducerDestination.Name.get -> string
+Steeltoe.Stream.Provisioning.IProvisioningProvider
+Steeltoe.Stream.Provisioning.IProvisioningProvider.ProvisionConsumerDestination(string name, string group, Steeltoe.Stream.Config.IConsumerOptions properties) -> Steeltoe.Stream.Provisioning.IConsumerDestination
+Steeltoe.Stream.Provisioning.IProvisioningProvider.ProvisionProducerDestination(string name, Steeltoe.Stream.Config.IProducerOptions options) -> Steeltoe.Stream.Provisioning.IProducerDestination
+virtual Steeltoe.Stream.Attributes.EnableBindingAttribute.Bindings.get -> System.Type[]
+virtual Steeltoe.Stream.Attributes.EnableBindingAttribute.Bindings.set -> void
+virtual Steeltoe.Stream.Attributes.InputAttribute.Name.get -> string
+virtual Steeltoe.Stream.Attributes.InputAttribute.Name.set -> void
+virtual Steeltoe.Stream.Attributes.OutputAttribute.Name.get -> string
+virtual Steeltoe.Stream.Attributes.OutputAttribute.Name.set -> void
+virtual Steeltoe.Stream.Attributes.StreamListenerAttribute.Condition.get -> string
+virtual Steeltoe.Stream.Attributes.StreamListenerAttribute.Condition.set -> void
+virtual Steeltoe.Stream.Attributes.StreamListenerAttribute.CopyHeaders.get -> bool
+virtual Steeltoe.Stream.Attributes.StreamListenerAttribute.CopyHeaders.set -> void
+virtual Steeltoe.Stream.Attributes.StreamListenerAttribute.Target.get -> string
+virtual Steeltoe.Stream.Attributes.StreamListenerAttribute.Target.set -> void

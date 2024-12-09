@@ -1,0 +1,11 @@
+﻿static Steeltoe.Discovery.Client.DiscoveryApplicationBuilderExtensions.UseDiscoveryClient(this Microsoft.AspNetCore.Builder.IApplicationBuilder app) -> Microsoft.AspNetCore.Builder.IApplicationBuilder
+static Steeltoe.Discovery.Client.DiscoveryWebApplicationBuilderExtensions.AddDiscoveryClient(this Microsoft.AspNetCore.Builder.WebApplicationBuilder hostBuilder) -> Microsoft.AspNetCore.Builder.WebApplicationBuilder
+static Steeltoe.Discovery.Client.DiscoveryWebApplicationBuilderExtensions.AddServiceDiscovery(this Microsoft.AspNetCore.Builder.WebApplicationBuilder hostBuilder, System.Action<Steeltoe.Discovery.Client.DiscoveryClientBuilder> optionsAction) -> Microsoft.AspNetCore.Builder.WebApplicationBuilder
+static Steeltoe.Discovery.Client.DiscoveryWebHostBuilderExtensions.AddDiscoveryClient(this Microsoft.AspNetCore.Hosting.IWebHostBuilder hostBuilder) -> Microsoft.AspNetCore.Hosting.IWebHostBuilder
+static Steeltoe.Discovery.Client.DiscoveryWebHostBuilderExtensions.AddServiceDiscovery(this Microsoft.AspNetCore.Hosting.IWebHostBuilder hostBuilder, System.Action<Steeltoe.Discovery.Client.DiscoveryClientBuilder> optionsAction) -> Microsoft.AspNetCore.Hosting.IWebHostBuilder
+Steeltoe.Discovery.Client.DiscoveryApplicationBuilderExtensions
+Steeltoe.Discovery.Client.DiscoveryClientStartupFilter
+Steeltoe.Discovery.Client.DiscoveryClientStartupFilter.Configure(System.Action<Microsoft.AspNetCore.Builder.IApplicationBuilder> next) -> System.Action<Microsoft.AspNetCore.Builder.IApplicationBuilder>
+Steeltoe.Discovery.Client.DiscoveryClientStartupFilter.DiscoveryClientStartupFilter() -> void
+Steeltoe.Discovery.Client.DiscoveryWebApplicationBuilderExtensions
+Steeltoe.Discovery.Client.DiscoveryWebHostBuilderExtensions

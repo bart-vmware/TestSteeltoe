@@ -1,0 +1,59 @@
+﻿override Steeltoe.Common.Kubernetes.KubernetesApplicationOptions.ApplicationName.get -> string
+override Steeltoe.Common.Kubernetes.KubernetesApplicationOptions.PlatformRoot.get -> string
+static Steeltoe.Common.Kubernetes.IServiceCollectionExtensions.AddKubernetesApplicationInstanceInfo(this Microsoft.Extensions.DependencyInjection.IServiceCollection serviceCollection) -> Microsoft.Extensions.DependencyInjection.IServiceCollection
+static Steeltoe.Common.Kubernetes.IServiceCollectionExtensions.AddKubernetesClient(this Microsoft.Extensions.DependencyInjection.IServiceCollection serviceCollection, System.Action<k8s.KubernetesClientConfiguration> kubernetesClientConfiguration = null) -> Microsoft.Extensions.DependencyInjection.IServiceCollection
+static Steeltoe.Common.Kubernetes.IServiceCollectionExtensions.GetKubernetesApplicationOptions(this Microsoft.Extensions.DependencyInjection.IServiceCollection serviceCollection) -> Steeltoe.Common.IApplicationInstanceInfo
+static Steeltoe.Common.Kubernetes.KubernetesApplicationOptions.PlatformConfigRoot.get -> string
+static Steeltoe.Common.Kubernetes.KubernetesClientHelpers.GetKubernetesClient(Microsoft.Extensions.Configuration.IConfiguration configuration, System.Action<k8s.KubernetesClientConfiguration> kubernetesClientConfiguration = null, Microsoft.Extensions.Logging.ILogger logger = null) -> k8s.IKubernetes
+static Steeltoe.Common.Kubernetes.KubernetesClientHelpers.GetKubernetesClient(Steeltoe.Common.Kubernetes.KubernetesApplicationOptions appInfo, System.Action<k8s.KubernetesClientConfiguration> kubernetesClientConfiguration = null, Microsoft.Extensions.Logging.ILogger logger = null) -> k8s.IKubernetes
+Steeltoe.Common.Kubernetes.IPodUtilities
+Steeltoe.Common.Kubernetes.IPodUtilities.GetCurrentPodAsync() -> System.Threading.Tasks.Task<k8s.Models.V1Pod>
+Steeltoe.Common.Kubernetes.IServiceCollectionExtensions
+Steeltoe.Common.Kubernetes.KubernetesApplicationOptions
+Steeltoe.Common.Kubernetes.KubernetesApplicationOptions.Config.get -> Steeltoe.Common.Kubernetes.KubernetesConfiguration
+Steeltoe.Common.Kubernetes.KubernetesApplicationOptions.Config.set -> void
+Steeltoe.Common.Kubernetes.KubernetesApplicationOptions.Enabled.get -> bool
+Steeltoe.Common.Kubernetes.KubernetesApplicationOptions.Enabled.set -> void
+Steeltoe.Common.Kubernetes.KubernetesApplicationOptions.KubernetesApplicationOptions() -> void
+Steeltoe.Common.Kubernetes.KubernetesApplicationOptions.KubernetesApplicationOptions(Microsoft.Extensions.Configuration.IConfiguration config) -> void
+Steeltoe.Common.Kubernetes.KubernetesApplicationOptions.NameEnvironmentSeparator.get -> string
+Steeltoe.Common.Kubernetes.KubernetesApplicationOptions.NameEnvironmentSeparator.set -> void
+Steeltoe.Common.Kubernetes.KubernetesApplicationOptions.NameSpace.get -> string
+Steeltoe.Common.Kubernetes.KubernetesApplicationOptions.NameSpace.set -> void
+Steeltoe.Common.Kubernetes.KubernetesApplicationOptions.Reload.get -> Steeltoe.Common.Kubernetes.ReloadSettings
+Steeltoe.Common.Kubernetes.KubernetesApplicationOptions.Reload.set -> void
+Steeltoe.Common.Kubernetes.KubernetesApplicationOptions.Secrets.get -> Steeltoe.Common.Kubernetes.WatchableResource
+Steeltoe.Common.Kubernetes.KubernetesApplicationOptions.Secrets.set -> void
+Steeltoe.Common.Kubernetes.KubernetesClientHelpers
+Steeltoe.Common.Kubernetes.KubernetesConfiguration
+Steeltoe.Common.Kubernetes.KubernetesConfiguration.KubernetesConfiguration() -> void
+Steeltoe.Common.Kubernetes.KubernetesConfiguration.Paths.get -> System.Collections.Generic.List<string>
+Steeltoe.Common.Kubernetes.KubernetesConfiguration.Paths.set -> void
+Steeltoe.Common.Kubernetes.NamespacedResource
+Steeltoe.Common.Kubernetes.NamespacedResource.Name.get -> string
+Steeltoe.Common.Kubernetes.NamespacedResource.Name.set -> void
+Steeltoe.Common.Kubernetes.NamespacedResource.Namespace.get -> string
+Steeltoe.Common.Kubernetes.NamespacedResource.Namespace.set -> void
+Steeltoe.Common.Kubernetes.NamespacedResource.NamespacedResource() -> void
+Steeltoe.Common.Kubernetes.ReloadMethods
+Steeltoe.Common.Kubernetes.ReloadMethods.Event = 0 -> Steeltoe.Common.Kubernetes.ReloadMethods
+Steeltoe.Common.Kubernetes.ReloadMethods.Polling = 1 -> Steeltoe.Common.Kubernetes.ReloadMethods
+Steeltoe.Common.Kubernetes.ReloadSettings
+Steeltoe.Common.Kubernetes.ReloadSettings.ConfigMaps.get -> bool
+Steeltoe.Common.Kubernetes.ReloadSettings.ConfigMaps.set -> void
+Steeltoe.Common.Kubernetes.ReloadSettings.Mode.get -> Steeltoe.Common.Kubernetes.ReloadMethods
+Steeltoe.Common.Kubernetes.ReloadSettings.Mode.set -> void
+Steeltoe.Common.Kubernetes.ReloadSettings.Period.get -> int
+Steeltoe.Common.Kubernetes.ReloadSettings.Period.set -> void
+Steeltoe.Common.Kubernetes.ReloadSettings.ReloadSettings() -> void
+Steeltoe.Common.Kubernetes.ReloadSettings.Secrets.get -> bool
+Steeltoe.Common.Kubernetes.ReloadSettings.Secrets.set -> void
+Steeltoe.Common.Kubernetes.WatchableResource
+Steeltoe.Common.Kubernetes.WatchableResource.Enabled.get -> bool
+Steeltoe.Common.Kubernetes.WatchableResource.Enabled.set -> void
+Steeltoe.Common.Kubernetes.WatchableResource.Sources.get -> System.Collections.Generic.List<Steeltoe.Common.Kubernetes.NamespacedResource>
+Steeltoe.Common.Kubernetes.WatchableResource.Sources.set -> void
+Steeltoe.Common.Kubernetes.WatchableResource.WatchableResource() -> void
+Steeltoe.Extensions.Configuration.Kubernetes.StandardPodUtilities
+Steeltoe.Extensions.Configuration.Kubernetes.StandardPodUtilities.GetCurrentPodAsync() -> System.Threading.Tasks.Task<k8s.Models.V1Pod>
+Steeltoe.Extensions.Configuration.Kubernetes.StandardPodUtilities.StandardPodUtilities(Steeltoe.Common.Kubernetes.KubernetesApplicationOptions kubernetesApplicationOptions, Microsoft.Extensions.Logging.ILogger logger = null, k8s.IKubernetes kubernetes = null) -> void

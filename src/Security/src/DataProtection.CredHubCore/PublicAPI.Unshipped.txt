@@ -1,0 +1,4 @@
+﻿static Steeltoe.Security.DataProtection.CredHub.CredHubHostBuilderExtensions.UseCredHubInterpolation(this Microsoft.AspNetCore.Hosting.IWebHostBuilder webHostBuilder, Microsoft.Extensions.Logging.ILoggerFactory loggerFactory = null) -> Microsoft.AspNetCore.Hosting.IWebHostBuilder
+static Steeltoe.Security.DataProtection.CredHub.CredHubServiceCollectionExtensions.AddCredHubClient(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config, Microsoft.Extensions.Logging.ILoggerFactory loggerFactory = null) -> Microsoft.Extensions.DependencyInjection.IServiceCollection
+Steeltoe.Security.DataProtection.CredHub.CredHubHostBuilderExtensions
+Steeltoe.Security.DataProtection.CredHub.CredHubServiceCollectionExtensions

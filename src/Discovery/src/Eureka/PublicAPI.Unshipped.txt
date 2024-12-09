@@ -1,0 +1,580 @@
+﻿const Steeltoe.Discovery.Eureka.AppInfo.LeaseInfo.Default_DurationInSecs = 90 -> int
+const Steeltoe.Discovery.Eureka.AppInfo.LeaseInfo.Default_RenewalIntervalInSecs = 30 -> int
+const Steeltoe.Discovery.Eureka.EurekaClientConfig.Default_EurekaServerConnectTimeoutSeconds = 5 -> int
+const Steeltoe.Discovery.Eureka.EurekaClientConfig.Default_EurekaServerRetryCount = 3 -> int
+const Steeltoe.Discovery.Eureka.EurekaClientConfig.Default_InstanceInfoReplicationIntervalSeconds = 40 -> int
+const Steeltoe.Discovery.Eureka.EurekaClientConfig.Default_RegistryFetchIntervalSeconds = 30 -> int
+const Steeltoe.Discovery.Eureka.EurekaClientConfig.Default_ServerServiceUrl = "http://localhost:8761/eureka/" -> string
+const Steeltoe.Discovery.Eureka.EurekaClientOptions.Default_InstanceInfoReplicationIntervalSeconds = 30 -> int
+const Steeltoe.Discovery.Eureka.EurekaClientOptions.EUREKA_CLIENT_CONFIGURATION_PREFIX = "eureka:client" -> string
+const Steeltoe.Discovery.Eureka.EurekaDiscoveryClientExtension.EUREKA_PREFIX = "eureka" -> string
+const Steeltoe.Discovery.Eureka.EurekaInstanceConfig.Default_Appname = "unknown" -> string
+const Steeltoe.Discovery.Eureka.EurekaInstanceConfig.Default_HealthCheckUrlPath = "/healthcheck" -> string
+const Steeltoe.Discovery.Eureka.EurekaInstanceConfig.Default_HomePageUrlPath = "/" -> string
+const Steeltoe.Discovery.Eureka.EurekaInstanceConfig.Default_LeaseExpirationDurationInSeconds = 90 -> int
+const Steeltoe.Discovery.Eureka.EurekaInstanceConfig.Default_LeaseRenewalIntervalInSeconds = 30 -> int
+const Steeltoe.Discovery.Eureka.EurekaInstanceConfig.Default_NonSecurePort = 80 -> int
+const Steeltoe.Discovery.Eureka.EurekaInstanceConfig.Default_SecurePort = 443 -> int
+const Steeltoe.Discovery.Eureka.EurekaInstanceConfig.Default_StatusPageUrlPath = "/Status" -> string
+const Steeltoe.Discovery.Eureka.EurekaInstanceOptions.Default_HealthCheckUrlPath = "/health" -> string
+const Steeltoe.Discovery.Eureka.EurekaInstanceOptions.Default_StatusPageUrlPath = "/info" -> string
+const Steeltoe.Discovery.Eureka.EurekaInstanceOptions.EUREKA_INSTANCE_CONFIGURATION_PREFIX = "eureka:instance" -> string
+const Steeltoe.Discovery.Eureka.EurekaPostConfigurer.SPRING_CLOUD_DISCOVERY_REGISTRATIONMETHOD_KEY = "spring:cloud:discovery:registrationMethod" -> string
+override Steeltoe.Discovery.Eureka.AppInfo.Application.ToString() -> string
+override Steeltoe.Discovery.Eureka.AppInfo.Applications.ToString() -> string
+override Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo.Equals(object obj) -> bool
+override Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo.GetHashCode() -> int
+override Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo.ToString() -> string
+override Steeltoe.Discovery.Eureka.EurekaApplicationInfoManager.InstanceConfig.get -> Steeltoe.Discovery.Eureka.IEurekaInstanceConfig
+override Steeltoe.Discovery.Eureka.EurekaDiscoveryClient.ClientConfig.get -> Steeltoe.Discovery.Eureka.IEurekaClientConfig
+override Steeltoe.Discovery.Eureka.EurekaDiscoveryClient.ShutdownAsync() -> System.Threading.Tasks.Task
+override Steeltoe.Discovery.Eureka.EurekaDiscoveryManager.ClientConfig.get -> Steeltoe.Discovery.Eureka.IEurekaClientConfig
+override Steeltoe.Discovery.Eureka.EurekaDiscoveryManager.InstanceConfig.get -> Steeltoe.Discovery.Eureka.IEurekaInstanceConfig
+override Steeltoe.Discovery.Eureka.EurekaInstanceOptions.GetHostName(bool refresh) -> string
+override Steeltoe.Discovery.Eureka.EurekaInstanceOptions.HostName.get -> string
+override Steeltoe.Discovery.Eureka.EurekaInstanceOptions.HostName.set -> void
+override Steeltoe.Discovery.Eureka.EurekaInstanceOptions.IpAddress.get -> string
+override Steeltoe.Discovery.Eureka.EurekaInstanceOptions.IpAddress.set -> void
+override Steeltoe.Discovery.Eureka.ScopedEurekaHealthCheckHandler.GetStatus(Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus currentStatus) -> Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus
+static readonly Steeltoe.Discovery.Eureka.ApplicationInfoManager._instance -> Steeltoe.Discovery.Eureka.ApplicationInfoManager
+static readonly Steeltoe.Discovery.Eureka.DiscoveryManager._instance -> Steeltoe.Discovery.Eureka.DiscoveryManager
+static Steeltoe.Discovery.Eureka.ApplicationInfoManager.Instance.get -> Steeltoe.Discovery.Eureka.ApplicationInfoManager
+static Steeltoe.Discovery.Eureka.DiscoveryManager.Instance.get -> Steeltoe.Discovery.Eureka.DiscoveryManager
+static Steeltoe.Discovery.Eureka.EurekaClientService.GetInstances(Microsoft.Extensions.Configuration.IConfiguration configuration, string serviceId, Microsoft.Extensions.Logging.ILoggerFactory logFactory = null) -> System.Collections.Generic.IList<Steeltoe.Common.Discovery.IServiceInstance>
+static Steeltoe.Discovery.Eureka.EurekaClientService.GetServices(Microsoft.Extensions.Configuration.IConfiguration configuration, Microsoft.Extensions.Logging.ILoggerFactory logFactory = null) -> System.Collections.Generic.IList<string>
+static Steeltoe.Discovery.Eureka.EurekaDiscoveryClient.EnsureAssemblyIsLoaded() -> void
+static Steeltoe.Discovery.Eureka.EurekaDiscoveryClientBuilderExtension.UseEureka(this Steeltoe.Discovery.Client.DiscoveryClientBuilder clientBuilder, string serviceInfoName = null) -> Steeltoe.Discovery.Client.DiscoveryClientBuilder
+static Steeltoe.Discovery.Eureka.EurekaPostConfigurer.UpdateConfiguration(Microsoft.Extensions.Configuration.IConfiguration config, Steeltoe.Connector.Services.EurekaServiceInfo si, Steeltoe.Discovery.Eureka.EurekaClientOptions clientOptions) -> void
+static Steeltoe.Discovery.Eureka.EurekaPostConfigurer.UpdateConfiguration(Microsoft.Extensions.Configuration.IConfiguration config, Steeltoe.Connector.Services.EurekaServiceInfo si, Steeltoe.Discovery.Eureka.EurekaInstanceOptions instOptions, Steeltoe.Common.IApplicationInstanceInfo appInfo) -> void
+static Steeltoe.Discovery.Eureka.EurekaPostConfigurer.UpdateConfiguration(Microsoft.Extensions.Configuration.IConfiguration config, Steeltoe.Discovery.Eureka.EurekaInstanceOptions options, Steeltoe.Common.IApplicationInstanceInfo instanceInfo) -> void
+static Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient.MakeServiceUrl(string serviceUrl) -> string
+static Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient.MakeServiceUrls(string serviceUrls) -> System.Collections.Generic.IList<string>
+static Steeltoe.Discovery.Eureka.Util.DateTimeConversions.FromJavaMillis(long javaMillis) -> System.DateTime
+static Steeltoe.Discovery.Eureka.Util.DateTimeConversions.ToJavaMillis(System.DateTime dt) -> long
+Steeltoe.Discovery.Eureka.AppInfo.ActionType
+Steeltoe.Discovery.Eureka.AppInfo.ActionType.ADDED = 0 -> Steeltoe.Discovery.Eureka.AppInfo.ActionType
+Steeltoe.Discovery.Eureka.AppInfo.ActionType.DELETED = 2 -> Steeltoe.Discovery.Eureka.AppInfo.ActionType
+Steeltoe.Discovery.Eureka.AppInfo.ActionType.MODIFIED = 1 -> Steeltoe.Discovery.Eureka.AppInfo.ActionType
+Steeltoe.Discovery.Eureka.AppInfo.Application
+Steeltoe.Discovery.Eureka.AppInfo.Application.Count.get -> int
+Steeltoe.Discovery.Eureka.AppInfo.Application.GetInstance(string instanceId) -> Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo
+Steeltoe.Discovery.Eureka.AppInfo.Application.Instances.get -> System.Collections.Generic.IList<Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo>
+Steeltoe.Discovery.Eureka.AppInfo.Application.Name.get -> string
+Steeltoe.Discovery.Eureka.AppInfo.Applications
+Steeltoe.Discovery.Eureka.AppInfo.Applications.AppsHashCode.get -> string
+Steeltoe.Discovery.Eureka.AppInfo.Applications.GetInstancesBySecureVirtualHostName(string secureVirtualHostName) -> System.Collections.Generic.IList<Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo>
+Steeltoe.Discovery.Eureka.AppInfo.Applications.GetInstancesByVirtualHostName(string virtualHostName) -> System.Collections.Generic.IList<Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo>
+Steeltoe.Discovery.Eureka.AppInfo.Applications.GetRegisteredApplication(string appName) -> Steeltoe.Discovery.Eureka.AppInfo.Application
+Steeltoe.Discovery.Eureka.AppInfo.Applications.GetRegisteredApplications() -> System.Collections.Generic.IList<Steeltoe.Discovery.Eureka.AppInfo.Application>
+Steeltoe.Discovery.Eureka.AppInfo.Applications.ReturnUpInstancesOnly.get -> bool
+Steeltoe.Discovery.Eureka.AppInfo.Applications.ReturnUpInstancesOnly.set -> void
+Steeltoe.Discovery.Eureka.AppInfo.Applications.Version.get -> long
+Steeltoe.Discovery.Eureka.AppInfo.DataCenterInfo
+Steeltoe.Discovery.Eureka.AppInfo.DataCenterInfo.DataCenterInfo(Steeltoe.Discovery.Eureka.AppInfo.DataCenterName name) -> void
+Steeltoe.Discovery.Eureka.AppInfo.DataCenterInfo.Name.get -> Steeltoe.Discovery.Eureka.AppInfo.DataCenterName
+Steeltoe.Discovery.Eureka.AppInfo.DataCenterName
+Steeltoe.Discovery.Eureka.AppInfo.DataCenterName.Amazon = 1 -> Steeltoe.Discovery.Eureka.AppInfo.DataCenterName
+Steeltoe.Discovery.Eureka.AppInfo.DataCenterName.MyOwn = 2 -> Steeltoe.Discovery.Eureka.AppInfo.DataCenterName
+Steeltoe.Discovery.Eureka.AppInfo.DataCenterName.Netflix = 0 -> Steeltoe.Discovery.Eureka.AppInfo.DataCenterName
+Steeltoe.Discovery.Eureka.AppInfo.IDataCenterInfo
+Steeltoe.Discovery.Eureka.AppInfo.IDataCenterInfo.Name.get -> Steeltoe.Discovery.Eureka.AppInfo.DataCenterName
+Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo
+Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo.Actiontype.get -> Steeltoe.Discovery.Eureka.AppInfo.ActionType
+Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo.AppGroupName.get -> string
+Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo.AppName.get -> string
+Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo.AsgName.get -> string
+Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo.CountryId.get -> int
+Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo.DataCenterInfo.get -> Steeltoe.Discovery.Eureka.AppInfo.IDataCenterInfo
+Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo.HealthCheckUrl.get -> string
+Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo.HomePageUrl.get -> string
+Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo.HostName.get -> string
+Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo.InstanceId.get -> string
+Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo.IpAddr.get -> string
+Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo.IsCoordinatingDiscoveryServer.get -> bool
+Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo.IsDirty.get -> bool
+Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo.IsSecurePortEnabled.get -> bool
+Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo.IsUnsecurePortEnabled.get -> bool
+Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo.LastDirtyTimestamp.get -> long
+Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo.LastUpdatedTimestamp.get -> long
+Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo.LeaseInfo.get -> Steeltoe.Discovery.Eureka.AppInfo.LeaseInfo
+Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo.Metadata.get -> System.Collections.Generic.Dictionary<string, string>
+Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo.OverriddenStatus.get -> Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus
+Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo.Port.get -> int
+Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo.SecureHealthCheckUrl.get -> string
+Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo.SecurePort.get -> int
+Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo.SecureVipAddress.get -> string
+Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo.Sid.get -> string
+Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo.Status.get -> Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus
+Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo.StatusPageUrl.get -> string
+Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo.VipAddress.get -> string
+Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus
+Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus.DOWN = 1 -> Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus
+Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus.OUT_OF_SERVICE = 3 -> Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus
+Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus.STARTING = 2 -> Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus
+Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus.UNKNOWN = 4 -> Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus
+Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus.UP = 0 -> Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus
+Steeltoe.Discovery.Eureka.AppInfo.LeaseInfo
+Steeltoe.Discovery.Eureka.AppInfo.LeaseInfo.DurationInSecs.get -> int
+Steeltoe.Discovery.Eureka.AppInfo.LeaseInfo.EvictionTimestamp.get -> long
+Steeltoe.Discovery.Eureka.AppInfo.LeaseInfo.LastRenewalTimestamp.get -> long
+Steeltoe.Discovery.Eureka.AppInfo.LeaseInfo.LastRenewalTimestampLegacy.get -> long
+Steeltoe.Discovery.Eureka.AppInfo.LeaseInfo.RegistrationTimestamp.get -> long
+Steeltoe.Discovery.Eureka.AppInfo.LeaseInfo.RenewalIntervalInSecs.get -> int
+Steeltoe.Discovery.Eureka.AppInfo.LeaseInfo.ServiceUpTimestamp.get -> long
+Steeltoe.Discovery.Eureka.ApplicationInfoManager
+Steeltoe.Discovery.Eureka.ApplicationInfoManager.ApplicationInfoManager() -> void
+Steeltoe.Discovery.Eureka.ApplicationInfoManager.StatusChangedEvent -> Steeltoe.Discovery.Eureka.StatusChangedHandler
+Steeltoe.Discovery.Eureka.ApplicationInfoManager._logger -> Microsoft.Extensions.Logging.ILogger
+Steeltoe.Discovery.Eureka.DiscoveryClient
+Steeltoe.Discovery.Eureka.DiscoveryClient.Applications.get -> Steeltoe.Discovery.Eureka.AppInfo.Applications
+Steeltoe.Discovery.Eureka.DiscoveryClient.DiscoveryClient(Steeltoe.Discovery.Eureka.ApplicationInfoManager appInfoManager, Microsoft.Extensions.Logging.ILoggerFactory logFactory = null) -> void
+Steeltoe.Discovery.Eureka.DiscoveryClient.DiscoveryClient(Steeltoe.Discovery.Eureka.IEurekaClientConfig clientConfig, Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient httpClient = null, Microsoft.Extensions.Logging.ILoggerFactory logFactory = null) -> void
+Steeltoe.Discovery.Eureka.DiscoveryClient.FetchFullRegistryAsync() -> System.Threading.Tasks.Task<Steeltoe.Discovery.Eureka.AppInfo.Applications>
+Steeltoe.Discovery.Eureka.DiscoveryClient.FetchRegistryAsync(bool fullUpdate) -> System.Threading.Tasks.Task<bool>
+Steeltoe.Discovery.Eureka.DiscoveryClient.FetchRegistryDeltaAsync() -> System.Threading.Tasks.Task<Steeltoe.Discovery.Eureka.AppInfo.Applications>
+Steeltoe.Discovery.Eureka.DiscoveryClient.GetApplication(string appName) -> Steeltoe.Discovery.Eureka.AppInfo.Application
+Steeltoe.Discovery.Eureka.DiscoveryClient.GetInstanceById(string id) -> System.Collections.Generic.IList<Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo>
+Steeltoe.Discovery.Eureka.DiscoveryClient.GetInstanceRemoteStatus() -> Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus
+Steeltoe.Discovery.Eureka.DiscoveryClient.GetInstancesByVipAddress(string vipAddress, bool secure) -> System.Collections.Generic.IList<Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo>
+Steeltoe.Discovery.Eureka.DiscoveryClient.GetInstancesByVipAddressAndAppName(string vipAddress, string appName, bool secure) -> System.Collections.Generic.IList<Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo>
+Steeltoe.Discovery.Eureka.DiscoveryClient.GetNextServerFromEureka(string vipAddress, bool secure) -> Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo
+Steeltoe.Discovery.Eureka.DiscoveryClient.HealthCheckHandler.get -> Steeltoe.Discovery.Eureka.IHealthCheckHandler
+Steeltoe.Discovery.Eureka.DiscoveryClient.HealthCheckHandler.set -> void
+Steeltoe.Discovery.Eureka.DiscoveryClient.HttpClient.get -> Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient
+Steeltoe.Discovery.Eureka.DiscoveryClient.Initialize() -> void
+Steeltoe.Discovery.Eureka.DiscoveryClient.InitializeAsync() -> System.Threading.Tasks.Task
+Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodDeltaRegistryFetchTimestamp.get -> long
+Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodFullRegistryFetchTimestamp.get -> long
+Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodHeartbeatTimestamp.get -> long
+Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodRegisterTimestamp.get -> long
+Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodRegistryFetchTimestamp.get -> long
+Steeltoe.Discovery.Eureka.DiscoveryClient.LastRemoteInstanceStatus.get -> Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus
+Steeltoe.Discovery.Eureka.DiscoveryClient.OnApplicationsChange -> System.EventHandler<Steeltoe.Discovery.Eureka.AppInfo.Applications>
+Steeltoe.Discovery.Eureka.DiscoveryClient.RefreshInstanceInfo() -> void
+Steeltoe.Discovery.Eureka.DiscoveryClient.RegisterAsync() -> System.Threading.Tasks.Task<bool>
+Steeltoe.Discovery.Eureka.DiscoveryClient.RegisterDirtyInstanceInfo(Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo inst) -> System.Threading.Tasks.Task<bool>
+Steeltoe.Discovery.Eureka.DiscoveryClient.RenewAsync() -> System.Threading.Tasks.Task<bool>
+Steeltoe.Discovery.Eureka.DiscoveryClient.StartTimer(string name, int interval, System.Action task) -> System.Threading.Timer
+Steeltoe.Discovery.Eureka.DiscoveryClient.UnregisterAsync() -> System.Threading.Tasks.Task<bool>
+Steeltoe.Discovery.Eureka.DiscoveryClient._appInfoManager -> Steeltoe.Discovery.Eureka.ApplicationInfoManager
+Steeltoe.Discovery.Eureka.DiscoveryClient._cacheRefreshTimer -> System.Threading.Timer
+Steeltoe.Discovery.Eureka.DiscoveryClient._heartBeatTimer -> System.Threading.Timer
+Steeltoe.Discovery.Eureka.DiscoveryClient._httpClient -> Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient
+Steeltoe.Discovery.Eureka.DiscoveryClient._logger -> Microsoft.Extensions.Logging.ILogger
+Steeltoe.Discovery.Eureka.DiscoveryClient._random -> System.Random
+Steeltoe.Discovery.Eureka.DiscoveryClient._registryFetchCounter -> long
+Steeltoe.Discovery.Eureka.DiscoveryClient._regularLogger -> Microsoft.Extensions.Logging.ILogger
+Steeltoe.Discovery.Eureka.DiscoveryClient._shutdown -> int
+Steeltoe.Discovery.Eureka.DiscoveryClient._startupLogger -> Microsoft.Extensions.Logging.ILogger
+Steeltoe.Discovery.Eureka.DiscoveryManager
+Steeltoe.Discovery.Eureka.DiscoveryManager.DiscoveryManager() -> void
+Steeltoe.Discovery.Eureka.DiscoveryManager._logger -> Microsoft.Extensions.Logging.ILogger
+Steeltoe.Discovery.Eureka.EurekaApplicationInfoManager
+Steeltoe.Discovery.Eureka.EurekaApplicationInfoManager.EurekaApplicationInfoManager(Microsoft.Extensions.Options.IOptionsMonitor<Steeltoe.Discovery.Eureka.EurekaInstanceOptions> instConfig, Microsoft.Extensions.Logging.ILoggerFactory logFactory = null) -> void
+Steeltoe.Discovery.Eureka.EurekaApplicationsHealthContributor
+Steeltoe.Discovery.Eureka.EurekaApplicationsHealthContributor.EurekaApplicationsHealthContributor(Steeltoe.Discovery.Eureka.EurekaDiscoveryClient discoveryClient, Microsoft.Extensions.Logging.ILogger<Steeltoe.Discovery.Eureka.EurekaApplicationsHealthContributor> logger = null) -> void
+Steeltoe.Discovery.Eureka.EurekaApplicationsHealthContributor.Health() -> Steeltoe.Common.HealthChecks.HealthCheckResult
+Steeltoe.Discovery.Eureka.EurekaApplicationsHealthContributor.Id.get -> string
+Steeltoe.Discovery.Eureka.EurekaClientConfig
+Steeltoe.Discovery.Eureka.EurekaClientConfig.Enabled.get -> bool
+Steeltoe.Discovery.Eureka.EurekaClientConfig.Enabled.set -> void
+Steeltoe.Discovery.Eureka.EurekaClientConfig.EurekaClientConfig() -> void
+Steeltoe.Discovery.Eureka.EurekaClientConfig.EurekaServerConnectTimeoutSeconds.get -> int
+Steeltoe.Discovery.Eureka.EurekaClientConfig.EurekaServerConnectTimeoutSeconds.set -> void
+Steeltoe.Discovery.Eureka.EurekaClientConfig.EurekaServerRetryCount.get -> int
+Steeltoe.Discovery.Eureka.EurekaClientConfig.EurekaServerRetryCount.set -> void
+Steeltoe.Discovery.Eureka.EurekaClientConfig.EurekaServerServiceUrls.get -> string
+Steeltoe.Discovery.Eureka.EurekaClientConfig.EurekaServerServiceUrls.set -> void
+Steeltoe.Discovery.Eureka.EurekaClientConfig.HealthCheckEnabled.get -> bool
+Steeltoe.Discovery.Eureka.EurekaClientConfig.HealthCheckEnabled.set -> void
+Steeltoe.Discovery.Eureka.EurekaClientConfig.HealthContribEnabled.get -> bool
+Steeltoe.Discovery.Eureka.EurekaClientConfig.HealthContribEnabled.set -> void
+Steeltoe.Discovery.Eureka.EurekaClientConfig.HealthMonitoredApps.get -> string
+Steeltoe.Discovery.Eureka.EurekaClientConfig.HealthMonitoredApps.set -> void
+Steeltoe.Discovery.Eureka.EurekaClientConfig.ProxyHost.get -> string
+Steeltoe.Discovery.Eureka.EurekaClientConfig.ProxyHost.set -> void
+Steeltoe.Discovery.Eureka.EurekaClientConfig.ProxyPassword.get -> string
+Steeltoe.Discovery.Eureka.EurekaClientConfig.ProxyPassword.set -> void
+Steeltoe.Discovery.Eureka.EurekaClientConfig.ProxyPort.get -> int
+Steeltoe.Discovery.Eureka.EurekaClientConfig.ProxyPort.set -> void
+Steeltoe.Discovery.Eureka.EurekaClientConfig.ProxyUserName.get -> string
+Steeltoe.Discovery.Eureka.EurekaClientConfig.ProxyUserName.set -> void
+Steeltoe.Discovery.Eureka.EurekaClientConfig.RegistryFetchIntervalSeconds.get -> int
+Steeltoe.Discovery.Eureka.EurekaClientConfig.RegistryFetchIntervalSeconds.set -> void
+Steeltoe.Discovery.Eureka.EurekaClientConfig.RegistryRefreshSingleVipAddress.get -> string
+Steeltoe.Discovery.Eureka.EurekaClientConfig.RegistryRefreshSingleVipAddress.set -> void
+Steeltoe.Discovery.Eureka.EurekaClientConfig.ShouldDisableDelta.get -> bool
+Steeltoe.Discovery.Eureka.EurekaClientConfig.ShouldDisableDelta.set -> void
+Steeltoe.Discovery.Eureka.EurekaClientConfig.ShouldFetchRegistry.get -> bool
+Steeltoe.Discovery.Eureka.EurekaClientConfig.ShouldFetchRegistry.set -> void
+Steeltoe.Discovery.Eureka.EurekaClientConfig.ShouldFilterOnlyUpInstances.get -> bool
+Steeltoe.Discovery.Eureka.EurekaClientConfig.ShouldFilterOnlyUpInstances.set -> void
+Steeltoe.Discovery.Eureka.EurekaClientConfig.ShouldGZipContent.get -> bool
+Steeltoe.Discovery.Eureka.EurekaClientConfig.ShouldGZipContent.set -> void
+Steeltoe.Discovery.Eureka.EurekaClientConfig.ShouldOnDemandUpdateStatusChange.get -> bool
+Steeltoe.Discovery.Eureka.EurekaClientConfig.ShouldOnDemandUpdateStatusChange.set -> void
+Steeltoe.Discovery.Eureka.EurekaClientConfig.ShouldRegisterWithEureka.get -> bool
+Steeltoe.Discovery.Eureka.EurekaClientConfig.ShouldRegisterWithEureka.set -> void
+Steeltoe.Discovery.Eureka.EurekaClientConfig.ValidateCertificates.get -> bool
+Steeltoe.Discovery.Eureka.EurekaClientConfig.ValidateCertificates.set -> void
+Steeltoe.Discovery.Eureka.EurekaClientOptions
+Steeltoe.Discovery.Eureka.EurekaClientOptions.AccessTokenUri.get -> string
+Steeltoe.Discovery.Eureka.EurekaClientOptions.AccessTokenUri.set -> void
+Steeltoe.Discovery.Eureka.EurekaClientOptions.CacheTTL.get -> int
+Steeltoe.Discovery.Eureka.EurekaClientOptions.CacheTTL.set -> void
+Steeltoe.Discovery.Eureka.EurekaClientOptions.ClientId.get -> string
+Steeltoe.Discovery.Eureka.EurekaClientOptions.ClientId.set -> void
+Steeltoe.Discovery.Eureka.EurekaClientOptions.ClientSecret.get -> string
+Steeltoe.Discovery.Eureka.EurekaClientOptions.ClientSecret.set -> void
+Steeltoe.Discovery.Eureka.EurekaClientOptions.EurekaClientOptions() -> void
+Steeltoe.Discovery.Eureka.EurekaClientOptions.EurekaHealthConfig
+Steeltoe.Discovery.Eureka.EurekaClientOptions.EurekaHealthConfig.CheckEnabled.get -> bool
+Steeltoe.Discovery.Eureka.EurekaClientOptions.EurekaHealthConfig.CheckEnabled.set -> void
+Steeltoe.Discovery.Eureka.EurekaClientOptions.EurekaHealthConfig.Enabled.get -> bool
+Steeltoe.Discovery.Eureka.EurekaClientOptions.EurekaHealthConfig.Enabled.set -> void
+Steeltoe.Discovery.Eureka.EurekaClientOptions.EurekaHealthConfig.EurekaHealthConfig(Steeltoe.Discovery.Eureka.EurekaClientOptions options) -> void
+Steeltoe.Discovery.Eureka.EurekaClientOptions.EurekaHealthConfig.MonitoredApps.get -> string
+Steeltoe.Discovery.Eureka.EurekaClientOptions.EurekaHealthConfig.MonitoredApps.set -> void
+Steeltoe.Discovery.Eureka.EurekaClientOptions.EurekaServer.get -> Steeltoe.Discovery.Eureka.EurekaClientOptions.EurekaServerConfig
+Steeltoe.Discovery.Eureka.EurekaClientOptions.EurekaServer.set -> void
+Steeltoe.Discovery.Eureka.EurekaClientOptions.EurekaServerConfig
+Steeltoe.Discovery.Eureka.EurekaClientOptions.EurekaServerConfig.ConnectTimeoutSeconds.get -> int
+Steeltoe.Discovery.Eureka.EurekaClientOptions.EurekaServerConfig.ConnectTimeoutSeconds.set -> void
+Steeltoe.Discovery.Eureka.EurekaClientOptions.EurekaServerConfig.EurekaServerConfig(Steeltoe.Discovery.Eureka.EurekaClientOptions options) -> void
+Steeltoe.Discovery.Eureka.EurekaClientOptions.EurekaServerConfig.ProxyHost.get -> string
+Steeltoe.Discovery.Eureka.EurekaClientOptions.EurekaServerConfig.ProxyHost.set -> void
+Steeltoe.Discovery.Eureka.EurekaClientOptions.EurekaServerConfig.ProxyPassword.get -> string
+Steeltoe.Discovery.Eureka.EurekaClientOptions.EurekaServerConfig.ProxyPassword.set -> void
+Steeltoe.Discovery.Eureka.EurekaClientOptions.EurekaServerConfig.ProxyPort.get -> int
+Steeltoe.Discovery.Eureka.EurekaClientOptions.EurekaServerConfig.ProxyPort.set -> void
+Steeltoe.Discovery.Eureka.EurekaClientOptions.EurekaServerConfig.ProxyUserName.get -> string
+Steeltoe.Discovery.Eureka.EurekaClientOptions.EurekaServerConfig.ProxyUserName.set -> void
+Steeltoe.Discovery.Eureka.EurekaClientOptions.EurekaServerConfig.RetryCount.get -> int
+Steeltoe.Discovery.Eureka.EurekaClientOptions.EurekaServerConfig.RetryCount.set -> void
+Steeltoe.Discovery.Eureka.EurekaClientOptions.EurekaServerConfig.ShouldGZipContent.get -> bool
+Steeltoe.Discovery.Eureka.EurekaClientOptions.EurekaServerConfig.ShouldGZipContent.set -> void
+Steeltoe.Discovery.Eureka.EurekaClientOptions.Health.get -> Steeltoe.Discovery.Eureka.EurekaClientOptions.EurekaHealthConfig
+Steeltoe.Discovery.Eureka.EurekaClientOptions.Health.set -> void
+Steeltoe.Discovery.Eureka.EurekaClientOptions.ServiceUrl.get -> string
+Steeltoe.Discovery.Eureka.EurekaClientOptions.ServiceUrl.set -> void
+Steeltoe.Discovery.Eureka.EurekaClientOptions.Validate_Certificates.get -> bool
+Steeltoe.Discovery.Eureka.EurekaClientOptions.Validate_Certificates.set -> void
+Steeltoe.Discovery.Eureka.EurekaClientService
+Steeltoe.Discovery.Eureka.EurekaDiscoveryClient
+Steeltoe.Discovery.Eureka.EurekaDiscoveryClient.Description.get -> string
+Steeltoe.Discovery.Eureka.EurekaDiscoveryClient.EurekaDiscoveryClient(Microsoft.Extensions.Options.IOptionsMonitor<Steeltoe.Discovery.Eureka.EurekaClientOptions> clientConfig, Microsoft.Extensions.Options.IOptionsMonitor<Steeltoe.Discovery.Eureka.EurekaInstanceOptions> instConfig, Steeltoe.Discovery.Eureka.EurekaApplicationInfoManager appInfoManager, Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient httpClient = null, Microsoft.Extensions.Logging.ILoggerFactory logFactory = null, Steeltoe.Common.IHttpClientHandlerProvider handlerProvider = null, System.Net.Http.HttpClient netHttpClient = null) -> void
+Steeltoe.Discovery.Eureka.EurekaDiscoveryClient.GetInstances(string serviceId) -> System.Collections.Generic.IList<Steeltoe.Common.Discovery.IServiceInstance>
+Steeltoe.Discovery.Eureka.EurekaDiscoveryClient.GetLocalServiceInstance() -> Steeltoe.Common.Discovery.IServiceInstance
+Steeltoe.Discovery.Eureka.EurekaDiscoveryClient.GetServices() -> System.Collections.Generic.IList<string>
+Steeltoe.Discovery.Eureka.EurekaDiscoveryClient.Services.get -> System.Collections.Generic.IList<string>
+Steeltoe.Discovery.Eureka.EurekaDiscoveryClientBuilderExtension
+Steeltoe.Discovery.Eureka.EurekaDiscoveryClientExtension
+Steeltoe.Discovery.Eureka.EurekaDiscoveryClientExtension.ApplyServices(Microsoft.Extensions.DependencyInjection.IServiceCollection services) -> void
+Steeltoe.Discovery.Eureka.EurekaDiscoveryClientExtension.EurekaDiscoveryClientExtension() -> void
+Steeltoe.Discovery.Eureka.EurekaDiscoveryClientExtension.EurekaDiscoveryClientExtension(string serviceInfoName) -> void
+Steeltoe.Discovery.Eureka.EurekaDiscoveryClientExtension.IsConfigured(Microsoft.Extensions.Configuration.IConfiguration configuration, Steeltoe.Connector.Services.IServiceInfo serviceInfo = null) -> bool
+Steeltoe.Discovery.Eureka.EurekaDiscoveryClientExtension.ServiceInfoName.get -> string
+Steeltoe.Discovery.Eureka.EurekaDiscoveryManager
+Steeltoe.Discovery.Eureka.EurekaDiscoveryManager.EurekaDiscoveryManager(Microsoft.Extensions.Options.IOptionsMonitor<Steeltoe.Discovery.Eureka.EurekaClientOptions> clientConfig, Microsoft.Extensions.Options.IOptionsMonitor<Steeltoe.Discovery.Eureka.EurekaInstanceOptions> instConfig, Steeltoe.Discovery.Eureka.EurekaDiscoveryClient client, Microsoft.Extensions.Logging.ILoggerFactory logFactory = null) -> void
+Steeltoe.Discovery.Eureka.EurekaHealthCheckHandler
+Steeltoe.Discovery.Eureka.EurekaHealthCheckHandler.EurekaHealthCheckHandler(Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Discovery.Eureka.EurekaHealthCheckHandler.EurekaHealthCheckHandler(System.Collections.Generic.IEnumerable<Steeltoe.Common.HealthChecks.IHealthContributor> contributors, Microsoft.Extensions.Logging.ILogger<Steeltoe.Discovery.Eureka.EurekaHealthCheckHandler> logger = null) -> void
+Steeltoe.Discovery.Eureka.EurekaHealthCheckHandler._contributors -> System.Collections.Generic.IList<Steeltoe.Common.HealthChecks.IHealthContributor>
+Steeltoe.Discovery.Eureka.EurekaInstanceConfig
+Steeltoe.Discovery.Eureka.EurekaInstanceConfig.ApplyNetUtils() -> void
+Steeltoe.Discovery.Eureka.EurekaInstanceConfig.EurekaInstanceConfig() -> void
+Steeltoe.Discovery.Eureka.EurekaInstanceConfig.NetUtils.get -> Steeltoe.Common.Net.InetUtils
+Steeltoe.Discovery.Eureka.EurekaInstanceConfig.NetUtils.set -> void
+Steeltoe.Discovery.Eureka.EurekaInstanceConfig.UseNetUtils.get -> bool
+Steeltoe.Discovery.Eureka.EurekaInstanceConfig.UseNetUtils.set -> void
+Steeltoe.Discovery.Eureka.EurekaInstanceConfig._thisHostAddress -> string
+Steeltoe.Discovery.Eureka.EurekaInstanceConfig._thisHostName -> string
+Steeltoe.Discovery.Eureka.EurekaInstanceOptions
+Steeltoe.Discovery.Eureka.EurekaInstanceOptions.ApplyConfigUrls(System.Collections.Generic.List<System.Uri> addresses, string wildcard_hostname) -> void
+Steeltoe.Discovery.Eureka.EurekaInstanceOptions.EurekaInstanceOptions() -> void
+Steeltoe.Discovery.Eureka.EurekaPostConfigurer
+Steeltoe.Discovery.Eureka.EurekaServerHealthContributor
+Steeltoe.Discovery.Eureka.EurekaServerHealthContributor.EurekaServerHealthContributor(Steeltoe.Discovery.Eureka.EurekaDiscoveryClient discoveryClient, Steeltoe.Discovery.Eureka.EurekaApplicationInfoManager appInfoManager, Microsoft.Extensions.Logging.ILogger<Steeltoe.Discovery.Eureka.EurekaServerHealthContributor> logger = null) -> void
+Steeltoe.Discovery.Eureka.EurekaServerHealthContributor.Health() -> Steeltoe.Common.HealthChecks.HealthCheckResult
+Steeltoe.Discovery.Eureka.EurekaServerHealthContributor.Id.get -> string
+Steeltoe.Discovery.Eureka.EurekaServiceInstance
+Steeltoe.Discovery.Eureka.EurekaServiceInstance.EurekaServiceInstance(Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo info) -> void
+Steeltoe.Discovery.Eureka.EurekaServiceInstance.GetHost() -> string
+Steeltoe.Discovery.Eureka.EurekaServiceInstance.Host.get -> string
+Steeltoe.Discovery.Eureka.EurekaServiceInstance.InstanceId.get -> string
+Steeltoe.Discovery.Eureka.EurekaServiceInstance.IsSecure.get -> bool
+Steeltoe.Discovery.Eureka.EurekaServiceInstance.Metadata.get -> System.Collections.Generic.IDictionary<string, string>
+Steeltoe.Discovery.Eureka.EurekaServiceInstance.Port.get -> int
+Steeltoe.Discovery.Eureka.EurekaServiceInstance.ServiceId.get -> string
+Steeltoe.Discovery.Eureka.EurekaServiceInstance.Uri.get -> System.Uri
+Steeltoe.Discovery.Eureka.IEurekaClient
+Steeltoe.Discovery.Eureka.IEurekaClient.GetInstancesByVipAddress(string vipAddress, bool secure) -> System.Collections.Generic.IList<Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo>
+Steeltoe.Discovery.Eureka.IEurekaClient.ShutdownAsync() -> System.Threading.Tasks.Task
+Steeltoe.Discovery.Eureka.IEurekaClientConfig
+Steeltoe.Discovery.Eureka.IEurekaClientConfig.EurekaServerConnectTimeoutSeconds.get -> int
+Steeltoe.Discovery.Eureka.IEurekaClientConfig.EurekaServerConnectTimeoutSeconds.set -> void
+Steeltoe.Discovery.Eureka.IEurekaClientConfig.EurekaServerServiceUrls.get -> string
+Steeltoe.Discovery.Eureka.IEurekaClientConfig.EurekaServerServiceUrls.set -> void
+Steeltoe.Discovery.Eureka.IEurekaClientConfig.ProxyHost.get -> string
+Steeltoe.Discovery.Eureka.IEurekaClientConfig.ProxyHost.set -> void
+Steeltoe.Discovery.Eureka.IEurekaClientConfig.ProxyPassword.get -> string
+Steeltoe.Discovery.Eureka.IEurekaClientConfig.ProxyPassword.set -> void
+Steeltoe.Discovery.Eureka.IEurekaClientConfig.ProxyPort.get -> int
+Steeltoe.Discovery.Eureka.IEurekaClientConfig.ProxyPort.set -> void
+Steeltoe.Discovery.Eureka.IEurekaClientConfig.ProxyUserName.get -> string
+Steeltoe.Discovery.Eureka.IEurekaClientConfig.ProxyUserName.set -> void
+Steeltoe.Discovery.Eureka.IEurekaClientConfig.RegistryFetchIntervalSeconds.get -> int
+Steeltoe.Discovery.Eureka.IEurekaClientConfig.RegistryFetchIntervalSeconds.set -> void
+Steeltoe.Discovery.Eureka.IEurekaClientConfig.RegistryRefreshSingleVipAddress.get -> string
+Steeltoe.Discovery.Eureka.IEurekaClientConfig.RegistryRefreshSingleVipAddress.set -> void
+Steeltoe.Discovery.Eureka.IEurekaClientConfig.ShouldDisableDelta.get -> bool
+Steeltoe.Discovery.Eureka.IEurekaClientConfig.ShouldDisableDelta.set -> void
+Steeltoe.Discovery.Eureka.IEurekaClientConfig.ShouldFetchRegistry.get -> bool
+Steeltoe.Discovery.Eureka.IEurekaClientConfig.ShouldFetchRegistry.set -> void
+Steeltoe.Discovery.Eureka.IEurekaClientConfig.ShouldFilterOnlyUpInstances.get -> bool
+Steeltoe.Discovery.Eureka.IEurekaClientConfig.ShouldFilterOnlyUpInstances.set -> void
+Steeltoe.Discovery.Eureka.IEurekaClientConfig.ShouldGZipContent.get -> bool
+Steeltoe.Discovery.Eureka.IEurekaClientConfig.ShouldGZipContent.set -> void
+Steeltoe.Discovery.Eureka.IEurekaClientConfig.ShouldOnDemandUpdateStatusChange.get -> bool
+Steeltoe.Discovery.Eureka.IEurekaClientConfig.ShouldOnDemandUpdateStatusChange.set -> void
+Steeltoe.Discovery.Eureka.IEurekaClientConfig.ShouldRegisterWithEureka.get -> bool
+Steeltoe.Discovery.Eureka.IEurekaClientConfig.ShouldRegisterWithEureka.set -> void
+Steeltoe.Discovery.Eureka.IEurekaClientConfig.ValidateCertificates.get -> bool
+Steeltoe.Discovery.Eureka.IEurekaClientConfig.ValidateCertificates.set -> void
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.AppGroupName.get -> string
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.AppGroupName.set -> void
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.AppName.get -> string
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.AppName.set -> void
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.ASGName.get -> string
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.ASGName.set -> void
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.DataCenterInfo.get -> Steeltoe.Discovery.Eureka.AppInfo.IDataCenterInfo
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.DataCenterInfo.set -> void
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.DefaultAddressResolutionOrder.get -> System.Collections.Generic.IEnumerable<string>
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.DefaultAddressResolutionOrder.set -> void
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.GetHostName(bool refresh) -> string
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.HealthCheckUrl.get -> string
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.HealthCheckUrl.set -> void
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.HealthCheckUrlPath.get -> string
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.HealthCheckUrlPath.set -> void
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.HomePageUrl.get -> string
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.HomePageUrl.set -> void
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.HomePageUrlPath.get -> string
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.HomePageUrlPath.set -> void
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.HostName.get -> string
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.HostName.set -> void
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.InstanceId.get -> string
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.InstanceId.set -> void
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.IpAddress.get -> string
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.IpAddress.set -> void
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.IsInstanceEnabledOnInit.get -> bool
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.IsInstanceEnabledOnInit.set -> void
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.IsNonSecurePortEnabled.get -> bool
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.IsNonSecurePortEnabled.set -> void
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.LeaseExpirationDurationInSeconds.get -> int
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.LeaseExpirationDurationInSeconds.set -> void
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.LeaseRenewalIntervalInSeconds.get -> int
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.LeaseRenewalIntervalInSeconds.set -> void
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.MetadataMap.get -> System.Collections.Generic.IDictionary<string, string>
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.MetadataMap.set -> void
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.NonSecurePort.get -> int
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.NonSecurePort.set -> void
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.PreferIpAddress.get -> bool
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.PreferIpAddress.set -> void
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.SecureHealthCheckUrl.get -> string
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.SecureHealthCheckUrl.set -> void
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.SecurePort.get -> int
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.SecurePort.set -> void
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.SecurePortEnabled.get -> bool
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.SecurePortEnabled.set -> void
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.SecureVirtualHostName.get -> string
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.SecureVirtualHostName.set -> void
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.StatusPageUrl.get -> string
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.StatusPageUrl.set -> void
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.StatusPageUrlPath.get -> string
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.StatusPageUrlPath.set -> void
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.VirtualHostName.get -> string
+Steeltoe.Discovery.Eureka.IEurekaInstanceConfig.VirtualHostName.set -> void
+Steeltoe.Discovery.Eureka.IHealthCheckHandler
+Steeltoe.Discovery.Eureka.IHealthCheckHandler.GetStatus(Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus currentStatus) -> Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus
+Steeltoe.Discovery.Eureka.ILookupService
+Steeltoe.Discovery.Eureka.ILookupService.Applications.get -> Steeltoe.Discovery.Eureka.AppInfo.Applications
+Steeltoe.Discovery.Eureka.ILookupService.GetApplication(string appName) -> Steeltoe.Discovery.Eureka.AppInfo.Application
+Steeltoe.Discovery.Eureka.ILookupService.GetInstanceById(string id) -> System.Collections.Generic.IList<Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo>
+Steeltoe.Discovery.Eureka.ILookupService.GetNextServerFromEureka(string virtualHostname, bool secure) -> Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo
+Steeltoe.Discovery.Eureka.ScopedEurekaHealthCheckHandler
+Steeltoe.Discovery.Eureka.ScopedEurekaHealthCheckHandler.ScopedEurekaHealthCheckHandler(Microsoft.Extensions.DependencyInjection.IServiceScopeFactory scopeFactory, Microsoft.Extensions.Logging.ILogger<Steeltoe.Discovery.Eureka.ScopedEurekaHealthCheckHandler> logger = null) -> void
+Steeltoe.Discovery.Eureka.StatusChangedArgs
+Steeltoe.Discovery.Eureka.StatusChangedArgs.Current.get -> Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus
+Steeltoe.Discovery.Eureka.StatusChangedArgs.InstanceId.get -> string
+Steeltoe.Discovery.Eureka.StatusChangedArgs.Previous.get -> Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus
+Steeltoe.Discovery.Eureka.StatusChangedArgs.StatusChangedArgs(Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus prev, Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus current, string instanceId) -> void
+Steeltoe.Discovery.Eureka.StatusChangedHandler
+Steeltoe.Discovery.Eureka.ThisServiceInstance
+Steeltoe.Discovery.Eureka.ThisServiceInstance.GetHost() -> string
+Steeltoe.Discovery.Eureka.ThisServiceInstance.Host.get -> string
+Steeltoe.Discovery.Eureka.ThisServiceInstance.IsSecure.get -> bool
+Steeltoe.Discovery.Eureka.ThisServiceInstance.Metadata.get -> System.Collections.Generic.IDictionary<string, string>
+Steeltoe.Discovery.Eureka.ThisServiceInstance.Port.get -> int
+Steeltoe.Discovery.Eureka.ThisServiceInstance.SecurePort.get -> int
+Steeltoe.Discovery.Eureka.ThisServiceInstance.ServiceId.get -> string
+Steeltoe.Discovery.Eureka.ThisServiceInstance.ThisServiceInstance(Microsoft.Extensions.Options.IOptionsMonitor<Steeltoe.Discovery.Eureka.EurekaInstanceOptions> instConfig) -> void
+Steeltoe.Discovery.Eureka.ThisServiceInstance.Uri.get -> System.Uri
+Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient
+Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient.EurekaHttpClient() -> void
+Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient.EurekaHttpClient(Microsoft.Extensions.Options.IOptionsMonitor<Steeltoe.Discovery.Eureka.EurekaClientOptions> config, Steeltoe.Common.IHttpClientHandlerProvider handlerProvider = null, Microsoft.Extensions.Logging.ILoggerFactory logFactory = null) -> void
+Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient.EurekaHttpClient(Steeltoe.Discovery.Eureka.IEurekaClientConfig config, Microsoft.Extensions.Logging.ILoggerFactory logFactory = null, Steeltoe.Common.IHttpClientHandlerProvider handlerProvider = null) -> void
+Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient.EurekaHttpClient(Steeltoe.Discovery.Eureka.IEurekaClientConfig config, System.Collections.Generic.IDictionary<string, string> headers, Microsoft.Extensions.Logging.ILoggerFactory logFactory = null, Steeltoe.Common.IHttpClientHandlerProvider handlerProvider = null) -> void
+Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient.EurekaHttpClient(Steeltoe.Discovery.Eureka.IEurekaClientConfig config, System.Net.Http.HttpClient client, Microsoft.Extensions.Logging.ILoggerFactory logFactory = null) -> void
+Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient.GetRequestMessage(System.Net.Http.HttpMethod method, System.Uri requestUri) -> System.Net.Http.HttpRequestMessage
+Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient.Initialize(System.Collections.Generic.IDictionary<string, string> headers, Microsoft.Extensions.Logging.ILoggerFactory logFactory) -> void
+Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient._config -> Steeltoe.Discovery.Eureka.IEurekaClientConfig
+Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient._failingServiceUrls -> System.Collections.Generic.IList<string>
+Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient._handlerProvider -> Steeltoe.Common.IHttpClientHandlerProvider
+Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient._headers -> System.Collections.Generic.IDictionary<string, string>
+Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient._httpClient -> System.Net.Http.HttpClient
+Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient._lock -> object
+Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient._logger -> Microsoft.Extensions.Logging.ILogger
+Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient._serviceUrl -> string
+Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse
+Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse.EurekaHttpResponse(System.Net.HttpStatusCode statusCode) -> void
+Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse.Headers.get -> System.Net.Http.Headers.HttpResponseHeaders
+Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse.Headers.set -> void
+Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse.Location.get -> System.Uri
+Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse.Location.set -> void
+Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse.StatusCode.get -> System.Net.HttpStatusCode
+Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse<T>
+Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse<T>.EurekaHttpResponse(System.Net.HttpStatusCode statusCode, T response) -> void
+Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse<T>.Response.get -> T
+Steeltoe.Discovery.Eureka.Transport.EurekaTransportException
+Steeltoe.Discovery.Eureka.Transport.EurekaTransportException.EurekaTransportException() -> void
+Steeltoe.Discovery.Eureka.Transport.EurekaTransportException.EurekaTransportException(string message) -> void
+Steeltoe.Discovery.Eureka.Transport.EurekaTransportException.EurekaTransportException(string message, System.Exception cause) -> void
+Steeltoe.Discovery.Eureka.Transport.EurekaTransportException.EurekaTransportException(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context) -> void
+Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient
+Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.CancelAsync(string appName, string id) -> System.Threading.Tasks.Task<Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse>
+Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.DeleteStatusOverrideAsync(string appName, string id, Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo info) -> System.Threading.Tasks.Task<Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse>
+Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetApplicationAsync(string appName) -> System.Threading.Tasks.Task<Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse<Steeltoe.Discovery.Eureka.AppInfo.Application>>
+Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetApplicationsAsync(System.Collections.Generic.ISet<string> regions = null) -> System.Threading.Tasks.Task<Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse<Steeltoe.Discovery.Eureka.AppInfo.Applications>>
+Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetDeltaAsync(System.Collections.Generic.ISet<string> regions = null) -> System.Threading.Tasks.Task<Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse<Steeltoe.Discovery.Eureka.AppInfo.Applications>>
+Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetInstanceAsync(string appName, string id) -> System.Threading.Tasks.Task<Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse<Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo>>
+Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetInstanceAsync(string id) -> System.Threading.Tasks.Task<Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse<Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo>>
+Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetSecureVipAsync(string secureVipAddress, System.Collections.Generic.ISet<string> regions = null) -> System.Threading.Tasks.Task<Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse<Steeltoe.Discovery.Eureka.AppInfo.Applications>>
+Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetVipAsync(string vipAddress, System.Collections.Generic.ISet<string> regions = null) -> System.Threading.Tasks.Task<Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse<Steeltoe.Discovery.Eureka.AppInfo.Applications>>
+Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.RegisterAsync(Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo info) -> System.Threading.Tasks.Task<Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse>
+Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.SendHeartBeatAsync(string appName, string id, Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo info, Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus overriddenStatus) -> System.Threading.Tasks.Task<Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse<Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo>>
+Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.Shutdown() -> void
+Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.StatusUpdateAsync(string appName, string id, Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus newStatus, Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo info) -> System.Threading.Tasks.Task<Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse>
+Steeltoe.Discovery.Eureka.Util.DateTimeConversions
+virtual Steeltoe.Discovery.Eureka.ApplicationInfoManager.Initialize(Steeltoe.Discovery.Eureka.IEurekaInstanceConfig instanceConfig, Microsoft.Extensions.Logging.ILoggerFactory logFactory = null) -> void
+virtual Steeltoe.Discovery.Eureka.ApplicationInfoManager.InstanceConfig.get -> Steeltoe.Discovery.Eureka.IEurekaInstanceConfig
+virtual Steeltoe.Discovery.Eureka.ApplicationInfoManager.InstanceConfig.set -> void
+virtual Steeltoe.Discovery.Eureka.ApplicationInfoManager.InstanceInfo.get -> Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo
+virtual Steeltoe.Discovery.Eureka.ApplicationInfoManager.InstanceInfo.set -> void
+virtual Steeltoe.Discovery.Eureka.ApplicationInfoManager.InstanceStatus.get -> Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus
+virtual Steeltoe.Discovery.Eureka.ApplicationInfoManager.InstanceStatus.set -> void
+virtual Steeltoe.Discovery.Eureka.ApplicationInfoManager.RefreshLeaseInfo() -> void
+virtual Steeltoe.Discovery.Eureka.DiscoveryClient.ClientConfig.get -> Steeltoe.Discovery.Eureka.IEurekaClientConfig
+virtual Steeltoe.Discovery.Eureka.DiscoveryClient.ShutdownAsync() -> System.Threading.Tasks.Task
+virtual Steeltoe.Discovery.Eureka.DiscoveryManager.Client.get -> Steeltoe.Discovery.Eureka.DiscoveryClient
+virtual Steeltoe.Discovery.Eureka.DiscoveryManager.Client.set -> void
+virtual Steeltoe.Discovery.Eureka.DiscoveryManager.ClientConfig.get -> Steeltoe.Discovery.Eureka.IEurekaClientConfig
+virtual Steeltoe.Discovery.Eureka.DiscoveryManager.ClientConfig.set -> void
+virtual Steeltoe.Discovery.Eureka.DiscoveryManager.Initialize(Steeltoe.Discovery.Eureka.IEurekaClientConfig clientConfig, Microsoft.Extensions.Logging.ILoggerFactory logFactory = null) -> void
+virtual Steeltoe.Discovery.Eureka.DiscoveryManager.Initialize(Steeltoe.Discovery.Eureka.IEurekaClientConfig clientConfig, Steeltoe.Discovery.Eureka.IEurekaInstanceConfig instanceConfig, Microsoft.Extensions.Logging.ILoggerFactory logFactory = null) -> void
+virtual Steeltoe.Discovery.Eureka.DiscoveryManager.Initialize(Steeltoe.Discovery.Eureka.IEurekaClientConfig clientConfig, Steeltoe.Discovery.Eureka.IEurekaInstanceConfig instanceConfig, Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient httpClient, Microsoft.Extensions.Logging.ILoggerFactory logFactory = null) -> void
+virtual Steeltoe.Discovery.Eureka.DiscoveryManager.Initialize(Steeltoe.Discovery.Eureka.IEurekaClientConfig clientConfig, Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient httpClient, Microsoft.Extensions.Logging.ILoggerFactory logFactory = null) -> void
+virtual Steeltoe.Discovery.Eureka.DiscoveryManager.InstanceConfig.get -> Steeltoe.Discovery.Eureka.IEurekaInstanceConfig
+virtual Steeltoe.Discovery.Eureka.DiscoveryManager.InstanceConfig.set -> void
+virtual Steeltoe.Discovery.Eureka.DiscoveryManager.LookupService.get -> Steeltoe.Discovery.Eureka.ILookupService
+virtual Steeltoe.Discovery.Eureka.EurekaHealthCheckHandler.AggregateStatus(System.Collections.Generic.List<Steeltoe.Common.HealthChecks.HealthCheckResult> results) -> Steeltoe.Common.HealthChecks.HealthStatus
+virtual Steeltoe.Discovery.Eureka.EurekaHealthCheckHandler.DoHealthChecks(System.Collections.Generic.IList<Steeltoe.Common.HealthChecks.IHealthContributor> contributors) -> System.Collections.Generic.List<Steeltoe.Common.HealthChecks.HealthCheckResult>
+virtual Steeltoe.Discovery.Eureka.EurekaHealthCheckHandler.GetStatus(Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus currentStatus) -> Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus
+virtual Steeltoe.Discovery.Eureka.EurekaHealthCheckHandler.MapToInstanceStatus(Steeltoe.Common.HealthChecks.HealthStatus status) -> Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.AppGroupName.get -> string
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.AppGroupName.set -> void
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.AppName.get -> string
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.AppName.set -> void
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.ASGName.get -> string
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.ASGName.set -> void
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.DataCenterInfo.get -> Steeltoe.Discovery.Eureka.AppInfo.IDataCenterInfo
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.DataCenterInfo.set -> void
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.DefaultAddressResolutionOrder.get -> System.Collections.Generic.IEnumerable<string>
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.DefaultAddressResolutionOrder.set -> void
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.GetHostName(bool refresh) -> string
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.HealthCheckUrl.get -> string
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.HealthCheckUrl.set -> void
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.HealthCheckUrlPath.get -> string
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.HealthCheckUrlPath.set -> void
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.HomePageUrl.get -> string
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.HomePageUrl.set -> void
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.HomePageUrlPath.get -> string
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.HomePageUrlPath.set -> void
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.HostName.get -> string
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.HostName.set -> void
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.InstanceId.get -> string
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.InstanceId.set -> void
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.IpAddress.get -> string
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.IpAddress.set -> void
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.IsInstanceEnabledOnInit.get -> bool
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.IsInstanceEnabledOnInit.set -> void
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.IsNonSecurePortEnabled.get -> bool
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.IsNonSecurePortEnabled.set -> void
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.LeaseExpirationDurationInSeconds.get -> int
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.LeaseExpirationDurationInSeconds.set -> void
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.LeaseRenewalIntervalInSeconds.get -> int
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.LeaseRenewalIntervalInSeconds.set -> void
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.MetadataMap.get -> System.Collections.Generic.IDictionary<string, string>
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.MetadataMap.set -> void
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.NonSecurePort.get -> int
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.NonSecurePort.set -> void
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.PreferIpAddress.get -> bool
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.PreferIpAddress.set -> void
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.SecureHealthCheckUrl.get -> string
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.SecureHealthCheckUrl.set -> void
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.SecurePort.get -> int
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.SecurePort.set -> void
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.SecurePortEnabled.get -> bool
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.SecurePortEnabled.set -> void
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.SecureVirtualHostName.get -> string
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.SecureVirtualHostName.set -> void
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.StatusPageUrl.get -> string
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.StatusPageUrl.set -> void
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.StatusPageUrlPath.get -> string
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.StatusPageUrlPath.set -> void
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.VirtualHostName.get -> string
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceConfig.VirtualHostName.set -> void
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceOptions.AppGroup.get -> string
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceOptions.AppGroup.set -> void
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceOptions.InstanceEnabledOnInit.get -> bool
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceOptions.InstanceEnabledOnInit.set -> void
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceOptions.NonSecurePortEnabled.get -> bool
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceOptions.NonSecurePortEnabled.set -> void
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceOptions.Port.get -> int
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceOptions.Port.set -> void
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceOptions.RegistrationMethod.get -> string
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceOptions.RegistrationMethod.set -> void
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceOptions.SecureVipAddress.get -> string
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceOptions.SecureVipAddress.set -> void
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceOptions.VipAddress.get -> string
+virtual Steeltoe.Discovery.Eureka.EurekaInstanceOptions.VipAddress.set -> void
+virtual Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient.CancelAsync(string appName, string id) -> System.Threading.Tasks.Task<Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse>
+virtual Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient.Config.get -> Steeltoe.Discovery.Eureka.IEurekaClientConfig
+virtual Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient.DeleteStatusOverrideAsync(string appName, string id, Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo info) -> System.Threading.Tasks.Task<Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse>
+virtual Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient.DoGetApplicationsAsync(string path, System.Collections.Generic.ISet<string> regions) -> System.Threading.Tasks.Task<Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse<Steeltoe.Discovery.Eureka.AppInfo.Applications>>
+virtual Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient.DoGetInstanceAsync(string path) -> System.Threading.Tasks.Task<Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse<Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo>>
+virtual Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient.GetApplicationAsync(string appName) -> System.Threading.Tasks.Task<Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse<Steeltoe.Discovery.Eureka.AppInfo.Application>>
+virtual Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient.GetApplicationsAsync(System.Collections.Generic.ISet<string> regions = null) -> System.Threading.Tasks.Task<Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse<Steeltoe.Discovery.Eureka.AppInfo.Applications>>
+virtual Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient.GetDeltaAsync(System.Collections.Generic.ISet<string> regions = null) -> System.Threading.Tasks.Task<Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse<Steeltoe.Discovery.Eureka.AppInfo.Applications>>
+virtual Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient.GetHttpClient(Steeltoe.Discovery.Eureka.IEurekaClientConfig config) -> System.Net.Http.HttpClient
+virtual Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient.GetInstanceAsync(string appName, string id) -> System.Threading.Tasks.Task<Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse<Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo>>
+virtual Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient.GetInstanceAsync(string id) -> System.Threading.Tasks.Task<Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse<Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo>>
+virtual Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient.GetRequestContent(object toSerialize) -> System.Net.Http.HttpContent
+virtual Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient.GetRequestUri(string baseUri, System.Collections.Generic.IDictionary<string, string> queryValues = null) -> System.Uri
+virtual Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient.GetSecureVipAsync(string secureVipAddress, System.Collections.Generic.ISet<string> regions = null) -> System.Threading.Tasks.Task<Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse<Steeltoe.Discovery.Eureka.AppInfo.Applications>>
+virtual Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient.GetVipAsync(string vipAddress, System.Collections.Generic.ISet<string> regions = null) -> System.Threading.Tasks.Task<Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse<Steeltoe.Discovery.Eureka.AppInfo.Applications>>
+virtual Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient.RegisterAsync(Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo info) -> System.Threading.Tasks.Task<Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse>
+virtual Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient.SendHeartBeatAsync(string appName, string id, Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo info, Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus overriddenStatus) -> System.Threading.Tasks.Task<Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse<Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo>>
+virtual Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient.Shutdown() -> void
+virtual Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient.StatusUpdateAsync(string appName, string id, Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus newStatus, Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo info) -> System.Threading.Tasks.Task<Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse>
+volatile Steeltoe.Discovery.Eureka.DiscoveryClient._localRegionApps -> Steeltoe.Discovery.Eureka.AppInfo.Applications

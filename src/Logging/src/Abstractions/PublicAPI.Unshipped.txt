@@ -1,0 +1,44 @@
+﻿override Steeltoe.Extensions.Logging.DynamicLoggerConfiguration.Equals(object obj) -> bool
+override Steeltoe.Extensions.Logging.DynamicLoggerConfiguration.GetHashCode() -> int
+override Steeltoe.Extensions.Logging.DynamicLoggerConfiguration.ToString() -> string
+override Steeltoe.Extensions.Logging.StructuredMessageProcessingLogger.Log<TState>(Microsoft.Extensions.Logging.LogLevel logLevel, Microsoft.Extensions.Logging.EventId eventId, TState state, System.Exception exception, System.Func<TState, System.Exception, string> formatter) -> void
+Steeltoe.Extensions.Logging.DynamicLoggerConfiguration
+Steeltoe.Extensions.Logging.DynamicLoggerConfiguration.ConfiguredLevel.get -> Microsoft.Extensions.Logging.LogLevel?
+Steeltoe.Extensions.Logging.DynamicLoggerConfiguration.DynamicLoggerConfiguration(string name, Microsoft.Extensions.Logging.LogLevel? configured, Microsoft.Extensions.Logging.LogLevel effective) -> void
+Steeltoe.Extensions.Logging.DynamicLoggerConfiguration.EffectiveLevel.get -> Microsoft.Extensions.Logging.LogLevel
+Steeltoe.Extensions.Logging.DynamicLoggerConfiguration.Name.get -> string
+Steeltoe.Extensions.Logging.DynamicLoggerProviderBase
+Steeltoe.Extensions.Logging.DynamicLoggerProviderBase.CreateLogger(string categoryName) -> Microsoft.Extensions.Logging.ILogger
+Steeltoe.Extensions.Logging.DynamicLoggerProviderBase.Dispose() -> void
+Steeltoe.Extensions.Logging.DynamicLoggerProviderBase.DynamicLoggerProviderBase(System.Func<Microsoft.Extensions.Logging.ILoggerProvider> getDelegateLogger, Steeltoe.Extensions.Logging.InitialLevels initialLevels, System.Collections.Generic.IEnumerable<Steeltoe.Extensions.Logging.IDynamicMessageProcessor> messageProcessors) -> void
+Steeltoe.Extensions.Logging.DynamicLoggerProviderBase.GetLoggerConfigurations() -> System.Collections.Generic.ICollection<Steeltoe.Extensions.Logging.ILoggerConfiguration>
+Steeltoe.Extensions.Logging.DynamicLoggerProviderBase.SetLogLevel(string category, Microsoft.Extensions.Logging.LogLevel? level) -> void
+Steeltoe.Extensions.Logging.IDynamicLoggerProvider
+Steeltoe.Extensions.Logging.IDynamicLoggerProvider.GetLoggerConfigurations() -> System.Collections.Generic.ICollection<Steeltoe.Extensions.Logging.ILoggerConfiguration>
+Steeltoe.Extensions.Logging.IDynamicLoggerProvider.SetLogLevel(string category, Microsoft.Extensions.Logging.LogLevel? level) -> void
+Steeltoe.Extensions.Logging.IDynamicMessageProcessor
+Steeltoe.Extensions.Logging.IDynamicMessageProcessor.Process(string inputLogMessage) -> string
+Steeltoe.Extensions.Logging.ILoggerConfiguration
+Steeltoe.Extensions.Logging.ILoggerConfiguration.ConfiguredLevel.get -> Microsoft.Extensions.Logging.LogLevel?
+Steeltoe.Extensions.Logging.ILoggerConfiguration.EffectiveLevel.get -> Microsoft.Extensions.Logging.LogLevel
+Steeltoe.Extensions.Logging.ILoggerConfiguration.Name.get -> string
+Steeltoe.Extensions.Logging.InitialLevels
+Steeltoe.Extensions.Logging.InitialLevels.DefaultLevelFilter.get -> System.Func<string, Microsoft.Extensions.Logging.LogLevel, bool>
+Steeltoe.Extensions.Logging.InitialLevels.DefaultLevelFilter.set -> void
+Steeltoe.Extensions.Logging.InitialLevels.InitialLevels() -> void
+Steeltoe.Extensions.Logging.InitialLevels.OriginalLevels.get -> System.Collections.Generic.IDictionary<string, Microsoft.Extensions.Logging.LogLevel>
+Steeltoe.Extensions.Logging.InitialLevels.OriginalLevels.set -> void
+Steeltoe.Extensions.Logging.InitialLevels.RunningLevelFilters.get -> System.Collections.Generic.IDictionary<string, System.Func<string, Microsoft.Extensions.Logging.LogLevel, bool>>
+Steeltoe.Extensions.Logging.InitialLevels.RunningLevelFilters.set -> void
+Steeltoe.Extensions.Logging.MessageProcessingLogger
+Steeltoe.Extensions.Logging.MessageProcessingLogger.BeginScope<TState>(TState state) -> System.IDisposable
+Steeltoe.Extensions.Logging.MessageProcessingLogger.Delegate.get -> Microsoft.Extensions.Logging.ILogger
+Steeltoe.Extensions.Logging.MessageProcessingLogger.Filter.get -> System.Func<string, Microsoft.Extensions.Logging.LogLevel, bool>
+Steeltoe.Extensions.Logging.MessageProcessingLogger.IsEnabled(Microsoft.Extensions.Logging.LogLevel logLevel) -> bool
+Steeltoe.Extensions.Logging.MessageProcessingLogger.MessageProcessingLogger(Microsoft.Extensions.Logging.ILogger iLogger, System.Collections.Generic.IEnumerable<Steeltoe.Extensions.Logging.IDynamicMessageProcessor> messageProcessors = null) -> void
+Steeltoe.Extensions.Logging.MessageProcessingLogger.Name.get -> string
+Steeltoe.Extensions.Logging.StructuredMessageProcessingLogger
+Steeltoe.Extensions.Logging.StructuredMessageProcessingLogger.StructuredMessageProcessingLogger(Microsoft.Extensions.Logging.ILogger iLogger, System.Collections.Generic.IEnumerable<Steeltoe.Extensions.Logging.IDynamicMessageProcessor> messageProcessors = null) -> void
+virtual Steeltoe.Extensions.Logging.DynamicLoggerProviderBase.Dispose(bool disposing) -> void
+virtual Steeltoe.Extensions.Logging.MessageProcessingLogger.Log<TState>(Microsoft.Extensions.Logging.LogLevel logLevel, Microsoft.Extensions.Logging.EventId eventId, TState state, System.Exception exception, System.Func<TState, System.Exception, string> formatter) -> void
+virtual Steeltoe.Extensions.Logging.MessageProcessingLogger.WriteMessage(Microsoft.Extensions.Logging.LogLevel logLevel, string logName, int eventId, string message, System.Exception exception) -> void

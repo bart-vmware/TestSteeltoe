@@ -1,0 +1,153 @@
+﻿const Steeltoe.Connector.Services.DB2ServiceInfo.DB2_SCHEME = "db2" -> string
+const Steeltoe.Connector.Services.MongoDbServiceInfo.MONGODB_SCHEME = "mongodb" -> string
+const Steeltoe.Connector.Services.MySqlServiceInfo.MYSQL_SCHEME = "mysql" -> string
+const Steeltoe.Connector.Services.OracleServiceInfo.ORACLE_SCHEME = "oracle" -> string
+const Steeltoe.Connector.Services.PostgresServiceInfo.POSTGRES_JDBC_SCHEME = "postgresql" -> string
+const Steeltoe.Connector.Services.PostgresServiceInfo.POSTGRES_SCHEME = "postgres" -> string
+const Steeltoe.Connector.Services.RabbitMQServiceInfo.AMQPS_SCHEME = "amqps" -> string
+const Steeltoe.Connector.Services.RabbitMQServiceInfo.AMQP_SCHEME = "amqp" -> string
+const Steeltoe.Connector.Services.RedisServiceInfo.REDIS_SCHEME = "redis" -> string
+const Steeltoe.Connector.Services.RedisServiceInfo.REDIS_SECURE_SCHEME = "rediss" -> string
+override Steeltoe.Connector.Services.UriInfo.ToString() -> string
+static readonly Steeltoe.Connector.Services.SqlServerServiceInfo.SQLSERVER_SCHEME -> string[]
+Steeltoe.Connector.Connection
+Steeltoe.Connector.Connection.Connection(string connectionString, string serviceType, Steeltoe.Connector.Services.IServiceInfo serviceInfo) -> void
+Steeltoe.Connector.Connection.ConnectionString.get -> string
+Steeltoe.Connector.Connection.ConnectionString.set -> void
+Steeltoe.Connector.Connection.Name.get -> string
+Steeltoe.Connector.Connection.Name.set -> void
+Steeltoe.Connector.Connection.Properties.get -> System.Collections.Generic.Dictionary<string, string>
+Steeltoe.Connector.ConnectionInfoAssemblyAttribute
+Steeltoe.Connector.ConnectionInfoAssemblyAttribute.ConnectionInfoAssemblyAttribute() -> void
+Steeltoe.Connector.IConnectionInfo
+Steeltoe.Connector.IConnectionInfo.Get(Microsoft.Extensions.Configuration.IConfiguration configuration, Steeltoe.Connector.Services.IServiceInfo serviceInfo) -> Steeltoe.Connector.Connection
+Steeltoe.Connector.IConnectionInfo.Get(Microsoft.Extensions.Configuration.IConfiguration configuration, string serviceName) -> Steeltoe.Connector.Connection
+Steeltoe.Connector.IConnectionInfo.IsSameType(Steeltoe.Connector.Services.IServiceInfo serviceInfo) -> bool
+Steeltoe.Connector.IConnectionInfo.IsSameType(string serviceType) -> bool
+Steeltoe.Connector.ServiceInfoCreatorAssemblyAttribute
+Steeltoe.Connector.ServiceInfoCreatorAssemblyAttribute.ServiceInfoCreatorAssemblyAttribute(System.Type creatorType) -> void
+Steeltoe.Connector.ServiceInfoFactoryAssemblyAttribute
+Steeltoe.Connector.ServiceInfoFactoryAssemblyAttribute.ServiceInfoFactoryAssemblyAttribute() -> void
+Steeltoe.Connector.Services.CosmosDbServiceInfo
+Steeltoe.Connector.Services.CosmosDbServiceInfo.CosmosDbServiceInfo(string id) -> void
+Steeltoe.Connector.Services.CosmosDbServiceInfo.DatabaseId.get -> string
+Steeltoe.Connector.Services.CosmosDbServiceInfo.DatabaseId.set -> void
+Steeltoe.Connector.Services.CosmosDbServiceInfo.DatabaseLink.get -> string
+Steeltoe.Connector.Services.CosmosDbServiceInfo.DatabaseLink.set -> void
+Steeltoe.Connector.Services.CosmosDbServiceInfo.Host.get -> string
+Steeltoe.Connector.Services.CosmosDbServiceInfo.Host.set -> void
+Steeltoe.Connector.Services.CosmosDbServiceInfo.MasterKey.get -> string
+Steeltoe.Connector.Services.CosmosDbServiceInfo.MasterKey.set -> void
+Steeltoe.Connector.Services.CosmosDbServiceInfo.ReadOnlyKey.get -> string
+Steeltoe.Connector.Services.CosmosDbServiceInfo.ReadOnlyKey.set -> void
+Steeltoe.Connector.Services.DB2ServiceInfo
+Steeltoe.Connector.Services.DB2ServiceInfo.DB2ServiceInfo(string id, string url) -> void
+Steeltoe.Connector.Services.EurekaServiceInfo
+Steeltoe.Connector.Services.EurekaServiceInfo.ClientId.get -> string
+Steeltoe.Connector.Services.EurekaServiceInfo.ClientSecret.get -> string
+Steeltoe.Connector.Services.EurekaServiceInfo.EurekaServiceInfo(string id, string uri, string clientId, string clientSecret, string tokenUri) -> void
+Steeltoe.Connector.Services.EurekaServiceInfo.TokenUri.get -> string
+Steeltoe.Connector.Services.HystrixRabbitMQServiceInfo
+Steeltoe.Connector.Services.HystrixRabbitMQServiceInfo.Host.get -> string
+Steeltoe.Connector.Services.HystrixRabbitMQServiceInfo.HystrixRabbitMQServiceInfo(string id, string uri, bool sslEnabled) -> void
+Steeltoe.Connector.Services.HystrixRabbitMQServiceInfo.HystrixRabbitMQServiceInfo(string id, string uri, System.Collections.Generic.List<string> uris, bool sslEnabled) -> void
+Steeltoe.Connector.Services.HystrixRabbitMQServiceInfo.IsSslEnabled.get -> bool
+Steeltoe.Connector.Services.HystrixRabbitMQServiceInfo.Password.get -> string
+Steeltoe.Connector.Services.HystrixRabbitMQServiceInfo.Path.get -> string
+Steeltoe.Connector.Services.HystrixRabbitMQServiceInfo.Port.get -> int
+Steeltoe.Connector.Services.HystrixRabbitMQServiceInfo.Query.get -> string
+Steeltoe.Connector.Services.HystrixRabbitMQServiceInfo.RabbitInfo.get -> Steeltoe.Connector.Services.RabbitMQServiceInfo
+Steeltoe.Connector.Services.HystrixRabbitMQServiceInfo.Scheme.get -> string
+Steeltoe.Connector.Services.HystrixRabbitMQServiceInfo.Uri.get -> string
+Steeltoe.Connector.Services.HystrixRabbitMQServiceInfo.Uris.get -> System.Collections.Generic.List<string>
+Steeltoe.Connector.Services.HystrixRabbitMQServiceInfo.UserName.get -> string
+Steeltoe.Connector.Services.IServiceInfo
+Steeltoe.Connector.Services.IServiceInfo.ApplicationInfo.get -> Steeltoe.Common.IApplicationInstanceInfo
+Steeltoe.Connector.Services.IServiceInfo.Id.get -> string
+Steeltoe.Connector.Services.IServiceInfoFactory
+Steeltoe.Connector.Services.IServiceInfoFactory.Accepts(Steeltoe.Extensions.Configuration.Service binding) -> bool
+Steeltoe.Connector.Services.IServiceInfoFactory.Create(Steeltoe.Extensions.Configuration.Service binding) -> Steeltoe.Connector.Services.IServiceInfo
+Steeltoe.Connector.Services.MongoDbServiceInfo
+Steeltoe.Connector.Services.MongoDbServiceInfo.MongoDbServiceInfo(string id, string host, int port, string username, string password, string db) -> void
+Steeltoe.Connector.Services.MongoDbServiceInfo.MongoDbServiceInfo(string id, string uri) -> void
+Steeltoe.Connector.Services.MySqlServiceInfo
+Steeltoe.Connector.Services.MySqlServiceInfo.MySqlServiceInfo(string id, string url) -> void
+Steeltoe.Connector.Services.OracleServiceInfo
+Steeltoe.Connector.Services.OracleServiceInfo.OracleServiceInfo(string id, string url) -> void
+Steeltoe.Connector.Services.PostgresServiceInfo
+Steeltoe.Connector.Services.PostgresServiceInfo.PostgresServiceInfo(string id, string url) -> void
+Steeltoe.Connector.Services.RabbitMQServiceInfo
+Steeltoe.Connector.Services.RabbitMQServiceInfo.ManagementUri.get -> string
+Steeltoe.Connector.Services.RabbitMQServiceInfo.ManagementUri.set -> void
+Steeltoe.Connector.Services.RabbitMQServiceInfo.ManagementUris.get -> System.Collections.Generic.List<string>
+Steeltoe.Connector.Services.RabbitMQServiceInfo.ManagementUris.set -> void
+Steeltoe.Connector.Services.RabbitMQServiceInfo.RabbitMQServiceInfo(string id, string host, int port, string username, string password, string virtualHost) -> void
+Steeltoe.Connector.Services.RabbitMQServiceInfo.RabbitMQServiceInfo(string id, string host, int port, string username, string password, string virtualHost, string managementUri) -> void
+Steeltoe.Connector.Services.RabbitMQServiceInfo.RabbitMQServiceInfo(string id, string uri) -> void
+Steeltoe.Connector.Services.RabbitMQServiceInfo.RabbitMQServiceInfo(string id, string uri, string managementUri) -> void
+Steeltoe.Connector.Services.RabbitMQServiceInfo.RabbitMQServiceInfo(string id, string uri, string managementUri, System.Collections.Generic.List<string> uris, System.Collections.Generic.List<string> managementUris) -> void
+Steeltoe.Connector.Services.RabbitMQServiceInfo.Uris.get -> System.Collections.Generic.List<string>
+Steeltoe.Connector.Services.RabbitMQServiceInfo.Uris.set -> void
+Steeltoe.Connector.Services.RabbitMQServiceInfo.VirtualHost.get -> string
+Steeltoe.Connector.Services.RedisServiceInfo
+Steeltoe.Connector.Services.RedisServiceInfo.RedisServiceInfo(string id, string scheme, string host, int port, string password) -> void
+Steeltoe.Connector.Services.RedisServiceInfo.RedisServiceInfo(string id, string uri) -> void
+Steeltoe.Connector.Services.ServiceInfo
+Steeltoe.Connector.Services.ServiceInfo.ApplicationInfo.get -> Steeltoe.Common.IApplicationInstanceInfo
+Steeltoe.Connector.Services.ServiceInfo.ApplicationInfo.set -> void
+Steeltoe.Connector.Services.ServiceInfo.Id.get -> string
+Steeltoe.Connector.Services.ServiceInfo.Id.set -> void
+Steeltoe.Connector.Services.ServiceInfo.ServiceInfo(string id) -> void
+Steeltoe.Connector.Services.ServiceInfo.ServiceInfo(string id, Steeltoe.Common.IApplicationInstanceInfo info) -> void
+Steeltoe.Connector.Services.SqlServerServiceInfo
+Steeltoe.Connector.Services.SqlServerServiceInfo.SqlServerServiceInfo(string id, string url) -> void
+Steeltoe.Connector.Services.SqlServerServiceInfo.SqlServerServiceInfo(string id, string url, string username, string password) -> void
+Steeltoe.Connector.Services.SsoServiceInfo
+Steeltoe.Connector.Services.SsoServiceInfo.AuthDomain.get -> string
+Steeltoe.Connector.Services.SsoServiceInfo.ClientId.get -> string
+Steeltoe.Connector.Services.SsoServiceInfo.ClientSecret.get -> string
+Steeltoe.Connector.Services.SsoServiceInfo.SsoServiceInfo(string id, string clientId, string clientSecret, string domain) -> void
+Steeltoe.Connector.Services.UriInfo
+Steeltoe.Connector.Services.UriInfo.ConvertJdbcToUri(ref string uriString) -> void
+Steeltoe.Connector.Services.UriInfo.GetPath(string pathAndQuery) -> string
+Steeltoe.Connector.Services.UriInfo.GetQuery(string pathAndQuery) -> string
+Steeltoe.Connector.Services.UriInfo.GetUserInfo(string userPass) -> string[]
+Steeltoe.Connector.Services.UriInfo.Host.get -> string
+Steeltoe.Connector.Services.UriInfo.Host.set -> void
+Steeltoe.Connector.Services.UriInfo.Hosts.get -> string[]
+Steeltoe.Connector.Services.UriInfo.Hosts.set -> void
+Steeltoe.Connector.Services.UriInfo.MakeUri(string scheme, string host, int port, string username, string password, string path, string query) -> System.Uri
+Steeltoe.Connector.Services.UriInfo.MakeUri(string uriString) -> System.Uri
+Steeltoe.Connector.Services.UriInfo.Password.get -> string
+Steeltoe.Connector.Services.UriInfo.Password.set -> void
+Steeltoe.Connector.Services.UriInfo.Path.get -> string
+Steeltoe.Connector.Services.UriInfo.Path.set -> void
+Steeltoe.Connector.Services.UriInfo.Port.get -> int
+Steeltoe.Connector.Services.UriInfo.Port.set -> void
+Steeltoe.Connector.Services.UriInfo.Query.get -> string
+Steeltoe.Connector.Services.UriInfo.Query.set -> void
+Steeltoe.Connector.Services.UriInfo.Scheme.get -> string
+Steeltoe.Connector.Services.UriInfo.Scheme.set -> void
+Steeltoe.Connector.Services.UriInfo.Uri.get -> System.Uri
+Steeltoe.Connector.Services.UriInfo.UriInfo(string scheme, string host, int port, string username, string password, string path = null, string query = null) -> void
+Steeltoe.Connector.Services.UriInfo.UriInfo(string uristring) -> void
+Steeltoe.Connector.Services.UriInfo.UriInfo(string uristring, string username, string password) -> void
+Steeltoe.Connector.Services.UriInfo.UriString.get -> string
+Steeltoe.Connector.Services.UriInfo.UriString.set -> void
+Steeltoe.Connector.Services.UriInfo.UserName.get -> string
+Steeltoe.Connector.Services.UriInfo.UserName.set -> void
+Steeltoe.Connector.Services.UriServiceInfo
+Steeltoe.Connector.Services.UriServiceInfo.Host.get -> string
+Steeltoe.Connector.Services.UriServiceInfo.Hosts.get -> string[]
+Steeltoe.Connector.Services.UriServiceInfo.Info.get -> Steeltoe.Connector.Services.UriInfo
+Steeltoe.Connector.Services.UriServiceInfo.Info.set -> void
+Steeltoe.Connector.Services.UriServiceInfo.Password.get -> string
+Steeltoe.Connector.Services.UriServiceInfo.Path.get -> string
+Steeltoe.Connector.Services.UriServiceInfo.Port.get -> int
+Steeltoe.Connector.Services.UriServiceInfo.Query.get -> string
+Steeltoe.Connector.Services.UriServiceInfo.Scheme.get -> string
+Steeltoe.Connector.Services.UriServiceInfo.Uri.get -> string
+Steeltoe.Connector.Services.UriServiceInfo.UriServiceInfo(string id, string scheme, string host, int port, string username, string password, string path) -> void
+Steeltoe.Connector.Services.UriServiceInfo.UriServiceInfo(string id, string uriString) -> void
+Steeltoe.Connector.Services.UriServiceInfo.UriServiceInfo(string id, string uriString, string username, string password) -> void
+Steeltoe.Connector.Services.UriServiceInfo.UserName.get -> string

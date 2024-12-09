@@ -1,0 +1,315 @@
+﻿const Steeltoe.Management.Endpoint.ManagementWebHostBuilderExtensions.ManagementPortKey = "management:endpoints:port" -> string
+const Steeltoe.Management.Endpoint.ManagementWebHostBuilderExtensions.ManagementSSLKey = "management:endpoints:sslenabled" -> string
+Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions
+override Steeltoe.Management.Endpoint.Health.HealthEndpointCore.BuildHealth(Steeltoe.Management.Endpoint.Security.ISecurityContext securityContext) -> Steeltoe.Management.Endpoint.Health.HealthEndpointResponse
+override Steeltoe.Management.Endpoint.Health.HealthEndpointCore.Invoke(Steeltoe.Management.Endpoint.Security.ISecurityContext securityContext) -> Steeltoe.Management.Endpoint.Health.HealthEndpointResponse
+override Steeltoe.Management.Endpoint.Metrics.MetricsEndpointMiddleware.HandleRequest(Steeltoe.Management.Endpoint.Metrics.MetricsRequest arg) -> string
+override Steeltoe.Management.Endpoint.Metrics.Observer.AspNetCoreHostingObserver.ProcessEvent(string evnt, object arg) -> void
+override Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware.HandleRequest() -> string
+override Steeltoe.Management.Endpoint.Trace.HttpTraceDiagnosticObserver.ProcessEvent(string key, object value) -> void
+override Steeltoe.Management.Endpoint.Trace.TraceDiagnosticObserver.ProcessEvent(string key, object value) -> void
+static Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddActuatorEndpointMapping<TEndpoint>(this Microsoft.Extensions.DependencyInjection.IServiceCollection services) -> Microsoft.Extensions.DependencyInjection.IServiceCollection
+static Steeltoe.Management.Endpoint.ActuatorRouteBuilderExtensions.LookupMiddleware(System.Type endpointType) -> (System.Type middleware, System.Type options)
+static Steeltoe.Management.Endpoint.ActuatorRouteBuilderExtensions.Map<TEndpoint>(this Microsoft.AspNetCore.Routing.IEndpointRouteBuilder endpoints, System.Action<Microsoft.AspNetCore.Builder.IEndpointConventionBuilder> convention = null) -> void
+static Steeltoe.Management.Endpoint.ActuatorRouteBuilderExtensions.MapAllActuators(this Microsoft.AspNetCore.Routing.IEndpointRouteBuilder endpoints) -> void
+static Steeltoe.Management.Endpoint.ActuatorRouteBuilderExtensions.MapAllActuators(this Microsoft.AspNetCore.Routing.IEndpointRouteBuilder endpoints, Steeltoe.Management.Endpoint.MediaTypeVersion version) -> void
+static Steeltoe.Management.Endpoint.ActuatorRouteBuilderExtensions.MapAllActuators(this Microsoft.AspNetCore.Routing.IEndpointRouteBuilder endpoints, System.Action<Microsoft.AspNetCore.Builder.IEndpointConventionBuilder> convention) -> void
+static Steeltoe.Management.Endpoint.ActuatorServiceCollectionExtensions.AddAllActuators(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config = null, Steeltoe.Management.Endpoint.MediaTypeVersion version = Steeltoe.Management.Endpoint.MediaTypeVersion.V2, System.Action<Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder> buildCorsPolicy = null) -> Microsoft.Extensions.DependencyInjection.IServiceCollection
+static Steeltoe.Management.Endpoint.ActuatorServiceCollectionExtensions.AddAllActuators(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config, System.Action<Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder> buildCorsPolicy) -> void
+static Steeltoe.Management.Endpoint.ActuatorServiceCollectionExtensions.RegisterEndpointOptions(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Steeltoe.Management.IEndpointOptions options) -> void
+static Steeltoe.Management.Endpoint.CloudFoundry.EndpointApplicationBuilderExtensions.UseCloudFoundrySecurity(this Microsoft.AspNetCore.Builder.IApplicationBuilder builder) -> void
+static Steeltoe.Management.Endpoint.CloudFoundry.EndpointServiceCollectionExtensions.AddCloudFoundryActuator(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config = null) -> void
+static Steeltoe.Management.Endpoint.ContentNegotiation.ContentNegotiationExtensions.HandleContentNegotiation(this Microsoft.AspNetCore.Http.HttpContext context, Microsoft.Extensions.Logging.ILogger logger) -> void
+static Steeltoe.Management.Endpoint.ContentNegotiation.ContentNegotiationExtensions.LogContentType(this Microsoft.Extensions.Logging.ILogger logger, Microsoft.AspNetCore.Http.IHeaderDictionary requestHeaders, string contentType) -> void
+static Steeltoe.Management.Endpoint.ContentNegotiation.ContentNegotiationExtensions.SetContentType(this Microsoft.AspNetCore.Http.IHeaderDictionary responseHeaders, Microsoft.AspNetCore.Http.IHeaderDictionary requestHeaders, Microsoft.Extensions.Logging.ILogger logger, Steeltoe.Management.Endpoint.MediaTypeVersion version = Steeltoe.Management.Endpoint.MediaTypeVersion.V2) -> void
+static Steeltoe.Management.Endpoint.DbMigrations.EndpointServiceCollectionExtensions.AddDbMigrationsActuator(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config = null) -> void
+static Steeltoe.Management.Endpoint.Env.EndpointServiceCollectionExtensions.AddEnvActuator(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config = null) -> void
+static Steeltoe.Management.Endpoint.Health.EndpointServiceCollectionExtensions.AddHealthActuator(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config = null) -> void
+static Steeltoe.Management.Endpoint.Health.EndpointServiceCollectionExtensions.AddHealthActuator(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config = null, params System.Type[] contributors) -> void
+static Steeltoe.Management.Endpoint.Health.EndpointServiceCollectionExtensions.AddHealthActuator(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config, Steeltoe.Common.HealthChecks.IHealthAggregator aggregator, params System.Type[] contributors) -> void
+static Steeltoe.Management.Endpoint.Health.EndpointServiceCollectionExtensions.AddHealthContributors(Microsoft.Extensions.DependencyInjection.IServiceCollection services, params System.Type[] contributors) -> void
+static Steeltoe.Management.Endpoint.Health.HealthCheckExtensions.HealthCheck(this Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration registration, System.IServiceProvider provider) -> System.Threading.Tasks.Task<Steeltoe.Common.HealthChecks.HealthCheckResult>
+static Steeltoe.Management.Endpoint.Health.HealthCheckExtensions.ToHealthStatus(this Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus status) -> Steeltoe.Common.HealthChecks.HealthStatus
+static Steeltoe.Management.Endpoint.Health.HealthStartupFilter.InitializeAvailability(System.IServiceProvider serviceProvider) -> void
+static Steeltoe.Management.Endpoint.HeapDump.EndpointServiceCollectionExtensions.AddHeapDumpActuator(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config = null) -> void
+static Steeltoe.Management.Endpoint.Hypermedia.EndpointServiceCollectionExtensions.AddActuatorManagementOptions(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config = null) -> void
+static Steeltoe.Management.Endpoint.Hypermedia.EndpointServiceCollectionExtensions.AddHypermediaActuator(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config = null) -> void
+static Steeltoe.Management.Endpoint.Info.EndpointServiceCollectionExtensions.AddInfoActuator(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config = null) -> void
+static Steeltoe.Management.Endpoint.Info.EndpointServiceCollectionExtensions.AddInfoActuator(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config = null, params Steeltoe.Management.Info.IInfoContributor[] contributors) -> void
+static Steeltoe.Management.Endpoint.Loggers.EndpointServiceCollectionExtensions.AddLoggersActuator(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config = null) -> void
+static Steeltoe.Management.Endpoint.ManagementHostBuilderExtensions.ActivateActuatorEndpoints(this Microsoft.Extensions.DependencyInjection.IServiceCollection collection, System.Action<Microsoft.AspNetCore.Builder.IEndpointConventionBuilder> configureEndpoints = null) -> void
+static Steeltoe.Management.Endpoint.ManagementHostBuilderExtensions.AddAllActuators(this Microsoft.Extensions.Hosting.IHostBuilder hostBuilder, System.Action<Microsoft.AspNetCore.Builder.IEndpointConventionBuilder> configureEndpoints = null, Steeltoe.Management.Endpoint.MediaTypeVersion mediaTypeVersion = Steeltoe.Management.Endpoint.MediaTypeVersion.V2, System.Action<Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder> buildCorsPolicy = null) -> Microsoft.Extensions.Hosting.IHostBuilder
+static Steeltoe.Management.Endpoint.ManagementHostBuilderExtensions.AddCloudFoundryActuator(this Microsoft.Extensions.Hosting.IHostBuilder hostBuilder) -> Microsoft.Extensions.Hosting.IHostBuilder
+static Steeltoe.Management.Endpoint.ManagementHostBuilderExtensions.AddDbMigrationsActuator(this Microsoft.Extensions.Hosting.IHostBuilder hostBuilder) -> Microsoft.Extensions.Hosting.IHostBuilder
+static Steeltoe.Management.Endpoint.ManagementHostBuilderExtensions.AddEnvActuator(this Microsoft.Extensions.Hosting.IHostBuilder hostBuilder) -> Microsoft.Extensions.Hosting.IHostBuilder
+static Steeltoe.Management.Endpoint.ManagementHostBuilderExtensions.AddHealthActuator(this Microsoft.Extensions.Hosting.IHostBuilder hostBuilder) -> Microsoft.Extensions.Hosting.IHostBuilder
+static Steeltoe.Management.Endpoint.ManagementHostBuilderExtensions.AddHealthActuator(this Microsoft.Extensions.Hosting.IHostBuilder hostBuilder, Steeltoe.Common.HealthChecks.IHealthAggregator aggregator, System.Type[] contributors) -> Microsoft.Extensions.Hosting.IHostBuilder
+static Steeltoe.Management.Endpoint.ManagementHostBuilderExtensions.AddHealthActuator(this Microsoft.Extensions.Hosting.IHostBuilder hostBuilder, System.Type[] contributors) -> Microsoft.Extensions.Hosting.IHostBuilder
+static Steeltoe.Management.Endpoint.ManagementHostBuilderExtensions.AddHeapDumpActuator(this Microsoft.Extensions.Hosting.IHostBuilder hostBuilder) -> Microsoft.Extensions.Hosting.IHostBuilder
+static Steeltoe.Management.Endpoint.ManagementHostBuilderExtensions.AddHypermediaActuator(this Microsoft.Extensions.Hosting.IHostBuilder hostBuilder) -> Microsoft.Extensions.Hosting.IHostBuilder
+static Steeltoe.Management.Endpoint.ManagementHostBuilderExtensions.AddInfoActuator(this Microsoft.Extensions.Hosting.IHostBuilder hostBuilder) -> Microsoft.Extensions.Hosting.IHostBuilder
+static Steeltoe.Management.Endpoint.ManagementHostBuilderExtensions.AddInfoActuator(this Microsoft.Extensions.Hosting.IHostBuilder hostBuilder, Steeltoe.Management.Info.IInfoContributor[] contributors) -> Microsoft.Extensions.Hosting.IHostBuilder
+static Steeltoe.Management.Endpoint.ManagementHostBuilderExtensions.AddLoggersActuator(this Microsoft.Extensions.Hosting.IHostBuilder hostBuilder) -> Microsoft.Extensions.Hosting.IHostBuilder
+static Steeltoe.Management.Endpoint.ManagementHostBuilderExtensions.AddMappingsActuator(this Microsoft.Extensions.Hosting.IHostBuilder hostBuilder) -> Microsoft.Extensions.Hosting.IHostBuilder
+static Steeltoe.Management.Endpoint.ManagementHostBuilderExtensions.AddMetricsActuator(this Microsoft.Extensions.Hosting.IHostBuilder hostBuilder) -> Microsoft.Extensions.Hosting.IHostBuilder
+static Steeltoe.Management.Endpoint.ManagementHostBuilderExtensions.AddRefreshActuator(this Microsoft.Extensions.Hosting.IHostBuilder hostBuilder) -> Microsoft.Extensions.Hosting.IHostBuilder
+static Steeltoe.Management.Endpoint.ManagementHostBuilderExtensions.AddThreadDumpActuator(this Microsoft.Extensions.Hosting.IHostBuilder hostBuilder, Steeltoe.Management.Endpoint.MediaTypeVersion mediaTypeVersion = Steeltoe.Management.Endpoint.MediaTypeVersion.V2) -> Microsoft.Extensions.Hosting.IHostBuilder
+static Steeltoe.Management.Endpoint.ManagementHostBuilderExtensions.AddTraceActuator(this Microsoft.Extensions.Hosting.IHostBuilder hostBuilder, Steeltoe.Management.Endpoint.MediaTypeVersion mediaTypeVersion = Steeltoe.Management.Endpoint.MediaTypeVersion.V2) -> Microsoft.Extensions.Hosting.IHostBuilder
+static Steeltoe.Management.Endpoint.ManagementHostBuilderExtensions.AddWavefrontMetrics(this Microsoft.Extensions.Hosting.IHostBuilder hostBuilder) -> Microsoft.Extensions.Hosting.IHostBuilder
+static Steeltoe.Management.Endpoint.ManagementWebApplicationBuilderExtensions.AddAllActuators(this Microsoft.AspNetCore.Builder.WebApplicationBuilder applicationBuilder, System.Action<Microsoft.AspNetCore.Builder.IEndpointConventionBuilder> configureEndpoints = null, Steeltoe.Management.Endpoint.MediaTypeVersion mediaTypeVersion = Steeltoe.Management.Endpoint.MediaTypeVersion.V2, System.Action<Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder> buildCorsPolicy = null) -> Microsoft.AspNetCore.Builder.WebApplicationBuilder
+static Steeltoe.Management.Endpoint.ManagementWebApplicationBuilderExtensions.AddCloudFoundryActuator(this Microsoft.AspNetCore.Builder.WebApplicationBuilder applicationBuilder) -> Microsoft.AspNetCore.Builder.WebApplicationBuilder
+static Steeltoe.Management.Endpoint.ManagementWebApplicationBuilderExtensions.AddDbMigrationsActuator(this Microsoft.AspNetCore.Builder.WebApplicationBuilder applicationBuilder) -> Microsoft.AspNetCore.Builder.WebApplicationBuilder
+static Steeltoe.Management.Endpoint.ManagementWebApplicationBuilderExtensions.AddEnvActuator(this Microsoft.AspNetCore.Builder.WebApplicationBuilder applicationBuilder) -> Microsoft.AspNetCore.Builder.WebApplicationBuilder
+static Steeltoe.Management.Endpoint.ManagementWebApplicationBuilderExtensions.AddHealthActuator(this Microsoft.AspNetCore.Builder.WebApplicationBuilder applicationBuilder) -> Microsoft.AspNetCore.Builder.WebApplicationBuilder
+static Steeltoe.Management.Endpoint.ManagementWebApplicationBuilderExtensions.AddHealthActuator(this Microsoft.AspNetCore.Builder.WebApplicationBuilder applicationBuilder, Steeltoe.Common.HealthChecks.IHealthAggregator aggregator, System.Type[] contributors) -> Microsoft.AspNetCore.Builder.WebApplicationBuilder
+static Steeltoe.Management.Endpoint.ManagementWebApplicationBuilderExtensions.AddHealthActuator(this Microsoft.AspNetCore.Builder.WebApplicationBuilder applicationBuilder, System.Type[] contributors) -> Microsoft.AspNetCore.Builder.WebApplicationBuilder
+static Steeltoe.Management.Endpoint.ManagementWebApplicationBuilderExtensions.AddHeapDumpActuator(this Microsoft.AspNetCore.Builder.WebApplicationBuilder applicationBuilder) -> Microsoft.AspNetCore.Builder.WebApplicationBuilder
+static Steeltoe.Management.Endpoint.ManagementWebApplicationBuilderExtensions.AddHypermediaActuator(this Microsoft.AspNetCore.Builder.WebApplicationBuilder applicationBuilder) -> Microsoft.AspNetCore.Builder.WebApplicationBuilder
+static Steeltoe.Management.Endpoint.ManagementWebApplicationBuilderExtensions.AddInfoActuator(this Microsoft.AspNetCore.Builder.WebApplicationBuilder applicationBuilder) -> Microsoft.AspNetCore.Builder.WebApplicationBuilder
+static Steeltoe.Management.Endpoint.ManagementWebApplicationBuilderExtensions.AddInfoActuator(this Microsoft.AspNetCore.Builder.WebApplicationBuilder applicationBuilder, Steeltoe.Management.Info.IInfoContributor[] contributors) -> Microsoft.AspNetCore.Builder.WebApplicationBuilder
+static Steeltoe.Management.Endpoint.ManagementWebApplicationBuilderExtensions.AddLoggersActuator(this Microsoft.AspNetCore.Builder.WebApplicationBuilder applicationBuilder) -> Microsoft.AspNetCore.Builder.WebApplicationBuilder
+static Steeltoe.Management.Endpoint.ManagementWebApplicationBuilderExtensions.AddMappingsActuator(this Microsoft.AspNetCore.Builder.WebApplicationBuilder applicationBuilder) -> Microsoft.AspNetCore.Builder.WebApplicationBuilder
+static Steeltoe.Management.Endpoint.ManagementWebApplicationBuilderExtensions.AddMetricsActuator(this Microsoft.AspNetCore.Builder.WebApplicationBuilder applicationBuilder) -> Microsoft.AspNetCore.Builder.WebApplicationBuilder
+static Steeltoe.Management.Endpoint.ManagementWebApplicationBuilderExtensions.AddRefreshActuator(this Microsoft.AspNetCore.Builder.WebApplicationBuilder applicationBuilder) -> Microsoft.AspNetCore.Builder.WebApplicationBuilder
+static Steeltoe.Management.Endpoint.ManagementWebApplicationBuilderExtensions.AddThreadDumpActuator(this Microsoft.AspNetCore.Builder.WebApplicationBuilder applicationBuilder, Steeltoe.Management.Endpoint.MediaTypeVersion mediaTypeVersion = Steeltoe.Management.Endpoint.MediaTypeVersion.V2) -> Microsoft.AspNetCore.Builder.WebApplicationBuilder
+static Steeltoe.Management.Endpoint.ManagementWebApplicationBuilderExtensions.AddTraceActuator(this Microsoft.AspNetCore.Builder.WebApplicationBuilder applicationBuilder, Steeltoe.Management.Endpoint.MediaTypeVersion mediaTypeVersion = Steeltoe.Management.Endpoint.MediaTypeVersion.V2) -> Microsoft.AspNetCore.Builder.WebApplicationBuilder
+static Steeltoe.Management.Endpoint.ManagementWebApplicationBuilderExtensions.AddWavefrontMetrics(this Microsoft.AspNetCore.Builder.WebApplicationBuilder applicationBuilder) -> Microsoft.AspNetCore.Builder.WebApplicationBuilder
+static Steeltoe.Management.Endpoint.ManagementWebHostBuilderExtensions.AddAllActuators(this Microsoft.AspNetCore.Hosting.IWebHostBuilder hostBuilder, System.Action<Microsoft.AspNetCore.Builder.IEndpointConventionBuilder> configureEndpoints = null, Steeltoe.Management.Endpoint.MediaTypeVersion mediaTypeVersion = Steeltoe.Management.Endpoint.MediaTypeVersion.V2, System.Action<Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder> buildCorsPolicy = null) -> Microsoft.AspNetCore.Hosting.IWebHostBuilder
+static Steeltoe.Management.Endpoint.ManagementWebHostBuilderExtensions.AddCloudFoundryActuator(this Microsoft.AspNetCore.Hosting.IWebHostBuilder hostBuilder) -> Microsoft.AspNetCore.Hosting.IWebHostBuilder
+static Steeltoe.Management.Endpoint.ManagementWebHostBuilderExtensions.AddDbMigrationsActuator(this Microsoft.AspNetCore.Hosting.IWebHostBuilder hostBuilder) -> Microsoft.AspNetCore.Hosting.IWebHostBuilder
+static Steeltoe.Management.Endpoint.ManagementWebHostBuilderExtensions.AddEnvActuator(this Microsoft.AspNetCore.Hosting.IWebHostBuilder hostBuilder) -> Microsoft.AspNetCore.Hosting.IWebHostBuilder
+static Steeltoe.Management.Endpoint.ManagementWebHostBuilderExtensions.AddHealthActuator(this Microsoft.AspNetCore.Hosting.IWebHostBuilder hostBuilder) -> Microsoft.AspNetCore.Hosting.IWebHostBuilder
+static Steeltoe.Management.Endpoint.ManagementWebHostBuilderExtensions.AddHealthActuator(this Microsoft.AspNetCore.Hosting.IWebHostBuilder hostBuilder, Steeltoe.Common.HealthChecks.IHealthAggregator aggregator, System.Type[] contributors) -> Microsoft.AspNetCore.Hosting.IWebHostBuilder
+static Steeltoe.Management.Endpoint.ManagementWebHostBuilderExtensions.AddHealthActuator(this Microsoft.AspNetCore.Hosting.IWebHostBuilder hostBuilder, System.Type[] contributors) -> Microsoft.AspNetCore.Hosting.IWebHostBuilder
+static Steeltoe.Management.Endpoint.ManagementWebHostBuilderExtensions.AddHeapDumpActuator(this Microsoft.AspNetCore.Hosting.IWebHostBuilder hostBuilder) -> Microsoft.AspNetCore.Hosting.IWebHostBuilder
+static Steeltoe.Management.Endpoint.ManagementWebHostBuilderExtensions.AddHypermediaActuator(this Microsoft.AspNetCore.Hosting.IWebHostBuilder hostBuilder) -> Microsoft.AspNetCore.Hosting.IWebHostBuilder
+static Steeltoe.Management.Endpoint.ManagementWebHostBuilderExtensions.AddInfoActuator(this Microsoft.AspNetCore.Hosting.IWebHostBuilder hostBuilder) -> Microsoft.AspNetCore.Hosting.IWebHostBuilder
+static Steeltoe.Management.Endpoint.ManagementWebHostBuilderExtensions.AddInfoActuator(this Microsoft.AspNetCore.Hosting.IWebHostBuilder hostBuilder, Steeltoe.Management.Info.IInfoContributor[] contributors) -> Microsoft.AspNetCore.Hosting.IWebHostBuilder
+static Steeltoe.Management.Endpoint.ManagementWebHostBuilderExtensions.AddLoggersActuator(this Microsoft.AspNetCore.Hosting.IWebHostBuilder hostBuilder) -> Microsoft.AspNetCore.Hosting.IWebHostBuilder
+static Steeltoe.Management.Endpoint.ManagementWebHostBuilderExtensions.AddMappingsActuator(this Microsoft.AspNetCore.Hosting.IWebHostBuilder hostBuilder) -> Microsoft.AspNetCore.Hosting.IWebHostBuilder
+static Steeltoe.Management.Endpoint.ManagementWebHostBuilderExtensions.AddMetricsActuator(this Microsoft.AspNetCore.Hosting.IWebHostBuilder hostBuilder) -> Microsoft.AspNetCore.Hosting.IWebHostBuilder
+static Steeltoe.Management.Endpoint.ManagementWebHostBuilderExtensions.AddRefreshActuator(this Microsoft.AspNetCore.Hosting.IWebHostBuilder hostBuilder) -> Microsoft.AspNetCore.Hosting.IWebHostBuilder
+static Steeltoe.Management.Endpoint.ManagementWebHostBuilderExtensions.AddThreadDumpActuator(this Microsoft.AspNetCore.Hosting.IWebHostBuilder hostBuilder, Steeltoe.Management.Endpoint.MediaTypeVersion mediaTypeVersion = Steeltoe.Management.Endpoint.MediaTypeVersion.V2) -> Microsoft.AspNetCore.Hosting.IWebHostBuilder
+static Steeltoe.Management.Endpoint.ManagementWebHostBuilderExtensions.AddTraceActuator(this Microsoft.AspNetCore.Hosting.IWebHostBuilder hostBuilder, Steeltoe.Management.Endpoint.MediaTypeVersion mediaTypeVersion = Steeltoe.Management.Endpoint.MediaTypeVersion.V2) -> Microsoft.AspNetCore.Hosting.IWebHostBuilder
+static Steeltoe.Management.Endpoint.ManagementWebHostBuilderExtensions.AddWavefrontMetrics(this Microsoft.AspNetCore.Hosting.IWebHostBuilder hostBuilder) -> Microsoft.AspNetCore.Hosting.IWebHostBuilder
+static Steeltoe.Management.Endpoint.Mappings.EndpointServiceCollectionExtensions.AddMappingsActuator(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config = null) -> void
+static Steeltoe.Management.Endpoint.Mappings.RouteBuilderExtensions.AddRoutesToMappingsActuator(this Microsoft.AspNetCore.Routing.IRouteBuilder builder) -> void
+static Steeltoe.Management.Endpoint.Metrics.EndpointServiceCollectionExtensions.AddMetricsActuator(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config = null) -> void
+static Steeltoe.Management.Endpoint.Metrics.EndpointServiceCollectionExtensions.AddPrometheusActuator(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config = null) -> void
+static Steeltoe.Management.Endpoint.Metrics.EndpointServiceCollectionExtensions.AddWavefrontMetrics(this Microsoft.Extensions.DependencyInjection.IServiceCollection services) -> Microsoft.Extensions.DependencyInjection.IServiceCollection
+static Steeltoe.Management.Endpoint.Refresh.EndpointServiceCollectionExtensions.AddRefreshActuator(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config = null) -> void
+static Steeltoe.Management.Endpoint.SpringBootAdminClient.SpringBootAdminApplicationBuilderExtensions.RegisterWithSpringBootAdmin(this Microsoft.AspNetCore.Builder.IApplicationBuilder builder, Microsoft.Extensions.Configuration.IConfiguration configuration = null, System.Net.Http.HttpClient httpClient = null) -> void
+static Steeltoe.Management.Endpoint.ThreadDump.EndpointServiceCollectionExtensions.AddThreadDumpActuator(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config = null) -> void
+static Steeltoe.Management.Endpoint.ThreadDump.EndpointServiceCollectionExtensions.AddThreadDumpActuator(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config, Steeltoe.Management.Endpoint.MediaTypeVersion version) -> void
+static Steeltoe.Management.Endpoint.Trace.EndpointServiceCollectionExtensions.AddTraceActuator(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config = null) -> void
+static Steeltoe.Management.Endpoint.Trace.EndpointServiceCollectionExtensions.AddTraceActuator(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config, Steeltoe.Management.Endpoint.MediaTypeVersion version) -> void
+Steeltoe.Management.Endpoint.ActuatorRouteBuilderExtensions
+Steeltoe.Management.Endpoint.ActuatorServiceCollectionExtensions
+Steeltoe.Management.Endpoint.AllActuatorsStartupFilter
+Steeltoe.Management.Endpoint.AllActuatorsStartupFilter.AllActuatorsStartupFilter(System.Action<Microsoft.AspNetCore.Builder.IEndpointConventionBuilder> configureConventions = null) -> void
+Steeltoe.Management.Endpoint.AllActuatorsStartupFilter.Configure(System.Action<Microsoft.AspNetCore.Builder.IApplicationBuilder> next) -> System.Action<Microsoft.AspNetCore.Builder.IApplicationBuilder>
+Steeltoe.Management.Endpoint.CloudFoundry.CloudFoundryActuatorStartupFilter
+Steeltoe.Management.Endpoint.CloudFoundry.CloudFoundryActuatorStartupFilter.CloudFoundryActuatorStartupFilter() -> void
+Steeltoe.Management.Endpoint.CloudFoundry.CloudFoundryActuatorStartupFilter.Configure(System.Action<Microsoft.AspNetCore.Builder.IApplicationBuilder> next) -> System.Action<Microsoft.AspNetCore.Builder.IApplicationBuilder>
+Steeltoe.Management.Endpoint.CloudFoundry.CloudFoundryEndpointMiddleware
+Steeltoe.Management.Endpoint.CloudFoundry.CloudFoundryEndpointMiddleware.CloudFoundryEndpointMiddleware(Microsoft.AspNetCore.Http.RequestDelegate next, Steeltoe.Management.Endpoint.CloudFoundry.CloudFoundryEndpoint endpoint, Steeltoe.Management.IManagementOptions mgmtOptions, Microsoft.Extensions.Logging.ILogger<Steeltoe.Management.Endpoint.CloudFoundry.CloudFoundryEndpointMiddleware> logger = null) -> void
+Steeltoe.Management.Endpoint.CloudFoundry.CloudFoundryEndpointMiddleware.GetRequestUri(Microsoft.AspNetCore.Http.HttpRequest request) -> string
+Steeltoe.Management.Endpoint.CloudFoundry.CloudFoundryEndpointMiddleware.HandleCloudFoundryRequestAsync(Microsoft.AspNetCore.Http.HttpContext context) -> System.Threading.Tasks.Task
+Steeltoe.Management.Endpoint.CloudFoundry.CloudFoundryEndpointMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext context) -> System.Threading.Tasks.Task
+Steeltoe.Management.Endpoint.CloudFoundry.CloudFoundrySecurityMiddleware
+Steeltoe.Management.Endpoint.CloudFoundry.CloudFoundrySecurityMiddleware.CloudFoundrySecurityMiddleware(Microsoft.AspNetCore.Http.RequestDelegate next, Steeltoe.Management.Endpoint.CloudFoundry.ICloudFoundryOptions options, Steeltoe.Management.Endpoint.CloudFoundry.CloudFoundryManagementOptions mgmtOptions, Microsoft.Extensions.Logging.ILogger<Steeltoe.Management.Endpoint.CloudFoundry.CloudFoundrySecurityMiddleware> logger = null) -> void
+Steeltoe.Management.Endpoint.CloudFoundry.CloudFoundrySecurityMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext context) -> System.Threading.Tasks.Task
+Steeltoe.Management.Endpoint.CloudFoundry.CloudFoundrySecurityStartupFilter
+Steeltoe.Management.Endpoint.CloudFoundry.CloudFoundrySecurityStartupFilter.CloudFoundrySecurityStartupFilter() -> void
+Steeltoe.Management.Endpoint.CloudFoundry.CloudFoundrySecurityStartupFilter.Configure(System.Action<Microsoft.AspNetCore.Builder.IApplicationBuilder> next) -> System.Action<Microsoft.AspNetCore.Builder.IApplicationBuilder>
+Steeltoe.Management.Endpoint.CloudFoundry.EndpointApplicationBuilderExtensions
+Steeltoe.Management.Endpoint.CloudFoundry.EndpointServiceCollectionExtensions
+Steeltoe.Management.Endpoint.ContentNegotiation.ContentNegotiationExtensions
+Steeltoe.Management.Endpoint.DbMigrations.DbMigrationsEndpointMiddleware
+Steeltoe.Management.Endpoint.DbMigrations.DbMigrationsEndpointMiddleware.DbMigrationsEndpointMiddleware(Microsoft.AspNetCore.Http.RequestDelegate next, Steeltoe.Management.Endpoint.DbMigrations.DbMigrationsEndpoint endpoint, Steeltoe.Management.IManagementOptions mgmtOptions, Microsoft.Extensions.Logging.ILogger<Steeltoe.Management.Endpoint.DbMigrations.DbMigrationsEndpointMiddleware> logger = null) -> void
+Steeltoe.Management.Endpoint.DbMigrations.DbMigrationsEndpointMiddleware.HandleEntityFrameworkRequestAsync(Microsoft.AspNetCore.Http.HttpContext context) -> System.Threading.Tasks.Task
+Steeltoe.Management.Endpoint.DbMigrations.DbMigrationsEndpointMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext context) -> System.Threading.Tasks.Task
+Steeltoe.Management.Endpoint.DbMigrations.DbMigrationsStartupFilter
+Steeltoe.Management.Endpoint.DbMigrations.DbMigrationsStartupFilter.Configure(System.Action<Microsoft.AspNetCore.Builder.IApplicationBuilder> next) -> System.Action<Microsoft.AspNetCore.Builder.IApplicationBuilder>
+Steeltoe.Management.Endpoint.DbMigrations.DbMigrationsStartupFilter.DbMigrationsStartupFilter() -> void
+Steeltoe.Management.Endpoint.DbMigrations.EndpointServiceCollectionExtensions
+Steeltoe.Management.Endpoint.EndpointCollectionConventionBuilder
+Steeltoe.Management.Endpoint.EndpointCollectionConventionBuilder.Add(System.Action<Microsoft.AspNetCore.Builder.EndpointBuilder> convention) -> void
+Steeltoe.Management.Endpoint.EndpointCollectionConventionBuilder.AddConventionBuilder(Microsoft.AspNetCore.Builder.IEndpointConventionBuilder builder) -> void
+Steeltoe.Management.Endpoint.EndpointCollectionConventionBuilder.EndpointCollectionConventionBuilder() -> void
+Steeltoe.Management.Endpoint.Env.EndpointServiceCollectionExtensions
+Steeltoe.Management.Endpoint.Env.EnvEndpointMiddleware
+Steeltoe.Management.Endpoint.Env.EnvEndpointMiddleware.EnvEndpointMiddleware(Microsoft.AspNetCore.Http.RequestDelegate next, Steeltoe.Management.Endpoint.Env.EnvEndpoint endpoint, Steeltoe.Management.IManagementOptions mgmtOptions, Microsoft.Extensions.Logging.ILogger<Steeltoe.Management.Endpoint.Env.EnvEndpointMiddleware> logger = null) -> void
+Steeltoe.Management.Endpoint.Env.EnvEndpointMiddleware.HandleEnvRequestAsync(Microsoft.AspNetCore.Http.HttpContext context) -> System.Threading.Tasks.Task
+Steeltoe.Management.Endpoint.Env.EnvEndpointMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext context) -> System.Threading.Tasks.Task
+Steeltoe.Management.Endpoint.Env.EnvStartupFilter
+Steeltoe.Management.Endpoint.Env.EnvStartupFilter.Configure(System.Action<Microsoft.AspNetCore.Builder.IApplicationBuilder> next) -> System.Action<Microsoft.AspNetCore.Builder.IApplicationBuilder>
+Steeltoe.Management.Endpoint.Env.EnvStartupFilter.EnvStartupFilter() -> void
+Steeltoe.Management.Endpoint.Health.EndpointServiceCollectionExtensions
+Steeltoe.Management.Endpoint.Health.HealthCheckExtensions
+Steeltoe.Management.Endpoint.Health.HealthEndpointCore
+Steeltoe.Management.Endpoint.Health.HealthEndpointCore.HealthEndpointCore(Steeltoe.Management.Endpoint.Health.IHealthOptions options, Steeltoe.Common.HealthChecks.IHealthAggregator aggregator, System.Collections.Generic.IEnumerable<Steeltoe.Common.HealthChecks.IHealthContributor> contributors, Microsoft.Extensions.Options.IOptionsMonitor<Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckServiceOptions> serviceOptions, System.IServiceProvider provider, Microsoft.Extensions.Logging.ILogger<Steeltoe.Management.Endpoint.Health.HealthEndpoint> logger = null) -> void
+Steeltoe.Management.Endpoint.Health.HealthEndpointCore.Options.get -> Steeltoe.Management.Endpoint.Health.IHealthOptions
+Steeltoe.Management.Endpoint.Health.HealthEndpointMiddleware
+Steeltoe.Management.Endpoint.Health.HealthEndpointMiddleware.DoRequest(Microsoft.AspNetCore.Http.HttpContext context) -> string
+Steeltoe.Management.Endpoint.Health.HealthEndpointMiddleware.HandleHealthRequestAsync(Microsoft.AspNetCore.Http.HttpContext context) -> System.Threading.Tasks.Task
+Steeltoe.Management.Endpoint.Health.HealthEndpointMiddleware.HealthEndpointMiddleware(Microsoft.AspNetCore.Http.RequestDelegate next, Steeltoe.Management.IManagementOptions mgmtOptions, Microsoft.Extensions.Logging.ILogger<Steeltoe.Management.Endpoint.Info.InfoEndpointMiddleware> logger = null) -> void
+Steeltoe.Management.Endpoint.Health.HealthEndpointMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext context, Steeltoe.Management.Endpoint.Health.HealthEndpointCore endpoint) -> System.Threading.Tasks.Task
+Steeltoe.Management.Endpoint.Health.HealthRegistrationsAggregator
+Steeltoe.Management.Endpoint.Health.HealthRegistrationsAggregator.Aggregate(System.Collections.Generic.IList<Steeltoe.Common.HealthChecks.IHealthContributor> contributors, System.Collections.Generic.ICollection<Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration> healthCheckRegistrations, System.IServiceProvider serviceProvider) -> Steeltoe.Common.HealthChecks.HealthCheckResult
+Steeltoe.Management.Endpoint.Health.HealthRegistrationsAggregator.HealthRegistrationsAggregator() -> void
+Steeltoe.Management.Endpoint.Health.HealthStartupFilter
+Steeltoe.Management.Endpoint.Health.HealthStartupFilter.Configure(System.Action<Microsoft.AspNetCore.Builder.IApplicationBuilder> next) -> System.Action<Microsoft.AspNetCore.Builder.IApplicationBuilder>
+Steeltoe.Management.Endpoint.Health.HealthStartupFilter.HealthStartupFilter() -> void
+Steeltoe.Management.Endpoint.Health.IHealthRegistrationsAggregator
+Steeltoe.Management.Endpoint.Health.IHealthRegistrationsAggregator.Aggregate(System.Collections.Generic.IList<Steeltoe.Common.HealthChecks.IHealthContributor> contributors, System.Collections.Generic.ICollection<Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration> healthCheckRegistrations, System.IServiceProvider serviceProvider) -> Steeltoe.Common.HealthChecks.HealthCheckResult
+Steeltoe.Management.Endpoint.HeapDump.EndpointServiceCollectionExtensions
+Steeltoe.Management.Endpoint.HeapDump.HeapDumpEndpointMiddleware
+Steeltoe.Management.Endpoint.HeapDump.HeapDumpEndpointMiddleware.HandleHeapDumpRequestAsync(Microsoft.AspNetCore.Http.HttpContext context) -> System.Threading.Tasks.Task
+Steeltoe.Management.Endpoint.HeapDump.HeapDumpEndpointMiddleware.HeapDumpEndpointMiddleware(Microsoft.AspNetCore.Http.RequestDelegate next, Steeltoe.Management.Endpoint.HeapDump.HeapDumpEndpoint endpoint, Steeltoe.Management.IManagementOptions mgmtOptions, Microsoft.Extensions.Logging.ILogger<Steeltoe.Management.Endpoint.HeapDump.HeapDumpEndpointMiddleware> logger = null) -> void
+Steeltoe.Management.Endpoint.HeapDump.HeapDumpEndpointMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext context) -> System.Threading.Tasks.Task
+Steeltoe.Management.Endpoint.HeapDump.HeapDumpStartupFilter
+Steeltoe.Management.Endpoint.HeapDump.HeapDumpStartupFilter.Configure(System.Action<Microsoft.AspNetCore.Builder.IApplicationBuilder> next) -> System.Action<Microsoft.AspNetCore.Builder.IApplicationBuilder>
+Steeltoe.Management.Endpoint.HeapDump.HeapDumpStartupFilter.HeapDumpStartupFilter() -> void
+Steeltoe.Management.Endpoint.Hypermedia.ActuatorHypermediaEndpointMiddleware
+Steeltoe.Management.Endpoint.Hypermedia.ActuatorHypermediaEndpointMiddleware.ActuatorHypermediaEndpointMiddleware(Microsoft.AspNetCore.Http.RequestDelegate next, Steeltoe.Management.Endpoint.Hypermedia.ActuatorEndpoint endpoint, Steeltoe.Management.Endpoint.Hypermedia.ActuatorManagementOptions mgmtOptions, Microsoft.Extensions.Logging.ILogger<Steeltoe.Management.Endpoint.Hypermedia.ActuatorHypermediaEndpointMiddleware> logger = null) -> void
+Steeltoe.Management.Endpoint.Hypermedia.ActuatorHypermediaEndpointMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext context) -> System.Threading.Tasks.Task
+Steeltoe.Management.Endpoint.Hypermedia.EndpointServiceCollectionExtensions
+Steeltoe.Management.Endpoint.Hypermedia.HypermediaStartupFilter
+Steeltoe.Management.Endpoint.Hypermedia.HypermediaStartupFilter.Configure(System.Action<Microsoft.AspNetCore.Builder.IApplicationBuilder> next) -> System.Action<Microsoft.AspNetCore.Builder.IApplicationBuilder>
+Steeltoe.Management.Endpoint.Hypermedia.HypermediaStartupFilter.HypermediaStartupFilter() -> void
+Steeltoe.Management.Endpoint.Info.EndpointServiceCollectionExtensions
+Steeltoe.Management.Endpoint.Info.InfoEndpointMiddleware
+Steeltoe.Management.Endpoint.Info.InfoEndpointMiddleware.HandleInfoRequestAsync(Microsoft.AspNetCore.Http.HttpContext context) -> System.Threading.Tasks.Task
+Steeltoe.Management.Endpoint.Info.InfoEndpointMiddleware.InfoEndpointMiddleware(Microsoft.AspNetCore.Http.RequestDelegate next, Steeltoe.Management.Endpoint.Info.InfoEndpoint endpoint, Steeltoe.Management.IManagementOptions mgmtOptions, Microsoft.Extensions.Logging.ILogger<Steeltoe.Management.Endpoint.Info.InfoEndpointMiddleware> logger = null) -> void
+Steeltoe.Management.Endpoint.Info.InfoEndpointMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext context) -> System.Threading.Tasks.Task
+Steeltoe.Management.Endpoint.Info.InfoStartupFilter
+Steeltoe.Management.Endpoint.Info.InfoStartupFilter.Configure(System.Action<Microsoft.AspNetCore.Builder.IApplicationBuilder> next) -> System.Action<Microsoft.AspNetCore.Builder.IApplicationBuilder>
+Steeltoe.Management.Endpoint.Info.InfoStartupFilter.InfoStartupFilter() -> void
+Steeltoe.Management.Endpoint.Loggers.EndpointServiceCollectionExtensions
+Steeltoe.Management.Endpoint.Loggers.LoggersEndpointMiddleware
+Steeltoe.Management.Endpoint.Loggers.LoggersEndpointMiddleware.HandleLoggersRequestAsync(Microsoft.AspNetCore.Http.HttpContext context) -> System.Threading.Tasks.Task
+Steeltoe.Management.Endpoint.Loggers.LoggersEndpointMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext context) -> System.Threading.Tasks.Task
+Steeltoe.Management.Endpoint.Loggers.LoggersEndpointMiddleware.LoggersEndpointMiddleware(Microsoft.AspNetCore.Http.RequestDelegate next, Steeltoe.Management.Endpoint.Loggers.LoggersEndpoint endpoint, Steeltoe.Management.IManagementOptions mgmtOptions, Microsoft.Extensions.Logging.ILogger<Steeltoe.Management.Endpoint.Loggers.LoggersEndpointMiddleware> logger = null) -> void
+Steeltoe.Management.Endpoint.Loggers.LoggersStartupFilter
+Steeltoe.Management.Endpoint.Loggers.LoggersStartupFilter.Configure(System.Action<Microsoft.AspNetCore.Builder.IApplicationBuilder> next) -> System.Action<Microsoft.AspNetCore.Builder.IApplicationBuilder>
+Steeltoe.Management.Endpoint.Loggers.LoggersStartupFilter.LoggersStartupFilter() -> void
+Steeltoe.Management.Endpoint.ManagementHostBuilderExtensions
+Steeltoe.Management.Endpoint.ManagementPort.ManagementPortMiddleware
+Steeltoe.Management.Endpoint.ManagementPort.ManagementPortMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext context) -> System.Threading.Tasks.Task
+Steeltoe.Management.Endpoint.ManagementPort.ManagementPortMiddleware.ManagementPortMiddleware(Microsoft.AspNetCore.Http.RequestDelegate next, System.Collections.Generic.IEnumerable<Steeltoe.Management.IManagementOptions> managementOptions, Microsoft.Extensions.Logging.ILogger<Steeltoe.Management.Endpoint.ManagementPort.ManagementPortMiddleware> logger = null) -> void
+Steeltoe.Management.Endpoint.ManagementWebApplicationBuilderExtensions
+Steeltoe.Management.Endpoint.ManagementWebHostBuilderExtensions
+Steeltoe.Management.Endpoint.Mappings.AspNetCoreRouteDetails
+Steeltoe.Management.Endpoint.Mappings.AspNetCoreRouteDetails.AspNetCoreRouteDetails() -> void
+Steeltoe.Management.Endpoint.Mappings.AspNetCoreRouteDetails.Consumes.get -> System.Collections.Generic.IList<string>
+Steeltoe.Management.Endpoint.Mappings.AspNetCoreRouteDetails.Consumes.set -> void
+Steeltoe.Management.Endpoint.Mappings.AspNetCoreRouteDetails.HttpMethods.get -> System.Collections.Generic.IList<string>
+Steeltoe.Management.Endpoint.Mappings.AspNetCoreRouteDetails.HttpMethods.set -> void
+Steeltoe.Management.Endpoint.Mappings.AspNetCoreRouteDetails.Produces.get -> System.Collections.Generic.IList<string>
+Steeltoe.Management.Endpoint.Mappings.AspNetCoreRouteDetails.Produces.set -> void
+Steeltoe.Management.Endpoint.Mappings.AspNetCoreRouteDetails.RouteTemplate.get -> string
+Steeltoe.Management.Endpoint.Mappings.AspNetCoreRouteDetails.RouteTemplate.set -> void
+Steeltoe.Management.Endpoint.Mappings.EndpointServiceCollectionExtensions
+Steeltoe.Management.Endpoint.Mappings.IRouteMappings
+Steeltoe.Management.Endpoint.Mappings.IRouteMappings.Routers.get -> System.Collections.Generic.IList<Microsoft.AspNetCore.Routing.IRouter>
+Steeltoe.Management.Endpoint.Mappings.MappingsEndpointMiddleware
+Steeltoe.Management.Endpoint.Mappings.MappingsEndpointMiddleware.AddRouteMappingsDescriptions(Steeltoe.Management.Endpoint.Mappings.IRouteMappings routeMappings, System.Collections.Generic.IDictionary<string, System.Collections.Generic.IList<Steeltoe.Management.Endpoint.Mappings.MappingDescription>> desc) -> void
+Steeltoe.Management.Endpoint.Mappings.MappingsEndpointMiddleware.GetApplicationMappings(Microsoft.AspNetCore.Http.HttpContext context) -> Steeltoe.Management.Endpoint.Mappings.ApplicationMappings
+Steeltoe.Management.Endpoint.Mappings.MappingsEndpointMiddleware.GetMappingDescriptions(Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionProviderContext apiContext) -> System.Collections.Generic.IDictionary<string, System.Collections.Generic.IList<Steeltoe.Management.Endpoint.Mappings.MappingDescription>>
+Steeltoe.Management.Endpoint.Mappings.MappingsEndpointMiddleware.GetRouteDetails(Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptor desc) -> Steeltoe.Management.Endpoint.Mappings.IRouteDetails
+Steeltoe.Management.Endpoint.Mappings.MappingsEndpointMiddleware.GetRouteDetails(Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription desc) -> Steeltoe.Management.Endpoint.Mappings.IRouteDetails
+Steeltoe.Management.Endpoint.Mappings.MappingsEndpointMiddleware.GetRouteDetails(Microsoft.AspNetCore.Routing.Route route) -> Steeltoe.Management.Endpoint.Mappings.IRouteDetails
+Steeltoe.Management.Endpoint.Mappings.MappingsEndpointMiddleware.HandleMappingsRequestAsync(Microsoft.AspNetCore.Http.HttpContext context) -> System.Threading.Tasks.Task
+Steeltoe.Management.Endpoint.Mappings.MappingsEndpointMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext context) -> System.Threading.Tasks.Task
+Steeltoe.Management.Endpoint.Mappings.MappingsEndpointMiddleware.MappingsEndpointMiddleware(Microsoft.AspNetCore.Http.RequestDelegate next, Steeltoe.Management.Endpoint.Mappings.IMappingsOptions options, Steeltoe.Management.IManagementOptions mgmtOptions, Steeltoe.Management.Endpoint.Mappings.MappingsEndpoint endpoint, Steeltoe.Management.Endpoint.Mappings.IRouteMappings routeMappings = null, Microsoft.AspNetCore.Mvc.Infrastructure.IActionDescriptorCollectionProvider actionDescriptorCollectionProvider = null, System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionProvider> apiDescriptionProviders = null, Microsoft.Extensions.Logging.ILogger<Steeltoe.Management.Endpoint.Mappings.MappingsEndpointMiddleware> logger = null) -> void
+Steeltoe.Management.Endpoint.Mappings.MappingsStartupFilter
+Steeltoe.Management.Endpoint.Mappings.MappingsStartupFilter.Configure(System.Action<Microsoft.AspNetCore.Builder.IApplicationBuilder> next) -> System.Action<Microsoft.AspNetCore.Builder.IApplicationBuilder>
+Steeltoe.Management.Endpoint.Mappings.MappingsStartupFilter.MappingsStartupFilter() -> void
+Steeltoe.Management.Endpoint.Mappings.RouteBuilderExtensions
+Steeltoe.Management.Endpoint.Mappings.RouteMappings
+Steeltoe.Management.Endpoint.Mappings.RouteMappings.RouteMappings() -> void
+Steeltoe.Management.Endpoint.Mappings.RouteMappings.Routers.get -> System.Collections.Generic.IList<Microsoft.AspNetCore.Routing.IRouter>
+Steeltoe.Management.Endpoint.Metrics.EndpointServiceCollectionExtensions
+Steeltoe.Management.Endpoint.Metrics.MetricsEndpointMiddleware
+Steeltoe.Management.Endpoint.Metrics.MetricsEndpointMiddleware.GetMetricName(Microsoft.AspNetCore.Http.HttpRequest request) -> string
+Steeltoe.Management.Endpoint.Metrics.MetricsEndpointMiddleware.HandleMetricsRequestAsync(Microsoft.AspNetCore.Http.HttpContext context) -> System.Threading.Tasks.Task
+Steeltoe.Management.Endpoint.Metrics.MetricsEndpointMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext context) -> System.Threading.Tasks.Task
+Steeltoe.Management.Endpoint.Metrics.MetricsEndpointMiddleware.MetricsEndpointMiddleware(Microsoft.AspNetCore.Http.RequestDelegate next, Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint endpoint, Steeltoe.Management.IManagementOptions mgmtOptions, Microsoft.Extensions.Logging.ILogger<Steeltoe.Management.Endpoint.Metrics.MetricsEndpointMiddleware> logger = null) -> void
+Steeltoe.Management.Endpoint.Metrics.MetricsEndpointMiddleware.ParseTag(string kvp) -> System.Collections.Generic.KeyValuePair<string, string>?
+Steeltoe.Management.Endpoint.Metrics.MetricsEndpointMiddleware.ParseTags(Microsoft.AspNetCore.Http.IQueryCollection query) -> System.Collections.Generic.List<System.Collections.Generic.KeyValuePair<string, string>>
+Steeltoe.Management.Endpoint.Metrics.MetricsStartupFilter
+Steeltoe.Management.Endpoint.Metrics.MetricsStartupFilter.Configure(System.Action<Microsoft.AspNetCore.Builder.IApplicationBuilder> next) -> System.Action<Microsoft.AspNetCore.Builder.IApplicationBuilder>
+Steeltoe.Management.Endpoint.Metrics.MetricsStartupFilter.MetricsStartupFilter() -> void
+Steeltoe.Management.Endpoint.Metrics.Observer.AspNetCoreHostingObserver
+Steeltoe.Management.Endpoint.Metrics.Observer.AspNetCoreHostingObserver.AspNetCoreHostingObserver(Steeltoe.Management.Endpoint.Metrics.IMetricsObserverOptions options, Steeltoe.Management.OpenTelemetry.Metrics.IViewRegistry viewRegistry, Microsoft.Extensions.Logging.ILogger<Steeltoe.Management.Endpoint.Metrics.Observer.AspNetCoreHostingObserver> logger) -> void
+Steeltoe.Management.Endpoint.Metrics.Observer.AspNetCoreHostingObserver.GetException(Microsoft.AspNetCore.Http.HttpContext arg) -> string
+Steeltoe.Management.Endpoint.Metrics.Observer.AspNetCoreHostingObserver.GetLabelSets(Microsoft.AspNetCore.Http.HttpContext arg) -> System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<string, object>>
+Steeltoe.Management.Endpoint.Metrics.Observer.AspNetCoreHostingObserver.HandleStopEvent(System.Diagnostics.Activity current, Microsoft.AspNetCore.Http.HttpContext arg) -> void
+Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware
+Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware.HandleMetricsRequestAsync(Microsoft.AspNetCore.Http.HttpContext context) -> System.Threading.Tasks.Task
+Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext context) -> System.Threading.Tasks.Task
+Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware.PrometheusScraperEndpointMiddleware(Microsoft.AspNetCore.Http.RequestDelegate next, Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpoint endpoint, Steeltoe.Management.IManagementOptions mgmtOptions, Microsoft.Extensions.Logging.ILogger<Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware> logger = null) -> void
+Steeltoe.Management.Endpoint.Refresh.EndpointServiceCollectionExtensions
+Steeltoe.Management.Endpoint.Refresh.RefreshEndpointMiddleware
+Steeltoe.Management.Endpoint.Refresh.RefreshEndpointMiddleware.HandleRefreshRequestAsync(Microsoft.AspNetCore.Http.HttpContext context) -> System.Threading.Tasks.Task
+Steeltoe.Management.Endpoint.Refresh.RefreshEndpointMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext context) -> System.Threading.Tasks.Task
+Steeltoe.Management.Endpoint.Refresh.RefreshEndpointMiddleware.RefreshEndpointMiddleware(Microsoft.AspNetCore.Http.RequestDelegate next, Steeltoe.Management.Endpoint.Refresh.RefreshEndpoint endpoint, Steeltoe.Management.IManagementOptions mgmtOptions, Microsoft.Extensions.Logging.ILogger<Steeltoe.Management.Endpoint.Refresh.RefreshEndpointMiddleware> logger = null) -> void
+Steeltoe.Management.Endpoint.Refresh.RefreshStartupFilter
+Steeltoe.Management.Endpoint.Refresh.RefreshStartupFilter.Configure(System.Action<Microsoft.AspNetCore.Builder.IApplicationBuilder> next) -> System.Action<Microsoft.AspNetCore.Builder.IApplicationBuilder>
+Steeltoe.Management.Endpoint.Refresh.RefreshStartupFilter.RefreshStartupFilter() -> void
+Steeltoe.Management.Endpoint.SpringBootAdminClient.SpringBootAdminApplicationBuilderExtensions
+Steeltoe.Management.Endpoint.ThreadDump.EndpointServiceCollectionExtensions
+Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware
+Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware.HandleThreadDumpRequestAsync(Microsoft.AspNetCore.Http.HttpContext context) -> System.Threading.Tasks.Task
+Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext context) -> System.Threading.Tasks.Task
+Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware.ThreadDumpEndpointMiddleware(Microsoft.AspNetCore.Http.RequestDelegate next, Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpoint endpoint, Steeltoe.Management.IManagementOptions mgmtOptions, Microsoft.Extensions.Logging.ILogger<Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware> logger = null) -> void
+Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware_v2
+Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware_v2.HandleThreadDumpRequestAsync(Microsoft.AspNetCore.Http.HttpContext context) -> System.Threading.Tasks.Task
+Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware_v2.Invoke(Microsoft.AspNetCore.Http.HttpContext context) -> System.Threading.Tasks.Task
+Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware_v2.ThreadDumpEndpointMiddleware_v2(Microsoft.AspNetCore.Http.RequestDelegate next, Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpoint_v2 endpoint, Steeltoe.Management.IManagementOptions mgmtOptions, Microsoft.Extensions.Logging.ILogger<Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware_v2> logger = null) -> void
+Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpStartupFilter
+Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpStartupFilter.Configure(System.Action<Microsoft.AspNetCore.Builder.IApplicationBuilder> next) -> System.Action<Microsoft.AspNetCore.Builder.IApplicationBuilder>
+Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpStartupFilter.ThreadDumpStartupFilter(Steeltoe.Management.Endpoint.MediaTypeVersion mediaTypeVersion = Steeltoe.Management.Endpoint.MediaTypeVersion.V2) -> void
+Steeltoe.Management.Endpoint.Trace.EndpointServiceCollectionExtensions
+Steeltoe.Management.Endpoint.Trace.HttpTraceDiagnosticObserver
+Steeltoe.Management.Endpoint.Trace.HttpTraceDiagnosticObserver.GetHeaders(Microsoft.AspNetCore.Http.IHeaderDictionary headers) -> System.Collections.Generic.Dictionary<string, string[]>
+Steeltoe.Management.Endpoint.Trace.HttpTraceDiagnosticObserver.GetJavaTime(long ticks) -> long
+Steeltoe.Management.Endpoint.Trace.HttpTraceDiagnosticObserver.GetPathInfo(Microsoft.AspNetCore.Http.HttpRequest request) -> string
+Steeltoe.Management.Endpoint.Trace.HttpTraceDiagnosticObserver.GetProperty(object obj, out Microsoft.AspNetCore.Http.HttpContext context) -> void
+Steeltoe.Management.Endpoint.Trace.HttpTraceDiagnosticObserver.GetRemoteAddress(Microsoft.AspNetCore.Http.HttpContext context) -> string
+Steeltoe.Management.Endpoint.Trace.HttpTraceDiagnosticObserver.GetRequestUri(Microsoft.AspNetCore.Http.HttpRequest request) -> string
+Steeltoe.Management.Endpoint.Trace.HttpTraceDiagnosticObserver.GetSessionId(Microsoft.AspNetCore.Http.HttpContext context) -> string
+Steeltoe.Management.Endpoint.Trace.HttpTraceDiagnosticObserver.GetTimeTaken(System.TimeSpan duration) -> string
+Steeltoe.Management.Endpoint.Trace.HttpTraceDiagnosticObserver.GetTraces() -> Steeltoe.Management.Endpoint.Trace.HttpTraceResult
+Steeltoe.Management.Endpoint.Trace.HttpTraceDiagnosticObserver.GetUserPrincipal(Microsoft.AspNetCore.Http.HttpContext context) -> string
+Steeltoe.Management.Endpoint.Trace.HttpTraceDiagnosticObserver.HttpTraceDiagnosticObserver(Steeltoe.Management.Endpoint.Trace.ITraceOptions options, Microsoft.Extensions.Logging.ILogger<Steeltoe.Management.Endpoint.Trace.TraceDiagnosticObserver> logger = null) -> void
+Steeltoe.Management.Endpoint.Trace.HttpTraceDiagnosticObserver.MakeTrace(Microsoft.AspNetCore.Http.HttpContext context, System.TimeSpan duration) -> Steeltoe.Management.Endpoint.Trace.HttpTrace
+Steeltoe.Management.Endpoint.Trace.HttpTraceEndpointMiddleware
+Steeltoe.Management.Endpoint.Trace.HttpTraceEndpointMiddleware.HandleTraceRequestAsync(Microsoft.AspNetCore.Http.HttpContext context) -> System.Threading.Tasks.Task
+Steeltoe.Management.Endpoint.Trace.HttpTraceEndpointMiddleware.HttpTraceEndpointMiddleware(Microsoft.AspNetCore.Http.RequestDelegate next, Steeltoe.Management.Endpoint.Trace.HttpTraceEndpoint endpoint, Steeltoe.Management.IManagementOptions mgmtOptions, Microsoft.Extensions.Logging.ILogger<Steeltoe.Management.Endpoint.Trace.HttpTraceEndpointMiddleware> logger = null) -> void
+Steeltoe.Management.Endpoint.Trace.HttpTraceEndpointMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext context) -> System.Threading.Tasks.Task
+Steeltoe.Management.Endpoint.Trace.TraceDiagnosticObserver
+Steeltoe.Management.Endpoint.Trace.TraceDiagnosticObserver.GetAuthType(Microsoft.AspNetCore.Http.HttpRequest request) -> string
+Steeltoe.Management.Endpoint.Trace.TraceDiagnosticObserver.GetHeaders(int status, Microsoft.AspNetCore.Http.IHeaderDictionary headers) -> System.Collections.Generic.Dictionary<string, object>
+Steeltoe.Management.Endpoint.Trace.TraceDiagnosticObserver.GetHeaders(Microsoft.AspNetCore.Http.IHeaderDictionary headers) -> System.Collections.Generic.Dictionary<string, object>
+Steeltoe.Management.Endpoint.Trace.TraceDiagnosticObserver.GetHeaderValue(Microsoft.Extensions.Primitives.StringValues values) -> object
+Steeltoe.Management.Endpoint.Trace.TraceDiagnosticObserver.GetJavaTime(long ticks) -> long
+Steeltoe.Management.Endpoint.Trace.TraceDiagnosticObserver.GetPathInfo(Microsoft.AspNetCore.Http.HttpRequest request) -> string
+Steeltoe.Management.Endpoint.Trace.TraceDiagnosticObserver.GetProperty(object obj, out Microsoft.AspNetCore.Http.HttpContext context) -> void
+Steeltoe.Management.Endpoint.Trace.TraceDiagnosticObserver.GetRemoteAddress(Microsoft.AspNetCore.Http.HttpContext context) -> string
+Steeltoe.Management.Endpoint.Trace.TraceDiagnosticObserver.GetRequestParameters(Microsoft.AspNetCore.Http.HttpRequest request) -> System.Collections.Generic.Dictionary<string, string[]>
+Steeltoe.Management.Endpoint.Trace.TraceDiagnosticObserver.GetRequestUri(Microsoft.AspNetCore.Http.HttpRequest request) -> string
+Steeltoe.Management.Endpoint.Trace.TraceDiagnosticObserver.GetSessionId(Microsoft.AspNetCore.Http.HttpContext context) -> string
+Steeltoe.Management.Endpoint.Trace.TraceDiagnosticObserver.GetTimeTaken(System.TimeSpan duration) -> string
+Steeltoe.Management.Endpoint.Trace.TraceDiagnosticObserver.GetTraces() -> System.Collections.Generic.List<Steeltoe.Management.Endpoint.Trace.TraceResult>
+Steeltoe.Management.Endpoint.Trace.TraceDiagnosticObserver.GetUserPrincipal(Microsoft.AspNetCore.Http.HttpContext context) -> string
+Steeltoe.Management.Endpoint.Trace.TraceDiagnosticObserver.MakeTrace(Microsoft.AspNetCore.Http.HttpContext context, System.TimeSpan duration) -> Steeltoe.Management.Endpoint.Trace.TraceResult
+Steeltoe.Management.Endpoint.Trace.TraceDiagnosticObserver.TraceDiagnosticObserver(Steeltoe.Management.Endpoint.Trace.ITraceOptions options, Microsoft.Extensions.Logging.ILogger<Steeltoe.Management.Endpoint.Trace.TraceDiagnosticObserver> logger = null) -> void
+Steeltoe.Management.Endpoint.Trace.TraceEndpointMiddleware
+Steeltoe.Management.Endpoint.Trace.TraceEndpointMiddleware.HandleTraceRequestAsync(Microsoft.AspNetCore.Http.HttpContext context) -> System.Threading.Tasks.Task
+Steeltoe.Management.Endpoint.Trace.TraceEndpointMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext context) -> System.Threading.Tasks.Task
+Steeltoe.Management.Endpoint.Trace.TraceEndpointMiddleware.TraceEndpointMiddleware(Microsoft.AspNetCore.Http.RequestDelegate next, Steeltoe.Management.Endpoint.Trace.TraceEndpoint endpoint, Steeltoe.Management.IManagementOptions mgmtOptions, Microsoft.Extensions.Logging.ILogger<Steeltoe.Management.Endpoint.Trace.TraceEndpointMiddleware> logger = null) -> void
+Steeltoe.Management.Endpoint.Trace.TraceStartupFilter
+Steeltoe.Management.Endpoint.Trace.TraceStartupFilter.Configure(System.Action<Microsoft.AspNetCore.Builder.IApplicationBuilder> next) -> System.Action<Microsoft.AspNetCore.Builder.IApplicationBuilder>
+Steeltoe.Management.Endpoint.Trace.TraceStartupFilter.TraceStartupFilter(Steeltoe.Management.Endpoint.MediaTypeVersion mediaTypeVersion = Steeltoe.Management.Endpoint.MediaTypeVersion.V2) -> void

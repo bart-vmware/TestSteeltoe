@@ -1,0 +1,716 @@
+﻿abstract Steeltoe.Connector.Services.RelationalServiceInfoFactory.Create(string id, string url) -> Steeltoe.Connector.Services.IServiceInfo
+abstract Steeltoe.Connector.Services.ServiceInfoFactory.Create(Steeltoe.Extensions.Configuration.Service binding) -> Steeltoe.Connector.Services.IServiceInfo
+const Steeltoe.Connector.AbstractServiceConnectorOptions.Default_Separator = '=' -> char
+const Steeltoe.Connector.AbstractServiceConnectorOptions.Default_Terminator = ';' -> char
+const Steeltoe.Connector.Hystrix.HystrixProviderConnectorOptions.Default_Port = 5672 -> int
+const Steeltoe.Connector.Hystrix.HystrixProviderConnectorOptions.Default_Scheme = "amqp" -> string
+const Steeltoe.Connector.Hystrix.HystrixProviderConnectorOptions.Default_Server = "127.0.0.1" -> string
+const Steeltoe.Connector.Hystrix.HystrixProviderConnectorOptions.Default_SSLPort = 5671 -> int
+const Steeltoe.Connector.Hystrix.HystrixProviderConnectorOptions.Default_SSLScheme = "amqps" -> string
+const Steeltoe.Connector.MongoDb.MongoDbConnectorOptions.Default_Port = 27017 -> int
+const Steeltoe.Connector.MongoDb.MongoDbConnectorOptions.Default_Server = "localhost" -> string
+const Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.Default_Port = 3306 -> int
+const Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.Default_Server = "localhost" -> string
+const Steeltoe.Connector.OAuth.OAuthConnectorDefaults.Default_AccessTokenUri = "/oauth/token" -> string
+const Steeltoe.Connector.OAuth.OAuthConnectorDefaults.Default_AuthorizationUri = "/oauth/authorize" -> string
+const Steeltoe.Connector.OAuth.OAuthConnectorDefaults.Default_CheckTokenUri = "/check_token" -> string
+const Steeltoe.Connector.OAuth.OAuthConnectorDefaults.Default_ClientId = "Default_ClientId" -> string
+const Steeltoe.Connector.OAuth.OAuthConnectorDefaults.Default_ClientSecret = "Default_ClientSecret" -> string
+const Steeltoe.Connector.OAuth.OAuthConnectorDefaults.Default_JwtTokenKey = "/token_keys" -> string
+const Steeltoe.Connector.OAuth.OAuthConnectorDefaults.Default_OAuthServiceUrl = "Default_OAuthServiceUrl" -> string
+const Steeltoe.Connector.OAuth.OAuthConnectorDefaults.Default_UserInfoUri = "/userinfo" -> string
+const Steeltoe.Connector.OAuth.OAuthConnectorDefaults.Default_ValidateCertificates = true -> bool
+const Steeltoe.Connector.Oracle.OracleProviderConnectorOptions.Default_Port = 1521 -> int
+const Steeltoe.Connector.Oracle.OracleProviderConnectorOptions.Default_Server = "localhost" -> string
+const Steeltoe.Connector.PostgreSql.PostgresProviderConnectorOptions.Default_Host = "localhost" -> string
+const Steeltoe.Connector.PostgreSql.PostgresProviderConnectorOptions.Default_Port = 5432 -> int
+const Steeltoe.Connector.RabbitMQ.RabbitMQProviderConnectorOptions.Default_Port = 5672 -> int
+const Steeltoe.Connector.RabbitMQ.RabbitMQProviderConnectorOptions.Default_Scheme = "amqp" -> string
+const Steeltoe.Connector.RabbitMQ.RabbitMQProviderConnectorOptions.Default_Server = "127.0.0.1" -> string
+const Steeltoe.Connector.RabbitMQ.RabbitMQProviderConnectorOptions.Default_SSLPort = 5671 -> int
+const Steeltoe.Connector.RabbitMQ.RabbitMQProviderConnectorOptions.Default_SSLScheme = "amqps" -> string
+const Steeltoe.Connector.SqlServer.SqlServerProviderConnectorOptions.Default_Port = 1433 -> int
+const Steeltoe.Connector.SqlServer.SqlServerProviderConnectorOptions.Default_Server = "localhost" -> string
+override Steeltoe.Connector.CosmosDb.CosmosDbConnectorOptions.ToString() -> string
+override Steeltoe.Connector.Hystrix.HystrixProviderConnectorOptions.ToString() -> string
+override Steeltoe.Connector.MongoDb.MongoDbConnectorOptions.ToString() -> string
+override Steeltoe.Connector.MySql.EF6.MySqlDbContextConnectorFactory.Create(System.IServiceProvider arg) -> object
+override Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.ToString() -> string
+override Steeltoe.Connector.Oracle.EF6.OracleDbContextConnectorFactory.Create(System.IServiceProvider arg) -> object
+override Steeltoe.Connector.Oracle.OracleProviderConnectorOptions.ToString() -> string
+override Steeltoe.Connector.PostgreSql.PostgresProviderConnectorOptions.ToString() -> string
+override Steeltoe.Connector.RabbitMQ.RabbitMQProviderConnectorOptions.ToString() -> string
+override Steeltoe.Connector.Redis.RedisCacheConnectorOptions.ToString() -> string
+override Steeltoe.Connector.Services.CosmosDbServiceInfoFactory.Accepts(Steeltoe.Extensions.Configuration.Service binding) -> bool
+override Steeltoe.Connector.Services.CosmosDbServiceInfoFactory.Create(Steeltoe.Extensions.Configuration.Service binding) -> Steeltoe.Connector.Services.IServiceInfo
+override Steeltoe.Connector.Services.DB2ServiceInfoFactory.Create(string id, string url) -> Steeltoe.Connector.Services.IServiceInfo
+override Steeltoe.Connector.Services.EurekaServiceInfoFactory.Create(Steeltoe.Extensions.Configuration.Service binding) -> Steeltoe.Connector.Services.IServiceInfo
+override Steeltoe.Connector.Services.HystrixRabbitMQServiceInfoFactory.Accepts(Steeltoe.Extensions.Configuration.Service binding) -> bool
+override Steeltoe.Connector.Services.HystrixRabbitMQServiceInfoFactory.Create(Steeltoe.Extensions.Configuration.Service binding) -> Steeltoe.Connector.Services.IServiceInfo
+override Steeltoe.Connector.Services.MongoDbServiceInfoFactory.Create(Steeltoe.Extensions.Configuration.Service binding) -> Steeltoe.Connector.Services.IServiceInfo
+override Steeltoe.Connector.Services.MySqlServiceInfoFactory.Create(string id, string url) -> Steeltoe.Connector.Services.IServiceInfo
+override Steeltoe.Connector.Services.OracleServiceInfoFactory.Create(string id, string url) -> Steeltoe.Connector.Services.IServiceInfo
+override Steeltoe.Connector.Services.PostgresServiceInfoFactory.Create(string id, string url) -> Steeltoe.Connector.Services.IServiceInfo
+override Steeltoe.Connector.Services.RabbitMQServiceInfoFactory.Accepts(Steeltoe.Extensions.Configuration.Service binding) -> bool
+override Steeltoe.Connector.Services.RabbitMQServiceInfoFactory.Create(Steeltoe.Extensions.Configuration.Service binding) -> Steeltoe.Connector.Services.IServiceInfo
+override Steeltoe.Connector.Services.RedisServiceInfoFactory.Create(Steeltoe.Extensions.Configuration.Service binding) -> Steeltoe.Connector.Services.IServiceInfo
+override Steeltoe.Connector.Services.RelationalServiceInfoFactory.Create(Steeltoe.Extensions.Configuration.Service binding) -> Steeltoe.Connector.Services.IServiceInfo
+override Steeltoe.Connector.Services.SqlServerServiceInfoFactory.Create(Steeltoe.Extensions.Configuration.Service binding) -> Steeltoe.Connector.Services.IServiceInfo
+override Steeltoe.Connector.Services.SsoServiceInfoFactory.Create(Steeltoe.Extensions.Configuration.Service binding) -> Steeltoe.Connector.Services.IServiceInfo
+override Steeltoe.Connector.SqlServer.EF6.SqlServerDbContextConnectorFactory.Create(System.IServiceProvider arg) -> object
+override Steeltoe.Connector.SqlServer.SqlServerProviderConnectorOptions.ToString() -> string
+readonly Steeltoe.Connector.RelationalDbHealthContributor._connection -> System.Data.IDbConnection
+static readonly Steeltoe.Connector.Services.HystrixRabbitMQServiceInfoFactory.HYSTRIX_RABBIT_SERVICE_TAGS -> Steeltoe.Connector.Services.Tags
+static readonly Steeltoe.Connector.Services.RabbitMQServiceInfoFactory.RABBIT_SERVICE_TAGS -> Steeltoe.Connector.Services.Tags
+static Steeltoe.Connector.CosmosDb.CosmosDbTypeLocator.Assemblies.get -> string[]
+static Steeltoe.Connector.CosmosDb.CosmosDbTypeLocator.ClientOptionsTypeNames.get -> string[]
+static Steeltoe.Connector.CosmosDb.CosmosDbTypeLocator.ConnectionTypeNames.get -> string[]
+static Steeltoe.Connector.CosmosDb.CosmosDbTypeLocator.CosmosClient.get -> System.Type
+static Steeltoe.Connector.CosmosDb.CosmosDbTypeLocator.CosmosClientOptions.get -> System.Type
+static Steeltoe.Connector.Hystrix.HystrixProviderConnectorFactory.FindSetUriMethod(System.Type type) -> System.Reflection.MethodInfo
+static Steeltoe.Connector.IConfigurationExtensions.AddConnectionStrings(this Microsoft.Extensions.Configuration.IConfigurationBuilder builder) -> Microsoft.Extensions.Configuration.IConfigurationBuilder
+static Steeltoe.Connector.IConfigurationExtensions.GetRequiredServiceInfo<TServiceInfo>(this Microsoft.Extensions.Configuration.IConfiguration configuration, string serviceName) -> TServiceInfo
+static Steeltoe.Connector.IConfigurationExtensions.GetServiceInfo(this Microsoft.Extensions.Configuration.IConfiguration configuration, string id) -> Steeltoe.Connector.Services.IServiceInfo
+static Steeltoe.Connector.IConfigurationExtensions.GetServiceInfo<TServiceInfo>(this Microsoft.Extensions.Configuration.IConfiguration configuration, string id) -> TServiceInfo
+static Steeltoe.Connector.IConfigurationExtensions.GetServiceInfos(this Microsoft.Extensions.Configuration.IConfiguration configuration, System.Type infoType) -> System.Collections.Generic.IEnumerable<Steeltoe.Connector.Services.IServiceInfo>
+static Steeltoe.Connector.IConfigurationExtensions.GetServiceInfos<TServiceInfo>(this Microsoft.Extensions.Configuration.IConfiguration configuration) -> System.Collections.Generic.IEnumerable<TServiceInfo>
+static Steeltoe.Connector.IConfigurationExtensions.GetSingletonServiceInfo<TServiceInfo>(this Microsoft.Extensions.Configuration.IConfiguration config) -> TServiceInfo
+static Steeltoe.Connector.IConfigurationExtensions.HasCloudFoundryServiceConfigurations(this Microsoft.Extensions.Configuration.IConfiguration configuration) -> bool
+static Steeltoe.Connector.IConfigurationExtensions.HasKubernetesServiceBindings(this Microsoft.Extensions.Configuration.IConfiguration configuration) -> bool
+static Steeltoe.Connector.MongoDb.MongoDbHealthContributor.GetMongoDbHealthContributor(Microsoft.Extensions.Configuration.IConfiguration configuration, Microsoft.Extensions.Logging.ILogger<Steeltoe.Connector.MongoDb.MongoDbHealthContributor> logger = null) -> Steeltoe.Common.HealthChecks.IHealthContributor
+static Steeltoe.Connector.MongoDb.MongoDbTypeLocator.Assemblies.get -> string[]
+static Steeltoe.Connector.MongoDb.MongoDbTypeLocator.ConnectionInterfaceTypeNames.get -> string[]
+static Steeltoe.Connector.MongoDb.MongoDbTypeLocator.ConnectionTypeNames.get -> string[]
+static Steeltoe.Connector.MongoDb.MongoDbTypeLocator.IMongoClient.get -> System.Type
+static Steeltoe.Connector.MongoDb.MongoDbTypeLocator.ListDatabasesMethod.get -> System.Reflection.MethodInfo
+static Steeltoe.Connector.MongoDb.MongoDbTypeLocator.MongoClient.get -> System.Type
+static Steeltoe.Connector.MongoDb.MongoDbTypeLocator.MongoConnectionInfo.get -> string[]
+static Steeltoe.Connector.MongoDb.MongoDbTypeLocator.MongoUrl.get -> System.Type
+static Steeltoe.Connector.MySql.MySqlTypeLocator.Assemblies.get -> string[]
+static Steeltoe.Connector.MySql.MySqlTypeLocator.ConnectionTypeNames.get -> string[]
+static Steeltoe.Connector.MySql.MySqlTypeLocator.MySqlConnection.get -> System.Type
+static Steeltoe.Connector.Oracle.OracleTypeLocator.Assemblies.get -> string[]
+static Steeltoe.Connector.Oracle.OracleTypeLocator.ConnectionTypeNames.get -> string[]
+static Steeltoe.Connector.Oracle.OracleTypeLocator.OracleConnection.get -> System.Type
+static Steeltoe.Connector.PostgreSql.PostgreSqlTypeLocator.Assemblies.get -> string[]
+static Steeltoe.Connector.PostgreSql.PostgreSqlTypeLocator.ConnectionTypeNames.get -> string[]
+static Steeltoe.Connector.PostgreSql.PostgreSqlTypeLocator.NpgsqlConnection.get -> System.Type
+static Steeltoe.Connector.RabbitMQ.RabbitMQHealthContributor.GetRabbitMQContributor(Microsoft.Extensions.Configuration.IConfiguration configuration, Microsoft.Extensions.Logging.ILogger<Steeltoe.Connector.RabbitMQ.RabbitMQHealthContributor> logger = null) -> Steeltoe.Common.HealthChecks.IHealthContributor
+static Steeltoe.Connector.RabbitMQ.RabbitMQProviderConnectorFactory.FindSetUriMethod(System.Type type) -> System.Reflection.MethodInfo
+static Steeltoe.Connector.RabbitMQ.RabbitMQTypeLocator.Assemblies.get -> string[]
+static Steeltoe.Connector.RabbitMQ.RabbitMQTypeLocator.CloseConnectionMethod.get -> System.Reflection.MethodInfo
+static Steeltoe.Connector.RabbitMQ.RabbitMQTypeLocator.ConnectionFactory.get -> System.Type
+static Steeltoe.Connector.RabbitMQ.RabbitMQTypeLocator.ConnectionImplementationTypeNames.get -> string[]
+static Steeltoe.Connector.RabbitMQ.RabbitMQTypeLocator.ConnectionInterfaceTypeNames.get -> string[]
+static Steeltoe.Connector.RabbitMQ.RabbitMQTypeLocator.CreateConnectionMethod.get -> System.Reflection.MethodInfo
+static Steeltoe.Connector.RabbitMQ.RabbitMQTypeLocator.IConnection.get -> System.Type
+static Steeltoe.Connector.RabbitMQ.RabbitMQTypeLocator.IConnectionFactory.get -> System.Type
+static Steeltoe.Connector.Redis.RedisCacheConfigurationExtensions.CreateRedisServiceConnectorFactory(this Microsoft.Extensions.Configuration.IConfiguration config, Microsoft.Extensions.Configuration.IConfiguration connectorConfiguration, string serviceName = null) -> Steeltoe.Connector.Redis.RedisServiceConnectorFactory
+static Steeltoe.Connector.Redis.RedisCacheConfigurationExtensions.CreateRedisServiceConnectorFactory(this Microsoft.Extensions.Configuration.IConfiguration config, Steeltoe.Connector.Redis.RedisCacheConnectorOptions connectorOptions, string serviceName = null) -> Steeltoe.Connector.Redis.RedisServiceConnectorFactory
+static Steeltoe.Connector.Redis.RedisCacheConfigurationExtensions.CreateRedisServiceConnectorFactory(this Microsoft.Extensions.Configuration.IConfiguration config, string serviceName = null) -> Steeltoe.Connector.Redis.RedisServiceConnectorFactory
+static Steeltoe.Connector.Redis.RedisHealthContributor.GetRedisContributor(Microsoft.Extensions.Configuration.IConfiguration configuration, Microsoft.Extensions.Logging.ILogger<Steeltoe.Connector.Redis.RedisHealthContributor> logger = null) -> Steeltoe.Common.HealthChecks.IHealthContributor
+static Steeltoe.Connector.Redis.RedisTypeLocator.MicrosoftAssemblies.get -> string[]
+static Steeltoe.Connector.Redis.RedisTypeLocator.MicrosoftImplementation.get -> System.Type
+static Steeltoe.Connector.Redis.RedisTypeLocator.MicrosoftImplementationTypeNames.get -> string[]
+static Steeltoe.Connector.Redis.RedisTypeLocator.MicrosoftInterface.get -> System.Type
+static Steeltoe.Connector.Redis.RedisTypeLocator.MicrosoftInterfaceTypeNames.get -> string[]
+static Steeltoe.Connector.Redis.RedisTypeLocator.MicrosoftOptionNames.get -> string[]
+static Steeltoe.Connector.Redis.RedisTypeLocator.MicrosoftOptions.get -> System.Type
+static Steeltoe.Connector.Redis.RedisTypeLocator.StackExchangeAssemblies.get -> string[]
+static Steeltoe.Connector.Redis.RedisTypeLocator.StackExchangeCommandFlagsNames.get -> System.Type
+static Steeltoe.Connector.Redis.RedisTypeLocator.StackExchangeCommandFlagsNamesValue.get -> string[]
+static Steeltoe.Connector.Redis.RedisTypeLocator.StackExchangeImplementation.get -> System.Type
+static Steeltoe.Connector.Redis.RedisTypeLocator.StackExchangeImplementationTypeNames.get -> string[]
+static Steeltoe.Connector.Redis.RedisTypeLocator.StackExchangeInitializer.get -> System.Reflection.MethodInfo
+static Steeltoe.Connector.Redis.RedisTypeLocator.StackExchangeInterface.get -> System.Type
+static Steeltoe.Connector.Redis.RedisTypeLocator.StackExchangeInterfaceTypeNames.get -> string[]
+static Steeltoe.Connector.Redis.RedisTypeLocator.StackExchangeOptionNames.get -> string[]
+static Steeltoe.Connector.Redis.RedisTypeLocator.StackExchangeOptions.get -> System.Type
+static Steeltoe.Connector.RelationalDbHealthContributor.GetMySqlContributor(Microsoft.Extensions.Configuration.IConfiguration configuration, Microsoft.Extensions.Logging.ILogger<Steeltoe.Connector.RelationalDbHealthContributor> logger = null) -> Steeltoe.Common.HealthChecks.IHealthContributor
+static Steeltoe.Connector.RelationalDbHealthContributor.GetOracleContributor(Microsoft.Extensions.Configuration.IConfiguration configuration, Microsoft.Extensions.Logging.ILogger<Steeltoe.Connector.RelationalDbHealthContributor> logger = null) -> Steeltoe.Common.HealthChecks.IHealthContributor
+static Steeltoe.Connector.RelationalDbHealthContributor.GetPostgreSqlContributor(Microsoft.Extensions.Configuration.IConfiguration configuration, Microsoft.Extensions.Logging.ILogger<Steeltoe.Connector.RelationalDbHealthContributor> logger = null) -> Steeltoe.Common.HealthChecks.IHealthContributor
+static Steeltoe.Connector.RelationalDbHealthContributor.GetSqlServerContributor(Microsoft.Extensions.Configuration.IConfiguration configuration, Microsoft.Extensions.Logging.ILogger<Steeltoe.Connector.RelationalDbHealthContributor> logger = null) -> Steeltoe.Common.HealthChecks.IHealthContributor
+static Steeltoe.Connector.ServiceInfoCreator.Instance(Microsoft.Extensions.Configuration.IConfiguration config) -> Steeltoe.Connector.ServiceInfoCreator
+static Steeltoe.Connector.ServiceInfoCreator.IsRelevant.get -> bool
+static Steeltoe.Connector.SqlServer.SqlServerTypeLocator.Assemblies.get -> string[]
+static Steeltoe.Connector.SqlServer.SqlServerTypeLocator.ConnectionTypeNames.get -> string[]
+static Steeltoe.Connector.SqlServer.SqlServerTypeLocator.SqlConnection.get -> System.Type
+Steeltoe.Connector.AbstractServiceConnectorOptions
+Steeltoe.Connector.AbstractServiceConnectorOptions.AbstractServiceConnectorOptions() -> void
+Steeltoe.Connector.AbstractServiceConnectorOptions.AbstractServiceConnectorOptions(char keyValueTerm, char keyValueSep) -> void
+Steeltoe.Connector.AbstractServiceConnectorOptions.AbstractServiceConnectorOptions(Microsoft.Extensions.Configuration.IConfiguration config, char terminator = ';', char separator = '=') -> void
+Steeltoe.Connector.AbstractServiceConnectorOptions.AddColonDelimitedPair(System.Text.StringBuilder sb, string part1, string part2, char? terminator = null) -> void
+Steeltoe.Connector.AbstractServiceConnectorOptions.AddKeyValue(System.Text.StringBuilder sb, string key, bool? value) -> void
+Steeltoe.Connector.AbstractServiceConnectorOptions.AddKeyValue(System.Text.StringBuilder sb, string key, int? value) -> void
+Steeltoe.Connector.AbstractServiceConnectorOptions.AddKeyValue(System.Text.StringBuilder sb, string key, string value) -> void
+Steeltoe.Connector.ConnectionStringConfigurationSource
+Steeltoe.Connector.ConnectionStringConfigurationSource.Build(Microsoft.Extensions.Configuration.IConfigurationBuilder builder) -> Microsoft.Extensions.Configuration.IConfigurationProvider
+Steeltoe.Connector.ConnectionStringConfigurationSource.ConnectionStringConfigurationSource(System.Collections.Generic.IList<Microsoft.Extensions.Configuration.IConfigurationSource> sources) -> void
+Steeltoe.Connector.ConnectionStringManager
+Steeltoe.Connector.ConnectionStringManager.ConnectionStringManager(Microsoft.Extensions.Configuration.IConfiguration configuration) -> void
+Steeltoe.Connector.ConnectionStringManager.Get<T>(string serviceName = null) -> Steeltoe.Connector.Connection
+Steeltoe.Connector.ConnectorException
+Steeltoe.Connector.ConnectorException.ConnectorException() -> void
+Steeltoe.Connector.ConnectorException.ConnectorException(string message) -> void
+Steeltoe.Connector.ConnectorException.ConnectorException(string message, System.Exception nested) -> void
+Steeltoe.Connector.ConnectorException.ConnectorException(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context) -> void
+Steeltoe.Connector.ConnectorIOptions<T>
+Steeltoe.Connector.ConnectorIOptions<T>.ConnectorIOptions(T value) -> void
+Steeltoe.Connector.ConnectorIOptions<T>.Value.get -> T
+Steeltoe.Connector.ConnectorIOptions<T>.Value.set -> void
+Steeltoe.Connector.CosmosDb.CosmosDbConnectionInfo
+Steeltoe.Connector.CosmosDb.CosmosDbConnectionInfo.CosmosDbConnectionInfo() -> void
+Steeltoe.Connector.CosmosDb.CosmosDbConnectionInfo.Get(Microsoft.Extensions.Configuration.IConfiguration configuration, Steeltoe.Connector.Services.IServiceInfo serviceInfo) -> Steeltoe.Connector.Connection
+Steeltoe.Connector.CosmosDb.CosmosDbConnectionInfo.Get(Microsoft.Extensions.Configuration.IConfiguration configuration, string serviceName) -> Steeltoe.Connector.Connection
+Steeltoe.Connector.CosmosDb.CosmosDbConnectionInfo.IsSameType(Steeltoe.Connector.Services.IServiceInfo serviceInfo) -> bool
+Steeltoe.Connector.CosmosDb.CosmosDbConnectionInfo.IsSameType(string serviceType) -> bool
+Steeltoe.Connector.CosmosDb.CosmosDbConnectorFactory
+Steeltoe.Connector.CosmosDb.CosmosDbConnectorFactory.ConnectorType.get -> System.Type
+Steeltoe.Connector.CosmosDb.CosmosDbConnectorFactory.ConnectorType.set -> void
+Steeltoe.Connector.CosmosDb.CosmosDbConnectorFactory.CosmosDbConnectorFactory() -> void
+Steeltoe.Connector.CosmosDb.CosmosDbConnectorFactory.CosmosDbConnectorFactory(Steeltoe.Connector.Services.CosmosDbServiceInfo sinfo, Steeltoe.Connector.CosmosDb.CosmosDbConnectorOptions config, System.Type type) -> void
+Steeltoe.Connector.CosmosDb.CosmosDbConnectorOptions
+Steeltoe.Connector.CosmosDb.CosmosDbConnectorOptions.ConnectionString.get -> string
+Steeltoe.Connector.CosmosDb.CosmosDbConnectorOptions.ConnectionString.set -> void
+Steeltoe.Connector.CosmosDb.CosmosDbConnectorOptions.CosmosDbConnectorOptions() -> void
+Steeltoe.Connector.CosmosDb.CosmosDbConnectorOptions.CosmosDbConnectorOptions(Microsoft.Extensions.Configuration.IConfiguration configuration) -> void
+Steeltoe.Connector.CosmosDb.CosmosDbConnectorOptions.DatabaseId.get -> string
+Steeltoe.Connector.CosmosDb.CosmosDbConnectorOptions.DatabaseId.set -> void
+Steeltoe.Connector.CosmosDb.CosmosDbConnectorOptions.DatabaseLink.get -> string
+Steeltoe.Connector.CosmosDb.CosmosDbConnectorOptions.DatabaseLink.set -> void
+Steeltoe.Connector.CosmosDb.CosmosDbConnectorOptions.Host.get -> string
+Steeltoe.Connector.CosmosDb.CosmosDbConnectorOptions.Host.set -> void
+Steeltoe.Connector.CosmosDb.CosmosDbConnectorOptions.MasterKey.get -> string
+Steeltoe.Connector.CosmosDb.CosmosDbConnectorOptions.MasterKey.set -> void
+Steeltoe.Connector.CosmosDb.CosmosDbConnectorOptions.ReadOnlyKey.get -> string
+Steeltoe.Connector.CosmosDb.CosmosDbConnectorOptions.ReadOnlyKey.set -> void
+Steeltoe.Connector.CosmosDb.CosmosDbConnectorOptions.UseReadOnlyCredentials.get -> bool
+Steeltoe.Connector.CosmosDb.CosmosDbConnectorOptions.UseReadOnlyCredentials.set -> void
+Steeltoe.Connector.CosmosDb.CosmosDbProviderConfigurer
+Steeltoe.Connector.CosmosDb.CosmosDbProviderConfigurer.Configure(Steeltoe.Connector.Services.CosmosDbServiceInfo si, Steeltoe.Connector.CosmosDb.CosmosDbConnectorOptions configuration) -> string
+Steeltoe.Connector.CosmosDb.CosmosDbProviderConfigurer.CosmosDbProviderConfigurer() -> void
+Steeltoe.Connector.CosmosDb.CosmosDbProviderConfigurer.UpdateConfiguration(Steeltoe.Connector.Services.CosmosDbServiceInfo si, Steeltoe.Connector.CosmosDb.CosmosDbConnectorOptions configuration) -> void
+Steeltoe.Connector.CosmosDb.CosmosDbReadOnlyConnectionInfo
+Steeltoe.Connector.CosmosDb.CosmosDbReadOnlyConnectionInfo.CosmosDbReadOnlyConnectionInfo() -> void
+Steeltoe.Connector.CosmosDb.CosmosDbReadOnlyConnectionInfo.Get(Microsoft.Extensions.Configuration.IConfiguration configuration, Steeltoe.Connector.Services.IServiceInfo serviceInfo) -> Steeltoe.Connector.Connection
+Steeltoe.Connector.CosmosDb.CosmosDbReadOnlyConnectionInfo.Get(Microsoft.Extensions.Configuration.IConfiguration configuration, string serviceName) -> Steeltoe.Connector.Connection
+Steeltoe.Connector.CosmosDb.CosmosDbReadOnlyConnectionInfo.IsSameType(Steeltoe.Connector.Services.IServiceInfo serviceInfo) -> bool
+Steeltoe.Connector.CosmosDb.CosmosDbReadOnlyConnectionInfo.IsSameType(string serviceType) -> bool
+Steeltoe.Connector.CosmosDb.CosmosDbTypeLocator
+Steeltoe.Connector.Hystrix.HystrixConnectionFactory
+Steeltoe.Connector.Hystrix.HystrixConnectionFactory.ConnectionFactory.get -> object
+Steeltoe.Connector.Hystrix.HystrixConnectionFactory.HystrixConnectionFactory(object realFactory) -> void
+Steeltoe.Connector.Hystrix.HystrixProviderConfigurer
+Steeltoe.Connector.Hystrix.HystrixProviderConfigurer.HystrixProviderConfigurer() -> void
+Steeltoe.Connector.Hystrix.HystrixProviderConnectorFactory
+Steeltoe.Connector.Hystrix.HystrixProviderConnectorFactory.HystrixProviderConnectorFactory(Steeltoe.Connector.Services.HystrixRabbitMQServiceInfo sinfo, Steeltoe.Connector.Hystrix.HystrixProviderConnectorOptions config, System.Type connectFactory) -> void
+Steeltoe.Connector.Hystrix.HystrixProviderConnectorOptions
+Steeltoe.Connector.Hystrix.HystrixProviderConnectorOptions.HystrixProviderConnectorOptions() -> void
+Steeltoe.Connector.Hystrix.HystrixProviderConnectorOptions.HystrixProviderConnectorOptions(Microsoft.Extensions.Configuration.IConfiguration config) -> void
+Steeltoe.Connector.Hystrix.HystrixProviderConnectorOptions.Password.get -> string
+Steeltoe.Connector.Hystrix.HystrixProviderConnectorOptions.Password.set -> void
+Steeltoe.Connector.Hystrix.HystrixProviderConnectorOptions.Port.get -> int
+Steeltoe.Connector.Hystrix.HystrixProviderConnectorOptions.Port.set -> void
+Steeltoe.Connector.Hystrix.HystrixProviderConnectorOptions.Server.get -> string
+Steeltoe.Connector.Hystrix.HystrixProviderConnectorOptions.Server.set -> void
+Steeltoe.Connector.Hystrix.HystrixProviderConnectorOptions.SslEnabled.get -> bool
+Steeltoe.Connector.Hystrix.HystrixProviderConnectorOptions.SslEnabled.set -> void
+Steeltoe.Connector.Hystrix.HystrixProviderConnectorOptions.SslPort.get -> int
+Steeltoe.Connector.Hystrix.HystrixProviderConnectorOptions.SslPort.set -> void
+Steeltoe.Connector.Hystrix.HystrixProviderConnectorOptions.Uri.get -> string
+Steeltoe.Connector.Hystrix.HystrixProviderConnectorOptions.Uri.set -> void
+Steeltoe.Connector.Hystrix.HystrixProviderConnectorOptions.Username.get -> string
+Steeltoe.Connector.Hystrix.HystrixProviderConnectorOptions.Username.set -> void
+Steeltoe.Connector.Hystrix.HystrixProviderConnectorOptions.VirtualHost.get -> string
+Steeltoe.Connector.Hystrix.HystrixProviderConnectorOptions.VirtualHost.set -> void
+Steeltoe.Connector.IConfigurationExtensions
+Steeltoe.Connector.MongoDb.MongoDbConnectionInfo
+Steeltoe.Connector.MongoDb.MongoDbConnectionInfo.Get(Microsoft.Extensions.Configuration.IConfiguration configuration, Steeltoe.Connector.Services.IServiceInfo serviceInfo) -> Steeltoe.Connector.Connection
+Steeltoe.Connector.MongoDb.MongoDbConnectionInfo.Get(Microsoft.Extensions.Configuration.IConfiguration configuration, string serviceName) -> Steeltoe.Connector.Connection
+Steeltoe.Connector.MongoDb.MongoDbConnectionInfo.IsSameType(Steeltoe.Connector.Services.IServiceInfo serviceInfo) -> bool
+Steeltoe.Connector.MongoDb.MongoDbConnectionInfo.IsSameType(string serviceType) -> bool
+Steeltoe.Connector.MongoDb.MongoDbConnectionInfo.MongoDbConnectionInfo() -> void
+Steeltoe.Connector.MongoDb.MongoDbConnectorFactory
+Steeltoe.Connector.MongoDb.MongoDbConnectorFactory.ConnectorType.get -> System.Type
+Steeltoe.Connector.MongoDb.MongoDbConnectorFactory.ConnectorType.set -> void
+Steeltoe.Connector.MongoDb.MongoDbConnectorFactory.MongoDbConnectorFactory() -> void
+Steeltoe.Connector.MongoDb.MongoDbConnectorFactory.MongoDbConnectorFactory(Steeltoe.Connector.Services.MongoDbServiceInfo sinfo, Steeltoe.Connector.MongoDb.MongoDbConnectorOptions config, System.Type type) -> void
+Steeltoe.Connector.MongoDb.MongoDbConnectorOptions
+Steeltoe.Connector.MongoDb.MongoDbConnectorOptions.ConnectionString.get -> string
+Steeltoe.Connector.MongoDb.MongoDbConnectorOptions.ConnectionString.set -> void
+Steeltoe.Connector.MongoDb.MongoDbConnectorOptions.Database.get -> string
+Steeltoe.Connector.MongoDb.MongoDbConnectorOptions.Database.set -> void
+Steeltoe.Connector.MongoDb.MongoDbConnectorOptions.MongoDbConnectorOptions() -> void
+Steeltoe.Connector.MongoDb.MongoDbConnectorOptions.MongoDbConnectorOptions(Microsoft.Extensions.Configuration.IConfiguration config) -> void
+Steeltoe.Connector.MongoDb.MongoDbConnectorOptions.Options.get -> System.Collections.Generic.Dictionary<string, string>
+Steeltoe.Connector.MongoDb.MongoDbConnectorOptions.Options.set -> void
+Steeltoe.Connector.MongoDb.MongoDbConnectorOptions.Password.get -> string
+Steeltoe.Connector.MongoDb.MongoDbConnectorOptions.Password.set -> void
+Steeltoe.Connector.MongoDb.MongoDbConnectorOptions.Port.get -> int
+Steeltoe.Connector.MongoDb.MongoDbConnectorOptions.Port.set -> void
+Steeltoe.Connector.MongoDb.MongoDbConnectorOptions.Server.get -> string
+Steeltoe.Connector.MongoDb.MongoDbConnectorOptions.Server.set -> void
+Steeltoe.Connector.MongoDb.MongoDbConnectorOptions.Username.get -> string
+Steeltoe.Connector.MongoDb.MongoDbConnectorOptions.Username.set -> void
+Steeltoe.Connector.MongoDb.MongoDbHealthContributor
+Steeltoe.Connector.MongoDb.MongoDbHealthContributor.Health() -> Steeltoe.Common.HealthChecks.HealthCheckResult
+Steeltoe.Connector.MongoDb.MongoDbHealthContributor.Id.get -> string
+Steeltoe.Connector.MongoDb.MongoDbHealthContributor.MongoDbHealthContributor(Steeltoe.Connector.MongoDb.MongoDbConnectorFactory factory, Microsoft.Extensions.Logging.ILogger<Steeltoe.Connector.MongoDb.MongoDbHealthContributor> logger = null, int timeout = 5000) -> void
+Steeltoe.Connector.MongoDb.MongoDbProviderConfigurer
+Steeltoe.Connector.MongoDb.MongoDbProviderConfigurer.Configure(Steeltoe.Connector.Services.MongoDbServiceInfo si, Steeltoe.Connector.MongoDb.MongoDbConnectorOptions configuration) -> string
+Steeltoe.Connector.MongoDb.MongoDbProviderConfigurer.MongoDbProviderConfigurer() -> void
+Steeltoe.Connector.MongoDb.MongoDbProviderConfigurer.UpdateConfiguration(Steeltoe.Connector.Services.MongoDbServiceInfo si, Steeltoe.Connector.MongoDb.MongoDbConnectorOptions configuration) -> void
+Steeltoe.Connector.MongoDb.MongoDbTypeLocator
+Steeltoe.Connector.MySql.EF6.MySqlDbContextConnectorFactory
+Steeltoe.Connector.MySql.EF6.MySqlDbContextConnectorFactory.MySqlDbContextConnectorFactory(Steeltoe.Connector.Services.MySqlServiceInfo info, Steeltoe.Connector.MySql.MySqlProviderConnectorOptions config, System.Type dbContextType) -> void
+Steeltoe.Connector.MySql.MySqlConnectionInfo
+Steeltoe.Connector.MySql.MySqlConnectionInfo.Get(Microsoft.Extensions.Configuration.IConfiguration configuration, Steeltoe.Connector.Services.IServiceInfo serviceInfo) -> Steeltoe.Connector.Connection
+Steeltoe.Connector.MySql.MySqlConnectionInfo.Get(Microsoft.Extensions.Configuration.IConfiguration configuration, string serviceName) -> Steeltoe.Connector.Connection
+Steeltoe.Connector.MySql.MySqlConnectionInfo.IsSameType(Steeltoe.Connector.Services.IServiceInfo serviceInfo) -> bool
+Steeltoe.Connector.MySql.MySqlConnectionInfo.IsSameType(string serviceType) -> bool
+Steeltoe.Connector.MySql.MySqlConnectionInfo.MySqlConnectionInfo() -> void
+Steeltoe.Connector.MySql.MySqlProviderConfigurer
+Steeltoe.Connector.MySql.MySqlProviderConfigurer.Configure(Steeltoe.Connector.Services.MySqlServiceInfo si, Steeltoe.Connector.MySql.MySqlProviderConnectorOptions configuration) -> string
+Steeltoe.Connector.MySql.MySqlProviderConfigurer.MySqlProviderConfigurer() -> void
+Steeltoe.Connector.MySql.MySqlProviderConfigurer.UpdateConfiguration(Steeltoe.Connector.Services.MySqlServiceInfo si, Steeltoe.Connector.MySql.MySqlProviderConnectorOptions configuration) -> void
+Steeltoe.Connector.MySql.MySqlProviderConnectorFactory
+Steeltoe.Connector.MySql.MySqlProviderConnectorFactory.ConnectorType.get -> System.Type
+Steeltoe.Connector.MySql.MySqlProviderConnectorFactory.ConnectorType.set -> void
+Steeltoe.Connector.MySql.MySqlProviderConnectorFactory.MySqlProviderConnectorFactory() -> void
+Steeltoe.Connector.MySql.MySqlProviderConnectorFactory.MySqlProviderConnectorFactory(Steeltoe.Connector.Services.MySqlServiceInfo sinfo, Steeltoe.Connector.MySql.MySqlProviderConnectorOptions config, System.Type type) -> void
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.AllowPublicKeyRetrieval.get -> bool?
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.AllowPublicKeyRetrieval.set -> void
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.AllowUserVariables.get -> bool?
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.AllowUserVariables.set -> void
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.ConnectionLifeTime.get -> int?
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.ConnectionLifeTime.set -> void
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.ConnectionReset.get -> bool?
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.ConnectionReset.set -> void
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.ConnectionString.get -> string
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.ConnectionString.set -> void
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.ConnectionTimeout.get -> int?
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.ConnectionTimeout.set -> void
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.ConvertZeroDateTime.get -> bool?
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.ConvertZeroDateTime.set -> void
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.Database.get -> string
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.Database.set -> void
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.DefaultCommandTimeout.get -> int?
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.DefaultCommandTimeout.set -> void
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.Keepalive.get -> int?
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.Keepalive.set -> void
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.MaximumPoolsize.get -> int?
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.MaximumPoolsize.set -> void
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.MinimumPoolsize.get -> int?
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.MinimumPoolsize.set -> void
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.MySqlProviderConnectorOptions() -> void
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.MySqlProviderConnectorOptions(Microsoft.Extensions.Configuration.IConfiguration config) -> void
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.OldGuids.get -> bool?
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.OldGuids.set -> void
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.Password.get -> string
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.Password.set -> void
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.PersistSecurityInfo.get -> bool?
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.PersistSecurityInfo.set -> void
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.Pooling.get -> bool?
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.Pooling.set -> void
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.Port.get -> int
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.Port.set -> void
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.Server.get -> string
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.Server.set -> void
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.SslMode.get -> string
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.SslMode.set -> void
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.TreatTinyAsBoolean.get -> bool?
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.TreatTinyAsBoolean.set -> void
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.UseAffectedRows.get -> bool?
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.UseAffectedRows.set -> void
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.UseCompression.get -> bool?
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.UseCompression.set -> void
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.Username.get -> string
+Steeltoe.Connector.MySql.MySqlProviderConnectorOptions.Username.set -> void
+Steeltoe.Connector.MySql.MySqlTypeLocator
+Steeltoe.Connector.OAuth.OAuthConfigurer
+Steeltoe.Connector.OAuth.OAuthConfigurer.OAuthConfigurer() -> void
+Steeltoe.Connector.OAuth.OAuthConnectorDefaults
+Steeltoe.Connector.OAuth.OAuthConnectorFactory
+Steeltoe.Connector.OAuth.OAuthConnectorFactory.Create(System.IServiceProvider provider) -> Microsoft.Extensions.Options.IOptions<Steeltoe.Connector.OAuth.OAuthServiceOptions>
+Steeltoe.Connector.OAuth.OAuthConnectorFactory.OAuthConnectorFactory(Steeltoe.Connector.Services.SsoServiceInfo sinfo, Steeltoe.Connector.OAuth.OAuthConnectorOptions config) -> void
+Steeltoe.Connector.OAuth.OAuthConnectorOptions
+Steeltoe.Connector.OAuth.OAuthConnectorOptions.AccessTokenUri.get -> string
+Steeltoe.Connector.OAuth.OAuthConnectorOptions.AccessTokenUri.set -> void
+Steeltoe.Connector.OAuth.OAuthConnectorOptions.ClientId.get -> string
+Steeltoe.Connector.OAuth.OAuthConnectorOptions.ClientId.set -> void
+Steeltoe.Connector.OAuth.OAuthConnectorOptions.ClientSecret.get -> string
+Steeltoe.Connector.OAuth.OAuthConnectorOptions.ClientSecret.set -> void
+Steeltoe.Connector.OAuth.OAuthConnectorOptions.JwtKeyUri.get -> string
+Steeltoe.Connector.OAuth.OAuthConnectorOptions.JwtKeyUri.set -> void
+Steeltoe.Connector.OAuth.OAuthConnectorOptions.OAuthConnectorOptions() -> void
+Steeltoe.Connector.OAuth.OAuthConnectorOptions.OAuthConnectorOptions(Microsoft.Extensions.Configuration.IConfiguration config) -> void
+Steeltoe.Connector.OAuth.OAuthConnectorOptions.OAuthServiceUrl.get -> string
+Steeltoe.Connector.OAuth.OAuthConnectorOptions.OAuthServiceUrl.set -> void
+Steeltoe.Connector.OAuth.OAuthConnectorOptions.Scope.get -> System.Collections.Generic.List<string>
+Steeltoe.Connector.OAuth.OAuthConnectorOptions.Scope.set -> void
+Steeltoe.Connector.OAuth.OAuthConnectorOptions.TokenInfoUri.get -> string
+Steeltoe.Connector.OAuth.OAuthConnectorOptions.TokenInfoUri.set -> void
+Steeltoe.Connector.OAuth.OAuthConnectorOptions.UserAuthorizationUri.get -> string
+Steeltoe.Connector.OAuth.OAuthConnectorOptions.UserAuthorizationUri.set -> void
+Steeltoe.Connector.OAuth.OAuthConnectorOptions.UserInfoUri.get -> string
+Steeltoe.Connector.OAuth.OAuthConnectorOptions.UserInfoUri.set -> void
+Steeltoe.Connector.OAuth.OAuthConnectorOptions.ValidateCertificates.get -> bool
+Steeltoe.Connector.OAuth.OAuthConnectorOptions.ValidateCertificates.set -> void
+Steeltoe.Connector.OAuth.OAuthServiceOptions
+Steeltoe.Connector.OAuth.OAuthServiceOptions.AccessTokenUrl.get -> string
+Steeltoe.Connector.OAuth.OAuthServiceOptions.AccessTokenUrl.set -> void
+Steeltoe.Connector.OAuth.OAuthServiceOptions.ClientId.get -> string
+Steeltoe.Connector.OAuth.OAuthServiceOptions.ClientId.set -> void
+Steeltoe.Connector.OAuth.OAuthServiceOptions.ClientSecret.get -> string
+Steeltoe.Connector.OAuth.OAuthServiceOptions.ClientSecret.set -> void
+Steeltoe.Connector.OAuth.OAuthServiceOptions.JwtKeyUrl.get -> string
+Steeltoe.Connector.OAuth.OAuthServiceOptions.JwtKeyUrl.set -> void
+Steeltoe.Connector.OAuth.OAuthServiceOptions.OAuthServiceOptions() -> void
+Steeltoe.Connector.OAuth.OAuthServiceOptions.Scope.get -> System.Collections.Generic.ICollection<string>
+Steeltoe.Connector.OAuth.OAuthServiceOptions.Scope.set -> void
+Steeltoe.Connector.OAuth.OAuthServiceOptions.TokenInfoUrl.get -> string
+Steeltoe.Connector.OAuth.OAuthServiceOptions.TokenInfoUrl.set -> void
+Steeltoe.Connector.OAuth.OAuthServiceOptions.UserAuthorizationUrl.get -> string
+Steeltoe.Connector.OAuth.OAuthServiceOptions.UserAuthorizationUrl.set -> void
+Steeltoe.Connector.OAuth.OAuthServiceOptions.UserInfoUrl.get -> string
+Steeltoe.Connector.OAuth.OAuthServiceOptions.UserInfoUrl.set -> void
+Steeltoe.Connector.OAuth.OAuthServiceOptions.ValidateCertificates.get -> bool
+Steeltoe.Connector.OAuth.OAuthServiceOptions.ValidateCertificates.set -> void
+Steeltoe.Connector.Oracle.EF6.OracleDbContextConnectorFactory
+Steeltoe.Connector.Oracle.EF6.OracleDbContextConnectorFactory.OracleDbContextConnectorFactory(Steeltoe.Connector.Services.OracleServiceInfo info, Steeltoe.Connector.Oracle.OracleProviderConnectorOptions config, System.Type dbContextType) -> void
+Steeltoe.Connector.Oracle.OracleConnectionInfo
+Steeltoe.Connector.Oracle.OracleConnectionInfo.Get(Microsoft.Extensions.Configuration.IConfiguration configuration, Steeltoe.Connector.Services.IServiceInfo serviceInfo) -> Steeltoe.Connector.Connection
+Steeltoe.Connector.Oracle.OracleConnectionInfo.Get(Microsoft.Extensions.Configuration.IConfiguration configuration, string serviceName) -> Steeltoe.Connector.Connection
+Steeltoe.Connector.Oracle.OracleConnectionInfo.IsSameType(Steeltoe.Connector.Services.IServiceInfo serviceInfo) -> bool
+Steeltoe.Connector.Oracle.OracleConnectionInfo.IsSameType(string serviceType) -> bool
+Steeltoe.Connector.Oracle.OracleConnectionInfo.OracleConnectionInfo() -> void
+Steeltoe.Connector.Oracle.OracleProviderConfigurer
+Steeltoe.Connector.Oracle.OracleProviderConfigurer.Configure(Steeltoe.Connector.Services.OracleServiceInfo si, Steeltoe.Connector.Oracle.OracleProviderConnectorOptions configuration) -> string
+Steeltoe.Connector.Oracle.OracleProviderConfigurer.OracleProviderConfigurer() -> void
+Steeltoe.Connector.Oracle.OracleProviderConfigurer.UpdateConfiguration(Steeltoe.Connector.Services.OracleServiceInfo si, Steeltoe.Connector.Oracle.OracleProviderConnectorOptions configuration) -> void
+Steeltoe.Connector.Oracle.OracleProviderConnectorFactory
+Steeltoe.Connector.Oracle.OracleProviderConnectorFactory.ConnectorType.get -> System.Type
+Steeltoe.Connector.Oracle.OracleProviderConnectorFactory.ConnectorType.set -> void
+Steeltoe.Connector.Oracle.OracleProviderConnectorFactory.OracleProviderConnectorFactory() -> void
+Steeltoe.Connector.Oracle.OracleProviderConnectorFactory.OracleProviderConnectorFactory(Steeltoe.Connector.Services.OracleServiceInfo sinfo, Steeltoe.Connector.Oracle.OracleProviderConnectorOptions config, System.Type type) -> void
+Steeltoe.Connector.Oracle.OracleProviderConnectorOptions
+Steeltoe.Connector.Oracle.OracleProviderConnectorOptions.ConnectionString.get -> string
+Steeltoe.Connector.Oracle.OracleProviderConnectorOptions.ConnectionString.set -> void
+Steeltoe.Connector.Oracle.OracleProviderConnectorOptions.ConnectionTimeout.get -> int
+Steeltoe.Connector.Oracle.OracleProviderConnectorOptions.ConnectionTimeout.set -> void
+Steeltoe.Connector.Oracle.OracleProviderConnectorOptions.OracleProviderConnectorOptions() -> void
+Steeltoe.Connector.Oracle.OracleProviderConnectorOptions.OracleProviderConnectorOptions(Microsoft.Extensions.Configuration.IConfiguration config) -> void
+Steeltoe.Connector.Oracle.OracleProviderConnectorOptions.Password.get -> string
+Steeltoe.Connector.Oracle.OracleProviderConnectorOptions.Password.set -> void
+Steeltoe.Connector.Oracle.OracleProviderConnectorOptions.Port.get -> int
+Steeltoe.Connector.Oracle.OracleProviderConnectorOptions.Port.set -> void
+Steeltoe.Connector.Oracle.OracleProviderConnectorOptions.Server.get -> string
+Steeltoe.Connector.Oracle.OracleProviderConnectorOptions.Server.set -> void
+Steeltoe.Connector.Oracle.OracleProviderConnectorOptions.ServiceName.get -> string
+Steeltoe.Connector.Oracle.OracleProviderConnectorOptions.ServiceName.set -> void
+Steeltoe.Connector.Oracle.OracleProviderConnectorOptions.Username.get -> string
+Steeltoe.Connector.Oracle.OracleProviderConnectorOptions.Username.set -> void
+Steeltoe.Connector.Oracle.OracleTypeLocator
+Steeltoe.Connector.PostgreSql.PostgresConnectionInfo
+Steeltoe.Connector.PostgreSql.PostgresConnectionInfo.Get(Microsoft.Extensions.Configuration.IConfiguration configuration, Steeltoe.Connector.Services.IServiceInfo serviceInfo) -> Steeltoe.Connector.Connection
+Steeltoe.Connector.PostgreSql.PostgresConnectionInfo.Get(Microsoft.Extensions.Configuration.IConfiguration configuration, string serviceName) -> Steeltoe.Connector.Connection
+Steeltoe.Connector.PostgreSql.PostgresConnectionInfo.IsSameType(Steeltoe.Connector.Services.IServiceInfo serviceInfo) -> bool
+Steeltoe.Connector.PostgreSql.PostgresConnectionInfo.IsSameType(string serviceType) -> bool
+Steeltoe.Connector.PostgreSql.PostgresConnectionInfo.PostgresConnectionInfo() -> void
+Steeltoe.Connector.PostgreSql.PostgresProviderConfigurer
+Steeltoe.Connector.PostgreSql.PostgresProviderConfigurer.PostgresProviderConfigurer() -> void
+Steeltoe.Connector.PostgreSql.PostgresProviderConnectorFactory
+Steeltoe.Connector.PostgreSql.PostgresProviderConnectorFactory.PostgresProviderConnectorFactory(Steeltoe.Connector.Services.PostgresServiceInfo sinfo, Steeltoe.Connector.PostgreSql.PostgresProviderConnectorOptions config, System.Type type) -> void
+Steeltoe.Connector.PostgreSql.PostgresProviderConnectorOptions
+Steeltoe.Connector.PostgreSql.PostgresProviderConnectorOptions.ClientCertificate.get -> string
+Steeltoe.Connector.PostgreSql.PostgresProviderConnectorOptions.ClientCertificate.set -> void
+Steeltoe.Connector.PostgreSql.PostgresProviderConnectorOptions.ClientKey.get -> string
+Steeltoe.Connector.PostgreSql.PostgresProviderConnectorOptions.ClientKey.set -> void
+Steeltoe.Connector.PostgreSql.PostgresProviderConnectorOptions.CommandTimeout.get -> int
+Steeltoe.Connector.PostgreSql.PostgresProviderConnectorOptions.CommandTimeout.set -> void
+Steeltoe.Connector.PostgreSql.PostgresProviderConnectorOptions.ConnectionString.get -> string
+Steeltoe.Connector.PostgreSql.PostgresProviderConnectorOptions.ConnectionString.set -> void
+Steeltoe.Connector.PostgreSql.PostgresProviderConnectorOptions.Database.get -> string
+Steeltoe.Connector.PostgreSql.PostgresProviderConnectorOptions.Database.set -> void
+Steeltoe.Connector.PostgreSql.PostgresProviderConnectorOptions.Host.get -> string
+Steeltoe.Connector.PostgreSql.PostgresProviderConnectorOptions.Host.set -> void
+Steeltoe.Connector.PostgreSql.PostgresProviderConnectorOptions.Password.get -> string
+Steeltoe.Connector.PostgreSql.PostgresProviderConnectorOptions.Password.set -> void
+Steeltoe.Connector.PostgreSql.PostgresProviderConnectorOptions.Port.get -> int
+Steeltoe.Connector.PostgreSql.PostgresProviderConnectorOptions.Port.set -> void
+Steeltoe.Connector.PostgreSql.PostgresProviderConnectorOptions.PostgresProviderConnectorOptions() -> void
+Steeltoe.Connector.PostgreSql.PostgresProviderConnectorOptions.PostgresProviderConnectorOptions(Microsoft.Extensions.Configuration.IConfiguration config) -> void
+Steeltoe.Connector.PostgreSql.PostgresProviderConnectorOptions.SearchPath.get -> string
+Steeltoe.Connector.PostgreSql.PostgresProviderConnectorOptions.SearchPath.set -> void
+Steeltoe.Connector.PostgreSql.PostgresProviderConnectorOptions.SslMode.get -> string
+Steeltoe.Connector.PostgreSql.PostgresProviderConnectorOptions.SslMode.set -> void
+Steeltoe.Connector.PostgreSql.PostgresProviderConnectorOptions.SslRootCertificate.get -> string
+Steeltoe.Connector.PostgreSql.PostgresProviderConnectorOptions.SslRootCertificate.set -> void
+Steeltoe.Connector.PostgreSql.PostgresProviderConnectorOptions.Timeout.get -> int
+Steeltoe.Connector.PostgreSql.PostgresProviderConnectorOptions.Timeout.set -> void
+Steeltoe.Connector.PostgreSql.PostgresProviderConnectorOptions.TrustServerCertificate.get -> bool?
+Steeltoe.Connector.PostgreSql.PostgresProviderConnectorOptions.TrustServerCertificate.set -> void
+Steeltoe.Connector.PostgreSql.PostgresProviderConnectorOptions.Username.get -> string
+Steeltoe.Connector.PostgreSql.PostgresProviderConnectorOptions.Username.set -> void
+Steeltoe.Connector.PostgreSql.PostgreSqlTypeLocator
+Steeltoe.Connector.RabbitMQ.RabbitMQConnectionInfo
+Steeltoe.Connector.RabbitMQ.RabbitMQConnectionInfo.Get(Microsoft.Extensions.Configuration.IConfiguration configuration, Steeltoe.Connector.Services.IServiceInfo serviceInfo) -> Steeltoe.Connector.Connection
+Steeltoe.Connector.RabbitMQ.RabbitMQConnectionInfo.Get(Microsoft.Extensions.Configuration.IConfiguration configuration, string serviceName) -> Steeltoe.Connector.Connection
+Steeltoe.Connector.RabbitMQ.RabbitMQConnectionInfo.IsSameType(Steeltoe.Connector.Services.IServiceInfo serviceInfo) -> bool
+Steeltoe.Connector.RabbitMQ.RabbitMQConnectionInfo.IsSameType(string serviceType) -> bool
+Steeltoe.Connector.RabbitMQ.RabbitMQConnectionInfo.RabbitMQConnectionInfo() -> void
+Steeltoe.Connector.RabbitMQ.RabbitMQHealthContributor
+Steeltoe.Connector.RabbitMQ.RabbitMQHealthContributor.Health() -> Steeltoe.Common.HealthChecks.HealthCheckResult
+Steeltoe.Connector.RabbitMQ.RabbitMQHealthContributor.Id.get -> string
+Steeltoe.Connector.RabbitMQ.RabbitMQHealthContributor.RabbitMQHealthContributor(Steeltoe.Connector.RabbitMQ.RabbitMQProviderConnectorFactory factory, Microsoft.Extensions.Logging.ILogger<Steeltoe.Connector.RabbitMQ.RabbitMQHealthContributor> logger = null) -> void
+Steeltoe.Connector.RabbitMQ.RabbitMQProviderConfigurer
+Steeltoe.Connector.RabbitMQ.RabbitMQProviderConfigurer.RabbitMQProviderConfigurer() -> void
+Steeltoe.Connector.RabbitMQ.RabbitMQProviderConnectorFactory
+Steeltoe.Connector.RabbitMQ.RabbitMQProviderConnectorFactory.ConnectorType.get -> System.Type
+Steeltoe.Connector.RabbitMQ.RabbitMQProviderConnectorFactory.ConnectorType.set -> void
+Steeltoe.Connector.RabbitMQ.RabbitMQProviderConnectorFactory.RabbitMQProviderConnectorFactory(Steeltoe.Connector.Services.RabbitMQServiceInfo sinfo, Steeltoe.Connector.RabbitMQ.RabbitMQProviderConnectorOptions config, System.Type connectFactory) -> void
+Steeltoe.Connector.RabbitMQ.RabbitMQProviderConnectorOptions
+Steeltoe.Connector.RabbitMQ.RabbitMQProviderConnectorOptions.Password.get -> string
+Steeltoe.Connector.RabbitMQ.RabbitMQProviderConnectorOptions.Password.set -> void
+Steeltoe.Connector.RabbitMQ.RabbitMQProviderConnectorOptions.Port.get -> int
+Steeltoe.Connector.RabbitMQ.RabbitMQProviderConnectorOptions.Port.set -> void
+Steeltoe.Connector.RabbitMQ.RabbitMQProviderConnectorOptions.RabbitMQProviderConnectorOptions() -> void
+Steeltoe.Connector.RabbitMQ.RabbitMQProviderConnectorOptions.RabbitMQProviderConnectorOptions(Microsoft.Extensions.Configuration.IConfiguration config) -> void
+Steeltoe.Connector.RabbitMQ.RabbitMQProviderConnectorOptions.Server.get -> string
+Steeltoe.Connector.RabbitMQ.RabbitMQProviderConnectorOptions.Server.set -> void
+Steeltoe.Connector.RabbitMQ.RabbitMQProviderConnectorOptions.SslEnabled.get -> bool
+Steeltoe.Connector.RabbitMQ.RabbitMQProviderConnectorOptions.SslEnabled.set -> void
+Steeltoe.Connector.RabbitMQ.RabbitMQProviderConnectorOptions.SslPort.get -> int
+Steeltoe.Connector.RabbitMQ.RabbitMQProviderConnectorOptions.SslPort.set -> void
+Steeltoe.Connector.RabbitMQ.RabbitMQProviderConnectorOptions.Uri.get -> string
+Steeltoe.Connector.RabbitMQ.RabbitMQProviderConnectorOptions.Uri.set -> void
+Steeltoe.Connector.RabbitMQ.RabbitMQProviderConnectorOptions.Username.get -> string
+Steeltoe.Connector.RabbitMQ.RabbitMQProviderConnectorOptions.Username.set -> void
+Steeltoe.Connector.RabbitMQ.RabbitMQProviderConnectorOptions.VirtualHost.get -> string
+Steeltoe.Connector.RabbitMQ.RabbitMQProviderConnectorOptions.VirtualHost.set -> void
+Steeltoe.Connector.RabbitMQ.RabbitMQTypeLocator
+Steeltoe.Connector.Redis.RedisCacheConfigurationExtensions
+Steeltoe.Connector.Redis.RedisCacheConfigurer
+Steeltoe.Connector.Redis.RedisCacheConfigurer.Configure(Steeltoe.Connector.Services.RedisServiceInfo si, Steeltoe.Connector.Redis.RedisCacheConnectorOptions configuration) -> Steeltoe.Connector.Redis.RedisCacheConnectorOptions
+Steeltoe.Connector.Redis.RedisCacheConfigurer.RedisCacheConfigurer() -> void
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.AbortOnConnectFail.get -> bool
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.AbortOnConnectFail.set -> void
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.AllowAdmin.get -> bool
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.AllowAdmin.set -> void
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.ClientName.get -> string
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.ClientName.set -> void
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.ConnectionString.get -> string
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.ConnectionString.set -> void
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.ConnectRetry.get -> int
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.ConnectRetry.set -> void
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.ConnectTimeout.get -> int
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.ConnectTimeout.set -> void
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.EndPoints.get -> string
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.EndPoints.set -> void
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.Host.get -> string
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.Host.set -> void
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.InstanceName.get -> string
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.InstanceName.set -> void
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.KeepAlive.get -> int
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.KeepAlive.set -> void
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.Password.get -> string
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.Password.set -> void
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.Port.get -> int
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.Port.set -> void
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.RedisCacheConnectorOptions() -> void
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.RedisCacheConnectorOptions(Microsoft.Extensions.Configuration.IConfiguration config) -> void
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.ResolveDns.get -> bool
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.ResolveDns.set -> void
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.ServiceName.get -> string
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.ServiceName.set -> void
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.Ssl.get -> bool
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.Ssl.set -> void
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.SslHost.get -> string
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.SslHost.set -> void
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.SyncTimeout.get -> int
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.SyncTimeout.set -> void
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.TieBreaker.get -> string
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.TieBreaker.set -> void
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.ToMicrosoftExtensionObject(System.Type optionsType) -> object
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.ToStackExchangeObject(System.Type optionsType) -> object
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.WriteBuffer.get -> int
+Steeltoe.Connector.Redis.RedisCacheConnectorOptions.WriteBuffer.set -> void
+Steeltoe.Connector.Redis.RedisConnectionInfo
+Steeltoe.Connector.Redis.RedisConnectionInfo.Get(Microsoft.Extensions.Configuration.IConfiguration configuration, Steeltoe.Connector.Services.IServiceInfo serviceInfo) -> Steeltoe.Connector.Connection
+Steeltoe.Connector.Redis.RedisConnectionInfo.Get(Microsoft.Extensions.Configuration.IConfiguration configuration, string serviceName) -> Steeltoe.Connector.Connection
+Steeltoe.Connector.Redis.RedisConnectionInfo.IsSameType(Steeltoe.Connector.Services.IServiceInfo serviceInfo) -> bool
+Steeltoe.Connector.Redis.RedisConnectionInfo.IsSameType(string serviceType) -> bool
+Steeltoe.Connector.Redis.RedisConnectionInfo.RedisConnectionInfo() -> void
+Steeltoe.Connector.Redis.RedisHealthContributor
+Steeltoe.Connector.Redis.RedisHealthContributor.Health() -> Steeltoe.Common.HealthChecks.HealthCheckResult
+Steeltoe.Connector.Redis.RedisHealthContributor.Id.get -> string
+Steeltoe.Connector.Redis.RedisHealthContributor.RedisHealthContributor(Steeltoe.Connector.Redis.RedisServiceConnectorFactory factory, System.Type implType, Microsoft.Extensions.Logging.ILogger<Steeltoe.Connector.Redis.RedisHealthContributor> logger = null) -> void
+Steeltoe.Connector.Redis.RedisServiceConnectorFactory
+Steeltoe.Connector.Redis.RedisServiceConnectorFactory.ConnectorType.get -> System.Type
+Steeltoe.Connector.Redis.RedisServiceConnectorFactory.ConnectorType.set -> void
+Steeltoe.Connector.Redis.RedisServiceConnectorFactory.GetConnectionString() -> string
+Steeltoe.Connector.Redis.RedisServiceConnectorFactory.Initializer.get -> System.Reflection.MethodInfo
+Steeltoe.Connector.Redis.RedisServiceConnectorFactory.Initializer.set -> void
+Steeltoe.Connector.Redis.RedisServiceConnectorFactory.OptionsType.get -> System.Type
+Steeltoe.Connector.Redis.RedisServiceConnectorFactory.OptionsType.set -> void
+Steeltoe.Connector.Redis.RedisServiceConnectorFactory.RedisServiceConnectorFactory(Steeltoe.Connector.Services.RedisServiceInfo sinfo, Steeltoe.Connector.Redis.RedisCacheConnectorOptions config, System.Type connectionType, System.Type optionsType, System.Reflection.MethodInfo initalizer) -> void
+Steeltoe.Connector.Redis.RedisTypeLocator
+Steeltoe.Connector.RelationalDbHealthContributor
+Steeltoe.Connector.RelationalDbHealthContributor.Health() -> Steeltoe.Common.HealthChecks.HealthCheckResult
+Steeltoe.Connector.RelationalDbHealthContributor.Id.get -> string
+Steeltoe.Connector.RelationalDbHealthContributor.RelationalDbHealthContributor(System.Data.IDbConnection connection, Microsoft.Extensions.Logging.ILogger<Steeltoe.Connector.RelationalDbHealthContributor> logger = null) -> void
+Steeltoe.Connector.ServiceInfoCreator
+Steeltoe.Connector.ServiceInfoCreator.Configuration.get -> Microsoft.Extensions.Configuration.IConfiguration
+Steeltoe.Connector.ServiceInfoCreator.Factories.get -> System.Collections.Generic.IList<Steeltoe.Connector.Services.IServiceInfoFactory>
+Steeltoe.Connector.ServiceInfoCreator.FindFactory(Steeltoe.Extensions.Configuration.Service s) -> Steeltoe.Connector.Services.IServiceInfoFactory
+Steeltoe.Connector.ServiceInfoCreator.GetServiceInfo(string name) -> Steeltoe.Connector.Services.IServiceInfo
+Steeltoe.Connector.ServiceInfoCreator.GetServiceInfo<TServiceInfo>(string name) -> TServiceInfo
+Steeltoe.Connector.ServiceInfoCreator.GetServiceInfos(System.Type type) -> System.Collections.Generic.IEnumerable<Steeltoe.Connector.Services.IServiceInfo>
+Steeltoe.Connector.ServiceInfoCreator.GetServiceInfos<TServiceInfo>() -> System.Collections.Generic.IEnumerable<TServiceInfo>
+Steeltoe.Connector.ServiceInfoCreator.ServiceInfoCreator(Microsoft.Extensions.Configuration.IConfiguration configuration) -> void
+Steeltoe.Connector.ServiceInfoCreator.ServiceInfos.get -> System.Collections.Generic.IList<Steeltoe.Connector.Services.IServiceInfo>
+Steeltoe.Connector.Services.CosmosDbServiceInfoFactory
+Steeltoe.Connector.Services.CosmosDbServiceInfoFactory.CosmosDbServiceInfoFactory() -> void
+Steeltoe.Connector.Services.DB2ServiceInfoFactory
+Steeltoe.Connector.Services.DB2ServiceInfoFactory.DB2ServiceInfoFactory() -> void
+Steeltoe.Connector.Services.EurekaServiceInfoFactory
+Steeltoe.Connector.Services.EurekaServiceInfoFactory.EurekaServiceInfoFactory() -> void
+Steeltoe.Connector.Services.HystrixRabbitMQServiceInfoFactory
+Steeltoe.Connector.Services.HystrixRabbitMQServiceInfoFactory.HystrixRabbitMQServiceInfoFactory() -> void
+Steeltoe.Connector.Services.MongoDbServiceInfoFactory
+Steeltoe.Connector.Services.MongoDbServiceInfoFactory.MongoDbServiceInfoFactory() -> void
+Steeltoe.Connector.Services.MySqlServiceInfoFactory
+Steeltoe.Connector.Services.MySqlServiceInfoFactory.MySqlServiceInfoFactory() -> void
+Steeltoe.Connector.Services.OracleServiceInfoFactory
+Steeltoe.Connector.Services.OracleServiceInfoFactory.OracleServiceInfoFactory() -> void
+Steeltoe.Connector.Services.PostgresServiceInfoFactory
+Steeltoe.Connector.Services.PostgresServiceInfoFactory.PostgresServiceInfoFactory() -> void
+Steeltoe.Connector.Services.RabbitMQServiceInfoFactory
+Steeltoe.Connector.Services.RabbitMQServiceInfoFactory.RabbitMQServiceInfoFactory() -> void
+Steeltoe.Connector.Services.RedisServiceInfoFactory
+Steeltoe.Connector.Services.RedisServiceInfoFactory.RedisServiceInfoFactory() -> void
+Steeltoe.Connector.Services.RelationalServiceInfoFactory
+Steeltoe.Connector.Services.RelationalServiceInfoFactory.RelationalServiceInfoFactory(Steeltoe.Connector.Services.Tags tags, string scheme) -> void
+Steeltoe.Connector.Services.RelationalServiceInfoFactory.RelationalServiceInfoFactory(Steeltoe.Connector.Services.Tags tags, string[] schemes) -> void
+Steeltoe.Connector.Services.ServiceInfoFactory
+Steeltoe.Connector.Services.ServiceInfoFactory.ServiceInfoFactory(Steeltoe.Connector.Services.Tags tags, string scheme) -> void
+Steeltoe.Connector.Services.ServiceInfoFactory.ServiceInfoFactory(Steeltoe.Connector.Services.Tags tags, System.Collections.Generic.IEnumerable<string> schemes) -> void
+Steeltoe.Connector.Services.ServiceInfoFactory.ServiceInfoTags.get -> Steeltoe.Connector.Services.Tags
+Steeltoe.Connector.Services.ServiceInfoFactory.ServiceInfoTags.set -> void
+Steeltoe.Connector.Services.ServiceInfoFactory.UriKeys.get -> System.Collections.Generic.List<string>
+Steeltoe.Connector.Services.ServiceInfoFactory.UriKeys.set -> void
+Steeltoe.Connector.Services.ServiceInfoFactory.UriSchemes.get -> System.Collections.Generic.IEnumerable<string>
+Steeltoe.Connector.Services.ServiceInfoFactory.UriSchemes.set -> void
+Steeltoe.Connector.Services.ServiceInfoFactoryAttribute
+Steeltoe.Connector.Services.ServiceInfoFactoryAttribute.ServiceInfoFactoryAttribute() -> void
+Steeltoe.Connector.Services.SqlServerServiceInfoFactory
+Steeltoe.Connector.Services.SqlServerServiceInfoFactory.Create(string id, string url, string username, string password) -> Steeltoe.Connector.Services.IServiceInfo
+Steeltoe.Connector.Services.SqlServerServiceInfoFactory.SqlServerServiceInfoFactory() -> void
+Steeltoe.Connector.Services.SqlServerServiceInfoFactory.SqlServerServiceInfoFactory(Steeltoe.Connector.Services.Tags tags, string scheme) -> void
+Steeltoe.Connector.Services.SqlServerServiceInfoFactory.SqlServerServiceInfoFactory(Steeltoe.Connector.Services.Tags tags, string[] schemes) -> void
+Steeltoe.Connector.Services.SsoServiceInfoFactory
+Steeltoe.Connector.Services.SsoServiceInfoFactory.SsoServiceInfoFactory() -> void
+Steeltoe.Connector.Services.Tags
+Steeltoe.Connector.Services.Tags.Contains(string tag) -> bool
+Steeltoe.Connector.Services.Tags.ContainsOne(System.Collections.Generic.IEnumerable<string> tags) -> bool
+Steeltoe.Connector.Services.Tags.StartsWith(string tag) -> bool
+Steeltoe.Connector.Services.Tags.Tags(string tag) -> void
+Steeltoe.Connector.Services.Tags.Tags(string[] tags) -> void
+Steeltoe.Connector.Services.Tags.Values.get -> System.Collections.Generic.IEnumerable<string>
+Steeltoe.Connector.Services.Tags.Values.set -> void
+Steeltoe.Connector.SqlServer.EF6.SqlServerDbContextConnectorFactory
+Steeltoe.Connector.SqlServer.EF6.SqlServerDbContextConnectorFactory.SqlServerDbContextConnectorFactory(Steeltoe.Connector.Services.SqlServerServiceInfo info, Steeltoe.Connector.SqlServer.SqlServerProviderConnectorOptions config, System.Type dbContextType) -> void
+Steeltoe.Connector.SqlServer.SqlServerConnectionInfo
+Steeltoe.Connector.SqlServer.SqlServerConnectionInfo.Get(Microsoft.Extensions.Configuration.IConfiguration configuration, Steeltoe.Connector.Services.IServiceInfo serviceInfo) -> Steeltoe.Connector.Connection
+Steeltoe.Connector.SqlServer.SqlServerConnectionInfo.Get(Microsoft.Extensions.Configuration.IConfiguration configuration, string serviceName) -> Steeltoe.Connector.Connection
+Steeltoe.Connector.SqlServer.SqlServerConnectionInfo.IsSameType(Steeltoe.Connector.Services.IServiceInfo serviceInfo) -> bool
+Steeltoe.Connector.SqlServer.SqlServerConnectionInfo.IsSameType(string serviceType) -> bool
+Steeltoe.Connector.SqlServer.SqlServerConnectionInfo.SqlServerConnectionInfo() -> void
+Steeltoe.Connector.SqlServer.SqlServerProviderConfigurer
+Steeltoe.Connector.SqlServer.SqlServerProviderConfigurer.Configure(Steeltoe.Connector.Services.SqlServerServiceInfo si, Steeltoe.Connector.SqlServer.SqlServerProviderConnectorOptions configuration) -> string
+Steeltoe.Connector.SqlServer.SqlServerProviderConfigurer.SqlServerProviderConfigurer() -> void
+Steeltoe.Connector.SqlServer.SqlServerProviderConfigurer.UpdateConfiguration(Steeltoe.Connector.Services.SqlServerServiceInfo si, Steeltoe.Connector.SqlServer.SqlServerProviderConnectorOptions configuration) -> void
+Steeltoe.Connector.SqlServer.SqlServerProviderConnectorFactory
+Steeltoe.Connector.SqlServer.SqlServerProviderConnectorFactory.ConnectorType.get -> System.Type
+Steeltoe.Connector.SqlServer.SqlServerProviderConnectorFactory.ConnectorType.set -> void
+Steeltoe.Connector.SqlServer.SqlServerProviderConnectorFactory.SqlServerProviderConnectorFactory() -> void
+Steeltoe.Connector.SqlServer.SqlServerProviderConnectorFactory.SqlServerProviderConnectorFactory(Steeltoe.Connector.Services.SqlServerServiceInfo sinfo, Steeltoe.Connector.SqlServer.SqlServerProviderConnectorOptions config, System.Type type) -> void
+Steeltoe.Connector.SqlServer.SqlServerProviderConnectorOptions
+Steeltoe.Connector.SqlServer.SqlServerProviderConnectorOptions.ConnectionString.get -> string
+Steeltoe.Connector.SqlServer.SqlServerProviderConnectorOptions.ConnectionString.set -> void
+Steeltoe.Connector.SqlServer.SqlServerProviderConnectorOptions.Database.get -> string
+Steeltoe.Connector.SqlServer.SqlServerProviderConnectorOptions.Database.set -> void
+Steeltoe.Connector.SqlServer.SqlServerProviderConnectorOptions.Db.get -> string
+Steeltoe.Connector.SqlServer.SqlServerProviderConnectorOptions.Db.set -> void
+Steeltoe.Connector.SqlServer.SqlServerProviderConnectorOptions.InstanceName.get -> string
+Steeltoe.Connector.SqlServer.SqlServerProviderConnectorOptions.InstanceName.set -> void
+Steeltoe.Connector.SqlServer.SqlServerProviderConnectorOptions.IntegratedSecurity.get -> string
+Steeltoe.Connector.SqlServer.SqlServerProviderConnectorOptions.IntegratedSecurity.set -> void
+Steeltoe.Connector.SqlServer.SqlServerProviderConnectorOptions.Password.get -> string
+Steeltoe.Connector.SqlServer.SqlServerProviderConnectorOptions.Password.set -> void
+Steeltoe.Connector.SqlServer.SqlServerProviderConnectorOptions.Port.get -> int
+Steeltoe.Connector.SqlServer.SqlServerProviderConnectorOptions.Port.set -> void
+Steeltoe.Connector.SqlServer.SqlServerProviderConnectorOptions.Pw.get -> string
+Steeltoe.Connector.SqlServer.SqlServerProviderConnectorOptions.Pw.set -> void
+Steeltoe.Connector.SqlServer.SqlServerProviderConnectorOptions.Server.get -> string
+Steeltoe.Connector.SqlServer.SqlServerProviderConnectorOptions.Server.set -> void
+Steeltoe.Connector.SqlServer.SqlServerProviderConnectorOptions.SqlServerProviderConnectorOptions() -> void
+Steeltoe.Connector.SqlServer.SqlServerProviderConnectorOptions.SqlServerProviderConnectorOptions(Microsoft.Extensions.Configuration.IConfiguration config) -> void
+Steeltoe.Connector.SqlServer.SqlServerProviderConnectorOptions.Timeout.get -> int?
+Steeltoe.Connector.SqlServer.SqlServerProviderConnectorOptions.Timeout.set -> void
+Steeltoe.Connector.SqlServer.SqlServerProviderConnectorOptions.Uid.get -> string
+Steeltoe.Connector.SqlServer.SqlServerProviderConnectorOptions.Uid.set -> void
+Steeltoe.Connector.SqlServer.SqlServerProviderConnectorOptions.Uri.get -> string
+Steeltoe.Connector.SqlServer.SqlServerProviderConnectorOptions.Uri.set -> void
+Steeltoe.Connector.SqlServer.SqlServerProviderConnectorOptions.Username.get -> string
+Steeltoe.Connector.SqlServer.SqlServerProviderConnectorOptions.Username.set -> void
+Steeltoe.Connector.SqlServer.SqlServerTypeLocator
+virtual Steeltoe.Connector.CosmosDb.CosmosDbConnectorFactory.Create(System.IServiceProvider provider) -> object
+virtual Steeltoe.Connector.CosmosDb.CosmosDbConnectorFactory.CreateConnection(string connectionString, object clientOptions = null) -> object
+virtual Steeltoe.Connector.CosmosDb.CosmosDbConnectorFactory.CreateConnectionString() -> string
+virtual Steeltoe.Connector.Hystrix.HystrixProviderConnectorFactory.Create(System.IServiceProvider provider) -> object
+virtual Steeltoe.Connector.Hystrix.HystrixProviderConnectorFactory.CreateConnection(string connectionString) -> object
+virtual Steeltoe.Connector.Hystrix.HystrixProviderConnectorFactory.CreateConnectionString() -> string
+virtual Steeltoe.Connector.MongoDb.MongoDbConnectorFactory.Create(System.IServiceProvider provider) -> object
+virtual Steeltoe.Connector.MongoDb.MongoDbConnectorFactory.CreateConnection(string connectionString) -> object
+virtual Steeltoe.Connector.MongoDb.MongoDbConnectorFactory.CreateConnectionString() -> string
+virtual Steeltoe.Connector.MySql.MySqlProviderConnectorFactory.Create(System.IServiceProvider provider) -> object
+virtual Steeltoe.Connector.MySql.MySqlProviderConnectorFactory.CreateConnection(string connectionString) -> object
+virtual Steeltoe.Connector.MySql.MySqlProviderConnectorFactory.CreateConnectionString() -> string
+virtual Steeltoe.Connector.Oracle.OracleProviderConnectorFactory.Create(System.IServiceProvider provider) -> object
+virtual Steeltoe.Connector.Oracle.OracleProviderConnectorFactory.CreateConnection(string connectionString) -> object
+virtual Steeltoe.Connector.Oracle.OracleProviderConnectorFactory.CreateConnectionString() -> string
+virtual Steeltoe.Connector.PostgreSql.PostgresProviderConnectorFactory.Create(System.IServiceProvider provider) -> object
+virtual Steeltoe.Connector.PostgreSql.PostgresProviderConnectorFactory.CreateConnection(string connectionString) -> object
+virtual Steeltoe.Connector.PostgreSql.PostgresProviderConnectorFactory.CreateConnectionString() -> string
+virtual Steeltoe.Connector.RabbitMQ.RabbitMQProviderConnectorFactory.Create(System.IServiceProvider provider) -> object
+virtual Steeltoe.Connector.RabbitMQ.RabbitMQProviderConnectorFactory.CreateConnection(string connectionString) -> object
+virtual Steeltoe.Connector.RabbitMQ.RabbitMQProviderConnectorFactory.CreateConnectionString() -> string
+virtual Steeltoe.Connector.Redis.RedisServiceConnectorFactory.Create(System.IServiceProvider provider) -> object
+virtual Steeltoe.Connector.ServiceInfoCreator.BuildServiceInfoFactories() -> void
+virtual Steeltoe.Connector.Services.ServiceInfoFactory.Accepts(Steeltoe.Extensions.Configuration.Service binding) -> bool
+virtual Steeltoe.Connector.Services.ServiceInfoFactory.DefaultUriScheme.get -> string
+virtual Steeltoe.Connector.Services.ServiceInfoFactory.GetAccessTokenUriFromCredentials(System.Collections.Generic.Dictionary<string, Steeltoe.Extensions.Configuration.Credential> credentials) -> string
+virtual Steeltoe.Connector.Services.ServiceInfoFactory.GetBoolFromCredentials(System.Collections.Generic.Dictionary<string, Steeltoe.Extensions.Configuration.Credential> credentials, string key) -> bool
+virtual Steeltoe.Connector.Services.ServiceInfoFactory.GetClientIdFromCredentials(System.Collections.Generic.Dictionary<string, Steeltoe.Extensions.Configuration.Credential> credentials) -> string
+virtual Steeltoe.Connector.Services.ServiceInfoFactory.GetClientSecretFromCredentials(System.Collections.Generic.Dictionary<string, Steeltoe.Extensions.Configuration.Credential> credentials) -> string
+virtual Steeltoe.Connector.Services.ServiceInfoFactory.GetHostFromCredentials(System.Collections.Generic.Dictionary<string, Steeltoe.Extensions.Configuration.Credential> credentials) -> string
+virtual Steeltoe.Connector.Services.ServiceInfoFactory.GetIntFromCredentials(System.Collections.Generic.Dictionary<string, Steeltoe.Extensions.Configuration.Credential> credentials, string key) -> int
+virtual Steeltoe.Connector.Services.ServiceInfoFactory.GetIntFromCredentials(System.Collections.Generic.Dictionary<string, Steeltoe.Extensions.Configuration.Credential> credentials, System.Collections.Generic.List<string> keys) -> int
+virtual Steeltoe.Connector.Services.ServiceInfoFactory.GetListFromCredentials(System.Collections.Generic.Dictionary<string, Steeltoe.Extensions.Configuration.Credential> credentials, string key) -> System.Collections.Generic.List<string>
+virtual Steeltoe.Connector.Services.ServiceInfoFactory.GetPasswordFromCredentials(System.Collections.Generic.Dictionary<string, Steeltoe.Extensions.Configuration.Credential> credentials) -> string
+virtual Steeltoe.Connector.Services.ServiceInfoFactory.GetPortFromCredentials(System.Collections.Generic.Dictionary<string, Steeltoe.Extensions.Configuration.Credential> credentials) -> int
+virtual Steeltoe.Connector.Services.ServiceInfoFactory.GetStringFromCredentials(System.Collections.Generic.Dictionary<string, Steeltoe.Extensions.Configuration.Credential> credentials, string key) -> string
+virtual Steeltoe.Connector.Services.ServiceInfoFactory.GetStringFromCredentials(System.Collections.Generic.Dictionary<string, Steeltoe.Extensions.Configuration.Credential> credentials, System.Collections.Generic.List<string> keys) -> string
+virtual Steeltoe.Connector.Services.ServiceInfoFactory.GetTlsPortFromCredentials(System.Collections.Generic.Dictionary<string, Steeltoe.Extensions.Configuration.Credential> credentials) -> int
+virtual Steeltoe.Connector.Services.ServiceInfoFactory.GetUriFromCredentials(System.Collections.Generic.Dictionary<string, Steeltoe.Extensions.Configuration.Credential> credentials) -> string
+virtual Steeltoe.Connector.Services.ServiceInfoFactory.GetUsernameFromCredentials(System.Collections.Generic.Dictionary<string, Steeltoe.Extensions.Configuration.Credential> credentials) -> string
+virtual Steeltoe.Connector.Services.ServiceInfoFactory.LabelStartsWithTag(Steeltoe.Extensions.Configuration.Service binding) -> bool
+virtual Steeltoe.Connector.Services.ServiceInfoFactory.TagsMatch(Steeltoe.Extensions.Configuration.Service binding) -> bool
+virtual Steeltoe.Connector.Services.ServiceInfoFactory.UriKeyMatchesScheme(Steeltoe.Extensions.Configuration.Service binding) -> bool
+virtual Steeltoe.Connector.Services.ServiceInfoFactory.UriMatchesScheme(Steeltoe.Extensions.Configuration.Service binding) -> bool
+virtual Steeltoe.Connector.SqlServer.SqlServerProviderConnectorFactory.Create(System.IServiceProvider provider) -> object
+virtual Steeltoe.Connector.SqlServer.SqlServerProviderConnectorFactory.CreateConnection(string connectionString) -> object
+virtual Steeltoe.Connector.SqlServer.SqlServerProviderConnectorFactory.CreateConnectionString() -> string

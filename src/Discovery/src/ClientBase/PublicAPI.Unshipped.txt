@@ -1,0 +1,37 @@
+﻿const Steeltoe.Discovery.Client.ConfigurationUrlHelpers.WILDCARD_HOST = "---asterisk---" -> string
+const Steeltoe.Discovery.Client.SimpleClients.ConfigurationDiscoveryClientExtension.CONFIG_PREFIX = "discovery:services" -> string
+static Steeltoe.Discovery.Client.ConfigurationUrlHelpers.GetAspNetCoreUrls(this Microsoft.Extensions.Configuration.IConfiguration config) -> System.Collections.Generic.List<System.Uri>
+static Steeltoe.Discovery.Client.DiscoveryHostBuilderExtensions.AddDiscoveryClient(this Microsoft.Extensions.Hosting.IHostBuilder hostBuilder) -> Microsoft.Extensions.Hosting.IHostBuilder
+static Steeltoe.Discovery.Client.DiscoveryHostBuilderExtensions.AddServiceDiscovery(this Microsoft.Extensions.Hosting.IHostBuilder hostBuilder, System.Action<Steeltoe.Discovery.Client.DiscoveryClientBuilder> optionsAction) -> Microsoft.Extensions.Hosting.IHostBuilder
+static Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.AddDiscoveryClient(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config = null) -> Microsoft.Extensions.DependencyInjection.IServiceCollection
+static Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.AddDiscoveryClient(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config, Steeltoe.Discovery.IDiscoveryLifecycle lifecycle = null) -> Microsoft.Extensions.DependencyInjection.IServiceCollection
+static Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.AddDiscoveryClient(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config, string serviceName = null, Steeltoe.Discovery.IDiscoveryLifecycle lifecycle = null) -> Microsoft.Extensions.DependencyInjection.IServiceCollection
+static Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.AddServiceDiscovery(this Microsoft.Extensions.DependencyInjection.IServiceCollection serviceCollection, System.Action<Steeltoe.Discovery.Client.DiscoveryClientBuilder> builderAction = null) -> Microsoft.Extensions.DependencyInjection.IServiceCollection
+static Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.GetNamedDiscoveryServiceInfo(Microsoft.Extensions.Configuration.IConfiguration config, string serviceName) -> Steeltoe.Connector.Services.IServiceInfo
+static Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.GetSingletonDiscoveryServiceInfo(Microsoft.Extensions.Configuration.IConfiguration config) -> Steeltoe.Connector.Services.IServiceInfo
+static Steeltoe.Discovery.Client.SimpleClients.ConfigurationDiscoveryClientBuilderExtensions.UseConfiguredInstances(this Steeltoe.Discovery.Client.DiscoveryClientBuilder clientBuilder) -> Steeltoe.Discovery.Client.DiscoveryClientBuilder
+Steeltoe.Discovery.Client.ConfigurationUrlHelpers
+Steeltoe.Discovery.Client.DiscoveryClientBuilder
+Steeltoe.Discovery.Client.DiscoveryClientBuilder.DiscoveryClientBuilder() -> void
+Steeltoe.Discovery.Client.DiscoveryClientBuilder.Extensions.get -> System.Collections.Generic.IList<Steeltoe.Discovery.Client.IDiscoveryClientExtension>
+Steeltoe.Discovery.Client.DiscoveryClientBuilder.Extensions.set -> void
+Steeltoe.Discovery.Client.DiscoveryHostBuilderExtensions
+Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions
+Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.ApplicationLifecycle
+Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.ApplicationLifecycle.ApplicationLifecycle(Microsoft.Extensions.Hosting.IHostApplicationLifetime lifeCycle, Steeltoe.Discovery.IDiscoveryClient client) -> void
+Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.ApplicationLifecycle.ApplicationStopping.get -> System.Threading.CancellationToken
+Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.ApplicationLifecycle.ApplicationStopping.set -> void
+Steeltoe.Discovery.Client.IDiscoveryClientExtension
+Steeltoe.Discovery.Client.IDiscoveryClientExtension.ApplyServices(Microsoft.Extensions.DependencyInjection.IServiceCollection services) -> void
+Steeltoe.Discovery.Client.IDiscoveryClientExtension.IsConfigured(Microsoft.Extensions.Configuration.IConfiguration configuration, Steeltoe.Connector.Services.IServiceInfo serviceInfo = null) -> bool
+Steeltoe.Discovery.Client.SimpleClients.ConfigurationDiscoveryClient
+Steeltoe.Discovery.Client.SimpleClients.ConfigurationDiscoveryClient.ConfigurationDiscoveryClient(Microsoft.Extensions.Options.IOptionsMonitor<System.Collections.Generic.List<Steeltoe.Common.Discovery.ConfigurationServiceInstance>> serviceInstances) -> void
+Steeltoe.Discovery.Client.SimpleClients.ConfigurationDiscoveryClient.GetLocalServiceInstance() -> Steeltoe.Common.Discovery.IServiceInstance
+Steeltoe.Discovery.Client.SimpleClients.ConfigurationDiscoveryClient.ShutdownAsync() -> System.Threading.Tasks.Task
+Steeltoe.Discovery.Client.SimpleClients.ConfigurationDiscoveryClientBuilderExtensions
+Steeltoe.Discovery.Client.SimpleClients.ConfigurationDiscoveryClientExtension
+Steeltoe.Discovery.Client.SimpleClients.ConfigurationDiscoveryClientExtension.ApplyServices(Microsoft.Extensions.DependencyInjection.IServiceCollection services) -> void
+Steeltoe.Discovery.Client.SimpleClients.ConfigurationDiscoveryClientExtension.ConfigurationDiscoveryClientExtension() -> void
+Steeltoe.Discovery.Client.SimpleClients.ConfigurationDiscoveryClientExtension.IsConfigured(Microsoft.Extensions.Configuration.IConfiguration configuration, Steeltoe.Connector.Services.IServiceInfo serviceInfo = null) -> bool
+Steeltoe.Discovery.DiscoveryClientAssemblyAttribute
+Steeltoe.Discovery.DiscoveryClientAssemblyAttribute.DiscoveryClientAssemblyAttribute(System.Type discoveryClientExtensionType) -> void

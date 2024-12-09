@@ -1,0 +1,189 @@
+﻿abstract Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.GetRabbitTemplate() -> Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate
+const Steeltoe.Integration.Rabbit.Support.RabbitMessageHeaderErrorMessageStrategy.AMQP_RAW_MESSAGE = "internal_raw_message" -> string
+override Steeltoe.Integration.Rabbit.Inbound.RabbitInboundChannelAdapter.DoStart() -> System.Threading.Tasks.Task
+override Steeltoe.Integration.Rabbit.Inbound.RabbitInboundChannelAdapter.DoStop() -> System.Threading.Tasks.Task
+override Steeltoe.Integration.Rabbit.Inbound.RabbitInboundChannelAdapter.GetErrorMessageAttributes(Steeltoe.Messaging.IMessage message) -> Steeltoe.Common.Util.IAttributeAccessor
+override Steeltoe.Integration.Rabbit.Inbound.RabbitMessageSource.DoReceive() -> object
+override Steeltoe.Integration.Rabbit.Inbound.RabbitMessageSource.RabbitAckInfo.ToString() -> string
+override Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.CorrelationDataWrapper.FutureSource.get -> System.Threading.Tasks.TaskCompletionSource<Steeltoe.Messaging.RabbitMQ.Connection.CorrelationData.Confirm>
+override Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.CorrelationDataWrapper.ReturnedMessage.get -> Steeltoe.Messaging.IMessage
+override Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.CorrelationDataWrapper.ReturnedMessage.set -> void
+override Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.Initialize() -> void
+override Steeltoe.Integration.Rabbit.Outbound.RabbitOutboundEndpoint.DoStop() -> void
+override Steeltoe.Integration.Rabbit.Outbound.RabbitOutboundEndpoint.EndpointInit() -> void
+override Steeltoe.Integration.Rabbit.Outbound.RabbitOutboundEndpoint.GetRabbitTemplate() -> Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate
+override Steeltoe.Integration.Rabbit.Outbound.RabbitOutboundEndpoint.HandleRequestMessage(Steeltoe.Messaging.IMessage requestMessage) -> object
+override Steeltoe.Integration.Rabbit.Support.DefaultRabbitHeaderMapper.ExtractStandardHeaders(Steeltoe.Messaging.IMessageHeaders source) -> System.Collections.Generic.IDictionary<string, object>
+override Steeltoe.Integration.Rabbit.Support.DefaultRabbitHeaderMapper.ExtractUserDefinedHeaders(Steeltoe.Messaging.IMessageHeaders source) -> System.Collections.Generic.IDictionary<string, object>
+override Steeltoe.Integration.Rabbit.Support.DefaultRabbitHeaderMapper.PopulateStandardHeaders(System.Collections.Generic.IDictionary<string, object> headers, Steeltoe.Messaging.IMessageHeaders target) -> void
+override Steeltoe.Integration.Rabbit.Support.DefaultRabbitHeaderMapper.PopulateUserDefinedHeader(string headerName, object headerValue, Steeltoe.Messaging.IMessageHeaders target) -> void
+override Steeltoe.Integration.Rabbit.Support.ReturnedRabbitMessageException.ToString() -> string
+static Steeltoe.Integration.Rabbit.Support.DefaultRabbitHeaderMapper.GetInboundMapper(Microsoft.Extensions.Logging.ILogger logger) -> Steeltoe.Integration.Rabbit.Support.DefaultRabbitHeaderMapper
+static Steeltoe.Integration.Rabbit.Support.DefaultRabbitHeaderMapper.GetOutboundMapper(Microsoft.Extensions.Logging.ILogger logger) -> Steeltoe.Integration.Rabbit.Support.DefaultRabbitHeaderMapper
+static Steeltoe.Integration.Rabbit.Support.DefaultRabbitHeaderMapper.InboundReplyHeaders.get -> string[]
+static Steeltoe.Integration.Rabbit.Support.DefaultRabbitHeaderMapper.InboundRequestHeaders.get -> string[]
+static Steeltoe.Integration.Rabbit.Support.DefaultRabbitHeaderMapper.OutboundReplyHeaders.get -> string[]
+static Steeltoe.Integration.Rabbit.Support.DefaultRabbitHeaderMapper.OutboundRequestHeaders.get -> string[]
+static Steeltoe.Integration.Rabbit.Support.DefaultRabbitHeaderMapper.SafeOutboundHeaders.get -> string[]
+static Steeltoe.Integration.Rabbit.Support.EndpointUtils.CreateErrorMessagePayload(Steeltoe.Messaging.IMessage message, RabbitMQ.Client.IModel channel, bool isManualAck, System.Exception e) -> Steeltoe.Messaging.RabbitMQ.Listener.Exceptions.ListenerExecutionFailedException
+static Steeltoe.Integration.RabbitMQ.Support.MappingUtils.MapMessage(Steeltoe.Messaging.IMessage requestMessage, Steeltoe.Messaging.Converter.IMessageConverter converter, Steeltoe.Integration.Rabbit.Support.IRabbitHeaderMapper headerMapper, Steeltoe.Messaging.RabbitMQ.Core.MessageDeliveryMode defaultDeliveryMode, bool headersMappedLast) -> Steeltoe.Messaging.IMessage
+Steeltoe.Integration.Rabbit.Inbound.RabbitInboundChannelAdapter
+Steeltoe.Integration.Rabbit.Inbound.RabbitInboundChannelAdapter.BatchingStrategy.get -> Steeltoe.Messaging.RabbitMQ.Batch.IBatchingStrategy
+Steeltoe.Integration.Rabbit.Inbound.RabbitInboundChannelAdapter.BatchingStrategy.set -> void
+Steeltoe.Integration.Rabbit.Inbound.RabbitInboundChannelAdapter.BindSourceMessage.get -> bool
+Steeltoe.Integration.Rabbit.Inbound.RabbitInboundChannelAdapter.BindSourceMessage.set -> void
+Steeltoe.Integration.Rabbit.Inbound.RabbitInboundChannelAdapter.Listener
+Steeltoe.Integration.Rabbit.Inbound.RabbitInboundChannelAdapter.Listener.ContainerAckMode.get -> Steeltoe.Messaging.RabbitMQ.Core.AcknowledgeMode
+Steeltoe.Integration.Rabbit.Inbound.RabbitInboundChannelAdapter.Listener.ContainerAckMode.set -> void
+Steeltoe.Integration.Rabbit.Inbound.RabbitInboundChannelAdapter.Listener.Listener(Steeltoe.Integration.Rabbit.Inbound.RabbitInboundChannelAdapter adapter, Microsoft.Extensions.Logging.ILogger logger) -> void
+Steeltoe.Integration.Rabbit.Inbound.RabbitInboundChannelAdapter.Listener.OnMessage(Steeltoe.Messaging.IMessage message) -> void
+Steeltoe.Integration.Rabbit.Inbound.RabbitInboundChannelAdapter.Listener.OnMessage(Steeltoe.Messaging.IMessage message, RabbitMQ.Client.IModel channel) -> void
+Steeltoe.Integration.Rabbit.Inbound.RabbitInboundChannelAdapter.Listener.OnMessageBatch(System.Collections.Generic.List<Steeltoe.Messaging.IMessage> messages) -> void
+Steeltoe.Integration.Rabbit.Inbound.RabbitInboundChannelAdapter.Listener.OnMessageBatch(System.Collections.Generic.List<Steeltoe.Messaging.IMessage> messages, RabbitMQ.Client.IModel channel) -> void
+Steeltoe.Integration.Rabbit.Inbound.RabbitInboundChannelAdapter.MessageConverter.get -> Steeltoe.Messaging.Converter.ISmartMessageConverter
+Steeltoe.Integration.Rabbit.Inbound.RabbitInboundChannelAdapter.MessageConverter.set -> void
+Steeltoe.Integration.Rabbit.Inbound.RabbitInboundChannelAdapter.RabbitInboundChannelAdapter(Steeltoe.Common.Contexts.IApplicationContext context, Steeltoe.Messaging.RabbitMQ.Listener.AbstractMessageListenerContainer listenerContainer, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+Steeltoe.Integration.Rabbit.Inbound.RabbitInboundChannelAdapter.RecoveryCallback.get -> Steeltoe.Common.Retry.IRecoveryCallback
+Steeltoe.Integration.Rabbit.Inbound.RabbitInboundChannelAdapter.RecoveryCallback.set -> void
+Steeltoe.Integration.Rabbit.Inbound.RabbitInboundChannelAdapter.RetryTemplate.get -> Steeltoe.Common.Retry.RetryTemplate
+Steeltoe.Integration.Rabbit.Inbound.RabbitInboundChannelAdapter.RetryTemplate.set -> void
+Steeltoe.Integration.Rabbit.Inbound.RabbitMessageSource
+Steeltoe.Integration.Rabbit.Inbound.RabbitMessageSource.AckCallbackFactory.get -> Steeltoe.Integration.Rabbit.Inbound.RabbitMessageSource.RabbitAckCallbackFactory
+Steeltoe.Integration.Rabbit.Inbound.RabbitMessageSource.BatchingStrategy.get -> Steeltoe.Messaging.RabbitMQ.Batch.IBatchingStrategy
+Steeltoe.Integration.Rabbit.Inbound.RabbitMessageSource.BatchingStrategy.set -> void
+Steeltoe.Integration.Rabbit.Inbound.RabbitMessageSource.ConnectionFactory.get -> Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory
+Steeltoe.Integration.Rabbit.Inbound.RabbitMessageSource.MessageConverter.get -> Steeltoe.Messaging.Converter.ISmartMessageConverter
+Steeltoe.Integration.Rabbit.Inbound.RabbitMessageSource.MessageConverter.set -> void
+Steeltoe.Integration.Rabbit.Inbound.RabbitMessageSource.MessageHeaderConverter.get -> Steeltoe.Messaging.RabbitMQ.Support.IMessageHeadersConverter
+Steeltoe.Integration.Rabbit.Inbound.RabbitMessageSource.MessageHeaderConverter.set -> void
+Steeltoe.Integration.Rabbit.Inbound.RabbitMessageSource.QueueName.get -> string
+Steeltoe.Integration.Rabbit.Inbound.RabbitMessageSource.RabbitAckCallback
+Steeltoe.Integration.Rabbit.Inbound.RabbitMessageSource.RabbitAckCallback.AckInfo.get -> Steeltoe.Integration.Rabbit.Inbound.RabbitMessageSource.RabbitAckInfo
+Steeltoe.Integration.Rabbit.Inbound.RabbitMessageSource.RabbitAckCallback.Acknowledge(Steeltoe.Integration.Acks.Status status) -> void
+Steeltoe.Integration.Rabbit.Inbound.RabbitMessageSource.RabbitAckCallback.IsAcknowledged.get -> bool
+Steeltoe.Integration.Rabbit.Inbound.RabbitMessageSource.RabbitAckCallback.IsAcknowledged.set -> void
+Steeltoe.Integration.Rabbit.Inbound.RabbitMessageSource.RabbitAckCallback.IsAutoAck.get -> bool
+Steeltoe.Integration.Rabbit.Inbound.RabbitMessageSource.RabbitAckCallback.IsAutoAck.set -> void
+Steeltoe.Integration.Rabbit.Inbound.RabbitMessageSource.RabbitAckCallback.RabbitAckCallback(Steeltoe.Integration.Rabbit.Inbound.RabbitMessageSource.RabbitAckInfo ackInfo) -> void
+Steeltoe.Integration.Rabbit.Inbound.RabbitMessageSource.RabbitAckCallbackFactory
+Steeltoe.Integration.Rabbit.Inbound.RabbitMessageSource.RabbitAckCallbackFactory.CreateCallback(Steeltoe.Integration.Rabbit.Inbound.RabbitMessageSource.RabbitAckInfo info) -> Steeltoe.Integration.Acks.IAcknowledgmentCallback
+Steeltoe.Integration.Rabbit.Inbound.RabbitMessageSource.RabbitAckCallbackFactory.RabbitAckCallbackFactory() -> void
+Steeltoe.Integration.Rabbit.Inbound.RabbitMessageSource.RabbitAckInfo
+Steeltoe.Integration.Rabbit.Inbound.RabbitMessageSource.RabbitAckInfo.Channel.get -> RabbitMQ.Client.IModel
+Steeltoe.Integration.Rabbit.Inbound.RabbitMessageSource.RabbitAckInfo.Connection.get -> Steeltoe.Messaging.RabbitMQ.Connection.IConnection
+Steeltoe.Integration.Rabbit.Inbound.RabbitMessageSource.RabbitAckInfo.RabbitAckInfo(Steeltoe.Messaging.RabbitMQ.Connection.IConnection connection, RabbitMQ.Client.IModel channel, bool transacted, RabbitMQ.Client.BasicGetResult getResponse) -> void
+Steeltoe.Integration.Rabbit.Inbound.RabbitMessageSource.RabbitAckInfo.Response.get -> RabbitMQ.Client.BasicGetResult
+Steeltoe.Integration.Rabbit.Inbound.RabbitMessageSource.RabbitAckInfo.Transacted.get -> bool
+Steeltoe.Integration.Rabbit.Inbound.RabbitMessageSource.RabbitMessageSource(Steeltoe.Common.Contexts.IApplicationContext context, Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory connectionFactory, Steeltoe.Integration.Rabbit.Inbound.RabbitMessageSource.RabbitAckCallbackFactory ackCallbackFactory, string queueName) -> void
+Steeltoe.Integration.Rabbit.Inbound.RabbitMessageSource.RabbitMessageSource(Steeltoe.Common.Contexts.IApplicationContext context, Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory connectionFactory, string queueName) -> void
+Steeltoe.Integration.Rabbit.Inbound.RabbitMessageSource.RawMessageHeader.get -> bool
+Steeltoe.Integration.Rabbit.Inbound.RabbitMessageSource.RawMessageHeader.set -> void
+Steeltoe.Integration.Rabbit.Inbound.RabbitMessageSource.Transacted.get -> bool
+Steeltoe.Integration.Rabbit.Inbound.RabbitMessageSource.Transacted.set -> void
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.AbstractRabbitOutboundEndpoint(Steeltoe.Common.Contexts.IApplicationContext context, Microsoft.Extensions.Logging.ILogger logger) -> void
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.ConfirmAckChannel.get -> Steeltoe.Messaging.IMessageChannel
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.ConfirmAckChannel.set -> void
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.ConfirmAckChannelName.get -> string
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.ConfirmAckChannelName.set -> void
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.ConfirmCorrelationExpression.get -> Steeltoe.Common.Expression.Internal.IExpression
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.ConfirmCorrelationExpression.set -> void
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.ConfirmNackChannel.get -> Steeltoe.Messaging.IMessageChannel
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.ConfirmNackChannel.set -> void
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.ConfirmNackChannelName.get -> string
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.ConfirmNackChannelName.set -> void
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.ConfirmTimeout.get -> System.TimeSpan?
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.ConfirmTimeout.set -> void
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.ConnectionFactory.get -> Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.ConnectionFactory.set -> void
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.CorrelationDataGenerator.get -> Steeltoe.Integration.Handler.ExpressionEvaluatingMessageProcessor<object>
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.CorrelationDataGenerator.set -> void
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.CorrelationDataWrapper
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.CorrelationDataWrapper.CorrelationDataWrapper(string id, object userData, Steeltoe.Messaging.IMessage message) -> void
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.CorrelationDataWrapper.Message.get -> Steeltoe.Messaging.IMessage
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.CorrelationDataWrapper.UserData.get -> object
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.DefaultDeliveryMode.get -> Steeltoe.Messaging.RabbitMQ.Core.MessageDeliveryMode
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.DefaultDeliveryMode.set -> void
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.DelayExpression.get -> Steeltoe.Common.Expression.Internal.IExpression
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.DelayExpression.set -> void
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.DelayGenerator.get -> Steeltoe.Integration.Handler.ExpressionEvaluatingMessageProcessor<int>
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.DelayGenerator.set -> void
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.ErrorMessageStrategy.get -> Steeltoe.Integration.Support.IErrorMessageStrategy
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.ErrorMessageStrategy.set -> void
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.ExchangeName.get -> string
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.ExchangeName.set -> void
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.ExchangeNameExpression.get -> Steeltoe.Common.Expression.Internal.IExpression
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.ExchangeNameExpression.set -> void
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.ExchangeNameGenerator.get -> Steeltoe.Integration.Handler.ExpressionEvaluatingMessageProcessor<string>
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.ExchangeNameGenerator.set -> void
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.HandleConfirm(Steeltoe.Messaging.RabbitMQ.Connection.CorrelationData correlationData, bool ack, string cause) -> void
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.HeaderMapper.get -> Steeltoe.Integration.Rabbit.Support.IRabbitHeaderMapper
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.HeaderMapper.set -> void
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.HeadersMappedLast.get -> bool
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.HeadersMappedLast.set -> void
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.IsRunning.get -> bool
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.LazyConnect.get -> bool
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.LazyConnect.set -> void
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.ReturnChannel.get -> Steeltoe.Messaging.IMessageChannel
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.ReturnChannel.set -> void
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.RoutingKey.get -> string
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.RoutingKey.set -> void
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.RoutingKeyExpression.get -> Steeltoe.Common.Expression.Internal.IExpression
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.RoutingKeyExpression.set -> void
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.RoutingKeyGenerator.get -> Steeltoe.Integration.Handler.ExpressionEvaluatingMessageProcessor<string>
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.RoutingKeyGenerator.set -> void
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.Running.get -> bool
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.Running.set -> void
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.SetConfirmCorrelationExpressionString(string confirmCorrelationExpression) -> void
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.SetConfirmTimeout(int confirmTimeout) -> void
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.SetDelay(int delay) -> void
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.SetDelayExpressionString(string delayExpression) -> void
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.SetExchangeNameExpressionString(string exchangeNameExpression) -> void
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.SetRoutingKeyExpressionString(string routingKeyExpression) -> void
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.Start() -> void
+Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.Stop() -> void
+Steeltoe.Integration.Rabbit.Outbound.RabbitOutboundEndpoint
+Steeltoe.Integration.Rabbit.Outbound.RabbitOutboundEndpoint.Confirm(Steeltoe.Messaging.RabbitMQ.Connection.CorrelationData correlationData, bool ack, string cause) -> void
+Steeltoe.Integration.Rabbit.Outbound.RabbitOutboundEndpoint.ExpectReply.get -> bool
+Steeltoe.Integration.Rabbit.Outbound.RabbitOutboundEndpoint.ExpectReply.set -> void
+Steeltoe.Integration.Rabbit.Outbound.RabbitOutboundEndpoint.Initialize() -> void
+Steeltoe.Integration.Rabbit.Outbound.RabbitOutboundEndpoint.RabbitOutboundEndpoint(Steeltoe.Common.Contexts.IApplicationContext context, Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate rabbitTemplate, Microsoft.Extensions.Logging.ILogger logger) -> void
+Steeltoe.Integration.Rabbit.Outbound.RabbitOutboundEndpoint.ReturnedMessage(Steeltoe.Messaging.IMessage<byte[]> message, int replyCode, string replyText, string exchange, string routingKey) -> void
+Steeltoe.Integration.Rabbit.Outbound.RabbitOutboundEndpoint.ShouldWaitForConfirm.get -> bool
+Steeltoe.Integration.Rabbit.Outbound.RabbitOutboundEndpoint.ShouldWaitForConfirm.set -> void
+Steeltoe.Integration.Rabbit.Outbound.RabbitOutboundEndpoint.Template.get -> Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate
+Steeltoe.Integration.Rabbit.Outbound.RabbitOutboundEndpoint.WaitForConfirmTimeout.get -> System.TimeSpan
+Steeltoe.Integration.Rabbit.Outbound.RabbitOutboundEndpoint.WaitForConfirmTimeout.set -> void
+Steeltoe.Integration.Rabbit.Support.DefaultRabbitHeaderMapper
+Steeltoe.Integration.Rabbit.Support.DefaultRabbitHeaderMapper.DefaultRabbitHeaderMapper(string[] requestHeaderNames, string[] replyHeaderNames, Microsoft.Extensions.Logging.ILogger logger) -> void
+Steeltoe.Integration.Rabbit.Support.EndpointUtils
+Steeltoe.Integration.Rabbit.Support.IRabbitHeaderMapper
+Steeltoe.Integration.Rabbit.Support.ManualAckListenerExecutionFailedException
+Steeltoe.Integration.Rabbit.Support.ManualAckListenerExecutionFailedException.Channel.get -> RabbitMQ.Client.IModel
+Steeltoe.Integration.Rabbit.Support.ManualAckListenerExecutionFailedException.DeliveryTag.get -> ulong
+Steeltoe.Integration.Rabbit.Support.ManualAckListenerExecutionFailedException.ManualAckListenerExecutionFailedException(string message, System.Exception cause, Steeltoe.Messaging.IMessage failedMessage, RabbitMQ.Client.IModel channel, ulong deliveryTag) -> void
+Steeltoe.Integration.Rabbit.Support.NackedRabbitMessageException
+Steeltoe.Integration.Rabbit.Support.NackedRabbitMessageException.CorrelationData.get -> object
+Steeltoe.Integration.Rabbit.Support.NackedRabbitMessageException.NackedRabbitMessageException(Steeltoe.Messaging.IMessage message, object correlationData, string nackReason) -> void
+Steeltoe.Integration.Rabbit.Support.NackedRabbitMessageException.NackReason.get -> string
+Steeltoe.Integration.Rabbit.Support.RabbitMessageHeaderErrorMessageStrategy
+Steeltoe.Integration.Rabbit.Support.RabbitMessageHeaderErrorMessageStrategy.BuildErrorMessage(System.Exception exception, Steeltoe.Common.Util.IAttributeAccessor context) -> Steeltoe.Messaging.Support.ErrorMessage
+Steeltoe.Integration.Rabbit.Support.RabbitMessageHeaderErrorMessageStrategy.RabbitMessageHeaderErrorMessageStrategy() -> void
+Steeltoe.Integration.Rabbit.Support.ReturnedRabbitMessageException
+Steeltoe.Integration.Rabbit.Support.ReturnedRabbitMessageException.Exchange.get -> string
+Steeltoe.Integration.Rabbit.Support.ReturnedRabbitMessageException.ReplyCode.get -> int
+Steeltoe.Integration.Rabbit.Support.ReturnedRabbitMessageException.ReplyText.get -> string
+Steeltoe.Integration.Rabbit.Support.ReturnedRabbitMessageException.ReturnedRabbitMessageException(Steeltoe.Messaging.IMessage message, int replyCode, string replyText, string exchange, string routingKey) -> void
+Steeltoe.Integration.Rabbit.Support.ReturnedRabbitMessageException.RoutingKey.get -> string
+Steeltoe.Integration.RabbitMQ.Support.MappingUtils
+virtual Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.AddDelayProperty(Steeltoe.Messaging.IMessage message) -> void
+virtual Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.BuildReply(Steeltoe.Messaging.Converter.IMessageConverter converter, Steeltoe.Messaging.IMessage amqpReplyMessage) -> Steeltoe.Integration.Support.IMessageBuilder
+virtual Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.BuildReturnedMessage(Steeltoe.Messaging.IMessage message, int replyCode, string replyText, string exchange, string returnedRoutingKey, Steeltoe.Messaging.Converter.IMessageConverter converter) -> Steeltoe.Messaging.IMessage
+virtual Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.DoStart() -> void
+virtual Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.DoStop() -> void
+virtual Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.EndpointInit() -> void
+virtual Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.GenerateCorrelationData(Steeltoe.Messaging.IMessage requestMessage) -> Steeltoe.Messaging.RabbitMQ.Connection.CorrelationData
+virtual Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.GenerateExchangeName(Steeltoe.Messaging.IMessage requestMessage) -> string
+virtual Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.GenerateRoutingKey(Steeltoe.Messaging.IMessage requestMessage) -> string
+virtual Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.GetConfirmAckChannel() -> Steeltoe.Messaging.IMessageChannel
+virtual Steeltoe.Integration.Rabbit.Outbound.AbstractRabbitOutboundEndpoint.GetConfirmNackChannel() -> Steeltoe.Messaging.IMessageChannel

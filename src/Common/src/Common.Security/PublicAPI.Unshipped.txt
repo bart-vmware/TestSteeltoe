@@ -1,0 +1,41 @@
+﻿override Steeltoe.Common.Security.CertificateProvider.Load() -> void
+override Steeltoe.Common.Security.CertificateProvider.TryGet(string key, out string value) -> bool
+override Steeltoe.Common.Security.PemCertificateProvider.Load() -> void
+override Steeltoe.Common.Security.PemCertificateProvider.TryGet(string key, out string value) -> bool
+static readonly Steeltoe.Common.Security.LocalCertificateWriter.AppBasePath -> string
+static Steeltoe.Common.Security.ConfigurationExtensions.AddCertificateFile(this Microsoft.Extensions.Configuration.IConfigurationBuilder builder, string certFilePath, bool optional = false) -> Microsoft.Extensions.Configuration.IConfigurationBuilder
+static Steeltoe.Common.Security.ConfigurationExtensions.AddPemFiles(this Microsoft.Extensions.Configuration.IConfigurationBuilder builder, string certFilePath, string keyFilePath, bool optional = false) -> Microsoft.Extensions.Configuration.IConfigurationBuilder
+Steeltoe.Common.Security.CertificateProvider
+Steeltoe.Common.Security.CertificateRotationService
+Steeltoe.Common.Security.CertificateRotationService.CertificateRotationService(Microsoft.Extensions.Options.IOptionsMonitor<Steeltoe.Common.Options.CertificateOptions> optionsMonitor) -> void
+Steeltoe.Common.Security.CertificateRotationService.Dispose() -> void
+Steeltoe.Common.Security.CertificateRotationService.Start() -> void
+Steeltoe.Common.Security.CertificateSource
+Steeltoe.Common.Security.CertificateSource.Build(Microsoft.Extensions.Configuration.IConfigurationBuilder builder) -> Microsoft.Extensions.Configuration.IConfigurationProvider
+Steeltoe.Common.Security.CertificateSource.CertificateSource(string certFilePath) -> void
+Steeltoe.Common.Security.CertificateSource.OptionsConfigurer.get -> System.Type
+Steeltoe.Common.Security.ConfigurationExtensions
+Steeltoe.Common.Security.ConfigureCertificateOptions
+Steeltoe.Common.Security.ConfigureCertificateOptions.Configure(Steeltoe.Common.Options.CertificateOptions options) -> void
+Steeltoe.Common.Security.ConfigureCertificateOptions.Configure(string name, Steeltoe.Common.Options.CertificateOptions options) -> void
+Steeltoe.Common.Security.ConfigureCertificateOptions.ConfigureCertificateOptions(Microsoft.Extensions.Configuration.IConfiguration config) -> void
+Steeltoe.Common.Security.ICertificateRotationService
+Steeltoe.Common.Security.ICertificateRotationService.Start() -> void
+Steeltoe.Common.Security.LocalCertificateWriter
+Steeltoe.Common.Security.LocalCertificateWriter.IntermediatePfxPath.get -> string
+Steeltoe.Common.Security.LocalCertificateWriter.IntermediatePfxPath.set -> void
+Steeltoe.Common.Security.LocalCertificateWriter.LocalCertificateWriter() -> void
+Steeltoe.Common.Security.LocalCertificateWriter.RootCAPfxPath.get -> string
+Steeltoe.Common.Security.LocalCertificateWriter.RootCAPfxPath.set -> void
+Steeltoe.Common.Security.LocalCertificateWriter.Write(System.Guid orgId, System.Guid spaceId) -> bool
+Steeltoe.Common.Security.PemCertificateProvider
+Steeltoe.Common.Security.PemCertificateProvider.PemCertificateProvider(Microsoft.Extensions.Configuration.IConfigurationRoot certFileProvider, Microsoft.Extensions.Configuration.IConfigurationRoot keyFileProvider) -> void
+Steeltoe.Common.Security.PemCertificateSource
+Steeltoe.Common.Security.PemCertificateSource.Build(Microsoft.Extensions.Configuration.IConfigurationBuilder builder) -> Microsoft.Extensions.Configuration.IConfigurationProvider
+Steeltoe.Common.Security.PemCertificateSource.OptionsConfigurer.get -> System.Type
+Steeltoe.Common.Security.PemCertificateSource.PemCertificateSource(string certFilePath, string keyFilePath) -> void
+Steeltoe.Common.Security.PemConfigureCertificateOptions
+Steeltoe.Common.Security.PemConfigureCertificateOptions.Configure(Steeltoe.Common.Options.CertificateOptions options) -> void
+Steeltoe.Common.Security.PemConfigureCertificateOptions.Configure(string name, Steeltoe.Common.Options.CertificateOptions options) -> void
+Steeltoe.Common.Security.PemConfigureCertificateOptions.PemConfigureCertificateOptions(Microsoft.Extensions.Configuration.IConfiguration config) -> void
+virtual Steeltoe.Common.Security.CertificateRotationService.Dispose(bool disposing) -> void

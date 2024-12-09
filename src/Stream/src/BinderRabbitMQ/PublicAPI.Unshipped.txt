@@ -1,0 +1,249 @@
+﻿const Steeltoe.Stream.Binder.Rabbit.Config.RabbitBinderOptions.PREFIX = "spring:cloud:stream:rabbit:binder" -> string
+const Steeltoe.Stream.Binder.Rabbit.Config.RabbitBindingsOptions.PREFIX = "spring:cloud:stream:rabbit" -> string
+const Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.DEAD_LETTER_EXCHANGE = "DLX" -> string
+const Steeltoe.Stream.Binder.Rabbit.RabbitExpressionEvaluatingInterceptor.DELAY_HEADER = "scst_delay" -> string
+const Steeltoe.Stream.Binder.Rabbit.RabbitExpressionEvaluatingInterceptor.ROUTING_KEY_HEADER = "scst_routingKey" -> string
+override Steeltoe.Stream.Binder.Rabbit.RabbitMessageChannelBinder.AfterUnbindConsumer(Steeltoe.Stream.Provisioning.IConsumerDestination destination, string group, Steeltoe.Stream.Config.IConsumerOptions consumerOptions) -> void
+override Steeltoe.Stream.Binder.Rabbit.RabbitMessageChannelBinder.CreateConsumerEndpoint(Steeltoe.Stream.Provisioning.IConsumerDestination destination, string group, Steeltoe.Stream.Config.IConsumerOptions consumerOptions) -> Steeltoe.Integration.IMessageProducer
+override Steeltoe.Stream.Binder.Rabbit.RabbitMessageChannelBinder.CreatePolledConsumerResources(string name, string group, Steeltoe.Stream.Provisioning.IConsumerDestination destination, Steeltoe.Stream.Config.IConsumerOptions consumerOptions) -> Steeltoe.Stream.Binder.AbstractMessageChannelBinder.PolledConsumerResources
+override Steeltoe.Stream.Binder.Rabbit.RabbitMessageChannelBinder.CreateProducerMessageHandler(Steeltoe.Stream.Provisioning.IProducerDestination destination, Steeltoe.Stream.Config.IProducerOptions producerProperties, Steeltoe.Messaging.IMessageChannel errorChannel) -> Steeltoe.Messaging.IMessageHandler
+override Steeltoe.Stream.Binder.Rabbit.RabbitMessageChannelBinder.Dispose() -> void
+override Steeltoe.Stream.Binder.Rabbit.RabbitMessageChannelBinder.GetErrorMessageHandler(Steeltoe.Stream.Provisioning.IConsumerDestination destination, string group, Steeltoe.Stream.Config.IConsumerOptions consumerOptions) -> Steeltoe.Messaging.IMessageHandler
+override Steeltoe.Stream.Binder.Rabbit.RabbitMessageChannelBinder.GetErrorMessageStrategy() -> Steeltoe.Integration.Support.IErrorMessageStrategy
+override Steeltoe.Stream.Binder.Rabbit.RabbitMessageChannelBinder.GetErrorsBaseName(Steeltoe.Stream.Provisioning.IConsumerDestination destination, string group, Steeltoe.Stream.Config.IConsumerOptions consumerOptions) -> string
+override Steeltoe.Stream.Binder.Rabbit.RabbitMessageChannelBinder.GetPolledConsumerErrorMessageHandler(Steeltoe.Stream.Provisioning.IConsumerDestination destination, string group, Steeltoe.Stream.Config.IConsumerOptions consumerProperties) -> Steeltoe.Messaging.IMessageHandler
+override Steeltoe.Stream.Binder.Rabbit.RabbitMessageChannelBinder.PostProcessOutputChannel(Steeltoe.Messaging.IMessageChannel outputChannel, Steeltoe.Stream.Config.IProducerOptions producerOptions) -> void
+override Steeltoe.Stream.Binder.Rabbit.RabbitMessageChannelBinder.PostProcessPollableSource(Steeltoe.Stream.Binder.DefaultPollableMessageSource bindingTarget) -> void
+override Steeltoe.Stream.Binder.Rabbit.RabbitMessageChannelBinder.ServiceName.get -> string
+override Steeltoe.Stream.Binder.Rabbit.RabbitMessageChannelBinder.ServiceName.set -> void
+static Steeltoe.Stream.Binder.Rabbit.Provisioning.RabbitExchangeQueueProvisioner.ApplyPrefix(string prefix, string name) -> string
+static Steeltoe.Stream.Binder.Rabbit.Provisioning.RabbitExchangeQueueProvisioner.ConstructDLQName(string name) -> string
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitBinderOptions
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitBinderOptions.AdminAddresses.get -> System.Collections.Generic.List<string>
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitBinderOptions.AdminAddresses.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitBinderOptions.CompressionLevel.get -> System.IO.Compression.CompressionLevel
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitBinderOptions.CompressionLevel.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitBinderOptions.ConnectionNamePrefix.get -> string
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitBinderOptions.ConnectionNamePrefix.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitBinderOptions.Nodes.get -> System.Collections.Generic.List<string>
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitBinderOptions.Nodes.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitBinderOptions.RabbitBinderOptions() -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitBindingOptions
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitBindingOptions.Consumer.get -> Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitBindingOptions.Consumer.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitBindingOptions.Producer.get -> Steeltoe.Stream.Binder.Rabbit.Config.RabbitProducerOptions
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitBindingOptions.Producer.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitBindingOptions.RabbitBindingOptions() -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitBindingsOptions
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitBindingsOptions.Bindings.get -> System.Collections.Generic.Dictionary<string, Steeltoe.Stream.Binder.Rabbit.Config.RabbitBindingOptions>
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitBindingsOptions.Bindings.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitBindingsOptions.Default.get -> Steeltoe.Stream.Binder.Rabbit.Config.RabbitBindingOptions
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitBindingsOptions.Default.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitBindingsOptions.GetRabbitConsumerOptions(string binding) -> Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitBindingsOptions.GetRabbitProducerOptions(string binding) -> Steeltoe.Stream.Binder.Rabbit.Config.RabbitProducerOptions
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitBindingsOptions.RabbitBindingsOptions() -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitBindingsOptions.RabbitBindingsOptions(Microsoft.Extensions.Configuration.IConfiguration config) -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.AutoBindDlq.get -> bool?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.AutoBindDlq.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.BindingRoutingKey.get -> string
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.BindingRoutingKey.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.BindingRoutingKeyDelimiter.get -> string
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.BindingRoutingKeyDelimiter.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.BindQueue.get -> bool?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.BindQueue.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.DeadLetterExchange.get -> string
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.DeadLetterExchange.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.DeadLetterExchangeType.get -> string
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.DeadLetterExchangeType.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.DeadLetterQueueName.get -> string
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.DeadLetterQueueName.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.DeadLetterRoutingKey.get -> string
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.DeadLetterRoutingKey.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.DeclareDlx.get -> bool?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.DeclareDlx.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.DeclareExchange.get -> bool?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.DeclareExchange.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.DelayedExchange.get -> bool?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.DelayedExchange.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.DlqBindingArguments.get -> System.Collections.Generic.Dictionary<string, string>
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.DlqBindingArguments.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.DlqDeadLetterExchange.get -> string
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.DlqDeadLetterExchange.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.DlqDeadLetterRoutingKey.get -> string
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.DlqDeadLetterRoutingKey.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.DlqExpires.get -> int?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.DlqExpires.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.DlqLazy.get -> bool?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.DlqLazy.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.DlqMaxLength.get -> int?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.DlqMaxLength.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.DlqMaxLengthBytes.get -> int?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.DlqMaxLengthBytes.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.DlqMaxPriority.get -> int?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.DlqMaxPriority.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.DlqOverflowBehavior.get -> string
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.DlqOverflowBehavior.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.DlqQuorum.get -> Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.QuorumConfig
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.DlqQuorum.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.DlqSingleActiveConsumer.get -> bool?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.DlqSingleActiveConsumer.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.DlqTtl.get -> int?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.DlqTtl.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.ExchangeAutoDelete.get -> bool?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.ExchangeAutoDelete.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.ExchangeDurable.get -> bool?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.ExchangeDurable.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.ExchangeType.get -> string
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.ExchangeType.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.Expires.get -> int?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.Expires.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.Lazy.get -> bool?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.Lazy.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.MaxLength.get -> int?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.MaxLength.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.MaxLengthBytes.get -> int?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.MaxLengthBytes.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.MaxPriority.get -> int?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.MaxPriority.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.OverflowBehavior.get -> string
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.OverflowBehavior.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.Prefix.get -> string
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.Prefix.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.QueueBindingArguments.get -> System.Collections.Generic.Dictionary<string, string>
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.QueueBindingArguments.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.QueueNameGroupOnly.get -> bool?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.QueueNameGroupOnly.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.Quorum.get -> Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.QuorumConfig
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.Quorum.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.QuorumConfig
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.QuorumConfig.DeliveryLimit.get -> int?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.QuorumConfig.DeliveryLimit.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.QuorumConfig.Enabled.get -> bool?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.QuorumConfig.Enabled.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.QuorumConfig.InitialQuorumSize.get -> int?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.QuorumConfig.InitialQuorumSize.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.QuorumConfig.QuorumConfig() -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.RabbitCommonOptions() -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.SingleActiveConsumer.get -> bool?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.SingleActiveConsumer.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.Ttl.get -> int?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitCommonOptions.Ttl.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.AcknowledgeMode.get -> Steeltoe.Messaging.RabbitMQ.Core.AcknowledgeMode?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.AcknowledgeMode.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.AnonymousGroupPrefix.get -> string
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.AnonymousGroupPrefix.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.BatchSize.get -> int?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.BatchSize.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.ConsumerTagPrefix.get -> string
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.ConsumerTagPrefix.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.ContainerType.get -> Steeltoe.Messaging.RabbitMQ.Config.ContainerType?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.ContainerType.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.DurableSubscription.get -> bool?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.DurableSubscription.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.Exclusive.get -> bool?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.Exclusive.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.FailedDeclarationRetryInterval.get -> long?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.FailedDeclarationRetryInterval.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.FrameMaxHeadroom.get -> int?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.FrameMaxHeadroom.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.HeaderPatterns.get -> System.Collections.Generic.List<string>
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.HeaderPatterns.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.IsEnableBatching.get -> bool?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.IsEnableBatching.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.MaxConcurrency.get -> int?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.MaxConcurrency.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.MissingQueuesFatal.get -> bool?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.MissingQueuesFatal.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.Prefetch.get -> int?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.Prefetch.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.QueueDeclarationRetries.get -> int?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.QueueDeclarationRetries.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.RabbitConsumerOptions() -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.RecoveryInterval.get -> int?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.RecoveryInterval.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.RepublishDeliveryMode.get -> Steeltoe.Messaging.RabbitMQ.Core.MessageDeliveryMode?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.RepublishDeliveryMode.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.RepublishToDlq.get -> bool?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.RepublishToDlq.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.RequeueRejected.get -> bool?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.RequeueRejected.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.Transacted.get -> bool?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions.Transacted.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitProducerOptions
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitProducerOptions.BatchBufferLimit.get -> int?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitProducerOptions.BatchBufferLimit.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitProducerOptions.BatchingEnabled.get -> bool?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitProducerOptions.BatchingEnabled.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitProducerOptions.BatchSize.get -> int?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitProducerOptions.BatchSize.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitProducerOptions.BatchTimeout.get -> int?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitProducerOptions.BatchTimeout.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitProducerOptions.Compress.get -> bool?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitProducerOptions.Compress.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitProducerOptions.ConfirmAckChannel.get -> string
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitProducerOptions.ConfirmAckChannel.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitProducerOptions.DelayExpression.get -> string
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitProducerOptions.DelayExpression.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitProducerOptions.DeliveryMode.get -> Steeltoe.Messaging.RabbitMQ.Core.MessageDeliveryMode?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitProducerOptions.DeliveryMode.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitProducerOptions.DurableSubscription.get -> bool?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitProducerOptions.DurableSubscription.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitProducerOptions.Exclusive.get -> bool?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitProducerOptions.Exclusive.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitProducerOptions.FailedDeclarationRetryInterval.get -> long?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitProducerOptions.FailedDeclarationRetryInterval.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitProducerOptions.HeaderPatterns.get -> System.Collections.Generic.List<string>
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitProducerOptions.HeaderPatterns.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitProducerOptions.RabbitProducerOptions() -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitProducerOptions.RoutingKeyExpression.get -> string
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitProducerOptions.RoutingKeyExpression.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitProducerOptions.Transacted.get -> bool?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitProducerOptions.Transacted.set -> void
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitProducerOptions.UseConfirmHeader.get -> bool?
+Steeltoe.Stream.Binder.Rabbit.Config.RabbitProducerOptions.UseConfirmHeader.set -> void
+Steeltoe.Stream.Binder.Rabbit.Provisioning.RabbitExchangeQueueProvisioner
+Steeltoe.Stream.Binder.Rabbit.Provisioning.RabbitExchangeQueueProvisioner.CleanAutoDeclareContext(Steeltoe.Stream.Provisioning.IConsumerDestination destination, Steeltoe.Stream.Config.IConsumerOptions consumerProperties) -> void
+Steeltoe.Stream.Binder.Rabbit.Provisioning.RabbitExchangeQueueProvisioner.ProvisionConsumerDestination(string name, string group, Steeltoe.Stream.Config.IConsumerOptions options) -> Steeltoe.Stream.Provisioning.IConsumerDestination
+Steeltoe.Stream.Binder.Rabbit.Provisioning.RabbitExchangeQueueProvisioner.ProvisionProducerDestination(string name, Steeltoe.Stream.Config.IProducerOptions options) -> Steeltoe.Stream.Provisioning.IProducerDestination
+Steeltoe.Stream.Binder.Rabbit.Provisioning.RabbitExchangeQueueProvisioner.RabbitExchangeQueueProvisioner(Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory connectionFactory, Microsoft.Extensions.Options.IOptionsMonitor<Steeltoe.Stream.Binder.Rabbit.Config.RabbitBindingsOptions> bindingsOptions, Steeltoe.Common.Contexts.IApplicationContext applicationContext, Microsoft.Extensions.Logging.ILogger<Steeltoe.Stream.Binder.Rabbit.Provisioning.RabbitExchangeQueueProvisioner> logger) -> void
+Steeltoe.Stream.Binder.Rabbit.Provisioning.RabbitExchangeQueueProvisioner.RabbitExchangeQueueProvisioner(Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory connectionFactory, System.Collections.Generic.List<Steeltoe.Messaging.RabbitMQ.Config.IDeclarableCustomizer> customizers, Microsoft.Extensions.Options.IOptionsMonitor<Steeltoe.Stream.Binder.Rabbit.Config.RabbitBindingsOptions> bindingsOptions, Steeltoe.Common.Contexts.IApplicationContext applicationContext, Microsoft.Extensions.Logging.ILogger<Steeltoe.Stream.Binder.Rabbit.Provisioning.RabbitExchangeQueueProvisioner> logger) -> void
+Steeltoe.Stream.Binder.Rabbit.RabbitExpressionEvaluatingInterceptor
+Steeltoe.Stream.Binder.Rabbit.RabbitExpressionEvaluatingInterceptor.AfterReceiveCompletion(Steeltoe.Messaging.IMessage message, Steeltoe.Messaging.IMessageChannel channel, System.Exception exception) -> void
+Steeltoe.Stream.Binder.Rabbit.RabbitExpressionEvaluatingInterceptor.AfterSendCompletion(Steeltoe.Messaging.IMessage message, Steeltoe.Messaging.IMessageChannel channel, bool sent, System.Exception exception) -> void
+Steeltoe.Stream.Binder.Rabbit.RabbitExpressionEvaluatingInterceptor.Order.get -> int
+Steeltoe.Stream.Binder.Rabbit.RabbitExpressionEvaluatingInterceptor.PostReceive(Steeltoe.Messaging.IMessage message, Steeltoe.Messaging.IMessageChannel channel) -> Steeltoe.Messaging.IMessage
+Steeltoe.Stream.Binder.Rabbit.RabbitExpressionEvaluatingInterceptor.PostSend(Steeltoe.Messaging.IMessage message, Steeltoe.Messaging.IMessageChannel channel, bool sent) -> void
+Steeltoe.Stream.Binder.Rabbit.RabbitExpressionEvaluatingInterceptor.PreReceive(Steeltoe.Messaging.IMessageChannel channel) -> bool
+Steeltoe.Stream.Binder.Rabbit.RabbitExpressionEvaluatingInterceptor.PreSend(Steeltoe.Messaging.IMessage message, Steeltoe.Messaging.IMessageChannel channel) -> Steeltoe.Messaging.IMessage
+Steeltoe.Stream.Binder.Rabbit.RabbitExpressionEvaluatingInterceptor.RabbitExpressionEvaluatingInterceptor(Steeltoe.Common.Expression.Internal.IExpression routingKeyExpression, Steeltoe.Common.Expression.Internal.IExpression delayExpression, Steeltoe.Common.Expression.Internal.IEvaluationContext evaluationContext) -> void
+Steeltoe.Stream.Binder.Rabbit.RabbitMessageChannelBinder
+Steeltoe.Stream.Binder.Rabbit.RabbitMessageChannelBinder.AdminAddresses.get -> string[]
+Steeltoe.Stream.Binder.Rabbit.RabbitMessageChannelBinder.AdminAddresses.set -> void
+Steeltoe.Stream.Binder.Rabbit.RabbitMessageChannelBinder.BinderOptions.get -> Steeltoe.Stream.Binder.Rabbit.Config.RabbitBinderOptions
+Steeltoe.Stream.Binder.Rabbit.RabbitMessageChannelBinder.BindingsOptions.get -> Steeltoe.Stream.Binder.Rabbit.Config.RabbitBindingsOptions
+Steeltoe.Stream.Binder.Rabbit.RabbitMessageChannelBinder.Clustered.get -> bool
+Steeltoe.Stream.Binder.Rabbit.RabbitMessageChannelBinder.CompressingPostProcessor.get -> Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor
+Steeltoe.Stream.Binder.Rabbit.RabbitMessageChannelBinder.CompressingPostProcessor.set -> void
+Steeltoe.Stream.Binder.Rabbit.RabbitMessageChannelBinder.ConnectionFactory.get -> Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory
+Steeltoe.Stream.Binder.Rabbit.RabbitMessageChannelBinder.DecompressingPostProcessor.get -> Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor
+Steeltoe.Stream.Binder.Rabbit.RabbitMessageChannelBinder.DecompressingPostProcessor.set -> void
+Steeltoe.Stream.Binder.Rabbit.RabbitMessageChannelBinder.GetConsumerOptions(string channelName) -> Steeltoe.Stream.Binder.Rabbit.Config.RabbitConsumerOptions
+Steeltoe.Stream.Binder.Rabbit.RabbitMessageChannelBinder.GetProducerOptions(string channelName) -> Steeltoe.Stream.Binder.Rabbit.Config.RabbitProducerOptions
+Steeltoe.Stream.Binder.Rabbit.RabbitMessageChannelBinder.Initialize() -> void
+Steeltoe.Stream.Binder.Rabbit.RabbitMessageChannelBinder.Nodes.get -> string[]
+Steeltoe.Stream.Binder.Rabbit.RabbitMessageChannelBinder.Nodes.set -> void
+Steeltoe.Stream.Binder.Rabbit.RabbitMessageChannelBinder.ProvisioningProvider.get -> Steeltoe.Stream.Binder.Rabbit.Provisioning.RabbitExchangeQueueProvisioner
+Steeltoe.Stream.Binder.Rabbit.RabbitMessageChannelBinder.RabbitConnectionOptions.get -> Microsoft.Extensions.Options.IOptionsMonitor<Steeltoe.Messaging.RabbitMQ.Config.RabbitOptions>
+Steeltoe.Stream.Binder.Rabbit.RabbitMessageChannelBinder.RabbitMessageChannelBinder(Steeltoe.Common.Contexts.IApplicationContext context, Microsoft.Extensions.Logging.ILogger<Steeltoe.Stream.Binder.Rabbit.RabbitMessageChannelBinder> logger, Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory connectionFactory, Microsoft.Extensions.Options.IOptionsMonitor<Steeltoe.Messaging.RabbitMQ.Config.RabbitOptions> rabbitOptions, Microsoft.Extensions.Options.IOptionsMonitor<Steeltoe.Stream.Binder.Rabbit.Config.RabbitBinderOptions> binderOptions, Microsoft.Extensions.Options.IOptionsMonitor<Steeltoe.Stream.Binder.Rabbit.Config.RabbitBindingsOptions> bindingsOptions, Steeltoe.Stream.Binder.Rabbit.Provisioning.RabbitExchangeQueueProvisioner provisioningProvider) -> void
+Steeltoe.Stream.Binder.Rabbit.RabbitMessageChannelBinder.RabbitMessageChannelBinder(Steeltoe.Common.Contexts.IApplicationContext context, Microsoft.Extensions.Logging.ILogger<Steeltoe.Stream.Binder.Rabbit.RabbitMessageChannelBinder> logger, Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory connectionFactory, Microsoft.Extensions.Options.IOptionsMonitor<Steeltoe.Messaging.RabbitMQ.Config.RabbitOptions> rabbitOptions, Microsoft.Extensions.Options.IOptionsMonitor<Steeltoe.Stream.Binder.Rabbit.Config.RabbitBinderOptions> binderOptions, Microsoft.Extensions.Options.IOptionsMonitor<Steeltoe.Stream.Binder.Rabbit.Config.RabbitBindingsOptions> bindingsOptions, Steeltoe.Stream.Binder.Rabbit.Provisioning.RabbitExchangeQueueProvisioner provisioningProvider, Steeltoe.Stream.Config.IListenerContainerCustomizer containerCustomizer) -> void
+Steeltoe.Stream.Binder.Rabbit.RabbitMessageChannelBinder.RabbitMessageChannelBinder(Steeltoe.Common.Contexts.IApplicationContext context, Microsoft.Extensions.Logging.ILogger<Steeltoe.Stream.Binder.Rabbit.RabbitMessageChannelBinder> logger, Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory connectionFactory, Microsoft.Extensions.Options.IOptionsMonitor<Steeltoe.Messaging.RabbitMQ.Config.RabbitOptions> rabbitOptions, Microsoft.Extensions.Options.IOptionsMonitor<Steeltoe.Stream.Binder.Rabbit.Config.RabbitBinderOptions> binderOptions, Microsoft.Extensions.Options.IOptionsMonitor<Steeltoe.Stream.Binder.Rabbit.Config.RabbitBindingsOptions> bindingsOptions, Steeltoe.Stream.Binder.Rabbit.Provisioning.RabbitExchangeQueueProvisioner provisioningProvider, Steeltoe.Stream.Config.IListenerContainerCustomizer containerCustomizer, Steeltoe.Stream.Config.IMessageSourceCustomizer sourceCustomizer) -> void
+Steeltoe.Stream.Binder.Rabbit.RabbitMessageChannelBinder._logger -> Microsoft.Extensions.Logging.ILogger
+Steeltoe.Stream.Binder.Rabbit.Startup
+Steeltoe.Stream.Binder.Rabbit.Startup.Configuration.get -> Microsoft.Extensions.Configuration.IConfiguration
+Steeltoe.Stream.Binder.Rabbit.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection services) -> void
+Steeltoe.Stream.Binder.Rabbit.Startup.ConfigureServicesInvoked.get -> bool
+Steeltoe.Stream.Binder.Rabbit.Startup.ConfigureServicesInvoked.set -> void
+Steeltoe.Stream.Binder.Rabbit.Startup.Startup(Microsoft.Extensions.Configuration.IConfiguration configuration) -> void
+virtual Steeltoe.Stream.Binder.Rabbit.Provisioning.RabbitExchangeQueueProvisioner.GetGroupedName(string name, string group) -> string

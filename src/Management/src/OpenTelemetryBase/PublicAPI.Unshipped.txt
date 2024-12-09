@@ -1,0 +1,121 @@
+﻿abstract Steeltoe.Management.OpenTelemetry.Exporters.IMetricsExporter.Collect.get -> System.Func<int, bool>
+abstract Steeltoe.Management.OpenTelemetry.Exporters.IMetricsExporter.Collect.set -> void
+const Steeltoe.Management.OpenTelemetry.Exporters.Wavefront.WavefrontExporterOptions.WAVEFRONT_PREFIX = "management:metrics:export:wavefront" -> string
+override Steeltoe.Management.OpenTelemetry.Exporters.SteeltoeExporter.Collect.get -> System.Func<int, bool>
+override Steeltoe.Management.OpenTelemetry.Exporters.SteeltoeExporter.Collect.set -> void
+override Steeltoe.Management.OpenTelemetry.Exporters.SteeltoeExporter.Export(in OpenTelemetry.Batch<OpenTelemetry.Metrics.Metric> metrics) -> OpenTelemetry.ExportResult
+override Steeltoe.Management.OpenTelemetry.Exporters.SteeltoePrometheusExporter.Collect.get -> System.Func<int, bool>
+override Steeltoe.Management.OpenTelemetry.Exporters.SteeltoePrometheusExporter.Collect.set -> void
+override Steeltoe.Management.OpenTelemetry.Exporters.SteeltoePrometheusExporter.Export(in OpenTelemetry.Batch<OpenTelemetry.Metrics.Metric> batch) -> OpenTelemetry.ExportResult
+override Steeltoe.Management.OpenTelemetry.Exporters.WavefrontMetricsExporter.Export(in OpenTelemetry.Batch<OpenTelemetry.Metrics.Metric> batch) -> OpenTelemetry.ExportResult
+override Steeltoe.Management.OpenTelemetry.Exporters.WavefrontTraceExporter.Export(in OpenTelemetry.Batch<System.Diagnostics.Activity> batch) -> OpenTelemetry.ExportResult
+override Steeltoe.Management.OpenTelemetry.Metrics.MetricSample.ToString() -> string
+static readonly Steeltoe.Management.OpenTelemetry.OpenTelemetryMetrics.AssemblyName -> System.Reflection.AssemblyName
+static readonly Steeltoe.Management.OpenTelemetry.OpenTelemetryMetrics.InstrumentationVersion -> string
+static Steeltoe.Management.OpenTelemetry.Exporters.SteeltoeExporterMetricsExtensions.AddSteeltoeExporter(this OpenTelemetry.Metrics.MeterProviderBuilder builder, Steeltoe.Management.OpenTelemetry.Exporters.SteeltoeExporter exporter) -> OpenTelemetry.Metrics.MeterProviderBuilder
+static Steeltoe.Management.OpenTelemetry.Exporters.Wavefront.WavefrontTraceExtensions.AddWavefrontExporter(this OpenTelemetry.Trace.TracerProviderBuilder builder, Steeltoe.Management.OpenTelemetry.Exporters.Wavefront.IWavefrontExporterOptions exporterOptions, Microsoft.Extensions.Logging.ILogger<Steeltoe.Management.OpenTelemetry.Exporters.WavefrontTraceExporter> logger = null) -> OpenTelemetry.Trace.TracerProviderBuilder
+static Steeltoe.Management.OpenTelemetry.Metrics.MeterProviderBuilderExtensions.AddExporters(this OpenTelemetry.Metrics.MeterProviderBuilder builder, System.Collections.Generic.IEnumerable<Steeltoe.Management.OpenTelemetry.Exporters.IMetricsExporter> exporters) -> OpenTelemetry.Metrics.MeterProviderBuilder
+static Steeltoe.Management.OpenTelemetry.Metrics.MeterProviderBuilderExtensions.AddRegisteredViews(this OpenTelemetry.Metrics.MeterProviderBuilder builder, Steeltoe.Management.OpenTelemetry.Metrics.IViewRegistry viewRegistry) -> OpenTelemetry.Metrics.MeterProviderBuilder
+static Steeltoe.Management.OpenTelemetry.Metrics.MeterProviderBuilderExtensions.AddWavefrontExporter(this OpenTelemetry.Metrics.MeterProviderBuilder builder, Steeltoe.Management.OpenTelemetry.Exporters.WavefrontMetricsExporter wavefrontExporter) -> OpenTelemetry.Metrics.MeterProviderBuilder
+static Steeltoe.Management.OpenTelemetry.Metrics.MetricLabelExtensions.AsDictionary(this OpenTelemetry.ReadOnlyTagCollection tagCollection) -> System.Collections.Generic.IDictionary<string, string>
+static Steeltoe.Management.OpenTelemetry.Metrics.MetricLabelExtensions.AsReadonlySpan(this System.Collections.Generic.IDictionary<string, object> keyValuePairs) -> System.ReadOnlySpan<System.Collections.Generic.KeyValuePair<string, object>>
+static Steeltoe.Management.OpenTelemetry.Metrics.MetricLabelExtensions.AsReadonlySpan(this System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<string, object>> keyValuePairs) -> System.ReadOnlySpan<System.Collections.Generic.KeyValuePair<string, object>>
+static Steeltoe.Management.OpenTelemetry.OpenTelemetryMetrics.InstrumentationName.get -> string
+static Steeltoe.Management.OpenTelemetry.OpenTelemetryMetrics.InstrumentationName.set -> void
+static Steeltoe.Management.OpenTelemetry.OpenTelemetryMetrics.Meter.get -> System.Diagnostics.Metrics.Meter
+Steeltoe.Management.OpenTelemetry.Exporters.ICollectionResponse
+Steeltoe.Management.OpenTelemetry.Exporters.ICollectionResponse.GeneratedAtUtc.get -> System.DateTime
+Steeltoe.Management.OpenTelemetry.Exporters.IMetricsExporter
+Steeltoe.Management.OpenTelemetry.Exporters.IMetricsExporter.IMetricsExporter() -> void
+Steeltoe.Management.OpenTelemetry.Exporters.PrometheusCollectionResponse
+Steeltoe.Management.OpenTelemetry.Exporters.PrometheusCollectionResponse.GeneratedAtUtc.get -> System.DateTime
+Steeltoe.Management.OpenTelemetry.Exporters.PrometheusCollectionResponse.PrometheusCollectionResponse() -> void
+Steeltoe.Management.OpenTelemetry.Exporters.PrometheusCollectionResponse.PrometheusCollectionResponse(System.ArraySegment<byte> view, System.DateTime generatedAtUtc) -> void
+Steeltoe.Management.OpenTelemetry.Exporters.PrometheusCollectionResponse.View.get -> System.ArraySegment<byte>
+Steeltoe.Management.OpenTelemetry.Exporters.SteeltoeCollectionResponse
+Steeltoe.Management.OpenTelemetry.Exporters.SteeltoeCollectionResponse.AvailableTags.get -> Steeltoe.Management.OpenTelemetry.Metrics.MetricsCollection<System.Collections.Generic.List<Steeltoe.Management.OpenTelemetry.Metrics.MetricTag>>
+Steeltoe.Management.OpenTelemetry.Exporters.SteeltoeCollectionResponse.GeneratedAtUtc.get -> System.DateTime
+Steeltoe.Management.OpenTelemetry.Exporters.SteeltoeCollectionResponse.MetricSamples.get -> Steeltoe.Management.OpenTelemetry.Metrics.MetricsCollection<System.Collections.Generic.List<Steeltoe.Management.OpenTelemetry.Metrics.MetricSample>>
+Steeltoe.Management.OpenTelemetry.Exporters.SteeltoeCollectionResponse.SteeltoeCollectionResponse() -> void
+Steeltoe.Management.OpenTelemetry.Exporters.SteeltoeCollectionResponse.SteeltoeCollectionResponse(Steeltoe.Management.OpenTelemetry.Metrics.MetricsCollection<System.Collections.Generic.List<Steeltoe.Management.OpenTelemetry.Metrics.MetricSample>> metricSamples, Steeltoe.Management.OpenTelemetry.Metrics.MetricsCollection<System.Collections.Generic.List<Steeltoe.Management.OpenTelemetry.Metrics.MetricTag>> availableTags, System.DateTime generatedAtUtc) -> void
+Steeltoe.Management.OpenTelemetry.Exporters.SteeltoeExporter
+Steeltoe.Management.OpenTelemetry.Exporters.SteeltoeExporterMetricsExtensions
+Steeltoe.Management.OpenTelemetry.Exporters.SteeltoePrometheusExporter
+Steeltoe.Management.OpenTelemetry.Exporters.Wavefront.IWavefrontExporterOptions
+Steeltoe.Management.OpenTelemetry.Exporters.Wavefront.IWavefrontExporterOptions.IWavefrontExporterOptions() -> void
+Steeltoe.Management.OpenTelemetry.Exporters.Wavefront.WavefrontApplicationOptions
+Steeltoe.Management.OpenTelemetry.Exporters.Wavefront.WavefrontApplicationOptions.Cluster.get -> string
+Steeltoe.Management.OpenTelemetry.Exporters.Wavefront.WavefrontApplicationOptions.Cluster.set -> void
+Steeltoe.Management.OpenTelemetry.Exporters.Wavefront.WavefrontApplicationOptions.Name.get -> string
+Steeltoe.Management.OpenTelemetry.Exporters.Wavefront.WavefrontApplicationOptions.Name.set -> void
+Steeltoe.Management.OpenTelemetry.Exporters.Wavefront.WavefrontApplicationOptions.Service.get -> string
+Steeltoe.Management.OpenTelemetry.Exporters.Wavefront.WavefrontApplicationOptions.Service.set -> void
+Steeltoe.Management.OpenTelemetry.Exporters.Wavefront.WavefrontApplicationOptions.Source.get -> string
+Steeltoe.Management.OpenTelemetry.Exporters.Wavefront.WavefrontApplicationOptions.Source.set -> void
+Steeltoe.Management.OpenTelemetry.Exporters.Wavefront.WavefrontApplicationOptions.WavefrontApplicationOptions(Microsoft.Extensions.Configuration.IConfiguration config) -> void
+Steeltoe.Management.OpenTelemetry.Exporters.Wavefront.WavefrontExporterOptions
+Steeltoe.Management.OpenTelemetry.Exporters.Wavefront.WavefrontExporterOptions.ApiToken.get -> string
+Steeltoe.Management.OpenTelemetry.Exporters.Wavefront.WavefrontExporterOptions.ApiToken.set -> void
+Steeltoe.Management.OpenTelemetry.Exporters.Wavefront.WavefrontExporterOptions.ApplicationOptions.get -> Steeltoe.Management.OpenTelemetry.Exporters.Wavefront.WavefrontApplicationOptions
+Steeltoe.Management.OpenTelemetry.Exporters.Wavefront.WavefrontExporterOptions.BatchSize.get -> int
+Steeltoe.Management.OpenTelemetry.Exporters.Wavefront.WavefrontExporterOptions.BatchSize.set -> void
+Steeltoe.Management.OpenTelemetry.Exporters.Wavefront.WavefrontExporterOptions.Cluster.get -> string
+Steeltoe.Management.OpenTelemetry.Exporters.Wavefront.WavefrontExporterOptions.Cluster.set -> void
+Steeltoe.Management.OpenTelemetry.Exporters.Wavefront.WavefrontExporterOptions.MaxQueueSize.get -> int
+Steeltoe.Management.OpenTelemetry.Exporters.Wavefront.WavefrontExporterOptions.MaxQueueSize.set -> void
+Steeltoe.Management.OpenTelemetry.Exporters.Wavefront.WavefrontExporterOptions.Name.get -> string
+Steeltoe.Management.OpenTelemetry.Exporters.Wavefront.WavefrontExporterOptions.Service.get -> string
+Steeltoe.Management.OpenTelemetry.Exporters.Wavefront.WavefrontExporterOptions.Source.get -> string
+Steeltoe.Management.OpenTelemetry.Exporters.Wavefront.WavefrontExporterOptions.Step.get -> int
+Steeltoe.Management.OpenTelemetry.Exporters.Wavefront.WavefrontExporterOptions.Step.set -> void
+Steeltoe.Management.OpenTelemetry.Exporters.Wavefront.WavefrontExporterOptions.Uri.get -> string
+Steeltoe.Management.OpenTelemetry.Exporters.Wavefront.WavefrontExporterOptions.Uri.set -> void
+Steeltoe.Management.OpenTelemetry.Exporters.Wavefront.WavefrontExporterOptions.WavefrontExporterOptions(Microsoft.Extensions.Configuration.IConfiguration config) -> void
+Steeltoe.Management.OpenTelemetry.Exporters.Wavefront.WavefrontTraceExtensions
+Steeltoe.Management.OpenTelemetry.Exporters.WavefrontMetricsExporter
+Steeltoe.Management.OpenTelemetry.Exporters.WavefrontMetricsExporter.WavefrontMetricsExporter(Steeltoe.Management.OpenTelemetry.Exporters.Wavefront.IWavefrontExporterOptions options, Microsoft.Extensions.Logging.ILogger<Steeltoe.Management.OpenTelemetry.Exporters.WavefrontMetricsExporter> logger) -> void
+Steeltoe.Management.OpenTelemetry.Exporters.WavefrontTraceExporter
+Steeltoe.Management.OpenTelemetry.Exporters.WavefrontTraceExporter.WavefrontTraceExporter(Steeltoe.Management.OpenTelemetry.Exporters.Wavefront.IWavefrontExporterOptions options, Microsoft.Extensions.Logging.ILogger<Steeltoe.Management.OpenTelemetry.Exporters.WavefrontTraceExporter> logger) -> void
+Steeltoe.Management.OpenTelemetry.Metrics.IViewRegistry
+Steeltoe.Management.OpenTelemetry.Metrics.IViewRegistry.AddView(string instrumentName, OpenTelemetry.Metrics.MetricStreamConfiguration viewConfig) -> void
+Steeltoe.Management.OpenTelemetry.Metrics.IViewRegistry.Views.get -> System.Collections.Generic.List<System.Collections.Generic.KeyValuePair<string, OpenTelemetry.Metrics.MetricStreamConfiguration>>
+Steeltoe.Management.OpenTelemetry.Metrics.MeterProviderBuilderExtensions
+Steeltoe.Management.OpenTelemetry.Metrics.MetricLabelExtensions
+Steeltoe.Management.OpenTelemetry.Metrics.MetricSample
+Steeltoe.Management.OpenTelemetry.Metrics.MetricSample.MetricSample(Steeltoe.Management.OpenTelemetry.Metrics.MetricStatistic statistic, double value, System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<string, string>> tags = null) -> void
+Steeltoe.Management.OpenTelemetry.Metrics.MetricSample.Statistic.get -> Steeltoe.Management.OpenTelemetry.Metrics.MetricStatistic
+Steeltoe.Management.OpenTelemetry.Metrics.MetricSample.Tags.get -> System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<string, string>>
+Steeltoe.Management.OpenTelemetry.Metrics.MetricSample.Tags.set -> void
+Steeltoe.Management.OpenTelemetry.Metrics.MetricSample.Value.get -> double
+Steeltoe.Management.OpenTelemetry.Metrics.MetricsCollection<T>
+Steeltoe.Management.OpenTelemetry.Metrics.MetricsCollection<T>.this[string key].get -> T
+Steeltoe.Management.OpenTelemetry.Metrics.MetricStatistic
+Steeltoe.Management.OpenTelemetry.Metrics.MetricStatistic.ACTIVETASKS = 6 -> Steeltoe.Management.OpenTelemetry.Metrics.MetricStatistic
+Steeltoe.Management.OpenTelemetry.Metrics.MetricStatistic.COUNT = 2 -> Steeltoe.Management.OpenTelemetry.Metrics.MetricStatistic
+Steeltoe.Management.OpenTelemetry.Metrics.MetricStatistic.DURATION = 7 -> Steeltoe.Management.OpenTelemetry.Metrics.MetricStatistic
+Steeltoe.Management.OpenTelemetry.Metrics.MetricStatistic.MAX = 3 -> Steeltoe.Management.OpenTelemetry.Metrics.MetricStatistic
+Steeltoe.Management.OpenTelemetry.Metrics.MetricStatistic.TOTAL = 0 -> Steeltoe.Management.OpenTelemetry.Metrics.MetricStatistic
+Steeltoe.Management.OpenTelemetry.Metrics.MetricStatistic.TOTAL_TIME = 1 -> Steeltoe.Management.OpenTelemetry.Metrics.MetricStatistic
+Steeltoe.Management.OpenTelemetry.Metrics.MetricStatistic.UNKNOWN = 5 -> Steeltoe.Management.OpenTelemetry.Metrics.MetricStatistic
+Steeltoe.Management.OpenTelemetry.Metrics.MetricStatistic.VALUE = 4 -> Steeltoe.Management.OpenTelemetry.Metrics.MetricStatistic
+Steeltoe.Management.OpenTelemetry.Metrics.MetricTag
+Steeltoe.Management.OpenTelemetry.Metrics.MetricTag.MetricTag(string tag, System.Collections.Generic.ISet<string> values) -> void
+Steeltoe.Management.OpenTelemetry.Metrics.MetricTag.Tag.get -> string
+Steeltoe.Management.OpenTelemetry.Metrics.MetricTag.Values.get -> System.Collections.Generic.ISet<string>
+Steeltoe.Management.OpenTelemetry.Metrics.ViewRegistry
+Steeltoe.Management.OpenTelemetry.Metrics.ViewRegistry.AddView(string instrumentName, OpenTelemetry.Metrics.MetricStreamConfiguration viewConfig) -> void
+Steeltoe.Management.OpenTelemetry.Metrics.ViewRegistry.ViewRegistry() -> void
+Steeltoe.Management.OpenTelemetry.Metrics.ViewRegistry.Views.get -> System.Collections.Generic.List<System.Collections.Generic.KeyValuePair<string, OpenTelemetry.Metrics.MetricStreamConfiguration>>
+Steeltoe.Management.OpenTelemetry.OpenTelemetryMetrics
+Steeltoe.Management.OpenTelemetry.Trace.ITracingOptions
+Steeltoe.Management.OpenTelemetry.Trace.ITracingOptions.AlwaysSample.get -> bool
+Steeltoe.Management.OpenTelemetry.Trace.ITracingOptions.EgressIgnorePattern.get -> string
+Steeltoe.Management.OpenTelemetry.Trace.ITracingOptions.EnableGrpcAspNetCoreSupport.get -> bool
+Steeltoe.Management.OpenTelemetry.Trace.ITracingOptions.ExporterEndpoint.get -> System.Uri
+Steeltoe.Management.OpenTelemetry.Trace.ITracingOptions.IngressIgnorePattern.get -> string
+Steeltoe.Management.OpenTelemetry.Trace.ITracingOptions.MaxPayloadSizeInBytes.get -> int
+Steeltoe.Management.OpenTelemetry.Trace.ITracingOptions.Name.get -> string
+Steeltoe.Management.OpenTelemetry.Trace.ITracingOptions.NeverSample.get -> bool
+Steeltoe.Management.OpenTelemetry.Trace.ITracingOptions.PropagationType.get -> string
+Steeltoe.Management.OpenTelemetry.Trace.ITracingOptions.SingleB3Header.get -> bool
+Steeltoe.Management.OpenTelemetry.Trace.ITracingOptions.UseShortTraceIds.get -> bool

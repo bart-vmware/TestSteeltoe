@@ -1,0 +1,53 @@
+﻿const Steeltoe.CircuitBreaker.Hystrix.MetricsEventsCore.EventSources.HystrixMetricsEventSource.Keywords.Collapser = (System.Diagnostics.Tracing.EventKeywords)4 -> System.Diagnostics.Tracing.EventKeywords
+const Steeltoe.CircuitBreaker.Hystrix.MetricsEventsCore.EventSources.HystrixMetricsEventSource.Keywords.Command = (System.Diagnostics.Tracing.EventKeywords)1 -> System.Diagnostics.Tracing.EventKeywords
+const Steeltoe.CircuitBreaker.Hystrix.MetricsEventsCore.EventSources.HystrixMetricsEventSource.Keywords.ThreadPool = (System.Diagnostics.Tracing.EventKeywords)2 -> System.Diagnostics.Tracing.EventKeywords
+static Steeltoe.CircuitBreaker.Hystrix.HystrixApplicationBuilderExtensions.UseHystrixMetricsStream(this Microsoft.AspNetCore.Builder.IApplicationBuilder app) -> Microsoft.AspNetCore.Builder.IApplicationBuilder
+static Steeltoe.CircuitBreaker.Hystrix.HystrixServiceCollectionExtensions.AddHystrixConfigStream(this Microsoft.Extensions.DependencyInjection.IServiceCollection services) -> void
+static Steeltoe.CircuitBreaker.Hystrix.HystrixServiceCollectionExtensions.AddHystrixConfigStream(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config) -> void
+static Steeltoe.CircuitBreaker.Hystrix.HystrixServiceCollectionExtensions.AddHystrixMetricsEventSource(this Microsoft.Extensions.DependencyInjection.IServiceCollection services) -> void
+static Steeltoe.CircuitBreaker.Hystrix.HystrixServiceCollectionExtensions.AddHystrixMetricsStream(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config) -> void
+static Steeltoe.CircuitBreaker.Hystrix.HystrixServiceCollectionExtensions.AddHystrixMonitoringStreams(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config) -> void
+static Steeltoe.CircuitBreaker.Hystrix.HystrixServiceCollectionExtensions.AddHystrixRequestEventStream(this Microsoft.Extensions.DependencyInjection.IServiceCollection services) -> void
+static Steeltoe.CircuitBreaker.Hystrix.HystrixServiceCollectionExtensions.AddHystrixRequestEventStream(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config) -> void
+static Steeltoe.CircuitBreaker.Hystrix.HystrixServiceCollectionExtensions.AddHystrixUtilizationStream(this Microsoft.Extensions.DependencyInjection.IServiceCollection services) -> void
+static Steeltoe.CircuitBreaker.Hystrix.HystrixServiceCollectionExtensions.AddHystrixUtilizationStream(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config) -> void
+static Steeltoe.CircuitBreaker.Hystrix.MetricsEvents.CancellationTokenExtensions.GetAwaiter(this System.Threading.CancellationToken cancellationToken) -> Steeltoe.CircuitBreaker.Hystrix.MetricsEvents.CancellationTokenExtensions.CancellationTokenAwaiter
+static Steeltoe.CircuitBreaker.Hystrix.MetricsEventsCore.EventSources.HystrixMetricsEventSource.EventLogger.get -> Steeltoe.CircuitBreaker.Hystrix.MetricsEventsCore.EventSources.HystrixMetricsEventSource
+Steeltoe.CircuitBreaker.Hystrix.HystrixApplicationBuilderExtensions
+Steeltoe.CircuitBreaker.Hystrix.HystrixServiceCollectionExtensions
+Steeltoe.CircuitBreaker.Hystrix.MetricsEvents.CancellationTokenExtensions
+Steeltoe.CircuitBreaker.Hystrix.MetricsEvents.CancellationTokenExtensions.CancellationTokenAwaiter
+Steeltoe.CircuitBreaker.Hystrix.MetricsEvents.CancellationTokenExtensions.CancellationTokenAwaiter.CancellationTokenAwaiter(System.Threading.CancellationToken cancellationToken) -> void
+Steeltoe.CircuitBreaker.Hystrix.MetricsEvents.CancellationTokenExtensions.CancellationTokenAwaiter.GetResult() -> void
+Steeltoe.CircuitBreaker.Hystrix.MetricsEvents.CancellationTokenExtensions.CancellationTokenAwaiter.IsCompleted.get -> bool
+Steeltoe.CircuitBreaker.Hystrix.MetricsEvents.CancellationTokenExtensions.CancellationTokenAwaiter.OnCompleted(System.Action action) -> void
+Steeltoe.CircuitBreaker.Hystrix.MetricsEvents.Controllers.HystrixConfigStreamController
+Steeltoe.CircuitBreaker.Hystrix.MetricsEvents.Controllers.HystrixConfigStreamController.HystrixConfigStreamController(Steeltoe.CircuitBreaker.Hystrix.Config.HystrixConfigurationStream stream) -> void
+Steeltoe.CircuitBreaker.Hystrix.MetricsEvents.Controllers.HystrixConfigStreamController.StartConfigStream() -> System.Threading.Tasks.Task
+Steeltoe.CircuitBreaker.Hystrix.MetricsEvents.Controllers.HystrixMetricsStreamController
+Steeltoe.CircuitBreaker.Hystrix.MetricsEvents.Controllers.HystrixMetricsStreamController.HystrixMetricsStreamController(Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.HystrixDashboardStream stream) -> void
+Steeltoe.CircuitBreaker.Hystrix.MetricsEvents.Controllers.HystrixMetricsStreamController.StartMetricsStream() -> System.Threading.Tasks.Task
+Steeltoe.CircuitBreaker.Hystrix.MetricsEvents.Controllers.HystrixRequestEventStreamController
+Steeltoe.CircuitBreaker.Hystrix.MetricsEvents.Controllers.HystrixRequestEventStreamController.HystrixRequestEventStreamController(Steeltoe.CircuitBreaker.Hystrix.Metric.HystrixRequestEventsStream stream) -> void
+Steeltoe.CircuitBreaker.Hystrix.MetricsEvents.Controllers.HystrixRequestEventStreamController.StartRequestEventStream() -> System.Threading.Tasks.Task
+Steeltoe.CircuitBreaker.Hystrix.MetricsEvents.Controllers.HystrixStreamBaseController
+Steeltoe.CircuitBreaker.Hystrix.MetricsEvents.Controllers.HystrixStreamBaseController.HandleRequest() -> void
+Steeltoe.CircuitBreaker.Hystrix.MetricsEvents.Controllers.HystrixStreamBaseController.HystrixStreamBaseController(System.IObservable<string> observable) -> void
+Steeltoe.CircuitBreaker.Hystrix.MetricsEvents.Controllers.HystrixStreamBaseController.SampleStream.get -> System.IObservable<string>
+Steeltoe.CircuitBreaker.Hystrix.MetricsEvents.Controllers.HystrixStreamBaseController.SampleStream.set -> void
+Steeltoe.CircuitBreaker.Hystrix.MetricsEvents.Controllers.HystrixStreamBaseController.SampleSubscription.get -> System.IDisposable
+Steeltoe.CircuitBreaker.Hystrix.MetricsEvents.Controllers.HystrixStreamBaseController.SampleSubscription.set -> void
+Steeltoe.CircuitBreaker.Hystrix.MetricsEvents.Controllers.HystrixUtilizationStreamController
+Steeltoe.CircuitBreaker.Hystrix.MetricsEvents.Controllers.HystrixUtilizationStreamController.HystrixUtilizationStreamController(Steeltoe.CircuitBreaker.Hystrix.Metric.Sample.HystrixUtilizationStream stream) -> void
+Steeltoe.CircuitBreaker.Hystrix.MetricsEvents.Controllers.HystrixUtilizationStreamController.StartUtilizationStream() -> System.Threading.Tasks.Task
+Steeltoe.CircuitBreaker.Hystrix.MetricsEventsCore.EventSources.HystrixEventSourceService
+Steeltoe.CircuitBreaker.Hystrix.MetricsEventsCore.EventSources.HystrixEventSourceService.HystrixEventSourceService(Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.HystrixDashboardStream stream) -> void
+Steeltoe.CircuitBreaker.Hystrix.MetricsEventsCore.EventSources.HystrixEventSourceService.SampleSubscription.get -> System.IDisposable
+Steeltoe.CircuitBreaker.Hystrix.MetricsEventsCore.EventSources.HystrixEventSourceService.SampleSubscription.set -> void
+Steeltoe.CircuitBreaker.Hystrix.MetricsEventsCore.EventSources.HystrixEventSourceService.StartAsync(System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task
+Steeltoe.CircuitBreaker.Hystrix.MetricsEventsCore.EventSources.HystrixEventSourceService.StopAsync(System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task
+Steeltoe.CircuitBreaker.Hystrix.MetricsEventsCore.EventSources.HystrixEventSourceService.Stream.get -> Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.HystrixDashboardStream
+Steeltoe.CircuitBreaker.Hystrix.MetricsEventsCore.EventSources.HystrixMetricsEventSource
+Steeltoe.CircuitBreaker.Hystrix.MetricsEventsCore.EventSources.HystrixMetricsEventSource.CommandMetrics(string commandKey, string commandGroup, bool isCiruitBreakerOpen, long errorCount, long requestCount, int currentConcurrentExecutionCount, int latencyExecute_mean, int latencyTotal_mean, int reportingHosts, string threadPool) -> void
+Steeltoe.CircuitBreaker.Hystrix.MetricsEventsCore.EventSources.HystrixMetricsEventSource.Keywords
+Steeltoe.CircuitBreaker.Hystrix.MetricsEventsCore.EventSources.HystrixMetricsEventSource.Keywords.Keywords() -> void

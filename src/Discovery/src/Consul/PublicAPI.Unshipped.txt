@@ -1,0 +1,231 @@
+﻿const Steeltoe.Discovery.Consul.ConsulDiscoveryClientExtension.CONSUL_PREFIX = "consul" -> string
+const Steeltoe.Discovery.Consul.ConsulOptions.CONSUL_CONFIGURATION_PREFIX = "consul" -> string
+const Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.CONSUL_DISCOVERY_CONFIGURATION_PREFIX = "consul:discovery" -> string
+static Steeltoe.Discovery.Consul.ConsulClientFactory.CreateClient(Steeltoe.Discovery.Consul.ConsulOptions options) -> Consul.IConsulClient
+static Steeltoe.Discovery.Consul.ConsulDiscoveryClientBuilderExtensions.UseConsul(this Steeltoe.Discovery.Client.DiscoveryClientBuilder clientBuilder) -> Steeltoe.Discovery.Client.DiscoveryClientBuilder
+static Steeltoe.Discovery.Consul.ConsulPostConfigurer.UpdateDiscoveryOptions(Microsoft.Extensions.Configuration.IConfiguration config, Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions options, Steeltoe.Common.Net.InetOptions netOptions) -> void
+static Steeltoe.Discovery.Consul.ConsulPostConfigurer.ValidateConsulOptions(Steeltoe.Discovery.Consul.ConsulOptions options) -> void
+static Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryClient.EnsureAssemblyIsLoaded() -> void
+static Steeltoe.Discovery.Consul.Registry.ConsulRegistration.CreateRegistration(Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions options, Steeltoe.Common.IApplicationInstanceInfo applicationInfo) -> Steeltoe.Discovery.Consul.Registry.ConsulRegistration
+static Steeltoe.Discovery.Consul.Util.ConsulServerUtils.FindHost(Consul.ServiceEntry healthService) -> string
+static Steeltoe.Discovery.Consul.Util.ConsulServerUtils.FixIPv6Address(string address) -> string
+static Steeltoe.Discovery.Consul.Util.ConsulServerUtils.GetMetadata(Consul.ServiceEntry healthService) -> System.Collections.Generic.IDictionary<string, string>
+static Steeltoe.Discovery.Consul.Util.ConsulServerUtils.GetMetadata(System.Collections.Generic.IList<string> tags) -> System.Collections.Generic.IDictionary<string, string>
+static Steeltoe.Discovery.Consul.Util.DateTimeConversions.ToTimeSpan(int value, string unit) -> System.TimeSpan
+static Steeltoe.Discovery.Consul.Util.DateTimeConversions.ToTimeSpan(string time) -> System.TimeSpan
+Steeltoe.Discovery.Consul.ConsulClientFactory
+Steeltoe.Discovery.Consul.ConsulDiscoveryClientBuilderExtensions
+Steeltoe.Discovery.Consul.ConsulDiscoveryClientExtension
+Steeltoe.Discovery.Consul.ConsulDiscoveryClientExtension.ApplyServices(Microsoft.Extensions.DependencyInjection.IServiceCollection services) -> void
+Steeltoe.Discovery.Consul.ConsulDiscoveryClientExtension.ConsulDiscoveryClientExtension() -> void
+Steeltoe.Discovery.Consul.ConsulDiscoveryClientExtension.IsConfigured(Microsoft.Extensions.Configuration.IConfiguration configuration, Steeltoe.Connector.Services.IServiceInfo serviceInfo = null) -> bool
+Steeltoe.Discovery.Consul.ConsulOptions
+Steeltoe.Discovery.Consul.ConsulOptions.ConsulOptions() -> void
+Steeltoe.Discovery.Consul.ConsulOptions.Datacenter.get -> string
+Steeltoe.Discovery.Consul.ConsulOptions.Datacenter.set -> void
+Steeltoe.Discovery.Consul.ConsulOptions.Host.get -> string
+Steeltoe.Discovery.Consul.ConsulOptions.Host.set -> void
+Steeltoe.Discovery.Consul.ConsulOptions.Password.get -> string
+Steeltoe.Discovery.Consul.ConsulOptions.Password.set -> void
+Steeltoe.Discovery.Consul.ConsulOptions.Port.get -> int
+Steeltoe.Discovery.Consul.ConsulOptions.Port.set -> void
+Steeltoe.Discovery.Consul.ConsulOptions.Scheme.get -> string
+Steeltoe.Discovery.Consul.ConsulOptions.Scheme.set -> void
+Steeltoe.Discovery.Consul.ConsulOptions.Token.get -> string
+Steeltoe.Discovery.Consul.ConsulOptions.Token.set -> void
+Steeltoe.Discovery.Consul.ConsulOptions.Username.get -> string
+Steeltoe.Discovery.Consul.ConsulOptions.Username.set -> void
+Steeltoe.Discovery.Consul.ConsulOptions.WaitTime.get -> string
+Steeltoe.Discovery.Consul.ConsulOptions.WaitTime.set -> void
+Steeltoe.Discovery.Consul.ConsulPostConfigurer
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryClient
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryClient.ConsulDiscoveryClient(Consul.IConsulClient client, Microsoft.Extensions.Options.IOptionsMonitor<Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions> optionsMonitor, Steeltoe.Discovery.Consul.Registry.IConsulServiceRegistrar registrar = null, Microsoft.Extensions.Logging.ILogger<Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryClient> logger = null) -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryClient.ConsulDiscoveryClient(Consul.IConsulClient client, Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions options, Steeltoe.Discovery.Consul.Registry.IConsulServiceRegistrar registrar = null, Microsoft.Extensions.Logging.ILogger<Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryClient> logger = null) -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryClient.Description.get -> string
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryClient.Dispose() -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryClient.GetAllInstances(Consul.QueryOptions queryOptions = null) -> System.Collections.Generic.IList<Steeltoe.Common.Discovery.IServiceInstance>
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryClient.GetInstances(string serviceId) -> System.Collections.Generic.IList<Steeltoe.Common.Discovery.IServiceInstance>
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryClient.GetInstances(string serviceId, Consul.QueryOptions queryOptions = null) -> System.Collections.Generic.IList<Steeltoe.Common.Discovery.IServiceInstance>
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryClient.GetLocalServiceInstance() -> Steeltoe.Common.Discovery.IServiceInstance
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryClient.GetServices(Consul.QueryOptions queryOptions = null) -> System.Collections.Generic.IList<string>
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryClient.Services.get -> System.Collections.Generic.IList<string>
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryClient.ShutdownAsync() -> System.Threading.Tasks.Task
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryClient.~ConsulDiscoveryClient() -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.ApplyConfigUrls(System.Collections.Generic.List<System.Uri> addresses, string wildcard_hostname) -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.ApplyNetUtils() -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.CacheTTL.get -> int
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.CacheTTL.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.ConsulDiscoveryOptions() -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.DefaultQueryTag.get -> string
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.DefaultQueryTag.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.DefaultZoneMetadataName.get -> string
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.DefaultZoneMetadataName.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.Deregister.get -> bool
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.Deregister.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.Enabled.get -> bool
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.Enabled.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.FailFast.get -> bool
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.FailFast.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.HealthCheckCriticalTimeout.get -> string
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.HealthCheckCriticalTimeout.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.HealthCheckInterval.get -> string
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.HealthCheckInterval.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.HealthCheckPath.get -> string
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.HealthCheckPath.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.HealthCheckTimeout.get -> string
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.HealthCheckTimeout.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.HealthCheckTlsSkipVerify.get -> bool
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.HealthCheckTlsSkipVerify.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.HealthCheckUrl.get -> string
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.HealthCheckUrl.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.Heartbeat.get -> Steeltoe.Discovery.Consul.Discovery.ConsulHeartbeatOptions
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.Heartbeat.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.HostName.get -> string
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.HostName.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.InstanceGroup.get -> string
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.InstanceGroup.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.InstanceId.get -> string
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.InstanceId.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.InstanceZone.get -> string
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.InstanceZone.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.IpAddress.get -> string
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.IpAddress.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.IsHeartBeatEnabled.get -> bool
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.IsRetryEnabled.get -> bool
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.Metadata.get -> System.Collections.Generic.IDictionary<string, string>
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.Metadata.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.NetUtils.get -> Steeltoe.Common.Net.InetUtils
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.NetUtils.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.Port.get -> int
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.Port.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.PreferAgentAddress.get -> bool
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.PreferAgentAddress.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.PreferIpAddress.get -> bool
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.PreferIpAddress.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.QueryPassing.get -> bool
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.QueryPassing.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.Register.get -> bool
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.Register.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.RegisterHealthCheck.get -> bool
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.RegisterHealthCheck.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.Retry.get -> Steeltoe.Discovery.Consul.Discovery.ConsulRetryOptions
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.Retry.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.Scheme.get -> string
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.Scheme.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.ServiceName.get -> string
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.ServiceName.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.Tags.get -> System.Collections.Generic.IList<string>
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.Tags.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.TagsAsMetadata.get -> bool
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.TagsAsMetadata.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.UseAspNetCoreUrls.get -> bool
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.UseAspNetCoreUrls.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.UseNetUtils.get -> bool
+Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions.UseNetUtils.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulHealthContributor
+Steeltoe.Discovery.Consul.Discovery.ConsulHealthContributor.ConsulHealthContributor(Consul.IConsulClient client, Microsoft.Extensions.Options.IOptionsMonitor<Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions> optionsMonitor, Microsoft.Extensions.Logging.ILogger<Steeltoe.Discovery.Consul.Discovery.ConsulHealthContributor> logger = null) -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulHealthContributor.ConsulHealthContributor(Consul.IConsulClient client, Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions options, Microsoft.Extensions.Logging.ILogger<Steeltoe.Discovery.Consul.Discovery.ConsulHealthContributor> logger = null) -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulHealthContributor.Health() -> Steeltoe.Common.HealthChecks.HealthCheckResult
+Steeltoe.Discovery.Consul.Discovery.ConsulHealthContributor.Id.get -> string
+Steeltoe.Discovery.Consul.Discovery.ConsulHeartbeatOptions
+Steeltoe.Discovery.Consul.Discovery.ConsulHeartbeatOptions.ConsulHeartbeatOptions() -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulHeartbeatOptions.Enabled.get -> bool
+Steeltoe.Discovery.Consul.Discovery.ConsulHeartbeatOptions.Enabled.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulHeartbeatOptions.IntervalRatio.get -> double
+Steeltoe.Discovery.Consul.Discovery.ConsulHeartbeatOptions.IntervalRatio.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulHeartbeatOptions.Ttl.get -> string
+Steeltoe.Discovery.Consul.Discovery.ConsulHeartbeatOptions.TtlUnit.get -> string
+Steeltoe.Discovery.Consul.Discovery.ConsulHeartbeatOptions.TtlUnit.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulHeartbeatOptions.TtlValue.get -> int
+Steeltoe.Discovery.Consul.Discovery.ConsulHeartbeatOptions.TtlValue.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulRetryOptions
+Steeltoe.Discovery.Consul.Discovery.ConsulRetryOptions.ConsulRetryOptions() -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulRetryOptions.Enabled.get -> bool
+Steeltoe.Discovery.Consul.Discovery.ConsulRetryOptions.Enabled.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulRetryOptions.InitialInterval.get -> int
+Steeltoe.Discovery.Consul.Discovery.ConsulRetryOptions.InitialInterval.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulRetryOptions.MaxAttempts.get -> int
+Steeltoe.Discovery.Consul.Discovery.ConsulRetryOptions.MaxAttempts.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulRetryOptions.MaxInterval.get -> int
+Steeltoe.Discovery.Consul.Discovery.ConsulRetryOptions.MaxInterval.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulRetryOptions.Multiplier.get -> double
+Steeltoe.Discovery.Consul.Discovery.ConsulRetryOptions.Multiplier.set -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulServiceInstance
+Steeltoe.Discovery.Consul.Discovery.ConsulServiceInstance.ConsulServiceInstance(Consul.ServiceEntry serviceEntry) -> void
+Steeltoe.Discovery.Consul.Discovery.ConsulServiceInstance.Host.get -> string
+Steeltoe.Discovery.Consul.Discovery.ConsulServiceInstance.IsSecure.get -> bool
+Steeltoe.Discovery.Consul.Discovery.ConsulServiceInstance.Metadata.get -> System.Collections.Generic.IDictionary<string, string>
+Steeltoe.Discovery.Consul.Discovery.ConsulServiceInstance.Port.get -> int
+Steeltoe.Discovery.Consul.Discovery.ConsulServiceInstance.ServiceId.get -> string
+Steeltoe.Discovery.Consul.Discovery.ConsulServiceInstance.Tags.get -> string[]
+Steeltoe.Discovery.Consul.Discovery.ConsulServiceInstance.Uri.get -> System.Uri
+Steeltoe.Discovery.Consul.Discovery.IConsulDiscoveryClient
+Steeltoe.Discovery.Consul.Discovery.IConsulDiscoveryClient.GetAllInstances(Consul.QueryOptions queryOptions = null) -> System.Collections.Generic.IList<Steeltoe.Common.Discovery.IServiceInstance>
+Steeltoe.Discovery.Consul.Discovery.IConsulDiscoveryClient.GetInstances(string serviceId, Consul.QueryOptions queryOptions = null) -> System.Collections.Generic.IList<Steeltoe.Common.Discovery.IServiceInstance>
+Steeltoe.Discovery.Consul.Discovery.IConsulDiscoveryClient.GetServices(Consul.QueryOptions queryOptions = null) -> System.Collections.Generic.IList<string>
+Steeltoe.Discovery.Consul.Discovery.IScheduler
+Steeltoe.Discovery.Consul.Discovery.IScheduler.Add(string instanceId) -> void
+Steeltoe.Discovery.Consul.Discovery.IScheduler.Remove(string instanceId) -> void
+Steeltoe.Discovery.Consul.Discovery.TtlScheduler
+Steeltoe.Discovery.Consul.Discovery.TtlScheduler.Add(string instanceId) -> void
+Steeltoe.Discovery.Consul.Discovery.TtlScheduler.Dispose() -> void
+Steeltoe.Discovery.Consul.Discovery.TtlScheduler.Remove(string instanceId) -> void
+Steeltoe.Discovery.Consul.Discovery.TtlScheduler.TtlScheduler(Microsoft.Extensions.Options.IOptionsMonitor<Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions> optionsMonitor, Consul.IConsulClient client, Microsoft.Extensions.Logging.ILogger<Steeltoe.Discovery.Consul.Discovery.TtlScheduler> logger = null) -> void
+Steeltoe.Discovery.Consul.Discovery.TtlScheduler.TtlScheduler(Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions options, Consul.IConsulClient client, Microsoft.Extensions.Logging.ILogger<Steeltoe.Discovery.Consul.Discovery.TtlScheduler> logger = null) -> void
+Steeltoe.Discovery.Consul.Discovery.TtlScheduler.~TtlScheduler() -> void
+Steeltoe.Discovery.Consul.Registry.ConsulRegistration
+Steeltoe.Discovery.Consul.Registry.ConsulRegistration.ConsulRegistration(Consul.AgentServiceRegistration agentServiceRegistration, Microsoft.Extensions.Options.IOptionsMonitor<Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions> optionsMonitor) -> void
+Steeltoe.Discovery.Consul.Registry.ConsulRegistration.ConsulRegistration(Consul.AgentServiceRegistration agentServiceRegistration, Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions options) -> void
+Steeltoe.Discovery.Consul.Registry.ConsulRegistration.Host.get -> string
+Steeltoe.Discovery.Consul.Registry.ConsulRegistration.InstanceId.get -> string
+Steeltoe.Discovery.Consul.Registry.ConsulRegistration.IsSecure.get -> bool
+Steeltoe.Discovery.Consul.Registry.ConsulRegistration.Metadata.get -> System.Collections.Generic.IDictionary<string, string>
+Steeltoe.Discovery.Consul.Registry.ConsulRegistration.Port.get -> int
+Steeltoe.Discovery.Consul.Registry.ConsulRegistration.Service.get -> Consul.AgentServiceRegistration
+Steeltoe.Discovery.Consul.Registry.ConsulRegistration.ServiceId.get -> string
+Steeltoe.Discovery.Consul.Registry.ConsulRegistration.Tags.get -> string[]
+Steeltoe.Discovery.Consul.Registry.ConsulRegistration.Uri.get -> System.Uri
+Steeltoe.Discovery.Consul.Registry.ConsulServiceRegistrar
+Steeltoe.Discovery.Consul.Registry.ConsulServiceRegistrar.ConsulServiceRegistrar(Steeltoe.Discovery.Consul.Registry.IConsulServiceRegistry registry, Microsoft.Extensions.Options.IOptionsMonitor<Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions> optionsMonitor, Steeltoe.Discovery.Consul.Registry.IConsulRegistration registration, Microsoft.Extensions.Logging.ILogger<Steeltoe.Discovery.Consul.Registry.ConsulServiceRegistrar> logger = null) -> void
+Steeltoe.Discovery.Consul.Registry.ConsulServiceRegistrar.ConsulServiceRegistrar(Steeltoe.Discovery.Consul.Registry.IConsulServiceRegistry registry, Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions options, Steeltoe.Discovery.Consul.Registry.IConsulRegistration registration, Microsoft.Extensions.Logging.ILogger<Steeltoe.Discovery.Consul.Registry.ConsulServiceRegistrar> logger = null) -> void
+Steeltoe.Discovery.Consul.Registry.ConsulServiceRegistrar.Deregister() -> void
+Steeltoe.Discovery.Consul.Registry.ConsulServiceRegistrar.Dispose() -> void
+Steeltoe.Discovery.Consul.Registry.ConsulServiceRegistrar.Register() -> void
+Steeltoe.Discovery.Consul.Registry.ConsulServiceRegistrar.Registration.get -> Steeltoe.Discovery.Consul.Registry.IConsulRegistration
+Steeltoe.Discovery.Consul.Registry.ConsulServiceRegistrar.Start() -> void
+Steeltoe.Discovery.Consul.Registry.ConsulServiceRegistrar.~ConsulServiceRegistrar() -> void
+Steeltoe.Discovery.Consul.Registry.ConsulServiceRegistry
+Steeltoe.Discovery.Consul.Registry.ConsulServiceRegistry.ConsulServiceRegistry(Consul.IConsulClient client, Microsoft.Extensions.Options.IOptionsMonitor<Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions> optionsMonitor, Steeltoe.Discovery.Consul.Discovery.IScheduler scheduler = null, Microsoft.Extensions.Logging.ILogger<Steeltoe.Discovery.Consul.Registry.ConsulServiceRegistry> logger = null) -> void
+Steeltoe.Discovery.Consul.Registry.ConsulServiceRegistry.ConsulServiceRegistry(Consul.IConsulClient client, Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryOptions options, Steeltoe.Discovery.Consul.Discovery.IScheduler scheduler = null, Microsoft.Extensions.Logging.ILogger<Steeltoe.Discovery.Consul.Registry.ConsulServiceRegistry> logger = null) -> void
+Steeltoe.Discovery.Consul.Registry.ConsulServiceRegistry.Deregister(Steeltoe.Discovery.Consul.Registry.IConsulRegistration registration) -> void
+Steeltoe.Discovery.Consul.Registry.ConsulServiceRegistry.DeregisterAsync(Steeltoe.Discovery.Consul.Registry.IConsulRegistration registration) -> System.Threading.Tasks.Task
+Steeltoe.Discovery.Consul.Registry.ConsulServiceRegistry.Dispose() -> void
+Steeltoe.Discovery.Consul.Registry.ConsulServiceRegistry.GetStatus<S>(Steeltoe.Discovery.Consul.Registry.IConsulRegistration registration) -> S
+Steeltoe.Discovery.Consul.Registry.ConsulServiceRegistry.GetStatusAsync(Steeltoe.Discovery.Consul.Registry.IConsulRegistration registration) -> System.Threading.Tasks.Task<object>
+Steeltoe.Discovery.Consul.Registry.ConsulServiceRegistry.GetStatusAsyncInternal(Steeltoe.Discovery.Consul.Registry.IConsulRegistration registration) -> System.Threading.Tasks.Task<object>
+Steeltoe.Discovery.Consul.Registry.ConsulServiceRegistry.Register(Steeltoe.Discovery.Consul.Registry.IConsulRegistration registration) -> void
+Steeltoe.Discovery.Consul.Registry.ConsulServiceRegistry.RegisterAsync(Steeltoe.Discovery.Consul.Registry.IConsulRegistration registration) -> System.Threading.Tasks.Task
+Steeltoe.Discovery.Consul.Registry.ConsulServiceRegistry.SetStatus(Steeltoe.Discovery.Consul.Registry.IConsulRegistration registration, string status) -> void
+Steeltoe.Discovery.Consul.Registry.ConsulServiceRegistry.SetStatusAsync(Steeltoe.Discovery.Consul.Registry.IConsulRegistration registration, string status) -> System.Threading.Tasks.Task
+Steeltoe.Discovery.Consul.Registry.ConsulServiceRegistry.~ConsulServiceRegistry() -> void
+Steeltoe.Discovery.Consul.Registry.IConsulRegistration
+Steeltoe.Discovery.Consul.Registry.IConsulRegistration.InstanceId.get -> string
+Steeltoe.Discovery.Consul.Registry.IConsulRegistration.Service.get -> Consul.AgentServiceRegistration
+Steeltoe.Discovery.Consul.Registry.IConsulServiceRegistrar
+Steeltoe.Discovery.Consul.Registry.IConsulServiceRegistrar.Registration.get -> Steeltoe.Discovery.Consul.Registry.IConsulRegistration
+Steeltoe.Discovery.Consul.Registry.IConsulServiceRegistry
+Steeltoe.Discovery.Consul.Registry.IConsulServiceRegistry.DeregisterAsync(Steeltoe.Discovery.Consul.Registry.IConsulRegistration registration) -> System.Threading.Tasks.Task
+Steeltoe.Discovery.Consul.Registry.IConsulServiceRegistry.GetStatusAsync(Steeltoe.Discovery.Consul.Registry.IConsulRegistration registration) -> System.Threading.Tasks.Task<object>
+Steeltoe.Discovery.Consul.Registry.IConsulServiceRegistry.RegisterAsync(Steeltoe.Discovery.Consul.Registry.IConsulRegistration registration) -> System.Threading.Tasks.Task
+Steeltoe.Discovery.Consul.Registry.IConsulServiceRegistry.SetStatusAsync(Steeltoe.Discovery.Consul.Registry.IConsulRegistration registration, string status) -> System.Threading.Tasks.Task
+Steeltoe.Discovery.Consul.Registry.IServiceRegistrar
+Steeltoe.Discovery.Consul.Registry.IServiceRegistrar.Deregister() -> void
+Steeltoe.Discovery.Consul.Registry.IServiceRegistrar.Register() -> void
+Steeltoe.Discovery.Consul.Registry.IServiceRegistrar.Start() -> void
+Steeltoe.Discovery.Consul.Util.ConsulServerUtils
+Steeltoe.Discovery.Consul.Util.DateTimeConversions
+virtual Steeltoe.Discovery.Consul.Discovery.ConsulDiscoveryClient.Dispose(bool disposing) -> void
+virtual Steeltoe.Discovery.Consul.Discovery.TtlScheduler.Dispose(bool disposing) -> void
+virtual Steeltoe.Discovery.Consul.Registry.ConsulServiceRegistrar.Dispose(bool disposing) -> void
+virtual Steeltoe.Discovery.Consul.Registry.ConsulServiceRegistry.Dispose(bool disposing) -> void

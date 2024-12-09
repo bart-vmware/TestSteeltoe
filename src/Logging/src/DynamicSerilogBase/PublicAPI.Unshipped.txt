@@ -1,0 +1,42 @@
+﻿static Steeltoe.Extensions.Logging.DynamicSerilog.SerilogHostBuilderExtensions.AddDynamicSerilog(this Microsoft.Extensions.Hosting.IHostBuilder hostBuilder, System.Action<Microsoft.Extensions.Hosting.HostBuilderContext, Serilog.LoggerConfiguration> configureLogger = null, bool preserveStaticLogger = false, bool preserveDefaultConsole = false) -> Microsoft.Extensions.Hosting.IHostBuilder
+static Steeltoe.Extensions.Logging.DynamicSerilog.SerilogHostBuilderExtensions.UseSerilogDynamicConsole(this Microsoft.Extensions.Hosting.IHostBuilder hostBuilder, System.Action<Microsoft.Extensions.Hosting.HostBuilderContext, Serilog.LoggerConfiguration> configureLogger = null, bool preserveStaticLogger = false) -> Microsoft.Extensions.Hosting.IHostBuilder
+static Steeltoe.Extensions.Logging.DynamicSerilog.SerilogLoggingBuilderExtensions.AddDynamicSerilog(this Microsoft.Extensions.Logging.ILoggingBuilder builder, bool preserveDefaultConsole = false) -> Microsoft.Extensions.Logging.ILoggingBuilder
+static Steeltoe.Extensions.Logging.DynamicSerilog.SerilogLoggingBuilderExtensions.AddDynamicSerilog(this Microsoft.Extensions.Logging.ILoggingBuilder builder, Serilog.LoggerConfiguration loggerConfiguration, bool preserveStaticLogger, bool preserveDefaultConsole = false) -> Microsoft.Extensions.Logging.ILoggingBuilder
+static Steeltoe.Extensions.Logging.DynamicSerilog.SerilogLoggingBuilderExtensions.AddDynamicSerilog(this Microsoft.Extensions.Logging.ILoggingBuilder builder, Serilog.LoggerConfiguration serilogConfiguration, bool preserveDefaultConsole = false) -> Microsoft.Extensions.Logging.ILoggingBuilder
+static Steeltoe.Extensions.Logging.DynamicSerilog.SerilogLoggingBuilderExtensions.AddSerilogDynamicConsole(this Microsoft.Extensions.Logging.ILoggingBuilder builder) -> Microsoft.Extensions.Logging.ILoggingBuilder
+static Steeltoe.Extensions.Logging.DynamicSerilog.SerilogLoggingBuilderExtensions.AddSerilogDynamicConsole(this Microsoft.Extensions.Logging.ILoggingBuilder builder, Serilog.LoggerConfiguration loggerConfiguration, bool preserveStaticLogger = false) -> Microsoft.Extensions.Logging.ILoggingBuilder
+Steeltoe.Extensions.Logging.DynamicSerilog.ISerilogOptions
+Steeltoe.Extensions.Logging.DynamicSerilog.ISerilogOptions.ConfigPath.get -> string
+Steeltoe.Extensions.Logging.DynamicSerilog.ISerilogOptions.FullnameExclusions.get -> System.Collections.Generic.IEnumerable<string>
+Steeltoe.Extensions.Logging.DynamicSerilog.ISerilogOptions.MinimumLevel.get -> Steeltoe.Extensions.Logging.DynamicSerilog.MinimumLevel
+Steeltoe.Extensions.Logging.DynamicSerilog.ISerilogOptions.MinimumLevel.set -> void
+Steeltoe.Extensions.Logging.DynamicSerilog.ISerilogOptions.SubloggerConfigKeyExclusions.get -> System.Collections.Generic.IEnumerable<string>
+Steeltoe.Extensions.Logging.DynamicSerilog.ISerilogOptions.SubloggerConfigKeyExclusions.set -> void
+Steeltoe.Extensions.Logging.DynamicSerilog.MinimumLevel
+Steeltoe.Extensions.Logging.DynamicSerilog.MinimumLevel.Default.get -> Serilog.Events.LogEventLevel
+Steeltoe.Extensions.Logging.DynamicSerilog.MinimumLevel.Default.set -> void
+Steeltoe.Extensions.Logging.DynamicSerilog.MinimumLevel.MinimumLevel() -> void
+Steeltoe.Extensions.Logging.DynamicSerilog.MinimumLevel.Override.get -> System.Collections.Generic.Dictionary<string, Serilog.Events.LogEventLevel>
+Steeltoe.Extensions.Logging.DynamicSerilog.MinimumLevel.Override.set -> void
+Steeltoe.Extensions.Logging.DynamicSerilog.SerilogDynamicLoggerFactory
+Steeltoe.Extensions.Logging.DynamicSerilog.SerilogDynamicLoggerFactory.AddProvider(Microsoft.Extensions.Logging.ILoggerProvider provider) -> void
+Steeltoe.Extensions.Logging.DynamicSerilog.SerilogDynamicLoggerFactory.CreateLogger(string categoryName) -> Microsoft.Extensions.Logging.ILogger
+Steeltoe.Extensions.Logging.DynamicSerilog.SerilogDynamicLoggerFactory.Dispose() -> void
+Steeltoe.Extensions.Logging.DynamicSerilog.SerilogDynamicLoggerFactory.SerilogDynamicLoggerFactory(Steeltoe.Extensions.Logging.IDynamicLoggerProvider provider) -> void
+Steeltoe.Extensions.Logging.DynamicSerilog.SerilogDynamicLoggerFactory.~SerilogDynamicLoggerFactory() -> void
+Steeltoe.Extensions.Logging.DynamicSerilog.SerilogDynamicProvider
+Steeltoe.Extensions.Logging.DynamicSerilog.SerilogDynamicProvider.SerilogDynamicProvider(Microsoft.Extensions.Options.IOptionsMonitor<Steeltoe.Extensions.Logging.DynamicSerilog.SerilogOptions> serilogOptionsMonitor, System.Collections.Generic.IEnumerable<Steeltoe.Extensions.Logging.IDynamicMessageProcessor> messageProcessors = null) -> void
+Steeltoe.Extensions.Logging.DynamicSerilog.SerilogHostBuilderExtensions
+Steeltoe.Extensions.Logging.DynamicSerilog.SerilogLoggingBuilderExtensions
+Steeltoe.Extensions.Logging.DynamicSerilog.SerilogOptions
+Steeltoe.Extensions.Logging.DynamicSerilog.SerilogOptions.ConfigPath.get -> string
+Steeltoe.Extensions.Logging.DynamicSerilog.SerilogOptions.FullnameExclusions.get -> System.Collections.Generic.IEnumerable<string>
+Steeltoe.Extensions.Logging.DynamicSerilog.SerilogOptions.GetSerilogConfiguration() -> Serilog.LoggerConfiguration
+Steeltoe.Extensions.Logging.DynamicSerilog.SerilogOptions.MinimumLevel.get -> Steeltoe.Extensions.Logging.DynamicSerilog.MinimumLevel
+Steeltoe.Extensions.Logging.DynamicSerilog.SerilogOptions.MinimumLevel.set -> void
+Steeltoe.Extensions.Logging.DynamicSerilog.SerilogOptions.SerilogOptions() -> void
+Steeltoe.Extensions.Logging.DynamicSerilog.SerilogOptions.SetSerilogOptions(Microsoft.Extensions.Configuration.IConfiguration configuration) -> void
+Steeltoe.Extensions.Logging.DynamicSerilog.SerilogOptions.SetSerilogOptions(Serilog.LoggerConfiguration loggerConfiguration) -> void
+Steeltoe.Extensions.Logging.DynamicSerilog.SerilogOptions.SubloggerConfigKeyExclusions.get -> System.Collections.Generic.IEnumerable<string>
+Steeltoe.Extensions.Logging.DynamicSerilog.SerilogOptions.SubloggerConfigKeyExclusions.set -> void
+virtual Steeltoe.Extensions.Logging.DynamicSerilog.SerilogDynamicLoggerFactory.Dispose(bool disposing) -> void

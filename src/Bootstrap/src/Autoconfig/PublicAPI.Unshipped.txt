@@ -1,0 +1,94 @@
+﻿const Steeltoe.Bootstrap.Autoconfig.SteeltoeAssemblies.Steeltoe_CircuitBreaker_HystrixCore = "Steeltoe.CircuitBreaker.HystrixCore" -> string
+const Steeltoe.Bootstrap.Autoconfig.SteeltoeAssemblies.Steeltoe_CircuitBreaker_Hystrix_MetricsEventsCore = "Steeltoe.CircuitBreaker.Hystrix.MetricsEventsCore" -> string
+const Steeltoe.Bootstrap.Autoconfig.SteeltoeAssemblies.Steeltoe_CircuitBreaker_Hystrix_MetricsStreamCore = "Steeltoe.CircuitBreaker.Hystrix.MetricsStreamCore" -> string
+const Steeltoe.Bootstrap.Autoconfig.SteeltoeAssemblies.Steeltoe_Connector_ConnectorCore = "Steeltoe.Connector.ConnectorCore" -> string
+const Steeltoe.Bootstrap.Autoconfig.SteeltoeAssemblies.Steeltoe_Connector_EF6Core = "Steeltoe.Connector.EF6Core" -> string
+const Steeltoe.Bootstrap.Autoconfig.SteeltoeAssemblies.Steeltoe_Connector_EFCore = "Steeltoe.Connector.EFCore" -> string
+const Steeltoe.Bootstrap.Autoconfig.SteeltoeAssemblies.Steeltoe_Discovery_ClientBase = "Steeltoe.Discovery.ClientBase" -> string
+const Steeltoe.Bootstrap.Autoconfig.SteeltoeAssemblies.Steeltoe_Discovery_ClientCore = "Steeltoe.Discovery.ClientCore" -> string
+const Steeltoe.Bootstrap.Autoconfig.SteeltoeAssemblies.Steeltoe_Extensions_Configuration_CloudFoundryBase = "Steeltoe.Extensions.Configuration.CloudFoundryBase" -> string
+const Steeltoe.Bootstrap.Autoconfig.SteeltoeAssemblies.Steeltoe_Extensions_Configuration_CloudFoundryCore = "Steeltoe.Extensions.Configuration.CloudFoundryCore" -> string
+const Steeltoe.Bootstrap.Autoconfig.SteeltoeAssemblies.Steeltoe_Extensions_Configuration_ConfigServerBase = "Steeltoe.Extensions.Configuration.ConfigServerBase" -> string
+const Steeltoe.Bootstrap.Autoconfig.SteeltoeAssemblies.Steeltoe_Extensions_Configuration_ConfigServerCore = "Steeltoe.Extensions.Configuration.ConfigServerCore" -> string
+const Steeltoe.Bootstrap.Autoconfig.SteeltoeAssemblies.Steeltoe_Extensions_Configuration_KubernetesBase = "Steeltoe.Extensions.Configuration.KubernetesBase" -> string
+const Steeltoe.Bootstrap.Autoconfig.SteeltoeAssemblies.Steeltoe_Extensions_Configuration_KubernetesCore = "Steeltoe.Extensions.Configuration.KubernetesCore" -> string
+const Steeltoe.Bootstrap.Autoconfig.SteeltoeAssemblies.Steeltoe_Extensions_Configuration_PlaceholderBase = "Steeltoe.Extensions.Configuration.PlaceholderBase" -> string
+const Steeltoe.Bootstrap.Autoconfig.SteeltoeAssemblies.Steeltoe_Extensions_Configuration_PlaceholderCore = "Steeltoe.Extensions.Configuration.PlaceholderCore" -> string
+const Steeltoe.Bootstrap.Autoconfig.SteeltoeAssemblies.Steeltoe_Extensions_Configuration_RandomValueBase = "Steeltoe.Extensions.Configuration.RandomValueBase" -> string
+const Steeltoe.Bootstrap.Autoconfig.SteeltoeAssemblies.Steeltoe_Extensions_Logging_DynamicLogger = "Steeltoe.Extensions.Logging.DynamicLogger" -> string
+const Steeltoe.Bootstrap.Autoconfig.SteeltoeAssemblies.Steeltoe_Extensions_Logging_DynamicSerilogCore = "Steeltoe.Extensions.Logging.DynamicSerilogCore" -> string
+const Steeltoe.Bootstrap.Autoconfig.SteeltoeAssemblies.Steeltoe_Management_CloudFoundryCore = "Steeltoe.Management.CloudFoundryCore" -> string
+const Steeltoe.Bootstrap.Autoconfig.SteeltoeAssemblies.Steeltoe_Management_EndpointCore = "Steeltoe.Management.EndpointCore" -> string
+const Steeltoe.Bootstrap.Autoconfig.SteeltoeAssemblies.Steeltoe_Management_KubernetesCore = "Steeltoe.Management.KubernetesCore" -> string
+const Steeltoe.Bootstrap.Autoconfig.SteeltoeAssemblies.Steeltoe_Management_TaskCore = "Steeltoe.Management.TaskCore" -> string
+const Steeltoe.Bootstrap.Autoconfig.SteeltoeAssemblies.Steeltoe_Management_TracingBase = "Steeltoe.Management.TracingBase" -> string
+const Steeltoe.Bootstrap.Autoconfig.SteeltoeAssemblies.Steeltoe_Management_TracingCore = "Steeltoe.Management.TracingCore" -> string
+const Steeltoe.Bootstrap.Autoconfig.SteeltoeAssemblies.Steeltoe_Security_Authentication_CloudFoundryCore = "Steeltoe.Security.Authentication.CloudFoundryCore" -> string
+const Steeltoe.Bootstrap.Autoconfig.SteeltoeAssemblies.Steeltoe_Security_Authentication_MtlsCore = "Steeltoe.Security.Authentication.MtlsCore" -> string
+const Steeltoe.Bootstrap.Autoconfig.SteeltoeAssemblies.Steeltoe_Security_DataProtection_CredHubCore = "Steeltoe.Security.DataProtection.CredHubCore" -> string
+const Steeltoe.Bootstrap.Autoconfig.SteeltoeAssemblies.Steeltoe_Security_DataProtection_RedisCore = "Steeltoe.Security.DataProtection.RedisCore" -> string
+static Steeltoe.Bootstrap.Autoconfig.HostBuilderExtensions.AddSteeltoe(this Microsoft.Extensions.Hosting.IHostBuilder hostBuilder, System.Collections.Generic.IEnumerable<string> exclusions = null, Microsoft.Extensions.Logging.ILoggerFactory loggerFactory = null) -> Microsoft.Extensions.Hosting.IHostBuilder
+static Steeltoe.Bootstrap.Autoconfig.WebApplicationBuilderExtensions.AddSteeltoe(this Microsoft.AspNetCore.Builder.WebApplicationBuilder webApplicationBuilder, System.Collections.Generic.IEnumerable<string> exclusions = null, Microsoft.Extensions.Logging.ILoggerFactory loggerFactory = null) -> Microsoft.AspNetCore.Builder.WebApplicationBuilder
+static Steeltoe.Bootstrap.Autoconfig.WebHostBuilderExtensions.AddSteeltoe(this Microsoft.AspNetCore.Hosting.IWebHostBuilder hostBuilder, System.Collections.Generic.IEnumerable<string> exclusions = null, Microsoft.Extensions.Logging.ILoggerFactory loggerFactory = null) -> Microsoft.AspNetCore.Hosting.IWebHostBuilder
+static Steeltoe.Connector.CosmosDb.CosmosDbTypeLocator.Assemblies.get -> string[]
+static Steeltoe.Connector.CosmosDb.CosmosDbTypeLocator.ClientOptionsTypeNames.get -> string[]
+static Steeltoe.Connector.CosmosDb.CosmosDbTypeLocator.ConnectionTypeNames.get -> string[]
+static Steeltoe.Connector.CosmosDb.CosmosDbTypeLocator.CosmosClient.get -> System.Type
+static Steeltoe.Connector.CosmosDb.CosmosDbTypeLocator.CosmosClientOptions.get -> System.Type
+static Steeltoe.Connector.MongoDb.MongoDbTypeLocator.Assemblies.get -> string[]
+static Steeltoe.Connector.MongoDb.MongoDbTypeLocator.ConnectionInterfaceTypeNames.get -> string[]
+static Steeltoe.Connector.MongoDb.MongoDbTypeLocator.ConnectionTypeNames.get -> string[]
+static Steeltoe.Connector.MongoDb.MongoDbTypeLocator.IMongoClient.get -> System.Type
+static Steeltoe.Connector.MongoDb.MongoDbTypeLocator.ListDatabasesMethod.get -> System.Reflection.MethodInfo
+static Steeltoe.Connector.MongoDb.MongoDbTypeLocator.MongoClient.get -> System.Type
+static Steeltoe.Connector.MongoDb.MongoDbTypeLocator.MongoConnectionInfo.get -> string[]
+static Steeltoe.Connector.MongoDb.MongoDbTypeLocator.MongoUrl.get -> System.Type
+static Steeltoe.Connector.MySql.MySqlTypeLocator.Assemblies.get -> string[]
+static Steeltoe.Connector.MySql.MySqlTypeLocator.ConnectionTypeNames.get -> string[]
+static Steeltoe.Connector.MySql.MySqlTypeLocator.MySqlConnection.get -> System.Type
+static Steeltoe.Connector.Oracle.OracleTypeLocator.Assemblies.get -> string[]
+static Steeltoe.Connector.Oracle.OracleTypeLocator.ConnectionTypeNames.get -> string[]
+static Steeltoe.Connector.Oracle.OracleTypeLocator.OracleConnection.get -> System.Type
+static Steeltoe.Connector.PostgreSql.PostgreSqlTypeLocator.Assemblies.get -> string[]
+static Steeltoe.Connector.PostgreSql.PostgreSqlTypeLocator.ConnectionTypeNames.get -> string[]
+static Steeltoe.Connector.PostgreSql.PostgreSqlTypeLocator.NpgsqlConnection.get -> System.Type
+static Steeltoe.Connector.RabbitMQ.RabbitMQTypeLocator.Assemblies.get -> string[]
+static Steeltoe.Connector.RabbitMQ.RabbitMQTypeLocator.CloseConnectionMethod.get -> System.Reflection.MethodInfo
+static Steeltoe.Connector.RabbitMQ.RabbitMQTypeLocator.ConnectionFactory.get -> System.Type
+static Steeltoe.Connector.RabbitMQ.RabbitMQTypeLocator.ConnectionImplementationTypeNames.get -> string[]
+static Steeltoe.Connector.RabbitMQ.RabbitMQTypeLocator.ConnectionInterfaceTypeNames.get -> string[]
+static Steeltoe.Connector.RabbitMQ.RabbitMQTypeLocator.CreateConnectionMethod.get -> System.Reflection.MethodInfo
+static Steeltoe.Connector.RabbitMQ.RabbitMQTypeLocator.IConnection.get -> System.Type
+static Steeltoe.Connector.RabbitMQ.RabbitMQTypeLocator.IConnectionFactory.get -> System.Type
+static Steeltoe.Connector.Redis.RedisTypeLocator.MicrosoftAssemblies.get -> string[]
+static Steeltoe.Connector.Redis.RedisTypeLocator.MicrosoftImplementation.get -> System.Type
+static Steeltoe.Connector.Redis.RedisTypeLocator.MicrosoftImplementationTypeNames.get -> string[]
+static Steeltoe.Connector.Redis.RedisTypeLocator.MicrosoftInterface.get -> System.Type
+static Steeltoe.Connector.Redis.RedisTypeLocator.MicrosoftInterfaceTypeNames.get -> string[]
+static Steeltoe.Connector.Redis.RedisTypeLocator.MicrosoftOptionNames.get -> string[]
+static Steeltoe.Connector.Redis.RedisTypeLocator.MicrosoftOptions.get -> System.Type
+static Steeltoe.Connector.Redis.RedisTypeLocator.StackExchangeAssemblies.get -> string[]
+static Steeltoe.Connector.Redis.RedisTypeLocator.StackExchangeCommandFlagsNames.get -> System.Type
+static Steeltoe.Connector.Redis.RedisTypeLocator.StackExchangeCommandFlagsNamesValue.get -> string[]
+static Steeltoe.Connector.Redis.RedisTypeLocator.StackExchangeImplementation.get -> System.Type
+static Steeltoe.Connector.Redis.RedisTypeLocator.StackExchangeImplementationTypeNames.get -> string[]
+static Steeltoe.Connector.Redis.RedisTypeLocator.StackExchangeInitializer.get -> System.Reflection.MethodInfo
+static Steeltoe.Connector.Redis.RedisTypeLocator.StackExchangeInterface.get -> System.Type
+static Steeltoe.Connector.Redis.RedisTypeLocator.StackExchangeInterfaceTypeNames.get -> string[]
+static Steeltoe.Connector.Redis.RedisTypeLocator.StackExchangeOptionNames.get -> string[]
+static Steeltoe.Connector.Redis.RedisTypeLocator.StackExchangeOptions.get -> System.Type
+static Steeltoe.Connector.SqlServer.SqlServerTypeLocator.Assemblies.get -> string[]
+static Steeltoe.Connector.SqlServer.SqlServerTypeLocator.ConnectionTypeNames.get -> string[]
+static Steeltoe.Connector.SqlServer.SqlServerTypeLocator.SqlConnection.get -> System.Type
+Steeltoe.Bootstrap.Autoconfig.HostBuilderExtensions
+Steeltoe.Bootstrap.Autoconfig.SteeltoeAssemblies
+Steeltoe.Bootstrap.Autoconfig.WebApplicationBuilderExtensions
+Steeltoe.Bootstrap.Autoconfig.WebHostBuilderExtensions
+Steeltoe.Connector.CosmosDb.CosmosDbTypeLocator
+Steeltoe.Connector.MongoDb.MongoDbTypeLocator
+Steeltoe.Connector.MySql.MySqlTypeLocator
+Steeltoe.Connector.Oracle.OracleTypeLocator
+Steeltoe.Connector.PostgreSql.PostgreSqlTypeLocator
+Steeltoe.Connector.RabbitMQ.RabbitMQTypeLocator
+Steeltoe.Connector.Redis.RedisTypeLocator
+Steeltoe.Connector.SqlServer.SqlServerTypeLocator

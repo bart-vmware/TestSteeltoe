@@ -1,0 +1,15 @@
+﻿static Steeltoe.Security.Authentication.Mtls.CertificateApplicationBuilderExtensions.UseCertificateRotation(this Microsoft.AspNetCore.Builder.IApplicationBuilder applicationBuilder) -> Microsoft.AspNetCore.Builder.IApplicationBuilder
+static Steeltoe.Security.Authentication.Mtls.CertificateAuthenticationBuilderExtensions.AddMutualTls(this Microsoft.AspNetCore.Authentication.AuthenticationBuilder builder) -> Microsoft.AspNetCore.Authentication.AuthenticationBuilder
+static Steeltoe.Security.Authentication.Mtls.CertificateAuthenticationBuilderExtensions.AddMutualTls(this Microsoft.AspNetCore.Authentication.AuthenticationBuilder builder, string authenticationScheme) -> Microsoft.AspNetCore.Authentication.AuthenticationBuilder
+static Steeltoe.Security.Authentication.Mtls.CertificateAuthenticationBuilderExtensions.AddMutualTls(this Microsoft.AspNetCore.Authentication.AuthenticationBuilder builder, string authenticationScheme, System.Action<Steeltoe.Security.Authentication.Mtls.MutualTlsAuthenticationOptions> configureOptions) -> Microsoft.AspNetCore.Authentication.AuthenticationBuilder
+static Steeltoe.Security.Authentication.Mtls.CertificateAuthenticationBuilderExtensions.AddMutualTls(this Microsoft.AspNetCore.Authentication.AuthenticationBuilder builder, System.Action<Steeltoe.Security.Authentication.Mtls.MutualTlsAuthenticationOptions> configureOptions) -> Microsoft.AspNetCore.Authentication.AuthenticationBuilder
+Steeltoe.Security.Authentication.Mtls.CertificateApplicationBuilderExtensions
+Steeltoe.Security.Authentication.Mtls.CertificateAuthenticationBuilderExtensions
+Steeltoe.Security.Authentication.Mtls.CertificateRotationHostedService
+Steeltoe.Security.Authentication.Mtls.CertificateRotationHostedService.CertificateRotationHostedService(Steeltoe.Common.Security.ICertificateRotationService certificateRotationService) -> void
+Steeltoe.Security.Authentication.Mtls.CertificateRotationHostedService.StartAsync(System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task
+Steeltoe.Security.Authentication.Mtls.CertificateRotationHostedService.StopAsync(System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task
+Steeltoe.Security.Authentication.Mtls.MutualTlsAuthenticationOptions
+Steeltoe.Security.Authentication.Mtls.MutualTlsAuthenticationOptions.IssuerChain.get -> System.Collections.Generic.List<System.Security.Cryptography.X509Certificates.X509Certificate2>
+Steeltoe.Security.Authentication.Mtls.MutualTlsAuthenticationOptions.IssuerChain.set -> void
+Steeltoe.Security.Authentication.Mtls.MutualTlsAuthenticationOptions.MutualTlsAuthenticationOptions() -> void

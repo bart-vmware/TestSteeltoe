@@ -1,0 +1,38 @@
+﻿abstract Steeltoe.Common.Utils.IO.TempPath.Dispose(bool disposing) -> void
+const Steeltoe.Common.Utils.IO.Sandbox.DefaultPrefix = "Sandbox-" -> string
+override Steeltoe.Common.Utils.IO.TempDirectory.Dispose(bool disposing) -> void
+override Steeltoe.Common.Utils.IO.TempDirectory.InitializePath() -> void
+override Steeltoe.Common.Utils.IO.TempFile.Dispose(bool disposing) -> void
+override Steeltoe.Common.Utils.IO.TempFile.InitializePath() -> void
+Steeltoe.Common.Utils.Diagnostics.CommandException
+Steeltoe.Common.Utils.Diagnostics.CommandException.CommandException(string message) -> void
+Steeltoe.Common.Utils.Diagnostics.CommandException.CommandException(string message, System.Exception innerException) -> void
+Steeltoe.Common.Utils.Diagnostics.CommandExecutor
+Steeltoe.Common.Utils.Diagnostics.CommandExecutor.CommandExecutor(Microsoft.Extensions.Logging.ILogger<Steeltoe.Common.Utils.Diagnostics.CommandExecutor> logger = null) -> void
+Steeltoe.Common.Utils.Diagnostics.CommandExecutor.ExecuteAsync(string command, string workingDirectory = null, int timeout = -1) -> System.Threading.Tasks.Task<Steeltoe.Common.Utils.Diagnostics.CommandResult>
+Steeltoe.Common.Utils.Diagnostics.CommandResult
+Steeltoe.Common.Utils.Diagnostics.CommandResult.CommandResult() -> void
+Steeltoe.Common.Utils.Diagnostics.CommandResult.Error.get -> string
+Steeltoe.Common.Utils.Diagnostics.CommandResult.Error.set -> void
+Steeltoe.Common.Utils.Diagnostics.CommandResult.ExitCode.get -> int
+Steeltoe.Common.Utils.Diagnostics.CommandResult.ExitCode.set -> void
+Steeltoe.Common.Utils.Diagnostics.CommandResult.Output.get -> string
+Steeltoe.Common.Utils.Diagnostics.CommandResult.Output.set -> void
+Steeltoe.Common.Utils.Diagnostics.ICommandExecutor
+Steeltoe.Common.Utils.Diagnostics.ICommandExecutor.ExecuteAsync(string command, string workingDirectory = null, int timeout = -1) -> System.Threading.Tasks.Task<Steeltoe.Common.Utils.Diagnostics.CommandResult>
+Steeltoe.Common.Utils.IO.Sandbox
+Steeltoe.Common.Utils.IO.Sandbox.CreateDirectory(string path) -> string
+Steeltoe.Common.Utils.IO.Sandbox.CreateFile(string path, string text = "") -> string
+Steeltoe.Common.Utils.IO.Sandbox.ResolvePath(string path) -> string
+Steeltoe.Common.Utils.IO.Sandbox.Sandbox(string name = "Sandbox-") -> void
+Steeltoe.Common.Utils.IO.TempDirectory
+Steeltoe.Common.Utils.IO.TempDirectory.TempDirectory(string prefix = null) -> void
+Steeltoe.Common.Utils.IO.TempFile
+Steeltoe.Common.Utils.IO.TempFile.TempFile(string prefix = null) -> void
+Steeltoe.Common.Utils.IO.TempPath
+Steeltoe.Common.Utils.IO.TempPath.Dispose() -> void
+Steeltoe.Common.Utils.IO.TempPath.FullPath.get -> string
+Steeltoe.Common.Utils.IO.TempPath.Name.get -> string
+Steeltoe.Common.Utils.IO.TempPath.TempPath(string prefix = null) -> void
+Steeltoe.Common.Utils.IO.TempPath.~TempPath() -> void
+virtual Steeltoe.Common.Utils.IO.TempPath.InitializePath() -> void

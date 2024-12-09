@@ -1,0 +1,53 @@
+﻿Microsoft.Extensions.DependencyInjection.LoadBalancerHttpClientBuilderExtensions
+override Steeltoe.Common.Discovery.DiscoveryHttpClientHandler.SendAsync(System.Net.Http.HttpRequestMessage request, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<System.Net.Http.HttpResponseMessage>
+override Steeltoe.Common.Http.ClientCertificateHttpHandler.SendAsync(System.Net.Http.HttpRequestMessage request, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<System.Net.Http.HttpResponseMessage>
+override Steeltoe.Common.Http.Discovery.DiscoveryHttpMessageHandler.SendAsync(System.Net.Http.HttpRequestMessage request, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<System.Net.Http.HttpResponseMessage>
+override Steeltoe.Common.Http.LoadBalancer.LoadBalancerDelegatingHandler.SendAsync(System.Net.Http.HttpRequestMessage request, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<System.Net.Http.HttpResponseMessage>
+override Steeltoe.Common.Http.LoadBalancer.LoadBalancerHttpClientHandler.SendAsync(System.Net.Http.HttpRequestMessage request, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<System.Net.Http.HttpResponseMessage>
+override Steeltoe.Common.Http.Serialization.BoolStringJsonConverter.Read(ref System.Text.Json.Utf8JsonReader reader, System.Type typeToConvert, System.Text.Json.JsonSerializerOptions options) -> bool
+override Steeltoe.Common.Http.Serialization.BoolStringJsonConverter.Write(System.Text.Json.Utf8JsonWriter writer, bool value, System.Text.Json.JsonSerializerOptions options) -> void
+override Steeltoe.Common.Http.Serialization.LongStringJsonConverter.Read(ref System.Text.Json.Utf8JsonReader reader, System.Type typeToConvert, System.Text.Json.JsonSerializerOptions options) -> long
+override Steeltoe.Common.Http.Serialization.LongStringJsonConverter.Write(System.Text.Json.Utf8JsonWriter writer, long value, System.Text.Json.JsonSerializerOptions options) -> void
+static Microsoft.Extensions.DependencyInjection.LoadBalancerHttpClientBuilderExtensions.AddLoadBalancer<T>(this Microsoft.Extensions.DependencyInjection.IHttpClientBuilder httpClientBuilder) -> Microsoft.Extensions.DependencyInjection.IHttpClientBuilder
+static Microsoft.Extensions.DependencyInjection.LoadBalancerHttpClientBuilderExtensions.AddRandomLoadBalancer(this Microsoft.Extensions.DependencyInjection.IHttpClientBuilder httpClientBuilder) -> Microsoft.Extensions.DependencyInjection.IHttpClientBuilder
+static Microsoft.Extensions.DependencyInjection.LoadBalancerHttpClientBuilderExtensions.AddRoundRobinLoadBalancer(this Microsoft.Extensions.DependencyInjection.IHttpClientBuilder httpClientBuilder) -> Microsoft.Extensions.DependencyInjection.IHttpClientBuilder
+static Steeltoe.Common.Http.Discovery.DiscoveryHttpClientBuilderExtensions.AddServiceDiscovery(this Microsoft.Extensions.DependencyInjection.IHttpClientBuilder builder) -> Microsoft.Extensions.DependencyInjection.IHttpClientBuilder
+static Steeltoe.Common.Http.HttpClientHelper.ConfigureCertificateValidation(bool validateCertificates, out System.Net.SecurityProtocolType protocolType, out System.Net.Security.RemoteCertificateValidationCallback prevValidator) -> void
+static Steeltoe.Common.Http.HttpClientHelper.GetAccessToken(string accessTokenUri, string clientId, string clientSecret, int timeout = 10000, bool validateCertificates = true, System.Net.Http.HttpClient httpClient = null, Microsoft.Extensions.Logging.ILogger logger = null) -> System.Threading.Tasks.Task<string>
+static Steeltoe.Common.Http.HttpClientHelper.GetAccessToken(System.Uri accessTokenUri, string clientId, string clientSecret, int timeout = 10000, bool validateCertificates = true, System.Collections.Generic.Dictionary<string, string> additionalParams = null, System.Net.Http.HttpClient httpClient = null, Microsoft.Extensions.Logging.ILogger logger = null) -> System.Threading.Tasks.Task<string>
+static Steeltoe.Common.Http.HttpClientHelper.GetEncodedUserPassword(string user, string password) -> string
+static Steeltoe.Common.Http.HttpClientHelper.GetHttpClient(bool validateCertificates, int timeoutMillis) -> System.Net.Http.HttpClient
+static Steeltoe.Common.Http.HttpClientHelper.GetHttpClient(bool validateCertificates, System.Net.Http.HttpClientHandler handler, int timeoutMillis) -> System.Net.Http.HttpClient
+static Steeltoe.Common.Http.HttpClientHelper.GetHttpClient(System.Net.Http.HttpMessageHandler handler, int timeoutMillis = 1500) -> System.Net.Http.HttpClient
+static Steeltoe.Common.Http.HttpClientHelper.GetRequestMessage(System.Net.Http.HttpMethod method, string requestUri, string userName, string password) -> System.Net.Http.HttpRequestMessage
+static Steeltoe.Common.Http.HttpClientHelper.GetRequestMessage(System.Net.Http.HttpMethod method, string requestUri, System.Func<string> getAccessToken) -> System.Net.Http.HttpRequestMessage
+static Steeltoe.Common.Http.HttpClientHelper.RestoreCertificateValidation(bool validateCertificates, System.Net.SecurityProtocolType protocolType, System.Net.Security.RemoteCertificateValidationCallback prevValidator) -> void
+static Steeltoe.Common.Http.HttpClientHelper.SteeltoeUserAgent.get -> string
+Steeltoe.Common.Discovery.DiscoveryHttpClientHandler
+Steeltoe.Common.Discovery.DiscoveryHttpClientHandler.DiscoveryHttpClientHandler(Steeltoe.Discovery.IDiscoveryClient discoveryClient, Microsoft.Extensions.Logging.ILogger logger = null, Steeltoe.Common.LoadBalancer.ILoadBalancer loadBalancer = null) -> void
+Steeltoe.Common.Discovery.DiscoveryHttpClientHandlerBase
+Steeltoe.Common.Discovery.DiscoveryHttpClientHandlerBase.DiscoveryHttpClientHandlerBase(Steeltoe.Discovery.IDiscoveryClient client, Microsoft.Extensions.Logging.ILogger logger = null, Steeltoe.Common.LoadBalancer.ILoadBalancer loadBalancer = null) -> void
+Steeltoe.Common.Discovery.DiscoveryHttpClientHandlerBase._client -> Steeltoe.Discovery.IDiscoveryClient
+Steeltoe.Common.Discovery.DiscoveryHttpClientHandlerBase._loadBalancer -> Steeltoe.Common.LoadBalancer.ILoadBalancer
+Steeltoe.Common.Discovery.DiscoveryHttpClientHandlerBase._logger -> Microsoft.Extensions.Logging.ILogger
+Steeltoe.Common.Http.ClientCertificateHttpHandler
+Steeltoe.Common.Http.ClientCertificateHttpHandler.ClientCertificateHttpHandler(Microsoft.Extensions.Options.IOptionsMonitor<Steeltoe.Common.Options.CertificateOptions> certOptions) -> void
+Steeltoe.Common.Http.ClientCertificateHttpHandlerProvider
+Steeltoe.Common.Http.ClientCertificateHttpHandlerProvider.ClientCertificateHttpHandlerProvider(Microsoft.Extensions.Options.IOptionsMonitor<Steeltoe.Common.Options.CertificateOptions> certOptions) -> void
+Steeltoe.Common.Http.ClientCertificateHttpHandlerProvider.GetHttpClientHandler() -> System.Net.Http.HttpClientHandler
+Steeltoe.Common.Http.Discovery.DiscoveryHttpClientBuilderExtensions
+Steeltoe.Common.Http.Discovery.DiscoveryHttpMessageHandler
+Steeltoe.Common.Http.Discovery.DiscoveryHttpMessageHandler.DiscoveryHttpMessageHandler(Steeltoe.Discovery.IDiscoveryClient discoveryClient, Microsoft.Extensions.Logging.ILogger<Steeltoe.Common.Discovery.DiscoveryHttpClientHandler> logger = null, Steeltoe.Common.LoadBalancer.ILoadBalancer loadBalancer = null) -> void
+Steeltoe.Common.Http.HttpClientHelper
+Steeltoe.Common.Http.LoadBalancer.LoadBalancerDelegatingHandler
+Steeltoe.Common.Http.LoadBalancer.LoadBalancerDelegatingHandler.LoadBalancerDelegatingHandler(Steeltoe.Common.LoadBalancer.ILoadBalancer loadBalancer) -> void
+Steeltoe.Common.Http.LoadBalancer.LoadBalancerDelegatingHandler.LoadBalancerDelegatingHandler(Steeltoe.Common.LoadBalancer.ILoadBalancer loadBalancer, Microsoft.Extensions.Logging.ILogger logger) -> void
+Steeltoe.Common.Http.LoadBalancer.LoadBalancerHttpClientHandler
+Steeltoe.Common.Http.LoadBalancer.LoadBalancerHttpClientHandler.LoadBalancerHttpClientHandler(Steeltoe.Common.LoadBalancer.ILoadBalancer loadBalancer) -> void
+Steeltoe.Common.Http.LoadBalancer.LoadBalancerHttpClientHandler.LoadBalancerHttpClientHandler(Steeltoe.Common.LoadBalancer.ILoadBalancer loadBalancer, Microsoft.Extensions.Logging.ILogger logger) -> void
+Steeltoe.Common.Http.Serialization.BoolStringJsonConverter
+Steeltoe.Common.Http.Serialization.BoolStringJsonConverter.BoolStringJsonConverter() -> void
+Steeltoe.Common.Http.Serialization.LongStringJsonConverter
+Steeltoe.Common.Http.Serialization.LongStringJsonConverter.LongStringJsonConverter() -> void
+virtual Steeltoe.Common.Discovery.DiscoveryHttpClientHandlerBase.LookupService(System.Uri current) -> System.Uri
+virtual Steeltoe.Common.Discovery.DiscoveryHttpClientHandlerBase.LookupServiceAsync(System.Uri current) -> System.Threading.Tasks.Task<System.Uri>

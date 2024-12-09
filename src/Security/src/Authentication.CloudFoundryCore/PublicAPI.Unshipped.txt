@@ -1,0 +1,103 @@
+﻿override Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryOAuthHandler.BuildChallengeUrl(Microsoft.AspNetCore.Authentication.AuthenticationProperties properties, string redirectUri) -> string
+override Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryOAuthHandler.CreateTicketAsync(System.Security.Claims.ClaimsIdentity identity, Microsoft.AspNetCore.Authentication.AuthenticationProperties properties, Microsoft.AspNetCore.Authentication.OAuth.OAuthTokenResponse tokens) -> System.Threading.Tasks.Task<Microsoft.AspNetCore.Authentication.AuthenticationTicket>
+override Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryOAuthHandler.ExchangeCodeAsync(Microsoft.AspNetCore.Authentication.OAuth.OAuthCodeExchangeContext context) -> System.Threading.Tasks.Task<Microsoft.AspNetCore.Authentication.OAuth.OAuthTokenResponse>
+override Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryScopeClaimAction.Run(System.Text.Json.JsonElement userData, System.Security.Claims.ClaimsIdentity identity, string issuer) -> void
+static Steeltoe.Security.Authentication.CloudFoundry.ApplicationBuilderExtensions.UseCloudFoundryCertificateAuth(this Microsoft.AspNetCore.Builder.IApplicationBuilder app, Microsoft.AspNetCore.Builder.ForwardedHeadersOptions forwardedHeaders = null) -> Microsoft.AspNetCore.Builder.IApplicationBuilder
+static Steeltoe.Security.Authentication.CloudFoundry.ApplicationBuilderExtensions.UseCloudFoundryContainerIdentity(this Microsoft.AspNetCore.Builder.IApplicationBuilder app) -> Microsoft.AspNetCore.Builder.IApplicationBuilder
+static Steeltoe.Security.Authentication.CloudFoundry.AuthenticationBuilderExtensions.AddCloudFoundryIdentityCertificate(this Microsoft.AspNetCore.Authentication.AuthenticationBuilder builder) -> Microsoft.AspNetCore.Authentication.AuthenticationBuilder
+static Steeltoe.Security.Authentication.CloudFoundry.AuthenticationBuilderExtensions.AddCloudFoundryIdentityCertificate(this Microsoft.AspNetCore.Authentication.AuthenticationBuilder builder, string authenticationScheme) -> Microsoft.AspNetCore.Authentication.AuthenticationBuilder
+static Steeltoe.Security.Authentication.CloudFoundry.AuthenticationBuilderExtensions.AddCloudFoundryIdentityCertificate(this Microsoft.AspNetCore.Authentication.AuthenticationBuilder builder, string authenticationScheme, System.Action<Steeltoe.Security.Authentication.Mtls.MutualTlsAuthenticationOptions> configurer) -> Microsoft.AspNetCore.Authentication.AuthenticationBuilder
+static Steeltoe.Security.Authentication.CloudFoundry.AuthenticationBuilderExtensions.AddCloudFoundryIdentityCertificate(this Microsoft.AspNetCore.Authentication.AuthenticationBuilder builder, System.Action<Steeltoe.Security.Authentication.Mtls.MutualTlsAuthenticationOptions> configurer) -> Microsoft.AspNetCore.Authentication.AuthenticationBuilder
+static Steeltoe.Security.Authentication.CloudFoundry.AuthenticationBuilderExtensions.AddCloudFoundryJwtBearer(this Microsoft.AspNetCore.Authentication.AuthenticationBuilder builder, Microsoft.Extensions.Configuration.IConfiguration config) -> Microsoft.AspNetCore.Authentication.AuthenticationBuilder
+static Steeltoe.Security.Authentication.CloudFoundry.AuthenticationBuilderExtensions.AddCloudFoundryJwtBearer(this Microsoft.AspNetCore.Authentication.AuthenticationBuilder builder, Microsoft.Extensions.Configuration.IConfiguration config, System.Action<Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerOptions, Microsoft.Extensions.Configuration.IConfiguration> configurer) -> Microsoft.AspNetCore.Authentication.AuthenticationBuilder
+static Steeltoe.Security.Authentication.CloudFoundry.AuthenticationBuilderExtensions.AddCloudFoundryJwtBearer(this Microsoft.AspNetCore.Authentication.AuthenticationBuilder builder, string authenticationScheme, Microsoft.Extensions.Configuration.IConfiguration config) -> Microsoft.AspNetCore.Authentication.AuthenticationBuilder
+static Steeltoe.Security.Authentication.CloudFoundry.AuthenticationBuilderExtensions.AddCloudFoundryJwtBearer(this Microsoft.AspNetCore.Authentication.AuthenticationBuilder builder, string authenticationScheme, Microsoft.Extensions.Configuration.IConfiguration config, System.Action<Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerOptions, Microsoft.Extensions.Configuration.IConfiguration> configurer) -> Microsoft.AspNetCore.Authentication.AuthenticationBuilder
+static Steeltoe.Security.Authentication.CloudFoundry.AuthenticationBuilderExtensions.AddCloudFoundryJwtBearer(this Microsoft.AspNetCore.Authentication.AuthenticationBuilder builder, string authenticationScheme, string displayName, Microsoft.Extensions.Configuration.IConfiguration config) -> Microsoft.AspNetCore.Authentication.AuthenticationBuilder
+static Steeltoe.Security.Authentication.CloudFoundry.AuthenticationBuilderExtensions.AddCloudFoundryJwtBearer(this Microsoft.AspNetCore.Authentication.AuthenticationBuilder builder, string authenticationScheme, string displayName, Microsoft.Extensions.Configuration.IConfiguration config, System.Action<Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerOptions, Microsoft.Extensions.Configuration.IConfiguration> configurer) -> Microsoft.AspNetCore.Authentication.AuthenticationBuilder
+static Steeltoe.Security.Authentication.CloudFoundry.AuthenticationBuilderExtensions.AddCloudFoundryOAuth(this Microsoft.AspNetCore.Authentication.AuthenticationBuilder builder, Microsoft.Extensions.Configuration.IConfiguration config) -> Microsoft.AspNetCore.Authentication.AuthenticationBuilder
+static Steeltoe.Security.Authentication.CloudFoundry.AuthenticationBuilderExtensions.AddCloudFoundryOAuth(this Microsoft.AspNetCore.Authentication.AuthenticationBuilder builder, Microsoft.Extensions.Configuration.IConfiguration config, System.Action<Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryOAuthOptions, Microsoft.Extensions.Configuration.IConfiguration> configurer) -> Microsoft.AspNetCore.Authentication.AuthenticationBuilder
+static Steeltoe.Security.Authentication.CloudFoundry.AuthenticationBuilderExtensions.AddCloudFoundryOAuth(this Microsoft.AspNetCore.Authentication.AuthenticationBuilder builder, string authenticationScheme, Microsoft.Extensions.Configuration.IConfiguration config) -> Microsoft.AspNetCore.Authentication.AuthenticationBuilder
+static Steeltoe.Security.Authentication.CloudFoundry.AuthenticationBuilderExtensions.AddCloudFoundryOAuth(this Microsoft.AspNetCore.Authentication.AuthenticationBuilder builder, string authenticationScheme, Microsoft.Extensions.Configuration.IConfiguration config, System.Action<Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryOAuthOptions, Microsoft.Extensions.Configuration.IConfiguration> configurer) -> Microsoft.AspNetCore.Authentication.AuthenticationBuilder
+static Steeltoe.Security.Authentication.CloudFoundry.AuthenticationBuilderExtensions.AddCloudFoundryOAuth(this Microsoft.AspNetCore.Authentication.AuthenticationBuilder builder, string authenticationScheme, string displayName, Microsoft.Extensions.Configuration.IConfiguration config) -> Microsoft.AspNetCore.Authentication.AuthenticationBuilder
+static Steeltoe.Security.Authentication.CloudFoundry.AuthenticationBuilderExtensions.AddCloudFoundryOAuth(this Microsoft.AspNetCore.Authentication.AuthenticationBuilder builder, string authenticationScheme, string displayName, Microsoft.Extensions.Configuration.IConfiguration config, System.Action<Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryOAuthOptions, Microsoft.Extensions.Configuration.IConfiguration> configurer) -> Microsoft.AspNetCore.Authentication.AuthenticationBuilder
+static Steeltoe.Security.Authentication.CloudFoundry.AuthenticationBuilderExtensions.AddCloudFoundryOpenIdConnect(this Microsoft.AspNetCore.Authentication.AuthenticationBuilder builder, Microsoft.Extensions.Configuration.IConfiguration config) -> Microsoft.AspNetCore.Authentication.AuthenticationBuilder
+static Steeltoe.Security.Authentication.CloudFoundry.AuthenticationBuilderExtensions.AddCloudFoundryOpenIdConnect(this Microsoft.AspNetCore.Authentication.AuthenticationBuilder builder, Microsoft.Extensions.Configuration.IConfiguration config, System.Action<Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectOptions, Microsoft.Extensions.Configuration.IConfiguration> configurer) -> Microsoft.AspNetCore.Authentication.AuthenticationBuilder
+static Steeltoe.Security.Authentication.CloudFoundry.AuthenticationBuilderExtensions.AddCloudFoundryOpenIdConnect(this Microsoft.AspNetCore.Authentication.AuthenticationBuilder builder, string authenticationScheme, Microsoft.Extensions.Configuration.IConfiguration config) -> Microsoft.AspNetCore.Authentication.AuthenticationBuilder
+static Steeltoe.Security.Authentication.CloudFoundry.AuthenticationBuilderExtensions.AddCloudFoundryOpenIdConnect(this Microsoft.AspNetCore.Authentication.AuthenticationBuilder builder, string authenticationScheme, Microsoft.Extensions.Configuration.IConfiguration config, System.Action<Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectOptions, Microsoft.Extensions.Configuration.IConfiguration> configurer) -> Microsoft.AspNetCore.Authentication.AuthenticationBuilder
+static Steeltoe.Security.Authentication.CloudFoundry.AuthenticationBuilderExtensions.AddCloudFoundryOpenIdConnect(this Microsoft.AspNetCore.Authentication.AuthenticationBuilder builder, string authenticationScheme, string displayName, Microsoft.Extensions.Configuration.IConfiguration config) -> Microsoft.AspNetCore.Authentication.AuthenticationBuilder
+static Steeltoe.Security.Authentication.CloudFoundry.AuthenticationBuilderExtensions.AddCloudFoundryOpenIdConnect(this Microsoft.AspNetCore.Authentication.AuthenticationBuilder builder, string authenticationScheme, string displayName, Microsoft.Extensions.Configuration.IConfiguration config, System.Action<Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectOptions, Microsoft.Extensions.Configuration.IConfiguration> configurer) -> Microsoft.AspNetCore.Authentication.AuthenticationBuilder
+static Steeltoe.Security.Authentication.CloudFoundry.AuthorizationPolicyBuilderExtensions.SameOrg(this Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder builder) -> Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder
+static Steeltoe.Security.Authentication.CloudFoundry.AuthorizationPolicyBuilderExtensions.SameSpace(this Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder builder) -> Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder
+static Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryClaimActionExtensions.MapScopes(this Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimActionCollection collection, string claimType = "scope") -> void
+static Steeltoe.Security.Authentication.CloudFoundry.ConfigurationBuilderExtensions.AddCloudFoundryContainerIdentity(this Microsoft.Extensions.Configuration.IConfigurationBuilder builder, string orgId = null, string spaceId = null) -> Microsoft.Extensions.Configuration.IConfigurationBuilder
+static Steeltoe.Security.Authentication.CloudFoundry.ServiceCollectionExtensions.AddCloudFoundryCertificateAuth(this Microsoft.Extensions.DependencyInjection.IServiceCollection services) -> void
+static Steeltoe.Security.Authentication.CloudFoundry.ServiceCollectionExtensions.AddCloudFoundryCertificateAuth(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration configuration) -> void
+static Steeltoe.Security.Authentication.CloudFoundry.ServiceCollectionExtensions.AddCloudFoundryCertificateAuth(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, string authenticationScheme) -> void
+static Steeltoe.Security.Authentication.CloudFoundry.ServiceCollectionExtensions.AddCloudFoundryCertificateAuth(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, string authenticationScheme, System.Action<Steeltoe.Security.Authentication.Mtls.MutualTlsAuthenticationOptions> configurer) -> void
+static Steeltoe.Security.Authentication.CloudFoundry.ServiceCollectionExtensions.AddCloudFoundryCertificateAuth(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, System.Action<Steeltoe.Security.Authentication.Mtls.MutualTlsAuthenticationOptions> configurer) -> void
+static Steeltoe.Security.Authentication.CloudFoundry.ServiceCollectionExtensions.AddCloudFoundryContainerIdentity(this Microsoft.Extensions.DependencyInjection.IServiceCollection services) -> void
+static Steeltoe.Security.Authentication.CloudFoundry.ServiceCollectionExtensions.AddCloudFoundryContainerIdentity(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration configuration) -> void
+static Steeltoe.Security.Authentication.Mtls.CloudFoundryInstanceCertificate.TryParse(System.Security.Cryptography.X509Certificates.X509Certificate2 certificate, out Steeltoe.Security.Authentication.Mtls.CloudFoundryInstanceCertificate cloudFoundryInstanceCertificate, Microsoft.Extensions.Logging.ILogger logger = null) -> bool
+Steeltoe.Security.Authentication.CloudFoundry.ApplicationBuilderExtensions
+Steeltoe.Security.Authentication.CloudFoundry.AuthenticationBuilderExtensions
+Steeltoe.Security.Authentication.CloudFoundry.AuthorizationPolicyBuilderExtensions
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryCertificateIdentityAuthorizationHandler
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryCertificateIdentityAuthorizationHandler.CloudFoundryCertificateIdentityAuthorizationHandler(Microsoft.Extensions.Options.IOptionsMonitor<Steeltoe.Common.Options.CertificateOptions> identityCert, Microsoft.Extensions.Logging.ILogger<Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryCertificateIdentityAuthorizationHandler> logger) -> void
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryCertificateIdentityAuthorizationHandler.HandleAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext context) -> System.Threading.Tasks.Task
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryClaimActionExtensions
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryJwtBearerConfigurer
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryJwtBearerOptions
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryJwtBearerOptions.CloudFoundryJwtBearerOptions() -> void
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryJwtBearerOptions.JwtKeyUrl.get -> string
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryJwtBearerOptions.JwtKeyUrl.set -> void
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryJwtBearerOptions.SetEndpoints(string authDomain) -> void
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryJwtBearerOptions.Timeout.get -> int
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryJwtBearerOptions.Timeout.set -> void
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryJwtBearerOptions.ValidateCertificates.get -> bool
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryJwtBearerOptions.ValidateCertificates.set -> void
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryJwtBearerOptions.Validate_Certificates.get -> bool
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryJwtBearerOptions.Validate_Certificates.set -> void
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryOAuthConfigurer
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryOAuthHandler
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryOAuthHandler.CloudFoundryOAuthHandler(Microsoft.Extensions.Options.IOptionsMonitor<Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryOAuthOptions> options, Microsoft.Extensions.Logging.ILoggerFactory logger, System.Text.Encodings.Web.UrlEncoder encoder, Microsoft.AspNetCore.Authentication.ISystemClock clock) -> void
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryOAuthHandler.GetEncoded(string user, string password) -> string
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryOAuthOptions
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryOAuthOptions.CloudFoundryOAuthOptions() -> void
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryOAuthOptions.SetEndpoints(string authDomain) -> void
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryOAuthOptions.TokenInfoUrl.get -> string
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryOAuthOptions.TokenInfoUrl.set -> void
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryOAuthOptions.UseTokenLifetime.get -> bool
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryOAuthOptions.UseTokenLifetime.set -> void
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryOAuthOptions.ValidateCertificates.get -> bool
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryOAuthOptions.ValidateCertificates.set -> void
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryOAuthOptions.Validate_Certificates.get -> bool
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryOAuthOptions.Validate_Certificates.set -> void
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryOpenIdConnectOptions
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryOpenIdConnectOptions.AdditionalScopes.get -> string
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryOpenIdConnectOptions.AdditionalScopes.set -> void
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryOpenIdConnectOptions.CloudFoundryOpenIdConnectOptions() -> void
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryOpenIdConnectOptions.Timeout.get -> int
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryOpenIdConnectOptions.Timeout.set -> void
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryOpenIdConnectOptions.ValidateCertificates.get -> bool
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryOpenIdConnectOptions.ValidateCertificates.set -> void
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryScopeClaimAction
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryScopeClaimAction.CloudFoundryScopeClaimAction(string claimType, string valueType) -> void
+Steeltoe.Security.Authentication.CloudFoundry.ConfigurationBuilderExtensions
+Steeltoe.Security.Authentication.CloudFoundry.MutualTlsAuthenticationOptionsPostConfigurer
+Steeltoe.Security.Authentication.CloudFoundry.MutualTlsAuthenticationOptionsPostConfigurer.MutualTlsAuthenticationOptionsPostConfigurer(Microsoft.Extensions.Options.IOptionsMonitor<Steeltoe.Common.Options.CertificateOptions> containerIdentityOptions, Microsoft.Extensions.Logging.ILogger<Steeltoe.Security.Authentication.Mtls.CloudFoundryInstanceCertificate> logger = null) -> void
+Steeltoe.Security.Authentication.CloudFoundry.MutualTlsAuthenticationOptionsPostConfigurer.PostConfigure(string name, Steeltoe.Security.Authentication.Mtls.MutualTlsAuthenticationOptions options) -> void
+Steeltoe.Security.Authentication.CloudFoundry.SameOrgRequirement
+Steeltoe.Security.Authentication.CloudFoundry.SameOrgRequirement.SameOrgRequirement() -> void
+Steeltoe.Security.Authentication.CloudFoundry.SameSpaceRequirement
+Steeltoe.Security.Authentication.CloudFoundry.SameSpaceRequirement.SameSpaceRequirement() -> void
+Steeltoe.Security.Authentication.CloudFoundry.ServiceCollectionExtensions
+Steeltoe.Security.Authentication.Mtls.CloudFoundryInstanceCertificate
+Steeltoe.Security.Authentication.Mtls.CloudFoundryInstanceCertificate.AppId.get -> string
+Steeltoe.Security.Authentication.Mtls.CloudFoundryInstanceCertificate.Certificate.get -> System.Security.Cryptography.X509Certificates.X509Certificate2
+Steeltoe.Security.Authentication.Mtls.CloudFoundryInstanceCertificate.CloudFoundryInstanceCertificate() -> void
+Steeltoe.Security.Authentication.Mtls.CloudFoundryInstanceCertificate.InstanceId.get -> string
+Steeltoe.Security.Authentication.Mtls.CloudFoundryInstanceCertificate.OrgId.get -> string
+Steeltoe.Security.Authentication.Mtls.CloudFoundryInstanceCertificate.SpaceId.get -> string
+virtual Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryOAuthHandler.GetHttpClient() -> System.Net.Http.HttpClient
+virtual Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryOAuthHandler.GetTokenInfoRequestMessage(Microsoft.AspNetCore.Authentication.OAuth.OAuthTokenResponse tokens) -> System.Net.Http.HttpRequestMessage
+virtual Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryOAuthHandler.GetTokenInfoRequestParameters(Microsoft.AspNetCore.Authentication.OAuth.OAuthTokenResponse tokens) -> System.Collections.Generic.Dictionary<string, string>

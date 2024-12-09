@@ -1,0 +1,6 @@
+﻿static Steeltoe.Extensions.Configuration.CloudFoundry.CloudFoundryHostBuilderExtensions.AddCloudFoundry(this Microsoft.AspNetCore.Hosting.IWebHostBuilder hostBuilder) -> Microsoft.AspNetCore.Hosting.IWebHostBuilder
+static Steeltoe.Extensions.Configuration.CloudFoundry.CloudFoundryHostBuilderExtensions.AddCloudFoundry(this Microsoft.Extensions.Hosting.IHostBuilder hostBuilder) -> Microsoft.Extensions.Hosting.IHostBuilder
+static Steeltoe.Extensions.Configuration.CloudFoundry.CloudFoundryHostBuilderExtensions.AddCloudFoundryConfiguration(this Microsoft.AspNetCore.Builder.WebApplicationBuilder applicationBuilder) -> Microsoft.AspNetCore.Builder.WebApplicationBuilder
+static Steeltoe.Extensions.Configuration.CloudFoundry.CloudFoundryHostBuilderExtensions.AddCloudFoundryConfiguration(this Microsoft.AspNetCore.Hosting.IWebHostBuilder hostBuilder) -> Microsoft.AspNetCore.Hosting.IWebHostBuilder
+static Steeltoe.Extensions.Configuration.CloudFoundry.CloudFoundryHostBuilderExtensions.AddCloudFoundryConfiguration(this Microsoft.Extensions.Hosting.IHostBuilder hostBuilder) -> Microsoft.Extensions.Hosting.IHostBuilder
+Steeltoe.Extensions.Configuration.CloudFoundry.CloudFoundryHostBuilderExtensions

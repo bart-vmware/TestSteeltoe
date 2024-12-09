@@ -1,0 +1,90 @@
+﻿const Steeltoe.Security.Authentication.CloudFoundry.ApplicationClaimTypes.CloudFoundryAppId = "CloudFoundryAppId" -> string
+const Steeltoe.Security.Authentication.CloudFoundry.ApplicationClaimTypes.CloudFoundryInstanceId = "CloudFoundryContainerInstanceId" -> string
+const Steeltoe.Security.Authentication.CloudFoundry.ApplicationClaimTypes.CloudFoundryOrgId = "CloudFoundryOrgId" -> string
+const Steeltoe.Security.Authentication.CloudFoundry.ApplicationClaimTypes.CloudFoundrySpaceId = "CloudFoundrySpaceId" -> string
+const Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryDefaults.AccessTokenUri = "/oauth/token" -> string
+const Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryDefaults.AuthenticationScheme = "CloudFoundry" -> string
+const Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryDefaults.AuthorizationUri = "/oauth/authorize" -> string
+const Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryDefaults.CallbackPath = "/signin-cloudfoundry" -> string
+const Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryDefaults.CheckTokenUri = "/check_token" -> string
+const Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryDefaults.ClientId = "Default_ClientId" -> string
+const Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryDefaults.ClientSecret = "Default_ClientSecret" -> string
+const Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryDefaults.DisplayName = "CloudFoundry" -> string
+const Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryDefaults.JwtTokenUri = "/token_keys" -> string
+const Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryDefaults.OAuthServiceUrl = "Default_OAuthServiceUrl" -> string
+const Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryDefaults.ParamsClientId = "client_id" -> string
+const Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryDefaults.ParamsClientSecret = "client_secret" -> string
+const Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryDefaults.ParamsCode = "code" -> string
+const Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryDefaults.ParamsGrantType = "grant_type" -> string
+const Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryDefaults.ParamsRedirectUri = "redirect_uri" -> string
+const Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryDefaults.ParamsResponseType = "response_type" -> string
+const Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryDefaults.ParamsScope = "scope" -> string
+const Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryDefaults.ParamsTokenFormat = "token_format" -> string
+const Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryDefaults.SameOrganizationAuthorizationPolicy = "sameorg" -> string
+const Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryDefaults.SameSpaceAuthorizationPolicy = "samespace" -> string
+const Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryDefaults.SECURITY_CLIENT_SECTION_PREFIX = "security:oauth2:client" -> string
+const Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryDefaults.SECURITY_RESOURCE_SECTION_PREFIX = "security:oauth2:resource" -> string
+const Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryDefaults.UserInfoUri = "/userinfo" -> string
+const Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryDefaults.ValidateCertificates = true -> bool
+static Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryHelper.GetBackChannelHandler(bool validateCertificates) -> System.Net.Http.HttpMessageHandler
+static Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryHelper.GetExpTime(System.Text.Json.JsonElement payload) -> System.DateTime
+static Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryHelper.GetIssueTime(System.Text.Json.JsonElement payload) -> System.DateTime
+static Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryHelper.GetScopes(System.Text.Json.JsonElement user) -> System.Collections.Generic.List<string>
+static Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryHelper.GetTokenValidationParameters(Microsoft.IdentityModel.Tokens.TokenValidationParameters parameters, string keyUrl, System.Net.Http.HttpMessageHandler handler, bool validateCertificates, Steeltoe.Security.Authentication.CloudFoundry.AuthServerOptions options = null) -> Microsoft.IdentityModel.Tokens.TokenValidationParameters
+Steeltoe.Security.Authentication.CloudFoundry.ApplicationClaimTypes
+Steeltoe.Security.Authentication.CloudFoundry.AuthServerOptions
+Steeltoe.Security.Authentication.CloudFoundry.AuthServerOptions.AdditionalAudiences.get -> string[]
+Steeltoe.Security.Authentication.CloudFoundry.AuthServerOptions.AdditionalAudiences.set -> void
+Steeltoe.Security.Authentication.CloudFoundry.AuthServerOptions.AdditionalTokenScopes.get -> string
+Steeltoe.Security.Authentication.CloudFoundry.AuthServerOptions.AdditionalTokenScopes.set -> void
+Steeltoe.Security.Authentication.CloudFoundry.AuthServerOptions.AuthorizationUrl.get -> string
+Steeltoe.Security.Authentication.CloudFoundry.AuthServerOptions.AuthorizationUrl.set -> void
+Steeltoe.Security.Authentication.CloudFoundry.AuthServerOptions.AuthServerOptions() -> void
+Steeltoe.Security.Authentication.CloudFoundry.AuthServerOptions.CallbackUrl.get -> string
+Steeltoe.Security.Authentication.CloudFoundry.AuthServerOptions.CallbackUrl.set -> void
+Steeltoe.Security.Authentication.CloudFoundry.AuthServerOptions.ClientId.get -> string
+Steeltoe.Security.Authentication.CloudFoundry.AuthServerOptions.ClientId.set -> void
+Steeltoe.Security.Authentication.CloudFoundry.AuthServerOptions.ClientSecret.get -> string
+Steeltoe.Security.Authentication.CloudFoundry.AuthServerOptions.ClientSecret.set -> void
+Steeltoe.Security.Authentication.CloudFoundry.AuthServerOptions.ClientTimeout.get -> int
+Steeltoe.Security.Authentication.CloudFoundry.AuthServerOptions.ClientTimeout.set -> void
+Steeltoe.Security.Authentication.CloudFoundry.AuthServerOptions.RequiredScopes.get -> string[]
+Steeltoe.Security.Authentication.CloudFoundry.AuthServerOptions.RequiredScopes.set -> void
+Steeltoe.Security.Authentication.CloudFoundry.AuthServerOptions.SignInAsAuthenticationType.get -> string
+Steeltoe.Security.Authentication.CloudFoundry.AuthServerOptions.SignInAsAuthenticationType.set -> void
+Steeltoe.Security.Authentication.CloudFoundry.AuthServerOptions.ValidateCertificates.get -> bool
+Steeltoe.Security.Authentication.CloudFoundry.AuthServerOptions.ValidateCertificates.set -> void
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryDefaults
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryHelper
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryTokenKeyResolver
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryTokenKeyResolver.CloudFoundryTokenKeyResolver(string jwtKeyUrl, System.Net.Http.HttpMessageHandler httpHandler, bool validateCertificates) -> void
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryTokenKeyResolver.CloudFoundryTokenKeyResolver(string jwtKeyUrl, System.Net.Http.HttpMessageHandler httpHandler, bool validateCertificates, int httpClientTimeoutMS) -> void
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryTokenKeyResolver.FixupKey(Microsoft.IdentityModel.Tokens.JsonWebKey key) -> Microsoft.IdentityModel.Tokens.JsonWebKey
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryTokenValidator
+Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryTokenValidator.CloudFoundryTokenValidator(Steeltoe.Security.Authentication.CloudFoundry.AuthServerOptions options = null) -> void
+Steeltoe.Security.Authentication.CloudFoundry.OpenIdTokenResponse
+Steeltoe.Security.Authentication.CloudFoundry.OpenIdTokenResponse.AccessToken.get -> string
+Steeltoe.Security.Authentication.CloudFoundry.OpenIdTokenResponse.AccessToken.set -> void
+Steeltoe.Security.Authentication.CloudFoundry.OpenIdTokenResponse.ExpiresIn.get -> int
+Steeltoe.Security.Authentication.CloudFoundry.OpenIdTokenResponse.ExpiresIn.set -> void
+Steeltoe.Security.Authentication.CloudFoundry.OpenIdTokenResponse.IdentityToken.get -> string
+Steeltoe.Security.Authentication.CloudFoundry.OpenIdTokenResponse.IdentityToken.set -> void
+Steeltoe.Security.Authentication.CloudFoundry.OpenIdTokenResponse.OpenIdTokenResponse() -> void
+Steeltoe.Security.Authentication.CloudFoundry.OpenIdTokenResponse.RefreshToken.get -> string
+Steeltoe.Security.Authentication.CloudFoundry.OpenIdTokenResponse.RefreshToken.set -> void
+Steeltoe.Security.Authentication.CloudFoundry.OpenIdTokenResponse.Scope.get -> string
+Steeltoe.Security.Authentication.CloudFoundry.OpenIdTokenResponse.Scope.set -> void
+Steeltoe.Security.Authentication.CloudFoundry.OpenIdTokenResponse.TokenType.get -> string
+Steeltoe.Security.Authentication.CloudFoundry.OpenIdTokenResponse.TokenType.set -> void
+Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger
+Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger.ExchangeAuthCodeForClaimsIdentity(string code) -> System.Threading.Tasks.Task<System.Security.Claims.ClaimsIdentity>
+Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger.ExchangeCodeForToken(string code, string targetUrl, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<System.Net.Http.HttpResponseMessage>
+Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger.GetAccessTokenWithClientCredentials(string targetUrl) -> System.Threading.Tasks.Task<System.Net.Http.HttpResponseMessage>
+Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger.TokenExchanger(Steeltoe.Security.Authentication.CloudFoundry.AuthServerOptions options, System.Net.Http.HttpClient httpclient = null, Microsoft.Extensions.Logging.ILogger logger = null) -> void
+virtual Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryTokenKeyResolver.FetchKeySet() -> System.Threading.Tasks.Task<Microsoft.IdentityModel.Tokens.JsonWebKeySet>
+virtual Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryTokenKeyResolver.GetHttpClient() -> System.Net.Http.HttpClient
+virtual Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryTokenKeyResolver.GetJsonWebKeySet(string json) -> Microsoft.IdentityModel.Tokens.JsonWebKeySet
+virtual Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryTokenKeyResolver.ResolveSigningKey(string token, Microsoft.IdentityModel.Tokens.SecurityToken securityToken, string kid, Microsoft.IdentityModel.Tokens.TokenValidationParameters validationParameters) -> System.Collections.Generic.IEnumerable<Microsoft.IdentityModel.Tokens.SecurityKey>
+virtual Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryTokenValidator.ValidateAudience(System.Collections.Generic.IEnumerable<string> audiences, Microsoft.IdentityModel.Tokens.SecurityToken securityToken, Microsoft.IdentityModel.Tokens.TokenValidationParameters validationParameters) -> bool
+virtual Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryTokenValidator.ValidateIssuer(string issuer, Microsoft.IdentityModel.Tokens.SecurityToken securityToken, Microsoft.IdentityModel.Tokens.TokenValidationParameters validationParameters) -> string
+virtual Steeltoe.Security.Authentication.CloudFoundry.CloudFoundryTokenValidator.ValidateScopes(System.IdentityModel.Tokens.Jwt.JwtSecurityToken validJwt) -> bool
