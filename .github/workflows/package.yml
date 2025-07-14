@@ -71,7 +71,7 @@ jobs:
         Write-Output "PACKAGE_VERSION_SUFFIX=$versionSuffix" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
 
     - name: Calculate package version (for branch)
-      if: ${{ github.event_name == 'push' }}
+      if: ${{ github.event_name == 'push' || github.event_name == 'workflow_dispatch' }}
       env:
         BRANCH_NAME: ${{ github.ref_name }}
       shell: pwsh
@@ -109,10 +109,21 @@ jobs:
         name: unsigned-packages
         path: ${{ github.workspace }}/packages/**/*.nupkg
 
-    - name: Open pull request to bump package version (for release)
-      if: ${{ github.event_name == 'release' }}
-      env:
-        TAG_NAME: ${{ github.ref_name }}
+  open_pr:
+    name: Open pull request to bump package version (for release)
+    if: ${{ github.event_name == 'release' }}
+    needs: build
+    timeout-minutes: 15
+    runs-on: ubuntu-latest
+    permissions:
+      #contents: write
+      pull-requests: write
+
+    steps:
+    - name: Git checkout
+      uses: actions/checkout@v4
+
+    - name: Calculate next package version
       shell: pwsh
       run: |
         [xml]$xml = Get-Content $env:VERSION_FILE
@@ -121,6 +132,17 @@ jobs:
         $versionSegments = $oldVersionPrefix.split('.')
         ([int]$versionSegments[-1])++
         $newVersionPrefix = $versionSegments -join('.')
+
+        Write-Output "OLD_PACKAGE_VERSION_PREFIX=$oldVersionPrefix" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+        Write-Output "NEW_PACKAGE_VERSION_PREFIX=$newVersionPrefix" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+
+    - name: Open pull request
+      env:
+        TAG_NAME: ${{ github.ref_name }}
+      shell: pwsh
+      run: |
+        $oldVersionPrefix = '${{ env.OLD_PACKAGE_VERSION_PREFIX }}'
+        $newVersionPrefix = '${{ env.NEW_PACKAGE_VERSION_PREFIX }}'
 
         $pattern = '(?<left>^\s*\<VersionPrefix\>)[^>]+(?<right>\<\/VersionPrefix\>)\s*$'
         $fileContent = Get-Content $env:VERSION_FILE
