@@ -22,6 +22,7 @@ env:
   DOTNET_CLI_TELEMETRY_OPTOUT: 1
   DOTNET_NOLOGO: true
   SOLUTION_FILE: 'src/Steeltoe.All.sln'
+  VERSION_FILE: 'shared-package.props'
 
 jobs:
   build:
@@ -54,15 +55,15 @@ jobs:
         $versionPrefix = $tagSegments[0]
         $versionSuffix = $tagSegments.Length -eq 1 ? '' : $tagSegments[1..$($tagSegments.Length - 1)] -join '-'
 
-        [xml]$xml = Get-Content shared-package.props
+        [xml]$xml = Get-Content $env:VERSION_FILE
         $configuredVersionPrefix = $xml.Project.PropertyGroup.VersionPrefix | Select-Object -First 1
 
         if ($configuredVersionPrefix -ne $versionPrefix) {
-            Write-Error "Version prefix from git release tag '$versionPrefix' does not match version prefix '$configuredVersionPrefix' stored in shared-package.props."
+            Write-Error "Version prefix from git release tag '$versionPrefix' does not match version prefix '$configuredVersionPrefix' stored in $env:VERSION_FILE."
             # To recover from this:
             # - Delete the GitHub release
             # - Run: git push --delete origin the-invalid-tag-name
-            # - Adjust VersionPrefix in shared-package.props, commit and push
+            # - Adjust VersionPrefix in file, commit and push
             # - Recreate the GitHub release
         }
 
@@ -107,3 +108,32 @@ jobs:
         if-no-files-found: error
         name: unsigned-packages
         path: ${{ github.workspace }}/packages/**/*.nupkg
+
+    - name: Open pull request to bump package version (for release)
+      if: ${{ github.event_name == 'release' }}
+      env:
+        TAG_NAME: ${{ github.ref_name }}
+      shell: pwsh
+      run: |
+        [xml]$xml = Get-Content $env:VERSION_FILE
+        $oldVersionPrefix = $xml.Project.PropertyGroup.VersionPrefix | Select-Object -First 1
+
+        $versionSegments = $oldVersionPrefix.split('.')
+        ([int]$versionSegments[-1])++
+        $newVersionPrefix = $versionSegments -join('.')
+
+        $pattern = '(?<left>^\s*\<VersionPrefix\>)[^>]+(?<right>\<\/VersionPrefix\>)\s*$'
+        $fileContent = Get-Content $env:VERSION_FILE
+        fileContent = fileContent -Replace $pattern,"`${left}$newVersionPrefix`${right}"
+        Set-Content fileContent -Path $env:VERSION_FILE
+
+        $baseBranchName = $(git rev-parse --abbrev-ref HEAD)
+        $prBranchName = "bump-version-after-release-${{ env.TAG_NAME }}"
+        $commitMessage = "Bump Steeltoe version from $oldVersionPrefix to $newVersionPrefix after release ${{ env.TAG_NAME }}"
+        echo "Creating pull request for: $commitMessage""
+
+        git checkout -b $prBranchName
+        git add -A
+        git commit -m $commitMessage
+        git push
+        gh pr create --base $baseBranchName --head $prBranchName --title 'Bump Steeltoe version' --body $commitMessage
