@@ -111,7 +111,7 @@ jobs:
 
   open_pr:
     name: Open pull request to bump package version (after release)
-    #if: ${{ github.event_name == 'release' }}
+    if: ${{ github.event_name == 'release' }}
     needs: build
     timeout-minutes: 15
     runs-on: ubuntu-latest
