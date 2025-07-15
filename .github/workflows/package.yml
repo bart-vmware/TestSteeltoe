@@ -140,6 +140,7 @@ jobs:
       env:
         #TAG_NAME: ${{ github.ref_name }}
         TAG_NAME: ${{ github.run_number }}
+        GIT_USERNAME: ${{ github.actor }}
       shell: pwsh
       run: |
         $oldVersionPrefix = '${{ env.OLD_PACKAGE_VERSION_PREFIX }}'
@@ -155,6 +156,8 @@ jobs:
         $commitMessage = "Bump Steeltoe version from $oldVersionPrefix to $newVersionPrefix after release ${{ env.TAG_NAME }}"
         echo "Creating pull request for: $commitMessage"
 
+        git config --global user.name '${{ env.GIT_USERNAME }}'
+        git config --global user.email '${{ env.GIT_USERNAME }}@noreply.github.com'
         git checkout -b $prBranchName
         git add -A
         git commit -m $commitMessage
