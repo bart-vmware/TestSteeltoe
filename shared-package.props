@@ -12,7 +12,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <VersionPrefix>4.1.21</VersionPrefix>
+    <VersionPrefix>4.1.22</VersionPrefix>
     <VersionSuffix>pre</VersionSuffix>
     <Authors>Broadcom</Authors>
     <PackageIcon>PackageIcon.png</PackageIcon>
