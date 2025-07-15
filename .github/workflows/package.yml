@@ -97,7 +97,7 @@ jobs:
         Write-Output "PACKAGE_VERSION_SUFFIX=$versionSuffix" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
 
     - name: Verify package version
-      if: ${{ env.PACKAGE_VERSION_SUFFIX == '' }}
+      if: ${{ env.PACKAGE_VERSION_SUFFIX == '' && github.event_name != 'release' }}
       run: |
         echo "Package version suffix is empty. This should never happen."
         exit 1
