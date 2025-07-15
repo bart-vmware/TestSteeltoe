@@ -156,12 +156,17 @@ jobs:
         $prBranchName = "bump-version-to-$newVersionPrefix-${{ github.run_number }}"
         $commitMessage = "Bump Steeltoe version from $oldVersionPrefix to $newVersionPrefix."
 
+
+        echo "Base branch: $baseBranchName"
+        echo "Local branches: $(git branch)"
+
+
         $pattern = '(?<left>^\s*\<VersionPrefix\>)[^>]+(?<right>\<\/VersionPrefix\>)\s*$'
         $fileContent = Get-Content $env:VERSION_FILE
         $fileContent = $fileContent -Replace $pattern,"`${left}$newVersionPrefix`${right}"
         Set-Content $fileContent -Path $env:VERSION_FILE
 
-        Write-Output "Creating pull request for: $commitMessage"
+        Write-Output "Creating pull request for commit: $commitMessage"
         git config --global user.name '${{ env.GIT_USERNAME }}'
         git config --global user.email '${{ env.GIT_USERNAME }}@noreply.github.com'
         git checkout -b $prBranchName
@@ -169,5 +174,5 @@ jobs:
         git commit -m $commitMessage
         git push --set-upstream origin $prBranchName
 
-        Write-Output "Opening pull request for $prBranchName to $baseBranchName."
+        Write-Output "Opening pull request to merge $prBranchName into $baseBranchName."
         gh pr create --base $baseBranchName --head $prBranchName --title 'Bump Steeltoe version' --body $commitMessage
