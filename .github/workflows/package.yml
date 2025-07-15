@@ -151,11 +151,9 @@ jobs:
       run: |
         $oldVersionPrefix = '${{ env.OLD_PACKAGE_VERSION_PREFIX }}'
         $newVersionPrefix = '${{ env.NEW_PACKAGE_VERSION_PREFIX }}'
-
-        $baseBranchName = $(git rev-parse --abbrev-ref HEAD)
+        $baseBranchName = '${{ github.event.workflow_run.head_branch }}'
         $prBranchName = "bump-version-to-$newVersionPrefix-${{ github.run_number }}"
         $commitMessage = "Bump Steeltoe version from $oldVersionPrefix to $newVersionPrefix."
-
 
         echo "Base branch: $baseBranchName"
         echo "Local branches: $(git branch)"
