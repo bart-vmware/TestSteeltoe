@@ -141,6 +141,7 @@ jobs:
         #TAG_NAME: ${{ github.ref_name }}
         TAG_NAME: ${{ github.run_number }}
         GIT_USERNAME: ${{ github.actor }}
+        GH_TOKEN: ${{ github.token }}
       shell: pwsh
       run: |
         $oldVersionPrefix = '${{ env.OLD_PACKAGE_VERSION_PREFIX }}'
@@ -161,5 +162,5 @@ jobs:
         git checkout -b $prBranchName
         git add -A
         git commit -m $commitMessage
-        git push
+        git push --set-upstream origin $prBranchName
         gh pr create --base $baseBranchName --head $prBranchName --title 'Bump Steeltoe version' --body $commitMessage
