@@ -151,7 +151,7 @@ jobs:
       run: |
         $oldVersionPrefix = '${{ env.OLD_PACKAGE_VERSION_PREFIX }}'
         $newVersionPrefix = '${{ env.NEW_PACKAGE_VERSION_PREFIX }}'
-        $baseBranchName = '${{ github.event.workflow_run.head_branch }}'
+        $baseBranchName = $(git branch --remotes --contains tags/$oldVersionPrefix --no-color)
         $prBranchName = "bump-version-to-$newVersionPrefix-${{ github.run_number }}"
         $commitMessage = "Bump Steeltoe version from $oldVersionPrefix to $newVersionPrefix."
 
