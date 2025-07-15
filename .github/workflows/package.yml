@@ -147,7 +147,7 @@ jobs:
 
         $pattern = '(?<left>^\s*\<VersionPrefix\>)[^>]+(?<right>\<\/VersionPrefix\>)\s*$'
         $fileContent = Get-Content $env:VERSION_FILE
-        fileContent = $fileContent -Replace $pattern,"`${left}$newVersionPrefix`${right}"
+        $fileContent = $fileContent -Replace $pattern,"`${left}$newVersionPrefix`${right}"
         Set-Content $fileContent -Path $env:VERSION_FILE
 
         $baseBranchName = $(git rev-parse --abbrev-ref HEAD)
