@@ -144,7 +144,6 @@ jobs:
 
     - name: Open pull request
       env:
-        TAG_NAME: ${{ github.ref_name }}
         GIT_USERNAME: ${{ github.actor }}
         GH_TOKEN: ${{ github.token }}
       shell: pwsh
@@ -155,8 +154,10 @@ jobs:
         $prBranchName = "bump-version-to-$newVersionPrefix-${{ github.run_number }}"
         $commitMessage = "Bump Steeltoe version from $oldVersionPrefix to $newVersionPrefix."
 
+
         echo "Base branch: $baseBranchName"
         echo "Local branches: $(git branch)"
+        echo "Remotes: $(git branch --remotes --contains tags/$oldVersionPrefix --no-color)"
 
 
         $pattern = '(?<left>^\s*\<VersionPrefix\>)[^>]+(?<right>\<\/VersionPrefix\>)\s*$'
