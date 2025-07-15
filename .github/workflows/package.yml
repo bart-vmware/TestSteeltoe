@@ -79,7 +79,7 @@ jobs:
         # Get the version suffix from the branch name and auto-incrementing build number. For example: 'main' and '123' => 'main-00123'
         $revision = "{0:D5}" -f ${{ github.run_number }}
         $branchName = '${{ env.BRANCH_NAME }}'
-        $safeBranchName = $branchName -Replace '[^a-zA-Z0-9_]', ''
+        $safeBranchName = $branchName -Replace '[^a-zA-Z0-9_]', '_'
         $versionSuffix = "$safeBranchName-$revision"
 
         Write-Output "Using version suffix: $versionSuffix"
