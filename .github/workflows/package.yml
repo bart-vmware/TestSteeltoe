@@ -77,7 +77,7 @@ jobs:
       shell: pwsh
       run: |
         # Get the version suffix from the branch name and auto-incrementing build number. For example: 'main' and '123' => 'main-00123'
-        $revision = "{0:D5}" -f [convert]::ToInt32(${{ github.run_number }}, 10)
+        $revision = "{0:D5}" -f ${{ github.run_number }}
         $branchName = '${{ env.BRANCH_NAME }}'
         $safeName = $branchName.Replace('/', '-').Replace('_', '-').Replace('$', '-').Replace(';', '-')
         $versionSuffix = "$safeName-$revision"
@@ -110,8 +110,8 @@ jobs:
         path: ${{ github.workspace }}/packages/**/*.nupkg
 
   open_pr:
-    name: Open pull request to bump package version (for release)
-    if: ${{ github.event_name == 'release' }}
+    name: Open pull request to bump package version (after release)
+    #if: ${{ github.event_name == 'release' }}
     needs: build
     timeout-minutes: 15
     runs-on: ubuntu-latest
@@ -138,7 +138,8 @@ jobs:
 
     - name: Open pull request
       env:
-        TAG_NAME: ${{ github.ref_name }}
+        #TAG_NAME: ${{ github.ref_name }}
+        TAG_NAME: ${{ github.run_number }}
       shell: pwsh
       run: |
         $oldVersionPrefix = '${{ env.OLD_PACKAGE_VERSION_PREFIX }}'
@@ -152,7 +153,7 @@ jobs:
         $baseBranchName = $(git rev-parse --abbrev-ref HEAD)
         $prBranchName = "bump-version-after-release-${{ env.TAG_NAME }}"
         $commitMessage = "Bump Steeltoe version from $oldVersionPrefix to $newVersionPrefix after release ${{ env.TAG_NAME }}"
-        echo "Creating pull request for: $commitMessage""
+        echo "Creating pull request for: $commitMessage"
 
         git checkout -b $prBranchName
         git add -A
