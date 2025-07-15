@@ -116,7 +116,7 @@ jobs:
     timeout-minutes: 15
     runs-on: ubuntu-latest
     permissions:
-      #contents: write
+      contents: write
       pull-requests: write
 
     steps:
@@ -147,8 +147,8 @@ jobs:
 
         $pattern = '(?<left>^\s*\<VersionPrefix\>)[^>]+(?<right>\<\/VersionPrefix\>)\s*$'
         $fileContent = Get-Content $env:VERSION_FILE
-        fileContent = fileContent -Replace $pattern,"`${left}$newVersionPrefix`${right}"
-        Set-Content fileContent -Path $env:VERSION_FILE
+        fileContent = $fileContent -Replace $pattern,"`${left}$newVersionPrefix`${right}"
+        Set-Content $fileContent -Path $env:VERSION_FILE
 
         $baseBranchName = $(git rev-parse --abbrev-ref HEAD)
         $prBranchName = "bump-version-after-release-${{ env.TAG_NAME }}"
