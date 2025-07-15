@@ -154,7 +154,7 @@ jobs:
 
         $baseBranchName = $(git rev-parse --abbrev-ref HEAD)
         $prBranchName = "bump-version-after-release-${{ env.TAG_NAME }}"
-        $commitMessage = "Bump Steeltoe version from $oldVersionPrefix to $newVersionPrefix after release ${{ env.TAG_NAME }}"
+        $commitMessage = "Bump Steeltoe version from $oldVersionPrefix to $newVersionPrefix after release ${{ env.TAG_NAME }}."
         echo "Creating pull request for: $commitMessage"
 
         git config --global user.name '${{ env.GIT_USERNAME }}'
