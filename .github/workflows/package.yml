@@ -138,8 +138,8 @@ jobs:
 
     - name: Open pull request
       env:
-        #TAG_NAME: ${{ github.ref_name }}
-        TAG_NAME: ${{ github.run_number }}
+        TAG_NAME: ${{ github.ref_name }}
+        #TAG_NAME: ${{ github.run_number }}
         GIT_USERNAME: ${{ github.actor }}
         GH_TOKEN: ${{ github.token }}
       shell: pwsh
