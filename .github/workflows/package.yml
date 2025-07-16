@@ -144,7 +144,6 @@ jobs:
 
     - name: Open pull request
       env:
-        GIT_USERNAME: ${{ github.actor }}
         GH_TOKEN: ${{ github.token }}
       shell: pwsh
       run: |
