@@ -116,8 +116,8 @@ jobs:
         path: ${{ github.workspace }}/packages/**/*.nupkg
 
   open_pr:
-    name: Open pull request to bump package version (after release)
-    if: ${{ github.event_name == 'release' }}
+    name: Open pull request to bump Steeltoe version after stable release
+    if: ${{ github.event_name == 'release' && contains(env.TAG_NAME,'-') }}
     needs: build
     timeout-minutes: 15
     runs-on: ubuntu-latest
