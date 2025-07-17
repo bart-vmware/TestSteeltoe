@@ -117,7 +117,7 @@ jobs:
 
   open_pr:
     name: Open pull request to bump Steeltoe version after stable release
-    if: ${{ github.event_name == 'release' && contains(github.ref_name, '-') }}
+    if: ${{ github.event_name == 'release' && !contains(github.ref_name, '-') }}
     needs: build
     timeout-minutes: 15
     runs-on: ubuntu-latest
