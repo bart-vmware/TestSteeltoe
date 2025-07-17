@@ -9,7 +9,8 @@ on:
     - 'release/*'
   pull_request:
   release:
-    types: [ published ]
+    types:
+    - published
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -50,7 +51,7 @@ jobs:
         TAG_NAME: ${{ github.ref_name }}
       shell: pwsh
       run: |
-        # Get the version suffix from the git tag. For example: '1.2.3-preview1-final' => '1.2.3' and 'preview1-final'
+        # Get the version suffix from the git tag. For example: '1.2.3-preview1-final' => 'preview1-final'
         $tagSegments = '${{ env.TAG_NAME }}' -split '-'
         $versionPrefix = $tagSegments[0]
         $versionSuffix = $tagSegments.Length -eq 1 ? '' : $tagSegments[1..$($tagSegments.Length - 1)] -join '-'
@@ -79,7 +80,7 @@ jobs:
         # Get the version suffix from the branch name and auto-incrementing build number. For example: 'main' and '123' => 'main-00123'
         $revision = "{0:D5}" -f ${{ github.run_number }}
         $branchName = '${{ env.BRANCH_NAME }}'
-        $safeBranchName = $branchName -Replace '[^a-zA-Z0-9_]', '_'
+        $safeBranchName = $branchName -Replace '[^a-zA-Z0-9-]', '-'
         $versionSuffix = "$safeBranchName-$revision"
 
         Write-Output "Using version suffix: $versionSuffix"
@@ -97,7 +98,7 @@ jobs:
         Write-Output "PACKAGE_VERSION_SUFFIX=$versionSuffix" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
 
     - name: Verify package version
-      if: ${{ env.PACKAGE_VERSION_SUFFIX == '' && github.event_name != 'release' }}
+      if: ${{ !env.PACKAGE_VERSION_SUFFIX && github.event_name != 'release' }}
       run: |
         echo "Package version suffix is empty. This should never happen."
         exit 1
@@ -108,7 +109,7 @@ jobs:
     - name: Collect packages
       run: dotnet pack ${{ env.SOLUTION_FILE }} --no-build --configuration Release --output ${{ github.workspace }}/packages /p:VersionSuffix=${{ env.PACKAGE_VERSION_SUFFIX }}
 
-    - name: Upload packages
+    - name: Upload unsigned packages
       uses: actions/upload-artifact@v4
       with:
         if-no-files-found: error
